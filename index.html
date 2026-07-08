@@ -363,7 +363,7 @@ function buildTabs() {
   const tabs = $("tabs");
   tabs.innerHTML = "";
   const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
-  items.push({ key: "compare", label: "Kalshi vs FanDuel" });
+  items.push({ key: "compare", label: "Odds Comparison" });
   items.push({ key: "activity", label: "Activity" });
   for (const it of items) {
     const b = document.createElement("button");
