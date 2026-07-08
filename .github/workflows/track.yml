@@ -1,0 +1,62 @@
+name: Track Kalshi NASCAR market
+
+# Scrapes the Kalshi NASCAR race market and commits any changes back to the
+# repo, so git history becomes a full change log for the market.
+#
+# NOTE: GitHub-hosted runners have unrestricted outbound internet, which is why
+# the scrape runs here rather than inside a Claude Code session (whose egress
+# proxy blocks kalshi.com).
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub schedules are best-effort and can be delayed
+    # under load; this is the practical floor for a market tracker.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}  # allow manual runs from the Actions tab
+
+# Prevent overlapping runs from racing on the same commit.
+concurrency:
+  group: track-kalshi
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run scraper
+        run: python3 scraper.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage first so both modified and brand-new (untracked) files count,
+          # then check the index for staged changes.
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
+            echo "No market changes; nothing to commit."
+            exit 0
+          fi
+          git commit -m "data: market update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          # Rebase in case a concurrent/previous run pushed first, then push.
+          for i in 1 2 3 4; do
+            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              echo "Pushed."
+              exit 0
+            fi
+            echo "Push failed; retrying in $((2**i))s"
+            sleep $((2**i))
+          done
+          echo "Failed to push after retries" >&2
+          exit 1
