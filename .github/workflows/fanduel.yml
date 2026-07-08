@@ -15,9 +15,8 @@ on:
     - cron: "17 * * * *"   # hourly, offset from Kalshi's */15
   workflow_dispatch: {}
   push:
-    # TEMP: run on the feature branch during development so we can inspect the
-    # scraped output. Switch to the deploy branch before/after merge.
-    branches: [claude/reference-external-resource-apvomh]
+    # Re-scrape when the scraper or workflow changes on the deploy branch.
+    branches: [claude/nascar-page-scraper-mwi55a]
     paths:
       - fanduel_scraper.js
       - .github/workflows/fanduel.yml

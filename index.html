@@ -579,7 +579,18 @@ const CMP_TIERS = [
 let FD = null;          // parsed data/fanduel/odds.json
 let compareTier = null; // currently shown comparison tier
 
-const normName = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+// Match drivers across sources despite formatting differences: strip accents
+// (Suárez→suarez), drop name-suffixes and middle names/initials, and key on
+// first + last token (so "John H. Nemechek" == "John Hunter Nemechek").
+function normName(s) {
+  const toks = (s || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t && !["jr", "sr", "ii", "iii", "iv"].includes(t));
+  if (!toks.length) return "";
+  return toks.length === 1 ? toks[0] : toks[0] + toks[toks.length - 1];
+}
 const pct = (p) => (p == null ? `<span class="muted">—</span>` : (p * 100).toFixed(1) + "%");
 const usAmerican = (a) => (typeof a !== "number" ? "—" : (a > 0 ? "+" : "") + a);
 

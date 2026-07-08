@@ -28,13 +28,18 @@ const MOTORSPORT_URL = "https://sportsbook.fanduel.com/motorsport";
 const OUT_DIR = path.join("data", "fanduel");
 const OUT_FILE = path.join(OUT_DIR, "odds.json");
 
-// FanDuel market-name suffix -> our tier key (matches Kalshi's tier keys).
+// FanDuel market-name suffix -> our tier key (matches Kalshi's tier keys) and
+// the number of drivers that "win" the market. FanDuel's Top-N markets report
+// numberOfWinners=1 in their metadata (they're modeled as independent props),
+// so we can't trust that field: the sum of P(finish top N) across the field is
+// N, and that's what the no-vig normalization must target.
 const TIER_SUFFIXES = [
-  { key: "winner", re: /^(.*) - Outright Betting$/i },
-  { key: "top3", re: /^(.*) - Top 3 Finish$/i },
-  { key: "top5", re: /^(.*) - Top 5 Finish$/i },
-  { key: "top10", re: /^(.*) - Top 10 Finish$/i },
+  { key: "winner", re: /^(.*) - Outright Betting$/i, winners: 1 },
+  { key: "top3", re: /^(.*) - Top 3 Finish$/i, winners: 3 },
+  { key: "top5", re: /^(.*) - Top 5 Finish$/i, winners: 5 },
+  { key: "top10", re: /^(.*) - Top 10 Finish$/i, winners: 10 },
 ];
+const TIER_WINNERS = Object.fromEntries(TIER_SUFFIXES.map((t) => [t.key, t.winners]));
 
 const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -127,7 +132,7 @@ async function main() {
 
   const tiers = {};
   for (const [tierKey, m] of Object.entries(byRace[chosen])) {
-    const target = typeof m.numberOfWinners === "number" && m.numberOfWinners > 0 ? m.numberOfWinners : 1;
+    const target = TIER_WINNERS[tierKey] || 1;
     const drivers = [];
     for (const r of m.runners || []) {
       if (r.runnerStatus && r.runnerStatus !== "ACTIVE") continue;
