@@ -134,6 +134,9 @@
   .cmp-note b { color: var(--ink); }
   .edge { font-family: var(--mono); font-weight: 700; }
   .edge.pos { color: var(--pos); } .edge.neg { color: var(--neg); }
+  .cmp-fresh { font-size: 12px; color: var(--ink-2); margin: 0 0 14px; display: flex;
+    flex-wrap: wrap; gap: 4px 16px; }
+  .cmp-fresh b { color: var(--ink); font-weight: 600; }
 
   .empty { padding: 40px 18px; text-align: center; color: var(--ink-2); font-size: 14px; }
   footer { margin-top: 28px; font-size: 12px; color: var(--ink-2); text-align: center; }
@@ -222,29 +225,21 @@
   <div id="compare-view" style="display:none">
     <div class="tabs subtabs" id="cmp-tabs" role="tablist" aria-label="Compare tiers"></div>
     <div class="cmp-note">
-      Posted <b>American odds</b> on each platform, with <b>Kalshi as source of truth</b>.
-      <b>Edge</b> flags drivers where <b>FanDuel's line is longer than Kalshi's</b> — i.e.
-      FanDuel pays more than Kalshi's implied chance says it should, so a bet there is
-      +EV. <span class="edge pos">Green</span> = FanDuel offers value over Kalshi;
-      <span class="edge neg">red</span> = shorter than Kalshi. Edge is the gap in implied
-      win probability (Kalshi − FanDuel, in points); rows are sorted best-edge first.
+      Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
+      <b>Edge</b> is the gap in implied win probability (Kalshi − book, in points):
+      <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
+      (it pays more than Kalshi's implied chance → +EV), <span class="edge neg">red</span> means
+      shorter. Rows are sorted by the <b>best edge across books</b>. Book odds include vig.
     </div>
+    <div class="cmp-fresh" id="cmp-fresh"></div>
     <section class="card">
       <div class="card-head">
-        <h2 id="cmp-title">Kalshi vs FanDuel</h2>
+        <h2 id="cmp-title">Kalshi vs the books</h2>
         <span class="count" id="cmp-count"></span>
       </div>
       <div class="scroll">
         <table>
-          <thead>
-            <tr>
-              <th class="l">#</th>
-              <th class="l">Driver</th>
-              <th>Kalshi (Yes / No)</th>
-              <th>FanDuel odds</th>
-              <th>Edge</th>
-            </tr>
-          </thead>
+          <thead><tr id="cmp-head"></tr></thead>
           <tbody id="cmp-rows"></tbody>
         </table>
       </div>
@@ -252,8 +247,8 @@
   </div>
 
   <footer>
-    Kalshi snapshots captured by <code>scraper.py</code> (public API); FanDuel odds by
-    <code>fanduel_scraper.js</code> (headless browser). Git history is the full change log.
+    Kalshi snapshots by <code>scraper.py</code> (public API); FanDuel by <code>fanduel_scraper.js</code>
+    (headless browser); other books entered manually from posted odds. Git history is the full change log.
   </footer>
 </div>
 
@@ -571,12 +566,18 @@ async function refresh() {
   }
 }
 
-// ---- Kalshi vs FanDuel comparison ----
+// ---- Kalshi vs the books comparison ----
 const CMP_TIERS = [
   { key: "winner", label: "Winner" }, { key: "top3", label: "Top 3" },
   { key: "top5", label: "Top 5" }, { key: "top10", label: "Top 10" },
 ];
-let FD = null;          // parsed data/fanduel/odds.json
+// Books to compare against Kalshi. `live` books are scraped on a schedule;
+// others are entered manually from posted odds (stamped with a capture time).
+const BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "data/fanduel/odds.json", live: true },
+  { key: "betus", label: "BetUS", url: "data/manual/betus.json", live: false },
+];
+const BOOKDATA = {};    // key -> parsed odds json (or null if unavailable)
 let compareTier = null; // currently shown comparison tier
 
 // Match drivers across sources despite formatting differences: strip accents
@@ -594,9 +595,14 @@ function normName(s) {
 const pct = (p) => (p == null ? `<span class="muted">—</span>` : (p * 100).toFixed(1) + "%");
 const usAmerican = (a) => (typeof a !== "number" ? "—" : (a > 0 ? "+" : "") + a);
 
+const bookTime = (d) => (d && (d.scraped_at || d.captured_at)) || null;
+// Books that actually carry the given tier right now.
+function booksForTier(tierKey) {
+  return BOOKS.filter((bk) => BOOKDATA[bk.key] && BOOKDATA[bk.key].tiers && BOOKDATA[bk.key].tiers[tierKey]);
+}
 function cmpTiersAvailable() {
   const kalshiKeys = new Set(INDEX.markets.map((m) => m.key));
-  return CMP_TIERS.filter((t) => kalshiKeys.has(t.key) && FD && FD.tiers && FD.tiers[t.key]);
+  return CMP_TIERS.filter((t) => kalshiKeys.has(t.key) && booksForTier(t.key).length);
 }
 
 function buildCmpTabs() {
@@ -615,29 +621,44 @@ function buildCmpTabs() {
 }
 
 async function loadCompare() {
-  $("updated").textContent = "Loading FanDuel…";
-  try { FD = await loadJSON("data/fanduel/odds.json"); } catch { FD = null; }
+  $("updated").textContent = "Loading books…";
+  await Promise.all(BOOKS.map(async (bk) => {
+    try { BOOKDATA[bk.key] = await loadJSON(bk.url); } catch { BOOKDATA[bk.key] = null; }
+  }));
   buildCmpTabs();
   await renderCompare();
 }
 
 async function renderCompare() {
   const rows = $("cmp-rows");
-  if (!FD || !FD.tiers || !compareTier) {
-    rows.innerHTML = `<tr><td colspan="5" class="empty">No FanDuel odds yet — the hourly FanDuel scraper hasn't published data.</td></tr>`;
+  const head = $("cmp-head");
+  const books = compareTier ? booksForTier(compareTier) : [];
+  if (!books.length || !compareTier) {
+    head.innerHTML = "";
+    rows.innerHTML = `<tr><td class="empty">No book odds yet.</td></tr>`;
     $("cmp-count").textContent = "";
-    $("updated").textContent = "Awaiting FanDuel data";
+    $("cmp-fresh").innerHTML = "";
+    $("updated").textContent = "Awaiting book data";
     $("mcount").textContent = "";
     return;
   }
-  $("updated").textContent = "FanDuel " + relTime(FD.scraped_at);
-  $("updated").title = FD.scraped_at || "";
-  $("src").href = FD.source_url || "https://sportsbook.fanduel.com/motorsport";
-  $("mcount").textContent = FD.race || "";
   const label = (CMP_TIERS.find((t) => t.key === compareTier) || {}).label || compareTier;
-  $("cmp-title").textContent = label + " — Kalshi vs FanDuel";
+  $("cmp-title").textContent = label + " — Kalshi vs the books";
+  $("updated").textContent = "Kalshi vs the books";
+  $("mcount").textContent = (BOOKDATA[books[0].key] && BOOKDATA[books[0].key].race) || "";
 
-  // Kalshi side (source of truth): implied prob + cents (priceYes is in cents).
+  // Freshness line per book.
+  $("cmp-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(BOOKDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
+  // Header: #, Driver, Kalshi, then (odds, edge) per book.
+  head.innerHTML = `<th class="l">#</th><th class="l">Driver</th><th>Kalshi (Yes / No)</th>` +
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+
+  // Kalshi side (source of truth): implied prob + Yes/No cents.
   const kal = {};
   try {
     const snap = await loadJSON("data/" + compareTier + "/snapshot.json");
@@ -647,50 +668,58 @@ async function renderCompare() {
     }
   } catch { /* leave Kalshi side empty */ }
 
-  // FanDuel side: posted American odds + raw implied prob (what you actually bet).
-  const fd = {};
-  for (const d of FD.tiers[compareTier].drivers || []) fd[normName(d.name)] = d;
+  // Per-book driver maps for this tier.
+  const bookMaps = {};
+  for (const bk of books) {
+    const map = {};
+    for (const d of BOOKDATA[bk.key].tiers[compareTier].drivers || []) map[normName(d.name)] = d;
+    bookMaps[bk.key] = map;
+  }
 
   const dash = `<span class="muted">—</span>`;
+  const allKeys = new Set(Object.keys(kal));
+  for (const bk of books) Object.keys(bookMaps[bk.key]).forEach((k) => allKeys.add(k));
+
   const merged = [];
-  for (const k of new Set([...Object.keys(kal), ...Object.keys(fd)])) {
+  for (const k of allKeys) {
     const kp = kal[k] ? kal[k].prob : null;
-    const dd = fd[k] || null;
-    const fp = dd ? dd.implied : null; // raw implied from the posted line
+    const cells = books.map((bk) => {
+      const d = bookMaps[bk.key][k] || null;
+      // Edge = Kalshi (truth) − book implied, in points. Positive = book line
+      // longer than Kalshi → pays more than fair → +EV.
+      const edge = (kp != null && d && typeof d.implied === "number") ? (kp - d.implied) * 100 : null;
+      return { american: d ? d.american : null, edge };
+    });
+    const edges = cells.map((c) => c.edge).filter((e) => e != null);
     merged.push({
-      name: (kal[k] && kal[k].name) || (dd && dd.name) || k,
+      name: (kal[k] && kal[k].name) || (books.map((bk) => bookMaps[bk.key][k]).find(Boolean) || {}).name || k,
       kYes: kal[k] ? kal[k].yes : null,
       kNo: kal[k] ? kal[k].no : null,
-      american: dd ? dd.american : null,
-      kp,
-      // Edge = Kalshi (truth) − FanDuel implied, in points. Positive means
-      // FanDuel's line is longer than Kalshi's → it pays more than fair → +EV.
-      edge: (kp != null && fp != null) ? (kp - fp) * 100 : null,
+      kp, cells,
+      bestEdge: edges.length ? Math.max(...edges) : null,
     });
   }
-  // Best edge first; rows missing a side (no edge) sink to the bottom.
+  // Sort by best edge across books; rows with no edge sink to the bottom.
   merged.sort((a, b) => {
-    if (a.edge == null && b.edge == null) return (b.kp ?? -1) - (a.kp ?? -1);
-    if (a.edge == null) return 1;
-    if (b.edge == null) return -1;
-    return b.edge - a.edge;
+    if (a.bestEdge == null && b.bestEdge == null) return (b.kp ?? -1) - (a.kp ?? -1);
+    if (a.bestEdge == null) return 1;
+    if (b.bestEdge == null) return -1;
+    return b.bestEdge - a.bestEdge;
   });
 
+  const edgeCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
   rows.innerHTML = "";
-  if (!merged.length) {
-    rows.innerHTML = `<tr><td colspan="5" class="empty">No drivers to compare.</td></tr>`;
-  }
   merged.forEach((r, i) => {
-    const edgeCell = r.edge == null
-      ? dash
-      : `<span class="edge ${r.edge >= 0 ? "pos" : "neg"}">${r.edge >= 0 ? "+" : ""}${r.edge.toFixed(1)}</span>`;
+    const kalCell = (r.kYes == null && r.kNo == null) ? dash
+      : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`;
+    const bookCells = r.cells.map((c) =>
+      `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${edgeCell(c.edge)}</td>`).join("");
     const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td class="l rank ${i === 0 && r.edge != null && r.edge > 0 ? "top" : ""}">${i + 1}</td>
-      <td class="l driver">${escapeHtml(r.name)}</td>
-      <td class="num">${r.kYes == null && r.kNo == null ? dash : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`}</td>
-      <td class="num">${r.american == null ? dash : usAmerican(r.american)}</td>
-      <td class="num">${edgeCell}</td>`;
+    tr.innerHTML =
+      `<td class="l rank ${i === 0 && r.bestEdge != null && r.bestEdge > 0 ? "top" : ""}">${i + 1}</td>` +
+      `<td class="l driver">${escapeHtml(r.name)}</td>` +
+      `<td class="num">${kalCell}</td>` + bookCells;
     rows.appendChild(tr);
   });
   $("cmp-count").textContent = merged.length + " drivers";
