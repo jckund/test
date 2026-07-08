@@ -222,11 +222,12 @@
   <div id="compare-view" style="display:none">
     <div class="tabs subtabs" id="cmp-tabs" role="tablist" aria-label="Compare tiers"></div>
     <div class="cmp-note">
-      <b>Kalshi</b> implied probability vs <b>FanDuel</b> no-vig probability for the same
-      market. <b>Edge = Kalshi − FanDuel</b> (percentage points): <span class="edge pos">green</span>
-      means Kalshi prices the driver higher than FanDuel, <span class="edge neg">red</span> lower.
-      FanDuel's posted odds include vig (the field sums past 100%); the no-vig figure rescales
-      them to the market's number of winners so the two sources compare fairly.
+      Posted <b>American odds</b> on each platform, with <b>Kalshi as source of truth</b>.
+      <b>Edge</b> flags drivers where <b>FanDuel's line is longer than Kalshi's</b> — i.e.
+      FanDuel pays more than Kalshi's implied chance says it should, so a bet there is
+      +EV. <span class="edge pos">Green</span> = FanDuel offers value over Kalshi;
+      <span class="edge neg">red</span> = shorter than Kalshi. Edge is the gap in implied
+      win probability (Kalshi − FanDuel, in points); rows are sorted best-edge first.
     </div>
     <section class="card">
       <div class="card-head">
@@ -239,10 +240,9 @@
             <tr>
               <th class="l">#</th>
               <th class="l">Driver</th>
-              <th>Kalshi</th>
-              <th>FanDuel</th>
-              <th>Edge</th>
+              <th>Kalshi odds</th>
               <th>FanDuel odds</th>
+              <th>Edge</th>
             </tr>
           </thead>
           <tbody id="cmp-rows"></tbody>
@@ -624,7 +624,7 @@ async function loadCompare() {
 async function renderCompare() {
   const rows = $("cmp-rows");
   if (!FD || !FD.tiers || !compareTier) {
-    rows.innerHTML = `<tr><td colspan="6" class="empty">No FanDuel odds yet — the hourly FanDuel scraper hasn't published data.</td></tr>`;
+    rows.innerHTML = `<tr><td colspan="5" class="empty">No FanDuel odds yet — the hourly FanDuel scraper hasn't published data.</td></tr>`;
     $("cmp-count").textContent = "";
     $("updated").textContent = "Awaiting FanDuel data";
     $("mcount").textContent = "";
@@ -637,49 +637,59 @@ async function renderCompare() {
   const label = (CMP_TIERS.find((t) => t.key === compareTier) || {}).label || compareTier;
   $("cmp-title").textContent = label + " — Kalshi vs FanDuel";
 
-  // Kalshi side: implied prob (priceYes is in cents).
+  // Kalshi side (source of truth): implied prob + cents (priceYes is in cents).
   const kal = {};
   try {
     const snap = await loadJSON("data/" + compareTier + "/snapshot.json");
     for (const m of Object.values(snap.markets || {})) {
       const p = priceYes(m);
-      if (p != null) kal[normName(m.name)] = { name: m.name, prob: p / 100 };
+      if (p != null) kal[normName(m.name)] = { name: m.name, cents: p, prob: p / 100 };
     }
   } catch { /* leave Kalshi side empty */ }
 
-  // FanDuel side: no-vig prob.
+  // FanDuel side: posted American odds + raw implied prob (what you actually bet).
   const fd = {};
   for (const d of FD.tiers[compareTier].drivers || []) fd[normName(d.name)] = d;
 
+  const dash = `<span class="muted">—</span>`;
   const merged = [];
   for (const k of new Set([...Object.keys(kal), ...Object.keys(fd)])) {
     const kp = kal[k] ? kal[k].prob : null;
     const dd = fd[k] || null;
-    const fp = dd ? dd.novig : null;
+    const fp = dd ? dd.implied : null; // raw implied from the posted line
     merged.push({
       name: (kal[k] && kal[k].name) || (dd && dd.name) || k,
-      kp, fp, american: dd ? dd.american : null,
+      kCents: kal[k] ? kal[k].cents : null,
+      american: dd ? dd.american : null,
+      kp,
+      // Edge = Kalshi (truth) − FanDuel implied, in points. Positive means
+      // FanDuel's line is longer than Kalshi's → it pays more than fair → +EV.
       edge: (kp != null && fp != null) ? (kp - fp) * 100 : null,
     });
   }
-  merged.sort((a, b) => (b.kp ?? b.fp ?? -1) - (a.kp ?? a.fp ?? -1));
+  // Best edge first; rows missing a side (no edge) sink to the bottom.
+  merged.sort((a, b) => {
+    if (a.edge == null && b.edge == null) return (b.kp ?? -1) - (a.kp ?? -1);
+    if (a.edge == null) return 1;
+    if (b.edge == null) return -1;
+    return b.edge - a.edge;
+  });
 
   rows.innerHTML = "";
   if (!merged.length) {
-    rows.innerHTML = `<tr><td colspan="6" class="empty">No drivers to compare.</td></tr>`;
+    rows.innerHTML = `<tr><td colspan="5" class="empty">No drivers to compare.</td></tr>`;
   }
   merged.forEach((r, i) => {
     const edgeCell = r.edge == null
-      ? `<span class="muted">—</span>`
+      ? dash
       : `<span class="edge ${r.edge >= 0 ? "pos" : "neg"}">${r.edge >= 0 ? "+" : ""}${r.edge.toFixed(1)}</span>`;
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+      <td class="l rank ${i === 0 && r.edge != null && r.edge > 0 ? "top" : ""}">${i + 1}</td>
       <td class="l driver">${escapeHtml(r.name)}</td>
-      <td class="num">${pct(r.kp)}</td>
-      <td class="num">${pct(r.fp)}</td>
-      <td class="num">${edgeCell}</td>
-      <td class="num">${r.american == null ? '<span class="muted">—</span>' : usAmerican(r.american)}</td>`;
+      <td class="num">${r.kCents == null ? dash : usOdds(r.kCents)}</td>
+      <td class="num">${r.american == null ? dash : usAmerican(r.american)}</td>
+      <td class="num">${edgeCell}</td>`;
     rows.appendChild(tr);
   });
   $("cmp-count").textContent = merged.length + " drivers";
