@@ -441,9 +441,21 @@ function renderFeed(history) {
   }
 }
 
+// The Yes and No contracts are priced independently on Kalshi, so convert
+// each side from its own ask (the price to actually buy that side) instead of
+// forcing No = 100 − Yes. The bid/ask spread means yes_ask + no_ask ≈ 100 plus
+// a couple cents, so the two American odds are genuinely asymmetric — not
+// mirror images of each other.
+function sideCents(ask, bid, last) {
+  if (typeof ask === "number" && ask > 0 && ask < 100) return ask;
+  if (typeof bid === "number" && bid > 0 && bid < 100) return bid;
+  if (typeof last === "number" && last > 0 && last < 100) return last;
+  return null;
+}
 function yesNoOdds(m) {
-  const yes = impliedYes(m);
-  const no = (yes == null) ? null : 100 - yes;  // binary: yes + no = 100
+  const lp = (typeof m.last_price === "number") ? m.last_price : null;
+  const yes = sideCents(m.yes_ask, m.yes_bid, lp);
+  const no = sideCents(m.no_ask, m.no_bid, lp == null ? null : 100 - lp);
   return `${usOdds(yes)} <span class="muted">/</span> ${usOdds(no)}`;
 }
 async function loadActivity() {
