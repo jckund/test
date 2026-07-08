@@ -62,6 +62,13 @@ API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 INDEX_PATH = os.path.join(DATA_DIR, "index.json")
+ACTIVITY_PATH = os.path.join(DATA_DIR, "activity.json")
+
+# "Recent Activity" = recent trades. Kalshi's trades endpoint only filters by a
+# single market ticker, so we poll each market and merge. Kept small per market
+# and capped overall; regenerated (not committed) each run as a live feed.
+TRADES_PER_MARKET = 10
+ACTIVITY_MAX = 150
 
 # Per-market fields we compare between runs to detect a meaningful change.
 TRACKED_FIELDS = [
@@ -137,6 +144,30 @@ def _dollars(m: dict, base: str):
         return v
     d = _to_float(m.get(base + "_dollars"))
     return None if d is None else round(d, 2)
+
+
+def _dollars_to_cents(s):
+    d = _to_float(s)
+    return None if d is None else int(round(d * 100))
+
+
+def implied_yes_cents(m: dict):
+    """Best estimate of P(yes) in cents. Thinly-traded markets often have a
+    stale or zero last_price, so prefer the live yes bid/ask midpoint, then
+    the no side (100 − no), then last trade, then a single quote."""
+    yb, ya = m.get("yes_bid"), m.get("yes_ask")
+    if isinstance(yb, int) and isinstance(ya, int):
+        return round((yb + ya) / 2)
+    nb, na = m.get("no_bid"), m.get("no_ask")
+    if isinstance(nb, int) and isinstance(na, int):
+        return 100 - round((nb + na) / 2)
+    lp = m.get("last_price")
+    if isinstance(lp, int) and lp > 0:
+        return lp
+    for v in (ya, yb):
+        if isinstance(v, int):
+            return v
+    return None
 
 
 def normalize(raw: dict, ev: dict) -> dict:
@@ -250,8 +281,10 @@ def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
 
 
 def _append_series(base: str, curr: dict) -> None:
+    # Store the implied (mid-market) price so sparklines are meaningful even
+    # for thinly-traded tiers where last_price barely moves.
     point = {"t": curr["scraped_at"],
-             "p": {t: m.get("last_price") for t, m in curr["markets"].items()}}
+             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
     path = os.path.join(base, "series.jsonl")
     lines = []
     if os.path.exists(path):
@@ -338,6 +371,57 @@ def process_event(ev: dict) -> dict | None:
             "event_ticker": ev["ticker"]}
 
 
+def fetch_trades(ticker: str, limit: int = TRADES_PER_MARKET) -> list:
+    url = f"{API_BASE}/markets/trades?ticker={ticker}&limit={limit}"
+    return _get_json(url).get("trades", []) or []
+
+
+def build_activity() -> None:
+    """Merge recent trades across every tracked market into data/activity.json.
+
+    Kalshi's trades endpoint filters by a single market ticker only, so we poll
+    each market. This file is a live feed — regenerated each run and published,
+    but git-ignored so it doesn't churn history."""
+    meta = {}  # market ticker -> (tier label, driver name)
+    for ev in EVENTS:
+        snap = load_previous(os.path.join(DATA_DIR, ev["key"], "snapshot.json"))
+        if not snap:
+            continue
+        for tk, m in snap.get("markets", {}).items():
+            meta[tk] = (ev["label"], m.get("name"))
+
+    trades = {}
+    for tk, (label, driver) in meta.items():
+        try:
+            for t in fetch_trades(tk):
+                tid = t.get("trade_id")
+                if not tid:
+                    continue
+                trades[tid] = {
+                    "trade_id": tid,
+                    "tier": label,
+                    "driver": driver,
+                    "ticker": tk,
+                    "side": t.get("taker_side"),
+                    "count": int(round(_to_float(t.get("count_fp")) or 0)),
+                    "yes_price": _dollars_to_cents(t.get("yes_price_dollars")),
+                    "no_price": _dollars_to_cents(t.get("no_price_dollars")),
+                    "created_time": t.get("created_time"),
+                }
+        except Exception as e:  # noqa: BLE001 - skip a market, keep the feed
+            print(f"trades failed for {tk}: {e}", file=sys.stderr)
+
+    ordered = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
+                     reverse=True)[:ACTIVITY_MAX]
+    out = {"updated_at": datetime.now(timezone.utc).isoformat(),
+           "count": len(ordered), "trades": ordered}
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(ACTIVITY_PATH, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=2)
+        fh.write("\n")
+    print(f"activity: {len(ordered)} recent trades", file=sys.stderr)
+
+
 def build_index() -> None:
     """Write data/index.json describing every tracked tier, read from each
     tier's on-disk snapshot (so it only changes when a snapshot changes)."""
@@ -373,6 +457,10 @@ def main() -> int:
         print("No events could be scraped.", file=sys.stderr)
         return 1
     build_index()
+    try:
+        build_activity()
+    except Exception as e:  # noqa: BLE001 - activity is best-effort
+        print(f"activity build failed: {e}", file=sys.stderr)
     return 0
 
 

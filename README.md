@@ -51,8 +51,12 @@ shows every market update over time.
 [`index.html`](index.html) is a static, dependency-free dashboard that reads the
 files below and renders a driver leaderboard with **American (moneyline) odds**,
 per-driver price **sparklines**, and a live change feed, with **tabs to switch
-between tiers** (Winner / Top 3 / Top 5 / Top 10 / Top 20). It auto-refreshes
-every 60 seconds.
+between tiers** (Winner / Top 3 / Top 5 / Top 10 / Top 20) plus an **Activity**
+tab showing recent trades across all tiers. It auto-refreshes every 60 seconds.
+
+Odds and ranking use each market's **mid-market implied price** (yes bid/ask
+midpoint, falling back to the no side, then last trade), so thinly-traded tiers
+don't show gaps where the last trade is stale or zero.
 
 It's published to **GitHub Pages via GitHub Actions**: the same workflow that
 scrapes also assembles `index.html` + `data/` and deploys them, so the site
@@ -72,6 +76,7 @@ Written per tier, e.g. `data/winner/…`, `data/top10/…`:
 | `data/<tier>/series.jsonl` | Append-only aligned price series (last price per driver per run) — powers the dashboard sparklines |
 | `data/<tier>/CHANGES.md` | Human-readable change log, newest first, with a standings table |
 | `data/index.json` | List of tracked tiers (drives the dashboard tabs) |
+| `data/activity.json` | Recent trades merged across all tiers (live feed; regenerated each run, git-ignored) |
 
 ## Running it manually
 

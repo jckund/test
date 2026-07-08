@@ -138,6 +138,7 @@
 
   <div id="notice"></div>
 
+  <div id="tier-view">
   <section class="card">
     <div class="card-head">
       <h2 id="stand-title">Standings</h2>
@@ -165,6 +166,31 @@
     <div class="card-head"><h2>Recent changes</h2></div>
     <ul class="feed" id="feed"></ul>
   </section>
+  </div>
+
+  <div id="activity-view" style="display:none">
+    <section class="card">
+      <div class="card-head">
+        <h2>Recent activity</h2>
+        <span class="count" id="act-count"></span>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="l">Time</th>
+              <th class="l">Driver</th>
+              <th class="l">Tier</th>
+              <th class="l">Side</th>
+              <th>Size</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="act-rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
 
   <footer>
     Snapshots captured on a schedule by <code>scraper.py</code> via the Kalshi public API.
@@ -194,15 +220,18 @@ function usOdds(c) {
   return (r > 0 ? "+" : "") + r;
 }
 
-// Representative price (in cents) for one side of a binary market: the
-// bid/ask midpoint, falling back to whichever quote exists, then a fallback.
-function sideCents(bid, ask, fallback) {
-  const b = typeof bid === "number" ? bid : null;
-  const a = typeof ask === "number" ? ask : null;
-  if (b != null && a != null) return Math.round((b + a) / 2);
-  if (a != null) return a;
-  if (b != null) return b;
-  return (typeof fallback === "number") ? fallback : null;
+// Best estimate of P(yes) in cents. Thinly-traded tiers often have a stale or
+// zero last_price, so prefer the live yes bid/ask midpoint, then the no side
+// (100 − no), then last trade, then a single quote.
+function impliedYes(m) {
+  const yb = m.yes_bid, ya = m.yes_ask;
+  if (typeof yb === "number" && typeof ya === "number") return Math.round((yb + ya) / 2);
+  const nb = m.no_bid, na = m.no_ask;
+  if (typeof nb === "number" && typeof na === "number") return 100 - Math.round((nb + na) / 2);
+  if (typeof m.last_price === "number" && m.last_price > 0) return m.last_price;
+  if (typeof ya === "number") return ya;
+  if (typeof yb === "number") return yb;
+  return null;
 }
 
 function sparkSVG(vals) {
@@ -268,15 +297,22 @@ function latestMoves(history) {
 function buildTabs() {
   const tabs = $("tabs");
   tabs.innerHTML = "";
-  for (const m of INDEX.markets) {
+  const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
+  items.push({ key: "activity", label: "Activity" });
+  for (const it of items) {
     const b = document.createElement("button");
     b.className = "tab";
     b.role = "tab";
-    b.textContent = m.label;
-    b.setAttribute("aria-selected", String(m.key === currentKey));
-    b.onclick = () => selectTier(m.key);
+    b.textContent = it.label;
+    b.setAttribute("aria-selected", String(it.key === currentKey));
+    b.onclick = () => selectTier(it.key);
     tabs.appendChild(b);
   }
+}
+
+function showActivity(on) {
+  $("tier-view").style.display = on ? "none" : "";
+  $("activity-view").style.display = on ? "" : "none";
 }
 
 function tierMeta(key) {
@@ -287,6 +323,8 @@ async function selectTier(key) {
   currentKey = key;
   location.hash = key;
   buildTabs();
+  if (key === "activity") { showActivity(true); return loadActivity(); }
+  showActivity(false);
   const meta = tierMeta(key);
   const base = "data/" + key;
   try {
@@ -312,7 +350,7 @@ function render(snapshot, history, seriesPoints, meta) {
   $("odds-col").textContent = oddsLabel + " odds";
 
   const markets = Object.values(snapshot.markets || {});
-  markets.sort((a, b) => (b.last_price ?? -1) - (a.last_price ?? -1));
+  markets.sort((a, b) => (impliedYes(b) ?? -1) - (impliedYes(a) ?? -1));
   const moves = latestMoves(history);
   const series = seriesByTicker(seriesPoints || []);
 
@@ -322,7 +360,7 @@ function render(snapshot, history, seriesPoints, meta) {
     rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
   }
   markets.forEach((m, i) => {
-    const p = (typeof m.last_price === "number") ? m.last_price : null;
+    const p = impliedYes(m);
     const mv = moves[m.ticker];
     let delta = "";
     if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
@@ -338,7 +376,7 @@ function render(snapshot, history, seriesPoints, meta) {
         <div class="prob">
           ${delta}
           <div class="meter"><i style="width:${p ?? 0}%"></i></div>
-          <span class="pct" title="${p != null ? p + "% implied" : ""}">${usOdds(m.last_price)}</span>
+          <span class="pct" title="${p != null ? p + "% implied" : ""}">${usOdds(p)}</span>
         </div>
       </td>
       <td class="spark-cell">${sparkSVG((series[m.ticker] || []).slice(-24))}</td>
@@ -385,11 +423,48 @@ function renderFeed(history) {
 }
 
 function yesNoOdds(m) {
-  const yes = sideCents(m.yes_bid, m.yes_ask, m.last_price);
-  let no = sideCents(m.no_bid, m.no_ask, null);
-  if (no == null && yes != null) no = 100 - yes;  // binary: no ≈ 100 − yes
+  const yes = impliedYes(m);
+  const no = (yes == null) ? null : 100 - yes;  // binary: yes + no = 100
   return `${usOdds(yes)} <span class="muted">/</span> ${usOdds(no)}`;
 }
+async function loadActivity() {
+  try {
+    renderActivity(await loadJSON("data/activity.json"));
+  } catch (e) {
+    $("act-rows").innerHTML = `<tr><td colspan="6" class="empty">No activity feed yet.</td></tr>`;
+    $("mcount").textContent = "";
+    $("act-count").textContent = "";
+    $("updated").textContent = "Awaiting activity";
+  }
+}
+
+function renderActivity(data) {
+  const trades = (data && data.trades) || [];
+  $("updated").textContent = "Updated " + relTime(data && data.updated_at);
+  $("updated").title = (data && data.updated_at) || "";
+  $("mcount").textContent = trades.length + " recent trades";
+  $("act-count").textContent = trades.length + " trades";
+  const tb = $("act-rows");
+  tb.innerHTML = "";
+  if (!trades.length) {
+    tb.innerHTML = `<tr><td colspan="6" class="empty">No recent trades.</td></tr>`;
+    return;
+  }
+  for (const t of trades) {
+    const isNo = t.side === "no";
+    const price = isNo ? t.no_price : t.yes_price;
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="l num muted" title="${t.created_time || ""}">${relTime(t.created_time)}</td>
+      <td class="l driver">${escapeHtml(t.driver || t.ticker)}</td>
+      <td class="l"><span class="pill">${escapeHtml(t.tier || "")}</span></td>
+      <td class="l"><span class="delta ${isNo ? "down" : "up"}">${isNo ? "No" : "Yes"}</span></td>
+      <td class="num">${fmtInt(t.count)}</td>
+      <td class="num">${(typeof price === "number") ? price + "¢" : "—"} <span class="muted">${usOdds(price)}</span></td>`;
+    tb.appendChild(tr);
+  }
+}
+
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
 function fmtVal(v) { return (v == null) ? "—" : v; }
 function escapeHtml(s) {
@@ -411,8 +486,10 @@ async function refresh() {
     if (!INDEX.markets || !INDEX.markets.length) { showEmpty(); return; }
     $("notice").innerHTML = "";
     $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
+    $("src").href = INDEX.source_url || "https://kalshi.com";
     const wanted = (location.hash || "").replace("#", "");
-    if (!currentKey) currentKey = INDEX.markets.some((m) => m.key === wanted) ? wanted : INDEX.markets[0].key;
+    const validKeys = INDEX.markets.map((m) => m.key).concat("activity");
+    if (!currentKey) currentKey = validKeys.includes(wanted) ? wanted : INDEX.markets[0].key;
     await selectTier(currentKey);
   } catch (e) {
     showEmpty();
