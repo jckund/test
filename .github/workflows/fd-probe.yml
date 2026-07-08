@@ -1,8 +1,7 @@
 name: FanDuel reachability probe
 
-# TEMPORARY feasibility probe. Checks candidate paid/freemium odds APIs for
-# NASCAR + FanDuel coverage and whether they offer a self-serve free key.
-# Read-only. Delete this workflow once we know.
+# TEMPORARY feasibility probe. Confirms whether SportsGameOdds (free tier) covers
+# NASCAR, and inspects its leagues catalog. Read-only. Delete once we know.
 
 on:
   workflow_dispatch: {}
@@ -14,10 +13,10 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Survey odds-API providers for NASCAR coverage
+      - name: Confirm SportsGameOdds NASCAR coverage
         run: |
           python3 - <<'PY'
-          import urllib.request, urllib.error
+          import urllib.request, urllib.error, re
 
           def get(url):
               req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"})
@@ -25,31 +24,31 @@ jobs:
                   with urllib.request.urlopen(req, timeout=25) as r:
                       return r.status, r.read().decode("utf-8", "replace")
               except urllib.error.HTTPError as e:
-                  return e.code, (e.read().decode("utf-8", "replace")[:400] if e.fp else "")
+                  return e.code, (e.read().decode("utf-8", "replace")[:600] if e.fp else "")
               except Exception as e:
                   return None, f"{type(e).__name__}: {e}"
 
-          KW = ["nascar", "motorsport", "motor racing", "auto racing", "fanduel",
-                "free trial", "free tier", "sign up", "get api key", "pricing"]
+          # Grep the full docs bundle for any motorsport signal.
+          st, body = get("https://sportsgameodds.com/docs/")
+          print("docs status", st, "len", len(body) if body else 0)
+          if body:
+              for kw in ("nascar", "motor", "racing", "formula", "f1", "indycar", "auto_racing"):
+                  idxs = [m.start() for m in re.finditer(kw, body.lower())][:3]
+                  if idxs:
+                      print(f"  '{kw}' x{len(idxs)}:")
+                      for i in idxs:
+                          print("     ...", body[max(0,i-50):i+50].replace("\n"," "))
+                  else:
+                      print(f"  '{kw}': not found")
 
-          targets = [
-              ("SportsGameOdds docs",     "https://sportsgameodds.com/docs/"),
-              ("SportsGameOdds leagues",  "https://sportsgameodds.com/docs/data/leagues/"),
-              ("SportsGameOdds /sports",  "https://api.sportsgameodds.com/v2/sports/"),
-              ("OpticOdds site",          "https://opticodds.com/"),
-              ("OpticOdds dev reference", "https://developer.opticodds.com/reference/getting-started"),
-              ("OpticOdds /sports",       "https://api.opticodds.com/api/v3/sports"),
-              ("OddsJam API page",        "https://oddsjam.com/odds-api"),
-              ("OddsBlaze sports",        "https://data.oddsblaze.com/v1/sports"),
-          ]
-          for label, url in targets:
+          # Try public leagues/sports catalog endpoints (may need a key).
+          for url in ("https://api.sportsgameodds.com/v2/leagues/",
+                      "https://api.sportsgameodds.com/v2/sports/",
+                      "https://sportsgameodds.com/docs/data/leagues",
+                      "https://sportsgameodds.com/docs/guides/leagues"):
               st, body = get(url)
-              blow = (body or "").lower()
-              hits = [k for k in KW if k in blow]
-              print(f"\n### {label}\n  {url}\n  status={st} len={len(body) if body else 0}")
-              print("  keywords:", ", ".join(hits) if hits else "(none)")
-              # show a snippet around 'nascar' if present
-              i = blow.find("nascar")
-              if i >= 0:
-                  print("  nascar ctx:", (body[max(0,i-70):i+70]).replace("\n"," "))
+              b = (body or "").lower()
+              print(f"\n{url}\n  status={st} len={len(body) if body else 0} "
+                    f"nascar={'Y' if 'nascar' in b else 'n'} motor={'Y' if 'motor' in b else 'n'}")
+              print("  ", (body or "")[:200].replace("\n", " "))
           PY
