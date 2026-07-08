@@ -184,6 +184,7 @@
               <th class="l">Side</th>
               <th>Size</th>
               <th>Price</th>
+              <th>Value</th>
             </tr>
           </thead>
           <tbody id="act-rows"></tbody>
@@ -431,7 +432,7 @@ async function loadActivity() {
   try {
     renderActivity(await loadJSON("data/activity.json"));
   } catch (e) {
-    $("act-rows").innerHTML = `<tr><td colspan="6" class="empty">No activity feed yet.</td></tr>`;
+    $("act-rows").innerHTML = `<tr><td colspan="7" class="empty">No activity feed yet.</td></tr>`;
     $("mcount").textContent = "";
     $("act-count").textContent = "";
     $("updated").textContent = "Awaiting activity";
@@ -447,12 +448,14 @@ function renderActivity(data) {
   const tb = $("act-rows");
   tb.innerHTML = "";
   if (!trades.length) {
-    tb.innerHTML = `<tr><td colspan="6" class="empty">No recent trades.</td></tr>`;
+    tb.innerHTML = `<tr><td colspan="7" class="empty">No recent trades.</td></tr>`;
     return;
   }
   for (const t of trades) {
     const isNo = t.side === "no";
     const price = isNo ? t.no_price : t.yes_price;
+    const value = (typeof price === "number" && typeof t.count === "number")
+      ? t.count * price / 100 : null;
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="l num muted" title="${t.created_time || ""}">${relTime(t.created_time)}</td>
@@ -460,12 +463,18 @@ function renderActivity(data) {
       <td class="l"><span class="pill">${escapeHtml(t.tier || "")}</span></td>
       <td class="l"><span class="delta ${isNo ? "down" : "up"}">${isNo ? "No" : "Yes"}</span></td>
       <td class="num">${fmtInt(t.count)}</td>
-      <td class="num">${(typeof price === "number") ? price + "¢" : "—"} <span class="muted">${usOdds(price)}</span></td>`;
+      <td class="num">${(typeof price === "number") ? price + "¢" : "—"} <span class="muted">${usOdds(price)}</span></td>
+      <td class="num">${fmtUSD(value)}</td>`;
     tb.appendChild(tr);
   }
 }
 
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
+function fmtUSD(v) {
+  if (typeof v !== "number" || isNaN(v)) return "—";
+  const dec = v >= 1000 ? 0 : 2;
+  return "$" + v.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
+}
 function fmtVal(v) { return (v == null) ? "—" : v; }
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, (c) =>
