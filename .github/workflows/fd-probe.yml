@@ -1,0 +1,55 @@
+name: FanDuel reachability probe
+
+# TEMPORARY feasibility probe. Checks whether a GitHub-hosted runner can reach
+# FanDuel's public odds endpoints (the session egress proxy blocks them). Safe,
+# read-only. Delete this workflow once we know the answer.
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/reference-external-resource-apvomh]
+    paths: [.github/workflows/fd-probe.yml]
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe FanDuel endpoints
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error
+
+          UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/125.0 Safari/537.36")
+          AK = "FhMFpcPWXMeyZxOx"  # FanDuel public frontend API key
+
+          def get(url, label):
+              req = urllib.request.Request(url, headers={
+                  "User-Agent": UA,
+                  "Accept": "application/json,text/html,*/*",
+                  "Referer": "https://sportsbook.fanduel.com/",
+                  "X-Requested-With": "XMLHttpRequest",
+              })
+              try:
+                  with urllib.request.urlopen(req, timeout=25) as r:
+                      body = r.read(4000).decode("utf-8", "replace")
+                      print(f"[OK]   {label}: HTTP {r.status}, {len(body)}B preview")
+                      print("       ", body[:300].replace("\n", " "))
+                      return body
+              except urllib.error.HTTPError as e:
+                  print(f"[HTTP] {label}: {e.code} {e.reason}")
+              except Exception as e:
+                  print(f"[ERR]  {label}: {type(e).__name__}: {e}")
+              return None
+
+          print("=== HTML page ===")
+          get("https://sportsbook.fanduel.com/motorsport", "html /motorsport")
+
+          print("\n=== sbapi content-managed-page (region x pageId) ===")
+          for region in ("nj", "pa", "va"):
+              base = f"https://sbapi.{region}.sportsbook.fanduel.com/api"
+              for pid in ("motor-racing", "nascar", "motorsport"):
+                  url = (f"{base}/content-managed-page?page=CUSTOM&customPageId={pid}"
+                         f"&pbHorizontal=false&_ak={AK}&timezone=America%2FNew_York")
+                  get(url, f"{region}/{pid}")
+          PY
