@@ -47,6 +47,16 @@
   .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
     font-size: 13px; color: var(--ink-2); margin-bottom: 18px; }
   .meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .refresh { appearance: none; font: inherit; font-size: 13px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+    color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+    border-radius: 999px; padding: 4px 12px; }
+  .refresh:hover { background: var(--surface-2); }
+  .refresh:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .refresh[disabled] { cursor: default; color: var(--ink-2); }
+  .refresh .ri { display: inline-block; }
+  .refresh[disabled] .ri { animation: spin .7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
   .live { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; color: var(--ink); }
   .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
   @media (prefers-reduced-motion: no-preference) {
@@ -130,6 +140,14 @@
     <div class="meta">
       <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
       <span id="mcount"></span>
+      <button id="refresh" class="refresh" type="button" title="Reload the latest saved snapshot (no new prices from Kalshi)">
+        <span class="ri" aria-hidden="true">↻</span> Refresh
+      </button>
+      <a id="runscraper" class="refresh" href="https://github.com/jckund/test/actions/workflows/track.yml"
+         target="_blank" rel="noopener"
+         title="Fetch brand-new prices from Kalshi: opens GitHub Actions, then click 'Run workflow'. Takes ~1 min; the page updates automatically once it commits.">
+        <span aria-hidden="true">⟳</span> Fetch new prices ↗
+      </a>
       <a id="src" href="#" target="_blank" rel="noopener">View on Kalshi ↗</a>
     </div>
   </header>
@@ -505,8 +523,28 @@ async function refresh() {
   }
 }
 
+// Manual refresh: reload the latest snapshot on demand and restart the
+// auto-refresh timer so the next tick is a full interval away.
+let autoTimer = null;
+function scheduleAuto() {
+  if (autoTimer) clearInterval(autoTimer);
+  autoTimer = setInterval(refresh, 60000);
+}
+async function manualRefresh() {
+  const btn = $("refresh");
+  if (btn.disabled) return;
+  btn.disabled = true;
+  try {
+    await refresh();
+  } finally {
+    btn.disabled = false;
+    scheduleAuto();
+  }
+}
+$("refresh").addEventListener("click", manualRefresh);
+
 refresh();
-setInterval(refresh, 60000);
+scheduleAuto();
 </script>
 </body>
 </html>
