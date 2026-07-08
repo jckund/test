@@ -1,7 +1,7 @@
 name: FanDuel reachability probe
 
-# TEMPORARY. Extracts the NASCAR race-winner odds from FanDuel via headless
-# browser and prints the JSON shape so we can write the real parser. Delete after.
+# TEMPORARY. Captures FanDuel's own content-managed-page response bodies and digs
+# out the NASCAR winner market + JSON shape. Delete after.
 
 on:
   workflow_dispatch: {}
@@ -16,16 +16,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
-      - name: Install Playwright + Chromium
-        run: |
+      - run: |
           npm i playwright@1.56.1
           npx playwright install --with-deps chromium
-      - name: Extract NASCAR winner odds
+      - name: Capture + dissect FanDuel market JSON
         run: |
           node - <<'JS'
           const { chromium } = require("playwright");
-          const AK = "FhMFpcPWXMeyZxOx";
-          const API = `https://api.sportsbook.fanduel.com/sbapi/content-managed-page?page=SPORT&eventTypeId=8&_ak=${AK}&timezone=America/New_York`;
           (async () => {
             const b = await chromium.launch();
             const ctx = await b.newContext({
@@ -33,48 +30,55 @@ jobs:
               locale: "en-US", timezoneId: "America/New_York",
             });
             const p = await ctx.newPage();
-            // Visit the page first so PerimeterX sets its clearance cookies.
-            await p.goto("https://sportsbook.fanduel.com/motorsport", { waitUntil: "domcontentloaded", timeout: 60000 }).catch(()=>{});
-            await p.waitForTimeout(5000);
-            // Now fetch the API JSON from within the page context (carries cookies).
-            const data = await p.evaluate(async (url) => {
-              const r = await fetch(url, { headers: { "Accept": "application/json" } });
-              return { status: r.status, json: await r.json().catch(() => null) };
-            }, API);
-            console.log("API status:", data.status);
-            const j = data.json;
-            if (!j) { console.log("no json"); await b.close(); return; }
-            console.log("top-level keys:", Object.keys(j));
-            const att = j.attachments || {};
-            const events = att.events || {};
-            const markets = att.markets || {};
-            console.log("events:", Object.keys(events).length, "markets:", Object.keys(markets).length);
-
-            // List events mentioning NASCAR / Cup.
-            console.log("\n=== events (name / eventTypeId) ===");
-            for (const [id, e] of Object.entries(events)) {
-              if (/nascar|cup|quaker|race/i.test(e.name || "")) console.log(" ", id, "|", e.name);
-            }
-            // Find markets that look like the outright race winner + dump runners+odds.
-            console.log("\n=== candidate winner markets ===");
-            let shown = 0;
-            for (const [id, m] of Object.entries(markets)) {
-              const nm = m.marketName || m.marketType || "";
-              if (!/winner|to win|outright/i.test(nm)) continue;
-              const ev = events[m.eventId];
-              if (ev && !/nascar|cup|quaker|race/i.test(ev.name || "")) continue;
-              console.log(`\n[market ${id}] "${nm}"  event="${ev ? ev.name : m.eventId}"  runners=${(m.runners||[]).length}`);
-              for (const r of (m.runners || []).slice(0, 6)) {
-                const o = r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds;
-                console.log("    -", r.runnerName, "|", o ? o.americanOdds : JSON.stringify(Object.keys(r)));
+            const bodies = [];
+            p.on("response", async (r) => {
+              const u = r.url();
+              if (/content-managed-page|getMarketPrices/.test(u)) {
+                try { bodies.push({ url: u, json: await r.json() }); } catch {}
               }
-              if (++shown >= 3) break;
+            });
+            await p.goto("https://sportsbook.fanduel.com/motorsport", { waitUntil: "networkidle", timeout: 60000 }).catch(()=>{});
+            await p.waitForTimeout(6000);
+            console.log("captured bodies:", bodies.length);
+
+            // Merge all attachments.
+            const events = {}, markets = {};
+            for (const bod of bodies) {
+              const att = (bod.json && bod.json.attachments) || {};
+              Object.assign(events, att.events || {});
+              Object.assign(markets, att.markets || {});
             }
-            if (!shown) {
-              // Show the shape of one arbitrary market so we can see field names.
-              const first = Object.values(markets)[0];
-              console.log("\nno winner market matched; sample market shape:");
-              console.log(JSON.stringify(first, null, 1).slice(0, 1200));
+            console.log("merged events:", Object.keys(events).length, "markets:", Object.keys(markets).length);
+
+            console.log("\n=== NASCAR-ish events ===");
+            for (const [id, e] of Object.entries(events))
+              if (/nascar|cup|quaker|xfinity|truck|race/i.test(e.name||"")) console.log("  ", id, "|", e.name);
+
+            // Distinct market names to understand vocabulary.
+            const names = {};
+            for (const m of Object.values(markets)) { const n=m.marketName||m.marketType||"?"; names[n]=(names[n]||0)+1; }
+            console.log("\n=== market names (top) ===");
+            Object.entries(names).sort((a,b)=>b[1]-a[1]).slice(0,25).forEach(([n,c])=>console.log(`  ${c}  ${n}`));
+
+            // Find a winner-ish market and dump its full shape + runner shape.
+            let target=null;
+            for (const m of Object.values(markets)) {
+              if (/winner|to win|outright/i.test(m.marketName||m.marketType||"")) { target=m; break; }
+            }
+            if (target) {
+              console.log("\n=== TARGET winner market ===");
+              console.log("marketName:", target.marketName, "| marketType:", target.marketType, "| runners:", (target.runners||[]).length);
+              const {runners, ...meta} = target;
+              console.log("market meta keys:", Object.keys(meta));
+              console.log("SAMPLE RUNNER:\n", JSON.stringify((runners||[])[0], null, 1).slice(0,900));
+              console.log("\nALL RUNNERS (name | odds):");
+              for (const r of (runners||[])) {
+                const o = r.winRunnerOdds && (r.winRunnerOdds.americanDisplayOdds||{}).americanOdds;
+                console.log("   ", (r.runnerName||"?").padEnd(24), o||"?");
+              }
+            } else {
+              console.log("\nno winner market; dumping one sample market:");
+              console.log(JSON.stringify(Object.values(markets)[0], null, 1).slice(0,1500));
             }
             await b.close();
           })().catch(e => { console.error("FATAL", e); process.exit(1); });
