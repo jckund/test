@@ -35,8 +35,13 @@ shows every market update over time.
 [`index.html`](index.html) is a static, dependency-free dashboard that reads the
 files below and renders a driver leaderboard with **American (moneyline) odds**,
 per-driver price **sparklines**, and a live change feed. It auto-refreshes every
-60 seconds. Serve it with GitHub Pages (Settings → Pages → deploy from this
-branch, root folder); it updates itself as the scraper commits new data.
+60 seconds.
+
+It's published to **GitHub Pages via GitHub Actions**: the same workflow that
+scrapes also assembles `index.html` + `data/` and deploys them, so the site
+updates on every run. One-time setup: repo **Settings → Pages → Build and
+deployment → Source → GitHub Actions**. The live URL is then
+`https://<owner>.github.io/<repo>/`.
 
 ## Output files
 

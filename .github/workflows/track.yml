@@ -1,7 +1,7 @@
 name: Track Kalshi NASCAR market
 
-# Scrapes the Kalshi NASCAR race market and commits any changes back to the
-# repo, so git history becomes a full change log for the market.
+# Scrapes the Kalshi NASCAR race market, commits any changes back to the repo
+# (git history == change log), then publishes the dashboard to GitHub Pages.
 #
 # NOTE: GitHub-hosted runners have unrestricted outbound internet, which is why
 # the scrape runs here rather than inside a Claude Code session (whose egress
@@ -13,18 +13,31 @@ on:
     # under load; this is the practical floor for a market tracker.
     - cron: "*/15 * * * *"
   workflow_dispatch: {}  # allow manual runs from the Actions tab
+  push:
+    # Redeploy the site when the page or scraper code changes. (Data commits
+    # made by this workflow's bot token do NOT re-trigger it, so no loop.)
+    branches: [claude/nascar-page-scraper-mwi55a]
+    paths:
+      - index.html
+      - scraper.py
+      - .github/workflows/track.yml
 
-# Prevent overlapping runs from racing on the same commit.
+# Prevent overlapping runs from racing on the same commit / deployment.
 concurrency:
   group: track-kalshi
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: write   # commit scraped data back to the repo
+  pages: write      # deploy to GitHub Pages
+  id-token: write   # required by actions/deploy-pages
 
 jobs:
-  scrape:
+  scrape-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -46,17 +59,35 @@ jobs:
           git add -A data/
           if git diff --cached --quiet -- data/; then
             echo "No market changes; nothing to commit."
-            exit 0
+          else
+            git commit -m "data: market update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            # Rebase in case a concurrent/previous run pushed first, then push.
+            pushed=false
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; pushed=true; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+            if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
           fi
-          git commit -m "data: market update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          # Rebase in case a concurrent/previous run pushed first, then push.
-          for i in 1 2 3 4; do
-            if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
-              echo "Pushed."
-              exit 0
-            fi
-            echo "Push failed; retrying in $((2**i))s"
-            sleep $((2**i))
-          done
-          echo "Failed to push after retries" >&2
-          exit 1
+
+      - name: Assemble site
+        run: |
+          rm -rf _site && mkdir -p _site
+          cp index.html _site/
+          cp -r data _site/data
+          # Don't publish the internal marker file.
+          rm -f _site/data/.gitkeep
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
