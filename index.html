@@ -140,9 +140,14 @@
     <div class="meta">
       <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
       <span id="mcount"></span>
-      <button id="refresh" class="refresh" type="button" title="Reload the latest snapshot">
+      <button id="refresh" class="refresh" type="button" title="Reload the latest saved snapshot (no new prices from Kalshi)">
         <span class="ri" aria-hidden="true">↻</span> Refresh
       </button>
+      <a id="runscraper" class="refresh" href="https://github.com/jckund/test/actions/workflows/track.yml"
+         target="_blank" rel="noopener"
+         title="Fetch brand-new prices from Kalshi: opens GitHub Actions, then click 'Run workflow'. Takes ~1 min; the page updates automatically once it commits.">
+        <span aria-hidden="true">⟳</span> Fetch new prices ↗
+      </a>
       <a id="src" href="#" target="_blank" rel="noopener">View on Kalshi ↗</a>
     </div>
   </header>
