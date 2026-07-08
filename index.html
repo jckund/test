@@ -151,7 +151,7 @@
             <th class="l">Driver</th>
             <th id="odds-col">Odds</th>
             <th>Trend</th>
-            <th>Yes odds (bid / ask)</th>
+            <th>Yes / No odds</th>
             <th>Volume</th>
             <th>OI</th>
           </tr>
@@ -192,6 +192,17 @@ function usOdds(c) {
   const odds = p > 0.5 ? -(100 * p) / (1 - p) : (100 * (1 - p)) / p;
   const r = Math.round(odds);
   return (r > 0 ? "+" : "") + r;
+}
+
+// Representative price (in cents) for one side of a binary market: the
+// bid/ask midpoint, falling back to whichever quote exists, then a fallback.
+function sideCents(bid, ask, fallback) {
+  const b = typeof bid === "number" ? bid : null;
+  const a = typeof ask === "number" ? ask : null;
+  if (b != null && a != null) return Math.round((b + a) / 2);
+  if (a != null) return a;
+  if (b != null) return b;
+  return (typeof fallback === "number") ? fallback : null;
 }
 
 function sparkSVG(vals) {
@@ -331,7 +342,7 @@ function render(snapshot, history, seriesPoints, meta) {
         </div>
       </td>
       <td class="spark-cell">${sparkSVG((series[m.ticker] || []).slice(-24))}</td>
-      <td class="num">${usOdds(m.yes_bid)} <span class="muted">/</span> ${usOdds(m.yes_ask)}</td>
+      <td class="num">${yesNoOdds(m)}</td>
       <td class="num">${fmtInt(m.volume)}</td>
       <td class="num">${fmtInt(m.open_interest)}</td>`;
     rows.appendChild(tr);
@@ -373,6 +384,12 @@ function renderFeed(history) {
   }
 }
 
+function yesNoOdds(m) {
+  const yes = sideCents(m.yes_bid, m.yes_ask, m.last_price);
+  let no = sideCents(m.no_bid, m.no_ask, null);
+  if (no == null && yes != null) no = 100 - yes;  // binary: no ≈ 100 − yes
+  return `${usOdds(yes)} <span class="muted">/</span> ${usOdds(no)}`;
+}
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
 function fmtVal(v) { return (v == null) ? "—" : v; }
 function escapeHtml(s) {
