@@ -240,7 +240,7 @@
             <tr>
               <th class="l">#</th>
               <th class="l">Driver</th>
-              <th>Kalshi odds</th>
+              <th>Kalshi (Yes / No)</th>
               <th>FanDuel odds</th>
               <th>Edge</th>
             </tr>
@@ -643,7 +643,7 @@ async function renderCompare() {
     const snap = await loadJSON("data/" + compareTier + "/snapshot.json");
     for (const m of Object.values(snap.markets || {})) {
       const p = priceYes(m);
-      if (p != null) kal[normName(m.name)] = { name: m.name, cents: p, prob: p / 100 };
+      if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: p / 100 };
     }
   } catch { /* leave Kalshi side empty */ }
 
@@ -659,7 +659,8 @@ async function renderCompare() {
     const fp = dd ? dd.implied : null; // raw implied from the posted line
     merged.push({
       name: (kal[k] && kal[k].name) || (dd && dd.name) || k,
-      kCents: kal[k] ? kal[k].cents : null,
+      kYes: kal[k] ? kal[k].yes : null,
+      kNo: kal[k] ? kal[k].no : null,
       american: dd ? dd.american : null,
       kp,
       // Edge = Kalshi (truth) − FanDuel implied, in points. Positive means
@@ -687,7 +688,7 @@ async function renderCompare() {
     tr.innerHTML = `
       <td class="l rank ${i === 0 && r.edge != null && r.edge > 0 ? "top" : ""}">${i + 1}</td>
       <td class="l driver">${escapeHtml(r.name)}</td>
-      <td class="num">${r.kCents == null ? dash : usOdds(r.kCents)}</td>
+      <td class="num">${r.kYes == null && r.kNo == null ? dash : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`}</td>
       <td class="num">${r.american == null ? dash : usAmerican(r.american)}</td>
       <td class="num">${edgeCell}</td>`;
     rows.appendChild(tr);
