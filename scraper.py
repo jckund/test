@@ -107,6 +107,42 @@ def fetch_event() -> dict:
 # Normalization
 # ---------------------------------------------------------------------------
 
+def _to_float(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
+def _price_cents(m: dict, base: str):
+    """Price in integer cents. Kalshi's newer schema returns dollar strings
+    (e.g. ``last_price_dollars: "0.0100"``); older/other endpoints return
+    integer cents directly (``last_price``). Support both."""
+    v = m.get(base)
+    if isinstance(v, (int, float)):
+        return int(round(v))
+    d = _to_float(m.get(base + "_dollars"))
+    return None if d is None else int(round(d * 100))
+
+
+def _count(m: dict, base: str):
+    """Contract count. Newer schema uses fixed-point strings (``volume_fp``);
+    older uses plain integers (``volume``)."""
+    v = m.get(base)
+    if isinstance(v, (int, float)):
+        return int(round(v))
+    fp = _to_float(m.get(base + "_fp"))
+    return None if fp is None else int(round(fp))
+
+
+def _dollars(m: dict, base: str):
+    v = m.get(base)
+    if isinstance(v, (int, float)):
+        return v
+    d = _to_float(m.get(base + "_dollars"))
+    return None if d is None else round(d, 2)
+
+
 def normalize(raw: dict) -> dict:
     """Reduce the raw API payload to the fields we track."""
     event = raw.get("event", {}) or {}
@@ -120,17 +156,17 @@ def normalize(raw: dict) -> dict:
         norm_markets[ticker] = {
             "ticker": ticker,
             # For NASCAR "which driver wins", the driver name lives here.
-            "name": m.get("yes_sub_title") or m.get("subtitle") or m.get("title"),
+            "name": m.get("yes_sub_title") or m.get("no_sub_title") or m.get("title"),
             "status": m.get("status"),
-            "last_price": m.get("last_price"),
-            "yes_bid": m.get("yes_bid"),
-            "yes_ask": m.get("yes_ask"),
-            "no_bid": m.get("no_bid"),
-            "no_ask": m.get("no_ask"),
-            "volume": m.get("volume"),
-            "volume_24h": m.get("volume_24h"),
-            "open_interest": m.get("open_interest"),
-            "liquidity": m.get("liquidity"),
+            "last_price": _price_cents(m, "last_price"),
+            "yes_bid": _price_cents(m, "yes_bid"),
+            "yes_ask": _price_cents(m, "yes_ask"),
+            "no_bid": _price_cents(m, "no_bid"),
+            "no_ask": _price_cents(m, "no_ask"),
+            "volume": _count(m, "volume"),
+            "volume_24h": _count(m, "volume_24h"),
+            "open_interest": _count(m, "open_interest"),
+            "liquidity": _dollars(m, "liquidity"),
         }
 
     return {
