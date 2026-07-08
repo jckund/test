@@ -124,10 +124,12 @@
   .muted { color: var(--ink-2); }
 
   .prob { display: flex; align-items: center; gap: 10px; justify-content: flex-end; }
-  .prob .pct { font-family: var(--mono); font-weight: 700; width: 46px; text-align: right; }
-  .meter { flex: 1; height: 8px; max-width: 130px; background: var(--surface-2);
+  .prob .pct { font-family: var(--mono); font-weight: 700; width: 56px; text-align: right; }
+  .meter { flex: 1; height: 8px; max-width: 110px; background: var(--surface-2);
            border-radius: 999px; overflow: hidden; }
   .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .spark-cell { width: 92px; }
+  .spark { display: block; }
   .delta { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
   .delta.up { color: var(--pos); }
   .delta.down { color: var(--neg); }
@@ -169,7 +171,7 @@
 
   <section class="card">
     <div class="card-head">
-      <h2>Standings — implied win probability</h2>
+      <h2>Standings — win odds (American)</h2>
       <span class="count" id="stand-count"></span>
     </div>
     <div class="scroll">
@@ -178,8 +180,9 @@
           <tr>
             <th class="l">#</th>
             <th class="l">Driver</th>
-            <th>Implied</th>
-            <th>Yes bid / ask</th>
+            <th>Win odds</th>
+            <th>Trend</th>
+            <th>Yes odds (bid / ask)</th>
             <th>Volume</th>
             <th>OI</th>
           </tr>
@@ -203,10 +206,43 @@
 <script>
 const SNAPSHOT_URL = "data/snapshot.json";
 const HISTORY_URL = "data/history.jsonl";
+const SERIES_URL = "data/series.jsonl";
 
 const $ = (id) => document.getElementById(id);
 const cents = (v) => (typeof v === "number") ? v + "¢" : "—";
 const pctOf = (v) => (typeof v === "number") ? v : null;
+
+// A Kalshi price in cents equals the implied probability in percent.
+// Convert it to American ("moneyline") odds.
+function usOdds(c) {
+  if (typeof c !== "number" || c <= 0 || c >= 100) return "—";
+  const p = c / 100;
+  const odds = p > 0.5 ? -(100 * p) / (1 - p) : (100 * (1 - p)) / p;
+  const r = Math.round(odds);
+  return (r > 0 ? "+" : "") + r;
+}
+
+// Compact trend line from a list of price points (in cents).
+function sparkSVG(vals) {
+  const pts = vals.filter((v) => typeof v === "number");
+  if (pts.length < 2) return `<span class="muted">—</span>`;
+  const w = 84, h = 22, pad = 2;
+  const min = Math.min(...pts), max = Math.max(...pts);
+  const span = (max - min) || 1;
+  const step = (w - pad * 2) / (pts.length - 1);
+  const coords = pts.map((v, i) => [
+    pad + i * step,
+    pad + (h - pad * 2) * (1 - (v - min) / span),
+  ]);
+  const d = coords.map((c, i) => (i ? "L" : "M") + c[0].toFixed(1) + " " + c[1].toFixed(1)).join(" ");
+  const net = pts[pts.length - 1] - pts[0];
+  const col = net > 0 ? "var(--pos)" : net < 0 ? "var(--neg)" : "var(--ink-2)";
+  const [ex, ey] = coords[coords.length - 1];
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="price trend">
+      <path d="${d}" fill="none" stroke="${col}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${ex.toFixed(1)}" cy="${ey.toFixed(1)}" r="2" fill="${col}"/>
+    </svg>`;
+}
 
 function relTime(iso) {
   const t = Date.parse(iso);
@@ -223,13 +259,24 @@ async function loadJSON(url) {
   if (!r.ok) throw new Error(url + " " + r.status);
   return r.json();
 }
-async function loadHistory(url) {
+async function loadLines(url) {
   const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
   if (!r.ok) return [];
   const text = await r.text();
   return text.trim().split("\n").filter(Boolean).map((l) => {
     try { return JSON.parse(l); } catch { return null; }
   }).filter(Boolean);
+}
+
+// Build ticker -> [price, price, ...] from the series file.
+function seriesByTicker(points) {
+  const out = {};
+  for (const pt of points) {
+    for (const [tk, val] of Object.entries(pt.p || {})) {
+      (out[tk] = out[tk] || []).push(val);
+    }
+  }
+  return out;
 }
 
 // Most-recent last_price move per ticker, from history (newest wins).
@@ -245,7 +292,7 @@ function latestMoves(history) {
   return moves;
 }
 
-function render(snapshot, history) {
+function render(snapshot, history, seriesPoints) {
   const ev = snapshot.event || {};
   $("title").textContent = ev.title || "NASCAR Race";
   $("series").textContent = (ev.series_ticker || "NASCAR") + " · Kalshi";
@@ -259,6 +306,7 @@ function render(snapshot, history) {
   const markets = Object.values(snapshot.markets || {});
   markets.sort((a, b) => (b.last_price ?? -1) - (a.last_price ?? -1));
   const moves = latestMoves(history);
+  const series = seriesByTicker(seriesPoints || []);
 
   const rows = $("rows");
   rows.innerHTML = "";
@@ -266,12 +314,9 @@ function render(snapshot, history) {
     const p = pctOf(m.last_price);
     const mv = moves[m.ticker];
     let delta = "";
-    if (mv && typeof mv.from === "number" && typeof mv.to === "number") {
-      const d = mv.to - mv.from;
-      if (d !== 0) {
-        const cls = d > 0 ? "up" : "down";
-        delta = `<span class="delta ${cls}">${d > 0 ? "▲" : "▼"}${Math.abs(d)}</span>`;
-      }
+    if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
+      const up = mv.to > mv.from;
+      delta = `<span class="delta ${up ? "up" : "down"}" title="shortened from ${usOdds(mv.from)} to ${usOdds(mv.to)}">${up ? "▲" : "▼"}</span>`;
     }
     const status = (m.status && m.status !== "active")
       ? ` <span class="pill">${m.status}</span>` : "";
@@ -283,10 +328,11 @@ function render(snapshot, history) {
         <div class="prob">
           ${delta}
           <div class="meter"><i style="width:${p ?? 0}%"></i></div>
-          <span class="pct">${p != null ? p + "%" : "—"}</span>
+          <span class="pct" title="${p != null ? p + "% implied" : ""}">${usOdds(m.last_price)}</span>
         </div>
       </td>
-      <td class="num">${cents(m.yes_bid)} <span class="muted">/</span> ${cents(m.yes_ask)}</td>
+      <td class="spark-cell">${sparkSVG((series[m.ticker] || []).slice(-24))}</td>
+      <td class="num">${usOdds(m.yes_bid)} <span class="muted">/</span> ${usOdds(m.yes_ask)}</td>
       <td class="num">${fmtInt(m.volume)}</td>
       <td class="num">${fmtInt(m.open_interest)}</td>`;
     rows.appendChild(tr);
@@ -314,12 +360,15 @@ function renderFeed(history) {
       if (c.type === "market_removed")
         return `<div class="chg">➖ Removed <b>${escapeHtml(c.name || c.ticker)}</b></div>`;
       const parts = Object.entries(c.fields || {}).map(([f, mv]) => {
+        const isPrice = PRICE_FIELDS.has(f);
+        const from = isPrice ? usOdds(mv.from) : fmtVal(mv.from);
+        const to = isPrice ? usOdds(mv.to) : fmtVal(mv.to);
         let arrow = "";
         if (f === "last_price" && typeof mv.from === "number" && typeof mv.to === "number") {
           const cls = mv.to > mv.from ? "up" : "down";
           arrow = ` <span class="arrow ${cls}">${mv.to > mv.from ? "▲" : "▼"}</span>`;
         }
-        return `${f} ${fmtVal(mv.from)}→${fmtVal(mv.to)}${arrow}`;
+        return `${FIELD_LABELS[f] || f} ${from}→${to}${arrow}`;
       });
       return `<div class="chg"><b>${escapeHtml(c.name || c.ticker)}</b> — ${parts.join("; ")}</div>`;
     }).join("");
@@ -328,6 +377,12 @@ function renderFeed(history) {
   }
 }
 
+const PRICE_FIELDS = new Set(["last_price", "yes_bid", "yes_ask", "no_bid", "no_ask"]);
+const FIELD_LABELS = {
+  last_price: "win odds", yes_bid: "yes bid", yes_ask: "yes ask",
+  no_bid: "no bid", no_ask: "no ask", volume: "volume",
+  open_interest: "OI", status: "status",
+};
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
 function fmtVal(v) { return (v == null) ? "—" : v; }
 function escapeHtml(s) {
@@ -339,15 +394,17 @@ function showEmpty(msg) {
   $("notice").innerHTML =
     `<div class="banner"><strong>No data yet.</strong> ${msg}</div>`;
   $("updated").textContent = "Awaiting first scrape";
-  $("rows").innerHTML = `<tr><td colspan="6" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
+  $("rows").innerHTML = `<tr><td colspan="7" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
   $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
 }
 
 async function refresh() {
   try {
-    const [snap, hist] = await Promise.all([loadJSON(SNAPSHOT_URL), loadHistory(HISTORY_URL)]);
+    const [snap, hist, series] = await Promise.all([
+      loadJSON(SNAPSHOT_URL), loadLines(HISTORY_URL), loadLines(SERIES_URL),
+    ]);
     $("notice").innerHTML = "";
-    render(snap, hist);
+    render(snap, hist, series);
   } catch (e) {
     showEmpty("Trigger the <b>Track Kalshi NASCAR market</b> workflow from the Actions tab, or wait for the next scheduled run.");
   }

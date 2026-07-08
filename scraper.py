@@ -51,7 +51,11 @@ DATA_DIR = os.path.join(HERE, "data")
 RAW_PATH = os.path.join(DATA_DIR, "latest.json")
 SNAPSHOT_PATH = os.path.join(DATA_DIR, "snapshot.json")
 HISTORY_PATH = os.path.join(DATA_DIR, "history.jsonl")
+SERIES_PATH = os.path.join(DATA_DIR, "series.jsonl")
 CHANGES_PATH = os.path.join(DATA_DIR, "CHANGES.md")
+
+# Cap the price-series file so it stays small over a long-running event.
+MAX_SERIES = 1000
 
 # Per-market fields we compare between runs to detect a meaningful change.
 TRACKED_FIELDS = [
@@ -231,7 +235,31 @@ def write_outputs(raw: dict, curr: dict, changes: list[dict]) -> None:
     with open(HISTORY_PATH, "a", encoding="utf-8") as fh:
         fh.write(json.dumps(record, separators=(",", ":")) + "\n")
 
+    _append_series(curr)
     _write_changes_md(curr, changes)
+
+
+def _append_series(curr: dict) -> None:
+    """Append one aligned price point per change run for sparklines.
+
+    Each line is ``{"t": <iso>, "p": {ticker: last_price, ...}}`` capturing
+    every market's last price at that moment, so the dashboard can draw a
+    per-driver trend line. Trimmed to the most recent MAX_SERIES points.
+    """
+    point = {
+        "t": curr["scraped_at"],
+        "p": {t: m.get("last_price") for t, m in curr["markets"].items()},
+    }
+
+    lines: list[str] = []
+    if os.path.exists(SERIES_PATH):
+        with open(SERIES_PATH, encoding="utf-8") as fh:
+            lines = [ln for ln in fh.read().splitlines() if ln.strip()]
+    lines.append(json.dumps(point, separators=(",", ":")))
+    lines = lines[-MAX_SERIES:]
+
+    with open(SERIES_PATH, "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
 
 
 def _write_changes_md(curr: dict, changes: list[dict]) -> None:

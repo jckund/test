@@ -30,6 +30,14 @@ shows every market update over time.
 > runs behind an egress proxy that blocks `kalshi.com`, so the scrape has to
 > happen where the network allows it.
 
+## Viewing it
+
+[`index.html`](index.html) is a static, dependency-free dashboard that reads the
+files below and renders a driver leaderboard with **American (moneyline) odds**,
+per-driver price **sparklines**, and a live change feed. It auto-refreshes every
+60 seconds. Serve it with GitHub Pages (Settings → Pages → deploy from this
+branch, root folder); it updates itself as the scraper commits new data.
+
 ## Output files
 
 | File | Contents |
@@ -37,6 +45,7 @@ shows every market update over time.
 | `data/snapshot.json` | Normalized current state of every market |
 | `data/latest.json` | Full raw API response (for reference/debugging) |
 | `data/history.jsonl` | Append-only; one line per run that had changes, with a compact diff |
+| `data/series.jsonl` | Append-only aligned price series (last price per driver per run) — powers the dashboard sparklines |
 | `data/CHANGES.md` | Human-readable change log, newest first, with a standings table |
 
 ## Running it manually
