@@ -1,7 +1,7 @@
 name: FanDuel reachability probe
 
-# TEMPORARY feasibility probe. Confirms whether SportsGameOdds (free tier) covers
-# NASCAR, and inspects its leagues catalog. Read-only. Delete once we know.
+# TEMPORARY. Extracts the NASCAR race-winner odds from FanDuel via headless
+# browser and prints the JSON shape so we can write the real parser. Delete after.
 
 on:
   workflow_dispatch: {}
@@ -13,42 +13,69 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Confirm SportsGameOdds NASCAR coverage
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install Playwright + Chromium
         run: |
-          python3 - <<'PY'
-          import urllib.request, urllib.error, re
+          npm i playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Extract NASCAR winner odds
+        run: |
+          node - <<'JS'
+          const { chromium } = require("playwright");
+          const AK = "FhMFpcPWXMeyZxOx";
+          const API = `https://api.sportsbook.fanduel.com/sbapi/content-managed-page?page=SPORT&eventTypeId=8&_ak=${AK}&timezone=America/New_York`;
+          (async () => {
+            const b = await chromium.launch();
+            const ctx = await b.newContext({
+              userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
+              locale: "en-US", timezoneId: "America/New_York",
+            });
+            const p = await ctx.newPage();
+            // Visit the page first so PerimeterX sets its clearance cookies.
+            await p.goto("https://sportsbook.fanduel.com/motorsport", { waitUntil: "domcontentloaded", timeout: 60000 }).catch(()=>{});
+            await p.waitForTimeout(5000);
+            // Now fetch the API JSON from within the page context (carries cookies).
+            const data = await p.evaluate(async (url) => {
+              const r = await fetch(url, { headers: { "Accept": "application/json" } });
+              return { status: r.status, json: await r.json().catch(() => null) };
+            }, API);
+            console.log("API status:", data.status);
+            const j = data.json;
+            if (!j) { console.log("no json"); await b.close(); return; }
+            console.log("top-level keys:", Object.keys(j));
+            const att = j.attachments || {};
+            const events = att.events || {};
+            const markets = att.markets || {};
+            console.log("events:", Object.keys(events).length, "markets:", Object.keys(markets).length);
 
-          def get(url):
-              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"})
-              try:
-                  with urllib.request.urlopen(req, timeout=25) as r:
-                      return r.status, r.read().decode("utf-8", "replace")
-              except urllib.error.HTTPError as e:
-                  return e.code, (e.read().decode("utf-8", "replace")[:600] if e.fp else "")
-              except Exception as e:
-                  return None, f"{type(e).__name__}: {e}"
-
-          # Grep the full docs bundle for any motorsport signal.
-          st, body = get("https://sportsgameodds.com/docs/")
-          print("docs status", st, "len", len(body) if body else 0)
-          if body:
-              for kw in ("nascar", "motor", "racing", "formula", "f1", "indycar", "auto_racing"):
-                  idxs = [m.start() for m in re.finditer(kw, body.lower())][:3]
-                  if idxs:
-                      print(f"  '{kw}' x{len(idxs)}:")
-                      for i in idxs:
-                          print("     ...", body[max(0,i-50):i+50].replace("\n"," "))
-                  else:
-                      print(f"  '{kw}': not found")
-
-          # Try public leagues/sports catalog endpoints (may need a key).
-          for url in ("https://api.sportsgameodds.com/v2/leagues/",
-                      "https://api.sportsgameodds.com/v2/sports/",
-                      "https://sportsgameodds.com/docs/data/leagues",
-                      "https://sportsgameodds.com/docs/guides/leagues"):
-              st, body = get(url)
-              b = (body or "").lower()
-              print(f"\n{url}\n  status={st} len={len(body) if body else 0} "
-                    f"nascar={'Y' if 'nascar' in b else 'n'} motor={'Y' if 'motor' in b else 'n'}")
-              print("  ", (body or "")[:200].replace("\n", " "))
-          PY
+            // List events mentioning NASCAR / Cup.
+            console.log("\n=== events (name / eventTypeId) ===");
+            for (const [id, e] of Object.entries(events)) {
+              if (/nascar|cup|quaker|race/i.test(e.name || "")) console.log(" ", id, "|", e.name);
+            }
+            // Find markets that look like the outright race winner + dump runners+odds.
+            console.log("\n=== candidate winner markets ===");
+            let shown = 0;
+            for (const [id, m] of Object.entries(markets)) {
+              const nm = m.marketName || m.marketType || "";
+              if (!/winner|to win|outright/i.test(nm)) continue;
+              const ev = events[m.eventId];
+              if (ev && !/nascar|cup|quaker|race/i.test(ev.name || "")) continue;
+              console.log(`\n[market ${id}] "${nm}"  event="${ev ? ev.name : m.eventId}"  runners=${(m.runners||[]).length}`);
+              for (const r of (m.runners || []).slice(0, 6)) {
+                const o = r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds;
+                console.log("    -", r.runnerName, "|", o ? o.americanOdds : JSON.stringify(Object.keys(r)));
+              }
+              if (++shown >= 3) break;
+            }
+            if (!shown) {
+              // Show the shape of one arbitrary market so we can see field names.
+              const first = Object.values(markets)[0];
+              console.log("\nno winner market matched; sample market shape:");
+              console.log(JSON.stringify(first, null, 1).slice(0, 1200));
+            }
+            await b.close();
+          })().catch(e => { console.error("FATAL", e); process.exit(1); });
+          JS
