@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
-"""Scrape a Kalshi market event and track changes over time.
+"""Scrape Kalshi NASCAR race markets and track changes over time.
 
-Target page:
+Race page:
   https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26
 
-The public website is protected by Cloudflare and cannot be scraped directly,
-but Kalshi exposes the same data through its public, unauthenticated trade API.
-This script reads the event and all of its nested markets from that API,
-normalizes the fields we care about, and writes them to the ``data/`` folder.
+Tracks several markets for the same race, each a separate Kalshi event:
+  Winner, Top 3, Top 5, Top 10, Top 20 finishers.
 
-Change tracking is done two ways:
-  * ``data/snapshot.json`` always holds the latest normalized state. When run
-    on a schedule and committed, git history becomes a full audit trail.
-  * ``data/history.jsonl`` gets one appended record per run *in which something
-    changed*, plus a compact list of exactly what changed.
-  * ``data/CHANGES.md`` is a human-readable log of the most recent changes.
+The public website is Cloudflare-protected, but Kalshi's public trade API
+serves the same data. For each event we read the nested markets, normalize the
+fields we care about, and write them under ``data/<tier>/``. Change tracking:
+  * ``data/<tier>/snapshot.json`` — normalized current state (git history == log)
+  * ``data/<tier>/history.jsonl`` — append-only, one record per changed run
+  * ``data/<tier>/series.jsonl``  — aligned price series for sparklines
+  * ``data/<tier>/CHANGES.md``    — human-readable change log
+  * ``data/index.json``           — the list of tracked tiers, for the dashboard
 
-The script only touches files when the market state actually changes, so a
-scheduled commit step can use ``git diff --quiet`` to avoid empty commits.
+Only writes when a tier's market state actually changes, so a scheduled commit
+step can use ``git diff`` to avoid empty commits.
 
 Run manually with:  python3 scraper.py
 """
@@ -36,9 +36,22 @@ from datetime import datetime, timezone
 # Configuration
 # ---------------------------------------------------------------------------
 
-# Derived from the page URL's final path segment, upper-cased:
-#   .../nascar-race/kxnascarrace-quas4aa26  ->  KXNASCARRACE-QUAS4AA26
-EVENT_TICKER = os.environ.get("KALSHI_EVENT_TICKER", "KXNASCARRACE-QUAS4AA26")
+# Race code from the page URL's event ticker: KXNASCARRACE-<RACE_CODE>.
+# Change this one value (or the env var) to point at a different race.
+RACE_CODE = os.environ.get("KALSHI_RACE_CODE", "QUAS4AA26")
+
+# (tier key, display label, odds-column label, Kalshi series ticker)
+TIERS = [
+    ("winner", "Winner", "Win", "KXNASCARRACE"),
+    ("top3", "Top 3", "Top 3", "KXNASCARTOP3"),
+    ("top5", "Top 5", "Top 5", "KXNASCARTOP5"),
+    ("top10", "Top 10", "Top 10", "KXNASCARTOP10"),
+    ("top20", "Top 20", "Top 20", "KXNASCARTOP20"),
+]
+EVENTS = [
+    {"key": k, "label": lbl, "odds_label": odl, "ticker": f"{series}-{RACE_CODE}"}
+    for k, lbl, odl, series in TIERS
+]
 
 PAGE_URL = (
     "https://kalshi.com/markets/kxnascarrace/nascar-race/"
@@ -48,28 +61,15 @@ API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
-RAW_PATH = os.path.join(DATA_DIR, "latest.json")
-SNAPSHOT_PATH = os.path.join(DATA_DIR, "snapshot.json")
-HISTORY_PATH = os.path.join(DATA_DIR, "history.jsonl")
-SERIES_PATH = os.path.join(DATA_DIR, "series.jsonl")
-CHANGES_PATH = os.path.join(DATA_DIR, "CHANGES.md")
-
-# Cap the price-series file so it stays small over a long-running event.
-MAX_SERIES = 1000
+INDEX_PATH = os.path.join(DATA_DIR, "index.json")
 
 # Per-market fields we compare between runs to detect a meaningful change.
 TRACKED_FIELDS = [
-    "status",
-    "last_price",
-    "yes_bid",
-    "yes_ask",
-    "no_bid",
-    "no_ask",
-    "volume",
-    "open_interest",
+    "status", "last_price", "yes_bid", "yes_ask",
+    "no_bid", "no_ask", "volume", "open_interest",
 ]
-
-USER_AGENT = "kalshi-nascar-tracker/1.0 (+https://github.com; scheduled scraper)"
+MAX_SERIES = 1000
+USER_AGENT = "kalshi-nascar-tracker/2.0 (+https://github.com; scheduled scraper)"
 
 
 # ---------------------------------------------------------------------------
@@ -77,28 +77,25 @@ USER_AGENT = "kalshi-nascar-tracker/1.0 (+https://github.com; scheduled scraper)
 # ---------------------------------------------------------------------------
 
 def _get_json(url: str, retries: int = 4) -> dict:
-    """GET a URL and parse JSON, retrying with exponential backoff."""
-    last_err: Exception | None = None
+    last_err = None
     for attempt in range(retries):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": USER_AGENT,
-                "Accept": "application/json",
+                "User-Agent": USER_AGENT, "Accept": "application/json",
             })
             with urllib.request.urlopen(req, timeout=30) as resp:
                 return json.loads(resp.read().decode("utf-8"))
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
             last_err = err
             if attempt < retries - 1:
-                wait = 2 ** (attempt + 1)  # 2s, 4s, 8s
+                wait = 2 ** (attempt + 1)
                 print(f"  fetch failed ({err}); retrying in {wait}s", file=sys.stderr)
                 time.sleep(wait)
     raise RuntimeError(f"failed to GET {url}: {last_err}")
 
 
-def fetch_event() -> dict:
-    """Fetch the event and all nested markets from the Kalshi API."""
-    url = f"{API_BASE}/events/{EVENT_TICKER}?with_nested_markets=true"
+def fetch_event(ticker: str) -> dict:
+    url = f"{API_BASE}/events/{ticker}?with_nested_markets=true"
     print(f"Fetching {url}", file=sys.stderr)
     return _get_json(url)
 
@@ -116,8 +113,8 @@ def _to_float(v):
 
 def _price_cents(m: dict, base: str):
     """Price in integer cents. Kalshi's newer schema returns dollar strings
-    (e.g. ``last_price_dollars: "0.0100"``); older/other endpoints return
-    integer cents directly (``last_price``). Support both."""
+    (``last_price_dollars: "0.0100"``); other endpoints return integer cents
+    (``last_price``). Support both."""
     v = m.get(base)
     if isinstance(v, (int, float)):
         return int(round(v))
@@ -126,8 +123,7 @@ def _price_cents(m: dict, base: str):
 
 
 def _count(m: dict, base: str):
-    """Contract count. Newer schema uses fixed-point strings (``volume_fp``);
-    older uses plain integers (``volume``)."""
+    """Contract count. Newer schema uses fixed-point strings (``volume_fp``)."""
     v = m.get(base)
     if isinstance(v, (int, float)):
         return int(round(v))
@@ -143,8 +139,7 @@ def _dollars(m: dict, base: str):
     return None if d is None else round(d, 2)
 
 
-def normalize(raw: dict) -> dict:
-    """Reduce the raw API payload to the fields we track."""
+def normalize(raw: dict, ev: dict) -> dict:
     event = raw.get("event", {}) or {}
     markets = raw.get("markets") or event.get("markets") or []
 
@@ -155,7 +150,6 @@ def normalize(raw: dict) -> dict:
             continue
         norm_markets[ticker] = {
             "ticker": ticker,
-            # For NASCAR "which driver wins", the driver name lives here.
             "name": m.get("yes_sub_title") or m.get("no_sub_title") or m.get("title"),
             "status": m.get("status"),
             "last_price": _price_cents(m, "last_price"),
@@ -172,7 +166,10 @@ def normalize(raw: dict) -> dict:
     return {
         "scraped_at": datetime.now(timezone.utc).isoformat(),
         "source_url": PAGE_URL,
-        "event_ticker": EVENT_TICKER,
+        "tier": ev["key"],
+        "label": ev["label"],
+        "odds_label": ev["odds_label"],
+        "event_ticker": ev["ticker"],
         "event": {
             "title": event.get("title"),
             "sub_title": event.get("sub_title"),
@@ -188,34 +185,26 @@ def normalize(raw: dict) -> dict:
 # Change detection
 # ---------------------------------------------------------------------------
 
-def load_previous() -> dict | None:
-    if not os.path.exists(SNAPSHOT_PATH):
+def load_previous(snapshot_path: str):
+    if not os.path.exists(snapshot_path):
         return None
     try:
-        with open(SNAPSHOT_PATH, encoding="utf-8") as fh:
+        with open(snapshot_path, encoding="utf-8") as fh:
             return json.load(fh)
     except (json.JSONDecodeError, OSError):
         return None
 
 
-def diff_snapshots(prev: dict | None, curr: dict) -> list[dict]:
-    """Return a list of change records describing what moved since last run."""
-    changes: list[dict] = []
+def diff_snapshots(prev, curr) -> list:
+    changes = []
     curr_markets = curr.get("markets", {})
-
     if prev is None:
-        changes.append({"type": "initial_snapshot", "market_count": len(curr_markets)})
-        return changes
+        return [{"type": "initial_snapshot", "market_count": len(curr_markets)}]
 
     prev_markets = prev.get("markets", {})
-
     for ticker, market in curr_markets.items():
         if ticker not in prev_markets:
-            changes.append({
-                "type": "market_added",
-                "ticker": ticker,
-                "name": market.get("name"),
-            })
+            changes.append({"type": "market_added", "ticker": ticker, "name": market.get("name")})
             continue
         old = prev_markets[ticker]
         field_changes = {}
@@ -224,103 +213,72 @@ def diff_snapshots(prev: dict | None, curr: dict) -> list[dict]:
                 field_changes[field] = {"from": old.get(field), "to": market.get(field)}
         if field_changes:
             changes.append({
-                "type": "market_changed",
-                "ticker": ticker,
-                "name": market.get("name"),
-                "fields": field_changes,
+                "type": "market_changed", "ticker": ticker,
+                "name": market.get("name"), "fields": field_changes,
             })
-
     for ticker in prev_markets:
         if ticker not in curr_markets:
-            changes.append({
-                "type": "market_removed",
-                "ticker": ticker,
-                "name": prev_markets[ticker].get("name"),
-            })
-
+            changes.append({"type": "market_removed", "ticker": ticker,
+                            "name": prev_markets[ticker].get("name")})
     return changes
 
 
 # ---------------------------------------------------------------------------
-# Output
+# Output (per tier)
 # ---------------------------------------------------------------------------
 
 def _cents(v) -> str:
     return f"{v}¢" if isinstance(v, (int, float)) else "—"
 
 
-def write_outputs(raw: dict, curr: dict, changes: list[dict]) -> None:
-    os.makedirs(DATA_DIR, exist_ok=True)
+def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
+    os.makedirs(base, exist_ok=True)
 
-    # Full raw payload (pretty) for reference / debugging.
-    with open(RAW_PATH, "w", encoding="utf-8") as fh:
+    with open(os.path.join(base, "latest.json"), "w", encoding="utf-8") as fh:
         json.dump(raw, fh, indent=2, sort_keys=True)
         fh.write("\n")
-
-    # Normalized current state.
-    with open(SNAPSHOT_PATH, "w", encoding="utf-8") as fh:
+    with open(os.path.join(base, "snapshot.json"), "w", encoding="utf-8") as fh:
         json.dump(curr, fh, indent=2, sort_keys=True)
         fh.write("\n")
 
-    # Append one compact history record per run with changes.
-    record = {
-        "scraped_at": curr["scraped_at"],
-        "change_count": len(changes),
-        "changes": changes,
-    }
-    with open(HISTORY_PATH, "a", encoding="utf-8") as fh:
+    record = {"scraped_at": curr["scraped_at"], "change_count": len(changes), "changes": changes}
+    with open(os.path.join(base, "history.jsonl"), "a", encoding="utf-8") as fh:
         fh.write(json.dumps(record, separators=(",", ":")) + "\n")
 
-    _append_series(curr)
-    _write_changes_md(curr, changes)
+    _append_series(base, curr)
+    _write_changes_md(base, curr, changes)
 
 
-def _append_series(curr: dict) -> None:
-    """Append one aligned price point per change run for sparklines.
-
-    Each line is ``{"t": <iso>, "p": {ticker: last_price, ...}}`` capturing
-    every market's last price at that moment, so the dashboard can draw a
-    per-driver trend line. Trimmed to the most recent MAX_SERIES points.
-    """
-    point = {
-        "t": curr["scraped_at"],
-        "p": {t: m.get("last_price") for t, m in curr["markets"].items()},
-    }
-
-    lines: list[str] = []
-    if os.path.exists(SERIES_PATH):
-        with open(SERIES_PATH, encoding="utf-8") as fh:
+def _append_series(base: str, curr: dict) -> None:
+    point = {"t": curr["scraped_at"],
+             "p": {t: m.get("last_price") for t, m in curr["markets"].items()}}
+    path = os.path.join(base, "series.jsonl")
+    lines = []
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as fh:
             lines = [ln for ln in fh.read().splitlines() if ln.strip()]
     lines.append(json.dumps(point, separators=(",", ":")))
     lines = lines[-MAX_SERIES:]
-
-    with open(SERIES_PATH, "w", encoding="utf-8") as fh:
+    with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
 
 
-def _write_changes_md(curr: dict, changes: list[dict]) -> None:
-    """Human-readable log: prepend the newest change block to CHANGES.md."""
+def _write_changes_md(base: str, curr: dict, changes: list) -> None:
+    path = os.path.join(base, "CHANGES.md")
     ts = curr["scraped_at"]
     lines = [f"### {ts}", ""]
 
-    # Current standings table.
-    markets = sorted(
-        curr["markets"].values(),
-        key=lambda m: (m.get("last_price") is None, -(m.get("last_price") or 0)),
-    )
+    markets = sorted(curr["markets"].values(),
+                     key=lambda m: (m.get("last_price") is None, -(m.get("last_price") or 0)))
     lines.append("| Driver | Last | Yes bid/ask | Volume | OI |")
     lines.append("| --- | ---: | ---: | ---: | ---: |")
     for m in markets:
         lines.append(
-            f"| {m.get('name') or m.get('ticker')} "
-            f"| {_cents(m.get('last_price'))} "
+            f"| {m.get('name') or m.get('ticker')} | {_cents(m.get('last_price'))} "
             f"| {_cents(m.get('yes_bid'))} / {_cents(m.get('yes_ask'))} "
             f"| {m.get('volume') if m.get('volume') is not None else '—'} "
-            f"| {m.get('open_interest') if m.get('open_interest') is not None else '—'} |"
-        )
+            f"| {m.get('open_interest') if m.get('open_interest') is not None else '—'} |")
     lines.append("")
-
-    # What changed this run.
     lines.append(f"**{len(changes)} change(s) since previous snapshot:**")
     lines.append("")
     for c in changes:
@@ -331,35 +289,24 @@ def _write_changes_md(curr: dict, changes: list[dict]) -> None:
         elif c["type"] == "market_removed":
             lines.append(f"- ➖ Removed: {c.get('name') or c['ticker']}")
         elif c["type"] == "market_changed":
-            parts = []
-            for field, mv in c["fields"].items():
-                parts.append(f"{field} {mv['from']}→{mv['to']}")
+            parts = [f"{f} {mv['from']}→{mv['to']}" for f, mv in c["fields"].items()]
             lines.append(f"- {c.get('name') or c['ticker']}: " + "; ".join(parts))
-    lines.append("")
-    lines.append("---")
-    lines.append("")
-
+    lines += ["", "---", ""]
     new_block = "\n".join(lines)
 
     header = (
         "# Change log\n\n"
-        f"Tracking [{curr['event'].get('title') or EVENT_TICKER}]"
-        f"({PAGE_URL})\n\n"
-        "Newest first. Generated by `scraper.py`.\n\n"
+        f"Tracking {curr['label']} — [{curr['event'].get('title') or curr['event_ticker']}]"
+        f"({PAGE_URL})\n\nNewest first. Generated by `scraper.py`.\n\n"
     )
-
     existing = ""
-    if os.path.exists(CHANGES_PATH):
-        with open(CHANGES_PATH, encoding="utf-8") as fh:
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as fh:
             content = fh.read()
-        marker = "---\n\n"  # split off the old header
-        idx = content.find(marker)
-        # Preserve everything after the intro header of the previous file.
         first_entry = content.find("### ")
         if first_entry != -1:
             existing = content[first_entry:]
-
-    with open(CHANGES_PATH, "w", encoding="utf-8") as fh:
+    with open(path, "w", encoding="utf-8") as fh:
         fh.write(header + new_block + existing)
 
 
@@ -367,21 +314,65 @@ def _write_changes_md(curr: dict, changes: list[dict]) -> None:
 # Main
 # ---------------------------------------------------------------------------
 
-def main() -> int:
-    raw = fetch_event()
-    curr = normalize(raw)
-    prev = load_previous()
+def process_event(ev: dict) -> dict | None:
+    """Scrape one tier. Returns a summary dict, or None if the event is
+    unavailable (e.g. a tier not offered for this race)."""
+    try:
+        raw = fetch_event(ev["ticker"])
+    except Exception as e:  # noqa: BLE001 - skip a missing/failed tier, keep the rest
+        print(f"skip {ev['key']} ({ev['ticker']}): {e}", file=sys.stderr)
+        return None
+
+    curr = normalize(raw, ev)
+    base = os.path.join(DATA_DIR, ev["key"])
+    prev = load_previous(os.path.join(base, "snapshot.json"))
     changes = diff_snapshots(prev, curr)
 
     if prev is not None and not changes:
-        print("No changes since last run.", file=sys.stderr)
-        # Still refresh latest.json + snapshot timestamp? No: keep files stable
-        # so the commit step sees a clean tree and skips an empty commit.
-        return 0
+        print(f"{ev['key']}: no changes.", file=sys.stderr)
+    else:
+        write_outputs(base, raw, curr, changes)
+        print(f"{ev['key']}: {curr['market_count']} markets, {len(changes)} change(s).",
+              file=sys.stderr)
+    return {"key": ev["key"], "label": ev["label"], "odds_label": ev["odds_label"],
+            "event_ticker": ev["ticker"]}
 
-    write_outputs(raw, curr, changes)
-    print(f"Wrote snapshot with {curr['market_count']} markets; "
-          f"{len(changes)} change(s).", file=sys.stderr)
+
+def build_index() -> None:
+    """Write data/index.json describing every tracked tier, read from each
+    tier's on-disk snapshot (so it only changes when a snapshot changes)."""
+    markets = []
+    race_title = None
+    for ev in EVENTS:
+        snap = load_previous(os.path.join(DATA_DIR, ev["key"], "snapshot.json"))
+        if not snap:
+            continue
+        markets.append({
+            "key": ev["key"], "label": ev["label"], "odds_label": ev["odds_label"],
+            "event_ticker": ev["ticker"],
+            "title": snap.get("event", {}).get("title"),
+            "market_count": snap.get("market_count"),
+            "scraped_at": snap.get("scraped_at"),
+        })
+        race_title = race_title or (snap.get("event", {}) or {}).get("sub_title")
+
+    index = {"race_title": race_title or "NASCAR Race",
+             "source_url": PAGE_URL, "markets": markets}
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(INDEX_PATH, "w", encoding="utf-8") as fh:
+        json.dump(index, fh, indent=2)
+        fh.write("\n")
+
+
+def main() -> int:
+    any_ok = False
+    for ev in EVENTS:
+        if process_event(ev) is not None:
+            any_ok = True
+    if not any_ok:
+        print("No events could be scraped.", file=sys.stderr)
+        return 1
+    build_index()
     return 0
 
 

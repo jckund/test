@@ -6,16 +6,9 @@
 <title>Kalshi NASCAR Race Tracker</title>
 <style>
   :root {
-    --bg: #f4f5f7;
-    --surface: #ffffff;
-    --surface-2: #eef0f3;
-    --ink: #14181f;
-    --ink-2: #5b6472;
-    --line: #e2e5ea;
-    --accent: #e0930c;
-    --accent-soft: #f6e3b8;
-    --pos: #1a8f5a;
-    --neg: #d0472b;
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #eef0f3;
+    --ink: #14181f; --ink-2: #5b6472; --line: #e2e5ea;
+    --accent: #e0930c; --accent-soft: #f6e3b8; --pos: #1a8f5a; --neg: #d0472b;
     --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   }
@@ -23,8 +16,7 @@
     :root {
       --bg: #0d1015; --surface: #151a21; --surface-2: #1c222b;
       --ink: #eef1f5; --ink-2: #9aa4b2; --line: #262d38;
-      --accent: #f0b429; --accent-soft: #3a2f14;
-      --pos: #35c07f; --neg: #ff6a4d;
+      --accent: #f0b429; --accent-soft: #3a2f14; --pos: #35c07f; --neg: #ff6a4d;
     }
   }
   :root[data-theme="light"] {
@@ -39,80 +31,62 @@
   }
 
   * { box-sizing: border-box; }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font-family: var(--sans); line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 980px; margin: 0 auto; padding: 24px 20px 64px; }
 
-  header.masthead { margin-bottom: 8px; }
-  .eyebrow {
-    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
-    color: var(--ink-2); font-weight: 600; margin: 0 0 6px;
-  }
-  h1 {
-    font-size: clamp(26px, 4.5vw, 40px); line-height: 1.05; margin: 0;
-    font-weight: 800; letter-spacing: -.02em; text-wrap: balance;
-  }
-  .subtitle { color: var(--ink-2); margin: 6px 0 0; font-size: 15px; }
-  .checker {
-    height: 8px; margin: 16px 0 20px; border-radius: 2px;
+  .eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-2); font-weight: 600; margin: 0 0 6px; }
+  h1 { font-size: clamp(24px, 4.2vw, 38px); line-height: 1.05; margin: 0;
+    font-weight: 800; letter-spacing: -.02em; text-wrap: balance; }
+  .checker { height: 8px; margin: 16px 0 18px; border-radius: 2px;
     background-image:
       linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%),
       linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%);
-    background-size: 16px 16px; background-position: 0 0, 8px 8px;
-    opacity: .16;
-  }
-
-  .meta {
-    display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
-    font-size: 13px; color: var(--ink-2); margin-bottom: 22px;
-  }
+    background-size: 16px 16px; background-position: 0 0, 8px 8px; opacity: .16; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
+    font-size: 13px; color: var(--ink-2); margin-bottom: 18px; }
   .meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-  .live {
-    display: inline-flex; align-items: center; gap: 7px; font-weight: 600;
-    color: var(--ink);
-  }
-  .dot {
-    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
-    box-shadow: 0 0 0 0 var(--accent);
-  }
+  .live { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; color: var(--ink); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
   @media (prefers-reduced-motion: no-preference) {
     .live .dot { animation: pulse 2s ease-out infinite; }
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
       70% { box-shadow: 0 0 0 7px transparent; }
-      100% { box-shadow: 0 0 0 0 transparent; }
-    }
+      100% { box-shadow: 0 0 0 0 transparent; } }
   }
 
-  .banner {
-    background: var(--surface); border: 1px solid var(--line);
+  /* Tier tabs */
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px;
+    background: var(--surface-2); padding: 5px; border-radius: 11px;
+    border: 1px solid var(--line); width: fit-content; max-width: 100%; }
+  .tab { appearance: none; border: 0; background: transparent; color: var(--ink-2);
+    font: inherit; font-size: 13px; font-weight: 600; padding: 7px 15px;
+    border-radius: 7px; cursor: pointer; white-space: nowrap; }
+  .tab:hover { color: var(--ink); }
+  .tab[aria-selected="true"] { background: var(--surface); color: var(--ink);
+    box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .banner { background: var(--surface); border: 1px solid var(--line);
     border-left: 3px solid var(--accent); border-radius: 8px;
-    padding: 14px 16px; margin-bottom: 22px; font-size: 14px; color: var(--ink-2);
-  }
+    padding: 14px 16px; margin-bottom: 22px; font-size: 14px; color: var(--ink-2); }
   .banner strong { color: var(--ink); }
 
-  .card {
-    background: var(--surface); border: 1px solid var(--line);
-    border-radius: 12px; overflow: hidden;
-  }
+  .card { background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden; }
   .card + .card { margin-top: 24px; }
-  .card-head {
-    display: flex; justify-content: space-between; align-items: baseline;
-    padding: 16px 18px; border-bottom: 1px solid var(--line);
-  }
+  .card-head { display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
   .card-head h2 { margin: 0; font-size: 15px; letter-spacing: .02em; }
   .card-head .count { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 
   .scroll { overflow-x: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
-  thead th {
-    text-align: right; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  thead th { text-align: right; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
     color: var(--ink-2); font-weight: 600; padding: 10px 14px; white-space: nowrap;
-    border-bottom: 1px solid var(--line);
-  }
+    border-bottom: 1px solid var(--line); }
   thead th.l, tbody td.l { text-align: left; }
   tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
   tbody tr:last-child td { border-bottom: 0; }
@@ -131,14 +105,9 @@
   .spark-cell { width: 92px; }
   .spark { display: block; }
   .delta { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
-  .delta.up { color: var(--pos); }
-  .delta.down { color: var(--neg); }
-
-  .pill {
-    display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px;
-    border-radius: 999px; background: var(--surface-2); color: var(--ink-2);
-    text-transform: capitalize;
-  }
+  .delta.up { color: var(--pos); } .delta.down { color: var(--neg); }
+  .pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px;
+    border-radius: 999px; background: var(--surface-2); color: var(--ink-2); text-transform: capitalize; }
 
   .feed { list-style: none; margin: 0; padding: 0; }
   .feed li { padding: 14px 18px; border-bottom: 1px solid var(--line); }
@@ -146,8 +115,7 @@
   .feed .ts { font-size: 12px; color: var(--ink-2); font-family: var(--mono); margin-bottom: 6px; }
   .feed .chg { font-size: 13px; margin: 3px 0; }
   .feed .chg b { font-weight: 600; }
-  .arrow.up { color: var(--pos); }
-  .arrow.down { color: var(--neg); }
+  .arrow.up { color: var(--pos); } .arrow.down { color: var(--neg); }
 
   .empty { padding: 40px 18px; text-align: center; color: var(--ink-2); font-size: 14px; }
   footer { margin-top: 28px; font-size: 12px; color: var(--ink-2); text-align: center; }
@@ -155,10 +123,9 @@
 </head>
 <body>
 <div class="wrap">
-  <header class="masthead">
-    <p class="eyebrow" id="series">NASCAR · Kalshi</p>
-    <h1 id="title">NASCAR Race Winner</h1>
-    <p class="subtitle" id="subtitle"></p>
+  <header>
+    <p class="eyebrow">NASCAR · Kalshi</p>
+    <h1 id="title">NASCAR Race Tracker</h1>
     <div class="checker"></div>
     <div class="meta">
       <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
@@ -167,11 +134,13 @@
     </div>
   </header>
 
+  <div class="tabs" id="tabs" role="tablist" aria-label="Market tiers"></div>
+
   <div id="notice"></div>
 
   <section class="card">
     <div class="card-head">
-      <h2>Standings — win odds (American)</h2>
+      <h2 id="stand-title">Standings</h2>
       <span class="count" id="stand-count"></span>
     </div>
     <div class="scroll">
@@ -180,7 +149,7 @@
           <tr>
             <th class="l">#</th>
             <th class="l">Driver</th>
-            <th>Win odds</th>
+            <th id="odds-col">Odds</th>
             <th>Trend</th>
             <th>Yes odds (bid / ask)</th>
             <th>Volume</th>
@@ -204,16 +173,19 @@
 </div>
 
 <script>
-const SNAPSHOT_URL = "data/snapshot.json";
-const HISTORY_URL = "data/history.jsonl";
-const SERIES_URL = "data/series.jsonl";
-
+const INDEX_URL = "data/index.json";
 const $ = (id) => document.getElementById(id);
-const cents = (v) => (typeof v === "number") ? v + "¢" : "—";
-const pctOf = (v) => (typeof v === "number") ? v : null;
 
-// A Kalshi price in cents equals the implied probability in percent.
-// Convert it to American ("moneyline") odds.
+let INDEX = null;
+let currentKey = null;
+
+const PRICE_FIELDS = new Set(["last_price", "yes_bid", "yes_ask", "no_bid", "no_ask"]);
+const FIELD_LABELS = {
+  last_price: "odds", yes_bid: "yes bid", yes_ask: "yes ask",
+  no_bid: "no bid", no_ask: "no ask", volume: "volume",
+  open_interest: "OI", status: "status",
+};
+
 function usOdds(c) {
   if (typeof c !== "number" || c <= 0 || c >= 100) return "—";
   const p = c / 100;
@@ -222,7 +194,6 @@ function usOdds(c) {
   return (r > 0 ? "+" : "") + r;
 }
 
-// Compact trend line from a list of price points (in cents).
 function sparkSVG(vals) {
   const pts = vals.filter((v) => typeof v === "number");
   if (pts.length < 2) return `<span class="muted">—</span>`;
@@ -230,10 +201,7 @@ function sparkSVG(vals) {
   const min = Math.min(...pts), max = Math.max(...pts);
   const span = (max - min) || 1;
   const step = (w - pad * 2) / (pts.length - 1);
-  const coords = pts.map((v, i) => [
-    pad + i * step,
-    pad + (h - pad * 2) * (1 - (v - min) / span),
-  ]);
+  const coords = pts.map((v, i) => [pad + i * step, pad + (h - pad * 2) * (1 - (v - min) / span)]);
   const d = coords.map((c, i) => (i ? "L" : "M") + c[0].toFixed(1) + " " + c[1].toFixed(1)).join(" ");
   const net = pts[pts.length - 1] - pts[0];
   const col = net > 0 ? "var(--pos)" : net < 0 ? "var(--neg)" : "var(--ink-2)";
@@ -268,40 +236,69 @@ async function loadLines(url) {
   }).filter(Boolean);
 }
 
-// Build ticker -> [price, price, ...] from the series file.
 function seriesByTicker(points) {
   const out = {};
   for (const pt of points) {
-    for (const [tk, val] of Object.entries(pt.p || {})) {
-      (out[tk] = out[tk] || []).push(val);
-    }
+    for (const [tk, val] of Object.entries(pt.p || {})) (out[tk] = out[tk] || []).push(val);
   }
   return out;
 }
 
-// Most-recent last_price move per ticker, from history (newest wins).
 function latestMoves(history) {
   const moves = {};
   for (const rec of history) {
     for (const c of (rec.changes || [])) {
-      if (c.type === "market_changed" && c.fields && c.fields.last_price) {
-        moves[c.ticker] = c.fields.last_price; // {from, to}
-      }
+      if (c.type === "market_changed" && c.fields && c.fields.last_price) moves[c.ticker] = c.fields.last_price;
     }
   }
   return moves;
 }
 
-function render(snapshot, history, seriesPoints) {
-  const ev = snapshot.event || {};
-  $("title").textContent = ev.title || "NASCAR Race";
-  $("series").textContent = (ev.series_ticker || "NASCAR") + " · Kalshi";
-  $("subtitle").textContent = ev.sub_title || "";
+function buildTabs() {
+  const tabs = $("tabs");
+  tabs.innerHTML = "";
+  for (const m of INDEX.markets) {
+    const b = document.createElement("button");
+    b.className = "tab";
+    b.role = "tab";
+    b.textContent = m.label;
+    b.setAttribute("aria-selected", String(m.key === currentKey));
+    b.onclick = () => selectTier(m.key);
+    tabs.appendChild(b);
+  }
+}
+
+function tierMeta(key) {
+  return INDEX.markets.find((m) => m.key === key);
+}
+
+async function selectTier(key) {
+  currentKey = key;
+  location.hash = key;
+  buildTabs();
+  const meta = tierMeta(key);
+  const base = "data/" + key;
+  try {
+    const [snap, hist, series] = await Promise.all([
+      loadJSON(base + "/snapshot.json"),
+      loadLines(base + "/history.jsonl"),
+      loadLines(base + "/series.jsonl"),
+    ]);
+    render(snap, hist, series, meta);
+  } catch (e) {
+    $("rows").innerHTML = `<tr><td colspan="7" class="empty">No data for this tier yet.</td></tr>`;
+    $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
+  }
+}
+
+function render(snapshot, history, seriesPoints, meta) {
+  const oddsLabel = (meta && meta.odds_label) || snapshot.odds_label || "Win";
   $("updated").textContent = "Updated " + relTime(snapshot.scraped_at);
   $("updated").title = snapshot.scraped_at || "";
-  $("mcount").textContent = (snapshot.market_count ?? 0) + " markets";
-  const src = $("src");
-  src.href = snapshot.source_url || "https://kalshi.com";
+  $("mcount").textContent = (snapshot.market_count ?? 0) + " drivers";
+  $("src").href = snapshot.source_url || "https://kalshi.com";
+  $("stand-title").textContent = (meta ? meta.label : "Standings") + " — American odds";
+  $("odds-col").textContent = oddsLabel + " odds";
 
   const markets = Object.values(snapshot.markets || {});
   markets.sort((a, b) => (b.last_price ?? -1) - (a.last_price ?? -1));
@@ -310,16 +307,18 @@ function render(snapshot, history, seriesPoints) {
 
   const rows = $("rows");
   rows.innerHTML = "";
+  if (!markets.length) {
+    rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
+  }
   markets.forEach((m, i) => {
-    const p = pctOf(m.last_price);
+    const p = (typeof m.last_price === "number") ? m.last_price : null;
     const mv = moves[m.ticker];
     let delta = "";
     if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
       const up = mv.to > mv.from;
-      delta = `<span class="delta ${up ? "up" : "down"}" title="shortened from ${usOdds(mv.from)} to ${usOdds(mv.to)}">${up ? "▲" : "▼"}</span>`;
+      delta = `<span class="delta ${up ? "up" : "down"}" title="from ${usOdds(mv.from)} to ${usOdds(mv.to)}">${up ? "▲" : "▼"}</span>`;
     }
-    const status = (m.status && m.status !== "active")
-      ? ` <span class="pill">${m.status}</span>` : "";
+    const status = (m.status && m.status !== "active") ? ` <span class="pill">${m.status}</span>` : "";
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
@@ -346,10 +345,7 @@ function renderFeed(history) {
   const feed = $("feed");
   feed.innerHTML = "";
   const recent = history.slice(-30).reverse();
-  if (!recent.length) {
-    feed.innerHTML = `<li class="empty">No changes recorded yet.</li>`;
-    return;
-  }
+  if (!recent.length) { feed.innerHTML = `<li class="empty">No changes recorded yet.</li>`; return; }
   for (const rec of recent) {
     const li = document.createElement("li");
     const lines = (rec.changes || []).map((c) => {
@@ -377,12 +373,6 @@ function renderFeed(history) {
   }
 }
 
-const PRICE_FIELDS = new Set(["last_price", "yes_bid", "yes_ask", "no_bid", "no_ask"]);
-const FIELD_LABELS = {
-  last_price: "win odds", yes_bid: "yes bid", yes_ask: "yes ask",
-  no_bid: "no bid", no_ask: "no ask", volume: "volume",
-  open_interest: "OI", status: "status",
-};
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
 function fmtVal(v) { return (v == null) ? "—" : v; }
 function escapeHtml(s) {
@@ -390,9 +380,9 @@ function escapeHtml(s) {
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
-function showEmpty(msg) {
+function showEmpty() {
   $("notice").innerHTML =
-    `<div class="banner"><strong>No data yet.</strong> ${msg}</div>`;
+    `<div class="banner"><strong>No data yet.</strong> Trigger the <b>Track Kalshi NASCAR market</b> workflow from the Actions tab, or wait for the next scheduled run.</div>`;
   $("updated").textContent = "Awaiting first scrape";
   $("rows").innerHTML = `<tr><td colspan="7" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
   $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
@@ -400,13 +390,15 @@ function showEmpty(msg) {
 
 async function refresh() {
   try {
-    const [snap, hist, series] = await Promise.all([
-      loadJSON(SNAPSHOT_URL), loadLines(HISTORY_URL), loadLines(SERIES_URL),
-    ]);
+    INDEX = await loadJSON(INDEX_URL);
+    if (!INDEX.markets || !INDEX.markets.length) { showEmpty(); return; }
     $("notice").innerHTML = "";
-    render(snap, hist, series);
+    $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
+    const wanted = (location.hash || "").replace("#", "");
+    if (!currentKey) currentKey = INDEX.markets.some((m) => m.key === wanted) ? wanted : INDEX.markets[0].key;
+    await selectTier(currentKey);
   } catch (e) {
-    showEmpty("Trigger the <b>Track Kalshi NASCAR market</b> workflow from the Actions tab, or wait for the next scheduled run.");
+    showEmpty();
   }
 }
 

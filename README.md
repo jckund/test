@@ -5,20 +5,36 @@ Scrapes and tracks changes to this Kalshi market over time:
 **<https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26>**
 (event ticker `KXNASCARRACE-QUAS4AA26`)
 
+## Tracked markets
+
+The race page groups several markets, each a separate Kalshi event. All are
+tracked, one folder per tier under `data/`:
+
+| Tier | Folder | Event ticker |
+| --- | --- | --- |
+| Winner | `data/winner/` | `KXNASCARRACE-QUAS4AA26` |
+| Top 3 finishers | `data/top3/` | `KXNASCARTOP3-QUAS4AA26` |
+| Top 5 finishers | `data/top5/` | `KXNASCARTOP5-QUAS4AA26` |
+| Top 10 finishers | `data/top10/` | `KXNASCARTOP10-QUAS4AA26` |
+| Top 20 finishers | `data/top20/` | `KXNASCARTOP20-QUAS4AA26` |
+
 ## How it works
 
 The public Kalshi website is behind Cloudflare and can't be scraped directly,
 but Kalshi exposes the same data through its public, unauthenticated trade API:
 
 ```
-GET https://api.elections.kalshi.com/trade-api/v2/events/KXNASCARRACE-QUAS4AA26?with_nested_markets=true
+GET https://api.elections.kalshi.com/trade-api/v2/events/<EVENT_TICKER>?with_nested_markets=true
 ```
 
-[`scraper.py`](scraper.py) fetches the event and all nested markets (one per
-driver), normalizes the fields we care about (last price, yes/no bid & ask,
-volume, open interest, status), and writes them to [`data/`](data/). It compares
+[`scraper.py`](scraper.py) fetches each tier's event and all nested markets (one
+per driver), normalizes the fields we care about (last price, yes/no bid & ask,
+volume, open interest, status), and writes them to `data/<tier>/`. It compares
 each run against the previous snapshot and only writes when something actually
-changed.
+changed. A top-level `data/index.json` lists the tiers for the dashboard.
+
+To track a different race, change `KALSHI_RACE_CODE` (default `QUAS4AA26`) — the
+event tickers are built from that code.
 
 A GitHub Actions workflow ([`.github/workflows/track.yml`](.github/workflows/track.yml))
 runs the scraper on a schedule (every 15 minutes) and commits any changes back
@@ -34,8 +50,9 @@ shows every market update over time.
 
 [`index.html`](index.html) is a static, dependency-free dashboard that reads the
 files below and renders a driver leaderboard with **American (moneyline) odds**,
-per-driver price **sparklines**, and a live change feed. It auto-refreshes every
-60 seconds.
+per-driver price **sparklines**, and a live change feed, with **tabs to switch
+between tiers** (Winner / Top 3 / Top 5 / Top 10 / Top 20). It auto-refreshes
+every 60 seconds.
 
 It's published to **GitHub Pages via GitHub Actions**: the same workflow that
 scrapes also assembles `index.html` + `data/` and deploys them, so the site
@@ -45,13 +62,16 @@ deployment → Source → GitHub Actions**. The live URL is then
 
 ## Output files
 
+Written per tier, e.g. `data/winner/…`, `data/top10/…`:
+
 | File | Contents |
 | --- | --- |
-| `data/snapshot.json` | Normalized current state of every market |
-| `data/latest.json` | Full raw API response (for reference/debugging) |
-| `data/history.jsonl` | Append-only; one line per run that had changes, with a compact diff |
-| `data/series.jsonl` | Append-only aligned price series (last price per driver per run) — powers the dashboard sparklines |
-| `data/CHANGES.md` | Human-readable change log, newest first, with a standings table |
+| `data/<tier>/snapshot.json` | Normalized current state of every market |
+| `data/<tier>/latest.json` | Full raw API response (for reference/debugging) |
+| `data/<tier>/history.jsonl` | Append-only; one line per run that had changes, with a compact diff |
+| `data/<tier>/series.jsonl` | Append-only aligned price series (last price per driver per run) — powers the dashboard sparklines |
+| `data/<tier>/CHANGES.md` | Human-readable change log, newest first, with a standings table |
+| `data/index.json` | List of tracked tiers (drives the dashboard tabs) |
 
 ## Running it manually
 
@@ -59,10 +79,10 @@ deployment → Source → GitHub Actions**. The live URL is then
 python3 scraper.py          # no dependencies — Python 3 stdlib only
 ```
 
-Override the target market with an env var:
+Point it at a different race with an env var:
 
 ```bash
-KALSHI_EVENT_TICKER=KXNASCARRACE-SOMEOTHER python3 scraper.py
+KALSHI_RACE_CODE=SOMEOTHERCODE python3 scraper.py
 ```
 
 ## Adjusting the schedule
