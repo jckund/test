@@ -1,8 +1,8 @@
 name: FanDuel reachability probe
 
-# TEMPORARY feasibility probe. Checks whether The Odds API lists NASCAR (and any
-# motorsport) coverage, so we know if the licensed-API path is viable before
-# signing up for a key. Read-only. Delete this workflow once we know.
+# TEMPORARY feasibility probe. Checks candidate paid/freemium odds APIs for
+# NASCAR + FanDuel coverage and whether they offer a self-serve free key.
+# Read-only. Delete this workflow once we know.
 
 on:
   workflow_dispatch: {}
@@ -14,37 +14,42 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: Check The Odds API sports coverage
+      - name: Survey odds-API providers for NASCAR coverage
         run: |
           python3 - <<'PY'
-          import json, urllib.request, urllib.error
+          import urllib.request, urllib.error
 
-          def get(url, label, headers=None):
-              req = urllib.request.Request(url, headers=headers or {})
+          def get(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (X11; Linux x86_64)"})
               try:
                   with urllib.request.urlopen(req, timeout=25) as r:
                       return r.status, r.read().decode("utf-8", "replace")
               except urllib.error.HTTPError as e:
-                  return e.code, e.read().decode("utf-8", "replace")[:500]
+                  return e.code, (e.read().decode("utf-8", "replace")[:400] if e.fp else "")
               except Exception as e:
                   return None, f"{type(e).__name__}: {e}"
 
-          # 1) Public docs coverage page — grep for motorsport / nascar keys.
-          st, body = get("https://the-odds-api.com/sports-odds-data/sports-apis.html",
-                         "docs", {"User-Agent": "Mozilla/5.0"})
-          print("DOCS PAGE:", st, "len", len(body) if body else 0)
-          if body:
-              low = body.lower()
-              for kw in ("nascar", "motor", "racing", "formula", "motogp", "indycar"):
-                  i = low.find(kw)
-                  print(f"  '{kw}': {'FOUND @'+str(i) if i>=0 else 'not found'}")
-                  # print a little context around first hit
-                  if i >= 0:
-                      print("     ...", body[max(0,i-60):i+60].replace("\n"," "))
+          KW = ["nascar", "motorsport", "motor racing", "auto racing", "fanduel",
+                "free trial", "free tier", "sign up", "get api key", "pricing"]
 
-          # 2) /v4/sports without key — shows the error shape (confirms API is reachable).
-          st, body = get("https://api.the-odds-api.com/v4/sports/?all=true",
-                         "sports", {"User-Agent": "Mozilla/5.0"})
-          print("\nV4 SPORTS (no key):", st)
-          print(" ", (body or "")[:300])
+          targets = [
+              ("SportsGameOdds docs",     "https://sportsgameodds.com/docs/"),
+              ("SportsGameOdds leagues",  "https://sportsgameodds.com/docs/data/leagues/"),
+              ("SportsGameOdds /sports",  "https://api.sportsgameodds.com/v2/sports/"),
+              ("OpticOdds site",          "https://opticodds.com/"),
+              ("OpticOdds dev reference", "https://developer.opticodds.com/reference/getting-started"),
+              ("OpticOdds /sports",       "https://api.opticodds.com/api/v3/sports"),
+              ("OddsJam API page",        "https://oddsjam.com/odds-api"),
+              ("OddsBlaze sports",        "https://data.oddsblaze.com/v1/sports"),
+          ]
+          for label, url in targets:
+              st, body = get(url)
+              blow = (body or "").lower()
+              hits = [k for k in KW if k in blow]
+              print(f"\n### {label}\n  {url}\n  status={st} len={len(body) if body else 0}")
+              print("  keywords:", ", ".join(hits) if hits else "(none)")
+              # show a snippet around 'nascar' if present
+              i = blow.find("nascar")
+              if i >= 0:
+                  print("  nascar ctx:", (body[max(0,i-70):i+70]).replace("\n"," "))
           PY
