@@ -1,0 +1,67 @@
+name: Track FanDuel NASCAR odds
+
+# Scrapes FanDuel's NASCAR race markets (via headless browser, since FanDuel has
+# no public API and blocks plain HTTP) and commits data/fanduel/odds.json. The
+# Kalshi workflow (track.yml) publishes the site on its own schedule and copies
+# the whole data/ dir, so these odds reach the dashboard within ~15 min.
+#
+# Runs hourly rather than every 15 min: FanDuel odds move slower than the Kalshi
+# order book, the browser job is heavier, and a lighter touch is more polite to
+# FanDuel. Data commits here don't match track.yml's path filter, so there is no
+# deploy loop.
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # hourly, offset from Kalshi's */15
+  workflow_dispatch: {}
+  push:
+    # Re-scrape when the scraper or workflow changes on the deploy branch.
+    branches: [claude/nascar-page-scraper-mwi55a]
+    paths:
+      - fanduel_scraper.js
+      - .github/workflows/fanduel.yml
+
+concurrency:
+  group: track-fanduel
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Playwright + Chromium
+        run: |
+          npm init -y >/dev/null 2>&1 || true
+          npm i playwright@1.56.1
+          npx playwright install --with-deps chromium
+
+      - name: Scrape FanDuel
+        run: node fanduel_scraper.js
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/fanduel/
+          if git diff --cached --quiet -- data/fanduel/; then
+            echo "No FanDuel odds changes; nothing to commit."
+          else
+            git commit -m "data(fanduel): odds update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            pushed=false
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; pushed=true; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+            if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
+          fi
