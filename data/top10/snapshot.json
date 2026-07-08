@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-AJAL",
       "volume": 626,
-      "volume_24h": 155,
+      "volume_24h": 56,
       "yes_ask": 18,
       "yes_bid": 15
     },
@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-ALBO",
       "volume": 419,
-      "volume_24h": 98,
+      "volume_24h": 18,
       "yes_ask": 26,
       "yes_bid": 21
     },
@@ -55,7 +55,7 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 83,
+      "no_ask": 84,
       "no_bid": 80,
       "open_interest": 131,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 131,
       "volume_24h": 23,
       "yes_ask": 20,
-      "yes_bid": 17
+      "yes_bid": 16
     },
     "KXNASCARTOP10-QUAS4AA26-AUHI": {
       "last_price": 21,
@@ -167,7 +167,7 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 66,
+      "no_ask": 67,
       "no_bid": 62,
       "open_interest": 11,
       "status": "active",
@@ -175,19 +175,19 @@
       "volume": 11,
       "volume_24h": 11,
       "yes_ask": 38,
-      "yes_bid": 34
+      "yes_bid": 33
     },
     "KXNASCARTOP10-QUAS4AA26-CHEL": {
-      "last_price": 47,
+      "last_price": 45,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 59,
       "no_bid": 55,
-      "open_interest": 368,
+      "open_interest": 796,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-CHEL",
-      "volume": 368,
-      "volume_24h": 6,
+      "volume": 796,
+      "volume_24h": 434,
       "yes_ask": 45,
       "yes_bid": 41
     },
@@ -349,7 +349,7 @@
       "last_price": 19,
       "liquidity": 0.0,
       "name": "Michael McDowell",
-      "no_ask": 86,
+      "no_ask": 87,
       "no_bid": 80,
       "open_interest": 100,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 100,
       "volume_24h": 100,
       "yes_ask": 20,
-      "yes_bid": 14
+      "yes_bid": 13
     },
     "KXNASCARTOP10-QUAS4AA26-NOGR": {
       "last_price": 0,
@@ -531,7 +531,7 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 82,
+      "no_ask": 81,
       "no_bid": 76,
       "open_interest": 2676,
       "status": "active",
@@ -539,11 +539,11 @@
       "volume": 2676,
       "volume_24h": 1998,
       "yes_ask": 24,
-      "yes_bid": 18
+      "yes_bid": 19
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-08T19:17:57.275777+00:00",
+  "scraped_at": "2026-07-08T19:40:18.491556+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top10"
 }
