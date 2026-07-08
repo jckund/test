@@ -127,6 +127,12 @@
   .feed .chg b { font-weight: 600; }
   .arrow.up { color: var(--pos); } .arrow.down { color: var(--neg); }
 
+  /* The comparison grid is wide (many books). Let it break out of the 980px
+     reading column and use up to 95vw, centered on the viewport, so all books
+     fit without horizontal scrolling on normal screens. The inner .scroll box
+     keeps overflow-x as a fallback on very narrow screens. */
+  #compare-view { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
+  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs { max-width: 900px; }
   .subtabs { margin: 2px 0 14px; }
   .cmp-note { font-size: 12.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55;
     background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
