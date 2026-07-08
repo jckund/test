@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalshi NASCAR Race Tracker</title>
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --surface: #ffffff;
+    --surface-2: #eef0f3;
+    --ink: #14181f;
+    --ink-2: #5b6472;
+    --line: #e2e5ea;
+    --accent: #e0930c;
+    --accent-soft: #f6e3b8;
+    --pos: #1a8f5a;
+    --neg: #d0472b;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1015; --surface: #151a21; --surface-2: #1c222b;
+      --ink: #eef1f5; --ink-2: #9aa4b2; --line: #262d38;
+      --accent: #f0b429; --accent-soft: #3a2f14;
+      --pos: #35c07f; --neg: #ff6a4d;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #eef0f3;
+    --ink: #14181f; --ink-2: #5b6472; --line: #e2e5ea;
+    --accent: #e0930c; --accent-soft: #f6e3b8; --pos: #1a8f5a; --neg: #d0472b;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1015; --surface: #151a21; --surface-2: #1c222b;
+    --ink: #eef1f5; --ink-2: #9aa4b2; --line: #262d38;
+    --accent: #f0b429; --accent-soft: #3a2f14; --pos: #35c07f; --neg: #ff6a4d;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 20px 64px; }
+
+  header.masthead { margin-bottom: 8px; }
+  .eyebrow {
+    font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-2); font-weight: 600; margin: 0 0 6px;
+  }
+  h1 {
+    font-size: clamp(26px, 4.5vw, 40px); line-height: 1.05; margin: 0;
+    font-weight: 800; letter-spacing: -.02em; text-wrap: balance;
+  }
+  .subtitle { color: var(--ink-2); margin: 6px 0 0; font-size: 15px; }
+  .checker {
+    height: 8px; margin: 16px 0 20px; border-radius: 2px;
+    background-image:
+      linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%),
+      linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%);
+    background-size: 16px 16px; background-position: 0 0, 8px 8px;
+    opacity: .16;
+  }
+
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
+    font-size: 13px; color: var(--ink-2); margin-bottom: 22px;
+  }
+  .meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .live {
+    display: inline-flex; align-items: center; gap: 7px; font-weight: 600;
+    color: var(--ink);
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+    box-shadow: 0 0 0 0 var(--accent);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .live .dot { animation: pulse 2s ease-out infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
+      70% { box-shadow: 0 0 0 7px transparent; }
+      100% { box-shadow: 0 0 0 0 transparent; }
+    }
+  }
+
+  .banner {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent); border-radius: 8px;
+    padding: 14px 16px; margin-bottom: 22px; font-size: 14px; color: var(--ink-2);
+  }
+  .banner strong { color: var(--ink); }
+
+  .card {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden;
+  }
+  .card + .card { margin-top: 24px; }
+  .card-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 16px 18px; border-bottom: 1px solid var(--line);
+  }
+  .card-head h2 { margin: 0; font-size: 15px; letter-spacing: .02em; }
+  .card-head .count { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+  thead th {
+    text-align: right; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--ink-2); font-weight: 600; padding: 10px 14px; white-space: nowrap;
+    border-bottom: 1px solid var(--line);
+  }
+  thead th.l, tbody td.l { text-align: left; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: var(--surface-2); }
+  .rank { color: var(--ink-2); font-variant-numeric: tabular-nums; width: 34px; }
+  .rank.top { color: var(--accent); font-weight: 700; }
+  .driver { font-weight: 600; }
+  .num { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .muted { color: var(--ink-2); }
+
+  .prob { display: flex; align-items: center; gap: 10px; justify-content: flex-end; }
+  .prob .pct { font-family: var(--mono); font-weight: 700; width: 46px; text-align: right; }
+  .meter { flex: 1; height: 8px; max-width: 130px; background: var(--surface-2);
+           border-radius: 999px; overflow: hidden; }
+  .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .delta { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
+  .delta.up { color: var(--pos); }
+  .delta.down { color: var(--neg); }
+
+  .pill {
+    display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px;
+    border-radius: 999px; background: var(--surface-2); color: var(--ink-2);
+    text-transform: capitalize;
+  }
+
+  .feed { list-style: none; margin: 0; padding: 0; }
+  .feed li { padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .feed li:last-child { border-bottom: 0; }
+  .feed .ts { font-size: 12px; color: var(--ink-2); font-family: var(--mono); margin-bottom: 6px; }
+  .feed .chg { font-size: 13px; margin: 3px 0; }
+  .feed .chg b { font-weight: 600; }
+  .arrow.up { color: var(--pos); }
+  .arrow.down { color: var(--neg); }
+
+  .empty { padding: 40px 18px; text-align: center; color: var(--ink-2); font-size: 14px; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--ink-2); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <p class="eyebrow" id="series">NASCAR · Kalshi</p>
+    <h1 id="title">NASCAR Race Winner</h1>
+    <p class="subtitle" id="subtitle"></p>
+    <div class="checker"></div>
+    <div class="meta">
+      <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
+      <span id="mcount"></span>
+      <a id="src" href="#" target="_blank" rel="noopener">View on Kalshi ↗</a>
+    </div>
+  </header>
+
+  <div id="notice"></div>
+
+  <section class="card">
+    <div class="card-head">
+      <h2>Standings — implied win probability</h2>
+      <span class="count" id="stand-count"></span>
+    </div>
+    <div class="scroll">
+      <table id="standings">
+        <thead>
+          <tr>
+            <th class="l">#</th>
+            <th class="l">Driver</th>
+            <th>Implied</th>
+            <th>Yes bid / ask</th>
+            <th>Volume</th>
+            <th>OI</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Recent changes</h2></div>
+    <ul class="feed" id="feed"></ul>
+  </section>
+
+  <footer>
+    Snapshots captured on a schedule by <code>scraper.py</code> via the Kalshi public API.
+    Git history is the full change log.
+  </footer>
+</div>
+
+<script>
+const SNAPSHOT_URL = "data/snapshot.json";
+const HISTORY_URL = "data/history.jsonl";
+
+const $ = (id) => document.getElementById(id);
+const cents = (v) => (typeof v === "number") ? v + "¢" : "—";
+const pctOf = (v) => (typeof v === "number") ? v : null;
+
+function relTime(iso) {
+  const t = Date.parse(iso);
+  if (isNaN(t)) return iso || "unknown";
+  const s = Math.round((Date.now() - t) / 1000);
+  if (s < 60) return s + "s ago";
+  if (s < 3600) return Math.round(s / 60) + "m ago";
+  if (s < 86400) return Math.round(s / 3600) + "h ago";
+  return Math.round(s / 86400) + "d ago";
+}
+
+async function loadJSON(url) {
+  const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error(url + " " + r.status);
+  return r.json();
+}
+async function loadHistory(url) {
+  const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) return [];
+  const text = await r.text();
+  return text.trim().split("\n").filter(Boolean).map((l) => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+}
+
+// Most-recent last_price move per ticker, from history (newest wins).
+function latestMoves(history) {
+  const moves = {};
+  for (const rec of history) {
+    for (const c of (rec.changes || [])) {
+      if (c.type === "market_changed" && c.fields && c.fields.last_price) {
+        moves[c.ticker] = c.fields.last_price; // {from, to}
+      }
+    }
+  }
+  return moves;
+}
+
+function render(snapshot, history) {
+  const ev = snapshot.event || {};
+  $("title").textContent = ev.title || "NASCAR Race";
+  $("series").textContent = (ev.series_ticker || "NASCAR") + " · Kalshi";
+  $("subtitle").textContent = ev.sub_title || "";
+  $("updated").textContent = "Updated " + relTime(snapshot.scraped_at);
+  $("updated").title = snapshot.scraped_at || "";
+  $("mcount").textContent = (snapshot.market_count ?? 0) + " markets";
+  const src = $("src");
+  src.href = snapshot.source_url || "https://kalshi.com";
+
+  const markets = Object.values(snapshot.markets || {});
+  markets.sort((a, b) => (b.last_price ?? -1) - (a.last_price ?? -1));
+  const moves = latestMoves(history);
+
+  const rows = $("rows");
+  rows.innerHTML = "";
+  markets.forEach((m, i) => {
+    const p = pctOf(m.last_price);
+    const mv = moves[m.ticker];
+    let delta = "";
+    if (mv && typeof mv.from === "number" && typeof mv.to === "number") {
+      const d = mv.to - mv.from;
+      if (d !== 0) {
+        const cls = d > 0 ? "up" : "down";
+        delta = `<span class="delta ${cls}">${d > 0 ? "▲" : "▼"}${Math.abs(d)}</span>`;
+      }
+    }
+    const status = (m.status && m.status !== "active")
+      ? ` <span class="pill">${m.status}</span>` : "";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+      <td class="l driver">${escapeHtml(m.name || m.ticker)}${status}</td>
+      <td>
+        <div class="prob">
+          ${delta}
+          <div class="meter"><i style="width:${p ?? 0}%"></i></div>
+          <span class="pct">${p != null ? p + "%" : "—"}</span>
+        </div>
+      </td>
+      <td class="num">${cents(m.yes_bid)} <span class="muted">/</span> ${cents(m.yes_ask)}</td>
+      <td class="num">${fmtInt(m.volume)}</td>
+      <td class="num">${fmtInt(m.open_interest)}</td>`;
+    rows.appendChild(tr);
+  });
+  $("stand-count").textContent = markets.length + " drivers";
+
+  renderFeed(history);
+}
+
+function renderFeed(history) {
+  const feed = $("feed");
+  feed.innerHTML = "";
+  const recent = history.slice(-30).reverse();
+  if (!recent.length) {
+    feed.innerHTML = `<li class="empty">No changes recorded yet.</li>`;
+    return;
+  }
+  for (const rec of recent) {
+    const li = document.createElement("li");
+    const lines = (rec.changes || []).map((c) => {
+      if (c.type === "initial_snapshot")
+        return `<div class="chg">Initial snapshot — <b>${c.market_count}</b> markets.</div>`;
+      if (c.type === "market_added")
+        return `<div class="chg">➕ Added <b>${escapeHtml(c.name || c.ticker)}</b></div>`;
+      if (c.type === "market_removed")
+        return `<div class="chg">➖ Removed <b>${escapeHtml(c.name || c.ticker)}</b></div>`;
+      const parts = Object.entries(c.fields || {}).map(([f, mv]) => {
+        let arrow = "";
+        if (f === "last_price" && typeof mv.from === "number" && typeof mv.to === "number") {
+          const cls = mv.to > mv.from ? "up" : "down";
+          arrow = ` <span class="arrow ${cls}">${mv.to > mv.from ? "▲" : "▼"}</span>`;
+        }
+        return `${f} ${fmtVal(mv.from)}→${fmtVal(mv.to)}${arrow}`;
+      });
+      return `<div class="chg"><b>${escapeHtml(c.name || c.ticker)}</b> — ${parts.join("; ")}</div>`;
+    }).join("");
+    li.innerHTML = `<div class="ts">${new Date(rec.scraped_at).toLocaleString()}</div>${lines}`;
+    feed.appendChild(li);
+  }
+}
+
+function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
+function fmtVal(v) { return (v == null) ? "—" : v; }
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function showEmpty(msg) {
+  $("notice").innerHTML =
+    `<div class="banner"><strong>No data yet.</strong> ${msg}</div>`;
+  $("updated").textContent = "Awaiting first scrape";
+  $("rows").innerHTML = `<tr><td colspan="6" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
+  $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
+}
+
+async function refresh() {
+  try {
+    const [snap, hist] = await Promise.all([loadJSON(SNAPSHOT_URL), loadHistory(HISTORY_URL)]);
+    $("notice").innerHTML = "";
+    render(snap, hist);
+  } catch (e) {
+    showEmpty("Trigger the <b>Track Kalshi NASCAR market</b> workflow from the Actions tab, or wait for the next scheduled run.");
+  }
+}
+
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>
