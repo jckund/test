@@ -1,8 +1,8 @@
 name: FanDuel reachability probe
 
-# TEMPORARY feasibility probe. Renders FanDuel's motorsport page with a headless
-# browser on the runner and captures the API calls it makes, to discover the
-# real odds endpoint. Read-only. Delete this workflow once we know the answer.
+# TEMPORARY feasibility probe. Checks whether The Odds API lists NASCAR (and any
+# motorsport) coverage, so we know if the licensed-API path is viable before
+# signing up for a key. Read-only. Delete this workflow once we know.
 
 on:
   workflow_dispatch: {}
@@ -14,51 +14,37 @@ jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-      - name: Install Playwright + Chromium
+      - name: Check The Odds API sports coverage
         run: |
-          npm i playwright@1.56.1
-          npx playwright install --with-deps chromium
-      - name: Capture FanDuel network calls
-        run: |
-          node - <<'JS'
-          const { chromium } = require("playwright");
-          (async () => {
-            const b = await chromium.launch();
-            const ctx = await b.newContext({
-              userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36",
-              locale: "en-US",
-              timezoneId: "America/New_York",
-            });
-            const p = await ctx.newPage();
-            const apiHits = [];
-            p.on("response", async (r) => {
-              const u = r.url();
-              if (/sbapi|content-managed|event|market|api/.test(u)) {
-                const ct = r.headers()["content-type"] || "";
-                apiHits.push({ status: r.status(), ct: ct.slice(0, 40), url: u.slice(0, 160) });
-              }
-            });
-            try {
-              await p.goto("https://sportsbook.fanduel.com/motorsport", { waitUntil: "networkidle", timeout: 60000 });
-            } catch (e) { console.log("nav note:", e.message); }
-            await p.waitForTimeout(6000);
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error
 
-            const title = await p.title();
-            const bodyText = (await p.evaluate(() => document.body.innerText || "")).slice(0, 600);
-            console.log("TITLE:", title);
-            console.log("VISIBLE TEXT (first 600):\n", bodyText.replace(/\n{2,}/g, "\n"));
-            console.log("\n=== JSON API responses ===");
-            const seen = new Set();
-            for (const h of apiHits) {
-              if (!h.ct.includes("json")) continue;
-              const key = h.url.split("?")[0];
-              if (seen.has(key)) continue; seen.add(key);
-              console.log(`[${h.status}] ${h.ct}  ${h.url}`);
-            }
-            console.log("\ntotal api-ish responses:", apiHits.length);
-            await b.close();
-          })().catch(e => { console.error("FATAL", e); process.exit(1); });
-          JS
+          def get(url, label, headers=None):
+              req = urllib.request.Request(url, headers=headers or {})
+              try:
+                  with urllib.request.urlopen(req, timeout=25) as r:
+                      return r.status, r.read().decode("utf-8", "replace")
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode("utf-8", "replace")[:500]
+              except Exception as e:
+                  return None, f"{type(e).__name__}: {e}"
+
+          # 1) Public docs coverage page — grep for motorsport / nascar keys.
+          st, body = get("https://the-odds-api.com/sports-odds-data/sports-apis.html",
+                         "docs", {"User-Agent": "Mozilla/5.0"})
+          print("DOCS PAGE:", st, "len", len(body) if body else 0)
+          if body:
+              low = body.lower()
+              for kw in ("nascar", "motor", "racing", "formula", "motogp", "indycar"):
+                  i = low.find(kw)
+                  print(f"  '{kw}': {'FOUND @'+str(i) if i>=0 else 'not found'}")
+                  # print a little context around first hit
+                  if i >= 0:
+                      print("     ...", body[max(0,i-60):i+60].replace("\n"," "))
+
+          # 2) /v4/sports without key — shows the error shape (confirms API is reachable).
+          st, body = get("https://api.the-odds-api.com/v4/sports/?all=true",
+                         "sports", {"User-Agent": "Mozilla/5.0"})
+          print("\nV4 SPORTS (no key):", st)
+          print(" ", (body or "")[:300])
+          PY
