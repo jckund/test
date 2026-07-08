@@ -239,19 +239,24 @@ function usOdds(c) {
   return (r > 0 ? "+" : "") + r;
 }
 
-// Best estimate of P(yes) in cents. Thinly-traded tiers often have a stale or
-// zero last_price, so prefer the live yes bid/ask midpoint, then the no side
-// (100 − no), then last trade, then a single quote.
-function impliedYes(m) {
-  const yb = m.yes_bid, ya = m.yes_ask;
-  if (typeof yb === "number" && typeof ya === "number") return Math.round((yb + ya) / 2);
-  const nb = m.no_bid, na = m.no_ask;
-  if (typeof nb === "number" && typeof na === "number") return 100 - Math.round((nb + na) / 2);
+// Yes price (cents) as shown on Kalshi's "Yes" buy button = the yes ask.
+// Fall back to yes bid, the no-side complement, then last trade.
+function priceYes(m) {
+  if (typeof m.yes_ask === "number") return m.yes_ask;
+  if (typeof m.yes_bid === "number") return m.yes_bid;
+  if (typeof m.no_bid === "number") return 100 - m.no_bid;   // = yes ask
   if (typeof m.last_price === "number" && m.last_price > 0) return m.last_price;
-  if (typeof ya === "number") return ya;
-  if (typeof yb === "number") return yb;
   return null;
 }
+// No price (cents) as shown on Kalshi's "No" buy button = the no ask.
+function priceNo(m) {
+  if (typeof m.no_ask === "number") return m.no_ask;
+  if (typeof m.no_bid === "number") return m.no_bid;
+  if (typeof m.yes_bid === "number") return 100 - m.yes_bid; // = no ask
+  const y = priceYes(m);
+  return (y == null) ? null : 100 - y;
+}
+const cCents = (v) => (typeof v === "number") ? v + "¢" : "—";
 
 function sparkSVG(vals) {
   const pts = vals.filter((v) => typeof v === "number");
@@ -369,7 +374,7 @@ function render(snapshot, history, seriesPoints, meta) {
   $("odds-col").textContent = oddsLabel + " odds";
 
   const markets = Object.values(snapshot.markets || {});
-  markets.sort((a, b) => (impliedYes(b) ?? -1) - (impliedYes(a) ?? -1));
+  markets.sort((a, b) => (priceYes(b) ?? -1) - (priceYes(a) ?? -1));
   const moves = latestMoves(history);
   const series = seriesByTicker(seriesPoints || []);
 
@@ -379,7 +384,7 @@ function render(snapshot, history, seriesPoints, meta) {
     rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
   }
   markets.forEach((m, i) => {
-    const p = impliedYes(m);
+    const p = priceYes(m);
     const mv = moves[m.ticker];
     let delta = "";
     if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
@@ -442,9 +447,9 @@ function renderFeed(history) {
 }
 
 function yesNoOdds(m) {
-  const yes = impliedYes(m);
-  const no = (yes == null) ? null : 100 - yes;  // binary: yes + no = 100
-  return `${usOdds(yes)} <span class="muted">/</span> ${usOdds(no)}`;
+  const yes = priceYes(m), no = priceNo(m);
+  // Show the Kalshi ¢ price (so it ties to the site) plus the American odds.
+  return `${cCents(yes)} ${usOdds(yes)} <span class="muted">/</span> ${cCents(no)} ${usOdds(no)}`;
 }
 async function loadActivity() {
   try {
