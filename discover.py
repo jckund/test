@@ -69,6 +69,27 @@ def main():
         except Exception as e:
             print(f"events failed for {st}: {e}", file=sys.stderr)
 
+    # Directly probe the specific top-N tiers the user asked about, in case
+    # a series was missed by the category scan.
+    for n in (2, 3, 5, 10, 15, 20, 25):
+        et = f"KXNASCARTOP{n}-{RACE_CODE}"
+        if et in found:
+            continue
+        try:
+            data = get(f"{API}/events/{et}?with_nested_markets=false")
+            ev = data.get("event", {})
+            if ev.get("event_ticker"):
+                found[et] = {
+                    "event_ticker": et,
+                    "series_ticker": ev.get("series_ticker", f"KXNASCARTOP{n}"),
+                    "title": ev.get("title"),
+                    "sub_title": ev.get("sub_title"),
+                    "probed": True,
+                }
+                print(f"probe hit: {et}", file=sys.stderr)
+        except Exception as e:
+            print(f"probe miss: {et} ({e})", file=sys.stderr)
+
     result = sorted(found.values(), key=lambda x: x["event_ticker"])
     os.makedirs("data", exist_ok=True)
     with open("data/discovery.json", "w") as f:
