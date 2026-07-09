@@ -11,13 +11,16 @@
  * only on a GitHub Actions runner (the Claude session's egress proxy blocks
  * sportsbooks), on a modest schedule to stay low-profile.
  *
- * Output: data/fanduel/odds.json — current odds per tier, normalized to implied
- * win probability (raw) and a no-vig probability (raw scaled to the market's
- * number-of-winners), keyed so the page can match drivers to Kalshi by name.
+ * Output (per race): data/<series>/fanduel/odds.json — current odds per tier,
+ * normalized to implied win probability (raw) and a no-vig probability (raw
+ * scaled to the market's number-of-winners), keyed so the page can match
+ * drivers to Kalshi by name. For the full (Cup) series we also write
+ * manufacturers.json and teams.json.
  *
- * We select the race by matching FanDuel's market-name prefix against the race
- * Kalshi is tracking (read from data/index.json), so the two sides always
- * describe the same race with no manual configuration.
+ * The Kalshi scraper auto-discovers every open race into data/series.json; here
+ * we load the page once (it carries every race's markets) and, for each series,
+ * pick the FanDuel race whose name matches that series' Kalshi race — so the two
+ * sides always describe the same race with no manual configuration.
  */
 
 const fs = require("fs");
@@ -25,10 +28,6 @@ const path = require("path");
 const { chromium } = require("playwright");
 
 const MOTORSPORT_URL = "https://sportsbook.fanduel.com/motorsport";
-const OUT_DIR = path.join("data", "fanduel");
-const OUT_FILE = path.join(OUT_DIR, "odds.json");
-const MFR_FILE = path.join(OUT_DIR, "manufacturers.json");
-const TEAM_FILE = path.join(OUT_DIR, "teams.json");
 
 // Canonical manufacturer names we recognize as runners in a "winning
 // manufacturer" market (and as keywords in per-make driver markets).
@@ -73,19 +72,39 @@ function impliedProb(american) {
   return american > 0 ? 100 / (american + 100) : -american / (-american + 100);
 }
 
-function readKalshiRaceName() {
+// Read the auto-discovered races. Each series' Kalshi race name comes from its
+// own data/<key>/index.json (written by scraper.py).
+function readSeries() {
+  let list = [];
   try {
-    const idx = JSON.parse(fs.readFileSync(path.join("data", "index.json"), "utf8"));
-    return idx.race_title || "";
+    list = (JSON.parse(fs.readFileSync(path.join("data", "series.json"), "utf8")).series) || [];
   } catch {
-    return "";
+    return [];
   }
+  return list.map((s) => {
+    let raceTitle = s.race_title || "";
+    try {
+      raceTitle = JSON.parse(fs.readFileSync(path.join("data", s.key, "index.json"), "utf8")).race_title || raceTitle;
+    } catch { /* keep series.json value */ }
+    return { key: s.key, label: s.label, race_title: raceTitle, full: !!s.full };
+  });
+}
+
+// Pick the FanDuel race whose normalized name lines up with the Kalshi race
+// (prefix match in either direction), or null if none match this race.
+function pickRace(byRace, kalshiRace) {
+  const kn = norm(kalshiRace);
+  if (!kn) return null;
+  return Object.keys(byRace).find((r) => {
+    const rn = norm(r);
+    return rn && (kn.startsWith(rn) || rn.startsWith(kn));
+  }) || null;
 }
 
 async function main() {
-  const kalshiRace = process.env.FD_RACE || readKalshiRaceName();
-  const kalshiNorm = norm(kalshiRace);
-  console.log("Kalshi race:", kalshiRace || "(unknown)");
+  const seriesList = readSeries();
+  console.log("Series to match:", seriesList.map((s) => `${s.key}:${s.race_title}`).join(", ") || "(none)");
+  if (!seriesList.length) throw new Error("No data/series.json; run scraper.py first.");
 
   const browser = await chromium.launch();
   const ctx = await browser.newContext({
@@ -134,25 +153,23 @@ async function main() {
     }
   }
   const raceNames = Object.keys(byRace);
-  console.log("race markets found for:", raceNames);
+  console.log("FanDuel race markets found for:", raceNames);
   if (!raceNames.length) throw new Error("No single-race outright markets found on FanDuel.");
 
-  // Choose the race whose normalized name best lines up with the Kalshi race.
-  // Prefix match in either direction (FanDuel "Quaker State 400" vs Kalshi
-  // "Quaker State 400 Available at Walmart"); fall back to the race exposing the
-  // most tiers.
-  let chosen = null;
-  if (kalshiNorm) {
-    chosen = raceNames.find((r) => {
-      const rn = norm(r);
-      return rn && (kalshiNorm.startsWith(rn) || rn.startsWith(kalshiNorm));
-    });
-  }
+  for (const series of seriesList) emitSeries(series, byRace, markets);
+}
+
+// Write one series' FanDuel odds (and, for the full series, manufacturer/team
+// markets) under data/<series>/fanduel/.
+function emitSeries(series, byRace, markets) {
+  const kalshiRace = series.race_title;
+  const chosen = pickRace(byRace, kalshiRace);
+  const outDir = path.join("data", series.key, "fanduel");
   if (!chosen) {
-    chosen = raceNames.sort((a, b) => Object.keys(byRace[b]).length - Object.keys(byRace[a]).length)[0];
-    console.log("WARNING: no name match to Kalshi race; falling back to", JSON.stringify(chosen));
+    console.log(`[${series.key}] no FanDuel race matches "${kalshiRace}"; skipping.`);
+    return;
   }
-  console.log("chosen race:", chosen);
+  console.log(`[${series.key}] "${kalshiRace}" -> FanDuel "${chosen}"`);
 
   const tiers = {};
   for (const [tierKey, m] of Object.entries(byRace[chosen])) {
@@ -183,19 +200,23 @@ async function main() {
     kalshi_race: kalshiRace,
     tiers,
   };
-  fs.mkdirSync(OUT_DIR, { recursive: true });
-  fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2) + "\n");
-  console.log("wrote", OUT_FILE);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, "odds.json"), JSON.stringify(out, null, 2) + "\n");
+  console.log(`  wrote ${path.join(outDir, "odds.json")}`);
 
-  scrapeManufacturers(markets, chosen, kalshiRace);
-  scrapeTeams(markets, chosen, kalshiRace);
+  // Manufacturer/Team markets are Cup-only (the support series don't have them).
+  if (series.full) {
+    scrapeManufacturers(markets, chosen, kalshiRace, outDir);
+    scrapeTeams(markets, chosen, kalshiRace, outDir);
+  }
 }
 
 // FanDuel's winning-team market: runners are race teams. Detected by runner set
 // (rather than market name) so it survives renames, and gated to the chosen race
 // so the season-long owner championship is excluded. Output feeds the Top Team
 // tab's "which team wins" comparison.
-function scrapeTeams(markets, chosenRace, kalshiRace) {
+function scrapeTeams(markets, chosenRace, kalshiRace, outDir) {
+  const teamFile = path.join(outDir, "teams.json");
   const raceNorm = norm(chosenRace);
   const runnerAmerican = (r) =>
     r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
@@ -236,8 +257,9 @@ function scrapeTeams(markets, chosenRace, kalshiRace) {
     kalshi_race: kalshiRace,
     winner,
   };
-  fs.writeFileSync(TEAM_FILE, JSON.stringify(out, null, 2) + "\n");
-  console.log(`  winning-team market: ${teamMkt.marketName} (${entries.length} teams) -> ${TEAM_FILE}`);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(teamFile, JSON.stringify(out, null, 2) + "\n");
+  console.log(`  winning-team market: ${teamMkt.marketName} (${entries.length} teams) -> ${teamFile}`);
 }
 
 // FanDuel's manufacturer props: a "winning manufacturer" market (runners are the
@@ -246,7 +268,8 @@ function scrapeTeams(markets, chosenRace, kalshiRace) {
 // the exact market name) so it keeps working if FanDuel renames it, and we
 // exclude the season-long championship by requiring the market name to reference
 // the chosen race. Output feeds the dashboard's Top Manufacturer tab.
-function scrapeManufacturers(markets, chosenRace, kalshiRace) {
+function scrapeManufacturers(markets, chosenRace, kalshiRace, outDir) {
+  const mfrFile = path.join(outDir, "manufacturers.json");
   const raceNorm = norm(chosenRace);
   const runnerAmerican = (r) =>
     r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
@@ -330,10 +353,11 @@ function scrapeManufacturers(markets, chosenRace, kalshiRace) {
   }
 
   if (Object.keys(result.winner).length || Object.keys(result.makes).length) {
-    fs.writeFileSync(MFR_FILE, JSON.stringify(result, null, 2) + "\n");
-    console.log("wrote", MFR_FILE);
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(mfrFile, JSON.stringify(result, null, 2) + "\n");
+    console.log("wrote", mfrFile);
   } else {
-    console.log("no manufacturer markets captured; leaving", MFR_FILE, "untouched.");
+    console.log("no manufacturer markets captured; leaving", mfrFile, "untouched.");
   }
 }
 
