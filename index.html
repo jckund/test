@@ -131,10 +131,8 @@
      reading column and use up to 95vw, centered on the viewport, so all books
      fit without horizontal scrolling on normal screens. The inner .scroll box
      keeps overflow-x as a fallback on very narrow screens. */
-  #compare-view, #mfr-view.wide, #team-view.wide { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
-  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs,
-  #mfr-view .cmp-note, #mfr-view .cmp-fresh,
-  #team-view .cmp-note, #team-view .cmp-fresh { max-width: 900px; }
+  #compare-view { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
+  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs { max-width: 900px; }
   .subtabs { margin: 2px 0 14px; }
   .cmp-note { font-size: 12.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55;
     background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
@@ -234,79 +232,81 @@
   </div>
 
   <div id="compare-view" style="display:none">
-    <div class="tabs subtabs" id="cmp-tabs" role="tablist" aria-label="Compare tiers"></div>
-    <div class="cmp-note">
-      Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
-      <b>Edge</b> is the gap in implied win probability (Kalshi − book, in points):
-      <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
-      (it pays more than Kalshi's implied chance → +EV), <span class="edge neg">red</span> means
-      shorter. Rows are sorted by the <b>best edge across books</b>. Book odds include vig.
-    </div>
-    <div class="cmp-fresh" id="cmp-fresh"></div>
-    <section class="card">
-      <div class="card-head">
-        <h2 id="cmp-title">Kalshi vs the books</h2>
-        <span class="count" id="cmp-count"></span>
-      </div>
-      <div class="scroll">
-        <table>
-          <thead><tr id="cmp-head"></tr></thead>
-          <tbody id="cmp-rows"></tbody>
-        </table>
-      </div>
-    </section>
-  </div>
+    <div class="tabs subtabs" id="cmp-tabs" role="tablist" aria-label="Comparison views"></div>
 
-  <div id="mfr-view" style="display:none">
-    <div class="cmp-note">
-      <b>Implied</b> odds for the top-finishing driver of each manufacturer, derived from the live
-      <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
-      within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
-      The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
-      When FanDuel posts a <b>Top&nbsp;[Make]&nbsp;Driver</b> market, its odds and the edge (Kalshi
-      implied − book implied, in points) appear alongside. Cells shaded
-      <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
-      Kalshi-implied fair line.
+    <div id="cmp-driver-panel">
+      <div class="cmp-note">
+        Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
+        <b>Edge</b> is the gap in implied win probability (Kalshi − book, in points):
+        <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
+        (it pays more than Kalshi's implied chance → +EV), <span class="edge neg">red</span> means
+        shorter. Rows are sorted by the <b>best edge across books</b>. Book odds include vig.
+      </div>
+      <div class="cmp-fresh" id="cmp-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2 id="cmp-title">Kalshi vs the books</h2>
+          <span class="count" id="cmp-count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr id="cmp-head"></tr></thead>
+            <tbody id="cmp-rows"></tbody>
+          </table>
+        </div>
+      </section>
     </div>
-    <div class="cmp-fresh" id="mfr-fresh"></div>
-    <section class="card">
-      <div class="card-head">
-        <h2>Which manufacturer wins the race</h2>
-        <span class="count" id="mfr-win-count"></span>
-      </div>
-      <div class="scroll">
-        <table id="mfr-win">
-          <thead><tr id="mfr-win-head"></tr></thead>
-          <tbody id="mfr-win-rows"></tbody>
-        </table>
-      </div>
-    </section>
-    <div id="mfr-groups"></div>
-  </div>
 
-  <div id="team-view" style="display:none">
-    <div class="cmp-note">
-      <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
-      The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
-      teams; book <b>winning-team</b> markets and the edge (Kalshi implied − book, in points) appear
-      alongside, with <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
-      Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
-      imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
+    <div id="cmp-mfr-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Implied</b> odds for the top-finishing driver of each manufacturer, derived from the live
+        <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
+        within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
+        The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
+        Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the edge (Kalshi implied − book implied, in
+        points) appear alongside. Cells shaded <span class="edge pos">green</span> are <b>+EV</b>: the
+        book's line is longer than the Kalshi-implied fair line.
+      </div>
+      <div class="cmp-fresh" id="mfr-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Which manufacturer wins the race</h2>
+          <span class="count" id="mfr-win-count"></span>
+        </div>
+        <div class="scroll">
+          <table id="mfr-win">
+            <thead><tr id="mfr-win-head"></tr></thead>
+            <tbody id="mfr-win-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <div id="mfr-groups"></div>
     </div>
-    <div class="cmp-fresh" id="team-fresh"></div>
-    <section class="card">
-      <div class="card-head">
-        <h2>Which team wins the race</h2>
-        <span class="count" id="team-win-count"></span>
+
+    <div id="cmp-team-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
+        The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
+        teams; book <b>winning-team</b> markets and the edge (Kalshi implied − book, in points) appear
+        alongside, with <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
+        Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
+        imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
       </div>
-      <div class="scroll">
-        <table id="team-win">
-          <thead><tr id="team-win-head"></tr></thead>
-          <tbody id="team-win-rows"></tbody>
-        </table>
-      </div>
-    </section>
-    <div id="team-groups"></div>
+      <div class="cmp-fresh" id="team-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Which team wins the race</h2>
+          <span class="count" id="team-win-count"></span>
+        </div>
+        <div class="scroll">
+          <table id="team-win">
+            <thead><tr id="team-win-head"></tr></thead>
+            <tbody id="team-win-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <div id="team-groups"></div>
+    </div>
   </div>
 
   <footer>
@@ -421,8 +421,6 @@ function buildTabs() {
   tabs.innerHTML = "";
   const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
   items.push({ key: "compare", label: "Odds Comparison" });
-  items.push({ key: "manufacturers", label: "Top Manufacturer" });
-  items.push({ key: "teams", label: "Top Team" });
   items.push({ key: "activity", label: "Activity" });
   for (const it of items) {
     const b = document.createElement("button");
@@ -439,8 +437,6 @@ function showView(which) {
   $("tier-view").style.display = which === "tier" ? "" : "none";
   $("activity-view").style.display = which === "activity" ? "" : "none";
   $("compare-view").style.display = which === "compare" ? "" : "none";
-  $("mfr-view").style.display = which === "mfr" ? "" : "none";
-  $("team-view").style.display = which === "team" ? "" : "none";
 }
 
 function tierMeta(key) {
@@ -453,8 +449,6 @@ async function selectTier(key) {
   buildTabs();
   if (key === "activity") { showView("activity"); return loadActivity(); }
   if (key === "compare") { showView("compare"); return loadCompare(); }
-  if (key === "manufacturers") { showView("mfr"); return loadManufacturers(); }
-  if (key === "teams") { showView("team"); return loadTeams(); }
   showView("tier");
   const meta = tierMeta(key);
   const base = "data/" + key;
@@ -627,7 +621,7 @@ async function refresh() {
     $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
     $("src").href = INDEX.source_url || "https://kalshi.com";
     const wanted = (location.hash || "").replace("#", "");
-    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "manufacturers", "teams", "activity");
+    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "activity");
     if (!currentKey) currentKey = validKeys.includes(wanted) ? wanted : INDEX.markets[0].key;
     await selectTier(currentKey);
   } catch (e) {
@@ -677,19 +671,43 @@ function cmpTiersAvailable() {
   return CMP_TIERS.filter((t) => kalshiKeys.has(t.key) && booksForTier(t.key).length);
 }
 
+// Odds Comparison subtabs: the per-tier driver comparison plus the derived
+// Manufacturer and Team views (each a separate panel inside #compare-view).
+let cmpSub = null; // 'winner'|'top3'|'top5'|'top10'|'mfr'|'team'
+
+function cmpSubItems() {
+  const items = cmpTiersAvailable().map((t) => ({ key: t.key, label: t.label }));
+  items.push({ key: "mfr", label: "Manufacturer" });
+  items.push({ key: "team", label: "Team" });
+  return items;
+}
+
 function buildCmpTabs() {
-  const avail = cmpTiersAvailable();
-  if (!compareTier || !avail.find((t) => t.key === compareTier))
-    compareTier = avail.length ? avail[0].key : null;
+  const items = cmpSubItems();
+  if (!cmpSub || !items.find((i) => i.key === cmpSub)) cmpSub = items.length ? items[0].key : null;
   const box = $("cmp-tabs");
   box.innerHTML = "";
-  for (const t of avail) {
+  for (const it of items) {
     const b = document.createElement("button");
-    b.className = "tab"; b.role = "tab"; b.textContent = t.label;
-    b.setAttribute("aria-selected", String(t.key === compareTier));
-    b.onclick = () => { compareTier = t.key; buildCmpTabs(); renderCompare(); };
+    b.className = "tab"; b.role = "tab"; b.textContent = it.label;
+    b.setAttribute("aria-selected", String(it.key === cmpSub));
+    b.onclick = () => { cmpSub = it.key; buildCmpTabs(); renderCmpSub(); };
     box.appendChild(b);
   }
+}
+
+function showCmpPanel(which) {
+  $("cmp-driver-panel").style.display = which === "driver" ? "" : "none";
+  $("cmp-mfr-panel").style.display = which === "mfr" ? "" : "none";
+  $("cmp-team-panel").style.display = which === "team" ? "" : "none";
+}
+
+async function renderCmpSub() {
+  if (cmpSub === "mfr") { showCmpPanel("mfr"); return loadManufacturers(); }
+  if (cmpSub === "team") { showCmpPanel("team"); return loadTeams(); }
+  showCmpPanel("driver");
+  compareTier = cmpSub;
+  return renderCompare();
 }
 
 async function loadCompare() {
@@ -698,7 +716,7 @@ async function loadCompare() {
     try { BOOKDATA[bk.key] = await loadJSON(bk.url); } catch { BOOKDATA[bk.key] = null; }
   }));
   buildCmpTabs();
-  await renderCompare();
+  await renderCmpSub();
 }
 
 async function renderCompare() {
@@ -890,8 +908,6 @@ function renderManufacturers(snap) {
   }
   // Which books carry a winning-manufacturer line, and any per-make market.
   const winnerBooks = books.filter((bk) => MFRDATA[bk.key].winner && Object.keys(MFRDATA[bk.key].winner).length);
-  const anyBooks = books.length > 0;
-  document.getElementById("mfr-view").classList.toggle("wide", anyBooks);
 
   // Freshness line per available book.
   $("mfr-fresh").innerHTML = books.map((bk) => {
@@ -933,7 +949,7 @@ function renderManufacturers(snap) {
         <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
       <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
   }).join("");
-  $("mfr-win-count").textContent = winnerBooks.length ? "" : (anyBooks ? "books list per-make only" : "");
+  $("mfr-win-count").textContent = winnerBooks.length ? "" : (books.length ? "books list per-make only" : "");
 
   // Per-make "top driver" tables: normalize Kalshi win prob within the make.
   // Each book that carries this make gets an odds + edge column; edge compares
@@ -1066,8 +1082,6 @@ function renderTeams(snap) {
   $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " teams";
 
   const books = TEAM_BOOKS.filter((bk) => TEAMDATA[bk.key] && TEAMDATA[bk.key].winner);
-  const anyBooks = books.length > 0;
-  document.getElementById("team-view").classList.toggle("wide", anyBooks);
 
   $("team-fresh").innerHTML = books.map((bk) => {
     const ts = bookTime(TEAMDATA[bk.key]);
