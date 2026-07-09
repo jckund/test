@@ -1,0 +1,53 @@
+name: Discover Kalshi NASCAR events (one-off)
+
+# Temporary probe: lists Kalshi's open NASCAR events across the winner/top-N
+# series so we can read the exact event tickers + titles for the Cup, Xfinity
+# (O'Reilly) and Truck races, then configure the multi-series scraper. Safe to
+# delete after one run.
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List open NASCAR events
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request
+          BASE = "https://api.elections.kalshi.com/trade-api/v2"
+          UA = {"User-Agent": "nascar-discover/1.0", "Accept": "application/json"}
+
+          def get(url):
+              req = urllib.request.Request(url, headers=UA)
+              with urllib.request.urlopen(req, timeout=30) as r:
+                  return json.loads(r.read().decode())
+
+          # 1) Find every Sports series whose ticker mentions NASCAR.
+          try:
+              series = get(f"{BASE}/series?category=Sports").get("series", [])
+              nascar = [s for s in series if "NASCAR" in (s.get("ticker","")+s.get("title","")).upper()]
+              print("=== NASCAR series ===")
+              for s in nascar:
+                  print(f"  {s.get('ticker')}  |  {s.get('title')}")
+          except Exception as e:
+              print("series list failed:", e)
+              nascar = []
+
+          # 2) For each candidate winner/top-N series, list OPEN events.
+          candidates = sorted(set(
+              [s.get("ticker") for s in nascar] +
+              ["KXNASCARRACE","KXNASCARTOP3","KXNASCARTOP5","KXNASCARTOP10","KXNASCARTOP20"]
+          ))
+          for tk in candidates:
+              print(f"\n=== open events for series {tk} ===")
+              try:
+                  ev = get(f"{BASE}/events?series_ticker={tk}&status=open&limit=200").get("events", [])
+                  if not ev:
+                      print("  (none)")
+                  for e in ev:
+                      print(f"  {e.get('event_ticker')}  |  {e.get('title')}  |  sub={e.get('sub_title')}")
+              except Exception as e:
+                  print("  failed:", e)
+          PY
