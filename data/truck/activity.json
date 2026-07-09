@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-07-09T19:08:42.945305+00:00",
+  "updated_at": "2026-07-09T19:12:13.610399+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "67e5c9df-fb35-7bf3-1542-e994f9bcbe07",
+      "tier": "Winner",
+      "driver": "Ty Majeski",
+      "ticker": "KXNASCARRACE-LIU26-TYMA",
+      "side": "yes",
+      "count": 564,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-09T19:11:25.171664Z"
+    },
     {
       "trade_id": "6edf2a9e-8350-5105-af56-a6fba5f22dc7",
       "tier": "Winner",
@@ -1639,17 +1650,6 @@
       "count": 100,
       "yes_price": 44,
       "no_price": 56,
-      "created_time": "2026-07-08T17:28:01.247439Z"
-    },
-    {
-      "trade_id": "7e5d7f09-9779-4e98-ed73-e4f882bef8e7",
-      "tier": "Top 10",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP10-LIU26-COMO",
-      "side": "yes",
-      "count": 9,
-      "yes_price": 45,
-      "no_price": 55,
       "created_time": "2026-07-08T17:28:01.247439Z"
     }
   ]
