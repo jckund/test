@@ -1,7 +1,84 @@
 {
-  "updated_at": "2026-07-09T20:34:01.508065+00:00",
+  "updated_at": "2026-07-09T21:23:45.380783+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "e5850204-e61f-603e-03f3-63fbc0f7aecb",
+      "tier": "Winner",
+      "driver": "Ben Rhodes",
+      "ticker": "KXNASCARRACE-LIU26-BERH",
+      "side": "yes",
+      "count": 718,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-09T21:07:56.26384Z"
+    },
+    {
+      "trade_id": "9fe6dc7b-05b1-5ecc-ea52-5504bca1d6d2",
+      "tier": "Top 10",
+      "driver": "Tanner Gray",
+      "ticker": "KXNASCARTOP10-LIU26-TAGR",
+      "side": "yes",
+      "count": 20,
+      "yes_price": 18,
+      "no_price": 82,
+      "created_time": "2026-07-09T20:42:36.27711Z"
+    },
+    {
+      "trade_id": "07268bec-4ed3-4003-301d-3506c8f8277f",
+      "tier": "Top 3",
+      "driver": "Parker Kligerman",
+      "ticker": "KXNASCARTOP3-LIU26-PAKL",
+      "side": "yes",
+      "count": 16,
+      "yes_price": 12,
+      "no_price": 88,
+      "created_time": "2026-07-09T20:39:49.240021Z"
+    },
+    {
+      "trade_id": "b4507ab4-cda9-7f86-ef87-4deeaa86fb4f",
+      "tier": "Top 10",
+      "driver": "Frankie Muniz",
+      "ticker": "KXNASCARTOP10-LIU26-FRMU",
+      "side": "no",
+      "count": 100,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-09T20:36:24.372143Z"
+    },
+    {
+      "trade_id": "9289c02c-8ca1-7309-ec7b-00f5d0883d82",
+      "tier": "Top 10",
+      "driver": "Frankie Muniz",
+      "ticker": "KXNASCARTOP10-LIU26-FRMU",
+      "side": "no",
+      "count": 150,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-09T20:36:24.372143Z"
+    },
+    {
+      "trade_id": "8566a1e4-0428-6091-89db-132ff48d152e",
+      "tier": "Top 10",
+      "driver": "Corey LaJoie",
+      "ticker": "KXNASCARTOP10-LIU26-COLA",
+      "side": "no",
+      "count": 150,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-09T20:33:59.376323Z"
+    },
+    {
+      "trade_id": "41a8124f-d0d5-6e43-9ec0-d3f0480e4a3b",
+      "tier": "Top 10",
+      "driver": "Corey LaJoie",
+      "ticker": "KXNASCARTOP10-LIU26-COLA",
+      "side": "no",
+      "count": 100,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-09T20:33:59.376323Z"
+    },
     {
       "trade_id": "b03dbe01-b225-6d23-3d92-fe40e33c3ab3",
       "tier": "Top 10",
@@ -1574,83 +1651,6 @@
       "yes_price": 10,
       "no_price": 90,
       "created_time": "2026-07-08T17:40:10.154908Z"
-    },
-    {
-      "trade_id": "35af758c-03b8-4be1-f03b-82a2e6c77426",
-      "tier": "Top 3",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP3-LIU26-COMO",
-      "side": "yes",
-      "count": 67,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-08T17:40:10.154908Z"
-    },
-    {
-      "trade_id": "c5003b55-ece3-4979-581d-9feb8b6a2c15",
-      "tier": "Top 3",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP3-LIU26-COMO",
-      "side": "yes",
-      "count": 187,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-08T17:39:47.663091Z"
-    },
-    {
-      "trade_id": "1f57656b-e21c-4d38-4f37-422b0c1115e1",
-      "tier": "Top 3",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP3-LIU26-COMO",
-      "side": "yes",
-      "count": 2,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-08T17:39:47.663091Z"
-    },
-    {
-      "trade_id": "133b9220-da91-4193-5963-a737c78ca3fb",
-      "tier": "Top 3",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP3-LIU26-COMO",
-      "side": "yes",
-      "count": 20,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-08T17:39:47.663091Z"
-    },
-    {
-      "trade_id": "5f45a2c6-d317-6b95-8f51-12768d74ba70",
-      "tier": "Top 10",
-      "driver": "Ben Maier",
-      "ticker": "KXNASCARTOP10-LIU26-BEMA",
-      "side": "yes",
-      "count": 50,
-      "yes_price": 25,
-      "no_price": 75,
-      "created_time": "2026-07-08T17:37:07.057168Z"
-    },
-    {
-      "trade_id": "7b2895fa-8936-67ed-2ae7-7c1f27d8b9f6",
-      "tier": "Top 10",
-      "driver": "Ben Maier",
-      "ticker": "KXNASCARTOP10-LIU26-BEMA",
-      "side": "yes",
-      "count": 66,
-      "yes_price": 24,
-      "no_price": 76,
-      "created_time": "2026-07-08T17:36:43.777898Z"
-    },
-    {
-      "trade_id": "176aa4ea-ed94-6339-b64a-e32a0278583d",
-      "tier": "Top 10",
-      "driver": "Ben Maier",
-      "ticker": "KXNASCARTOP10-LIU26-BEMA",
-      "side": "yes",
-      "count": 33,
-      "yes_price": 23,
-      "no_price": 77,
-      "created_time": "2026-07-08T17:36:23.252558Z"
     }
   ]
 }
