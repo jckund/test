@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-07-09T19:37:23.184649+00:00",
+  "updated_at": "2026-07-09T20:34:01.508065+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "b03dbe01-b225-6d23-3d92-fe40e33c3ab3",
+      "tier": "Top 10",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARTOP10-LIU26-LARI",
+      "side": "no",
+      "count": 100,
+      "yes_price": 76,
+      "no_price": 24,
+      "created_time": "2026-07-09T20:30:21.59358Z"
+    },
+    {
+      "trade_id": "4b9020f3-f122-64a2-347a-16cb779c2303",
+      "tier": "Top 10",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARTOP10-LIU26-LARI",
+      "side": "no",
+      "count": 150,
+      "yes_price": 75,
+      "no_price": 25,
+      "created_time": "2026-07-09T20:30:21.59358Z"
+    },
+    {
+      "trade_id": "c1149633-c0d5-5cc9-e182-b3b8f5c70cb3",
+      "tier": "Top 10",
+      "driver": "Giovanni Ruggiero",
+      "ticker": "KXNASCARTOP10-LIU26-GIRU",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-07-09T20:01:04.784914Z"
+    },
+    {
+      "trade_id": "bddd5fb3-bada-5f8e-c37c-a80b9af1fb2e",
+      "tier": "Top 10",
+      "driver": "Giovanni Ruggiero",
+      "ticker": "KXNASCARTOP10-LIU26-GIRU",
+      "side": "yes",
+      "count": 50,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-07-09T20:01:04.784914Z"
+    },
+    {
+      "trade_id": "52e38d08-28a7-57fb-c044-72d8c8e79ee7",
+      "tier": "Top 10",
+      "driver": "Giovanni Ruggiero",
+      "ticker": "KXNASCARTOP10-LIU26-GIRU",
+      "side": "yes",
+      "count": 62,
+      "yes_price": 61,
+      "no_price": 39,
+      "created_time": "2026-07-09T20:01:04.784914Z"
+    },
+    {
+      "trade_id": "0eadc4fe-080c-5cfd-cd67-3cf97c78857a",
+      "tier": "Top 10",
+      "driver": "Giovanni Ruggiero",
+      "ticker": "KXNASCARTOP10-LIU26-GIRU",
+      "side": "yes",
+      "count": 42,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-07-09T20:01:04.784914Z"
+    },
     {
       "trade_id": "baa78a9a-5d76-7929-dab3-fdec5affa317",
       "tier": "Top 3",
@@ -1585,72 +1651,6 @@
       "yes_price": 23,
       "no_price": 77,
       "created_time": "2026-07-08T17:36:23.252558Z"
-    },
-    {
-      "trade_id": "1497de02-a754-641d-b2e1-9de174286def",
-      "tier": "Top 10",
-      "driver": "Ben Maier",
-      "ticker": "KXNASCARTOP10-LIU26-BEMA",
-      "side": "yes",
-      "count": 66,
-      "yes_price": 23,
-      "no_price": 77,
-      "created_time": "2026-07-08T17:36:23.252558Z"
-    },
-    {
-      "trade_id": "cd0cfce9-ece0-7458-fd9f-63da18b47899",
-      "tier": "Top 10",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARTOP10-LIU26-LALE",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 50,
-      "no_price": 50,
-      "created_time": "2026-07-08T17:35:48.05441Z"
-    },
-    {
-      "trade_id": "b1c14435-f7ca-7262-cb43-0cd940887980",
-      "tier": "Top 10",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARTOP10-LIU26-LALE",
-      "side": "yes",
-      "count": 40,
-      "yes_price": 64,
-      "no_price": 36,
-      "created_time": "2026-07-08T17:35:48.05441Z"
-    },
-    {
-      "trade_id": "a0c1e8f0-f999-7dac-d80f-c73adfcf07c0",
-      "tier": "Top 10",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARTOP10-LIU26-LALE",
-      "side": "yes",
-      "count": 22,
-      "yes_price": 87,
-      "no_price": 13,
-      "created_time": "2026-07-08T17:35:48.05441Z"
-    },
-    {
-      "trade_id": "1f00f928-43b8-7481-c63f-882306ee27fa",
-      "tier": "Top 10",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARTOP10-LIU26-LALE",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 49,
-      "no_price": 51,
-      "created_time": "2026-07-08T17:35:48.05441Z"
-    },
-    {
-      "trade_id": "6dc76f9c-2606-77b6-1c7e-de139ccc1e10",
-      "tier": "Top 10",
-      "driver": "Colin Braun",
-      "ticker": "KXNASCARTOP10-LIU26-COBR",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 26,
-      "no_price": 74,
-      "created_time": "2026-07-08T17:35:16.754097Z"
     }
   ]
 }
