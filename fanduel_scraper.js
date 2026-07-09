@@ -28,11 +28,29 @@ const MOTORSPORT_URL = "https://sportsbook.fanduel.com/motorsport";
 const OUT_DIR = path.join("data", "fanduel");
 const OUT_FILE = path.join(OUT_DIR, "odds.json");
 const MFR_FILE = path.join(OUT_DIR, "manufacturers.json");
+const TEAM_FILE = path.join(OUT_DIR, "teams.json");
 
 // Canonical manufacturer names we recognize as runners in a "winning
 // manufacturer" market (and as keywords in per-make driver markets).
 const MAKES = ["Chevrolet", "Ford", "Toyota"];
 const MAKE_NORM = MAKES.map((m) => m.toLowerCase());
+
+// Map a book's team-name string to our canonical team key by keyword (keep in
+// sync with teamCanon() in index.html).
+const TEAM_RULES = [
+  ["penske", "Team Penske"], ["hendrick", "Hendrick Motorsports"], ["gibbs", "Joe Gibbs Racing"],
+  ["23xi", "23XI Racing"], ["rfk", "RFK Racing"], ["roush", "RFK Racing"], ["spire", "Spire Motorsports"],
+  ["trackhouse", "Trackhouse Racing"], ["front row", "Front Row Motorsports"], ["hyak", "Hyak Motorsports"],
+  ["legacy", "Legacy Motor Club"], ["childress", "Richard Childress Racing"], ["kaulig", "Kaulig Racing"],
+  ["wood brothers", "Wood Brothers Racing"], ["haas", "Haas Factory Team"], ["hass", "Haas Factory Team"],
+  ["rick ware", "Rick Ware Racing"], ["garage 66", "Garage 66"], ["garage66", "Garage 66"],
+  ["live fast", "Live Fast Motorsports"],
+];
+function teamCanon(name) {
+  const n = (name || "").toLowerCase();
+  for (const [kw, canon] of TEAM_RULES) if (n.includes(kw)) return canon;
+  return null;
+}
 
 // FanDuel market-name suffix -> our tier key (matches Kalshi's tier keys) and
 // the number of drivers that "win" the market. FanDuel's Top-N markets report
@@ -170,6 +188,56 @@ async function main() {
   console.log("wrote", OUT_FILE);
 
   scrapeManufacturers(markets, chosen, kalshiRace);
+  scrapeTeams(markets, chosen, kalshiRace);
+}
+
+// FanDuel's winning-team market: runners are race teams. Detected by runner set
+// (rather than market name) so it survives renames, and gated to the chosen race
+// so the season-long owner championship is excluded. Output feeds the Top Team
+// tab's "which team wins" comparison.
+function scrapeTeams(markets, chosenRace, kalshiRace) {
+  const raceNorm = norm(chosenRace);
+  const runnerAmerican = (r) =>
+    r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
+      ? r.winRunnerOdds.americanDisplayOdds.americanOdds
+      : null;
+
+  const raceMarkets = Object.values(markets).filter(
+    (m) => raceNorm && norm(m.marketName || "").startsWith(raceNorm)
+  );
+  const teamMkt = raceMarkets.find((m) => {
+    const rs = (m.runners || []).map((r) => teamCanon(r.runnerName)).filter(Boolean);
+    return rs.length >= 3 && rs.length >= (m.runners || []).length - 1;
+  });
+
+  if (!teamMkt) {
+    console.log("  no winning-team market found for this race.");
+    return;
+  }
+  const entries = [];
+  for (const r of teamMkt.runners || []) {
+    if (r.runnerStatus && r.runnerStatus !== "ACTIVE") continue;
+    const team = teamCanon(r.runnerName);
+    const american = runnerAmerican(r);
+    const implied = impliedProb(american);
+    if (!team || implied == null) continue;
+    entries.push({ team, american, implied });
+  }
+  const sum = entries.reduce((a, e) => a + e.implied, 0);
+  const winner = {};
+  for (const e of entries) {
+    winner[e.team] = { american: e.american, implied: e.implied, novig: sum > 0 ? e.implied / sum : null };
+  }
+  const out = {
+    scraped_at: new Date().toISOString(),
+    source: "FanDuel",
+    source_url: MOTORSPORT_URL,
+    race: chosenRace,
+    kalshi_race: kalshiRace,
+    winner,
+  };
+  fs.writeFileSync(TEAM_FILE, JSON.stringify(out, null, 2) + "\n");
+  console.log(`  winning-team market: ${teamMkt.marketName} (${entries.length} teams) -> ${TEAM_FILE}`);
 }
 
 // FanDuel's manufacturer props: a "winning manufacturer" market (runners are the
