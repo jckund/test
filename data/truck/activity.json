@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-07-09T18:08:13.370635+00:00",
+  "updated_at": "2026-07-09T19:08:42.945305+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "6edf2a9e-8350-5105-af56-a6fba5f22dc7",
+      "tier": "Winner",
+      "driver": "Chandler Smith",
+      "ticker": "KXNASCARRACE-LIU26-CHSM",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-09T19:00:34.138813Z"
+    },
+    {
+      "trade_id": "a399e703-4f99-7ca4-0c22-b14ae294262e",
+      "tier": "Top 10",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARTOP10-LIU26-THAN",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 37,
+      "no_price": 63,
+      "created_time": "2026-07-09T18:50:16.280795Z"
+    },
+    {
+      "trade_id": "115c97cf-213c-7540-98a2-03486c154670",
+      "tier": "Top 10",
+      "driver": "Connor Mosack",
+      "ticker": "KXNASCARTOP10-LIU26-COMO",
+      "side": "yes",
+      "count": 6,
+      "yes_price": 47,
+      "no_price": 53,
+      "created_time": "2026-07-09T18:45:06.151851Z"
+    },
     {
       "trade_id": "afdaa4c2-2fb0-7ef0-5684-d814747c8526",
       "tier": "Winner",
@@ -1618,39 +1651,6 @@
       "yes_price": 45,
       "no_price": 55,
       "created_time": "2026-07-08T17:28:01.247439Z"
-    },
-    {
-      "trade_id": "e5eafcab-b57e-6b36-35ba-17980f6cb99e",
-      "tier": "Top 10",
-      "driver": "Ben Rhodes",
-      "ticker": "KXNASCARTOP10-LIU26-BERH",
-      "side": "no",
-      "count": 100,
-      "yes_price": 51,
-      "no_price": 49,
-      "created_time": "2026-07-08T17:27:11.646628Z"
-    },
-    {
-      "trade_id": "cafba16e-5a7d-689e-1d1b-523880f3ac1b",
-      "tier": "Top 10",
-      "driver": "Ben Rhodes",
-      "ticker": "KXNASCARTOP10-LIU26-BERH",
-      "side": "no",
-      "count": 200,
-      "yes_price": 50,
-      "no_price": 50,
-      "created_time": "2026-07-08T17:27:11.646628Z"
-    },
-    {
-      "trade_id": "5ba4a606-736c-6e3b-ee0d-9b0b7107ba7a",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-08T17:26:59.83104Z"
     }
   ]
 }

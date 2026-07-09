@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-AUCI",
       "volume": 286,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 63,
       "yes_bid": 57
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-BRKE",
       "volume": 28,
-      "volume_24h": 14,
+      "volume_24h": 13,
       "yes_ask": 65,
       "yes_bid": 58
     },
@@ -262,16 +262,16 @@
       "yes_bid": 65
     },
     "KXNASCARTOP20-QUAS4AA26-DEHA": {
-      "last_price": 74,
+      "last_price": 69,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 31,
       "no_bid": 24,
-      "open_interest": 379,
+      "open_interest": 383,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-DEHA",
-      "volume": 379,
-      "volume_24h": 99,
+      "volume": 383,
+      "volume_24h": 102,
       "yes_ask": 76,
       "yes_bid": 69
     },
@@ -379,11 +379,11 @@
       "name": "Riley Herbst",
       "no_ask": 62,
       "no_bid": 56,
-      "open_interest": 364,
+      "open_interest": 367,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-RIHE",
-      "volume": 404,
-      "volume_24h": 31,
+      "volume": 407,
+      "volume_24h": 34,
       "yes_ask": 44,
       "yes_bid": 38
     },
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 45,
-      "no_bid": 38,
+      "no_bid": 39,
       "open_interest": 457,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-SHVA",
       "volume": 462,
       "volume_24h": 40,
-      "yes_ask": 62,
+      "yes_ask": 61,
       "yes_bid": 55
     },
     "KXNASCARTOP20-QUAS4AA26-TOGI": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-09T18:05:34.864387+00:00",
+  "scraped_at": "2026-07-09T19:06:05.290058+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top20"
 }
