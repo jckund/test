@@ -78,6 +78,11 @@
   .tab[aria-selected="true"] { background: var(--surface); color: var(--ink);
     box-shadow: 0 1px 2px rgba(0,0,0,.12); }
   .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* Outer series selector: a touch bolder than the tier tabs and accent-tinted
+     when active, so the series level reads as primary. */
+  .series-tabs { margin-bottom: 10px; }
+  .series-tabs .tab { font-size: 14px; padding: 8px 18px; }
+  .series-tabs .tab[aria-selected="true"] { background: var(--accent); color: #fff; }
 
   .banner { background: var(--surface); border: 1px solid var(--line);
     border-left: 3px solid var(--accent); border-radius: 8px;
@@ -172,6 +177,7 @@
     </div>
   </header>
 
+  <div class="tabs series-tabs" id="series-tabs" role="tablist" aria-label="Series"></div>
   <div class="tabs" id="tabs" role="tablist" aria-label="Market tiers"></div>
 
   <div id="notice"></div>
@@ -316,11 +322,20 @@
 </div>
 
 <script>
-const INDEX_URL = "data/index.json";
+const SERIES_URL = "data/series.json";
 const $ = (id) => document.getElementById(id);
 
-let INDEX = null;
-let currentKey = null;
+let SERIESLIST = null;     // [{key,label,race_title,full,source_url,tiers}]
+let currentSeries = null;  // active series key (e.g. "cup")
+let INDEX = null;          // active series' index.json
+let currentKey = null;     // active inner tab (tier / compare / activity)
+
+// All data lives under data/<series>/…; build paths relative to the active race.
+const dbase = () => "data/" + currentSeries + "/";
+const seriesFull = () => {
+  const s = (SERIESLIST || []).find((x) => x.key === currentSeries);
+  return !!(s && s.full);
+};
 
 const PRICE_FIELDS = new Set(["last_price", "yes_bid", "yes_ask", "no_bid", "no_ask"]);
 const FIELD_LABELS = {
@@ -445,13 +460,13 @@ function tierMeta(key) {
 
 async function selectTier(key) {
   currentKey = key;
-  location.hash = key;
+  location.hash = currentSeries + "/" + key;
   buildTabs();
   if (key === "activity") { showView("activity"); return loadActivity(); }
   if (key === "compare") { showView("compare"); return loadCompare(); }
   showView("tier");
   const meta = tierMeta(key);
-  const base = "data/" + key;
+  const base = dbase() + key;
   try {
     const [snap, hist, series] = await Promise.all([
       loadJSON(base + "/snapshot.json"),
@@ -554,7 +569,7 @@ function yesNoOdds(m) {
 }
 async function loadActivity() {
   try {
-    renderActivity(await loadJSON("data/activity.json"));
+    renderActivity(await loadJSON(dbase() + "activity.json"));
   } catch (e) {
     $("act-rows").innerHTML = `<tr><td colspan="7" class="empty">No activity feed yet.</td></tr>`;
     $("mcount").textContent = "";
@@ -613,20 +628,72 @@ function showEmpty() {
   $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
 }
 
-async function refresh() {
+// Hash format is #<series>/<tab> (e.g. #cup/winner, #truck/compare).
+const hashSeries = () => (location.hash || "").replace("#", "").split("/")[0] || "";
+const hashTab = () => (location.hash || "").replace("#", "").split("/")[1] || "";
+
+function buildSeriesTabs() {
+  const box = $("series-tabs");
+  box.innerHTML = "";
+  const list = SERIESLIST || [];
+  box.style.display = list.length > 1 ? "" : "none";  // hide if only one race
+  for (const s of list) {
+    const b = document.createElement("button");
+    b.className = "tab"; b.role = "tab"; b.textContent = s.label;
+    b.title = s.race_title || "";
+    b.setAttribute("aria-selected", String(s.key === currentSeries));
+    b.onclick = () => selectSeries(s.key);
+    box.appendChild(b);
+  }
+}
+
+async function selectSeries(key) {
+  currentSeries = key;
+  currentKey = null;   // reset inner tab; loadSeries picks from hash/default
+  cmpSub = null;       // reset comparison subtab
+  buildSeriesTabs();
+  await loadSeries();
+}
+
+async function loadSeries() {
   try {
-    INDEX = await loadJSON(INDEX_URL);
+    INDEX = await loadJSON(dbase() + "index.json");
     if (!INDEX.markets || !INDEX.markets.length) { showEmpty(); return; }
     $("notice").innerHTML = "";
     $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
     $("src").href = INDEX.source_url || "https://kalshi.com";
-    const wanted = (location.hash || "").replace("#", "");
     const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "activity");
-    if (!currentKey) currentKey = validKeys.includes(wanted) ? wanted : INDEX.markets[0].key;
+    if (!currentKey || !validKeys.includes(currentKey))
+      currentKey = validKeys.includes(hashTab()) ? hashTab() : INDEX.markets[0].key;
     await selectTier(currentKey);
   } catch (e) {
     showEmpty();
   }
+}
+
+// Initial load: read the series list, pick the series from the hash (or first).
+async function boot() {
+  try {
+    const sj = await loadJSON(SERIES_URL);
+    SERIESLIST = (sj && sj.series) || [];
+  } catch { SERIESLIST = []; }
+  if (!SERIESLIST.length) { $("series-tabs").style.display = "none"; showEmpty(); return; }
+  currentSeries = SERIESLIST.find((s) => s.key === hashSeries()) ? hashSeries() : SERIESLIST[0].key;
+  buildSeriesTabs();
+  await loadSeries();
+}
+
+// Periodic/manual refresh: re-read the series list (so a newly-opened race
+// appears on its own) and reload the active series' data, preserving the tab.
+async function refresh() {
+  try {
+    const sj = await loadJSON(SERIES_URL);
+    if (sj && sj.series && sj.series.length) SERIESLIST = sj.series;
+  } catch { /* keep existing list */ }
+  if (!SERIESLIST || !SERIESLIST.length) { showEmpty(); return; }
+  if (!SERIESLIST.find((s) => s.key === currentSeries)) currentSeries = SERIESLIST[0].key;
+  buildSeriesTabs();
+  await loadSeries();
 }
 
 // ---- Kalshi vs the books comparison ----
@@ -637,11 +704,11 @@ const CMP_TIERS = [
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "data/fanduel/odds.json", live: true },
-  { key: "betus", label: "BetUS", url: "data/manual/betus.json", live: false },
-  { key: "caesars", label: "Caesars", url: "data/manual/caesars.json", live: false },
-  { key: "prime", label: "Prime", url: "data/manual/prime.json", live: false },
-  { key: "betboss", label: "BetBoss", url: "data/manual/betboss.json", live: false },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
+  { key: "betus", label: "BetUS", url: "manual/betus.json", live: false },
+  { key: "caesars", label: "Caesars", url: "manual/caesars.json", live: false },
+  { key: "prime", label: "Prime", url: "manual/prime.json", live: false },
+  { key: "betboss", label: "BetBoss", url: "manual/betboss.json", live: false },
 ];
 const BOOKDATA = {};    // key -> parsed odds json (or null if unavailable)
 let compareTier = null; // currently shown comparison tier
@@ -677,8 +744,12 @@ let cmpSub = null; // 'winner'|'top3'|'top5'|'top10'|'mfr'|'team'
 
 function cmpSubItems() {
   const items = cmpTiersAvailable().map((t) => ({ key: t.key, label: t.label }));
-  items.push({ key: "mfr", label: "Manufacturer" });
-  items.push({ key: "team", label: "Team" });
+  // Manufacturer/Team are Cup-only (imputed from the Kalshi winner market with
+  // Cup rosters; those markets don't exist for the support series).
+  if (seriesFull()) {
+    items.push({ key: "mfr", label: "Manufacturer" });
+    items.push({ key: "team", label: "Team" });
+  }
   return items;
 }
 
@@ -713,7 +784,7 @@ async function renderCmpSub() {
 async function loadCompare() {
   $("updated").textContent = "Loading books…";
   await Promise.all(BOOKS.map(async (bk) => {
-    try { BOOKDATA[bk.key] = await loadJSON(bk.url); } catch { BOOKDATA[bk.key] = null; }
+    try { BOOKDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { BOOKDATA[bk.key] = null; }
   }));
   buildCmpTabs();
   await renderCmpSub();
@@ -751,7 +822,7 @@ async function renderCompare() {
   // Kalshi side (source of truth): implied prob + Yes/No cents.
   const kal = {};
   try {
-    const snap = await loadJSON("data/" + compareTier + "/snapshot.json");
+    const snap = await loadJSON(dbase() + compareTier + "/snapshot.json");
     for (const m of Object.values(snap.markets || {})) {
       const p = priceYes(m);
       if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: p / 100 };
@@ -850,9 +921,9 @@ function usFromProb(p) {
 // Books carrying manufacturer markets. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const MFR_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "data/fanduel/manufacturers.json", live: true },
-  { key: "caesars", label: "Caesars", url: "data/manual/mfr_caesars.json", live: false },
-  { key: "betus", label: "BetUS", url: "data/manual/mfr_betus.json", live: false },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
+  { key: "caesars", label: "Caesars", url: "manual/mfr_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "manual/mfr_betus.json", live: false },
 ];
 const MFRDATA = {};   // key -> parsed json (or null)
 
@@ -860,7 +931,7 @@ async function loadManufacturers() {
   $("updated").textContent = "Loading…";
   let snap;
   try {
-    snap = await loadJSON("data/winner/snapshot.json");
+    snap = await loadJSON(dbase() + "winner/snapshot.json");
   } catch {
     $("mfr-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
     $("mfr-groups").innerHTML = "";
@@ -870,7 +941,7 @@ async function loadManufacturers() {
     return;
   }
   await Promise.all(MFR_BOOKS.map(async (bk) => {
-    try { MFRDATA[bk.key] = await loadJSON(bk.url); } catch { MFRDATA[bk.key] = null; }
+    try { MFRDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { MFRDATA[bk.key] = null; }
   }));
   renderManufacturers(snap);
 }
@@ -1038,9 +1109,9 @@ function teamCanon(name) {
 }
 
 const TEAM_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "data/fanduel/teams.json", live: true },
-  { key: "caesars", label: "Caesars", url: "data/manual/team_caesars.json", live: false },
-  { key: "betus", label: "BetUS", url: "data/manual/team_betus.json", live: false },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
+  { key: "caesars", label: "Caesars", url: "manual/team_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "manual/team_betus.json", live: false },
 ];
 const TEAMDATA = {};
 
@@ -1048,7 +1119,7 @@ async function loadTeams() {
   $("updated").textContent = "Loading…";
   let snap;
   try {
-    snap = await loadJSON("data/winner/snapshot.json");
+    snap = await loadJSON(dbase() + "winner/snapshot.json");
   } catch {
     $("team-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
     $("team-groups").innerHTML = "";
@@ -1058,7 +1129,7 @@ async function loadTeams() {
     return;
   }
   await Promise.all(TEAM_BOOKS.map(async (bk) => {
-    try { TEAMDATA[bk.key] = await loadJSON(bk.url); } catch { TEAMDATA[bk.key] = null; }
+    try { TEAMDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { TEAMDATA[bk.key] = null; }
   }));
   renderTeams(snap);
 }
@@ -1178,7 +1249,7 @@ async function manualRefresh() {
 }
 $("refresh").addEventListener("click", manualRefresh);
 
-refresh();
+boot();
 scheduleAuto();
 </script>
 </body>

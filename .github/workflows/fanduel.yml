@@ -1,7 +1,7 @@
 name: Track FanDuel NASCAR odds
 
 # Scrapes FanDuel's NASCAR race markets (via headless browser, since FanDuel has
-# no public API and blocks plain HTTP) and commits data/fanduel/odds.json. The
+# no public API and blocks plain HTTP) and commits data/odds.json. The
 # Kalshi workflow (track.yml) publishes the site on its own schedule and copies
 # the whole data/ dir, so these odds reach the dashboard within ~15 min.
 #
@@ -51,8 +51,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A data/fanduel/
-          if git diff --cached --quiet -- data/fanduel/; then
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
             echo "No FanDuel odds changes; nothing to commit."
           else
             git commit -m "data(fanduel): odds update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
