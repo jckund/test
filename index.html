@@ -854,7 +854,8 @@ function renderManufacturers(snap, fd) {
     let fdCells = "";
     if (hasFd) {
       const fm = fd.winner && fd.winner[t.mfr];
-      const edge = fm && typeof fm.implied === "number" ? (pn - fm.implied) * 100 : null;
+      const fmProb = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
+      const edge = typeof fmProb === "number" ? (pn - fmProb) * 100 : null;
       fdCells = `<td class="num">${fm ? usAmerican(fm.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
     }
     return `<tr>

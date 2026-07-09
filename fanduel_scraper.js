@@ -27,6 +27,12 @@ const { chromium } = require("playwright");
 const MOTORSPORT_URL = "https://sportsbook.fanduel.com/motorsport";
 const OUT_DIR = path.join("data", "fanduel");
 const OUT_FILE = path.join(OUT_DIR, "odds.json");
+const MFR_FILE = path.join(OUT_DIR, "manufacturers.json");
+
+// Canonical manufacturer names we recognize as runners in a "winning
+// manufacturer" market (and as keywords in per-make driver markets).
+const MAKES = ["Chevrolet", "Ford", "Toyota"];
+const MAKE_NORM = MAKES.map((m) => m.toLowerCase());
 
 // FanDuel market-name suffix -> our tier key (matches Kalshi's tier keys) and
 // the number of drivers that "win" the market. FanDuel's Top-N markets report
@@ -162,6 +168,105 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   fs.writeFileSync(OUT_FILE, JSON.stringify(out, null, 2) + "\n");
   console.log("wrote", OUT_FILE);
+
+  scrapeManufacturers(markets, chosen, kalshiRace);
+}
+
+// FanDuel's manufacturer props: a "winning manufacturer" market (runners are the
+// makes) and, when offered, per-make "highest finishing / top [Make]" driver
+// markets. We detect the winner market by its runner set (rather than guessing
+// the exact market name) so it keeps working if FanDuel renames it, and we
+// exclude the season-long championship by requiring the market name to reference
+// the chosen race. Output feeds the dashboard's Top Manufacturer tab.
+function scrapeManufacturers(markets, chosenRace, kalshiRace) {
+  const raceNorm = norm(chosenRace);
+  const runnerAmerican = (r) =>
+    r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
+      ? r.winRunnerOdds.americanDisplayOdds.americanOdds
+      : null;
+  const canonMake = (name) => {
+    const n = (name || "").toLowerCase();
+    const i = MAKE_NORM.findIndex((m) => n.includes(m));
+    return i >= 0 ? MAKES[i] : null;
+  };
+
+  const all = Object.values(markets);
+  // Log every market whose name references this race, to reveal manufacturer
+  // market naming for future refinement.
+  const raceMarkets = all.filter((m) => raceNorm && norm(m.marketName || "").startsWith(raceNorm));
+  console.log("markets for chosen race:", raceMarkets.map((m) => m.marketName));
+
+  // Winning-manufacturer market: runners are (mostly) makes, and the market name
+  // references the chosen race so we don't grab the season championship.
+  const winnerMkt = raceMarkets.find((m) => {
+    const rs = (m.runners || []).map((r) => canonMake(r.runnerName)).filter(Boolean);
+    return rs.length >= 2 && rs.length >= (m.runners || []).length - 1;
+  });
+
+  const result = {
+    scraped_at: new Date().toISOString(),
+    source: "FanDuel",
+    source_url: MOTORSPORT_URL,
+    race: chosenRace,
+    kalshi_race: kalshiRace,
+    winner: {},
+    makes: {},
+  };
+
+  if (winnerMkt) {
+    const entries = [];
+    for (const r of winnerMkt.runners || []) {
+      if (r.runnerStatus && r.runnerStatus !== "ACTIVE") continue;
+      const make = canonMake(r.runnerName);
+      const american = runnerAmerican(r);
+      const implied = impliedProb(american);
+      if (!make || implied == null) continue;
+      entries.push({ make, american, implied });
+    }
+    const sum = entries.reduce((a, e) => a + e.implied, 0);
+    for (const e of entries) {
+      result.winner[e.make] = {
+        american: e.american,
+        implied: e.implied,
+        novig: sum > 0 ? e.implied / sum : null,
+      };
+    }
+    console.log(`  winning-manufacturer market: ${winnerMkt.marketName} (${entries.length} makes)`);
+  } else {
+    console.log("  no winning-manufacturer market found for this race.");
+  }
+
+  // Per-make driver markets (e.g. "... - Top Chevrolet Driver"), if offered.
+  // Detect by a make keyword in the market name that is NOT the winner market
+  // and whose runners are drivers (not makes).
+  for (const m of raceMarkets) {
+    if (m === winnerMkt) continue;
+    const make = canonMake(m.marketName);
+    if (!make) continue;
+    const runnersAreMakes = (m.runners || []).some((r) => canonMake(r.runnerName));
+    if (runnersAreMakes) continue;
+    const drivers = [];
+    for (const r of m.runners || []) {
+      if (r.runnerStatus && r.runnerStatus !== "ACTIVE") continue;
+      const american = runnerAmerican(r);
+      const implied = impliedProb(american);
+      if (implied == null) continue;
+      drivers.push({ name: r.runnerName, american, implied });
+    }
+    if (!drivers.length) continue;
+    const sum = drivers.reduce((a, d) => a + d.implied, 0);
+    for (const d of drivers) d.novig = sum > 0 ? d.implied / sum : null;
+    drivers.sort((a, b) => b.implied - a.implied);
+    result.makes[make] = { market_name: m.marketName, drivers };
+    console.log(`  top-${make} market: ${m.marketName} (${drivers.length} drivers)`);
+  }
+
+  if (Object.keys(result.winner).length || Object.keys(result.makes).length) {
+    fs.writeFileSync(MFR_FILE, JSON.stringify(result, null, 2) + "\n");
+    console.log("wrote", MFR_FILE);
+  } else {
+    console.log("no manufacturer markets captured; leaving", MFR_FILE, "untouched.");
+  }
 }
 
 main().catch((e) => {
