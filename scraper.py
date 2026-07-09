@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
-"""Scrape Kalshi NASCAR race markets and track changes over time.
+"""Scrape Kalshi NASCAR race markets for every current national-series race.
 
-Race page:
-  https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26
+Kalshi files all race winners under one series (``KXNASCARRACE``) with a
+per-race Top 3/5/10/20 sibling series. Rather than hardcode a race code that
+changes every weekend, we **auto-discover** the open race events, group them by
+race, and write one namespaced data tree per race:
 
-Tracks several markets for the same race, each a separate Kalshi event:
-  Winner, Top 3, Top 5, Top 10, Top 20 finishers.
+  data/series.json                      — list of races (drives the series tabs)
+  data/<series>/index.json              — that race's tier list (dashboard)
+  data/<series>/<tier>/snapshot.json    — normalized current state
+  data/<series>/<tier>/history.jsonl    — append-only change log
+  data/<series>/<tier>/series.jsonl     — aligned price series for sparklines
+  data/<series>/<tier>/CHANGES.md       — human-readable change log
+  data/<series>/activity.json           — recent trades feed for that race
 
-The public website is Cloudflare-protected, but Kalshi's public trade API
-serves the same data. For each event we read the nested markets, normalize the
-fields we care about, and write them under ``data/<tier>/``. Change tracking:
-  * ``data/<tier>/snapshot.json`` — normalized current state (git history == log)
-  * ``data/<tier>/history.jsonl`` — append-only, one record per changed run
-  * ``data/<tier>/series.jsonl``  — aligned price series for sparklines
-  * ``data/<tier>/CHANGES.md``    — human-readable change log
-  * ``data/index.json``           — the list of tracked tiers, for the dashboard
-
-Only writes when a tier's market state actually changes, so a scheduled commit
-step can use ``git diff`` to avoid empty commits.
+A small SERIES config maps each discovered race to a friendly tab label (via
+lowercase name matchers) and whether it gets the full Cup treatment. Any race
+that matches no series falls to the `default` series, so a support race appears
+on its own the moment Kalshi posts it — no code change needed.
 
 Run manually with:  python3 scraper.py
 """
@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -36,11 +37,8 @@ from datetime import datetime, timezone
 # Configuration
 # ---------------------------------------------------------------------------
 
-# Race code from the page URL's event ticker: KXNASCARRACE-<RACE_CODE>.
-# Change this one value (or the env var) to point at a different race.
-RACE_CODE = os.environ.get("KALSHI_RACE_CODE", "QUAS4AA26")
-
-# (tier key, display label, odds-column label, Kalshi series ticker)
+# (tier key, display label, odds-column label, Kalshi series ticker). The
+# winner series is also what we enumerate to discover which races are open.
 TIERS = [
     ("winner", "Winner", "Win", "KXNASCARRACE"),
     ("top3", "Top 3", "Top 3", "KXNASCARTOP3"),
@@ -48,45 +46,53 @@ TIERS = [
     ("top10", "Top 10", "Top 10", "KXNASCARTOP10"),
     ("top20", "Top 20", "Top 20", "KXNASCARTOP20"),
 ]
-EVENTS = [
-    {"key": k, "label": lbl, "odds_label": odl, "ticker": f"{series}-{RACE_CODE}"}
-    for k, lbl, odl, series in TIERS
+TIER_BY_KEY = {k: (k, lbl, odl, s) for (k, lbl, odl, s) in TIERS}
+WINNER_SERIES = "KXNASCARRACE"
+
+# Race -> tab. `matchers` are lowercase substrings tested against the race
+# name/subtitle; the first series to match a race claims it. `default` claims
+# any leftover race (the support race whose name we don't know in advance).
+# `full` series get the extra Top 20 tier plus the Manufacturer/Team views
+# (those are Cup-only and handled in the dashboard).
+SERIES = [
+    {"key": "cup", "label": "NASCAR", "matchers": ["quaker state"],
+     "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
+    {"key": "truck", "label": "Trucks", "matchers": ["liuna"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    {"key": "xfinity", "label": "O'Reilly Auto Parts", "matchers": [], "default": True,
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
-PAGE_URL = (
-    "https://kalshi.com/markets/kxnascarrace/nascar-race/"
-    "kxnascarrace-quas4aa26"
-)
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
+PAGE_BASE = "https://kalshi.com/markets/kxnascarrace/nascar-race"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
-INDEX_PATH = os.path.join(DATA_DIR, "index.json")
-ACTIVITY_PATH = os.path.join(DATA_DIR, "activity.json")
+SERIES_INDEX_PATH = os.path.join(DATA_DIR, "series.json")
 
-# "Recent Activity" = recent trades. Kalshi's trades endpoint only filters by a
-# single market ticker, so we poll each market and merge. Kept small per market
-# and capped overall; regenerated (not committed) each run as a live feed.
 TRADES_PER_MARKET = 10
 ACTIVITY_MAX = 150
 
-# Per-market fields we compare between runs to detect a meaningful change.
 TRACKED_FIELDS = [
     "status", "last_price", "yes_bid", "yes_ask",
     "no_bid", "no_ask", "volume", "open_interest",
 ]
 MAX_SERIES = 1000
-USER_AGENT = "kalshi-nascar-tracker/2.0 (+https://github.com; scheduled scraper)"
+USER_AGENT = "kalshi-nascar-tracker/3.0 (+https://github.com; scheduled scraper)"
+# Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
+# under the limit while scraping several races x several tiers.
+THROTTLE_S = 0.35
 
 
 # ---------------------------------------------------------------------------
 # Fetching
 # ---------------------------------------------------------------------------
 
-def _get_json(url: str, retries: int = 4) -> dict:
+def _get_json(url: str, retries: int = 5) -> dict:
     last_err = None
     for attempt in range(retries):
         try:
+            time.sleep(THROTTLE_S)
             req = urllib.request.Request(url, headers={
                 "User-Agent": USER_AGENT, "Accept": "application/json",
             })
@@ -94,8 +100,10 @@ def _get_json(url: str, retries: int = 4) -> dict:
                 return json.loads(resp.read().decode("utf-8"))
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
             last_err = err
+            # Back off harder on explicit rate limiting.
+            code = getattr(err, "code", None)
             if attempt < retries - 1:
-                wait = 2 ** (attempt + 1)
+                wait = 2 ** (attempt + 1) * (2 if code == 429 else 1)
                 print(f"  fetch failed ({err}); retrying in {wait}s", file=sys.stderr)
                 time.sleep(wait)
     raise RuntimeError(f"failed to GET {url}: {last_err}")
@@ -105,6 +113,56 @@ def fetch_event(ticker: str) -> dict:
     url = f"{API_BASE}/events/{ticker}?with_nested_markets=true"
     print(f"Fetching {url}", file=sys.stderr)
     return _get_json(url)
+
+
+def discover_races() -> list:
+    """Enumerate open race-winner events. Returns [{race_code, title, sub_title}]."""
+    url = f"{API_BASE}/events?series_ticker={WINNER_SERIES}&status=open&limit=200"
+    print(f"Discovering races: {url}", file=sys.stderr)
+    events = _get_json(url).get("events", []) or []
+    races = []
+    for e in events:
+        et = e.get("event_ticker") or ""
+        if "-" not in et:
+            continue
+        races.append({
+            "race_code": et.split("-", 1)[1],
+            "title": e.get("title") or "",
+            "sub_title": e.get("sub_title") or "",
+        })
+    print(f"  found {len(races)} open race(s): "
+          + ", ".join(f"{r['race_code']}={r['sub_title'] or r['title']}" for r in races),
+          file=sys.stderr)
+    return races
+
+
+def resolve_series(races: list) -> list:
+    """Map discovered races onto the SERIES config. Returns a list of resolved
+    series dicts with a race attached (skipping series whose race isn't open)."""
+    used, resolved = set(), []
+
+    def attach(cfg, r):
+        code = r["race_code"]
+        return {
+            "key": cfg["key"], "label": cfg["label"], "full": cfg.get("full", False),
+            "tier_keys": cfg["tiers"], "race_code": code,
+            "race_title": r["sub_title"] or r["title"],
+            "page_url": f"{PAGE_BASE}/{WINNER_SERIES.lower()}-{code.lower()}",
+        }
+
+    # Named series first (matcher-based), then the default series claims a leftover.
+    for cfg in [s for s in SERIES if not s.get("default")]:
+        for r in races:
+            if r["race_code"] in used:
+                continue
+            hay = f"{r['title']} {r['sub_title']}".lower()
+            if any(m in hay for m in cfg["matchers"]):
+                resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
+    for cfg in [s for s in SERIES if s.get("default")]:
+        for r in races:
+            if r["race_code"] not in used:
+                resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
+    return resolved
 
 
 # ---------------------------------------------------------------------------
@@ -119,9 +177,6 @@ def _to_float(v):
 
 
 def _price_cents(m: dict, base: str):
-    """Price in integer cents. Kalshi's newer schema returns dollar strings
-    (``last_price_dollars: "0.0100"``); other endpoints return integer cents
-    (``last_price``). Support both."""
     v = m.get(base)
     if isinstance(v, (int, float)):
         return int(round(v))
@@ -130,7 +185,6 @@ def _price_cents(m: dict, base: str):
 
 
 def _count(m: dict, base: str):
-    """Contract count. Newer schema uses fixed-point strings (``volume_fp``)."""
     v = m.get(base)
     if isinstance(v, (int, float)):
         return int(round(v))
@@ -152,9 +206,6 @@ def _dollars_to_cents(s):
 
 
 def implied_yes_cents(m: dict):
-    """Best estimate of P(yes) in cents. Thinly-traded markets often have a
-    stale or zero last_price, so prefer the live yes bid/ask midpoint, then
-    the no side (100 − no), then last trade, then a single quote."""
     yb, ya = m.get("yes_bid"), m.get("yes_ask")
     if isinstance(yb, int) and isinstance(ya, int):
         return round((yb + ya) / 2)
@@ -196,7 +247,7 @@ def normalize(raw: dict, ev: dict) -> dict:
 
     return {
         "scraped_at": datetime.now(timezone.utc).isoformat(),
-        "source_url": PAGE_URL,
+        "source_url": ev["page_url"],
         "tier": ev["key"],
         "label": ev["label"],
         "odds_label": ev["odds_label"],
@@ -281,8 +332,6 @@ def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
 
 
 def _append_series(base: str, curr: dict) -> None:
-    # Store the implied (mid-market) price so sparklines are meaningful even
-    # for thinly-traded tiers where last_price barely moves.
     point = {"t": curr["scraped_at"],
              "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
     path = os.path.join(base, "series.jsonl")
@@ -299,6 +348,7 @@ def _append_series(base: str, curr: dict) -> None:
 def _write_changes_md(base: str, curr: dict, changes: list) -> None:
     path = os.path.join(base, "CHANGES.md")
     ts = curr["scraped_at"]
+    page_url = curr.get("source_url", "")
     lines = [f"### {ts}", ""]
 
     markets = sorted(curr["markets"].values(),
@@ -330,7 +380,7 @@ def _write_changes_md(base: str, curr: dict, changes: list) -> None:
     header = (
         "# Change log\n\n"
         f"Tracking {curr['label']} — [{curr['event'].get('title') or curr['event_ticker']}]"
-        f"({PAGE_URL})\n\nNewest first. Generated by `scraper.py`.\n\n"
+        f"({page_url})\n\nNewest first. Generated by `scraper.py`.\n\n"
     )
     existing = ""
     if os.path.exists(path):
@@ -344,12 +394,11 @@ def _write_changes_md(base: str, curr: dict, changes: list) -> None:
 
 
 # ---------------------------------------------------------------------------
-# Main
+# Per-tier / per-series processing
 # ---------------------------------------------------------------------------
 
-def process_event(ev: dict) -> dict | None:
-    """Scrape one tier. Returns a summary dict, or None if the event is
-    unavailable (e.g. a tier not offered for this race)."""
+def process_event(ev: dict, series_dir: str) -> dict | None:
+    """Scrape one tier of one race. Returns a summary, or None if unavailable."""
     try:
         raw = fetch_event(ev["ticker"])
     except Exception as e:  # noqa: BLE001 - skip a missing/failed tier, keep the rest
@@ -357,7 +406,11 @@ def process_event(ev: dict) -> dict | None:
         return None
 
     curr = normalize(raw, ev)
-    base = os.path.join(DATA_DIR, ev["key"])
+    if not curr["market_count"]:
+        print(f"skip {ev['key']} ({ev['ticker']}): no markets", file=sys.stderr)
+        return None
+
+    base = os.path.join(series_dir, ev["key"])
     prev = load_previous(os.path.join(base, "snapshot.json"))
     changes = diff_snapshots(prev, curr)
 
@@ -376,15 +429,11 @@ def fetch_trades(ticker: str, limit: int = TRADES_PER_MARKET) -> list:
     return _get_json(url).get("trades", []) or []
 
 
-def build_activity() -> None:
-    """Merge recent trades across every tracked market into data/activity.json.
-
-    Kalshi's trades endpoint filters by a single market ticker only, so we poll
-    each market. This file is a live feed — regenerated each run and published,
-    but git-ignored so it doesn't churn history."""
+def build_activity(events: list, series_dir: str) -> None:
+    """Merge recent trades across this race's markets into <series>/activity.json."""
     meta = {}  # market ticker -> (tier label, driver name)
-    for ev in EVENTS:
-        snap = load_previous(os.path.join(DATA_DIR, ev["key"], "snapshot.json"))
+    for ev in events:
+        snap = load_previous(os.path.join(series_dir, ev["key"], "snapshot.json"))
         if not snap:
             continue
         for tk, m in snap.get("markets", {}).items():
@@ -398,10 +447,7 @@ def build_activity() -> None:
                 if not tid:
                     continue
                 trades[tid] = {
-                    "trade_id": tid,
-                    "tier": label,
-                    "driver": driver,
-                    "ticker": tk,
+                    "trade_id": tid, "tier": label, "driver": driver, "ticker": tk,
                     "side": t.get("taker_side"),
                     "count": int(round(_to_float(t.get("count_fp")) or 0)),
                     "yes_price": _dollars_to_cents(t.get("yes_price_dollars")),
@@ -415,20 +461,18 @@ def build_activity() -> None:
                      reverse=True)[:ACTIVITY_MAX]
     out = {"updated_at": datetime.now(timezone.utc).isoformat(),
            "count": len(ordered), "trades": ordered}
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(ACTIVITY_PATH, "w", encoding="utf-8") as fh:
+    os.makedirs(series_dir, exist_ok=True)
+    with open(os.path.join(series_dir, "activity.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2)
         fh.write("\n")
     print(f"activity: {len(ordered)} recent trades", file=sys.stderr)
 
 
-def build_index() -> None:
-    """Write data/index.json describing every tracked tier, read from each
-    tier's on-disk snapshot (so it only changes when a snapshot changes)."""
+def build_index(events: list, series_dir: str, race_title: str, page_url: str) -> None:
+    """Write <series>/index.json describing the race's tracked tiers."""
     markets = []
-    race_title = None
-    for ev in EVENTS:
-        snap = load_previous(os.path.join(DATA_DIR, ev["key"], "snapshot.json"))
+    for ev in events:
+        snap = load_previous(os.path.join(series_dir, ev["key"], "snapshot.json"))
         if not snap:
             continue
         markets.append({
@@ -438,29 +482,68 @@ def build_index() -> None:
             "market_count": snap.get("market_count"),
             "scraped_at": snap.get("scraped_at"),
         })
-        race_title = race_title or (snap.get("event", {}) or {}).get("sub_title")
-
-    index = {"race_title": race_title or "NASCAR Race",
-             "source_url": PAGE_URL, "markets": markets}
-    os.makedirs(DATA_DIR, exist_ok=True)
-    with open(INDEX_PATH, "w", encoding="utf-8") as fh:
+    index = {"race_title": race_title or "NASCAR Race", "source_url": page_url, "markets": markets}
+    os.makedirs(series_dir, exist_ok=True)
+    with open(os.path.join(series_dir, "index.json"), "w", encoding="utf-8") as fh:
         json.dump(index, fh, indent=2)
         fh.write("\n")
 
 
-def main() -> int:
-    any_ok = False
-    for ev in EVENTS:
-        if process_event(ev) is not None:
-            any_ok = True
-    if not any_ok:
-        print("No events could be scraped.", file=sys.stderr)
-        return 1
-    build_index()
+def process_series(rs: dict) -> dict | None:
+    """Scrape every available tier of one race into data/<series>/."""
+    series_dir = os.path.join(DATA_DIR, rs["key"])
+    events = []
+    for tk in rs["tier_keys"]:
+        key, label, odds_label, series_ticker = TIER_BY_KEY[tk]
+        events.append({
+            "key": key, "label": label, "odds_label": odds_label,
+            "ticker": f"{series_ticker}-{rs['race_code']}", "page_url": rs["page_url"],
+        })
+
+    scraped = [process_event(ev, series_dir) for ev in events]
+    scraped = [s for s in scraped if s]
+    if not scraped:
+        print(f"series {rs['key']}: no tiers available; skipping.", file=sys.stderr)
+        return None
+
+    build_index(events, series_dir, rs["race_title"], rs["page_url"])
     try:
-        build_activity()
+        build_activity(events, series_dir)
     except Exception as e:  # noqa: BLE001 - activity is best-effort
-        print(f"activity build failed: {e}", file=sys.stderr)
+        print(f"activity build failed for {rs['key']}: {e}", file=sys.stderr)
+
+    return {"key": rs["key"], "label": rs["label"], "race_title": rs["race_title"],
+            "full": rs["full"], "source_url": rs["page_url"],
+            "tiers": [s["key"] for s in scraped],
+            "scraped_at": datetime.now(timezone.utc).isoformat()}
+
+
+def write_series_index(entries: list) -> None:
+    os.makedirs(DATA_DIR, exist_ok=True)
+    out = {"updated_at": datetime.now(timezone.utc).isoformat(), "series": entries}
+    with open(SERIES_INDEX_PATH, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, indent=2)
+        fh.write("\n")
+
+
+def main() -> int:
+    races = discover_races()
+    if not races:
+        print("No open NASCAR race events found.", file=sys.stderr)
+        return 1
+    resolved = resolve_series(races)
+    print("Resolved series: " + ", ".join(
+        f"{r['key']}={r['race_code']} ({r['race_title']})" for r in resolved), file=sys.stderr)
+
+    entries = []
+    for rs in resolved:
+        summary = process_series(rs)
+        if summary:
+            entries.append(summary)
+    if not entries:
+        print("No series could be scraped.", file=sys.stderr)
+        return 1
+    write_series_index(entries)
     return 0
 
 
