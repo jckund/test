@@ -1,0 +1,33 @@
+{
+  "updated_at": "2026-07-09T18:08:13.372510+00:00",
+  "series": [
+    {
+      "key": "cup",
+      "label": "NASCAR",
+      "race_title": "Quaker State 400 Available at Walmart",
+      "full": true,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-07-09T18:06:55.482575+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
+      "race_title": "LiUNA 150",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-07-09T18:08:13.372466+00:00"
+    }
+  ]
+}
