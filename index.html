@@ -141,6 +141,9 @@
   .cmp-note b { color: var(--ink); }
   .edge { font-family: var(--mono); font-weight: 700; }
   .edge.pos { color: var(--pos); } .edge.neg { color: var(--neg); }
+  /* +EV highlight: a book line longer than the Kalshi-implied fair line. */
+  td.ev { background: color-mix(in srgb, var(--pos) 15%, transparent); }
+  tr:hover td.ev { background: color-mix(in srgb, var(--pos) 22%, transparent); }
   .cmp-fresh { font-size: 12px; color: var(--ink-2); margin: 0 0 14px; display: flex;
     flex-wrap: wrap; gap: 4px 16px; }
   .cmp-fresh b { color: var(--ink); font-weight: 600; }
@@ -260,7 +263,9 @@
       within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
       The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
       When FanDuel posts a <b>Top&nbsp;[Make]&nbsp;Driver</b> market, its odds and the edge (Kalshi
-      implied − book implied, in points) appear alongside.
+      implied − book implied, in points) appear alongside. Cells shaded
+      <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
+      Kalshi-implied fair line.
     </div>
     <div class="cmp-fresh" id="mfr-fresh"></div>
     <section class="card">
@@ -869,6 +874,13 @@ function renderManufacturers(snap) {
   const dash = `<span class="muted">—</span>`;
   const edgeCell = (e) => e == null ? dash
     : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
+  // A book's (odds, edge) pair of cells; both tinted when the edge is +EV
+  // (book line longer than the Kalshi-implied fair line, i.e. edge > 0).
+  const bookPair = (american, edge) => {
+    const ev = edge != null && edge > 0 ? " ev" : "";
+    return `<td class="num${ev}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${ev}">${edgeCell(edge)}</td>`;
+  };
 
   // "Which make wins": each make's summed win prob, normalized across the makes.
   const totals = present.map((k) => ({ mfr: k, sum: groups[k].reduce((a, d) => a + d.p, 0) }));
@@ -884,7 +896,7 @@ function renderManufacturers(snap) {
       // Compare against the book's no-vig number so both sides sum to 1.
       const bp = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
       const edge = typeof bp === "number" ? (pn - bp) * 100 : null;
-      return `<td class="num">${fm ? usAmerican(fm.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+      return bookPair(fm ? fm.american : null, edge);
     }).join("");
     return `<tr>
       <td class="l driver">${escapeHtml(t.mfr)}</td>
@@ -908,7 +920,7 @@ function renderManufacturers(snap) {
       const bookCells = makeBooks.map((bk) => {
         const dd = byMake[bk.key][mfr][normName(d.name)];
         const edge = dd && typeof dd.implied === "number" ? (pt - dd.implied) * 100 : null;
-        return `<td class="num">${dd ? usAmerican(dd.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+        return bookPair(dd ? dd.american : null, edge);
       }).join("");
       return `<tr>
         <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
