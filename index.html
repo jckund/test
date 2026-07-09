@@ -131,9 +131,10 @@
      reading column and use up to 95vw, centered on the viewport, so all books
      fit without horizontal scrolling on normal screens. The inner .scroll box
      keeps overflow-x as a fallback on very narrow screens. */
-  #compare-view, #mfr-view.wide { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
+  #compare-view, #mfr-view.wide, #team-view.wide { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
   #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs,
-  #mfr-view .cmp-note, #mfr-view .cmp-fresh { max-width: 900px; }
+  #mfr-view .cmp-note, #mfr-view .cmp-fresh,
+  #team-view .cmp-note, #team-view .cmp-fresh { max-width: 900px; }
   .subtabs { margin: 2px 0 14px; }
   .cmp-note { font-size: 12.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55;
     background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
@@ -283,6 +284,31 @@
     <div id="mfr-groups"></div>
   </div>
 
+  <div id="team-view" style="display:none">
+    <div class="cmp-note">
+      <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
+      The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
+      teams; book <b>winning-team</b> markets and the edge (Kalshi implied − book, in points) appear
+      alongside, with <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
+      Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
+      imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
+    </div>
+    <div class="cmp-fresh" id="team-fresh"></div>
+    <section class="card">
+      <div class="card-head">
+        <h2>Which team wins the race</h2>
+        <span class="count" id="team-win-count"></span>
+      </div>
+      <div class="scroll">
+        <table id="team-win">
+          <thead><tr id="team-win-head"></tr></thead>
+          <tbody id="team-win-rows"></tbody>
+        </table>
+      </div>
+    </section>
+    <div id="team-groups"></div>
+  </div>
+
   <footer>
     Kalshi snapshots by <code>scraper.py</code> (public API); FanDuel by <code>fanduel_scraper.js</code>
     (headless browser); other books entered manually from posted odds. Git history is the full change log.
@@ -396,6 +422,7 @@ function buildTabs() {
   const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
   items.push({ key: "compare", label: "Odds Comparison" });
   items.push({ key: "manufacturers", label: "Top Manufacturer" });
+  items.push({ key: "teams", label: "Top Team" });
   items.push({ key: "activity", label: "Activity" });
   for (const it of items) {
     const b = document.createElement("button");
@@ -413,6 +440,7 @@ function showView(which) {
   $("activity-view").style.display = which === "activity" ? "" : "none";
   $("compare-view").style.display = which === "compare" ? "" : "none";
   $("mfr-view").style.display = which === "mfr" ? "" : "none";
+  $("team-view").style.display = which === "team" ? "" : "none";
 }
 
 function tierMeta(key) {
@@ -426,6 +454,7 @@ async function selectTier(key) {
   if (key === "activity") { showView("activity"); return loadActivity(); }
   if (key === "compare") { showView("compare"); return loadCompare(); }
   if (key === "manufacturers") { showView("mfr"); return loadManufacturers(); }
+  if (key === "teams") { showView("team"); return loadTeams(); }
   showView("tier");
   const meta = tierMeta(key);
   const base = "data/" + key;
@@ -598,7 +627,7 @@ async function refresh() {
     $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
     $("src").href = INDEX.source_url || "https://kalshi.com";
     const wanted = (location.hash || "").replace("#", "");
-    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "manufacturers", "activity");
+    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "manufacturers", "teams", "activity");
     if (!currentKey) currentKey = validKeys.includes(wanted) ? wanted : INDEX.markets[0].key;
     await selectTier(currentKey);
   } catch (e) {
@@ -944,6 +973,172 @@ function renderManufacturers(snap) {
     const warn = document.createElement("div");
     warn.className = "cmp-note";
     warn.innerHTML = `<b>Unmapped drivers</b> (no manufacturer assigned, excluded above): ` +
+      unmapped.map(escapeHtml).join(", ") + `.`;
+    box.appendChild(warn);
+  }
+}
+
+// ---- Top-team implied odds (derived from the Kalshi winner market) ----
+// Driver -> race team for the current Cup field (user-confirmed). Team keys are
+// canonical display names; book winning-team markets are normalized to these
+// same names via teamCanon() so lookups are direct.
+const TEAM_GROUPS = {
+  "Team Penske": ["Ryan Blaney", "Joey Logano", "Austin Cindric"],
+  "Hendrick Motorsports": ["Kyle Larson", "William Byron", "Chase Elliott", "Alex Bowman"],
+  "Joe Gibbs Racing": ["Denny Hamlin", "Christopher Bell", "Chase Briscoe", "Ty Gibbs"],
+  "23XI Racing": ["Tyler Reddick", "Bubba Wallace", "Riley Herbst"],
+  "RFK Racing": ["Brad Keselowski", "Chris Buescher", "Ryan Preece"],
+  "Spire Motorsports": ["Carson Hocevar", "Michael McDowell"],
+  "Trackhouse Racing": ["Ross Chastain", "Daniel Suarez", "Shane Van Gisbergen", "Connor Zilisch"],
+  "Front Row Motorsports": ["Todd Gilliland", "Zane Smith", "Noah Gragson"],
+  "Hyak Motorsports": ["Ricky Stenhouse Jr"],
+  "Legacy Motor Club": ["Erik Jones", "John Hunter Nemechek"],
+  "Richard Childress Racing": ["Austin Dillon", "Austin Hill"],
+  "Kaulig Racing": ["AJ Allmendinger", "Ty Dillon"],
+  "Wood Brothers Racing": ["Josh Berry"],
+  "Haas Factory Team": ["Cole Custer"],
+  "Rick Ware Racing": ["Cody Ware"],
+  "Garage 66": ["Chad Finchum"],
+  "Live Fast Motorsports": ["BJ McLeod"],
+};
+const TEAM_KEY = {};   // normName(driver) -> team
+for (const [team, names] of Object.entries(TEAM_GROUPS)) for (const n of names) TEAM_KEY[normName(n)] = team;
+
+// Map a book's team-name string to our canonical team key by keyword, so
+// "Trackhouse Racing Team", "LEGACY MOTOR CLUB", "Hass Factory Team" all match.
+function teamCanon(name) {
+  const n = (name || "").toLowerCase();
+  const rules = [
+    ["penske", "Team Penske"], ["hendrick", "Hendrick Motorsports"], ["gibbs", "Joe Gibbs Racing"],
+    ["23xi", "23XI Racing"], ["rfk", "RFK Racing"], ["roush", "RFK Racing"], ["spire", "Spire Motorsports"],
+    ["trackhouse", "Trackhouse Racing"], ["front row", "Front Row Motorsports"], ["hyak", "Hyak Motorsports"],
+    ["legacy", "Legacy Motor Club"], ["childress", "Richard Childress Racing"], ["kaulig", "Kaulig Racing"],
+    ["wood brothers", "Wood Brothers Racing"], ["haas", "Haas Factory Team"], ["hass", "Haas Factory Team"],
+    ["rick ware", "Rick Ware Racing"], ["garage 66", "Garage 66"], ["garage66", "Garage 66"],
+    ["live fast", "Live Fast Motorsports"],
+  ];
+  for (const [kw, canon] of rules) if (n.includes(kw)) return canon;
+  return null;
+}
+
+const TEAM_BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "data/fanduel/teams.json", live: true },
+  { key: "caesars", label: "Caesars", url: "data/manual/team_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "data/manual/team_betus.json", live: false },
+];
+const TEAMDATA = {};
+
+async function loadTeams() {
+  $("updated").textContent = "Loading…";
+  let snap;
+  try {
+    snap = await loadJSON("data/winner/snapshot.json");
+  } catch {
+    $("team-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
+    $("team-groups").innerHTML = "";
+    $("team-fresh").innerHTML = "";
+    $("updated").textContent = "Awaiting winner data";
+    $("mcount").textContent = "";
+    return;
+  }
+  await Promise.all(TEAM_BOOKS.map(async (bk) => {
+    try { TEAMDATA[bk.key] = await loadJSON(bk.url); } catch { TEAMDATA[bk.key] = null; }
+  }));
+  renderTeams(snap);
+}
+
+function renderTeams(snap) {
+  $("updated").textContent = "Updated " + relTime(snap.scraped_at);
+  $("updated").title = snap.scraped_at || "";
+  $("src").href = snap.source_url || "https://kalshi.com";
+
+  // Bucket drivers into teams; collect unmapped for a visible warning.
+  const groups = {}; for (const k of Object.keys(TEAM_GROUPS)) groups[k] = [];
+  const unmapped = [];
+  for (const m of Object.values(snap.markets || {})) {
+    const p = winProb(m);
+    if (p == null) continue;
+    const team = TEAM_KEY[normName(m.name)];
+    if (!team) { unmapped.push(m.name); continue; }
+    groups[team].push({ name: m.name, p });
+  }
+  const present = Object.keys(TEAM_GROUPS).filter((k) => groups[k].length);
+  $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " teams";
+
+  const books = TEAM_BOOKS.filter((bk) => TEAMDATA[bk.key] && TEAMDATA[bk.key].winner);
+  const anyBooks = books.length > 0;
+  document.getElementById("team-view").classList.toggle("wide", anyBooks);
+
+  $("team-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(TEAMDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
+  const dash = `<span class="muted">—</span>`;
+  const edgeCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
+  const bookPair = (american, edge) => {
+    const ev = edge != null && edge > 0 ? " ev" : "";
+    return `<td class="num${ev}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${ev}">${edgeCell(edge)}</td>`;
+  };
+
+  // "Which team wins": summed win prob per team, normalized across teams.
+  const totals = present.map((k) => ({ team: k, sum: groups[k].reduce((a, d) => a + d.p, 0) }));
+  const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  totals.sort((a, b) => b.sum - a.sum);
+  $("team-win-head").innerHTML =
+    `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+  $("team-win-rows").innerHTML = totals.map((t) => {
+    const pn = t.sum / grand;
+    const bookCells = books.map((bk) => {
+      const fm = TEAMDATA[bk.key].winner[t.team];
+      // Compare against the book's no-vig number so both sides sum to 1.
+      const bp = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
+      const edge = typeof bp === "number" ? (pn - bp) * 100 : null;
+      return bookPair(fm ? fm.american : null, edge);
+    }).join("");
+    return `<tr>
+      <td class="l driver">${escapeHtml(t.team)}</td>
+      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
+  }).join("");
+  $("team-win-count").textContent = present.length + " teams";
+
+  // Per-team "top driver" tables (Kalshi only), for teams with 2+ drivers.
+  const box = $("team-groups");
+  box.innerHTML = "";
+  for (const team of totals.map((t) => t.team)) {
+    const drivers = groups[team].slice().sort((a, b) => b.p - a.p);
+    if (drivers.length < 2) continue;
+    const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
+    const rows = drivers.map((d, i) => {
+      const pt = d.p / sum;
+      return `<tr>
+        <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+        <td class="l driver">${escapeHtml(d.name)}</td>
+        <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
+          <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
+        <td class="num">${usFromProb(pt)}</td></tr>`;
+    }).join("");
+    const card = document.createElement("section");
+    card.className = "card";
+    card.innerHTML =
+      `<div class="card-head"><h2>Top ${escapeHtml(team)} driver</h2>
+        <span class="count">${drivers.length} drivers</span></div>
+       <div class="scroll"><table><thead><tr>
+         <th class="l">#</th><th class="l">Driver</th><th>Top-team chance</th><th>Implied odds</th>
+       </tr></thead><tbody>${rows}</tbody></table></div>`;
+    box.appendChild(card);
+  }
+
+  if (unmapped.length) {
+    const warn = document.createElement("div");
+    warn.className = "cmp-note";
+    warn.innerHTML = `<b>Unmapped drivers</b> (no team assigned, excluded above): ` +
       unmapped.map(escapeHtml).join(", ") + `.`;
     box.appendChild(warn);
   }
