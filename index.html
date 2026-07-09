@@ -252,6 +252,30 @@
     </section>
   </div>
 
+  <div id="mfr-view" style="display:none">
+    <div class="cmp-note">
+      <b>Implied</b> odds for the top-finishing driver of each manufacturer, derived from the live
+      <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
+      within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
+      The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
+      When FanDuel posts a <b>Top&nbsp;[Make]&nbsp;Driver</b> market, its odds and the edge (Kalshi
+      implied − FanDuel implied, in points) appear alongside.
+    </div>
+    <section class="card">
+      <div class="card-head">
+        <h2>Which manufacturer wins the race</h2>
+        <span class="count" id="mfr-win-count"></span>
+      </div>
+      <div class="scroll">
+        <table id="mfr-win">
+          <thead><tr id="mfr-win-head"></tr></thead>
+          <tbody id="mfr-win-rows"></tbody>
+        </table>
+      </div>
+    </section>
+    <div id="mfr-groups"></div>
+  </div>
+
   <footer>
     Kalshi snapshots by <code>scraper.py</code> (public API); FanDuel by <code>fanduel_scraper.js</code>
     (headless browser); other books entered manually from posted odds. Git history is the full change log.
@@ -364,6 +388,7 @@ function buildTabs() {
   tabs.innerHTML = "";
   const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
   items.push({ key: "compare", label: "Odds Comparison" });
+  items.push({ key: "manufacturers", label: "Top Manufacturer" });
   items.push({ key: "activity", label: "Activity" });
   for (const it of items) {
     const b = document.createElement("button");
@@ -380,6 +405,7 @@ function showView(which) {
   $("tier-view").style.display = which === "tier" ? "" : "none";
   $("activity-view").style.display = which === "activity" ? "" : "none";
   $("compare-view").style.display = which === "compare" ? "" : "none";
+  $("mfr-view").style.display = which === "mfr" ? "" : "none";
 }
 
 function tierMeta(key) {
@@ -392,6 +418,7 @@ async function selectTier(key) {
   buildTabs();
   if (key === "activity") { showView("activity"); return loadActivity(); }
   if (key === "compare") { showView("compare"); return loadCompare(); }
+  if (key === "manufacturers") { showView("mfr"); return loadManufacturers(); }
   showView("tier");
   const meta = tierMeta(key);
   const base = "data/" + key;
@@ -564,7 +591,7 @@ async function refresh() {
     $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
     $("src").href = INDEX.source_url || "https://kalshi.com";
     const wanted = (location.hash || "").replace("#", "");
-    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "activity");
+    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "manufacturers", "activity");
     if (!currentKey) currentKey = validKeys.includes(wanted) ? wanted : INDEX.markets[0].key;
     await selectTier(currentKey);
   } catch (e) {
@@ -732,6 +759,153 @@ async function renderCompare() {
     rows.appendChild(tr);
   });
   $("cmp-count").textContent = merged.length + " drivers";
+}
+
+// ---- Top-manufacturer implied odds (derived from the Kalshi winner market) ----
+// Driver -> manufacturer for the current Cup field (user-provided, authoritative).
+// The field is stable across a season, so this is a static map; unmapped drivers
+// are surfaced in the UI so the map can be corrected if the field changes.
+const MFR_GROUPS = {
+  Chevrolet: ["Chase Elliott", "William Byron", "Kyle Larson", "Carson Hocevar", "Ross Chastain",
+    "Ricky Stenhouse Jr", "Alex Bowman", "Shane Van Gisbergen", "Daniel Suarez", "Austin Dillon",
+    "Michael McDowell", "Connor Zilisch", "AJ Allmendinger", "Ty Dillon", "Austin Hill",
+    "Cole Custer", "BJ McLeod", "Cody Ware"],
+  Ford: ["Ryan Blaney", "Joey Logano", "Brad Keselowski", "Austin Cindric", "Chris Buescher",
+    "Ryan Preece", "Josh Berry", "Zane Smith", "Todd Gilliland", "Noah Gragson", "Chad Finchum"],
+  Toyota: ["Tyler Reddick", "Christopher Bell", "Denny Hamlin", "Chase Briscoe", "Bubba Wallace",
+    "Ty Gibbs", "Erik Jones", "Riley Herbst", "John Hunter Nemechek"],
+};
+const MFR_ORDER = ["Chevrolet", "Ford", "Toyota"];
+const MFR_KEY = {};   // normName -> manufacturer
+for (const [mfr, names] of Object.entries(MFR_GROUPS)) for (const n of names) MFR_KEY[normName(n)] = mfr;
+
+// Kalshi win probability for a driver market: yes-price midpoint (bid/ask) when
+// both sides are quoted, else the displayed yes price. Midpoint removes the
+// half-spread so the implied number matches a fair line, not the buy button.
+function winProb(m) {
+  if (typeof m.yes_bid === "number" && typeof m.yes_ask === "number") return (m.yes_bid + m.yes_ask) / 200;
+  const p = priceYes(m);
+  return p == null ? null : p / 100;
+}
+// American odds from a probability (0..1).
+function usFromProb(p) {
+  if (typeof p !== "number" || p <= 0 || p >= 1) return "—";
+  return p < 0.5 ? "+" + Math.round((100 * (1 - p)) / p) : "-" + Math.round((100 * p) / (1 - p));
+}
+
+async function loadManufacturers() {
+  $("updated").textContent = "Loading…";
+  let snap, fd = null;
+  try {
+    snap = await loadJSON("data/winner/snapshot.json");
+  } catch {
+    $("mfr-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
+    $("mfr-groups").innerHTML = "";
+    $("updated").textContent = "Awaiting winner data";
+    $("mcount").textContent = "";
+    return;
+  }
+  try { fd = await loadJSON("data/fanduel/manufacturers.json"); } catch { fd = null; }
+  renderManufacturers(snap, fd);
+}
+
+function renderManufacturers(snap, fd) {
+  $("updated").textContent = "Updated " + relTime(snap.scraped_at);
+  $("updated").title = snap.scraped_at || "";
+  $("src").href = snap.source_url || "https://kalshi.com";
+
+  // Bucket drivers into makes; collect anything unmapped for a visible warning.
+  const groups = {}; for (const k of MFR_ORDER) groups[k] = [];
+  const unmapped = [];
+  for (const m of Object.values(snap.markets || {})) {
+    const p = winProb(m);
+    if (p == null) continue;
+    const mfr = MFR_KEY[normName(m.name)];
+    if (!mfr) { unmapped.push(m.name); continue; }
+    groups[mfr].push({ name: m.name, p });
+  }
+  const present = MFR_ORDER.filter((k) => groups[k].length);
+  $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " makes";
+
+  // FanDuel actual markets, keyed by make -> { driverKey -> {american, implied} }.
+  const fdByMake = {};
+  const fdTime = fd && fd.scraped_at;
+  if (fd && fd.makes) {
+    for (const [mk, obj] of Object.entries(fd.makes)) {
+      const map = {};
+      for (const d of obj.drivers || []) map[normName(d.name)] = d;
+      fdByMake[mk] = map;
+    }
+  }
+  const hasFd = Object.keys(fdByMake).length > 0;
+  const dash = `<span class="muted">—</span>`;
+  const edgeCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
+
+  // "Which make wins": each make's summed win prob, normalized across the makes.
+  const totals = present.map((k) => ({ mfr: k, sum: groups[k].reduce((a, d) => a + d.p, 0) }));
+  const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  totals.sort((a, b) => b.sum - a.sum);
+  $("mfr-win-head").innerHTML =
+    `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
+    (hasFd ? `<th>FanDuel</th><th>Edge</th>` : ``);
+  $("mfr-win-rows").innerHTML = totals.map((t, i) => {
+    const pn = t.sum / grand;
+    let fdCells = "";
+    if (hasFd) {
+      const fm = fd.winner && fd.winner[t.mfr];
+      const edge = fm && typeof fm.implied === "number" ? (pn - fm.implied) * 100 : null;
+      fdCells = `<td class="num">${fm ? usAmerican(fm.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+    }
+    return `<tr>
+      <td class="l driver ${i === 0 ? "" : ""}">${escapeHtml(t.mfr)}</td>
+      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(pn)}</td>${fdCells}</tr>`;
+  }).join("");
+  $("mfr-win-count").textContent = fdTime ? "FanDuel " + relTime(fdTime) : "";
+
+  // Per-make "top driver" tables: normalize win prob within the make.
+  const box = $("mfr-groups");
+  box.innerHTML = "";
+  for (const mfr of present) {
+    const drivers = groups[mfr].slice().sort((a, b) => b.p - a.p);
+    const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
+    const fdMap = fdByMake[mfr] || null;
+    const showFd = hasFd && fdMap;
+    const rows = drivers.map((d, i) => {
+      const pt = d.p / sum;
+      let fdCells = "";
+      if (hasFd) {
+        const fdd = fdMap && fdMap[normName(d.name)];
+        const edge = fdd && typeof fdd.implied === "number" ? (pt - fdd.implied) * 100 : null;
+        fdCells = `<td class="num">${fdd ? usAmerican(fdd.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+      }
+      return `<tr>
+        <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+        <td class="l driver">${escapeHtml(d.name)}</td>
+        <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
+          <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
+        <td class="num">${usFromProb(pt)}</td>${fdCells}</tr>`;
+    }).join("");
+    const head = `<th class="l">#</th><th class="l">Driver</th><th>Top-${escapeHtml(mfr)} chance</th><th>Implied odds</th>` +
+      (hasFd ? `<th>FanDuel</th><th>Edge</th>` : ``);
+    const card = document.createElement("section");
+    card.className = "card";
+    card.innerHTML =
+      `<div class="card-head"><h2>Top ${escapeHtml(mfr)} driver</h2>
+        <span class="count">${drivers.length} drivers</span></div>
+       <div class="scroll"><table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>`;
+    box.appendChild(card);
+  }
+
+  if (unmapped.length) {
+    const warn = document.createElement("div");
+    warn.className = "cmp-note";
+    warn.innerHTML = `<b>Unmapped drivers</b> (no manufacturer assigned, excluded above): ` +
+      unmapped.map(escapeHtml).join(", ") + `.`;
+    box.appendChild(warn);
+  }
 }
 
 // Manual refresh: reload the latest snapshot on demand and restart the
