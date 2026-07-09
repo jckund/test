@@ -131,8 +131,9 @@
      reading column and use up to 95vw, centered on the viewport, so all books
      fit without horizontal scrolling on normal screens. The inner .scroll box
      keeps overflow-x as a fallback on very narrow screens. */
-  #compare-view { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
-  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs { max-width: 900px; }
+  #compare-view, #mfr-view.wide { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
+  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs,
+  #mfr-view .cmp-note, #mfr-view .cmp-fresh { max-width: 900px; }
   .subtabs { margin: 2px 0 14px; }
   .cmp-note { font-size: 12.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55;
     background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
@@ -259,8 +260,9 @@
       within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
       The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
       When FanDuel posts a <b>Top&nbsp;[Make]&nbsp;Driver</b> market, its odds and the edge (Kalshi
-      implied − FanDuel implied, in points) appear alongside.
+      implied − book implied, in points) appear alongside.
     </div>
+    <div class="cmp-fresh" id="mfr-fresh"></div>
     <section class="card">
       <div class="card-head">
         <h2>Which manufacturer wins the race</h2>
@@ -793,23 +795,35 @@ function usFromProb(p) {
   return p < 0.5 ? "+" + Math.round((100 * (1 - p)) / p) : "-" + Math.round((100 * p) / (1 - p));
 }
 
+// Books carrying manufacturer markets. `live` books are scraped on a schedule;
+// others are entered manually from posted odds (stamped with a capture time).
+const MFR_BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "data/fanduel/manufacturers.json", live: true },
+  { key: "caesars", label: "Caesars", url: "data/manual/mfr_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "data/manual/mfr_betus.json", live: false },
+];
+const MFRDATA = {};   // key -> parsed json (or null)
+
 async function loadManufacturers() {
   $("updated").textContent = "Loading…";
-  let snap, fd = null;
+  let snap;
   try {
     snap = await loadJSON("data/winner/snapshot.json");
   } catch {
     $("mfr-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
     $("mfr-groups").innerHTML = "";
+    $("mfr-fresh").innerHTML = "";
     $("updated").textContent = "Awaiting winner data";
     $("mcount").textContent = "";
     return;
   }
-  try { fd = await loadJSON("data/fanduel/manufacturers.json"); } catch { fd = null; }
-  renderManufacturers(snap, fd);
+  await Promise.all(MFR_BOOKS.map(async (bk) => {
+    try { MFRDATA[bk.key] = await loadJSON(bk.url); } catch { MFRDATA[bk.key] = null; }
+  }));
+  renderManufacturers(snap);
 }
 
-function renderManufacturers(snap, fd) {
+function renderManufacturers(snap) {
   $("updated").textContent = "Updated " + relTime(snap.scraped_at);
   $("updated").title = snap.scraped_at || "";
   $("src").href = snap.source_url || "https://kalshi.com";
@@ -827,17 +841,31 @@ function renderManufacturers(snap, fd) {
   const present = MFR_ORDER.filter((k) => groups[k].length);
   $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " makes";
 
-  // FanDuel actual markets, keyed by make -> { driverKey -> {american, implied} }.
-  const fdByMake = {};
-  const fdTime = fd && fd.scraped_at;
-  if (fd && fd.makes) {
-    for (const [mk, obj] of Object.entries(fd.makes)) {
+  // Available books, and per-book driver maps keyed by make.
+  const books = MFR_BOOKS.filter((bk) => MFRDATA[bk.key]);
+  const byMake = {}; // bookKey -> make -> { driverKey -> {american, implied, novig} }
+  for (const bk of books) {
+    const d = MFRDATA[bk.key];
+    const mm = {};
+    for (const [mk, obj] of Object.entries((d && d.makes) || {})) {
       const map = {};
-      for (const d of obj.drivers || []) map[normName(d.name)] = d;
-      fdByMake[mk] = map;
+      for (const dr of obj.drivers || []) map[normName(dr.name)] = dr;
+      mm[mk] = map;
     }
+    byMake[bk.key] = mm;
   }
-  const hasFd = Object.keys(fdByMake).length > 0;
+  // Which books carry a winning-manufacturer line, and any per-make market.
+  const winnerBooks = books.filter((bk) => MFRDATA[bk.key].winner && Object.keys(MFRDATA[bk.key].winner).length);
+  const anyBooks = books.length > 0;
+  document.getElementById("mfr-view").classList.toggle("wide", anyBooks);
+
+  // Freshness line per available book.
+  $("mfr-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(MFRDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
   const dash = `<span class="muted">—</span>`;
   const edgeCell = (e) => e == null ? dash
     : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
@@ -848,49 +876,49 @@ function renderManufacturers(snap, fd) {
   totals.sort((a, b) => b.sum - a.sum);
   $("mfr-win-head").innerHTML =
     `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
-    (hasFd ? `<th>FanDuel</th><th>Edge</th>` : ``);
-  $("mfr-win-rows").innerHTML = totals.map((t, i) => {
+    winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+  $("mfr-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
-    let fdCells = "";
-    if (hasFd) {
-      const fm = fd.winner && fd.winner[t.mfr];
-      const fmProb = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
-      const edge = typeof fmProb === "number" ? (pn - fmProb) * 100 : null;
-      fdCells = `<td class="num">${fm ? usAmerican(fm.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
-    }
+    const bookCells = winnerBooks.map((bk) => {
+      const fm = MFRDATA[bk.key].winner[t.mfr];
+      // Compare against the book's no-vig number so both sides sum to 1.
+      const bp = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
+      const edge = typeof bp === "number" ? (pn - bp) * 100 : null;
+      return `<td class="num">${fm ? usAmerican(fm.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+    }).join("");
     return `<tr>
-      <td class="l driver ${i === 0 ? "" : ""}">${escapeHtml(t.mfr)}</td>
+      <td class="l driver">${escapeHtml(t.mfr)}</td>
       <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
         <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
-      <td class="num">${usFromProb(pn)}</td>${fdCells}</tr>`;
+      <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
   }).join("");
-  $("mfr-win-count").textContent = fdTime ? "FanDuel " + relTime(fdTime) : "";
+  $("mfr-win-count").textContent = winnerBooks.length ? "" : (anyBooks ? "books list per-make only" : "");
 
-  // Per-make "top driver" tables: normalize win prob within the make.
+  // Per-make "top driver" tables: normalize Kalshi win prob within the make.
+  // Each book that carries this make gets an odds + edge column; edge compares
+  // Kalshi's normalized (no-vig) chance vs the book's raw implied (vig included).
   const box = $("mfr-groups");
   box.innerHTML = "";
   for (const mfr of present) {
     const drivers = groups[mfr].slice().sort((a, b) => b.p - a.p);
     const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
-    const fdMap = fdByMake[mfr] || null;
-    const showFd = hasFd && fdMap;
+    const makeBooks = books.filter((bk) => byMake[bk.key][mfr]);
     const rows = drivers.map((d, i) => {
       const pt = d.p / sum;
-      let fdCells = "";
-      if (hasFd) {
-        const fdd = fdMap && fdMap[normName(d.name)];
-        const edge = fdd && typeof fdd.implied === "number" ? (pt - fdd.implied) * 100 : null;
-        fdCells = `<td class="num">${fdd ? usAmerican(fdd.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
-      }
+      const bookCells = makeBooks.map((bk) => {
+        const dd = byMake[bk.key][mfr][normName(d.name)];
+        const edge = dd && typeof dd.implied === "number" ? (pt - dd.implied) * 100 : null;
+        return `<td class="num">${dd ? usAmerican(dd.american) : dash}</td><td class="num">${edgeCell(edge)}</td>`;
+      }).join("");
       return `<tr>
         <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
         <td class="l driver">${escapeHtml(d.name)}</td>
         <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
           <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
-        <td class="num">${usFromProb(pt)}</td>${fdCells}</tr>`;
+        <td class="num">${usFromProb(pt)}</td>${bookCells}</tr>`;
     }).join("");
     const head = `<th class="l">#</th><th class="l">Driver</th><th>Top-${escapeHtml(mfr)} chance</th><th>Implied odds</th>` +
-      (hasFd ? `<th>FanDuel</th><th>Edge</th>` : ``);
+      makeBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
     const card = document.createElement("section");
     card.className = "card";
     card.innerHTML =
