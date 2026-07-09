@@ -104,7 +104,9 @@ function pickRace(byRace, kalshiRace) {
 async function main() {
   const seriesList = readSeries();
   console.log("Series to match:", seriesList.map((s) => `${s.key}:${s.race_title}`).join(", ") || "(none)");
-  if (!seriesList.length) throw new Error("No data/series.json; run scraper.py first.");
+  // The Kalshi scraper writes data/series.json; on a cold start the two
+  // workflows can race, so just no-op until it exists (the next run picks up).
+  if (!seriesList.length) { console.log("No data/series.json yet; nothing to scrape."); return; }
 
   const browser = await chromium.launch();
   const ctx = await browser.newContext({
