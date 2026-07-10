@@ -13,7 +13,7 @@
       "last_price": 2,
       "liquidity": 0.0,
       "name": "Andres Perez De Lara",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
       "open_interest": 968,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 968,
       "volume_24h": 500,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARRACE-LIU26-BEMA": {
       "last_price": 3,
@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-BEMA",
       "volume": 101,
-      "volume_24h": 100,
+      "volume_24h": 0,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -280,17 +280,17 @@
       "liquidity": 0.0,
       "name": "Justin Haley",
       "no_ask": 100,
-      "no_bid": 99,
+      "no_bid": 98,
       "open_interest": 1359,
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-JUHA",
       "volume": 2115,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-LIU26-KAHO": {
-      "last_price": 20,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Kaden Honeycutt",
       "no_ask": 82,
@@ -298,8 +298,8 @@
       "open_interest": 4250,
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "volume": 5412,
-      "volume_24h": 3161,
+      "volume": 5459,
+      "volume_24h": 3208,
       "yes_ask": 20,
       "yes_bid": 18
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-LARI",
       "volume": 2598,
-      "volume_24h": 676,
+      "volume_24h": 674,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -379,11 +379,11 @@
       "name": "Parker Kligerman",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 1935,
+      "open_interest": 1943,
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-PAKL",
-      "volume": 1935,
-      "volume_24h": 87,
+      "volume": 1943,
+      "volume_24h": 95,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-07-10T00:44:31.314501+00:00",
+  "scraped_at": "2026-07-10T01:38:24.228214+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "winner"
 }

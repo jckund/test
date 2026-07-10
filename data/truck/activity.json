@@ -1,7 +1,106 @@
 {
-  "updated_at": "2026-07-10T00:45:49.869732+00:00",
+  "updated_at": "2026-07-10T01:39:35.637231+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "ee7b1c36-f007-7dcd-af26-f968557ce1ff",
+      "tier": "Top 10",
+      "driver": "Parker Kligerman",
+      "ticker": "KXNASCARTOP10-LIU26-PAKL",
+      "side": "no",
+      "count": 250,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-07-10T01:04:28.982296Z"
+    },
+    {
+      "trade_id": "c2a87f14-911d-7c25-bb06-fdadb330f9aa",
+      "tier": "Top 10",
+      "driver": "Graham Doyle",
+      "ticker": "KXNASCARTOP10-LIU26-GRDO",
+      "side": "no",
+      "count": 250,
+      "yes_price": 21,
+      "no_price": 79,
+      "created_time": "2026-07-10T01:04:08.638729Z"
+    },
+    {
+      "trade_id": "8d19aeee-e253-5fd6-4b29-091beddbf001",
+      "tier": "Top 10",
+      "driver": "Tanner Gray",
+      "ticker": "KXNASCARTOP10-LIU26-TAGR",
+      "side": "no",
+      "count": 230,
+      "yes_price": 22,
+      "no_price": 78,
+      "created_time": "2026-07-10T01:03:53.636128Z"
+    },
+    {
+      "trade_id": "abdce6c0-e816-70c3-1d3b-187bdc2afc97",
+      "tier": "Top 10",
+      "driver": "Andres Perez De Lara",
+      "ticker": "KXNASCARTOP10-LIU26-ANPE",
+      "side": "no",
+      "count": 250,
+      "yes_price": 42,
+      "no_price": 58,
+      "created_time": "2026-07-10T01:02:49.329152Z"
+    },
+    {
+      "trade_id": "93573371-e047-70d4-3449-de4d70abbbf7",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "no",
+      "count": 24,
+      "yes_price": 18,
+      "no_price": 82,
+      "created_time": "2026-07-10T00:59:18.906614Z"
+    },
+    {
+      "trade_id": "00adc938-0647-713f-748a-28c800e86d46",
+      "tier": "Winner",
+      "driver": "Parker Kligerman",
+      "ticker": "KXNASCARRACE-LIU26-PAKL",
+      "side": "yes",
+      "count": 8,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-10T00:59:08.584534Z"
+    },
+    {
+      "trade_id": "f4f012bc-1647-6a1f-a27b-1227d1b87f0b",
+      "tier": "Top 3",
+      "driver": "Parker Kligerman",
+      "ticker": "KXNASCARTOP3-LIU26-PAKL",
+      "side": "yes",
+      "count": 4,
+      "yes_price": 12,
+      "no_price": 88,
+      "created_time": "2026-07-10T00:58:49.154558Z"
+    },
+    {
+      "trade_id": "8ebb8817-bf21-47c2-fdd3-860394230989",
+      "tier": "Top 10",
+      "driver": "Parker Kligerman",
+      "ticker": "KXNASCARTOP10-LIU26-PAKL",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 70,
+      "no_price": 30,
+      "created_time": "2026-07-10T00:57:10.881587Z"
+    },
+    {
+      "trade_id": "e92e7e8e-ee5c-6e4e-2a4a-18faec2d8d12",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 24,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-07-10T00:52:48.985582Z"
+    },
     {
       "trade_id": "a163ead0-e36d-4107-5fe2-d5a19fcd0579",
       "tier": "Winner",
@@ -652,17 +751,6 @@
       "created_time": "2026-07-09T16:45:21.439698Z"
     },
     {
-      "trade_id": "dad694af-c32c-5386-add9-fe63affc0cbc",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 2,
-      "yes_price": 19,
-      "no_price": 81,
-      "created_time": "2026-07-09T16:45:21.131967Z"
-    },
-    {
       "trade_id": "fb5943cb-e6c1-4752-d28d-8f876c06a2ba",
       "tier": "Winner",
       "driver": "Layne Riggs",
@@ -1136,17 +1224,6 @@
       "created_time": "2026-07-09T12:59:52.638808Z"
     },
     {
-      "trade_id": "e2e2efb6-58ef-7e0b-e94f-46540b3f0e27",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 22,
-      "yes_price": 20,
-      "no_price": 80,
-      "created_time": "2026-07-09T12:21:39.724831Z"
-    },
-    {
       "trade_id": "102d0905-7567-6c84-d2cf-b65fd58e3603",
       "tier": "Top 3",
       "driver": "Kaden Honeycutt",
@@ -1574,83 +1651,6 @@
       "yes_price": 34,
       "no_price": 66,
       "created_time": "2026-07-08T23:01:40.451641Z"
-    },
-    {
-      "trade_id": "40e5e321-987e-59aa-449b-3a20535c5a5c",
-      "tier": "Top 3",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARTOP3-LIU26-KAHO",
-      "side": "yes",
-      "count": 40,
-      "yes_price": 49,
-      "no_price": 51,
-      "created_time": "2026-07-08T23:01:40.451641Z"
-    },
-    {
-      "trade_id": "11481424-d4fd-5b44-ef62-9e00c55e7dc4",
-      "tier": "Top 10",
-      "driver": "Louis Foster",
-      "ticker": "KXNASCARTOP10-LIU26-LOFO",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-08T22:18:24.664727Z"
-    },
-    {
-      "trade_id": "ea6abac2-921c-71ba-0242-8df9f079a143",
-      "tier": "Winner",
-      "driver": "Brenden Queen",
-      "ticker": "KXNASCARRACE-LIU26-BRQU",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-08T21:58:26.306849Z"
-    },
-    {
-      "trade_id": "cb3e837e-bf4a-605e-2679-87465a1abe9a",
-      "tier": "Top 10",
-      "driver": "Louis Foster",
-      "ticker": "KXNASCARTOP10-LIU26-LOFO",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-08T21:36:14.667481Z"
-    },
-    {
-      "trade_id": "8b9bbc64-c742-51f0-7652-a109a28b8fcd",
-      "tier": "Top 10",
-      "driver": "Louis Foster",
-      "ticker": "KXNASCARTOP10-LIU26-LOFO",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-07-08T20:45:22.650391Z"
-    },
-    {
-      "trade_id": "ce5b948b-173e-4e89-1b3b-fef6fdb4a5ff",
-      "tier": "Winner",
-      "driver": "Giovanni Ruggiero",
-      "ticker": "KXNASCARRACE-LIU26-GIRU",
-      "side": "yes",
-      "count": 67,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-08T20:45:06.376496Z"
-    },
-    {
-      "trade_id": "65e5995c-1a0f-6562-d4e6-e57ec972eceb",
-      "tier": "Top 10",
-      "driver": "Louis Foster",
-      "ticker": "KXNASCARTOP10-LIU26-LOFO",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-08T20:44:18.217129Z"
     }
   ]
 }
