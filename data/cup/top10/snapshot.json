@@ -167,7 +167,7 @@
       "last_price": 38,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 66,
+      "no_ask": 67,
       "no_bid": 63,
       "open_interest": 12,
       "status": "active",
@@ -175,19 +175,19 @@
       "volume": 12,
       "volume_24h": 0,
       "yes_ask": 37,
-      "yes_bid": 34
+      "yes_bid": 33
     },
     "KXNASCARTOP10-QUAS4AA26-CHEL": {
-      "last_price": 44,
+      "last_price": 46,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 59,
       "no_bid": 54,
-      "open_interest": 860,
+      "open_interest": 902,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-CHEL",
-      "volume": 860,
-      "volume_24h": 20,
+      "volume": 902,
+      "volume_24h": 61,
       "yes_ask": 46,
       "yes_bid": 41
     },
@@ -248,18 +248,18 @@
       "yes_bid": 10
     },
     "KXNASCARTOP10-QUAS4AA26-DASU": {
-      "last_price": 37,
+      "last_price": 35,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 68,
-      "no_bid": 65,
-      "open_interest": 387,
+      "no_ask": 67,
+      "no_bid": 63,
+      "open_interest": 461,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-DASU",
-      "volume": 387,
-      "volume_24h": 64,
-      "yes_ask": 35,
-      "yes_bid": 32
+      "volume": 461,
+      "volume_24h": 137,
+      "yes_ask": 37,
+      "yes_bid": 33
     },
     "KXNASCARTOP10-QUAS4AA26-DEHA": {
       "last_price": 46,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-10T13:03:03.861498+00:00",
+  "scraped_at": "2026-07-10T13:52:44.363527+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top10"
 }
