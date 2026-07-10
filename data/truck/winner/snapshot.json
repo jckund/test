@@ -13,7 +13,7 @@
       "last_price": 2,
       "liquidity": 0.0,
       "name": "Andres Perez De Lara",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 98,
       "open_interest": 968,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 968,
       "volume_24h": 500,
       "yes_ask": 2,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARRACE-LIU26-BEMA": {
       "last_price": 3,
@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Ben Rhodes",
       "no_ask": 98,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 2109,
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-BERH",
       "volume": 2109,
       "volume_24h": 1467,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 2
     },
     "KXNASCARRACE-LIU26-BRQU": {
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Justin Haley",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 1359,
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-JUHA",
       "volume": 2115,
       "volume_24h": 0,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-LIU26-KAHO": {
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LIU26-LARI",
       "volume": 2598,
-      "volume_24h": 674,
+      "volume_24h": 572,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-07-10T01:38:24.228214+00:00",
+  "scraped_at": "2026-07-10T01:48:14.815612+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "winner"
 }
