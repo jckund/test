@@ -243,10 +243,11 @@
     <div id="cmp-driver-panel">
       <div class="cmp-note">
         Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
-        <b>Edge</b> is the gap in implied win probability (Kalshi − book, in points):
+        <b>EV</b> is the expected return on a $1 bet at that book's odds, using Kalshi's implied
+        probability as fair: <b>EV = p·(payout) − (1−p)</b>, shown as a percent.
         <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
-        (it pays more than Kalshi's implied chance → +EV), <span class="edge neg">red</span> means
-        shorter. Rows are sorted by the <b>best edge across books</b>. Book odds include vig.
+        (it pays more than the fair chance → positive EV), <span class="edge neg">red</span> means
+        negative. Rows are sorted by the <b>best EV across books</b>. Book odds include vig.
       </div>
       <div class="cmp-fresh" id="cmp-fresh"></div>
       <section class="card">
@@ -269,9 +270,10 @@
         <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
         within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
         The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
-        Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the edge (Kalshi implied − book implied, in
-        points) appear alongside. Cells shaded <span class="edge pos">green</span> are <b>+EV</b>: the
-        book's line is longer than the Kalshi-implied fair line.
+        Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the <b>EV</b> (expected return on a $1 bet
+        at the book's odds, with the Kalshi-implied make chance as fair) appear alongside. Cells shaded
+        <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
+        Kalshi-implied fair line.
       </div>
       <div class="cmp-fresh" id="mfr-fresh"></div>
       <section class="card">
@@ -293,8 +295,9 @@
       <div class="cmp-note">
         <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
         The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
-        teams; book <b>winning-team</b> markets and the edge (Kalshi implied − book, in points) appear
-        alongside, with <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
+        teams; book <b>winning-team</b> markets and the <b>EV</b> (expected return on a $1 bet at the
+        book's odds, with the Kalshi-implied team chance as fair) appear alongside, with
+        <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
         Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
         imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
       </div>
@@ -728,6 +731,15 @@ function normName(s) {
 const pct = (p) => (p == null ? `<span class="muted">—</span>` : (p * 100).toFixed(1) + "%");
 const usAmerican = (a) => (typeof a !== "number" ? "—" : (a > 0 ? "+" : "") + a);
 
+// Expected value of a $1 book bet, using Kalshi's implied prob p as "true".
+// profit = net decimal payout per $1; EV = p·profit − (1−p). Returned as a %.
+// EV > 0 exactly when the book line is longer than the Kalshi-implied fair line.
+function evPct(p, american) {
+  if (typeof p !== "number" || typeof american !== "number") return null;
+  const profit = american > 0 ? american / 100 : 100 / (-american);
+  return (p * profit - (1 - p)) * 100;
+}
+
 const bookTime = (d) => (d && (d.scraped_at || d.captured_at)) || null;
 // Books that actually carry the given tier right now.
 function booksForTier(tierKey) {
@@ -815,9 +827,9 @@ async function renderCompare() {
     return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
   }).join("");
 
-  // Header: #, Driver, Kalshi, then (odds, edge) per book.
+  // Header: #, Driver, Kalshi, then (odds, EV) per book.
   head.innerHTML = `<th class="l">#</th><th class="l">Driver</th><th>Kalshi (Yes / No)</th>` +
-    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
 
   // Kalshi side (source of truth): implied prob + Yes/No cents.
   const kal = {};
@@ -846,39 +858,39 @@ async function renderCompare() {
     const kp = kal[k] ? kal[k].prob : null;
     const cells = books.map((bk) => {
       const d = bookMaps[bk.key][k] || null;
-      // Edge = Kalshi (truth) − book implied, in points. Positive = book line
-      // longer than Kalshi → pays more than fair → +EV.
-      const edge = (kp != null && d && typeof d.implied === "number") ? (kp - d.implied) * 100 : null;
-      return { american: d ? d.american : null, edge };
+      // EV of a $1 bet at this book's odds, with Kalshi implied prob as truth.
+      // Positive = book line longer than Kalshi → pays more than fair → +EV.
+      const ev = (d && typeof d.american === "number") ? evPct(kp, d.american) : null;
+      return { american: d ? d.american : null, ev };
     });
-    const edges = cells.map((c) => c.edge).filter((e) => e != null);
+    const evs = cells.map((c) => c.ev).filter((e) => e != null);
     merged.push({
       name: (kal[k] && kal[k].name) || (books.map((bk) => bookMaps[bk.key][k]).find(Boolean) || {}).name || k,
       kYes: kal[k] ? kal[k].yes : null,
       kNo: kal[k] ? kal[k].no : null,
       kp, cells,
-      bestEdge: edges.length ? Math.max(...edges) : null,
+      bestEV: evs.length ? Math.max(...evs) : null,
     });
   }
-  // Sort by best edge across books; rows with no edge sink to the bottom.
+  // Sort by best EV across books; rows with no EV sink to the bottom.
   merged.sort((a, b) => {
-    if (a.bestEdge == null && b.bestEdge == null) return (b.kp ?? -1) - (a.kp ?? -1);
-    if (a.bestEdge == null) return 1;
-    if (b.bestEdge == null) return -1;
-    return b.bestEdge - a.bestEdge;
+    if (a.bestEV == null && b.bestEV == null) return (b.kp ?? -1) - (a.kp ?? -1);
+    if (a.bestEV == null) return 1;
+    if (b.bestEV == null) return -1;
+    return b.bestEV - a.bestEV;
   });
 
-  const edgeCell = (e) => e == null ? dash
-    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
   rows.innerHTML = "";
   merged.forEach((r, i) => {
     const kalCell = (r.kYes == null && r.kNo == null) ? dash
       : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`;
     const bookCells = r.cells.map((c) =>
-      `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${edgeCell(c.edge)}</td>`).join("");
+      `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${evCell(c.ev)}</td>`).join("");
     const tr = document.createElement("tr");
     tr.innerHTML =
-      `<td class="l rank ${i === 0 && r.bestEdge != null && r.bestEdge > 0 ? "top" : ""}">${i + 1}</td>` +
+      `<td class="l rank ${i === 0 && r.bestEV != null && r.bestEV > 0 ? "top" : ""}">${i + 1}</td>` +
       `<td class="l driver">${escapeHtml(r.name)}</td>` +
       `<td class="num">${kalCell}</td>` + bookCells;
     rows.appendChild(tr);
@@ -988,14 +1000,14 @@ function renderManufacturers(snap) {
   }).join("");
 
   const dash = `<span class="muted">—</span>`;
-  const edgeCell = (e) => e == null ? dash
-    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
-  // A book's (odds, edge) pair of cells; both tinted when the edge is +EV
-  // (book line longer than the Kalshi-implied fair line, i.e. edge > 0).
-  const bookPair = (american, edge) => {
-    const ev = edge != null && edge > 0 ? " ev" : "";
-    return `<td class="num${ev}">${american == null ? dash : usAmerican(american)}</td>` +
-      `<td class="num${ev}">${edgeCell(edge)}</td>`;
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  // A book's (odds, EV) pair of cells; both tinted when the bet is +EV
+  // (book line longer than the Kalshi-implied fair line, i.e. EV > 0).
+  const bookPair = (american, ev) => {
+    const tint = ev != null && ev > 0 ? " ev" : "";
+    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${tint}">${evCell(ev)}</td>`;
   };
 
   // "Which make wins": each make's summed win prob, normalized across the makes.
@@ -1004,15 +1016,14 @@ function renderManufacturers(snap) {
   totals.sort((a, b) => b.sum - a.sum);
   $("mfr-win-head").innerHTML =
     `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
-    winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+    winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("mfr-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
     const bookCells = winnerBooks.map((bk) => {
       const fm = MFRDATA[bk.key].winner[t.mfr];
-      // Compare against the book's no-vig number so both sides sum to 1.
-      const bp = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
-      const edge = typeof bp === "number" ? (pn - bp) * 100 : null;
-      return bookPair(fm ? fm.american : null, edge);
+      // EV of a $1 bet at the book's posted odds, Kalshi's normalized make prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
       <td class="l driver">${escapeHtml(t.mfr)}</td>
@@ -1023,8 +1034,8 @@ function renderManufacturers(snap) {
   $("mfr-win-count").textContent = winnerBooks.length ? "" : (books.length ? "books list per-make only" : "");
 
   // Per-make "top driver" tables: normalize Kalshi win prob within the make.
-  // Each book that carries this make gets an odds + edge column; edge compares
-  // Kalshi's normalized (no-vig) chance vs the book's raw implied (vig included).
+  // Each book that carries this make gets an odds + EV column; EV values the
+  // book's posted payout against Kalshi's normalized (no-vig) chance for the make.
   const box = $("mfr-groups");
   box.innerHTML = "";
   for (const mfr of present) {
@@ -1035,8 +1046,8 @@ function renderManufacturers(snap) {
       const pt = d.p / sum;
       const bookCells = makeBooks.map((bk) => {
         const dd = byMake[bk.key][mfr][normName(d.name)];
-        const edge = dd && typeof dd.implied === "number" ? (pt - dd.implied) * 100 : null;
-        return bookPair(dd ? dd.american : null, edge);
+        const ev = dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
+        return bookPair(dd ? dd.american : null, ev);
       }).join("");
       return `<tr>
         <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
@@ -1046,7 +1057,7 @@ function renderManufacturers(snap) {
         <td class="num">${usFromProb(pt)}</td>${bookCells}</tr>`;
     }).join("");
     const head = `<th class="l">#</th><th class="l">Driver</th><th>Top-${escapeHtml(mfr)} chance</th><th>Implied odds</th>` +
-      makeBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+      makeBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
     const card = document.createElement("section");
     card.className = "card";
     card.innerHTML =
@@ -1162,12 +1173,12 @@ function renderTeams(snap) {
   }).join("");
 
   const dash = `<span class="muted">—</span>`;
-  const edgeCell = (e) => e == null ? dash
-    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}</span>`;
-  const bookPair = (american, edge) => {
-    const ev = edge != null && edge > 0 ? " ev" : "";
-    return `<td class="num${ev}">${american == null ? dash : usAmerican(american)}</td>` +
-      `<td class="num${ev}">${edgeCell(edge)}</td>`;
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  const bookPair = (american, ev) => {
+    const tint = ev != null && ev > 0 ? " ev" : "";
+    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${tint}">${evCell(ev)}</td>`;
   };
 
   // "Which team wins": summed win prob per team, normalized across teams.
@@ -1176,15 +1187,14 @@ function renderTeams(snap) {
   totals.sort((a, b) => b.sum - a.sum);
   $("team-win-head").innerHTML =
     `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
-    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>Edge</th>`).join("");
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("team-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
     const bookCells = books.map((bk) => {
       const fm = TEAMDATA[bk.key].winner[t.team];
-      // Compare against the book's no-vig number so both sides sum to 1.
-      const bp = fm ? (typeof fm.novig === "number" ? fm.novig : fm.implied) : null;
-      const edge = typeof bp === "number" ? (pn - bp) * 100 : null;
-      return bookPair(fm ? fm.american : null, edge);
+      // EV of a $1 bet at the book's posted odds, Kalshi's normalized team prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
       <td class="l driver">${escapeHtml(t.team)}</td>
