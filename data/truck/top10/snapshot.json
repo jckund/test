@@ -14,13 +14,13 @@
       "liquidity": 0.0,
       "name": "Andres Perez De Lara",
       "no_ask": 75,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 360,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-ANPE",
       "volume": 360,
       "volume_24h": 250,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 25
     },
     "KXNASCARTOP10-LIU26-BEMA": {
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-BERH",
       "volume": 319,
-      "volume_24h": 9,
+      "volume_24h": 0,
       "yes_ask": 51,
       "yes_bid": 46
     },
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Corey LaJoie",
       "no_ask": 75,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-COLA",
       "volume": 276,
       "volume_24h": 250,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 25
     },
     "KXNASCARTOP10-LIU26-COMO": {
@@ -192,16 +192,16 @@
       "yes_bid": 7
     },
     "KXNASCARTOP10-LIU26-GIRU": {
-      "last_price": 61,
+      "last_price": 58,
       "liquidity": 0.0,
       "name": "Giovanni Ruggiero",
       "no_ask": 44,
       "no_bid": 42,
-      "open_interest": 313,
+      "open_interest": 397,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-GIRU",
-      "volume": 313,
-      "volume_24h": 213,
+      "volume": 397,
+      "volume_24h": 289,
       "yes_ask": 58,
       "yes_bid": 56
     },
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Graham Doyle",
       "no_ask": 86,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 1264,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-GRDO",
       "volume": 1265,
       "volume_24h": 250,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 14
     },
     "KXNASCARTOP10-LIU26-GREN": {
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Justin Haley",
       "no_ask": 99,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 132,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-JUHA",
       "volume": 132,
       "volume_24h": 132,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 1
     },
     "KXNASCARTOP10-LIU26-KAHO": {
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-MITY",
       "volume": 108,
-      "volume_24h": 0,
+      "volume_24h": 19,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -458,22 +458,22 @@
       "yes_bid": 58
     },
     "KXNASCARTOP10-LIU26-WESL": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Wesley Slimp",
-      "no_ask": 96,
+      "no_ask": 95,
       "no_bid": 91,
-      "open_interest": 0,
+      "open_interest": 157,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-WESL",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 157,
+      "volume_24h": 157,
       "yes_ask": 9,
-      "yes_bid": 4
+      "yes_bid": 5
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-10T14:24:58.989585+00:00",
+  "scraped_at": "2026-07-10T15:34:05.333711+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "top10"
 }
