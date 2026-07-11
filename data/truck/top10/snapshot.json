@@ -57,11 +57,11 @@
       "name": "Brenden Queen",
       "no_ask": 100,
       "no_bid": 87,
-      "open_interest": 72,
+      "open_interest": 171,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-BRQU",
-      "volume": 72,
-      "volume_24h": 72,
+      "volume": 171,
+      "volume_24h": 171,
       "yes_ask": 13,
       "yes_bid": 0
     },
@@ -136,17 +136,17 @@
       "yes_bid": 25
     },
     "KXNASCARTOP10-LIU26-COMO": {
-      "last_price": 46,
+      "last_price": 47,
       "liquidity": 0.0,
       "name": "Connor Mosack",
       "no_ask": 55,
-      "no_bid": 53,
-      "open_interest": 679,
+      "no_bid": 52,
+      "open_interest": 700,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-COMO",
-      "volume": 679,
-      "volume_24h": 15,
-      "yes_ask": 47,
+      "volume": 700,
+      "volume_24h": 35,
+      "yes_ask": 48,
       "yes_bid": 45
     },
     "KXNASCARTOP10-LIU26-DAHE": {
@@ -279,7 +279,7 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Justin Haley",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 79,
       "open_interest": 132,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 132,
       "volume_24h": 0,
       "yes_ask": 21,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-LIU26-KAHO": {
       "last_price": 65,
@@ -402,18 +402,18 @@
       "yes_bid": 19
     },
     "KXNASCARTOP10-LIU26-TAGR": {
-      "last_price": 22,
+      "last_price": 21,
       "liquidity": 0.0,
       "name": "Tanner Gray",
-      "no_ask": 87,
-      "no_bid": 80,
+      "no_ask": 85,
+      "no_bid": 78,
       "open_interest": 862,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-TAGR",
-      "volume": 868,
-      "volume_24h": 0,
-      "yes_ask": 20,
-      "yes_bid": 13
+      "volume": 915,
+      "volume_24h": 47,
+      "yes_ask": 22,
+      "yes_bid": 15
     },
     "KXNASCARTOP10-LIU26-THAN": {
       "last_price": 55,
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-11T10:42:53.374377+00:00",
+  "scraped_at": "2026-07-11T12:36:19.358727+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "top10"
 }
