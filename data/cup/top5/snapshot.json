@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 85,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 1303,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-CHBR",
       "volume": 1303,
       "volume_24h": 36,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 15
     },
     "KXNASCARTOP5-QUAS4AA26-CHBU": {
@@ -383,22 +383,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-RIHE",
       "volume": 368,
-      "volume_24h": 41,
+      "volume_24h": 0,
       "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARTOP5-QUAS4AA26-RIST": {
-      "last_price": 4,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
       "no_ask": 95,
-      "no_bid": 89,
-      "open_interest": 139,
+      "no_bid": 88,
+      "open_interest": 160,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-RIST",
-      "volume": 142,
-      "volume_24h": 0,
-      "yes_ask": 11,
+      "volume": 164,
+      "volume_24h": 21,
+      "yes_ask": 12,
       "yes_bid": 5
     },
     "KXNASCARTOP5-QUAS4AA26-ROCH": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-TYGI",
       "volume": 664,
-      "volume_24h": 67,
+      "volume_24h": 34,
       "yes_ask": 14,
       "yes_bid": 9
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-11T15:17:10.149313+00:00",
+  "scraped_at": "2026-07-11T15:34:01.677117+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top5"
 }

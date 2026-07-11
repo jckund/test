@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-CHEC",
       "volume": 700,
-      "volume_24h": 375,
+      "volume_24h": 700,
       "yes_ask": 19,
       "yes_bid": 2
     },
@@ -374,18 +374,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-LIU26-PAKL": {
-      "last_price": 7,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Parker Kligerman",
-      "no_ask": 100,
-      "no_bid": 89,
-      "open_interest": 1037,
+      "no_ask": 86,
+      "no_bid": 54,
+      "open_interest": 1049,
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-PAKL",
-      "volume": 1432,
-      "volume_24h": 630,
-      "yes_ask": 11,
-      "yes_bid": 0
+      "volume": 1551,
+      "volume_24h": 737,
+      "yes_ask": 46,
+      "yes_bid": 14
     },
     "KXNASCARTOP3-LIU26-STFR": {
       "last_price": 0,
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-THAN",
       "volume": 914,
-      "volume_24h": 319,
+      "volume_24h": 406,
       "yes_ask": 49,
       "yes_bid": 7
     },
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-11T15:18:37.197890+00:00",
+  "scraped_at": "2026-07-11T15:35:18.231999+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "top3"
 }
