@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T18:51:54.039939+00:00",
+  "updated_at": "2026-07-11T20:25:31.467120+00:00",
   "series": [
     {
       "key": "cup",
@@ -14,7 +14,7 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-07-11T18:50:42.664189+00:00"
+      "scraped_at": "2026-07-11T20:22:18.295865+00:00"
     },
     {
       "key": "truck",
@@ -27,7 +27,18 @@
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-07-11T18:51:54.039900+00:00"
+      "scraped_at": "2026-07-11T20:23:36.967148+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "O'Reilly Auto Parts",
+      "race_title": "Focused Health 250",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fhealth25026",
+      "tiers": [
+        "winner"
+      ],
+      "scraped_at": "2026-07-11T20:25:31.467092+00:00"
     }
   ]
 }

@@ -27,7 +27,7 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 78,
+      "no_ask": 79,
       "no_bid": 74,
       "open_interest": 433,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 433,
       "volume_24h": 9,
       "yes_ask": 26,
-      "yes_bid": 22
+      "yes_bid": 21
     },
     "KXNASCARTOP10-QUAS4AA26-AUCI": {
       "last_price": 38,
@@ -108,18 +108,18 @@
       "yes_bid": 35
     },
     "KXNASCARTOP10-QUAS4AA26-BUWA": {
-      "last_price": 35,
+      "last_price": 40,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 65,
+      "no_ask": 66,
       "no_bid": 60,
-      "open_interest": 2702,
+      "open_interest": 2750,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-BUWA",
-      "volume": 2837,
-      "volume_24h": 33,
+      "volume": 2885,
+      "volume_24h": 81,
       "yes_ask": 40,
-      "yes_bid": 35
+      "yes_bid": 34
     },
     "KXNASCARTOP10-QUAS4AA26-CAHO": {
       "last_price": 43,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-DEHA",
       "volume": 705,
-      "volume_24h": 32,
+      "volume_24h": 12,
       "yes_ask": 48,
       "yes_bid": 46
     },
@@ -332,16 +332,16 @@
       "yes_bid": 21
     },
     "KXNASCARTOP10-QUAS4AA26-KYLA": {
-      "last_price": 43,
+      "last_price": 46,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 57,
       "no_bid": 54,
-      "open_interest": 354,
+      "open_interest": 356,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-KYLA",
-      "volume": 354,
-      "volume_24h": 0,
+      "volume": 356,
+      "volume_24h": 3,
       "yes_ask": 46,
       "yes_bid": 43
     },
@@ -350,13 +350,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 85,
-      "no_bid": 81,
+      "no_bid": 78,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-MIMC",
       "volume": 200,
-      "volume_24h": 100,
-      "yes_ask": 19,
+      "volume_24h": 0,
+      "yes_ask": 22,
       "yes_bid": 15
     },
     "KXNASCARTOP10-QUAS4AA26-NOGR": {
@@ -377,7 +377,7 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Riley Herbst",
-      "no_ask": 87,
+      "no_ask": 88,
       "no_bid": 84,
       "open_interest": 896,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 1076,
       "volume_24h": 0,
       "yes_ask": 16,
-      "yes_bid": 13
+      "yes_bid": 12
     },
     "KXNASCARTOP10-QUAS4AA26-RIST": {
       "last_price": 25,
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-RIST",
       "volume": 1317,
-      "volume_24h": 92,
+      "volume_24h": 54,
       "yes_ask": 25,
       "yes_bid": 21
     },
@@ -407,11 +407,11 @@
       "name": "Ross Chastain",
       "no_ask": 66,
       "no_bid": 63,
-      "open_interest": 3,
+      "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-ROCH",
-      "volume": 3,
-      "volume_24h": 0,
+      "volume": 5,
+      "volume_24h": 3,
       "yes_ask": 37,
       "yes_bid": 34
     },
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Todd Gilliland",
       "no_ask": 83,
-      "no_bid": 80,
+      "no_bid": 79,
       "open_interest": 610,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-TOGI",
       "volume": 610,
       "volume_24h": 4,
-      "yes_ask": 20,
+      "yes_ask": 21,
       "yes_bid": 17
     },
     "KXNASCARTOP10-QUAS4AA26-TYDI": {
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-ZASM",
       "volume": 3010,
-      "volume_24h": 211,
+      "volume_24h": 190,
       "yes_ask": 25,
       "yes_bid": 20
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-11T18:49:21.068403+00:00",
+  "scraped_at": "2026-07-11T20:20:51.328317+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top10"
 }
