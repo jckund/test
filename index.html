@@ -319,6 +319,24 @@
       </section>
       <div id="team-groups"></div>
     </div>
+
+    <div id="cmp-move-panel" style="display:none">
+      <div class="cmp-note">
+        Biggest <b>Kalshi</b> line moves since the previous data refresh, across every tier.
+        Change is in <b>implied win probability</b> (bid/ask midpoint, in points), with the odds
+        <b>before → after</b>. <span class="edge pos">Green</span> = shortened (chance rose),
+        <span class="edge neg">red</span> = drifted (chance fell). Biggest moves first.
+      </div>
+      <div class="cmp-fresh" id="move-fresh"></div>
+      <section class="card">
+        <div class="scroll">
+          <table id="move-tbl">
+            <thead><tr><th class="l">Driver</th><th class="l">Market</th><th>Δ prob</th><th>Odds (before → after)</th></tr></thead>
+            <tbody id="move-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
   </div>
 
   <footer>
@@ -765,6 +783,8 @@ function cmpSubItems() {
     items.push({ key: "mfr", label: "Manufacturer" });
     items.push({ key: "team", label: "Team" });
   }
+  // Kalshi line-movement view (available whenever any Kalshi tier exists).
+  if (cmpTiersAvailable().length || INDEX.markets.length) items.push({ key: "move", label: "Movement" });
   return items;
 }
 
@@ -786,14 +806,63 @@ function showCmpPanel(which) {
   $("cmp-driver-panel").style.display = which === "driver" ? "" : "none";
   $("cmp-mfr-panel").style.display = which === "mfr" ? "" : "none";
   $("cmp-team-panel").style.display = which === "team" ? "" : "none";
+  $("cmp-move-panel").style.display = which === "move" ? "" : "none";
 }
 
 async function renderCmpSub() {
   if (cmpSub === "mfr") { showCmpPanel("mfr"); return loadManufacturers(); }
   if (cmpSub === "team") { showCmpPanel("team"); return loadTeams(); }
+  if (cmpSub === "move") { showCmpPanel("move"); return loadMovement(); }
   showCmpPanel("driver");
   compareTier = cmpSub;
   return renderCompare();
+}
+
+// Kalshi line movement since the previous scrape, reconstructed from each tier's
+// history.jsonl (last record's from→to) plus the current snapshot. Midpoint basis.
+async function loadMovement() {
+  const fresh = $("move-fresh"); const rows = $("move-rows");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  const ks = new Set(INDEX.markets.map((m) => m.key));
+  const tiers = CMP_TIERS.filter((t) => ks.has(t.key));
+  const midC = (m) => (typeof m.yes_bid === "number" && typeof m.yes_ask === "number")
+    ? (m.yes_bid + m.yes_ask) / 2 : m.last_price;
+  const all = []; let stamp = null;
+  for (const t of tiers) {
+    let snap, rec = null;
+    try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
+    try {
+      const txt = await (await fetch(dbase() + t.key + "/history.jsonl?t=" + Date.now(), { cache: "no-store" })).text();
+      const lines = txt.trim().split("\n").filter(Boolean);
+      if (lines.length) rec = JSON.parse(lines[lines.length - 1]);
+    } catch { rec = null; }
+    if (!rec || !Array.isArray(rec.changes)) continue;
+    stamp = stamp || rec.scraped_at;
+    for (const c of rec.changes) {
+      if (c.type !== "market_changed") continue;
+      const cur = (snap.markets || {})[c.ticker]; if (!cur) continue;
+      const f = c.fields || {};
+      if (!("yes_bid" in f) && !("yes_ask" in f) && !("last_price" in f)) continue;
+      const prevM = {
+        yes_bid: ("yes_bid" in f) ? f.yes_bid.from : cur.yes_bid,
+        yes_ask: ("yes_ask" in f) ? f.yes_ask.from : cur.yes_ask,
+        last_price: ("last_price" in f) ? f.last_price.from : cur.last_price,
+      };
+      const pv = midC(prevM), cv = midC(cur);
+      if (typeof pv !== "number" || typeof cv !== "number" || pv === cv) continue;
+      all.push({ name: c.name || cur.name, tier: t.label, d: cv - pv, pv, cv });
+    }
+  }
+  all.sort((a, b) => Math.abs(b.d) - Math.abs(a.d));
+  fresh.innerHTML = stamp
+    ? `Kalshi movement since previous refresh · <b>${relTime(stamp)}</b> · ${all.length} market${all.length === 1 ? "" : "s"} moved`
+    : "No Kalshi movement recorded yet.";
+  rows.innerHTML = all.length ? all.map((r) => {
+    const cls = r.d > 0 ? "pos" : "neg", arrow = r.d > 0 ? "▲" : "▼";
+    return `<tr><td class="l driver">${escapeHtml(r.name)}</td><td class="l">${escapeHtml(r.tier)}</td>` +
+      `<td class="num"><span class="edge ${cls}">${arrow} ${r.d > 0 ? "+" : ""}${r.d.toFixed(1)}</span></td>` +
+      `<td class="num">${usOdds(r.pv)} <span class="muted">→</span> ${usOdds(r.cv)}</td></tr>`;
+  }).join("") : `<tr><td class="empty" colspan="4">No line moves since the previous refresh.</td></tr>`;
 }
 
 async function loadCompare() {
