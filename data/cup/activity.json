@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-07-11T15:39:06.309147+00:00",
+  "updated_at": "2026-07-11T15:47:09.767689+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "d3c1c74e-f2a2-7323-cd8b-87159d0cbdc6",
+      "tier": "Top 10",
+      "driver": "Zane Smith",
+      "ticker": "KXNASCARTOP10-QUAS4AA26-ZASM",
+      "side": "yes",
+      "count": 57,
+      "yes_price": 25,
+      "no_price": 75,
+      "created_time": "2026-07-11T15:44:21.228042Z"
+    },
+    {
+      "trade_id": "f577f600-c31b-7546-d299-ffbf96e126c2",
+      "tier": "Winner",
+      "driver": "Carson Hocevar",
+      "ticker": "KXNASCARRACE-QUAS4AA26-CAHO",
+      "side": "yes",
+      "count": 47,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-11T15:41:41.02865Z"
+    },
+    {
+      "trade_id": "f7488625-1362-4a21-01b2-4e3fb4487ace",
+      "tier": "Winner",
+      "driver": "Daniel Su\u00e1rez",
+      "ticker": "KXNASCARRACE-QUAS4AA26-DASU",
+      "side": "yes",
+      "count": 31,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-11T15:40:53.514149Z"
+    },
+    {
+      "trade_id": "a2f1e4f0-530e-6406-9658-bcfdf1146999",
+      "tier": "Winner",
+      "driver": "Ty Gibbs",
+      "ticker": "KXNASCARRACE-QUAS4AA26-TYGI",
+      "side": "yes",
+      "count": 31,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-11T15:40:25.606661Z"
+    },
+    {
+      "trade_id": "2ff38bb2-9921-734b-79ad-9b143a92b509",
+      "tier": "Winner",
+      "driver": "Erik Jones",
+      "ticker": "KXNASCARRACE-QUAS4AA26-ERJO",
+      "side": "yes",
+      "count": 47,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-07-11T15:39:50.827523Z"
+    },
+    {
+      "trade_id": "81b30f53-812e-7291-0c06-bc50e7548828",
+      "tier": "Winner",
+      "driver": "Michael McDowell",
+      "ticker": "KXNASCARRACE-QUAS4AA26-MIMC",
+      "side": "yes",
+      "count": 47,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-07-11T15:39:19.414961Z"
+    },
     {
       "trade_id": "c95b31e6-6ef3-73a4-3ae6-9a4d28ae2cc6",
       "tier": "Top 10",
@@ -1356,17 +1422,6 @@
       "created_time": "2026-07-11T13:19:22.51469Z"
     },
     {
-      "trade_id": "1329045a-568f-6f4e-e154-45c050507d12",
-      "tier": "Winner",
-      "driver": "Carson Hocevar",
-      "ticker": "KXNASCARRACE-QUAS4AA26-CAHO",
-      "side": "yes",
-      "count": 156,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-07-11T13:18:48.817017Z"
-    },
-    {
       "trade_id": "c5f20b22-e452-6daf-86d0-c99f4837598d",
       "tier": "Winner",
       "driver": "Zane Smith",
@@ -1596,61 +1651,6 @@
       "yes_price": 3,
       "no_price": 97,
       "created_time": "2026-07-11T12:57:36.991195Z"
-    },
-    {
-      "trade_id": "870e770a-a5eb-48ba-7ef2-351d677637cb",
-      "tier": "Top 3",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARTOP3-QUAS4AA26-AUHI",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T12:57:36.991195Z"
-    },
-    {
-      "trade_id": "4dfd7f0b-6d96-4c98-6966-701b3294e90d",
-      "tier": "Top 3",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARTOP3-QUAS4AA26-AUHI",
-      "side": "yes",
-      "count": 67,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T12:57:36.991195Z"
-    },
-    {
-      "trade_id": "78c85f2f-10b1-7b5f-0a4c-64ce6a2639a8",
-      "tier": "Winner",
-      "driver": "Christopher Bell",
-      "ticker": "KXNASCARRACE-QUAS4AA26-CHBE",
-      "side": "yes",
-      "count": 31,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-07-11T12:57:32.518254Z"
-    },
-    {
-      "trade_id": "e1b739fa-353a-4dc9-6ceb-583c9857542a",
-      "tier": "Winner",
-      "driver": "Alex Bowman",
-      "ticker": "KXNASCARRACE-QUAS4AA26-ALBO",
-      "side": "yes",
-      "count": 62,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T12:56:49.789736Z"
-    },
-    {
-      "trade_id": "cd4c85ed-dfba-6615-fb30-f082eb99f2b7",
-      "tier": "Winner",
-      "driver": "Ryan Preece",
-      "ticker": "KXNASCARRACE-QUAS4AA26-RYPR",
-      "side": "yes",
-      "count": 94,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-11T12:55:41.024853Z"
     }
   ]
 }
