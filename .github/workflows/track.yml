@@ -48,6 +48,17 @@ jobs:
           python-version: "3.12"
 
       - name: Run scraper
+        env:
+          # Large-trade alerting for the Cup series (see alerts.py). Alert on any
+          # single trade over this many dollars.
+          ALERT_MIN_USD: "100"
+          # Watch a deeper slice of recent trades per market so a big trade
+          # between 15-min runs isn't missed.
+          KALSHI_TRADES_PER_MARKET: "50"
+          # Optional push channel. Add a repo secret named ALERT_WEBHOOK_URL
+          # (Slack/Discord/Telegram/generic incoming webhook) to get pinged;
+          # if unset, alerts still land in data/cup/ALERTS.md and the job summary.
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python3 scraper.py
 
       - name: Commit changes if any

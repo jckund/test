@@ -46,6 +46,66 @@ shows every market update over time.
 > runs behind an egress proxy that blocks `kalshi.com`, so the scrape has to
 > happen where the network allows it.
 
+## Large-trade alerts
+
+[`alerts.py`](alerts.py) watches the **Cup series** (every NASCAR Cup driver
+market) and raises an alert on any **single trade worth more than $100**.
+
+Alerting does **not** sample. For each Cup market, the scraper paginates
+*every* trade created since roughly the last run (`min_ts` + cursor, in
+`collect_alert_trades`), so no large trade can slip through between polls no
+matter how busy the market. This is separate from the dashboard's `activity.json`
+feed, which still shows just the most recent trades per market.
+
+**Trade value** is the cash the aggressor (taker) put in:
+
+```
+value = count × taker_price / 100
+```
+
+so 500 contracts bought at 43¢ is a **$215** trade. Kalshi prices are whole
+cents 1–99; a YES taker pays the yes price, a NO taker pays the no price. The
+threshold is strict (a trade must be *over* the amount), so an exactly-$100
+trade does not alert.
+
+Each new alert is:
+
+- appended to `data/cup/alerts.jsonl` — **committed**, so git history is a durable
+  log *and* the dedup source. The scraper reruns every 15 min on a fresh runner
+  with no local state, so the committed log is what stops a trade from firing
+  twice (`data/activity.json` is git-ignored and can't serve this).
+- prepended to `data/cup/ALERTS.md` — human-readable, newest first.
+- written to the **GitHub Actions job summary** (visible on the run page).
+- POSTed to a **webhook** if one is configured — the actual "notify me" push.
+
+### Getting notified
+
+Add a repository secret named **`ALERT_WEBHOOK_URL`** (**Settings → Secrets and
+variables → Actions → New repository secret**) pointing at any Slack/Discord/
+Telegram or generic incoming webhook that accepts `{"text": "..."}`. The
+workflow passes it to the scraper automatically. Without it, alerts still land
+in `data/cup/ALERTS.md` and the job summary — and if you **watch the repo** on
+GitHub, each alert commit is itself a notification.
+
+### Tuning
+
+All via env (set in [`track.yml`](.github/workflows/track.yml) or on the command
+line):
+
+| Env var | Default | Meaning |
+| --- | --- | --- |
+| `ALERT_MIN_USD` | `100` | Alert threshold in dollars |
+| `ALERT_SERIES` | `cup` | Comma-separated series keys to watch (e.g. `cup,truck`) |
+| `ALERT_WEBHOOK_URL` | — | Slack/Discord/generic incoming webhook |
+| `ALERT_LOOKBACK_MIN` | `20` | How far back the alert fetch paginates each run. Keep it ≥ the schedule interval plus a safety margin; per-trade dedup absorbs the overlap |
+| `KALSHI_TRADES_PER_MARKET` | `10` (workflow sets `50`) | Recent trades pulled per market **for the dashboard `activity.json` feed only** — does not affect alert coverage |
+
+> **Coverage:** because the alert fetch paginates *all* trades in the lookback
+> window (not a fixed sample), a large trade is caught as long as it happened
+> within `ALERT_LOOKBACK_MIN` of a run and the run's pagination completes.
+> Keep `ALERT_LOOKBACK_MIN` comfortably above the schedule interval so
+> consecutive runs overlap and nothing falls in a gap.
+
 ## Viewing it
 
 [`index.html`](index.html) is a static, dependency-free dashboard that reads the
@@ -77,6 +137,8 @@ Written per tier, e.g. `data/winner/…`, `data/top10/…`:
 | `data/<tier>/CHANGES.md` | Human-readable change log, newest first, with a standings table |
 | `data/index.json` | List of tracked tiers (drives the dashboard tabs) |
 | `data/activity.json` | Recent trades merged across all tiers (live feed; regenerated each run, git-ignored) |
+| `data/cup/alerts.jsonl` | Append-only log of large-trade alerts (one JSON per line; committed — doubles as the dedup source) |
+| `data/cup/ALERTS.md` | Human-readable large-trade alert log, newest first |
 
 ## Running it manually
 

@@ -33,6 +33,8 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
+import alerts
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -70,8 +72,25 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 SERIES_INDEX_PATH = os.path.join(DATA_DIR, "series.json")
 
-TRADES_PER_MARKET = 10
+# How many recent trades to pull per market each run. Higher values widen the
+# window that large-trade alerting sees between runs (at the cost of more API
+# calls); override with KALSHI_TRADES_PER_MARKET. See alerts.py.
+try:
+    TRADES_PER_MARKET = max(1, int(os.environ.get("KALSHI_TRADES_PER_MARKET", "10")))
+except ValueError:
+    TRADES_PER_MARKET = 10
 ACTIVITY_MAX = 150
+
+# For alerting, we don't sample — we paginate EVERY trade a watched market saw
+# since the last run, so no large trade can slip through between polls. The
+# window is the poll interval plus a safety overlap; per-trade dedup (in
+# alerts.py, via the committed alerts log) absorbs the overlap.
+try:
+    ALERT_LOOKBACK_MIN = max(1, int(os.environ.get("ALERT_LOOKBACK_MIN", "20")))
+except ValueError:
+    ALERT_LOOKBACK_MIN = 20
+TRADES_PAGE_LIMIT = 1000   # Kalshi max page size
+TRADES_MAX_PAGES = 25      # backstop against a runaway cursor loop
 
 TRACKED_FIELDS = [
     "status", "last_price", "yes_bid", "yes_ask",
@@ -429,36 +448,86 @@ def fetch_trades(ticker: str, limit: int = TRADES_PER_MARKET) -> list:
     return _get_json(url).get("trades", []) or []
 
 
-def build_activity(events: list, series_dir: str) -> None:
-    """Merge recent trades across this race's markets into <series>/activity.json."""
-    meta = {}  # market ticker -> (tier label, driver name)
+def fetch_trades_since(ticker: str, min_ts: int) -> list:
+    """EVERY trade for a market created at/after ``min_ts`` (unix seconds),
+    following the API cursor across pages. Used by alerting so no trade is
+    missed between runs, however busy the market."""
+    out, cursor, pages = [], None, 0
+    while pages < TRADES_MAX_PAGES:
+        url = (f"{API_BASE}/markets/trades?ticker={ticker}"
+               f"&limit={TRADES_PAGE_LIMIT}&min_ts={min_ts}")
+        if cursor:
+            url += f"&cursor={cursor}"
+        data = _get_json(url)
+        batch = data.get("trades", []) or []
+        out.extend(batch)
+        cursor = data.get("cursor")
+        pages += 1
+        if not cursor or not batch:
+            break
+    return out
+
+
+def _norm_trade(t: dict, label: str, driver, ticker: str) -> dict | None:
+    """Normalize one raw API trade into the shape used by activity + alerts."""
+    tid = t.get("trade_id")
+    if not tid:
+        return None
+    return {
+        "trade_id": tid, "tier": label, "driver": driver, "ticker": ticker,
+        "side": t.get("taker_side"),
+        "count": int(round(_to_float(t.get("count_fp")) or 0)),
+        "yes_price": _dollars_to_cents(t.get("yes_price_dollars")),
+        "no_price": _dollars_to_cents(t.get("no_price_dollars")),
+        "created_time": t.get("created_time"),
+    }
+
+
+def _series_market_meta(events: list, series_dir: str) -> dict:
+    """market ticker -> (tier label, driver name), from the just-written snapshots."""
+    meta = {}
     for ev in events:
         snap = load_previous(os.path.join(series_dir, ev["key"], "snapshot.json"))
         if not snap:
             continue
         for tk, m in snap.get("markets", {}).items():
             meta[tk] = (ev["label"], m.get("name"))
+    return meta
 
+
+def collect_alert_trades(events: list, series_dir: str, min_ts: int) -> list:
+    """Paginate ALL trades since ``min_ts`` across every market of a series.
+    This is the comprehensive feed alerting runs on — no per-market sampling."""
     trades = {}
-    for tk, (label, driver) in meta.items():
+    for tk, (label, driver) in _series_market_meta(events, series_dir).items():
+        try:
+            for t in fetch_trades_since(tk, min_ts):
+                norm = _norm_trade(t, label, driver, tk)
+                if norm:
+                    trades[norm["trade_id"]] = norm
+        except Exception as e:  # noqa: BLE001 - skip a market, keep the rest
+            print(f"deep trades failed for {tk}: {e}", file=sys.stderr)
+    return list(trades.values())
+
+
+def build_activity(events: list, series_dir: str) -> list:
+    """Merge recent trades across this race's markets into <series>/activity.json.
+
+    Returns the full deduped trade list (not just the truncated feed) so callers
+    like large-trade alerting can inspect every trade fetched this run."""
+    trades = {}
+    for tk, (label, driver) in _series_market_meta(events, series_dir).items():
         try:
             for t in fetch_trades(tk):
-                tid = t.get("trade_id")
-                if not tid:
-                    continue
-                trades[tid] = {
-                    "trade_id": tid, "tier": label, "driver": driver, "ticker": tk,
-                    "side": t.get("taker_side"),
-                    "count": int(round(_to_float(t.get("count_fp")) or 0)),
-                    "yes_price": _dollars_to_cents(t.get("yes_price_dollars")),
-                    "no_price": _dollars_to_cents(t.get("no_price_dollars")),
-                    "created_time": t.get("created_time"),
-                }
+                norm = _norm_trade(t, label, driver, tk)
+                if norm:
+                    trades[norm["trade_id"]] = norm
         except Exception as e:  # noqa: BLE001 - skip a market, keep the feed
             print(f"trades failed for {tk}: {e}", file=sys.stderr)
 
-    ordered = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
-                     reverse=True)[:ACTIVITY_MAX]
+    ordered_all = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
+                         reverse=True)
+    ordered = ordered_all[:ACTIVITY_MAX]
     out = {"updated_at": datetime.now(timezone.utc).isoformat(),
            "count": len(ordered), "trades": ordered}
     os.makedirs(series_dir, exist_ok=True)
@@ -466,6 +535,7 @@ def build_activity(events: list, series_dir: str) -> None:
         json.dump(out, fh, indent=2)
         fh.write("\n")
     print(f"activity: {len(ordered)} recent trades", file=sys.stderr)
+    return ordered_all
 
 
 def build_index(events: list, series_dir: str, race_title: str, page_url: str) -> None:
@@ -511,6 +581,21 @@ def process_series(rs: dict) -> dict | None:
         build_activity(events, series_dir)
     except Exception as e:  # noqa: BLE001 - activity is best-effort
         print(f"activity build failed for {rs['key']}: {e}", file=sys.stderr)
+
+    # Large-trade alerting (Cup series by default). Uses a COMPREHENSIVE feed:
+    # every trade each market saw since ~one poll interval ago, fully paginated,
+    # so no large trade slips through between runs. Best-effort — a failure here
+    # must not lose the scraped data we already wrote.
+    if rs["key"] in alerts.watched_series():
+        try:
+            min_ts = int(time.time()) - ALERT_LOOKBACK_MIN * 60
+            atrades = collect_alert_trades(events, series_dir, min_ts)
+            fired = alerts.process(series_dir, rs["label"], atrades)
+            print(f"alerts: scanned {len(atrades)} trade(s) from last "
+                  f"{ALERT_LOOKBACK_MIN}min; {len(fired)} new over "
+                  f"${alerts.min_usd():,.0f}", file=sys.stderr)
+        except Exception as e:  # noqa: BLE001
+            print(f"alerts failed for {rs['key']}: {e}", file=sys.stderr)
 
     return {"key": rs["key"], "label": rs["label"], "race_title": rs["race_title"],
             "full": rs["full"], "source_url": rs["page_url"],
