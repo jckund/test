@@ -1,9 +1,79 @@
 {
-  "captured_at": "2026-07-10T23:20:06Z",
+  "captured_at": "2026-07-11T12:06:00Z",
   "source": "Caesars",
   "race": "Quaker State 400 Available at Walmart",
   "winner": {},
   "makes": {
+    "Ford": {
+      "drivers": [
+        {
+          "name": "Ryan Blaney",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.2124260485499063
+        },
+        {
+          "name": "Joey Logano",
+          "american": 330,
+          "implied": 0.23255813953488372,
+          "novig": 0.1778450639022471
+        },
+        {
+          "name": "Austin Cindric",
+          "american": 475,
+          "implied": 0.17391304347826086,
+          "novig": 0.13299717822255003
+        },
+        {
+          "name": "Brad Keselowski",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.12745562912994376
+        },
+        {
+          "name": "Chris Buescher",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.10196450330395501
+        },
+        {
+          "name": "Ryan Preece",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.0695212522526966
+        },
+        {
+          "name": "Zane Smith",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.047795860923728915
+        },
+        {
+          "name": "Todd Gilliland",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.047795860923728915
+        },
+        {
+          "name": "Josh Berry",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.040249146041034876
+        },
+        {
+          "name": "Noah Gragson",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.029412837491525488
+        },
+        {
+          "name": "Chad Finchum",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.012536619258682994
+        }
+      ]
+    },
     "Chevrolet": {
       "drivers": [
         {
@@ -113,76 +183,6 @@
           "american": 6000,
           "implied": 0.01639344262295082,
           "novig": 0.011622485654835861
-        }
-      ]
-    },
-    "Ford": {
-      "drivers": [
-        {
-          "name": "Ryan Blaney",
-          "american": 260,
-          "implied": 0.2777777777777778,
-          "novig": 0.2124260485499063
-        },
-        {
-          "name": "Joey Logano",
-          "american": 330,
-          "implied": 0.23255813953488372,
-          "novig": 0.1778450639022471
-        },
-        {
-          "name": "Austin Cindric",
-          "american": 475,
-          "implied": 0.17391304347826086,
-          "novig": 0.13299717822255003
-        },
-        {
-          "name": "Brad Keselowski",
-          "american": 500,
-          "implied": 0.16666666666666666,
-          "novig": 0.12745562912994376
-        },
-        {
-          "name": "Chris Buescher",
-          "american": 650,
-          "implied": 0.13333333333333333,
-          "novig": 0.10196450330395501
-        },
-        {
-          "name": "Ryan Preece",
-          "american": 1000,
-          "implied": 0.09090909090909091,
-          "novig": 0.0695212522526966
-        },
-        {
-          "name": "Zane Smith",
-          "american": 1500,
-          "implied": 0.0625,
-          "novig": 0.047795860923728915
-        },
-        {
-          "name": "Todd Gilliland",
-          "american": 1500,
-          "implied": 0.0625,
-          "novig": 0.047795860923728915
-        },
-        {
-          "name": "Josh Berry",
-          "american": 1800,
-          "implied": 0.05263157894736842,
-          "novig": 0.040249146041034876
-        },
-        {
-          "name": "Noah Gragson",
-          "american": 2500,
-          "implied": 0.038461538461538464,
-          "novig": 0.029412837491525488
-        },
-        {
-          "name": "Chad Finchum",
-          "american": 6000,
-          "implied": 0.01639344262295082,
-          "novig": 0.012536619258682994
         }
       ]
     },
