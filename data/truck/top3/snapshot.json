@@ -38,18 +38,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-LIU26-BERH": {
-      "last_price": 0,
+      "last_price": 17,
       "liquidity": 0.0,
       "name": "Ben Rhodes",
-      "no_ask": 89,
-      "no_bid": 83,
-      "open_interest": 0,
+      "no_ask": 88,
+      "no_bid": 86,
+      "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-BERH",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 17,
-      "yes_bid": 11
+      "volume": 28,
+      "volume_24h": 28,
+      "yes_ask": 14,
+      "yes_bid": 12
     },
     "KXNASCARTOP3-LIU26-BRQU": {
       "last_price": 0,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-COMO",
       "volume": 656,
-      "volume_24h": 216,
+      "volume_24h": 0,
       "yes_ask": 16,
       "yes_bid": 10
     },
@@ -178,17 +178,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-LIU26-FRMU": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Frankie Muniz",
       "no_ask": 100,
-      "no_bid": 95,
-      "open_interest": 0,
+      "no_bid": 96,
+      "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-FRMU",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 5,
+      "volume": 56,
+      "volume_24h": 56,
+      "yes_ask": 4,
       "yes_bid": 0
     },
     "KXNASCARTOP3-LIU26-GIRU": {
@@ -294,13 +294,13 @@
       "liquidity": 0.0,
       "name": "Kaden Honeycutt",
       "no_ask": 53,
-      "no_bid": 50,
+      "no_bid": 49,
       "open_interest": 1635,
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-KAHO",
       "volume": 1637,
       "volume_24h": 206,
-      "yes_ask": 50,
+      "yes_ask": 51,
       "yes_bid": 47
     },
     "KXNASCARTOP3-LIU26-KRWR": {
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-LARI",
       "volume": 546,
-      "volume_24h": 349,
+      "volume_24h": 254,
       "yes_ask": 58,
       "yes_bid": 53
     },
@@ -377,7 +377,7 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Parker Kligerman",
-      "no_ask": 93,
+      "no_ask": 92,
       "no_bid": 89,
       "open_interest": 844,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 844,
       "volume_24h": 43,
       "yes_ask": 11,
-      "yes_bid": 7
+      "yes_bid": 8
     },
     "KXNASCARTOP3-LIU26-STFR": {
       "last_price": 0,
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LIU26-THAN",
       "volume": 508,
-      "volume_24h": 508,
+      "volume_24h": 0,
       "yes_ask": 14,
       "yes_bid": 8
     },
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-11T06:05:28.618651+00:00",
+  "scraped_at": "2026-07-11T10:42:21.040982+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "top3"
 }
