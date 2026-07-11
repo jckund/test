@@ -195,7 +195,7 @@
       "last_price": 5,
       "liquidity": 0.0,
       "name": "Chad Finchum",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 94,
       "open_interest": 75,
       "status": "active",
@@ -203,7 +203,7 @@
       "volume": 75,
       "volume_24h": 75,
       "yes_ask": 6,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP10-QUAS4AA26-COCU": {
       "last_price": 17,
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Todd Gilliland",
       "no_ask": 83,
-      "no_bid": 78,
+      "no_bid": 80,
       "open_interest": 610,
       "status": "active",
       "ticker": "KXNASCARTOP10-QUAS4AA26-TOGI",
       "volume": 610,
       "volume_24h": 4,
-      "yes_ask": 22,
+      "yes_ask": 20,
       "yes_bid": 17
     },
     "KXNASCARTOP10-QUAS4AA26-TYDI": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-11T17:06:50.432739+00:00",
+  "scraped_at": "2026-07-11T17:13:47.419650+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top10"
 }
