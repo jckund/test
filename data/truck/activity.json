@@ -1,7 +1,84 @@
 {
-  "updated_at": "2026-07-11T20:23:36.965789+00:00",
+  "updated_at": "2026-07-11T20:30:41.751017+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "9fd4f766-f65f-7436-5716-dc56273bd7a7",
+      "tier": "Winner",
+      "driver": "Andres Perez De Lara",
+      "ticker": "KXNASCARRACE-LIU26-ANPE",
+      "side": "yes",
+      "count": 17,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-07-11T20:29:33.126812Z"
+    },
+    {
+      "trade_id": "70ab8bf7-3dca-4a54-0151-d36027875bd2",
+      "tier": "Top 10",
+      "driver": "Christian Eckes",
+      "ticker": "KXNASCARTOP10-LIU26-CHEC",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 99,
+      "no_price": 1,
+      "created_time": "2026-07-11T20:27:49.223001Z"
+    },
+    {
+      "trade_id": "2d80007d-ec97-69e3-a504-b2cce1887395",
+      "tier": "Top 10",
+      "driver": "Christian Eckes",
+      "ticker": "KXNASCARTOP10-LIU26-CHEC",
+      "side": "no",
+      "count": 9,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T20:27:10.895984Z"
+    },
+    {
+      "trade_id": "0f93ae32-99c3-6291-a955-8df1d9f8412d",
+      "tier": "Top 10",
+      "driver": "Christian Eckes",
+      "ticker": "KXNASCARTOP10-LIU26-CHEC",
+      "side": "no",
+      "count": 0,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T20:27:10.895984Z"
+    },
+    {
+      "trade_id": "8b0a1e00-8c72-4031-0c99-4bea8cdd85d1",
+      "tier": "Winner",
+      "driver": "Grant Enfinger",
+      "ticker": "KXNASCARRACE-LIU26-GREN",
+      "side": "no",
+      "count": 2177,
+      "yes_price": 99,
+      "no_price": 1,
+      "created_time": "2026-07-11T20:26:56.474749Z"
+    },
+    {
+      "trade_id": "f5645fa5-8690-47d8-9f66-93553b64a48d",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "yes",
+      "count": 16,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-07-11T20:24:42.696873Z"
+    },
+    {
+      "trade_id": "7b2faaaf-526b-53d0-606c-d25284d43219",
+      "tier": "Top 3",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARTOP3-LIU26-LALE",
+      "side": "no",
+      "count": 41,
+      "yes_price": 95,
+      "no_price": 5,
+      "created_time": "2026-07-11T20:23:45.159094Z"
+    },
     {
       "trade_id": "75b1fe78-bdeb-41a8-4359-d519ae8da495",
       "tier": "Top 3",
@@ -342,17 +419,6 @@
       "yes_price": 99,
       "no_price": 1,
       "created_time": "2026-07-11T20:10:03.986112Z"
-    },
-    {
-      "trade_id": "12264037-7382-7999-74ee-fb35b559cc05",
-      "tier": "Winner",
-      "driver": "Grant Enfinger",
-      "ticker": "KXNASCARRACE-LIU26-GREN",
-      "side": "no",
-      "count": 9,
-      "yes_price": 99,
-      "no_price": 1,
-      "created_time": "2026-07-11T20:09:49.015549Z"
     },
     {
       "trade_id": "cd46e06e-d766-58e5-a89c-4920dbada81a",
@@ -1585,72 +1651,6 @@
       "yes_price": 1,
       "no_price": 99,
       "created_time": "2026-07-11T19:58:25.40857Z"
-    },
-    {
-      "trade_id": "29bf1307-8f13-44ce-d10f-0dd4a90c8a6f",
-      "tier": "Winner",
-      "driver": "Andres Perez De Lara",
-      "ticker": "KXNASCARRACE-LIU26-ANPE",
-      "side": "no",
-      "count": 36,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T19:58:25.408039Z"
-    },
-    {
-      "trade_id": "a702bd05-7b56-6bc5-36e1-ceeb2c5c707d",
-      "tier": "Top 10",
-      "driver": "Mini Tyrrell",
-      "ticker": "KXNASCARTOP10-LIU26-MITY",
-      "side": "yes",
-      "count": 11,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-11T19:58:21.470158Z"
-    },
-    {
-      "trade_id": "da2bc287-b734-5cb7-8a82-c676b662848b",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "no",
-      "count": 33,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T19:58:10.206969Z"
-    },
-    {
-      "trade_id": "7d3900d5-4f57-550e-9bb6-72a5a26441ab",
-      "tier": "Winner",
-      "driver": "Andres Perez De Lara",
-      "ticker": "KXNASCARRACE-LIU26-ANPE",
-      "side": "no",
-      "count": 33,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T19:58:10.205776Z"
-    },
-    {
-      "trade_id": "8bc04e3a-3a18-744b-b0a3-601b4a47e163",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "no",
-      "count": 30,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T19:58:05.774891Z"
-    },
-    {
-      "trade_id": "9edebdb9-e200-778f-64de-f4cec8ec2ecf",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "no",
-      "count": 31,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T19:58:04.165211Z"
     }
   ]
 }
