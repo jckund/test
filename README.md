@@ -49,9 +49,13 @@ shows every market update over time.
 ## Large-trade alerts
 
 [`alerts.py`](alerts.py) watches the **Cup series** (every NASCAR Cup driver
-market) and raises an alert on any **single trade worth more than $100**. It
-reuses the trades the scraper already pulls, so no extra API calls beyond a
-slightly deeper trade fetch.
+market) and raises an alert on any **single trade worth more than $100**.
+
+Alerting does **not** sample. For each Cup market, the scraper paginates
+*every* trade created since roughly the last run (`min_ts` + cursor, in
+`collect_alert_trades`), so no large trade can slip through between polls no
+matter how busy the market. This is separate from the dashboard's `activity.json`
+feed, which still shows just the most recent trades per market.
 
 **Trade value** is the cash the aggressor (taker) put in:
 
@@ -93,13 +97,14 @@ line):
 | `ALERT_MIN_USD` | `100` | Alert threshold in dollars |
 | `ALERT_SERIES` | `cup` | Comma-separated series keys to watch (e.g. `cup,truck`) |
 | `ALERT_WEBHOOK_URL` | — | Slack/Discord/generic incoming webhook |
-| `KALSHI_TRADES_PER_MARKET` | `10` (workflow sets `50`) | Recent trades pulled per market — widens the window each run sees between polls |
+| `ALERT_LOOKBACK_MIN` | `20` | How far back the alert fetch paginates each run. Keep it ≥ the schedule interval plus a safety margin; per-trade dedup absorbs the overlap |
+| `KALSHI_TRADES_PER_MARKET` | `10` (workflow sets `50`) | Recent trades pulled per market **for the dashboard `activity.json` feed only** — does not affect alert coverage |
 
-> **Coverage note:** the scraper samples the *N* most recent trades per market
-> each run rather than streaming every tick. At a 15-min cadence with
-> `KALSHI_TRADES_PER_MARKET=50` this catches large trades in all but
-> extraordinarily high-frequency conditions; raise the count or the schedule
-> frequency for denser coverage.
+> **Coverage:** because the alert fetch paginates *all* trades in the lookback
+> window (not a fixed sample), a large trade is caught as long as it happened
+> within `ALERT_LOOKBACK_MIN` of a run and the run's pagination completes.
+> Keep `ALERT_LOOKBACK_MIN` comfortably above the schedule interval so
+> consecutive runs overlap and nothing falls in a gap.
 
 ## Viewing it
 

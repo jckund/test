@@ -30,6 +30,10 @@ import sys
 
 DEFAULT_BRANCH = "claude/nascar-page-scraper-mwi55a"
 ACT_PATH = "data/cup/activity.json"
+# Authoritative, comprehensive alert log written by the scheduled scraper
+# (alerts.py). Present once the alerting change is merged; preferred over the
+# sampled activity feed because it can't miss a trade.
+ALERTS_PATH = "data/cup/alerts.jsonl"
 THRESHOLD = float(os.environ.get("ALERT_MIN_USD", "100"))
 
 
@@ -58,17 +62,12 @@ def save_seen(ids):
             fh.write(i + "\n")
 
 
-def activity_trades():
+def _git_show(path):
     subprocess.run(["git", "-C", REPO, "fetch", "-q", "origin", BRANCH],
                    capture_output=True)
-    r = subprocess.run(["git", "-C", REPO, "show", f"origin/{BRANCH}:{ACT_PATH}"],
+    r = subprocess.run(["git", "-C", REPO, "show", f"origin/{BRANCH}:{path}"],
                        capture_output=True, text=True)
-    if r.returncode != 0:
-        return []
-    try:
-        return json.loads(r.stdout).get("trades", []) or []
-    except json.JSONDecodeError:
-        return []
+    return r.stdout if r.returncode == 0 else None
 
 
 def value_usd(t):
@@ -87,32 +86,67 @@ def value_usd(t):
     return round(count * price / 100.0, 2)
 
 
+def _candidates():
+    """Yield (trade_id, value_usd, display_dict) for every over-threshold trade.
+
+    Prefer the authoritative alerts.jsonl (comprehensive, already filtered by the
+    scraper); fall back to computing from the sampled activity.json when the log
+    isn't present yet (i.e. before the alerting change is merged)."""
+    log = _git_show(ALERTS_PATH)
+    if log and log.strip():
+        for line in log.splitlines():
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                a = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            tid, v = a.get("trade_id"), a.get("value_usd")
+            if tid and isinstance(v, (int, float)) and v > THRESHOLD:
+                yield tid, round(v, 2), {
+                    "driver": a.get("driver") or a.get("ticker"), "tier": a.get("tier"),
+                    "count": a.get("count"), "price": a.get("price_cents"),
+                    "side": a.get("side"), "created_time": a.get("created_time")}
+        return
+    raw = _git_show(ACT_PATH)
+    if not raw:
+        return
+    try:
+        trades = json.loads(raw).get("trades", []) or []
+    except json.JSONDecodeError:
+        return
+    for t in trades:
+        tid, v = t.get("trade_id"), value_usd(t)
+        if tid and v is not None and v > THRESHOLD:
+            price = t.get("yes_price") if t.get("side") == "yes" else t.get("no_price")
+            yield tid, v, {
+                "driver": t.get("driver") or t.get("ticker"), "tier": t.get("tier"),
+                "count": t.get("count"), "price": price,
+                "side": t.get("side"), "created_time": t.get("created_time")}
+
+
 def main():
     seed = "--seed" in sys.argv  # record current qualifiers without printing
     seen = load_seen()
     fresh = []
-    for t in activity_trades():
-        tid = t.get("trade_id")
-        if not tid or tid in seen:
-            continue
-        v = value_usd(t)
-        if v is None or v <= THRESHOLD:
+    for tid, v, disp in _candidates():
+        if tid in seen:
             continue
         seen.add(tid)
-        fresh.append((v, t))
+        fresh.append((tid, v, disp))
     if not fresh:
         return
-    save_seen([t.get("trade_id") for _, t in fresh])
+    save_seen([tid for tid, _, _ in fresh])
     if seed:
         print(f"seeded {len(fresh)} existing trade(s) over ${THRESHOLD:,.0f}",
               file=sys.stderr)
         return
-    fresh.sort(key=lambda x: x[1].get("created_time") or "")
-    for v, t in fresh:
-        price = t.get("yes_price") if t.get("side") == "yes" else t.get("no_price")
-        side = (t.get("side") or "").upper()
-        print(f"${v:,.2f} — {t.get('driver') or t.get('ticker')} ({t.get('tier')}) "
-              f"{t.get('count')} @ {price}¢ {side} [{t.get('created_time')}]")
+    fresh.sort(key=lambda x: x[2].get("created_time") or "")
+    for _tid, v, d in fresh:
+        side = (d.get("side") or "").upper()
+        print(f"${v:,.2f} — {d.get('driver')} ({d.get('tier')}) "
+              f"{d.get('count')} @ {d.get('price')}¢ {side} [{d.get('created_time')}]")
 
 
 if __name__ == "__main__":
