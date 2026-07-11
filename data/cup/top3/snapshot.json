@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 94,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 262,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-ALBO",
       "volume": 262,
-      "volume_24h": 134,
-      "yes_ask": 7,
+      "volume_24h": 0,
+      "yes_ask": 8,
       "yes_bid": 6
     },
     "KXNASCARTOP3-QUAS4AA26-AUCI": {
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUCI",
       "volume": 649,
-      "volume_24h": 31,
+      "volume_24h": 0,
       "yes_ask": 15,
       "yes_bid": 13
     },
@@ -61,22 +61,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUDI",
       "volume": 189,
-      "volume_24h": 75,
+      "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 0
     },
     "KXNASCARTOP3-QUAS4AA26-AUHI": {
-      "last_price": 4,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 100,
-      "no_bid": 97,
-      "open_interest": 142,
+      "no_bid": 93,
+      "open_interest": 576,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUHI",
-      "volume": 142,
-      "volume_24h": 0,
-      "yes_ask": 3,
+      "volume": 576,
+      "volume_24h": 433,
+      "yes_ask": 7,
       "yes_bid": 0
     },
     "KXNASCARTOP3-QUAS4AA26-BJMC": {
@@ -94,16 +94,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-QUAS4AA26-BRKE": {
-      "last_price": 0,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 89,
       "no_bid": 88,
-      "open_interest": 0,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-BRKE",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 100,
+      "volume_24h": 100,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -307,15 +307,15 @@
       "last_price": 17,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 83,
+      "no_ask": 85,
       "no_bid": 82,
-      "open_interest": 7,
+      "open_interest": 107,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-JOLO",
-      "volume": 7,
-      "volume_24h": 0,
+      "volume": 107,
+      "volume_24h": 100,
       "yes_ask": 18,
-      "yes_bid": 17
+      "yes_bid": 15
     },
     "KXNASCARTOP3-QUAS4AA26-JONE": {
       "last_price": 3,
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-NOGR",
       "volume": 62,
-      "volume_24h": 62,
+      "volume_24h": 0,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "Ty Gibbs",
       "no_ask": 92,
-      "no_bid": 91,
+      "no_bid": 90,
       "open_interest": 704,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-TYGI",
       "volume": 754,
       "volume_24h": 102,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 8
     },
     "KXNASCARTOP3-QUAS4AA26-TYRE": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-11T10:41:05.542730+00:00",
+  "scraped_at": "2026-07-11T14:16:07.477772+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top3"
 }
