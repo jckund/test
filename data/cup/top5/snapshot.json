@@ -125,7 +125,7 @@
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 81,
+      "no_ask": 80,
       "no_bid": 76,
       "open_interest": 365,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 365,
       "volume_24h": 38,
       "yes_ask": 24,
-      "yes_bid": 19
+      "yes_bid": 20
     },
     "KXNASCARTOP5-QUAS4AA26-CHBE": {
       "last_price": 29,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-CHBE",
       "volume": 624,
-      "volume_24h": 272,
+      "volume_24h": 288,
       "yes_ask": 29,
       "yes_bid": 26
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-CHEL",
       "volume": 257,
-      "volume_24h": 31,
+      "volume_24h": 47,
       "yes_ask": 30,
       "yes_bid": 25
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-DASU",
       "volume": 53,
-      "volume_24h": 6,
+      "volume_24h": 31,
       "yes_ask": 19,
       "yes_bid": 16
     },
@@ -267,11 +267,11 @@
       "name": "Denny Hamlin",
       "no_ask": 74,
       "no_bid": 70,
-      "open_interest": 358,
+      "open_interest": 361,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-DEHA",
-      "volume": 362,
-      "volume_24h": 0,
+      "volume": 365,
+      "volume_24h": 3,
       "yes_ask": 30,
       "yes_bid": 26
     },
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-ZASM",
       "volume": 303,
-      "volume_24h": 94,
+      "volume_24h": 133,
       "yes_ask": 12,
       "yes_bid": 5
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-11T16:52:33.844083+00:00",
+  "scraped_at": "2026-07-11T17:06:50.040130+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top5"
 }
