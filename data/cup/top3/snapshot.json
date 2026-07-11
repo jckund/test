@@ -70,13 +70,13 @@
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 99,
-      "no_bid": 91,
+      "no_bid": 92,
       "open_interest": 631,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUHI",
       "volume": 631,
       "volume_24h": 489,
-      "yes_ask": 9,
+      "yes_ask": 8,
       "yes_bid": 1
     },
     "KXNASCARTOP3-QUAS4AA26-BJMC": {
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-CHEL",
       "volume": 163,
-      "volume_24h": 0,
+      "volume_24h": 24,
       "yes_ask": 21,
       "yes_bid": 17
     },
@@ -346,15 +346,15 @@
       "yes_bid": 15
     },
     "KXNASCARTOP3-QUAS4AA26-MIMC": {
-      "last_price": 3,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 114,
+      "open_interest": 161,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-MIMC",
-      "volume": 114,
+      "volume": 161,
       "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 3
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-TYGI",
       "volume": 754,
-      "volume_24h": 102,
+      "volume_24h": 52,
       "yes_ask": 10,
       "yes_bid": 8
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-11T16:33:58.259595+00:00",
+  "scraped_at": "2026-07-11T16:52:33.372906+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top3"
 }
