@@ -243,11 +243,13 @@
     <div id="cmp-driver-panel">
       <div class="cmp-note">
         Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
-        <b>EV</b> is the expected return on a $1 bet at that book's odds, using Kalshi's implied
-        probability as fair: <b>EV = p·(payout) − (1−p)</b>, shown as a percent.
+        <b>EV</b> is the expected return on a $1 bet at that book's odds: <b>EV = p·(payout) − (1−p)</b>,
+        shown as a percent. This is a <b>worst-case EV</b> — <b>p</b> is Kalshi's <b>conservative
+        no-side</b> chance (1 − no-ask, the low end of the quote), so it's the return you'd still
+        clear if the true chance sits at the pessimistic edge of the market.
         <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
-        (it pays more than the fair chance → positive EV), <span class="edge neg">red</span> means
-        negative. Rows are sorted by the <b>best EV across books</b>. Book odds include vig.
+        (positive EV), <span class="edge neg">red</span> means negative. Rows are sorted by the
+        <b>best EV across books</b>. Book odds include vig.
       </div>
       <div class="cmp-fresh" id="cmp-fresh"></div>
       <section class="card">
@@ -271,7 +273,8 @@
         within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
         The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
         Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the <b>EV</b> (expected return on a $1 bet
-        at the book's odds, with the Kalshi-implied make chance as fair) appear alongside. Cells shaded
+        at the book's odds) appear alongside. EV is <b>worst-case</b> — it prices against Kalshi's
+        conservative no-side chance, not the displayed midpoint. Cells shaded
         <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
         Kalshi-implied fair line.
       </div>
@@ -296,7 +299,7 @@
         <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
         The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
         teams; book <b>winning-team</b> markets and the <b>EV</b> (expected return on a $1 bet at the
-        book's odds, with the Kalshi-implied team chance as fair) appear alongside, with
+        book's odds, priced against Kalshi's <b>worst-case no-side</b> team chance) appear alongside, with
         <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
         Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
         imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
@@ -837,7 +840,8 @@ async function renderCompare() {
     const snap = await loadJSON(dbase() + compareTier + "/snapshot.json");
     for (const m of Object.values(snap.markets || {})) {
       const p = priceYes(m);
-      if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: p / 100 };
+      // Display keeps the Yes/No buy prices; EV uses the conservative no-side prob.
+      if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: worstProb(m) };
     }
   } catch { /* leave Kalshi side empty */ }
 
@@ -924,6 +928,16 @@ function winProb(m) {
   const p = priceYes(m);
   return p == null ? null : p / 100;
 }
+// Worst-case (conservative) yes probability used only for EV: the low end of the
+// spread, taken from the NO side = 1 − no_ask/100 (equivalently the yes bid).
+// EV rises with p, so pricing against the no gives a floor — the EV you'd still
+// get if the true chance sits at the pessimistic edge of Kalshi's quote.
+function worstProb(m) {
+  if (typeof m.no_ask === "number") return (100 - m.no_ask) / 100;
+  if (typeof m.yes_bid === "number") return m.yes_bid / 100;
+  const p = priceYes(m);
+  return p == null ? null : p / 100;
+}
 // American odds from a probability (0..1).
 function usFromProb(p) {
   if (typeof p !== "number" || p <= 0 || p >= 1) return "—";
@@ -971,7 +985,7 @@ function renderManufacturers(snap) {
     if (p == null) continue;
     const mfr = MFR_KEY[normName(m.name)];
     if (!mfr) { unmapped.push(m.name); continue; }
-    groups[mfr].push({ name: m.name, p });
+    groups[mfr].push({ name: m.name, p, pw: worstProb(m) ?? p });
   }
   const present = MFR_ORDER.filter((k) => groups[k].length);
   $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " makes";
@@ -1011,18 +1025,25 @@ function renderManufacturers(snap) {
   };
 
   // "Which make wins": each make's summed win prob, normalized across the makes.
-  const totals = present.map((k) => ({ mfr: k, sum: groups[k].reduce((a, d) => a + d.p, 0) }));
+  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  const totals = present.map((k) => ({
+    mfr: k,
+    sum: groups[k].reduce((a, d) => a + d.p, 0),
+    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
+  }));
   const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
   totals.sort((a, b) => b.sum - a.sum);
   $("mfr-win-head").innerHTML =
     `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
     winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("mfr-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
+    const pnW = t.sumW / grandW;
     const bookCells = winnerBooks.map((bk) => {
       const fm = MFRDATA[bk.key].winner[t.mfr];
-      // EV of a $1 bet at the book's posted odds, Kalshi's normalized make prob as truth.
-      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      // EV of a $1 bet at the book's posted odds, worst-case Kalshi make prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
@@ -1041,12 +1062,14 @@ function renderManufacturers(snap) {
   for (const mfr of present) {
     const drivers = groups[mfr].slice().sort((a, b) => b.p - a.p);
     const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
+    const sumW = drivers.reduce((a, d) => a + d.pw, 0) || 1;
     const makeBooks = books.filter((bk) => byMake[bk.key][mfr]);
     const rows = drivers.map((d, i) => {
-      const pt = d.p / sum;
+      const pt = d.p / sum;              // displayed midpoint chance
+      const ptW = d.pw / sumW;           // worst-case chance for EV
       const bookCells = makeBooks.map((bk) => {
         const dd = byMake[bk.key][mfr][normName(d.name)];
-        const ev = dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
+        const ev = dd && typeof dd.american === "number" ? evPct(ptW, dd.american) : null;
         return bookPair(dd ? dd.american : null, ev);
       }).join("");
       return `<tr>
@@ -1159,7 +1182,7 @@ function renderTeams(snap) {
     if (p == null) continue;
     const team = TEAM_KEY[normName(m.name)];
     if (!team) { unmapped.push(m.name); continue; }
-    groups[team].push({ name: m.name, p });
+    groups[team].push({ name: m.name, p, pw: worstProb(m) ?? p });
   }
   const present = Object.keys(TEAM_GROUPS).filter((k) => groups[k].length);
   $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " teams";
@@ -1182,18 +1205,25 @@ function renderTeams(snap) {
   };
 
   // "Which team wins": summed win prob per team, normalized across teams.
-  const totals = present.map((k) => ({ team: k, sum: groups[k].reduce((a, d) => a + d.p, 0) }));
+  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  const totals = present.map((k) => ({
+    team: k,
+    sum: groups[k].reduce((a, d) => a + d.p, 0),
+    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
+  }));
   const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
   totals.sort((a, b) => b.sum - a.sum);
   $("team-win-head").innerHTML =
     `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
     books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("team-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
+    const pnW = t.sumW / grandW;
     const bookCells = books.map((bk) => {
       const fm = TEAMDATA[bk.key].winner[t.team];
-      // EV of a $1 bet at the book's posted odds, Kalshi's normalized team prob as truth.
-      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      // EV of a $1 bet at the book's posted odds, worst-case Kalshi team prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
