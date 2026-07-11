@@ -12,24 +12,25 @@ Trade value = ``count * taker_price / 100`` — the cash the aggressor put in
 (a YES taker pays the yes price, a NO taker pays the no price).
 
 Dedup: reported trade IDs are remembered in a git-ignored state file so a trade
-is printed once. A lookback window bounds re-notification to a small blast
-radius if that state is ever lost (e.g. a fresh session after a reload).
+is printed once. Dedup is purely by trade ID — every unreported over-threshold
+trade in the feed is surfaced regardless of age. (There is deliberately NO
+"only recent trades" cutoff: the committed feed routinely holds trades over an
+hour old, and a time cutoff was silently dropping real alerts. If the state
+file is ever lost, the worst case is re-sending the current window's handful of
+over-threshold trades once — far better than missing any.)
 
 Env overrides:
   ALERT_MIN_USD    threshold in dollars (default 100)
   TRACKER_BRANCH   branch the scraper commits activity.json to
-  ALERT_LOOKBACK_MIN  only consider trades newer than this many minutes (default 40)
 """
 import json
 import os
 import subprocess
 import sys
-from datetime import datetime, timezone, timedelta
 
 DEFAULT_BRANCH = "claude/nascar-page-scraper-mwi55a"
 ACT_PATH = "data/cup/activity.json"
 THRESHOLD = float(os.environ.get("ALERT_MIN_USD", "100"))
-LOOKBACK_MIN = int(os.environ.get("ALERT_LOOKBACK_MIN", "40"))
 
 
 def repo_root():
@@ -70,17 +71,6 @@ def activity_trades():
         return []
 
 
-def recent(t):
-    ct = t.get("created_time")
-    if not ct:
-        return False
-    try:
-        dt = datetime.fromisoformat(ct.replace("Z", "+00:00"))
-    except ValueError:
-        return True  # unparseable -> don't drop on time grounds
-    return datetime.now(timezone.utc) - dt <= timedelta(minutes=LOOKBACK_MIN)
-
-
 def value_usd(t):
     side = t.get("side")
     if side == "yes":
@@ -103,7 +93,7 @@ def main():
     fresh = []
     for t in activity_trades():
         tid = t.get("trade_id")
-        if not tid or tid in seen or not recent(t):
+        if not tid or tid in seen:
             continue
         v = value_usd(t)
         if v is None or v <= THRESHOLD:
