@@ -1,17 +1,567 @@
 {
-  "updated_at": "2026-07-11T17:32:50.036853+00:00",
+  "updated_at": "2026-07-11T17:39:32.895412+00:00",
   "count": 150,
   "trades": [
     {
-      "trade_id": "57615917-a167-7e04-743e-662d50b93dcd",
+      "trade_id": "f5fe4d5b-7c9d-4675-08b3-d0356e55d4af",
+      "tier": "Winner",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARRACE-LIU26-THAN",
+      "side": "yes",
+      "count": 39,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:38:57.216038Z"
+    },
+    {
+      "trade_id": "c2a11770-8508-4bdc-3a4c-b096694b1b77",
+      "tier": "Winner",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARRACE-LIU26-THAN",
+      "side": "yes",
+      "count": 13,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:38:57.216038Z"
+    },
+    {
+      "trade_id": "9876e918-1edc-4891-3110-607565ba99f0",
+      "tier": "Winner",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARRACE-LIU26-THAN",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T17:38:57.216038Z"
+    },
+    {
+      "trade_id": "88678d3a-5ef1-46de-0818-1f1c723537ad",
+      "tier": "Winner",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARRACE-LIU26-THAN",
+      "side": "yes",
+      "count": 17,
+      "yes_price": 11,
+      "no_price": 89,
+      "created_time": "2026-07-11T17:38:57.216038Z"
+    },
+    {
+      "trade_id": "629cce89-d312-4ce9-1be3-0c24b3b53200",
+      "tier": "Winner",
+      "driver": "Thomas Annunziata",
+      "ticker": "KXNASCARRACE-LIU26-THAN",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T17:38:57.216038Z"
+    },
+    {
+      "trade_id": "20543722-332c-5c2f-4ce9-ce4d0306f538",
+      "tier": "Winner",
+      "driver": "Chandler Smith",
+      "ticker": "KXNASCARRACE-LIU26-CHSM",
+      "side": "no",
+      "count": 25,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T17:38:38.632372Z"
+    },
+    {
+      "trade_id": "d71d641d-683b-5e73-f169-987938b2e037",
+      "tier": "Winner",
+      "driver": "Daniel Hemric",
+      "ticker": "KXNASCARRACE-LIU26-DAHE",
+      "side": "yes",
+      "count": 32,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-11T17:38:10.562243Z"
+    },
+    {
+      "trade_id": "a2cfc9ed-3846-566f-e6aa-1c369bdbba2e",
+      "tier": "Winner",
+      "driver": "Daniel Hemric",
+      "ticker": "KXNASCARRACE-LIU26-DAHE",
+      "side": "yes",
+      "count": 80,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-11T17:38:10.562243Z"
+    },
+    {
+      "trade_id": "09db28cb-89bf-5bea-f06a-4a768e2486c3",
+      "tier": "Winner",
+      "driver": "Daniel Hemric",
+      "ticker": "KXNASCARRACE-LIU26-DAHE",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-07-11T17:38:10.562243Z"
+    },
+    {
+      "trade_id": "cb95b2d9-e74a-402c-f8f8-c35f377c93ad",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 78,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-11T17:38:08.965773Z"
+    },
+    {
+      "trade_id": "b8f32036-4e03-4f71-3d57-598603f550ed",
+      "tier": "Top 3",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARTOP3-LIU26-KAHO",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 74,
+      "no_price": 26,
+      "created_time": "2026-07-11T17:38:05.538538Z"
+    },
+    {
+      "trade_id": "89746551-8be0-4217-3dae-d2b1c3a72229",
+      "tier": "Top 3",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARTOP3-LIU26-KAHO",
+      "side": "yes",
+      "count": 45,
+      "yes_price": 70,
+      "no_price": 30,
+      "created_time": "2026-07-11T17:38:05.538538Z"
+    },
+    {
+      "trade_id": "7f876c31-69e6-4c8b-370b-a82ce8fadbde",
+      "tier": "Top 3",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARTOP3-LIU26-KAHO",
+      "side": "yes",
+      "count": 4,
+      "yes_price": 62,
+      "no_price": 38,
+      "created_time": "2026-07-11T17:38:05.538538Z"
+    },
+    {
+      "trade_id": "43acae5a-f5ad-4f7e-1f4a-fe8e7890f182",
+      "tier": "Top 3",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARTOP3-LIU26-KAHO",
+      "side": "yes",
+      "count": 5,
+      "yes_price": 94,
+      "no_price": 6,
+      "created_time": "2026-07-11T17:38:05.538538Z"
+    },
+    {
+      "trade_id": "1250a1ee-d808-4c13-3c97-a246054725fb",
+      "tier": "Top 3",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARTOP3-LIU26-KAHO",
+      "side": "yes",
+      "count": 80,
+      "yes_price": 63,
+      "no_price": 37,
+      "created_time": "2026-07-11T17:38:05.538538Z"
+    },
+    {
+      "trade_id": "7b57fbda-1f95-7845-7aed-edea8fd9c685",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 3,
+      "yes_price": 43,
+      "no_price": 57,
+      "created_time": "2026-07-11T17:37:52.591862Z"
+    },
+    {
+      "trade_id": "7bb8db22-987f-5e8b-1aaa-c071b8bc4556",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 6,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-11T17:37:46.795381Z"
+    },
+    {
+      "trade_id": "6571beee-d94e-5b50-126e-44387ac2b1c1",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 52,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-11T17:37:46.795381Z"
+    },
+    {
+      "trade_id": "1b5de979-a9a0-511a-11a1-2d5cbbc91b18",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 20,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-11T17:37:46.795381Z"
+    },
+    {
+      "trade_id": "1c68fb36-b97d-464f-0d3c-188036ca34b6",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "no",
+      "count": 6,
+      "yes_price": 24,
+      "no_price": 76,
+      "created_time": "2026-07-11T17:37:45.950309Z"
+    },
+    {
+      "trade_id": "f3350e5f-d65f-7771-c8f2-9d4006f783a3",
+      "tier": "Top 10",
+      "driver": "Graham Doyle",
+      "ticker": "KXNASCARTOP10-LIU26-GRDO",
+      "side": "no",
+      "count": 80,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T17:37:24.564288Z"
+    },
+    {
+      "trade_id": "c7b64c19-d55b-7888-dd36-3c4cbb5d803c",
+      "tier": "Top 10",
+      "driver": "Graham Doyle",
+      "ticker": "KXNASCARTOP10-LIU26-GRDO",
+      "side": "no",
+      "count": 17,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:37:24.564288Z"
+    },
+    {
+      "trade_id": "4b830cd3-a5ca-6dec-c086-2a5d0fc8bec1",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 16,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-11T17:37:13.300953Z"
+    },
+    {
+      "trade_id": "50947ccb-e502-7400-d334-ac65394c8541",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 46,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-11T17:37:09.835666Z"
+    },
+    {
+      "trade_id": "e9700916-b166-6854-f74d-8ce53d95b9bc",
+      "tier": "Top 10",
+      "driver": "Graham Doyle",
+      "ticker": "KXNASCARTOP10-LIU26-GRDO",
+      "side": "no",
+      "count": 48,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:36:51.853668Z"
+    },
+    {
+      "trade_id": "7efba4fc-2ab8-6b2e-f688-d9b9daf66f22",
+      "tier": "Top 10",
+      "driver": "Graham Doyle",
+      "ticker": "KXNASCARTOP10-LIU26-GRDO",
+      "side": "no",
+      "count": 35,
+      "yes_price": 11,
+      "no_price": 89,
+      "created_time": "2026-07-11T17:36:51.853668Z"
+    },
+    {
+      "trade_id": "a9331467-4c34-6b11-474a-62dd815462d1",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 32,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-11T17:36:48.26052Z"
+    },
+    {
+      "trade_id": "54861bed-c7f6-6da0-62bd-a4de123dd26d",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 258,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-11T17:36:48.26052Z"
+    },
+    {
+      "trade_id": "2e065d1e-a0ff-6c83-78cf-aa470d58e1ce",
+      "tier": "Winner",
+      "driver": "Kaden Honeycutt",
+      "ticker": "KXNASCARRACE-LIU26-KAHO",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-11T17:36:48.26052Z"
+    },
+    {
+      "trade_id": "db6a9bdc-bb1d-5859-b070-6d8ff679dc39",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 4,
+      "yes_price": 43,
+      "no_price": 57,
+      "created_time": "2026-07-11T17:36:43.714753Z"
+    },
+    {
+      "trade_id": "be712364-209b-6d88-3d94-dc0d428e7450",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 9,
+      "yes_price": 42,
+      "no_price": 58,
+      "created_time": "2026-07-11T17:36:35.300302Z"
+    },
+    {
+      "trade_id": "49b7d8f6-e21b-6a5b-2f8d-a4e088e1858e",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 30,
+      "yes_price": 43,
+      "no_price": 57,
+      "created_time": "2026-07-11T17:36:35.300302Z"
+    },
+    {
+      "trade_id": "c9995f80-eb4c-41b6-ea5c-441de5b143ae",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "yes",
+      "count": 12,
+      "yes_price": 44,
+      "no_price": 56,
+      "created_time": "2026-07-11T17:36:33.481079Z"
+    },
+    {
+      "trade_id": "fefbde34-0e99-751c-d416-ba6e62037f22",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 5,
+      "yes_price": 44,
+      "no_price": 56,
+      "created_time": "2026-07-11T17:36:27.405077Z"
+    },
+    {
+      "trade_id": "f9ddd072-2565-578c-f21e-b34948a2f2c2",
       "tier": "Winner",
       "driver": "Landen Lewis",
       "ticker": "KXNASCARRACE-LIU26-LALE",
       "side": "yes",
-      "count": 422,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T17:31:59.221789Z"
+      "count": 12,
+      "yes_price": 12,
+      "no_price": 88,
+      "created_time": "2026-07-11T17:36:16.98624Z"
+    },
+    {
+      "trade_id": "7bf35ef7-dd9f-54e0-f722-391171d7ed5b",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 5,
+      "yes_price": 11,
+      "no_price": 89,
+      "created_time": "2026-07-11T17:36:16.98624Z"
+    },
+    {
+      "trade_id": "2cc12615-ccd8-5cb3-f30e-a1281815574f",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 21,
+      "yes_price": 13,
+      "no_price": 87,
+      "created_time": "2026-07-11T17:36:16.98624Z"
+    },
+    {
+      "trade_id": "1ae555eb-f628-5317-db56-7e6cff7726d4",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 49,
+      "yes_price": 12,
+      "no_price": 88,
+      "created_time": "2026-07-11T17:36:16.98624Z"
+    },
+    {
+      "trade_id": "17788d59-90ab-5706-da20-73d144a2c4f2",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 11,
+      "yes_price": 14,
+      "no_price": 86,
+      "created_time": "2026-07-11T17:36:16.98624Z"
+    },
+    {
+      "trade_id": "e3a24b3f-19e8-52ef-f754-4ce6f2fc2631",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "yes",
+      "count": 5,
+      "yes_price": 48,
+      "no_price": 52,
+      "created_time": "2026-07-11T17:36:14.37448Z"
+    },
+    {
+      "trade_id": "ca848966-280e-5db2-e865-3c990ef86236",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 48,
+      "no_price": 52,
+      "created_time": "2026-07-11T17:36:14.37448Z"
+    },
+    {
+      "trade_id": "259fe0d3-aae6-503a-cbb3-fb46d7a331f7",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "yes",
+      "count": 2,
+      "yes_price": 48,
+      "no_price": 52,
+      "created_time": "2026-07-11T17:36:14.37448Z"
+    },
+    {
+      "trade_id": "f601f984-0787-489a-f6e7-e271d4920b8c",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 49,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-11T17:36:00.858672Z"
+    },
+    {
+      "trade_id": "e9b16d69-6a0d-444c-dd0b-2edb73951efa",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 37,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:36:00.858672Z"
+    },
+    {
+      "trade_id": "c9be9096-9845-45cb-c0fa-e09af9f02d51",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 101,
+      "yes_price": 7,
+      "no_price": 93,
+      "created_time": "2026-07-11T17:36:00.858672Z"
+    },
+    {
+      "trade_id": "aeb03eee-dec3-49eb-c6e8-76d1b36d1f03",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:36:00.858672Z"
+    },
+    {
+      "trade_id": "96e6a62c-a8ea-4e01-c57b-fa7d23d4d5bc",
+      "tier": "Winner",
+      "driver": "Landen Lewis",
+      "ticker": "KXNASCARRACE-LIU26-LALE",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T17:36:00.858672Z"
+    },
+    {
+      "trade_id": "3c054ebe-ba4c-6984-4b8f-e58ab5356216",
+      "tier": "Winner",
+      "driver": "Connor Mosack",
+      "ticker": "KXNASCARRACE-LIU26-COMO",
+      "side": "yes",
+      "count": 12,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-07-11T17:33:33.113309Z"
+    },
+    {
+      "trade_id": "d9503554-923f-5845-9979-c05a248cb786",
+      "tier": "Winner",
+      "driver": "Connor Mosack",
+      "ticker": "KXNASCARRACE-LIU26-COMO",
+      "side": "no",
+      "count": 41,
+      "yes_price": 7,
+      "no_price": 93,
+      "created_time": "2026-07-11T17:33:09.911442Z"
+    },
+    {
+      "trade_id": "bdbf3c9c-e42d-5ab7-b806-deeef2b52a02",
+      "tier": "Winner",
+      "driver": "Connor Mosack",
+      "ticker": "KXNASCARRACE-LIU26-COMO",
+      "side": "no",
+      "count": 115,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T17:33:09.911442Z"
+    },
+    {
+      "trade_id": "e417c4a2-8b46-7364-478d-0e3e02e63221",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-LIU26-LARI",
+      "side": "no",
+      "count": 60,
+      "yes_price": 39,
+      "no_price": 61,
+      "created_time": "2026-07-11T17:33:01.306331Z"
     },
     {
       "trade_id": "7c353488-5e2b-5908-fc69-0520ad2342c2",
@@ -25,17 +575,6 @@
       "created_time": "2026-07-11T17:31:56.074276Z"
     },
     {
-      "trade_id": "a134e541-8700-67a1-45d6-44f2ce186127",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 32,
-      "yes_price": 45,
-      "no_price": 55,
-      "created_time": "2026-07-11T17:31:35.652482Z"
-    },
-    {
       "trade_id": "43a819c5-c8e5-5be7-d511-bfa010f4df49",
       "tier": "Winner",
       "driver": "Ty Majeski",
@@ -45,72 +584,6 @@
       "yes_price": 7,
       "no_price": 93,
       "created_time": "2026-07-11T17:31:03.182436Z"
-    },
-    {
-      "trade_id": "d1875517-76a1-433f-9460-3e6a63023340",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "no",
-      "count": 3,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:30:53.02357Z"
-    },
-    {
-      "trade_id": "9b8182ae-aa63-4e78-0c56-0731099c47c5",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 300,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T17:30:45.588018Z"
-    },
-    {
-      "trade_id": "c3ef1a04-28d1-5740-6484-9ca2a30aa0d6",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 2,
-      "yes_price": 28,
-      "no_price": 72,
-      "created_time": "2026-07-11T17:30:26.485247Z"
-    },
-    {
-      "trade_id": "d32d2539-27a2-71fb-bae1-a0e59a4f7d8c",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 20,
-      "yes_price": 44,
-      "no_price": 56,
-      "created_time": "2026-07-11T17:30:10.662843Z"
-    },
-    {
-      "trade_id": "33fbf0f3-46e0-7e94-b44d-7d4324050c30",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 44,
-      "no_price": 56,
-      "created_time": "2026-07-11T17:30:10.662843Z"
-    },
-    {
-      "trade_id": "247dd64c-a5d8-7c91-b01e-32954b5b4c09",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 44,
-      "no_price": 56,
-      "created_time": "2026-07-11T17:30:10.662843Z"
     },
     {
       "trade_id": "aa999f4e-7377-4da9-d612-4ad05845ce5d",
@@ -166,94 +639,6 @@
       "yes_price": 6,
       "no_price": 94,
       "created_time": "2026-07-11T17:29:55.929243Z"
-    },
-    {
-      "trade_id": "737e12f5-cdc5-526c-bffa-0dfe4ed157da",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 4,
-      "yes_price": 27,
-      "no_price": 73,
-      "created_time": "2026-07-11T17:29:39.742412Z"
-    },
-    {
-      "trade_id": "8ab7aa88-94e0-5014-c599-ba05122b0924",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 48,
-      "yes_price": 44,
-      "no_price": 56,
-      "created_time": "2026-07-11T17:29:36.924422Z"
-    },
-    {
-      "trade_id": "81730574-8bf3-56a5-dc34-bbd37f57d203",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 26,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:29:36.924422Z"
-    },
-    {
-      "trade_id": "4e6656d6-2c7f-51db-ec1c-c7f888d3e2ef",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 28,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:29:36.924422Z"
-    },
-    {
-      "trade_id": "457590a9-77ea-5bc5-d017-4e3a2f2464fa",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 5,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:29:36.924422Z"
-    },
-    {
-      "trade_id": "02979b22-b37f-51ef-cd85-3d49c4433402",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:29:36.924422Z"
-    },
-    {
-      "trade_id": "f4da1356-bf8e-78a1-6c71-2f5001151171",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-LIU26-LARI",
-      "side": "no",
-      "count": 1,
-      "yes_price": 39,
-      "no_price": 61,
-      "created_time": "2026-07-11T17:29:27.016296Z"
-    },
-    {
-      "trade_id": "cd9e23ad-4038-4158-18a7-610de6ea6656",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 3,
-      "yes_price": 23,
-      "no_price": 77,
-      "created_time": "2026-07-11T17:29:24.661601Z"
     },
     {
       "trade_id": "ea5d12f3-d0a4-488a-f94a-6c339c4de412",
@@ -322,17 +707,6 @@
       "created_time": "2026-07-11T17:29:23.688044Z"
     },
     {
-      "trade_id": "c8d2b548-f909-68d8-a0d1-3f9fb6eaeb5f",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "no",
-      "count": 6,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:29:23.687452Z"
-    },
-    {
       "trade_id": "8ce2430a-963d-6db1-f932-cd97e478eb0c",
       "tier": "Winner",
       "driver": "Ty Majeski",
@@ -388,28 +762,6 @@
       "created_time": "2026-07-11T17:29:23.685553Z"
     },
     {
-      "trade_id": "819c59e5-289d-4b0f-5d39-46f65093efaf",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "no",
-      "count": 3,
-      "yes_price": 24,
-      "no_price": 76,
-      "created_time": "2026-07-11T17:29:23.684944Z"
-    },
-    {
-      "trade_id": "66b1aa20-7b53-7378-505d-b2931a4a7629",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T17:29:21.84595Z"
-    },
-    {
       "trade_id": "53a59323-fe7c-6922-fe43-9674ba8f5d7e",
       "tier": "Winner",
       "driver": "Daniel Hemric",
@@ -463,17 +815,6 @@
       "yes_price": 4,
       "no_price": 96,
       "created_time": "2026-07-11T17:29:01.408871Z"
-    },
-    {
-      "trade_id": "f6c08ae3-93ed-59a4-f95b-0c13d1ee839f",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "no",
-      "count": 5,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:29:01.40843Z"
     },
     {
       "trade_id": "46170225-9097-4a7e-baa5-a515c074227d",
@@ -553,17 +894,6 @@
       "created_time": "2026-07-11T17:29:01.405731Z"
     },
     {
-      "trade_id": "bb9ad04d-0cbf-400d-743f-f347e95ca528",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "no",
-      "count": 5,
-      "yes_price": 21,
-      "no_price": 79,
-      "created_time": "2026-07-11T17:29:01.405166Z"
-    },
-    {
       "trade_id": "c40e2f1a-03a1-4d12-4630-333adf06409b",
       "tier": "Winner",
       "driver": "Parker Kligerman",
@@ -641,17 +971,6 @@
       "created_time": "2026-07-11T17:28:59.616166Z"
     },
     {
-      "trade_id": "464f2789-5294-7ee4-9316-d46efbd7a9bf",
-      "tier": "Winner",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARRACE-LIU26-COMO",
-      "side": "no",
-      "count": 4,
-      "yes_price": 11,
-      "no_price": 89,
-      "created_time": "2026-07-11T17:28:59.615971Z"
-    },
-    {
       "trade_id": "3b89c8f4-a9ac-6dba-ea9a-f93d5fc4efd6",
       "tier": "Winner",
       "driver": "Daniel Hemric",
@@ -683,83 +1002,6 @@
       "yes_price": 4,
       "no_price": 96,
       "created_time": "2026-07-11T17:28:59.615716Z"
-    },
-    {
-      "trade_id": "2e16cfac-eff7-57e8-8f59-9e432be08dd5",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "no",
-      "count": 4,
-      "yes_price": 22,
-      "no_price": 78,
-      "created_time": "2026-07-11T17:28:59.615594Z"
-    },
-    {
-      "trade_id": "13224b37-e845-6430-3cc5-403b0c3ab50f",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "no",
-      "count": 4,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:28:59.615583Z"
-    },
-    {
-      "trade_id": "fad947b3-5bd8-7eaf-6eb3-20b7ee7072f0",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 31,
-      "yes_price": 29,
-      "no_price": 71,
-      "created_time": "2026-07-11T17:28:55.741942Z"
-    },
-    {
-      "trade_id": "e153707c-28e7-7d05-445b-d8c81998aa51",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 25,
-      "yes_price": 28,
-      "no_price": 72,
-      "created_time": "2026-07-11T17:28:55.741942Z"
-    },
-    {
-      "trade_id": "bda42367-f077-7625-4e48-2a74664abfed",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 0,
-      "yes_price": 28,
-      "no_price": 72,
-      "created_time": "2026-07-11T17:28:55.741942Z"
-    },
-    {
-      "trade_id": "6c843a6d-f178-7539-7b99-151fc324a29d",
-      "tier": "Winner",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARRACE-LIU26-KAHO",
-      "side": "yes",
-      "count": 15,
-      "yes_price": 29,
-      "no_price": 71,
-      "created_time": "2026-07-11T17:28:55.741942Z"
-    },
-    {
-      "trade_id": "6397489d-704f-7264-1f1c-b57986ffe0c9",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 10,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T17:28:34.501451Z"
     },
     {
       "trade_id": "b7f73c51-dc38-5633-3547-a91d9c62b268",
@@ -806,17 +1048,6 @@
       "created_time": "2026-07-11T17:27:20.055995Z"
     },
     {
-      "trade_id": "0fd838f5-77af-4ce1-23a4-ba86dc1a6579",
-      "tier": "Winner",
-      "driver": "Thomas Annunziata",
-      "ticker": "KXNASCARRACE-LIU26-THAN",
-      "side": "no",
-      "count": 250,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T17:26:46.141952Z"
-    },
-    {
       "trade_id": "c959d6f8-80ff-7980-6170-1279b30c307e",
       "tier": "Top 3",
       "driver": "Thomas Annunziata",
@@ -859,17 +1090,6 @@
       "yes_price": 5,
       "no_price": 95,
       "created_time": "2026-07-11T17:23:53.446104Z"
-    },
-    {
-      "trade_id": "5700bea7-9e89-641e-10f7-ae434cb1d1e8",
-      "tier": "Winner",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARRACE-LIU26-COMO",
-      "side": "yes",
-      "count": 50,
-      "yes_price": 13,
-      "no_price": 87,
-      "created_time": "2026-07-11T17:23:50.963121Z"
     },
     {
       "trade_id": "480f3605-59e1-5d39-2ef9-fa0e723f9978",
@@ -1013,17 +1233,6 @@
       "yes_price": 20,
       "no_price": 80,
       "created_time": "2026-07-11T17:21:57.703459Z"
-    },
-    {
-      "trade_id": "33bd3fce-ff8d-78d1-b030-5809cbe81275",
-      "tier": "Winner",
-      "driver": "Thomas Annunziata",
-      "ticker": "KXNASCARRACE-LIU26-THAN",
-      "side": "yes",
-      "count": 161,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T17:21:55.645175Z"
     },
     {
       "trade_id": "93ea226d-98b3-5420-54a1-43b6a7d700d6",
@@ -1178,28 +1387,6 @@
       "yes_price": 3,
       "no_price": 97,
       "created_time": "2026-07-11T17:21:08.384658Z"
-    },
-    {
-      "trade_id": "0abee88a-e17a-4328-9891-93ced95ed220",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "yes",
-      "count": 3,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-11T17:21:08.384658Z"
-    },
-    {
-      "trade_id": "b491149c-02ca-7dd5-4274-a6351812170e",
-      "tier": "Winner",
-      "driver": "Thomas Annunziata",
-      "ticker": "KXNASCARRACE-LIU26-THAN",
-      "side": "yes",
-      "count": 3,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-11T17:21:06.900188Z"
     },
     {
       "trade_id": "a22e8e78-53e7-6cd5-a5f7-d8a7d89f9927",
@@ -1367,17 +1554,6 @@
       "created_time": "2026-07-11T17:19:53.584071Z"
     },
     {
-      "trade_id": "95f5fe85-d6c1-478a-0ebf-b666114deda4",
-      "tier": "Winner",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARRACE-LIU26-COMO",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 13,
-      "no_price": 87,
-      "created_time": "2026-07-11T17:19:27.749685Z"
-    },
-    {
       "trade_id": "73ecc7a8-a4b4-64d0-a454-081e193ce41c",
       "tier": "Winner",
       "driver": "Parker Kligerman",
@@ -1400,17 +1576,6 @@
       "created_time": "2026-07-11T17:19:23.970449Z"
     },
     {
-      "trade_id": "a65ee15e-40ab-79b3-8cfa-96dcd9ce5571",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "yes",
-      "count": 9,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-11T17:19:14.581403Z"
-    },
-    {
       "trade_id": "da14bd61-06f1-5932-d268-879f5a9215b4",
       "tier": "Winner",
       "driver": "Dawson Sutton",
@@ -1431,17 +1596,6 @@
       "yes_price": 1,
       "no_price": 99,
       "created_time": "2026-07-11T17:19:13.532629Z"
-    },
-    {
-      "trade_id": "ecd8e691-4a3e-7d4c-6312-bf6cd5082dd2",
-      "tier": "Winner",
-      "driver": "Thomas Annunziata",
-      "ticker": "KXNASCARRACE-LIU26-THAN",
-      "side": "yes",
-      "count": 27,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-11T17:19:10.926362Z"
     },
     {
       "trade_id": "d6423ece-e533-55d4-5d8d-a7ac605dc39e",
@@ -1477,39 +1631,6 @@
       "created_time": "2026-07-11T17:18:32.347669Z"
     },
     {
-      "trade_id": "6f904d01-3161-62dd-9bca-8fd874a27b29",
-      "tier": "Winner",
-      "driver": "Thomas Annunziata",
-      "ticker": "KXNASCARRACE-LIU26-THAN",
-      "side": "yes",
-      "count": 12,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T17:18:19.645472Z"
-    },
-    {
-      "trade_id": "603fc319-37fe-5c5a-8188-4bb91f1942fe",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 75,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:17:52.745373Z"
-    },
-    {
-      "trade_id": "53087570-44ef-5f61-ac1b-9dfd22050e88",
-      "tier": "Winner",
-      "driver": "Landen Lewis",
-      "ticker": "KXNASCARRACE-LIU26-LALE",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T17:17:52.745373Z"
-    },
-    {
       "trade_id": "64ad8d4d-b74b-60a3-dcf0-0150d567e62a",
       "tier": "Top 10",
       "driver": "Kaden Honeycutt",
@@ -1530,127 +1651,6 @@
       "yes_price": 11,
       "no_price": 89,
       "created_time": "2026-07-11T17:17:22.696353Z"
-    },
-    {
-      "trade_id": "585bcb99-792f-4688-52e4-dc5188109330",
-      "tier": "Winner",
-      "driver": "Giovanni Ruggiero",
-      "ticker": "KXNASCARRACE-LIU26-GIRU",
-      "side": "yes",
-      "count": 32,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-11T17:17:22.375426Z"
-    },
-    {
-      "trade_id": "564edf2f-8687-4699-67d9-86197940f496",
-      "tier": "Winner",
-      "driver": "Giovanni Ruggiero",
-      "ticker": "KXNASCARRACE-LIU26-GIRU",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 7,
-      "no_price": 93,
-      "created_time": "2026-07-11T17:17:22.375426Z"
-    },
-    {
-      "trade_id": "ae7f5e92-58e0-4133-c546-35c0a019b8a9",
-      "tier": "Top 3",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARTOP3-LIU26-KAHO",
-      "side": "yes",
-      "count": 150,
-      "yes_price": 48,
-      "no_price": 52,
-      "created_time": "2026-07-11T17:17:07.208842Z"
-    },
-    {
-      "trade_id": "9d7d302f-65d4-64ba-a6c9-18e6960d90a3",
-      "tier": "Winner",
-      "driver": "Ty Majeski",
-      "ticker": "KXNASCARRACE-LIU26-TYMA",
-      "side": "yes",
-      "count": 117,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T17:17:01.980862Z"
-    },
-    {
-      "trade_id": "7a089717-a803-706b-8bc0-889d6ec3adc9",
-      "tier": "Winner",
-      "driver": "Daniel Hemric",
-      "ticker": "KXNASCARRACE-LIU26-DAHE",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-11T17:16:48.906395Z"
-    },
-    {
-      "trade_id": "3c3db20d-6e8b-7664-6944-14b357901551",
-      "tier": "Winner",
-      "driver": "Chandler Smith",
-      "ticker": "KXNASCARRACE-LIU26-CHSM",
-      "side": "yes",
-      "count": 500,
-      "yes_price": 11,
-      "no_price": 89,
-      "created_time": "2026-07-11T17:16:42.706538Z"
-    },
-    {
-      "trade_id": "aff65c78-f81c-7fe3-006c-fbbfe76b0a21",
-      "tier": "Top 3",
-      "driver": "Kaden Honeycutt",
-      "ticker": "KXNASCARTOP3-LIU26-KAHO",
-      "side": "yes",
-      "count": 10,
-      "yes_price": 48,
-      "no_price": 52,
-      "created_time": "2026-07-11T17:16:42.632012Z"
-    },
-    {
-      "trade_id": "68c7c7e5-6a9d-56f6-51b1-cf1e4043ecf1",
-      "tier": "Top 10",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP10-LIU26-COMO",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 58,
-      "no_price": 42,
-      "created_time": "2026-07-11T17:16:05.284774Z"
-    },
-    {
-      "trade_id": "290a8171-b8ff-5121-6636-332e1505ab2c",
-      "tier": "Top 10",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP10-LIU26-COMO",
-      "side": "yes",
-      "count": 88,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:16:05.284774Z"
-    },
-    {
-      "trade_id": "8a2dd131-7758-403d-2a43-0ad8fae641a9",
-      "tier": "Top 10",
-      "driver": "Connor Mosack",
-      "ticker": "KXNASCARTOP10-LIU26-COMO",
-      "side": "no",
-      "count": 12,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-07-11T17:15:41.573709Z"
-    },
-    {
-      "trade_id": "a19cbdae-2bfe-6393-0dbc-8a62ae2804ed",
-      "tier": "Top 10",
-      "driver": "Christian Eckes",
-      "ticker": "KXNASCARTOP10-LIU26-CHEC",
-      "side": "yes",
-      "count": 107,
-      "yes_price": 45,
-      "no_price": 55,
-      "created_time": "2026-07-11T17:15:28.944523Z"
     }
   ]
 }

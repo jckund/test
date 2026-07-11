@@ -27,7 +27,7 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Ben Maier",
-      "no_ask": 100,
+      "no_ask": 60,
       "no_bid": 20,
       "open_interest": 406,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 606,
       "volume_24h": 118,
       "yes_ask": 80,
-      "yes_bid": 0
+      "yes_bid": 40
     },
     "KXNASCARTOP10-LIU26-BERH": {
       "last_price": 49,
@@ -206,18 +206,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-LIU26-GRDO": {
-      "last_price": 12,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Graham Doyle",
-      "no_ask": 89,
-      "no_bid": 84,
-      "open_interest": 1209,
+      "no_ask": 91,
+      "no_bid": 86,
+      "open_interest": 1164,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-GRDO",
-      "volume": 2470,
+      "volume": 2650,
       "volume_24h": 1205,
-      "yes_ask": 16,
-      "yes_bid": 11
+      "yes_ask": 14,
+      "yes_bid": 9
     },
     "KXNASCARTOP10-LIU26-GREN": {
       "last_price": 52,
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Thomas Annunziata",
       "no_ask": 69,
-      "no_bid": 1,
+      "no_bid": 10,
       "open_interest": 2016,
       "status": "active",
       "ticker": "KXNASCARTOP10-LIU26-THAN",
       "volume": 2029,
       "volume_24h": 1226,
-      "yes_ask": 99,
+      "yes_ask": 90,
       "yes_bid": 31
     },
     "KXNASCARTOP10-LIU26-TYAN": {
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-11T17:32:09.467669+00:00",
+  "scraped_at": "2026-07-11T17:38:50.890577+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-liu26",
   "tier": "top10"
 }
