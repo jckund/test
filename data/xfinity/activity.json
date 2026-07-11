@@ -1,7 +1,381 @@
 {
-  "updated_at": "2026-07-11T22:14:13.472520+00:00",
+  "updated_at": "2026-07-11T22:23:50.472648+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "6100fb96-0d1b-6e02-abfc-1456478733de",
+      "tier": "Winner",
+      "driver": "Sheldon Creed",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SHCR",
+      "side": "yes",
+      "count": 157,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:23:44.306735Z"
+    },
+    {
+      "trade_id": "464c265e-1849-431b-cdbb-9e43d7ab888f",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JUAL",
+      "side": "yes",
+      "count": 52,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:23:24.823198Z"
+    },
+    {
+      "trade_id": "9e1fe308-f8b4-648b-f8ff-c3c06ee382b9",
+      "tier": "Winner",
+      "driver": "Austin Hill",
+      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
+      "side": "yes",
+      "count": 53,
+      "yes_price": 26,
+      "no_price": 74,
+      "created_time": "2026-07-11T22:23:09.549041Z"
+    },
+    {
+      "trade_id": "800740d3-0dc1-5d6a-a9ee-64f3caa3382b",
+      "tier": "Winner",
+      "driver": "Sam Mayer",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SAMA",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T22:22:40.398392Z"
+    },
+    {
+      "trade_id": "dd8725c1-f847-4e88-c44d-ebc99da6b4e8",
+      "tier": "Winner",
+      "driver": "Jesse Love",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JELO",
+      "side": "yes",
+      "count": 53,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-11T22:22:35.992848Z"
+    },
+    {
+      "trade_id": "96841811-e3bc-7c81-9a45-7e3ce8f71b6b",
+      "tier": "Winner",
+      "driver": "Sheldon Creed",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SHCR",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T22:22:24.419799Z"
+    },
+    {
+      "trade_id": "9309bf66-14d8-5627-d749-27d1708255ea",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CODA",
+      "side": "yes",
+      "count": 28,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:22:07.120364Z"
+    },
+    {
+      "trade_id": "6e348204-498e-6054-238c-22193a42d39c",
+      "tier": "Winner",
+      "driver": "William Sawalich",
+      "ticker": "KXNASCARRACE-FHEALTH25026-WISA",
+      "side": "yes",
+      "count": 486,
+      "yes_price": 5,
+      "no_price": 95,
+      "created_time": "2026-07-11T22:21:57.024472Z"
+    },
+    {
+      "trade_id": "1823330d-916c-60d1-3936-5b65bce10b3f",
+      "tier": "Winner",
+      "driver": "William Sawalich",
+      "ticker": "KXNASCARRACE-FHEALTH25026-WISA",
+      "side": "yes",
+      "count": 330,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-11T22:21:57.024472Z"
+    },
+    {
+      "trade_id": "b97a4ce3-f6d4-659e-39da-9b15a7ac55f8",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CODA",
+      "side": "yes",
+      "count": 14,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T22:21:43.780362Z"
+    },
+    {
+      "trade_id": "074db066-f650-6ff1-11c3-9e68776735a0",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CODA",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T22:21:43.780362Z"
+    },
+    {
+      "trade_id": "6ca8fc22-4510-73db-b040-cbcbaedc3063",
+      "tier": "Winner",
+      "driver": "Sammy Smith",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SASM",
+      "side": "yes",
+      "count": 12,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-11T22:21:32.735977Z"
+    },
+    {
+      "trade_id": "f7535335-290d-49bf-ee86-fe5aede9529f",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JUAL",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:21:13.712379Z"
+    },
+    {
+      "trade_id": "50e7428c-c983-5bb6-e7e9-f2ab05fbfe70",
+      "tier": "Winner",
+      "driver": "Brent Crews",
+      "ticker": "KXNASCARRACE-FHEALTH25026-BRCR",
+      "side": "yes",
+      "count": 43,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T22:21:07.901509Z"
+    },
+    {
+      "trade_id": "402584fa-af43-41bc-70ca-fed2977513e4",
+      "tier": "Winner",
+      "driver": "Jesse Love",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JELO",
+      "side": "yes",
+      "count": 2,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-11T22:21:07.662364Z"
+    },
+    {
+      "trade_id": "971d7e01-fd1f-4578-9ae7-305fed73a30f",
+      "tier": "Winner",
+      "driver": "Carson Kvapil",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:21:00.950264Z"
+    },
+    {
+      "trade_id": "cc0a3c4c-44bc-680d-1776-cfd98d4e52fb",
+      "tier": "Winner",
+      "driver": "William Sawalich",
+      "ticker": "KXNASCARRACE-FHEALTH25026-WISA",
+      "side": "yes",
+      "count": 57,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-11T22:20:42.596461Z"
+    },
+    {
+      "trade_id": "97f90c37-5432-6b08-18e7-0944b10c8fa7",
+      "tier": "Winner",
+      "driver": "Parker Retzlaff",
+      "ticker": "KXNASCARRACE-FHEALTH25026-PARE",
+      "side": "yes",
+      "count": 156,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-11T22:20:36.569728Z"
+    },
+    {
+      "trade_id": "e4beecbc-6930-4313-263a-6f8e3e3653d1",
+      "tier": "Winner",
+      "driver": "Carson Ware",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CAWA",
+      "side": "yes",
+      "count": 146,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-07-11T22:20:21.209336Z"
+    },
+    {
+      "trade_id": "6f5e1118-bda2-5464-4585-92f1e25c66ad",
+      "tier": "Winner",
+      "driver": "Nicholas Sanchez",
+      "ticker": "KXNASCARRACE-FHEALTH25026-NISA",
+      "side": "yes",
+      "count": 91,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-11T22:20:12.347648Z"
+    },
+    {
+      "trade_id": "0bb76ae4-487c-536f-49b5-5e7f9d94f966",
+      "tier": "Winner",
+      "driver": "Nicholas Sanchez",
+      "ticker": "KXNASCARRACE-FHEALTH25026-NISA",
+      "side": "yes",
+      "count": 132,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-11T22:20:12.347648Z"
+    },
+    {
+      "trade_id": "fe98974a-178b-64b0-b5b9-3cb26d15edeb",
+      "tier": "Winner",
+      "driver": "Carson Kvapil",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
+      "side": "yes",
+      "count": 41,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:19:58.423691Z"
+    },
+    {
+      "trade_id": "2588f8f3-a84c-5753-098f-88f5d0893675",
+      "tier": "Winner",
+      "driver": "Austin Hill",
+      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
+      "side": "yes",
+      "count": 35,
+      "yes_price": 26,
+      "no_price": 74,
+      "created_time": "2026-07-11T22:19:30.165239Z"
+    },
+    {
+      "trade_id": "e7e74dde-8d71-7dae-123f-fd8940effe47",
+      "tier": "Winner",
+      "driver": "Sam Mayer",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SAMA",
+      "side": "yes",
+      "count": 43,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T22:19:03.544322Z"
+    },
+    {
+      "trade_id": "3261ecba-7258-5773-7f7d-4da5e412fba9",
+      "tier": "Winner",
+      "driver": "Jeb Burton",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JEBU",
+      "side": "yes",
+      "count": 115,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-07-11T22:18:48.471773Z"
+    },
+    {
+      "trade_id": "6bb07c1a-ab5c-76f9-e382-214686490523",
+      "tier": "Winner",
+      "driver": "William Sawalich",
+      "ticker": "KXNASCARRACE-FHEALTH25026-WISA",
+      "side": "yes",
+      "count": 23,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-11T22:18:28.97611Z"
+    },
+    {
+      "trade_id": "bb2dbbcb-9d03-66dc-663b-27c9c768957b",
+      "tier": "Winner",
+      "driver": "Carson Kvapil",
+      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
+      "side": "yes",
+      "count": 52,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:18:17.18991Z"
+    },
+    {
+      "trade_id": "b758a823-75d9-738f-9afc-c237c21773f7",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-FHEALTH25026-JUAL",
+      "side": "yes",
+      "count": 48,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-07-11T22:18:13.352762Z"
+    },
+    {
+      "trade_id": "20cb02bc-e4b0-47f4-90b5-a13b8e7c408e",
+      "tier": "Winner",
+      "driver": "Dean Thompson",
+      "ticker": "KXNASCARRACE-FHEALTH25026-DETH",
+      "side": "yes",
+      "count": 468,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-07-11T22:17:59.838291Z"
+    },
+    {
+      "trade_id": "767ca8f0-5ad6-41d4-6b35-48665b78ee1f",
+      "tier": "Winner",
+      "driver": "Parker Retzlaff",
+      "ticker": "KXNASCARRACE-FHEALTH25026-PARE",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-11T22:17:47.28561Z"
+    },
+    {
+      "trade_id": "a0c6b28f-929a-5201-b239-6ad8d1a7fd3a",
+      "tier": "Winner",
+      "driver": "Kyle Sieg",
+      "ticker": "KXNASCARRACE-FHEALTH25026-KYSI",
+      "side": "yes",
+      "count": 1216,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-07-11T22:17:40.092674Z"
+    },
+    {
+      "trade_id": "69823059-ced0-7413-f6e3-47e75ba1000d",
+      "tier": "Winner",
+      "driver": "Austin Hill",
+      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
+      "side": "yes",
+      "count": 110,
+      "yes_price": 26,
+      "no_price": 74,
+      "created_time": "2026-07-11T22:16:55.376396Z"
+    },
+    {
+      "trade_id": "f77f0168-4a61-6c77-7bdb-39aee8a3bb8c",
+      "tier": "Winner",
+      "driver": "Brandon Jones",
+      "ticker": "KXNASCARRACE-FHEALTH25026-BRJO",
+      "side": "yes",
+      "count": 100,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-07-11T22:16:19.687394Z"
+    },
+    {
+      "trade_id": "3181aa19-e3ed-60f6-42b6-8f58bfd39b27",
+      "tier": "Winner",
+      "driver": "Sam Mayer",
+      "ticker": "KXNASCARRACE-FHEALTH25026-SAMA",
+      "side": "yes",
+      "count": 94,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-07-11T22:15:46.218077Z"
+    },
     {
       "trade_id": "85cd8762-88ca-7485-39d7-2063c0802932",
       "tier": "Winner",
@@ -322,17 +696,6 @@
       "created_time": "2026-07-11T22:03:43.699029Z"
     },
     {
-      "trade_id": "ee44e609-7792-7ff4-bb1f-ffb520b4d7d8",
-      "tier": "Winner",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
-      "side": "yes",
-      "count": 13,
-      "yes_price": 26,
-      "no_price": 74,
-      "created_time": "2026-07-11T22:03:41.064044Z"
-    },
-    {
       "trade_id": "b4460ddc-146e-77af-c02f-f68858c9ef20",
       "tier": "Winner",
       "driver": "Jesse Love",
@@ -410,28 +773,6 @@
       "created_time": "2026-07-11T22:03:03.327346Z"
     },
     {
-      "trade_id": "3aba0154-d412-7230-9897-6c677a418dac",
-      "tier": "Winner",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
-      "side": "yes",
-      "count": 22,
-      "yes_price": 26,
-      "no_price": 74,
-      "created_time": "2026-07-11T22:03:01.787792Z"
-    },
-    {
-      "trade_id": "510609b1-842e-5834-ba39-ecc2e49bd8fc",
-      "tier": "Winner",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARRACE-FHEALTH25026-AUHI",
-      "side": "yes",
-      "count": 4,
-      "yes_price": 26,
-      "no_price": 74,
-      "created_time": "2026-07-11T22:02:57.820088Z"
-    },
-    {
       "trade_id": "95592945-2f85-693b-b8b8-c67845de0805",
       "tier": "Winner",
       "driver": "Parker Retzlaff",
@@ -474,17 +815,6 @@
       "yes_price": 4,
       "no_price": 96,
       "created_time": "2026-07-11T22:02:15.693817Z"
-    },
-    {
-      "trade_id": "d1b407f8-5132-703b-7405-609f649da178",
-      "tier": "Winner",
-      "driver": "Jesse Love",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JELO",
-      "side": "yes",
-      "count": 59,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-07-11T22:02:02.897552Z"
     },
     {
       "trade_id": "7295aade-ccdf-631c-89b7-4c96a2b24d7d",
@@ -606,17 +936,6 @@
       "yes_price": 3,
       "no_price": 97,
       "created_time": "2026-07-11T21:56:29.500262Z"
-    },
-    {
-      "trade_id": "fa031c39-454e-6d23-420d-54a575a53c54",
-      "tier": "Winner",
-      "driver": "Jesse Love",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JELO",
-      "side": "yes",
-      "count": 12,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-07-11T21:56:26.397926Z"
     },
     {
       "trade_id": "cfb3666b-eb47-6475-fb89-0e2ecddb28a0",
@@ -1070,17 +1389,6 @@
       "created_time": "2026-07-11T21:33:07.001722Z"
     },
     {
-      "trade_id": "48cdef0d-7cad-5eb0-35de-952bf7b37753",
-      "tier": "Winner",
-      "driver": "Brent Crews",
-      "ticker": "KXNASCARRACE-FHEALTH25026-BRCR",
-      "side": "yes",
-      "count": 18,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:33:07.001722Z"
-    },
-    {
       "trade_id": "8f2742dc-5874-7e4d-6a4a-42debff3c923",
       "tier": "Winner",
       "driver": "Rajah Caruth",
@@ -1125,17 +1433,6 @@
       "created_time": "2026-07-11T21:31:09.383429Z"
     },
     {
-      "trade_id": "54aabf8d-4382-43b3-070a-bfa19f7adc39",
-      "tier": "Winner",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARRACE-FHEALTH25026-CODA",
-      "side": "yes",
-      "count": 85,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:31:09.383429Z"
-    },
-    {
       "trade_id": "9767a3c6-fbef-6571-134f-dca0ae13a4d2",
       "tier": "Winner",
       "driver": "Taylor Gray",
@@ -1167,28 +1464,6 @@
       "yes_price": 4,
       "no_price": 96,
       "created_time": "2026-07-11T21:30:37.480814Z"
-    },
-    {
-      "trade_id": "c6dd5b3c-9fd3-7d98-6c95-a27008e688bf",
-      "tier": "Winner",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
-      "side": "yes",
-      "count": 104,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:30:30.256155Z"
-    },
-    {
-      "trade_id": "60e8b028-f5a7-5200-ab8e-178accbc8b67",
-      "tier": "Winner",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
-      "side": "yes",
-      "count": 10,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:30:12.267299Z"
     },
     {
       "trade_id": "97ad07e7-4aac-49bb-e363-f3982e5409f8",
@@ -1244,17 +1519,6 @@
       "yes_price": 9,
       "no_price": 91,
       "created_time": "2026-07-11T21:28:41.847288Z"
-    },
-    {
-      "trade_id": "b36cafc3-0033-7700-b328-d77481b3016f",
-      "tier": "Winner",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARRACE-FHEALTH25026-CAKV",
-      "side": "yes",
-      "count": 21,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:28:41.748809Z"
     },
     {
       "trade_id": "c5653403-ec84-58c8-8506-d9d6b0a34772",
@@ -1378,39 +1642,6 @@
       "created_time": "2026-07-11T21:18:54.341046Z"
     },
     {
-      "trade_id": "84883315-20e4-52c6-4cb2-4c1bf0c9836e",
-      "tier": "Winner",
-      "driver": "Parker Retzlaff",
-      "ticker": "KXNASCARRACE-FHEALTH25026-PARE",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:18:49.526279Z"
-    },
-    {
-      "trade_id": "b32eea41-642b-57e5-6ba2-1519425c329e",
-      "tier": "Winner",
-      "driver": "Sheldon Creed",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SHCR",
-      "side": "yes",
-      "count": 58,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:18:43.945885Z"
-    },
-    {
-      "trade_id": "21f538de-c4a5-538d-7337-4361c46334be",
-      "tier": "Winner",
-      "driver": "Sheldon Creed",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SHCR",
-      "side": "yes",
-      "count": 51,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:18:43.945885Z"
-    },
-    {
       "trade_id": "eda47e89-a5fb-441e-5e43-cf10ddd1e912",
       "tier": "Winner",
       "driver": "Sammy Smith",
@@ -1420,237 +1651,6 @@
       "yes_price": 6,
       "no_price": 94,
       "created_time": "2026-07-11T21:18:26.731773Z"
-    },
-    {
-      "trade_id": "92b1f7c5-a9f0-4ab1-a905-c9a48f142104",
-      "tier": "Winner",
-      "driver": "Anthony Alfredo",
-      "ticker": "KXNASCARRACE-FHEALTH25026-ANAL",
-      "side": "yes",
-      "count": 428,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:18:23.090129Z"
-    },
-    {
-      "trade_id": "01fab398-2dbf-6199-edb7-028b743540b8",
-      "tier": "Winner",
-      "driver": "Justin Allgaier",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JUAL",
-      "side": "yes",
-      "count": 20,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:16:56.844949Z"
-    },
-    {
-      "trade_id": "4356802c-f2de-4b8b-b80e-1b0b850fbc7d",
-      "tier": "Winner",
-      "driver": "Anthony Alfredo",
-      "ticker": "KXNASCARRACE-FHEALTH25026-ANAL",
-      "side": "yes",
-      "count": 72,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T21:16:47.763958Z"
-    },
-    {
-      "trade_id": "a24b514a-21e7-4e03-0597-f163af841fa9",
-      "tier": "Winner",
-      "driver": "Jeb Burton",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JEBU",
-      "side": "yes",
-      "count": 103,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:16:36.540703Z"
-    },
-    {
-      "trade_id": "5ae47316-41b4-4744-2ae5-e6acac818849",
-      "tier": "Winner",
-      "driver": "Jeb Burton",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JEBU",
-      "side": "yes",
-      "count": 397,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:16:36.540703Z"
-    },
-    {
-      "trade_id": "5f2dfb24-39ef-425a-5ab7-d9c2fb7bdd03",
-      "tier": "Winner",
-      "driver": "Brennan Poole",
-      "ticker": "KXNASCARRACE-FHEALTH25026-BRPO",
-      "side": "yes",
-      "count": 94,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T21:15:28.001381Z"
-    },
-    {
-      "trade_id": "21410f23-9d39-6280-2066-6e8adb1dfb29",
-      "tier": "Winner",
-      "driver": "Leland Honeyman",
-      "ticker": "KXNASCARRACE-FHEALTH25026-LEHO",
-      "side": "yes",
-      "count": 94,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-11T21:15:13.127739Z"
-    },
-    {
-      "trade_id": "76bd99b0-15a5-5579-c659-21a3cab2ec0c",
-      "tier": "Winner",
-      "driver": "Brandon Jones",
-      "ticker": "KXNASCARRACE-FHEALTH25026-BRJO",
-      "side": "yes",
-      "count": 117,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:14:37.593994Z"
-    },
-    {
-      "trade_id": "6a9bd17c-2c9a-77cb-770a-d004f8bf2681",
-      "tier": "Winner",
-      "driver": "Anthony Alfredo",
-      "ticker": "KXNASCARRACE-FHEALTH25026-ANAL",
-      "side": "yes",
-      "count": 2,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T21:14:36.186434Z"
-    },
-    {
-      "trade_id": "fd4752fe-99a6-6b7e-99ef-42640d518e66",
-      "tier": "Winner",
-      "driver": "William Sawalich",
-      "ticker": "KXNASCARRACE-FHEALTH25026-WISA",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:11:31.538265Z"
-    },
-    {
-      "trade_id": "5cefcbcf-c8d4-676c-6538-0c3fc5eeb7a8",
-      "tier": "Winner",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARRACE-FHEALTH25026-CODA",
-      "side": "yes",
-      "count": 12,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:10:33.988082Z"
-    },
-    {
-      "trade_id": "8ee948a3-4997-6d04-85d4-88c1ba093c75",
-      "tier": "Winner",
-      "driver": "Sammy Smith",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SASM",
-      "side": "yes",
-      "count": 10,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:10:07.301788Z"
-    },
-    {
-      "trade_id": "664d334d-7a85-4a82-18b3-e2b53e2d1493",
-      "tier": "Winner",
-      "driver": "Sam Mayer",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SAMA",
-      "side": "yes",
-      "count": 9,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-11T21:09:32.851772Z"
-    },
-    {
-      "trade_id": "de0357e3-d644-60b3-8ce7-02c51537a78e",
-      "tier": "Winner",
-      "driver": "Harrison Burton",
-      "ticker": "KXNASCARRACE-FHEALTH25026-HABU",
-      "side": "yes",
-      "count": 36,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T21:07:17.117395Z"
-    },
-    {
-      "trade_id": "7b04a74a-3644-69fd-b7fa-c2c6e7ea32b8",
-      "tier": "Winner",
-      "driver": "Harrison Burton",
-      "ticker": "KXNASCARRACE-FHEALTH25026-HABU",
-      "side": "yes",
-      "count": 42,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T21:07:17.117395Z"
-    },
-    {
-      "trade_id": "6977a8cd-76be-409a-a7e0-6d7653e30d45",
-      "tier": "Winner",
-      "driver": "Rajah Caruth",
-      "ticker": "KXNASCARRACE-FHEALTH25026-RACA",
-      "side": "yes",
-      "count": 94,
-      "yes_price": 5,
-      "no_price": 95,
-      "created_time": "2026-07-11T21:06:32.760872Z"
-    },
-    {
-      "trade_id": "c9cc2986-0045-438a-f75d-51bd07eda7fb",
-      "tier": "Winner",
-      "driver": "Sam Mayer",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SAMA",
-      "side": "yes",
-      "count": 87,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-11T21:05:39.647522Z"
-    },
-    {
-      "trade_id": "8165730b-a11f-6b0c-4de7-f1d48353aa29",
-      "tier": "Winner",
-      "driver": "Parker Retzlaff",
-      "ticker": "KXNASCARRACE-FHEALTH25026-PARE",
-      "side": "yes",
-      "count": 765,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-11T21:05:23.446483Z"
-    },
-    {
-      "trade_id": "33e8ac17-28d7-7c49-dd6b-af3a94a0548c",
-      "tier": "Winner",
-      "driver": "Justin Allgaier",
-      "ticker": "KXNASCARRACE-FHEALTH25026-JUAL",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-07-11T21:04:58.020639Z"
-    },
-    {
-      "trade_id": "8a73554b-5ad6-4b67-e55c-c298385bd991",
-      "tier": "Winner",
-      "driver": "Anthony Alfredo",
-      "ticker": "KXNASCARRACE-FHEALTH25026-ANAL",
-      "side": "yes",
-      "count": 62,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-07-11T21:04:40.053601Z"
-    },
-    {
-      "trade_id": "9b45447e-9a44-6dd0-fc6e-eca6976e83ec",
-      "tier": "Winner",
-      "driver": "Sammy Smith",
-      "ticker": "KXNASCARRACE-FHEALTH25026-SASM",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-07-11T21:04:02.927788Z"
     }
   ]
 }
