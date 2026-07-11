@@ -33,6 +33,8 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
+import alerts
+
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
@@ -70,7 +72,13 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 SERIES_INDEX_PATH = os.path.join(DATA_DIR, "series.json")
 
-TRADES_PER_MARKET = 10
+# How many recent trades to pull per market each run. Higher values widen the
+# window that large-trade alerting sees between runs (at the cost of more API
+# calls); override with KALSHI_TRADES_PER_MARKET. See alerts.py.
+try:
+    TRADES_PER_MARKET = max(1, int(os.environ.get("KALSHI_TRADES_PER_MARKET", "10")))
+except ValueError:
+    TRADES_PER_MARKET = 10
 ACTIVITY_MAX = 150
 
 TRACKED_FIELDS = [
@@ -429,8 +437,11 @@ def fetch_trades(ticker: str, limit: int = TRADES_PER_MARKET) -> list:
     return _get_json(url).get("trades", []) or []
 
 
-def build_activity(events: list, series_dir: str) -> None:
-    """Merge recent trades across this race's markets into <series>/activity.json."""
+def build_activity(events: list, series_dir: str) -> list:
+    """Merge recent trades across this race's markets into <series>/activity.json.
+
+    Returns the full deduped trade list (not just the truncated feed) so callers
+    like large-trade alerting can inspect every trade fetched this run."""
     meta = {}  # market ticker -> (tier label, driver name)
     for ev in events:
         snap = load_previous(os.path.join(series_dir, ev["key"], "snapshot.json"))
@@ -457,8 +468,9 @@ def build_activity(events: list, series_dir: str) -> None:
         except Exception as e:  # noqa: BLE001 - skip a market, keep the feed
             print(f"trades failed for {tk}: {e}", file=sys.stderr)
 
-    ordered = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
-                     reverse=True)[:ACTIVITY_MAX]
+    ordered_all = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
+                         reverse=True)
+    ordered = ordered_all[:ACTIVITY_MAX]
     out = {"updated_at": datetime.now(timezone.utc).isoformat(),
            "count": len(ordered), "trades": ordered}
     os.makedirs(series_dir, exist_ok=True)
@@ -466,6 +478,7 @@ def build_activity(events: list, series_dir: str) -> None:
         json.dump(out, fh, indent=2)
         fh.write("\n")
     print(f"activity: {len(ordered)} recent trades", file=sys.stderr)
+    return ordered_all
 
 
 def build_index(events: list, series_dir: str, race_title: str, page_url: str) -> None:
@@ -507,10 +520,22 @@ def process_series(rs: dict) -> dict | None:
         return None
 
     build_index(events, series_dir, rs["race_title"], rs["page_url"])
+    trades = []
     try:
-        build_activity(events, series_dir)
+        trades = build_activity(events, series_dir)
     except Exception as e:  # noqa: BLE001 - activity is best-effort
         print(f"activity build failed for {rs['key']}: {e}", file=sys.stderr)
+
+    # Large-trade alerting (Cup series by default). Best-effort: a failure here
+    # must not lose the scraped data we already wrote.
+    if rs["key"] in alerts.watched_series():
+        try:
+            fired = alerts.process(series_dir, rs["label"], trades)
+            if fired:
+                print(f"alerts: {len(fired)} {rs['key']} trade(s) over "
+                      f"${alerts.min_usd():,.0f}", file=sys.stderr)
+        except Exception as e:  # noqa: BLE001
+            print(f"alerts failed for {rs['key']}: {e}", file=sys.stderr)
 
     return {"key": rs["key"], "label": rs["label"], "race_title": rs["race_title"],
             "full": rs["full"], "source_url": rs["page_url"],
