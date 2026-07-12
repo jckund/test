@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 94,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 138,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-ALBO",
       "volume": 138,
-      "volume_24h": 0,
-      "yes_ask": 13,
+      "volume_24h": 78,
+      "yes_ask": 12,
       "yes_bid": 6
     },
     "KXNASCARTOP5-QUAS4AA26-AUCI": {
@@ -56,13 +56,13 @@
       "liquidity": 0.0,
       "name": "Austin Dillon",
       "no_ask": 97,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 115,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-AUDI",
       "volume": 115,
-      "volume_24h": 0,
-      "yes_ask": 10,
+      "volume_24h": 115,
+      "yes_ask": 9,
       "yes_bid": 3
     },
     "KXNASCARTOP5-QUAS4AA26-AUHI": {
@@ -70,13 +70,13 @@
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 93,
-      "no_bid": 86,
+      "no_bid": 87,
       "open_interest": 506,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-AUHI",
       "volume": 518,
       "volume_24h": 11,
-      "yes_ask": 14,
+      "yes_ask": 13,
       "yes_bid": 7
     },
     "KXNASCARTOP5-QUAS4AA26-BJMC": {
@@ -127,11 +127,11 @@
       "name": "Carson Hocevar",
       "no_ask": 81,
       "no_bid": 76,
-      "open_interest": 365,
+      "open_interest": 429,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-CAHO",
-      "volume": 365,
-      "volume_24h": 20,
+      "volume": 429,
+      "volume_24h": 83,
       "yes_ask": 24,
       "yes_bid": 19
     },
@@ -391,7 +391,7 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 89,
       "open_interest": 160,
       "status": "active",
@@ -399,7 +399,7 @@
       "volume": 164,
       "volume_24h": 21,
       "yes_ask": 11,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP5-QUAS4AA26-ROCH": {
       "last_price": 20,
@@ -430,17 +430,17 @@
       "yes_bid": 34
     },
     "KXNASCARTOP5-QUAS4AA26-RYPR": {
-      "last_price": 8,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 96,
-      "no_bid": 90,
-      "open_interest": 195,
+      "no_bid": 89,
+      "open_interest": 214,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-RYPR",
-      "volume": 195,
-      "volume_24h": 0,
-      "yes_ask": 10,
+      "volume": 214,
+      "volume_24h": 18,
+      "yes_ask": 11,
       "yes_bid": 4
     },
     "KXNASCARTOP5-QUAS4AA26-SHVA": {
@@ -505,11 +505,11 @@
       "name": "Tyler Reddick",
       "no_ask": 73,
       "no_bid": 72,
-      "open_interest": 660,
+      "open_interest": 690,
       "status": "active",
       "ticker": "KXNASCARTOP5-QUAS4AA26-TYRE",
-      "volume": 663,
-      "volume_24h": 3,
+      "volume": 693,
+      "volume_24h": 33,
       "yes_ask": 28,
       "yes_bid": 27
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-12T00:13:58.886641+00:00",
+  "scraped_at": "2026-07-12T01:19:49.528718+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top5"
 }
