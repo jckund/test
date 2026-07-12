@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-12T22:52:21.834313+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 5: 18c -> 24c (+317, +6pp)
+- **Shane Van Gisbergen** Top 10: 20c -> 24c (+317, +4pp)
+- **Carson Hocevar** Top 5: 24c -> 27c (+270, +3pp)
+
+_leader win YES 13c · scraped 2026-07-12T22:52:21.834313+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-12T22:32:08.347936+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
