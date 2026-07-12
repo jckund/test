@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-ALBO",
       "volume": 481,
-      "volume_24h": 168,
+      "volume_24h": 220,
       "yes_ask": 9,
       "yes_bid": 4
     },
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUCI",
       "volume": 678,
-      "volume_24h": 0,
+      "volume_24h": 30,
       "yes_ask": 16,
       "yes_bid": 10
     },
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-AUDI",
       "volume": 353,
-      "volume_24h": 0,
+      "volume_24h": 164,
       "yes_ask": 6,
       "yes_bid": 0
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-BRKE",
       "volume": 108,
-      "volume_24h": 108,
+      "volume_24h": 8,
       "yes_ask": 12,
       "yes_bid": 7
     },
@@ -248,15 +248,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-QUAS4AA26-DASU": {
-      "last_price": 10,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 95,
       "no_bid": 91,
-      "open_interest": 717,
+      "open_interest": 718,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-DASU",
-      "volume": 862,
+      "volume": 863,
       "volume_24h": 417,
       "yes_ask": 9,
       "yes_bid": 5
@@ -309,11 +309,11 @@
       "name": "Joey Logano",
       "no_ask": 85,
       "no_bid": 81,
-      "open_interest": 786,
+      "open_interest": 788,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-JOLO",
-      "volume": 786,
-      "volume_24h": 779,
+      "volume": 788,
+      "volume_24h": 679,
       "yes_ask": 19,
       "yes_bid": 15
     },
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 81,
-      "no_bid": 77,
-      "open_interest": 1049,
+      "no_bid": 78,
+      "open_interest": 1050,
       "status": "active",
       "ticker": "KXNASCARTOP3-QUAS4AA26-RYBL",
-      "volume": 1073,
+      "volume": 1074,
       "volume_24h": 702,
-      "yes_ask": 23,
+      "yes_ask": 22,
       "yes_bid": 19
     },
     "KXNASCARTOP3-QUAS4AA26-RYPR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-12T13:50:26.015639+00:00",
+  "scraped_at": "2026-07-12T14:03:33.877224+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top3"
 }
