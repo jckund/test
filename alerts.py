@@ -137,12 +137,31 @@ def _fmt_usd(v: float) -> str:
     return f"${v:,.2f}"
 
 
+def american_odds(a: dict):
+    """American (moneyline) odds for the driver's outcome, from the trade's
+    implied YES price. A NO taker's price is flipped to the YES side first.
+    e.g. 6¢ -> '+1567', 60¢ -> '-150'. None if uncomputable."""
+    price = a.get("price_cents")
+    if not isinstance(price, (int, float)):
+        return None
+    yes_cents = 100 - price if a.get("side") == "no" else price
+    if yes_cents <= 0 or yes_cents >= 100:
+        return None
+    p = yes_cents / 100.0
+    return f"+{round((1 - p) / p * 100)}" if p <= 0.5 else f"-{round(p / (1 - p) * 100)}"
+
+
+def _odds_suffix(a: dict) -> str:
+    odds = american_odds(a)
+    return f" [{odds}]" if odds else ""
+
+
 def _one_line(series_label: str, a: dict) -> str:
     """A single compact human line describing an alert (used by the webhook)."""
     side = (a.get("side") or "").upper()
     return (
         f"🏁 {_fmt_usd(a['value_usd'])} {series_label} trade — "
-        f"{a.get('driver') or a['ticker']} ({a.get('tier')}) · "
+        f"{a.get('driver') or a['ticker']} ({a.get('tier')}){_odds_suffix(a)} · "
         f"{a['count']} @ {a['price_cents']}¢ {side} · "
         f"{a.get('created_time')}"
     )
@@ -152,7 +171,7 @@ def _md_item(series_label: str, a: dict) -> str:
     side = (a.get("side") or "").upper()
     return (
         f"- **{_fmt_usd(a['value_usd'])}** — {a.get('driver') or a['ticker']} "
-        f"({a.get('tier')}) · {a['count']} @ {a['price_cents']}¢ {side} · "
+        f"({a.get('tier')}){_odds_suffix(a)} · {a['count']} @ {a['price_cents']}¢ {side} · "
         f"`{a['ticker']}` · {a.get('created_time')}"
     )
 
@@ -182,14 +201,14 @@ def _write_step_summary(series_label: str, new_alerts: list, threshold: float) -
     lines = [
         f"### 🏁 {len(new_alerts)} {series_label} trade(s) over {_fmt_usd(threshold)}",
         "",
-        "| Time (UTC) | Driver | Tier | Side | Count | Price | Value |",
-        "| --- | --- | --- | --- | ---: | ---: | ---: |",
+        "| Time (UTC) | Driver | Tier | Odds | Side | Count | Price | Value |",
+        "| --- | --- | --- | ---: | --- | ---: | ---: | ---: |",
     ]
     for a in sorted(new_alerts, key=lambda a: a.get("created_time") or "", reverse=True):
         lines.append(
             f"| {a.get('created_time')} | {a.get('driver') or a['ticker']} | {a.get('tier')} "
-            f"| {(a.get('side') or '').upper()} | {a['count']} | {a['price_cents']}¢ "
-            f"| {_fmt_usd(a['value_usd'])} |"
+            f"| {american_odds(a) or '—'} | {(a.get('side') or '').upper()} | {a['count']} "
+            f"| {a['price_cents']}¢ | {_fmt_usd(a['value_usd'])} |"
         )
     try:
         with open(path, "a", encoding="utf-8") as fh:
