@@ -10,15 +10,15 @@
   "market_count": 38,
   "markets": {
     "KXNASCARTOP20-QUAS4AA26-AJAL": {
-      "last_price": 54,
+      "last_price": 53,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 85,
       "no_bid": 47,
-      "open_interest": 1084,
+      "open_interest": 1089,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-AJAL",
-      "volume": 1084,
+      "volume": 1089,
       "volume_24h": 194,
       "yes_ask": 53,
       "yes_bid": 15
@@ -122,16 +122,16 @@
       "yes_bid": 25
     },
     "KXNASCARTOP20-QUAS4AA26-CAHO": {
-      "last_price": 67,
+      "last_price": 66,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 49,
       "no_bid": 34,
-      "open_interest": 347,
+      "open_interest": 349,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-CAHO",
-      "volume": 447,
-      "volume_24h": 214,
+      "volume": 449,
+      "volume_24h": 216,
       "yes_ask": 66,
       "yes_bid": 51
     },
@@ -178,16 +178,16 @@
       "yes_bid": 16
     },
     "KXNASCARTOP20-QUAS4AA26-CHEL": {
-      "last_price": 75,
+      "last_price": 73,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 94,
       "no_bid": 27,
-      "open_interest": 291,
+      "open_interest": 293,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-CHEL",
-      "volume": 294,
-      "volume_24h": 61,
+      "volume": 295,
+      "volume_24h": 62,
       "yes_ask": 73,
       "yes_bid": 6
     },
@@ -234,31 +234,31 @@
       "yes_bid": 20
     },
     "KXNASCARTOP20-QUAS4AA26-COZI": {
-      "last_price": 54,
+      "last_price": 74,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 79,
       "no_bid": 26,
-      "open_interest": 476,
+      "open_interest": 477,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-COZI",
-      "volume": 515,
-      "volume_24h": 416,
+      "volume": 517,
+      "volume_24h": 417,
       "yes_ask": 74,
       "yes_bid": 21
     },
     "KXNASCARTOP20-QUAS4AA26-DASU": {
-      "last_price": 64,
+      "last_price": 61,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 75,
-      "no_bid": 39,
-      "open_interest": 240,
+      "no_bid": 38,
+      "open_interest": 271,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-DASU",
-      "volume": 240,
-      "volume_24h": 107,
-      "yes_ask": 61,
+      "volume": 271,
+      "volume_24h": 138,
+      "yes_ask": 62,
       "yes_bid": 25
     },
     "KXNASCARTOP20-QUAS4AA26-DEHA": {
@@ -364,13 +364,13 @@
       "liquidity": 0.0,
       "name": "Noah Gragson",
       "no_ask": 79,
-      "no_bid": 52,
-      "open_interest": 277,
+      "no_bid": 51,
+      "open_interest": 302,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-NOGR",
-      "volume": 376,
-      "volume_24h": 255,
-      "yes_ask": 48,
+      "volume": 401,
+      "volume_24h": 302,
+      "yes_ask": 49,
       "yes_bid": 21
     },
     "KXNASCARTOP20-QUAS4AA26-RIHE": {
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-RIHE",
       "volume": 601,
-      "volume_24h": 68,
+      "volume_24h": 66,
       "yes_ask": 68,
       "yes_bid": 20
     },
@@ -402,17 +402,17 @@
       "yes_bid": 21
     },
     "KXNASCARTOP20-QUAS4AA26-ROCH": {
-      "last_price": 0,
+      "last_price": 64,
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 85,
-      "no_bid": 36,
-      "open_interest": 0,
+      "no_bid": 35,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP20-QUAS4AA26-ROCH",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 64,
+      "volume": 10,
+      "volume_24h": 10,
+      "yes_ask": 65,
       "yes_bid": 15
     },
     "KXNASCARTOP20-QUAS4AA26-RYBL": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-12T15:53:55.009700+00:00",
+  "scraped_at": "2026-07-12T16:28:46.468496+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-quas4aa26",
   "tier": "top20"
 }
