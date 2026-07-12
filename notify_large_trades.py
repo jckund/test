@@ -70,20 +70,12 @@ def _git_show(path):
     return r.stdout if r.returncode == 0 else None
 
 
-def _yes_implied_cents(price, side):
-    """The market's implied YES (driver's-outcome) price in cents for a trade,
-    regardless of which side the taker hit."""
-    if not isinstance(price, (int, float)):
+def american_odds(price_cents):
+    """American (moneyline) odds implied by the trade's execution price — the
+    price the taker actually paid. e.g. 94¢ -> '-1567', 6¢ -> '+1567'."""
+    if not isinstance(price_cents, (int, float)) or price_cents <= 0 or price_cents >= 100:
         return None
-    return 100 - price if side == "no" else price
-
-
-def american_odds(yes_cents):
-    """American (moneyline) odds for the driver's outcome from its implied
-    cents price, e.g. 6¢ -> '+1567', 60¢ -> '-150'. None if uncomputable."""
-    if not isinstance(yes_cents, (int, float)) or yes_cents <= 0 or yes_cents >= 100:
-        return None
-    p = yes_cents / 100.0
+    p = price_cents / 100.0
     return f"+{round((1 - p) / p * 100)}" if p <= 0.5 else f"-{round(p / (1 - p) * 100)}"
 
 
@@ -162,7 +154,7 @@ def main():
     fresh.sort(key=lambda x: x[2].get("created_time") or "")
     for _tid, v, d in fresh:
         side = (d.get("side") or "").upper()
-        odds = american_odds(_yes_implied_cents(d.get("price"), d.get("side")))
+        odds = american_odds(d.get("price"))
         odds_s = f" [{odds}]" if odds else ""
         print(f"${v:,.2f} — {d.get('driver')} ({d.get('tier')}){odds_s} · "
               f"{d.get('count')} @ {d.get('price')}¢ {side} [{d.get('created_time')}]")

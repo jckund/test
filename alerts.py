@@ -138,16 +138,13 @@ def _fmt_usd(v: float) -> str:
 
 
 def american_odds(a: dict):
-    """American (moneyline) odds for the driver's outcome, from the trade's
-    implied YES price. A NO taker's price is flipped to the YES side first.
-    e.g. 6¢ -> '+1567', 60¢ -> '-150'. None if uncomputable."""
+    """American (moneyline) odds implied by the trade's execution price — the
+    price the taker actually paid, whichever side they hit. e.g. a 94¢ buy is a
+    heavy favorite -> '-1567'; a 6¢ buy is a longshot -> '+1567'."""
     price = a.get("price_cents")
-    if not isinstance(price, (int, float)):
+    if not isinstance(price, (int, float)) or price <= 0 or price >= 100:
         return None
-    yes_cents = 100 - price if a.get("side") == "no" else price
-    if yes_cents <= 0 or yes_cents >= 100:
-        return None
-    p = yes_cents / 100.0
+    p = price / 100.0
     return f"+{round((1 - p) / p * 100)}" if p <= 0.5 else f"-{round(p / (1 - p) * 100)}"
 
 
