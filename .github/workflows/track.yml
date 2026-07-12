@@ -20,6 +20,7 @@ on:
     paths:
       - index.html
       - scraper.py
+      - linewatch.py
       - .github/workflows/track.yml
 
 # Prevent overlapping runs from racing on the same commit / deployment.
@@ -28,9 +29,11 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write   # commit scraped data back to the repo
-  pages: write      # deploy to GitHub Pages
-  id-token: write   # required by actions/deploy-pages
+  contents: write        # commit scraped data back to the repo
+  pages: write           # deploy to GitHub Pages
+  id-token: write        # required by actions/deploy-pages
+  issues: write          # linewatch.py posts line-move alerts as PR/issue comments
+  pull-requests: write   # (PR comments are issue comments on the PR)
 
 jobs:
   scrape-and-deploy:
@@ -60,6 +63,19 @@ jobs:
           # if unset, alerts still land in data/cup/ALERTS.md and the job summary.
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python3 scraper.py
+
+      - name: Kalshi line-move watch
+        # Diff each Cup market's YES price vs the committed baseline; on a move
+        # >= WATCH_THRESH_PP (or the Cindric trip-wire) post a comment to the
+        # watch PR so the subscribed Claude session wakes. No move -> no comment.
+        # Runs after the scraper (fresh snapshots) and before the commit step so
+        # the refreshed baseline it writes gets committed with the rest of data/.
+        env:
+          WATCH_THRESH_PP: "3"
+          WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: python3 linewatch.py
 
       - name: Commit changes if any
         run: |
