@@ -90,48 +90,33 @@ def main() -> int:
         print(f"category: {s.get('category')}")
         print(f"tags    : {s.get('tags')}")
 
-    hr("4. Golf series catalog (category probes)")
-    seen = {}
-    for params in ("category=Sports", "category=Sports&tags=Golf",
-                   "category=Golf", ""):
-        url = f"{API_BASE}/series/" + (f"?{params}" if params else "")
-        code, data = get(url)
-        series = (data or {}).get("series", []) if isinstance(data, dict) else []
-        print(f"[{params or 'no params'}] HTTP {code} -> {len(series)} series")
-        for s in series:
-            tk = s.get("ticker") or ""
-            title = (s.get("title") or "")
-            hay = (tk + " " + title).lower()
-            if any(k in hay for k in ("golf", "pga", "open", "masters",
-                                      "cut", "top ", "tour")):
-                seen[tk] = title
-    for tk in sorted(seen):
-        print(f"   {tk:28s} {seen[tk]}")
+    hr("4. Golf series catalog (category=Sports&tags=Golf)")
+    code, data = get(f"{API_BASE}/series/?category=Sports&tags=Golf")
+    golf_series = []
+    if isinstance(data, dict):
+        golf_series = data.get("series") or []
+    print(f"HTTP {code} -> {len(golf_series)} golf series")
+    for s in golf_series:
+        print(f"   {(s.get('ticker') or ''):22s} {s.get('title')}")
 
-    hr("5. Candidate tier ticker probes")
-    prefixes = [
-        WINNER_SERIES, "KXPGATOUR", "KXPGA", "KXGOLF",
-    ]
-    suffixes = [
-        "", "TOP3", "TOP5", "TOP10", "TOP20", "TOPFIVE", "TOPTEN",
-        "CUT", "MAKECUT", "MISSCUT", "MC", "TOP2", "TOP4",
-    ]
-    tried = set()
-    for p in prefixes:
-        for suf in suffixes:
-            series = p + suf
-            if series in tried:
-                continue
-            tried.add(series)
-            ticker = f"{series}-{TOURNAMENT_CODE}"
-            code, data = get(f"{API_BASE}/events/{ticker}"
-                             f"?with_nested_markets=true")
-            if code == 200 and data and "event" in data:
-                ev = data["event"]
-                mkts = data.get("markets") or ev.get("markets") or []
-                print(f"   OK  {ticker:32s} markets={len(mkts):3d}  "
-                      f"{ev.get('sub_title') or ev.get('title')}")
-    print("\n(done — anything not printed under section 5 returned non-200)")
+    hr(f"5. Which golf series have an event for {TOURNAMENT_CODE}?")
+    print("(this is the definitive tier list for the tournament)\n")
+    hits = []
+    for s in golf_series:
+        st = s.get("ticker") or ""
+        if not st:
+            continue
+        ticker = f"{st}-{TOURNAMENT_CODE}"
+        code, data = get(f"{API_BASE}/events/{ticker}?with_nested_markets=true")
+        if code == 200 and isinstance(data, dict) and data.get("event"):
+            ev = data["event"]
+            mkts = data.get("markets") or ev.get("markets") or []
+            if mkts:
+                hits.append((st, len(mkts), ev.get("title")))
+                print(f"   OK  {ticker:28s} markets={len(mkts):3d}  "
+                      f"series_title={s.get('title')!r}  event_title={ev.get('title')!r}")
+    print(f"\n=> {len(hits)} tiers found for {TOURNAMENT_CODE}: "
+          + ", ".join(h[0] for h in hits))
     return 0
 
 
