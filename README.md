@@ -46,6 +46,46 @@ shows every market update over time.
 > runs behind an egress proxy that blocks `kalshi.com`, so the scrape has to
 > happen where the network allows it.
 
+## Golf tracker (PGA Tour)
+
+Alongside NASCAR, [`golf_scraper.py`](golf_scraper.py) tracks a Kalshi golf
+tournament across four tiers:
+
+**<https://kalshi.com/markets/kxpgatour/pga-tour/kxpgatour-thoc26>**
+(2026 The Open Championship)
+
+| Tier | Folder | Kalshi series | Event ticker |
+| --- | --- | --- | --- |
+| Winner | `data/golf/winner/` | `KXPGATOUR` | `KXPGATOUR-THOC26` |
+| Top 5 | `data/golf/top5/` | `KXPGATOP5` | `KXPGATOP5-THOC26` |
+| Top 10 | `data/golf/top10/` | `KXPGATOP10` | `KXPGATOP10-THOC26` |
+| Make Cut | `data/golf/makecut/` | `KXPGAMAKECUT` | `KXPGAMAKECUT-THOC26` |
+
+Unlike NASCAR (all tiers under one winner series), Kalshi files **each golf tier
+under its own series**, sharing the tournament's event suffix (`-THOC26`). Each
+event nests one market per golfer (~165). The scraper normalizes the same fields
+(last price, yes/no bid & ask, volume, open interest, status), writes per-tier
+`snapshot.json` / `latest.json` / `history.jsonl` / `series.jsonl` / `CHANGES.md`
+under `data/golf/<tier>/`, plus a top-level `data/golf/index.json` (tier list +
+tournament title) and `data/golf/activity.json` (recent trades merged across
+tiers). It only writes a tier when something changed, so **git history is the
+change log** — `git log -- data/golf/`.
+
+A separate workflow ([`.github/workflows/golf.yml`](.github/workflows/golf.yml))
+runs it every 15 minutes on GitHub's runners (whose open network can reach the
+Kalshi API — a Claude Code web session's egress proxy cannot) and commits any
+changes back. Scheduled runs only fire from the repo's default branch; until
+this is merged there, use the **Run workflow** button (`workflow_dispatch`) or a
+push to the feature branch to trigger it.
+
+Point it at a different event with `GOLF_CODE` (e.g. `GOLF_CODE=PGC26` for the
+PGA Championship). If that event's tier series differ, override `GOLF_TIERS` as
+`key:Label:OddsLabel:SERIES,...`:
+
+```bash
+GOLF_CODE=THOC26 python3 golf_scraper.py     # no dependencies — stdlib only
+```
+
 ## Large-trade alerts
 
 [`alerts.py`](alerts.py) watches the **Cup series** (every NASCAR Cup driver
