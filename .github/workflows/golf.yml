@@ -1,0 +1,67 @@
+name: Track Kalshi golf market
+
+# Scrapes the Kalshi golf tournament markets (Winner / Top 5 / Top 10 / Make
+# Cut) and commits any changes back to the repo, so git history is the change
+# log (git log -- data/golf/).
+#
+# NOTE: GitHub-hosted runners have unrestricted outbound internet, which is why
+# the scrape runs here rather than inside a Claude Code session (whose egress
+# proxy blocks the Kalshi API).
+
+on:
+  schedule:
+    # Every 15 minutes. GitHub schedules are best-effort and only run from the
+    # repo's default branch, so this fires once this workflow is merged there.
+    - cron: "*/15 * * * *"
+  workflow_dispatch: {}
+  push:
+    branches: [claude/kalshi-golf-scrape-mfavej]
+    paths:
+      - golf_scraper.py
+      - .github/workflows/golf.yml
+
+# Prevent overlapping runs from racing on the same commit.
+concurrency:
+  group: track-kalshi-golf
+  cancel-in-progress: false
+
+permissions:
+  contents: write  # commit scraped data back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run golf scraper
+        env:
+          # The tournament to track (event suffix). Override to follow a
+          # different PGA Tour event; see golf_scraper.py for GOLF_TIERS too.
+          GOLF_CODE: "THOC26"
+        run: python3 golf_scraper.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/golf/
+          if git diff --cached --quiet -- data/golf/; then
+            echo "No market changes; nothing to commit."
+          else
+            git commit -m "data(golf): market update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            pushed=false
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; pushed=true; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+            if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
+          fi
