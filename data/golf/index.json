@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-07-13T19:31:02.470878+00:00",
+  "tournament": "2026 The Open Championship",
+  "tournament_code": "THOC26",
+  "source_url": "https://kalshi.com/markets/kxpgatour/pga-tour/kxpgatour-thoc26",
+  "tiers": [
+    {
+      "key": "winner",
+      "label": "Winner",
+      "odds_label": "Win",
+      "event_ticker": "KXPGATOUR-THOC26",
+      "title": "The Open Championship Winner",
+      "market_count": 165,
+      "scraped_at": "2026-07-13T19:31:00.838482+00:00"
+    },
+    {
+      "key": "top5",
+      "label": "Top 5",
+      "odds_label": "Top 5",
+      "event_ticker": "KXPGATOP5-THOC26",
+      "title": "The Open Championship: Top 5 Finishers",
+      "market_count": 165,
+      "scraped_at": "2026-07-13T19:31:01.341683+00:00"
+    },
+    {
+      "key": "top10",
+      "label": "Top 10",
+      "odds_label": "Top 10",
+      "event_ticker": "KXPGATOP10-THOC26",
+      "title": "The Open Championship: Top 10 Finishers",
+      "market_count": 165,
+      "scraped_at": "2026-07-13T19:31:01.804600+00:00"
+    },
+    {
+      "key": "makecut",
+      "label": "Make Cut",
+      "odds_label": "Make Cut",
+      "event_ticker": "KXPGAMAKECUT-THOC26",
+      "title": "The Open Championship: To Make the Cut",
+      "market_count": 165,
+      "scraped_at": "2026-07-13T19:31:02.459036+00:00"
+    }
+  ]
+}
