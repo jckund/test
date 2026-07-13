@@ -32,13 +32,15 @@ USER_AGENT = "kalshi-golf-discovery/1.0 (+https://github.com)"
 def get(url: str):
     for attempt in range(4):
         try:
-            time.sleep(0.3)
+            time.sleep(0.1)
             req = urllib.request.Request(url, headers={
                 "User-Agent": USER_AGENT, "Accept": "application/json"})
             with urllib.request.urlopen(req, timeout=30) as resp:
                 return resp.getcode(), json.loads(resp.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
-            if attempt == 3:
+            # Don't burn time retrying an expected 404 (series has no event for
+            # this tournament). Only back off on rate limiting.
+            if e.code != 429 or attempt == 3:
                 return e.code, None
             time.sleep(2 ** attempt)
         except (urllib.error.URLError, TimeoutError) as e:
