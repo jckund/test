@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-07-12T23:58:43.202173+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 5: 33c -> 49c (+104, +16pp)
+- **Ryan Blaney** Top 3: 32c -> 48c (+108, +16pp)
+- **Brad Keselowski** Top 5: 20c -> 5c (+1900, -15pp)
+- **Tyler Reddick** Win: 18c -> 31c (+223, +13pp)
+- **Tyler Reddick** Top 10: 49c -> 60c (-150, +11pp)
+- **Tyler Reddick** Top 3: 24c -> 34c (+194, +10pp)
+- **Carson Hocevar** Win: 18c -> 8c (+1150, -10pp)
+- **Carson Hocevar** Top 5: 40c -> 30c (+233, -10pp)
+- **Ryan Blaney** Top 5: 40c -> 48c (+108, +8pp)
+- **Daniel Suárez** Top 5: 22c -> 14c (+614, -8pp)
+- (+11 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->20c (+4pp toward Bookmaker ~33c, now +400)
+
+_leader win YES 31c · scraped 2026-07-12T23:58:43.202173+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-12T23:37:49.511293+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
