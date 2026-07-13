@@ -1,0 +1,32 @@
+name: Discover Kalshi golf structure
+
+# TEMPORARY probe. Runs discover_golf.py on a GitHub runner (open network) so we
+# can see how Kalshi lays out the golf winner / top-N / make-cut series for a
+# tournament. The output goes to the job log + summary. Removed once the real
+# golf scraper is built from what it reports.
+
+on:
+  push:
+    branches: [claude/kalshi-golf-scrape-mfavej]
+    paths:
+      - discover_golf.py
+      - .github/workflows/golf-discover.yml
+  workflow_dispatch: {}
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe golf markets
+        run: |
+          python3 discover_golf.py | tee discovery.txt
+          {
+            echo '## Golf discovery'
+            echo '```'
+            cat discovery.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
