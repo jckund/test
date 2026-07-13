@@ -77,7 +77,8 @@ def main() -> int:
     code, data = get(f"{API_BASE}/events?series_ticker={WINNER_SERIES}&limit=200")
     print(f"HTTP {code}")
     for e in (data or {}).get("events", []) or []:
-        print(f"   {e.get('event_ticker'):40s} {e.get('status'):8s} "
+        print(f"   {(e.get('event_ticker') or ''):40s} "
+              f"{(e.get('status') or '?'):10s} "
               f"{e.get('sub_title') or e.get('title')}")
 
     hr(f"3. Series metadata for {WINNER_SERIES}")
