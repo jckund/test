@@ -16,6 +16,14 @@ _leader win YES 31c · scraped 2026-07-12T23:58:43.202173+00:00_
 
 ### 📊 Kalshi line move — 2026-07-12T23:58:43.202173+00:00
 
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->20c (+4pp toward Bookmaker ~33c, now +400)
+
+_leader win YES 31c · scraped 2026-07-12T23:58:43.202173+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-07-12T23:58:43.202173+00:00
+
 **Kalshi Cup YES moves >= 3pp (since last check):**
 - **Tyler Reddick** Top 5: 33c -> 49c (+104, +16pp)
 - **Ryan Blaney** Top 3: 32c -> 48c (+108, +16pp)
