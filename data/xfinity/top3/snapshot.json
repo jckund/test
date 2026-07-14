@@ -108,30 +108,30 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-WINW26-CAHO": {
-      "last_price": 0,
+      "last_price": 12,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 96,
-      "no_bid": 88,
-      "open_interest": 0,
+      "no_ask": 95,
+      "no_bid": 89,
+      "open_interest": 39,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-CAHO",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 12,
-      "yes_bid": 4
+      "volume": 39,
+      "volume_24h": 39,
+      "yes_ask": 11,
+      "yes_bid": 5
     },
     "KXNASCARTOP3-WINW26-CHBE": {
-      "last_price": 35,
+      "last_price": 39,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 67,
       "no_bid": 61,
-      "open_interest": 276,
+      "open_interest": 301,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-CHBE",
-      "volume": 276,
-      "volume_24h": 276,
+      "volume": 301,
+      "volume_24h": 301,
       "yes_ask": 39,
       "yes_bid": 33
     },
@@ -164,18 +164,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-WINW26-CHEL": {
-      "last_price": 0,
+      "last_price": 25,
       "liquidity": 0.0,
       "name": "Chase Elliott",
-      "no_ask": 83,
+      "no_ask": 82,
       "no_bid": 75,
-      "open_interest": 0,
+      "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-CHEL",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 8,
+      "volume_24h": 8,
       "yes_ask": 25,
-      "yes_bid": 17
+      "yes_bid": 18
     },
     "KXNASCARTOP3-WINW26-CHFI": {
       "last_price": 0,
@@ -251,7 +251,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 71,
+      "no_ask": 65,
       "no_bid": 64,
       "open_interest": 0,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 36,
-      "yes_bid": 29
+      "yes_bid": 35
     },
     "KXNASCARTOP3-WINW26-ERJO": {
       "last_price": 0,
@@ -407,11 +407,11 @@
       "name": "Ryan Blaney",
       "no_ask": 69,
       "no_bid": 62,
-      "open_interest": 3,
+      "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-RYBL",
-      "volume": 3,
-      "volume_24h": 3,
+      "volume": 28,
+      "volume_24h": 28,
       "yes_ask": 38,
       "yes_bid": 31
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-14T20:33:49.625640+00:00",
+  "scraped_at": "2026-07-14T23:36:05.083350+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top3"
 }
