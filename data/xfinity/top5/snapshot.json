@@ -108,18 +108,18 @@
       "yes_bid": 12
     },
     "KXNASCARTOP5-WINW26-CAHO": {
-      "last_price": 17,
+      "last_price": 19,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 89,
-      "no_bid": 83,
-      "open_interest": 46,
+      "no_ask": 86,
+      "no_bid": 80,
+      "open_interest": 310,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-CAHO",
-      "volume": 46,
-      "volume_24h": 46,
-      "yes_ask": 17,
-      "yes_bid": 11
+      "volume": 310,
+      "volume_24h": 310,
+      "yes_ask": 20,
+      "yes_bid": 14
     },
     "KXNASCARTOP5-WINW26-CHBE": {
       "last_price": 49,
@@ -251,7 +251,7 @@
       "last_price": 51,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 54,
+      "no_ask": 53,
       "no_bid": 48,
       "open_interest": 87,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 87,
       "volume_24h": 87,
       "yes_ask": 52,
-      "yes_bid": 46
+      "yes_bid": 47
     },
     "KXNASCARTOP5-WINW26-ERJO": {
       "last_price": 0,
@@ -290,16 +290,16 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-WINW26-JOLO": {
-      "last_price": 35,
+      "last_price": 30,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 76,
       "no_bid": 69,
-      "open_interest": 8,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-JOLO",
-      "volume": 8,
-      "volume_24h": 8,
+      "volume": 24,
+      "volume_24h": 24,
       "yes_ask": 31,
       "yes_bid": 24
     },
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 61,
       "no_bid": 55,
-      "open_interest": 68,
+      "open_interest": 79,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-KYLA",
-      "volume": 68,
-      "volume_24h": 68,
+      "volume": 79,
+      "volume_24h": 79,
       "yes_ask": 45,
       "yes_bid": 39
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-14T05:59:09.926516+00:00",
+  "scraped_at": "2026-07-14T11:13:16.690466+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top5"
 }
