@@ -27,7 +27,7 @@ const fs = require("fs");
 const path = require("path");
 const { chromium } = require("playwright");
 
-const MOTORSPORT_URL = "https://sportsbook.fanduel.com/motorsport";
+const MOTORSPORT_URL = "https://nj.sportsbook.fanduel.com/motorsport";
 
 // Canonical manufacturer names we recognize as runners in a "winning
 // manufacturer" market (and as keywords in per-make driver markets).
@@ -138,6 +138,12 @@ async function main() {
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
   if (!nMarkets) throw new Error("No FanDuel markets captured (page structure changed or blocked).");
+
+  // TEMP DIAGNOSTIC: dump every captured market name so we can see FanDuel's
+  // exact race titles / naming for this weekend's card.
+  for (const m of Object.values(markets).sort((a, b) => (a.marketName || "").localeCompare(b.marketName || ""))) {
+    console.log("MKT:", JSON.stringify(m.marketName || ""));
+  }
 
   // Group race markets by their race-name prefix so we can pick the one that
   // matches the Kalshi race. Season/championship futures ("Cup Series 2026
