@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-CAHO",
       "volume": 366,
-      "volume_24h": 321,
+      "volume_24h": 57,
       "yes_ask": 20,
       "yes_bid": 14
     },
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 54,
       "no_bid": 48,
-      "open_interest": 616,
+      "open_interest": 634,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-CHBE",
-      "volume": 616,
+      "volume": 634,
       "volume_24h": 464,
       "yes_ask": 52,
       "yes_bid": 46
@@ -248,16 +248,16 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-WINW26-DEHA": {
-      "last_price": 51,
+      "last_price": 53,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 53,
       "no_bid": 47,
-      "open_interest": 87,
+      "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-DEHA",
-      "volume": 87,
-      "volume_24h": 0,
+      "volume": 114,
+      "volume_24h": 27,
       "yes_ask": 53,
       "yes_bid": 47
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-JOLO",
       "volume": 325,
-      "volume_24h": 317,
+      "volume_24h": 301,
       "yes_ask": 35,
       "yes_bid": 30
     },
@@ -318,18 +318,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP5-WINW26-KYLA": {
-      "last_price": 45,
+      "last_price": 39,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 61,
-      "no_bid": 55,
+      "no_ask": 62,
+      "no_bid": 56,
       "open_interest": 99,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-KYLA",
-      "volume": 99,
+      "volume": 110,
       "volume_24h": 31,
-      "yes_ask": 45,
-      "yes_bid": 39
+      "yes_ask": 44,
+      "yes_bid": 38
     },
     "KXNASCARTOP5-WINW26-MIMC": {
       "last_price": 0,
@@ -405,15 +405,15 @@
       "last_price": 54,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 52,
+      "no_ask": 53,
       "no_bid": 46,
-      "open_interest": 174,
+      "open_interest": 201,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-RYBL",
-      "volume": 174,
-      "volume_24h": 157,
+      "volume": 276,
+      "volume_24h": 259,
       "yes_ask": 54,
-      "yes_bid": 48
+      "yes_bid": 47
     },
     "KXNASCARTOP5-WINW26-RYPR": {
       "last_price": 22,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-15T07:26:25.926608+00:00",
+  "scraped_at": "2026-07-15T12:07:29.793906+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top5"
 }
