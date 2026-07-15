@@ -51,18 +51,45 @@ function teamCanon(name) {
   return null;
 }
 
-// FanDuel market-name suffix -> our tier key (matches Kalshi's tier keys) and
-// the number of drivers that "win" the market. FanDuel's Top-N markets report
-// numberOfWinners=1 in their metadata (they're modeled as independent props),
-// so we can't trust that field: the sum of P(finish top N) across the field is
-// N, and that's what the no-vig normalization must target.
+// FanDuel finish-market labels -> our tier key (matches Kalshi's tier keys) and
+// the number of drivers that "win" the market. FanDuel names these markets in
+// one of two orders depending on the series module: "<race> - <label>" (F1,
+// e.g. "Hungarian GP - Top 3 Finish") or "<label> - <race>" (NASCAR, e.g.
+// "Top 3 Finish - Window World 450"); matchTier() handles both. The outright
+// winner market is "Outright Betting" on some cards and "Race Winner" on others.
+// FanDuel's Top-N markets report numberOfWinners=1 in their metadata (they're
+// modeled as independent props), so we can't trust that field: the sum of
+// P(finish top N) across the field is N, and that's what the no-vig
+// normalization must target.
 const TIER_SUFFIXES = [
-  { key: "winner", re: /^(.*) - Outright Betting$/i, winners: 1 },
-  { key: "top3", re: /^(.*) - Top 3 Finish$/i, winners: 3 },
-  { key: "top5", re: /^(.*) - Top 5 Finish$/i, winners: 5 },
-  { key: "top10", re: /^(.*) - Top 10 Finish$/i, winners: 10 },
+  { key: "winner", labels: ["Outright Betting", "Race Winner"], winners: 1 },
+  { key: "top3", labels: ["Top 3 Finish"], winners: 3 },
+  { key: "top5", labels: ["Top 5 Finish"], winners: 5 },
+  { key: "top10", labels: ["Top 10 Finish"], winners: 10 },
 ];
 const TIER_WINNERS = Object.fromEntries(TIER_SUFFIXES.map((t) => [t.key, t.winners]));
+
+// Escape a plain string for safe embedding in a RegExp.
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+// If a market name is a single-race finish market for one of our tiers, return
+// { key, race } with the race name taken from whichever side of the " - "
+// separator it sits on; otherwise null. Season-long futures ("Cup Series 2026
+// Outright Winner") and prop markets don't carry these exact labels and are
+// naturally excluded.
+function matchTier(name) {
+  const n = (name || "").trim();
+  for (const { key, labels } of TIER_SUFFIXES) {
+    for (const label of labels) {
+      const L = escapeRe(label);
+      let m = n.match(new RegExp(`^(.+?) - ${L}$`, "i")); // "<race> - <label>"
+      if (m) return { key, race: m[1].trim() };
+      m = n.match(new RegExp(`^${L} - (.+)$`, "i")); // "<label> - <race>"
+      if (m) return { key, race: m[1].trim() };
+    }
+  }
+  return null;
+}
 
 const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -139,26 +166,15 @@ async function main() {
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
   if (!nMarkets) throw new Error("No FanDuel markets captured (page structure changed or blocked).");
 
-  // TEMP DIAGNOSTIC: dump every captured market name so we can see FanDuel's
-  // exact race titles / naming for this weekend's card.
-  for (const m of Object.values(markets).sort((a, b) => (a.marketName || "").localeCompare(b.marketName || ""))) {
-    console.log("MKT:", JSON.stringify(m.marketName || ""));
-  }
-
   // Group race markets by their race-name prefix so we can pick the one that
   // matches the Kalshi race. Season/championship futures ("Cup Series 2026
   // Outright Winner") lack the " - Outright Betting" / " - Top N Finish" suffix
   // and are naturally excluded.
   const byRace = {}; // raceName -> { tierKey -> market }
   for (const m of Object.values(markets)) {
-    const name = m.marketName || "";
-    for (const { key, re } of TIER_SUFFIXES) {
-      const match = name.match(re);
-      if (!match) continue;
-      const race = match[1].trim();
-      (byRace[race] = byRace[race] || {})[key] = m;
-      break;
-    }
+    const hit = matchTier(m.marketName || "");
+    if (!hit) continue;
+    (byRace[hit.race] = byRace[hit.race] || {})[hit.key] = m;
   }
   const raceNames = Object.keys(byRace);
   console.log("FanDuel race markets found for:", raceNames);
