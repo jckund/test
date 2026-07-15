@@ -56,10 +56,17 @@ WINNER_SERIES = "KXNASCARRACE"
 # any leftover race (the support race whose name we don't know in advance).
 # `full` series get the extra Top 20 tier plus the Manufacturer/Team views
 # (those are Cup-only and handled in the dashboard).
+#
+# NOTE: Kalshi files every national-series race under the single KXNASCARRACE
+# series and its event payload carries no Cup/Xfinity/Truck marker (just the
+# race name), so the only signal we have is the race name itself. That means
+# the `cup`/`truck` matchers must be refreshed to the current weekend's race
+# names — a race that matches nothing falls to the `xfinity` default. Update the
+# substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    {"key": "cup", "label": "NASCAR", "matchers": ["quaker state"],
+    {"key": "cup", "label": "NASCAR", "matchers": ["window world"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": ["liuna"],
+    {"key": "truck", "label": "Trucks", "matchers": ["faithfest", "faith fest"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     {"key": "xfinity", "label": "O'Reilly Auto Parts", "matchers": [], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},

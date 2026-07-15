@@ -248,7 +248,7 @@ function scrapeTeams(markets, chosenRace, kalshiRace, outDir) {
       : null;
 
   const raceMarkets = Object.values(markets).filter(
-    (m) => raceNorm && norm(m.marketName || "").startsWith(raceNorm)
+    (m) => raceNorm && norm(m.marketName || "").includes(raceNorm)
   );
   const teamMkt = raceMarkets.find((m) => {
     const rs = (m.runners || []).map((r) => teamCanon(r.runnerName)).filter(Boolean);
@@ -308,7 +308,7 @@ function scrapeManufacturers(markets, chosenRace, kalshiRace, outDir) {
   const all = Object.values(markets);
   // Log every market whose name references this race, to reveal manufacturer
   // market naming for future refinement.
-  const raceMarkets = all.filter((m) => raceNorm && norm(m.marketName || "").startsWith(raceNorm));
+  const raceMarkets = all.filter((m) => raceNorm && norm(m.marketName || "").includes(raceNorm));
   console.log("markets for chosen race:", raceMarkets.map((m) => m.marketName));
 
   // Winning-manufacturer market: runners are (mostly) makes, and the market name
