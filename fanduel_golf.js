@@ -27,17 +27,14 @@ const { chromium } = require("playwright");
 
 const GOLF_URL = "https://nj.sportsbook.fanduel.com/golf";
 
-// FanDuel finish-market labels -> our tier key (matches Kalshi's tier keys) and
-// the number of players that "win" the market. Names vary ("Top 5 Finish",
-// "Top 5 Finish (Incl. Ties)", …) so we match by substring, case-insensitive.
-// The outright winner market has many aliases across cards.
-const TIER_DEFS = [
-  { key: "winner", winners: 1,
-    labels: ["outright winner", "tournament winner", "winner (incl", "to win", "outright betting", "winner"] },
-  { key: "top5", winners: 5, labels: ["top 5 finish", "top 5", "top-5"] },
-  { key: "top10", winners: 10, labels: ["top 10 finish", "top 10", "top-10"] },
-  { key: "top20", winners: 20, labels: ["top 20 finish", "top 20", "top-20"] },
-];
+// Number of players that "win" each tier (for the no-vig normalization).
+const TIER_WINNERS = { winner: 1, top5: 5, top10: 10, top20: 20 };
+
+// Derivative/novelty golf markets that must NOT be mistaken for a real tier:
+// "Winner w/o McIlroy / Scheffler", "Two/Three/Four Chances to Win", hole and
+// round match-ups, groups, 3-balls, first-round leader, make/miss cut, etc. A
+// slash in the name signals a multi-name novelty ("A / B / C", "w/o X / Y").
+const NOVELTY = /(w\/o|without|chances to win|\bholes?\b|round\s*[1-4]|\br[1-4]\b|group|\bmatch\b|[0-9]\s*-?\s*ball|first round leader|\bfrl\b|make (the )?cut|miss (the )?cut|nationality|top \w+ (golfer|player|nationality)|\/)/i;
 
 const norm = (s) => (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -66,14 +63,21 @@ function readGolf() {
 }
 
 // Does a market name look like a finish market for one of our tiers? Returns
-// { key, winners } or null. We deliberately test the more specific tiers (top20)
-// before the generic "winner" so "Top 20 Finish" isn't mis-read as a winner.
+// { key, winners, incl } or null. Novelty/derivative markets are rejected, and
+// the specific top-N tiers are tested before the generic outright winner.
+// `incl` flags the "(Incl. Ties)" variant, which matches Kalshi's semantics
+// (a top-N finish counts ties), so emit() can prefer it.
 function matchTier(name) {
-  const n = (name || "").toLowerCase();
-  const ordered = [...TIER_DEFS].reverse(); // top20, top10, top5, winner
-  for (const def of ordered) {
-    if (def.labels.some((l) => n.includes(l))) return { key: def.key, winners: def.winners };
-  }
+  const n = (name || "").toLowerCase().trim();
+  if (!n || NOVELTY.test(n)) return null;
+  const incl = /incl/.test(n) && /ties/.test(n);
+  if (/top\s*-?\s*20/.test(n)) return { key: "top20", winners: 20, incl };
+  if (/top\s*-?\s*10/.test(n)) return { key: "top10", winners: 10, incl };
+  if (/top\s*-?\s*5/.test(n)) return { key: "top5", winners: 5, incl };
+  // Outright winner: only a plain "Winner" / "Outright (Winner)" / "To Win"
+  // market (novelties already filtered out above).
+  if (/^(winner|outright winner|outright|tournament winner|to win outright)\b/.test(n) || n === "to win")
+    return { key: "winner", winners: 1, incl: false };
   return null;
 }
 
@@ -126,17 +130,27 @@ async function main() {
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
   if (!nMarkets) throw new Error("No FanDuel markets captured (page structure changed or blocked).");
 
+  // Log the captured events (id + name + any URL/slug) so the outright-winner
+  // page can be located when it isn't on the golf landing view.
+  console.log("Captured events:");
+  for (const [id, e] of Object.entries(events)) {
+    const nm = e.name || e.eventName || "";
+    const slug = e.url || e.link || e.slug || "";
+    console.log(`  ${id}: "${nm}"${slug ? "  <" + slug + ">" : ""}`);
+  }
+
+  const evName = (m) => (events[m.eventId] && (events[m.eventId].name || events[m.eventId].eventName)) || "";
+
   // Candidate finish markets, each tagged with the event name it belongs to (for
   // tournament attribution). Log them all so labels can be refined from CI logs.
   const candidates = [];
   for (const m of Object.values(markets)) {
     const hit = matchTier(m.marketName || "");
     if (!hit) continue;
-    const evName = (events[m.eventId] && (events[m.eventId].name || events[m.eventId].eventName)) || "";
-    candidates.push({ m, key: hit.key, winners: hit.winners, evName });
+    candidates.push({ m, key: hit.key, winners: hit.winners, incl: hit.incl, evName: evName(m) });
   }
   console.log("Candidate finish markets:");
-  for (const c of candidates) console.log(`  [${c.key}] "${c.m.marketName}"  (event: "${c.evName}", runners: ${(c.m.runners || []).length})`);
+  for (const c of candidates) console.log(`  [${c.key}${c.incl ? "+ties" : ""}] "${c.m.marketName}"  (event: "${c.evName}", runners: ${(c.m.runners || []).length})`);
   if (!candidates.length) throw new Error("No golf finish markets matched (see captured market names above).");
 
   for (const t of tournaments) emitTournament(t, candidates);
@@ -147,17 +161,20 @@ function emitTournament(t, candidates) {
   const outDir = path.join("data", t.key, "fanduel");
   // Attribute each candidate to this tournament by title-token overlap against
   // the market name or its event name. Keep the best-scoring market per tier.
-  const best = {}; // tierKey -> { m, winners, score }
+  const best = {}; // tierKey -> { m, winners, score, incl }
   for (const c of candidates) {
     const score = Math.max(titleScore(t.race_title, c.m.marketName), titleScore(t.race_title, c.evName));
     if (score === 0) continue; // doesn't reference this tournament
     const runners = (c.m.runners || []).length;
     const prev = best[c.key];
-    // Prefer the market with the strongest title match, then the most runners
-    // (the real field market rather than a small special).
-    if (!prev || score > prev.score || (score === prev.score && runners > (prev.m.runners || []).length)) {
-      best[c.key] = { m: c.m, winners: c.winners, score };
-    }
+    // Rank candidates for a tier by, in order: strongest tournament-title match;
+    // then the "(Incl. Ties)" variant (matches Kalshi's top-N-with-ties); then
+    // the most runners (the real field market, not a small special).
+    const better = !prev
+      || score > prev.score
+      || (score === prev.score && !!c.incl > !!prev.incl)
+      || (score === prev.score && !!c.incl === !!prev.incl && runners > (prev.m.runners || []).length);
+    if (better) best[c.key] = { m: c.m, winners: c.winners, score, incl: c.incl };
   }
 
   const tierKeys = Object.keys(best);
