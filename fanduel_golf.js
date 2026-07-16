@@ -124,6 +124,36 @@ async function main() {
 
   await page.goto(GOLF_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
+
+  // The golf landing page carries the Top-N finish markets but not the outright
+  // "Winner" market — that lives on the tournament's own page. Follow the golf
+  // links on the page (the response interceptor keeps accumulating markets) so
+  // the outright gets captured too. Best-effort: any failure leaves us with the
+  // landing-page markets we already have.
+  try {
+    const origin = new URL(GOLF_URL).origin;
+    const links = await page.$$eval('a[href*="/golf/"]', (as) =>
+      as.map((a) => ({ href: a.getAttribute("href") || "", text: (a.textContent || "").trim() })));
+    const seen = new Set();
+    const targets = [];
+    for (const l of links) {
+      const hay = (l.href + " " + l.text).toLowerCase();
+      // Follow links that point at The Open / an outright-winner view.
+      if (!/open|championship|winner|outright/.test(hay)) continue;
+      const abs = l.href.startsWith("http") ? l.href : origin + l.href;
+      if (seen.has(abs)) continue;
+      seen.add(abs);
+      targets.push(abs);
+    }
+    console.log(`Following ${targets.length} golf link(s) for the outright:`, targets.slice(0, 8));
+    for (const url of targets.slice(0, 8)) {
+      await page.goto(url, { waitUntil: "networkidle", timeout: 60000 }).catch(() => {});
+      await page.waitForTimeout(4000);
+    }
+  } catch (e) {
+    console.log("outright link-follow failed (keeping landing markets):", e.message);
+  }
+
   await browser.close();
 
   const nMarkets = Object.keys(markets).length;
