@@ -1,0 +1,42 @@
+{
+  "race_title": "The Open Championship",
+  "source_url": "https://kalshi.com/markets/kxpgatour/pga-tour/kxpgatour-thoc26",
+  "markets": [
+    {
+      "key": "winner",
+      "label": "Winner",
+      "odds_label": "Win",
+      "event_ticker": "KXPGATOUR-THOC26",
+      "title": "The Open Championship Winner",
+      "market_count": 165,
+      "scraped_at": "2026-07-16T11:55:28.117643+00:00"
+    },
+    {
+      "key": "top5",
+      "label": "Top 5",
+      "odds_label": "Top 5",
+      "event_ticker": "KXPGATOP5-THOC26",
+      "title": "The Open Championship: Top 5 Finishers",
+      "market_count": 165,
+      "scraped_at": "2026-07-16T11:55:28.622202+00:00"
+    },
+    {
+      "key": "top10",
+      "label": "Top 10",
+      "odds_label": "Top 10",
+      "event_ticker": "KXPGATOP10-THOC26",
+      "title": "The Open Championship: Top 10 Finishers",
+      "market_count": 165,
+      "scraped_at": "2026-07-16T11:55:29.133236+00:00"
+    },
+    {
+      "key": "top20",
+      "label": "Top 20",
+      "odds_label": "Top 20",
+      "event_ticker": "KXPGATOP20-THOC26",
+      "title": "The Open Championship: Top 20 Finishers",
+      "market_count": 165,
+      "scraped_at": "2026-07-16T11:55:29.622670+00:00"
+    }
+  ]
+}

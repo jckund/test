@@ -1,33 +1,19 @@
 {
-  "updated_at": "2026-07-16T07:41:19.090073+00:00",
+  "updated_at": "2026-07-16T12:00:28.588191+00:00",
   "series": [
     {
-      "key": "cup",
-      "label": "NASCAR",
-      "race_title": "Window World 450",
-      "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
+      "key": "theopen",
+      "label": "The Open",
+      "race_title": "The Open Championship",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxpgatour/pga-tour/kxpgatour-thoc26",
       "tiers": [
         "winner",
-        "top3",
         "top5",
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-07-16T07:39:52.316290+00:00"
-    },
-    {
-      "key": "truck",
-      "label": "Trucks",
-      "race_title": "FaithFest 250 presented by Mercer Transportation",
-      "full": false,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fai2pbm26",
-      "tiers": [
-        "winner",
-        "top3",
-        "top10"
-      ],
-      "scraped_at": "2026-07-16T07:41:19.090023+00:00"
+      "scraped_at": "2026-07-16T12:00:28.588151+00:00"
     }
   ]
 }
