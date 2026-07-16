@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-16T17:47:58.564823+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Top 10: 52c -> 60c (-150, +8pp)
+- **Noah Gragson** Top 10: 10c -> 7c (+1329, -3pp)
+
+_leader win YES 17c · scraped 2026-07-16T17:47:58.564823+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-16T07:37:01.476387+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
