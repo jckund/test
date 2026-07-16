@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-07-16T07:37:01.476387+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Top 5: 24c -> 30c (+233, +6pp)
+- **Shane Van Gisbergen** Top 10: 20c -> 24c (+317, +4pp)
+- **Ryan Blaney** Top 5: 57c -> 60c (-150, +3pp)
+- **Joey Logano** Top 5: 39c -> 42c (+138, +3pp)
+- **Chase Elliott** Top 5: 35c -> 38c (+163, +3pp)
+- **Cody Ware** Top 3: 1c -> 4c (+2400, +3pp)
+- **Carson Hocevar** Top 10: 35c -> 38c (+163, +3pp)
+
+_leader win YES 17c · scraped 2026-07-16T07:37:01.476387+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-16T01:23:43.341553+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
