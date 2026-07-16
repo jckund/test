@@ -27,7 +27,7 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 78,
+      "no_ask": 77,
       "no_bid": 72,
       "open_interest": 187,
       "status": "active",
@@ -35,21 +35,21 @@
       "volume": 187,
       "volume_24h": 187,
       "yes_ask": 28,
-      "yes_bid": 22
+      "yes_bid": 23
     },
     "KXNASCARTOP10-WINW26-AUCI": {
-      "last_price": 34,
+      "last_price": 32,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 68,
+      "no_ask": 72,
       "no_bid": 65,
       "open_interest": 612,
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-AUCI",
-      "volume": 645,
+      "volume": 812,
       "volume_24h": 366,
       "yes_ask": 35,
-      "yes_bid": 32
+      "yes_bid": 28
     },
     "KXNASCARTOP10-WINW26-AUDI": {
       "last_price": 17,
@@ -111,15 +111,15 @@
       "last_price": 38,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 68,
-      "no_bid": 62,
+      "no_ask": 67,
+      "no_bid": 61,
       "open_interest": 567,
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-CAHO",
       "volume": 567,
       "volume_24h": 306,
-      "yes_ask": 38,
-      "yes_bid": 32
+      "yes_ask": 39,
+      "yes_bid": 33
     },
     "KXNASCARTOP10-WINW26-CHBE": {
       "last_price": 68,
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-CHBU",
       "volume": 78,
-      "volume_24h": 47,
+      "volume_24h": 32,
       "yes_ask": 31,
       "yes_bid": 25
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 49,
-      "no_bid": 46,
+      "no_bid": 45,
       "open_interest": 1384,
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-CHEL",
       "volume": 1407,
       "volume_24h": 281,
-      "yes_ask": 54,
+      "yes_ask": 55,
       "yes_bid": 51
     },
     "KXNASCARTOP10-WINW26-CHFI": {
@@ -290,7 +290,7 @@
       "yes_bid": 21
     },
     "KXNASCARTOP10-WINW26-JOLO": {
-      "last_price": 56,
+      "last_price": 50,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 50,
@@ -298,7 +298,7 @@
       "open_interest": 976,
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-JOLO",
-      "volume": 1076,
+      "volume": 1080,
       "volume_24h": 477,
       "yes_ask": 57,
       "yes_bid": 50
@@ -318,18 +318,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP10-WINW26-KYLA": {
-      "last_price": 32,
+      "last_price": 63,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 45,
+      "no_ask": 44,
       "no_bid": 37,
       "open_interest": 447,
       "status": "active",
       "ticker": "KXNASCARTOP10-WINW26-KYLA",
-      "volume": 447,
+      "volume": 450,
       "volume_24h": 437,
       "yes_ask": 63,
-      "yes_bid": 55
+      "yes_bid": 56
     },
     "KXNASCARTOP10-WINW26-MIMC": {
       "last_price": 19,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-16T07:37:03.012672+00:00",
+  "scraped_at": "2026-07-16T12:16:53.577931+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top10"
 }
