@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 94,
-      "no_bid": 90,
+      "no_bid": 88,
       "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-BUWA",
       "volume": 2,
       "volume_24h": 0,
-      "yes_ask": 10,
+      "yes_ask": 12,
       "yes_bid": 6
     },
     "KXNASCARTOP3-WINW26-CAHO": {
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 95,
-      "no_bid": 88,
+      "no_bid": 90,
       "open_interest": 82,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-CAHO",
       "volume": 82,
       "volume_24h": 0,
-      "yes_ask": 12,
+      "yes_ask": 10,
       "yes_bid": 5
     },
     "KXNASCARTOP3-WINW26-CHBE": {
@@ -402,18 +402,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP3-WINW26-RYBL": {
-      "last_price": 37,
+      "last_price": 38,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 69,
+      "no_ask": 68,
       "no_bid": 62,
-      "open_interest": 64,
+      "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-RYBL",
-      "volume": 64,
+      "volume": 114,
       "volume_24h": 36,
       "yes_ask": 38,
-      "yes_bid": 31
+      "yes_bid": 32
     },
     "KXNASCARTOP3-WINW26-RYPR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-16T12:30:26.561511+00:00",
+  "scraped_at": "2026-07-16T13:05:40.491674+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top3"
 }
