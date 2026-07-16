@@ -514,7 +514,17 @@ function render(snapshot, history, seriesPoints, meta) {
   $("odds-col").textContent = oddsLabel + " odds";
 
   const markets = Object.values(snapshot.markets || {});
-  markets.sort((a, b) => (priceYes(b) ?? -1) - (priceYes(a) ?? -1));
+  // A resolved (non-active) market's orderbook is stale: an eliminated player
+  // reads yes_ask=100 (settled No) even though their true win prob is 0. Use
+  // last_price for settled markets and sort them below the live field so they
+  // don't masquerade as leaders mid-tournament.
+  const isSettled = (m) => !!(m.status && m.status !== "active");
+  const dispYes = (m) => (isSettled(m) && typeof m.last_price === "number") ? m.last_price : priceYes(m);
+  markets.sort((a, b) => {
+    const sa = isSettled(a) ? 1 : 0, sb = isSettled(b) ? 1 : 0;
+    if (sa !== sb) return sa - sb;                 // live markets first
+    return (dispYes(b) ?? -1) - (dispYes(a) ?? -1); // then by YES price desc
+  });
   const moves = latestMoves(history);
   const series = seriesByTicker(seriesPoints || []);
 
@@ -524,7 +534,7 @@ function render(snapshot, history, seriesPoints, meta) {
     rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
   }
   markets.forEach((m, i) => {
-    const p = priceYes(m);
+    const p = dispYes(m);
     const mv = moves[m.ticker];
     let delta = "";
     if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
