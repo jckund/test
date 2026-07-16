@@ -1,0 +1,62 @@
+name: Track Kalshi Golf market
+
+# Scrapes the Kalshi PGA golf markets for the tracked tournament(s) and commits
+# data/golf.json + data/<key>/ changes. This workflow does NOT deploy — the
+# NASCAR workflow (track.yml) publishes the shared GitHub Pages site on its own
+# schedule and copies the whole data/ dir plus golf.html, so golf updates reach
+# /golf/ within ~15 min. Data commits here don't match track.yml's path filter,
+# so there is no deploy loop.
+#
+# GitHub-hosted runners have open egress (Kalshi is reachable there but not from
+# a Claude session, whose proxy blocks kalshi.com), so the scrape runs here.
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min, like the NASCAR Kalshi scrape
+  workflow_dispatch: {}
+  push:
+    branches: [claude/nascar-page-scraper-mwi55a]
+    paths:
+      - golf_scraper.py
+      - .github/workflows/golf.yml
+
+concurrency:
+  group: track-golf
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run golf scraper
+        env:
+          KALSHI_TRADES_PER_MARKET: "50"
+        run: python3 golf_scraper.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/
+          if git diff --cached --quiet -- data/; then
+            echo "No golf market changes; nothing to commit."
+          else
+            git commit -m "data(golf): market update $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            pushed=false
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; pushed=true; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+            if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
+          fi

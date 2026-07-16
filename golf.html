@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalshi Golf Tracker — The Open Championship</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #eef0f3;
+    --ink: #14181f; --ink-2: #5b6472; --line: #e2e5ea;
+    --accent: #e0930c; --accent-soft: #f6e3b8; --pos: #1a8f5a; --neg: #d0472b;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d1015; --surface: #151a21; --surface-2: #1c222b;
+      --ink: #eef1f5; --ink-2: #9aa4b2; --line: #262d38;
+      --accent: #f0b429; --accent-soft: #3a2f14; --pos: #35c07f; --neg: #ff6a4d;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f7; --surface: #ffffff; --surface-2: #eef0f3;
+    --ink: #14181f; --ink-2: #5b6472; --line: #e2e5ea;
+    --accent: #e0930c; --accent-soft: #f6e3b8; --pos: #1a8f5a; --neg: #d0472b;
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1015; --surface: #151a21; --surface-2: #1c222b;
+    --ink: #eef1f5; --ink-2: #9aa4b2; --line: #262d38;
+    --accent: #f0b429; --accent-soft: #3a2f14; --pos: #35c07f; --neg: #ff6a4d;
+  }
+
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: var(--sans); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 24px 20px 64px; }
+
+  .eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--ink-2); font-weight: 600; margin: 0 0 6px; }
+  h1 { font-size: clamp(24px, 4.2vw, 38px); line-height: 1.05; margin: 0;
+    font-weight: 800; letter-spacing: -.02em; text-wrap: balance; }
+  .checker { height: 8px; margin: 16px 0 18px; border-radius: 2px;
+    background-image:
+      linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%),
+      linear-gradient(45deg, var(--ink) 25%, transparent 25%, transparent 75%, var(--ink) 75%);
+    background-size: 16px 16px; background-position: 0 0, 8px 8px; opacity: .16; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center;
+    font-size: 13px; color: var(--ink-2); margin-bottom: 18px; }
+  .meta a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .refresh { appearance: none; font: inherit; font-size: 13px; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 6px; cursor: pointer;
+    color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+    border-radius: 999px; padding: 4px 12px; }
+  .refresh:hover { background: var(--surface-2); }
+  .refresh:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .refresh[disabled] { cursor: default; color: var(--ink-2); }
+  .refresh .ri { display: inline-block; }
+  .refresh[disabled] .ri { animation: spin .7s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .live { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; color: var(--ink); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+  @media (prefers-reduced-motion: no-preference) {
+    .live .dot { animation: pulse 2s ease-out infinite; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 60%, transparent); }
+      70% { box-shadow: 0 0 0 7px transparent; }
+      100% { box-shadow: 0 0 0 0 transparent; } }
+  }
+
+  /* Tier tabs */
+  .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px;
+    background: var(--surface-2); padding: 5px; border-radius: 11px;
+    border: 1px solid var(--line); width: fit-content; max-width: 100%; }
+  .tab { appearance: none; border: 0; background: transparent; color: var(--ink-2);
+    font: inherit; font-size: 13px; font-weight: 600; padding: 7px 15px;
+    border-radius: 7px; cursor: pointer; white-space: nowrap; }
+  .tab:hover { color: var(--ink); }
+  .tab[aria-selected="true"] { background: var(--surface); color: var(--ink);
+    box-shadow: 0 1px 2px rgba(0,0,0,.12); }
+  .tab:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* Outer series selector: a touch bolder than the tier tabs and accent-tinted
+     when active, so the series level reads as primary. */
+  .series-tabs { margin-bottom: 10px; }
+  .series-tabs .tab { font-size: 14px; padding: 8px 18px; }
+  .series-tabs .tab[aria-selected="true"] { background: var(--accent); color: #fff; }
+
+  .banner { background: var(--surface); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent); border-radius: 8px;
+    padding: 14px 16px; margin-bottom: 22px; font-size: 14px; color: var(--ink-2); }
+  .banner strong { color: var(--ink); }
+
+  .card { background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; overflow: hidden; }
+  .card + .card { margin-top: 24px; }
+  .card-head { display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; padding: 16px 18px; border-bottom: 1px solid var(--line); }
+  .card-head h2 { margin: 0; font-size: 15px; letter-spacing: .02em; }
+  .card-head .count { font-size: 12px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+  .scroll { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 640px; }
+  thead th { text-align: right; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--ink-2); font-weight: 600; padding: 10px 14px; white-space: nowrap;
+    border-bottom: 1px solid var(--line); }
+  thead th.l, tbody td.l { text-align: left; }
+  tbody td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  tbody tr:last-child td { border-bottom: 0; }
+  tbody tr:hover { background: var(--surface-2); }
+  .rank { color: var(--ink-2); font-variant-numeric: tabular-nums; width: 34px; }
+  .rank.top { color: var(--accent); font-weight: 700; }
+  .driver { font-weight: 600; }
+  .num { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .muted { color: var(--ink-2); }
+
+  .prob { display: flex; align-items: center; gap: 10px; justify-content: flex-end; }
+  .prob .pct { font-family: var(--mono); font-weight: 700; width: 56px; text-align: right; }
+  .meter { flex: 1; height: 8px; max-width: 110px; background: var(--surface-2);
+           border-radius: 999px; overflow: hidden; }
+  .meter > i { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+  .spark-cell { width: 92px; }
+  .spark { display: block; }
+  .delta { font-family: var(--mono); font-size: 12px; white-space: nowrap; }
+  .delta.up { color: var(--pos); } .delta.down { color: var(--neg); }
+  .pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 8px;
+    border-radius: 999px; background: var(--surface-2); color: var(--ink-2); text-transform: capitalize; }
+
+  .feed { list-style: none; margin: 0; padding: 0; }
+  .feed li { padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .feed li:last-child { border-bottom: 0; }
+  .feed .ts { font-size: 12px; color: var(--ink-2); font-family: var(--mono); margin-bottom: 6px; }
+  .feed .chg { font-size: 13px; margin: 3px 0; }
+  .feed .chg b { font-weight: 600; }
+  .arrow.up { color: var(--pos); } .arrow.down { color: var(--neg); }
+
+  /* The comparison grid is wide (many books). Let it break out of the 980px
+     reading column and use up to 95vw, centered on the viewport, so all books
+     fit without horizontal scrolling on normal screens. The inner .scroll box
+     keeps overflow-x as a fallback on very narrow screens. */
+  #compare-view { width: min(1500px, 95vw); margin-left: 50%; transform: translateX(-50%); }
+  #compare-view .cmp-note, #compare-view .cmp-fresh, #compare-view .subtabs { max-width: 900px; }
+  .subtabs { margin: 2px 0 14px; }
+  .cmp-note { font-size: 12.5px; color: var(--ink-2); margin: 0 0 16px; line-height: 1.55;
+    background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 11px 14px; }
+  .cmp-note b { color: var(--ink); }
+  .edge { font-family: var(--mono); font-weight: 700; }
+  .edge.pos { color: var(--pos); } .edge.neg { color: var(--neg); }
+  /* +EV highlight: a book line longer than the Kalshi-implied fair line. */
+  td.ev { background: color-mix(in srgb, var(--pos) 15%, transparent); }
+  tr:hover td.ev { background: color-mix(in srgb, var(--pos) 22%, transparent); }
+  .cmp-fresh { font-size: 12px; color: var(--ink-2); margin: 0 0 14px; display: flex;
+    flex-wrap: wrap; gap: 4px 16px; }
+  .cmp-fresh b { color: var(--ink); font-weight: 600; }
+
+  .empty { padding: 40px 18px; text-align: center; color: var(--ink-2); font-size: 14px; }
+  footer { margin-top: 28px; font-size: 12px; color: var(--ink-2); text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Golf · Kalshi</p>
+    <h1 id="title">Golf Tracker</h1>
+    <div class="checker"></div>
+    <div class="meta">
+      <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
+      <span id="mcount"></span>
+      <button id="refresh" class="refresh" type="button" title="Reload the latest saved snapshot (no new prices from Kalshi)">
+        <span class="ri" aria-hidden="true">↻</span> Refresh
+      </button>
+      <a id="runscraper" class="refresh" href="https://github.com/jckund/test/actions/workflows/golf.yml"
+         target="_blank" rel="noopener"
+         title="Fetch brand-new prices from Kalshi: opens GitHub Actions, then click 'Run workflow'. Takes ~1 min; the page updates automatically once it commits.">
+        <span aria-hidden="true">⟳</span> Fetch new prices ↗
+      </a>
+      <a id="src" href="#" target="_blank" rel="noopener">View on Kalshi ↗</a>
+    </div>
+  </header>
+
+  <div class="tabs series-tabs" id="series-tabs" role="tablist" aria-label="Series"></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Market tiers"></div>
+
+  <div id="notice"></div>
+
+  <div id="tier-view">
+  <section class="card">
+    <div class="card-head">
+      <h2 id="stand-title">Standings</h2>
+      <span class="count" id="stand-count"></span>
+    </div>
+    <div class="scroll">
+      <table id="standings">
+        <thead>
+          <tr>
+            <th class="l">#</th>
+            <th class="l">Driver</th>
+            <th id="odds-col">Odds</th>
+            <th>Trend</th>
+            <th>Yes / No odds</th>
+            <th>Volume</th>
+            <th>OI</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-head"><h2>Recent changes</h2></div>
+    <ul class="feed" id="feed"></ul>
+  </section>
+  </div>
+
+  <div id="activity-view" style="display:none">
+    <section class="card">
+      <div class="card-head">
+        <h2>Recent activity</h2>
+        <span class="count" id="act-count"></span>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th class="l">Time</th>
+              <th class="l">Driver</th>
+              <th class="l">Tier</th>
+              <th class="l">Side</th>
+              <th>Size</th>
+              <th>Price</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody id="act-rows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <div id="compare-view" style="display:none">
+    <div class="tabs subtabs" id="cmp-tabs" role="tablist" aria-label="Comparison views"></div>
+
+    <div id="cmp-driver-panel">
+      <div class="cmp-note">
+        Posted <b>American odds</b> per book, with <b>Kalshi as source of truth</b>. Each book's
+        <b>EV</b> is the expected return on a $1 bet at that book's odds: <b>EV = p·(payout) − (1−p)</b>,
+        shown as a percent. This is a <b>worst-case EV</b> — <b>p</b> is Kalshi's <b>conservative
+        no-side</b> chance (1 − no-ask, the low end of the quote), so it's the return you'd still
+        clear if the true chance sits at the pessimistic edge of the market.
+        <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
+        (positive EV), <span class="edge neg">red</span> means negative. Rows are sorted by the
+        <b>best EV across books</b>. Book odds include vig.
+      </div>
+      <div class="cmp-fresh" id="cmp-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2 id="cmp-title">Kalshi vs the books</h2>
+          <span class="count" id="cmp-count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr id="cmp-head"></tr></thead>
+            <tbody id="cmp-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div id="cmp-mfr-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Implied</b> odds for the top-finishing driver of each manufacturer, derived from the live
+        <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
+        within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
+        The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
+        Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the <b>EV</b> (expected return on a $1 bet
+        at the book's odds) appear alongside. EV is <b>worst-case</b> — it prices against Kalshi's
+        conservative no-side chance, not the displayed midpoint. Cells shaded
+        <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
+        Kalshi-implied fair line.
+      </div>
+      <div class="cmp-fresh" id="mfr-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Which manufacturer wins the race</h2>
+          <span class="count" id="mfr-win-count"></span>
+        </div>
+        <div class="scroll">
+          <table id="mfr-win">
+            <thead><tr id="mfr-win-head"></tr></thead>
+            <tbody id="mfr-win-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <div id="mfr-groups"></div>
+    </div>
+
+    <div id="cmp-team-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
+        The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
+        teams; book <b>winning-team</b> markets and the <b>EV</b> (expected return on a $1 bet at the
+        book's odds, priced against Kalshi's <b>worst-case no-side</b> team chance) appear alongside, with
+        <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
+        Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
+        imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
+      </div>
+      <div class="cmp-fresh" id="team-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Which team wins the race</h2>
+          <span class="count" id="team-win-count"></span>
+        </div>
+        <div class="scroll">
+          <table id="team-win">
+            <thead><tr id="team-win-head"></tr></thead>
+            <tbody id="team-win-rows"></tbody>
+          </table>
+        </div>
+      </section>
+      <div id="team-groups"></div>
+    </div>
+
+    <div id="cmp-move-panel" style="display:none">
+      <div class="cmp-note">
+        Biggest <b>Kalshi</b> line moves since the previous data refresh, across every tier.
+        Change is in <b>implied win probability</b> (bid/ask midpoint, in points), with the odds
+        <b>before → after</b>. <span class="edge pos">Green</span> = shortened (chance rose),
+        <span class="edge neg">red</span> = drifted (chance fell). Biggest moves first.
+      </div>
+      <div class="cmp-fresh" id="move-fresh"></div>
+      <section class="card">
+        <div class="scroll">
+          <table id="move-tbl">
+            <thead><tr><th class="l">Driver</th><th class="l">Market</th><th>Δ prob</th><th>Odds (before → after)</th></tr></thead>
+            <tbody id="move-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    Kalshi snapshots by <code>golf_scraper.py</code> (public API); FanDuel by <code>fanduel_golf.js</code>
+    (headless browser). Git history is the full change log. Kalshi is treated as the fair-odds source.
+  </footer>
+</div>
+
+<script>
+const SERIES_URL = "../data/golf.json";
+const $ = (id) => document.getElementById(id);
+
+let SERIESLIST = null;     // [{key,label,race_title,full,source_url,tiers}]
+let currentSeries = null;  // active series key (e.g. "cup")
+let INDEX = null;          // active series' index.json
+let currentKey = null;     // active inner tab (tier / compare / activity)
+
+// All data lives under data/<series>/…; build paths relative to the active race.
+const dbase = () => "../data/" + currentSeries + "/";
+const seriesFull = () => {
+  const s = (SERIESLIST || []).find((x) => x.key === currentSeries);
+  return !!(s && s.full);
+};
+
+const PRICE_FIELDS = new Set(["last_price", "yes_bid", "yes_ask", "no_bid", "no_ask"]);
+const FIELD_LABELS = {
+  last_price: "odds", yes_bid: "yes bid", yes_ask: "yes ask",
+  no_bid: "no bid", no_ask: "no ask", volume: "volume",
+  open_interest: "OI", status: "status",
+};
+
+function usOdds(c) {
+  if (typeof c !== "number" || c <= 0 || c >= 100) return "—";
+  const p = c / 100;
+  const odds = p > 0.5 ? -(100 * p) / (1 - p) : (100 * (1 - p)) / p;
+  const r = Math.round(odds);
+  return (r > 0 ? "+" : "") + r;
+}
+
+// Yes price (cents) as shown on Kalshi's "Yes" buy button = the yes ask.
+// Fall back to yes bid, the no-side complement, then last trade.
+function priceYes(m) {
+  if (typeof m.yes_ask === "number") return m.yes_ask;
+  if (typeof m.yes_bid === "number") return m.yes_bid;
+  if (typeof m.no_bid === "number") return 100 - m.no_bid;   // = yes ask
+  if (typeof m.last_price === "number" && m.last_price > 0) return m.last_price;
+  return null;
+}
+// No price (cents) as shown on Kalshi's "No" buy button = the no ask.
+function priceNo(m) {
+  if (typeof m.no_ask === "number") return m.no_ask;
+  if (typeof m.no_bid === "number") return m.no_bid;
+  if (typeof m.yes_bid === "number") return 100 - m.yes_bid; // = no ask
+  const y = priceYes(m);
+  return (y == null) ? null : 100 - y;
+}
+const cCents = (v) => (typeof v === "number") ? v + "¢" : "—";
+
+function sparkSVG(vals) {
+  const pts = vals.filter((v) => typeof v === "number");
+  if (pts.length < 2) return `<span class="muted">—</span>`;
+  const w = 84, h = 22, pad = 2;
+  const min = Math.min(...pts), max = Math.max(...pts);
+  const span = (max - min) || 1;
+  const step = (w - pad * 2) / (pts.length - 1);
+  const coords = pts.map((v, i) => [pad + i * step, pad + (h - pad * 2) * (1 - (v - min) / span)]);
+  const d = coords.map((c, i) => (i ? "L" : "M") + c[0].toFixed(1) + " " + c[1].toFixed(1)).join(" ");
+  const net = pts[pts.length - 1] - pts[0];
+  const col = net > 0 ? "var(--pos)" : net < 0 ? "var(--neg)" : "var(--ink-2)";
+  const [ex, ey] = coords[coords.length - 1];
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="price trend">
+      <path d="${d}" fill="none" stroke="${col}" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="${ex.toFixed(1)}" cy="${ey.toFixed(1)}" r="2" fill="${col}"/>
+    </svg>`;
+}
+
+function relTime(iso) {
+  const t = Date.parse(iso);
+  if (isNaN(t)) return iso || "unknown";
+  const s = Math.round((Date.now() - t) / 1000);
+  if (s < 60) return s + "s ago";
+  if (s < 3600) return Math.round(s / 60) + "m ago";
+  if (s < 86400) return Math.round(s / 3600) + "h ago";
+  return Math.round(s / 86400) + "d ago";
+}
+
+async function loadJSON(url) {
+  const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error(url + " " + r.status);
+  return r.json();
+}
+async function loadLines(url) {
+  const r = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) return [];
+  const text = await r.text();
+  return text.trim().split("\n").filter(Boolean).map((l) => {
+    try { return JSON.parse(l); } catch { return null; }
+  }).filter(Boolean);
+}
+
+function seriesByTicker(points) {
+  const out = {};
+  for (const pt of points) {
+    for (const [tk, val] of Object.entries(pt.p || {})) (out[tk] = out[tk] || []).push(val);
+  }
+  return out;
+}
+
+function latestMoves(history) {
+  const moves = {};
+  for (const rec of history) {
+    for (const c of (rec.changes || [])) {
+      if (c.type === "market_changed" && c.fields && c.fields.last_price) moves[c.ticker] = c.fields.last_price;
+    }
+  }
+  return moves;
+}
+
+function buildTabs() {
+  const tabs = $("tabs");
+  tabs.innerHTML = "";
+  const items = INDEX.markets.map((m) => ({ key: m.key, label: m.label }));
+  items.push({ key: "compare", label: "Odds Comparison" });
+  items.push({ key: "activity", label: "Activity" });
+  for (const it of items) {
+    const b = document.createElement("button");
+    b.className = "tab";
+    b.role = "tab";
+    b.textContent = it.label;
+    b.setAttribute("aria-selected", String(it.key === currentKey));
+    b.onclick = () => selectTier(it.key);
+    tabs.appendChild(b);
+  }
+}
+
+function showView(which) {
+  $("tier-view").style.display = which === "tier" ? "" : "none";
+  $("activity-view").style.display = which === "activity" ? "" : "none";
+  $("compare-view").style.display = which === "compare" ? "" : "none";
+}
+
+function tierMeta(key) {
+  return INDEX.markets.find((m) => m.key === key);
+}
+
+async function selectTier(key) {
+  currentKey = key;
+  location.hash = currentSeries + "/" + key;
+  buildTabs();
+  if (key === "activity") { showView("activity"); return loadActivity(); }
+  if (key === "compare") { showView("compare"); return loadCompare(); }
+  showView("tier");
+  const meta = tierMeta(key);
+  const base = dbase() + key;
+  try {
+    const [snap, hist, series] = await Promise.all([
+      loadJSON(base + "/snapshot.json"),
+      loadLines(base + "/history.jsonl"),
+      loadLines(base + "/series.jsonl"),
+    ]);
+    render(snap, hist, series, meta);
+  } catch (e) {
+    $("rows").innerHTML = `<tr><td colspan="7" class="empty">No data for this tier yet.</td></tr>`;
+    $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
+  }
+}
+
+function render(snapshot, history, seriesPoints, meta) {
+  const oddsLabel = (meta && meta.odds_label) || snapshot.odds_label || "Win";
+  $("updated").textContent = "Updated " + relTime(snapshot.scraped_at);
+  $("updated").title = snapshot.scraped_at || "";
+  $("mcount").textContent = (snapshot.market_count ?? 0) + " players";
+  $("src").href = snapshot.source_url || "https://kalshi.com";
+  $("stand-title").textContent = (meta ? meta.label : "Standings") + " — American odds";
+  $("odds-col").textContent = oddsLabel + " odds";
+
+  const markets = Object.values(snapshot.markets || {});
+  // A resolved (non-active) market's orderbook is stale: an eliminated player
+  // reads yes_ask=100 (settled No) even though their true win prob is 0. Use
+  // last_price for settled markets and sort them below the live field so they
+  // don't masquerade as leaders mid-tournament.
+  const isSettled = (m) => !!(m.status && m.status !== "active");
+  const dispYes = (m) => (isSettled(m) && typeof m.last_price === "number") ? m.last_price : priceYes(m);
+  markets.sort((a, b) => {
+    const sa = isSettled(a) ? 1 : 0, sb = isSettled(b) ? 1 : 0;
+    if (sa !== sb) return sa - sb;                 // live markets first
+    return (dispYes(b) ?? -1) - (dispYes(a) ?? -1); // then by YES price desc
+  });
+  const moves = latestMoves(history);
+  const series = seriesByTicker(seriesPoints || []);
+
+  const rows = $("rows");
+  rows.innerHTML = "";
+  if (!markets.length) {
+    rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
+  }
+  markets.forEach((m, i) => {
+    const p = dispYes(m);
+    const mv = moves[m.ticker];
+    let delta = "";
+    if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
+      const up = mv.to > mv.from;
+      delta = `<span class="delta ${up ? "up" : "down"}" title="from ${usOdds(mv.from)} to ${usOdds(mv.to)}">${up ? "▲" : "▼"}</span>`;
+    }
+    const status = (m.status && m.status !== "active") ? ` <span class="pill">${m.status}</span>` : "";
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+      <td class="l driver">${escapeHtml(m.name || m.ticker)}${status}</td>
+      <td>
+        <div class="prob">
+          ${delta}
+          <div class="meter"><i style="width:${p ?? 0}%"></i></div>
+          <span class="pct" title="${p != null ? p + "% implied" : ""}">${usOdds(p)}</span>
+        </div>
+      </td>
+      <td class="spark-cell">${sparkSVG((series[m.ticker] || []).slice(-24))}</td>
+      <td class="num">${yesNoOdds(m)}</td>
+      <td class="num">${fmtInt(m.volume)}</td>
+      <td class="num">${fmtInt(m.open_interest)}</td>`;
+    rows.appendChild(tr);
+  });
+  $("stand-count").textContent = markets.length + " players";
+
+  renderFeed(history);
+}
+
+function renderFeed(history) {
+  const feed = $("feed");
+  feed.innerHTML = "";
+  const recent = history.slice(-30).reverse();
+  if (!recent.length) { feed.innerHTML = `<li class="empty">No changes recorded yet.</li>`; return; }
+  for (const rec of recent) {
+    const li = document.createElement("li");
+    const lines = (rec.changes || []).map((c) => {
+      if (c.type === "initial_snapshot")
+        return `<div class="chg">Initial snapshot — <b>${c.market_count}</b> markets.</div>`;
+      if (c.type === "market_added")
+        return `<div class="chg">➕ Added <b>${escapeHtml(c.name || c.ticker)}</b></div>`;
+      if (c.type === "market_removed")
+        return `<div class="chg">➖ Removed <b>${escapeHtml(c.name || c.ticker)}</b></div>`;
+      const parts = Object.entries(c.fields || {}).map(([f, mv]) => {
+        const isPrice = PRICE_FIELDS.has(f);
+        const from = isPrice ? usOdds(mv.from) : fmtVal(mv.from);
+        const to = isPrice ? usOdds(mv.to) : fmtVal(mv.to);
+        let arrow = "";
+        if (f === "last_price" && typeof mv.from === "number" && typeof mv.to === "number") {
+          const cls = mv.to > mv.from ? "up" : "down";
+          arrow = ` <span class="arrow ${cls}">${mv.to > mv.from ? "▲" : "▼"}</span>`;
+        }
+        return `${FIELD_LABELS[f] || f} ${from}→${to}${arrow}`;
+      });
+      return `<div class="chg"><b>${escapeHtml(c.name || c.ticker)}</b> — ${parts.join("; ")}</div>`;
+    }).join("");
+    li.innerHTML = `<div class="ts">${new Date(rec.scraped_at).toLocaleString()}</div>${lines}`;
+    feed.appendChild(li);
+  }
+}
+
+function yesNoOdds(m) {
+  const yes = priceYes(m), no = priceNo(m);
+  // Show the Kalshi ¢ price (so it ties to the site) plus the American odds.
+  return `${cCents(yes)} ${usOdds(yes)} <span class="muted">/</span> ${cCents(no)} ${usOdds(no)}`;
+}
+async function loadActivity() {
+  try {
+    renderActivity(await loadJSON(dbase() + "activity.json"));
+  } catch (e) {
+    $("act-rows").innerHTML = `<tr><td colspan="7" class="empty">No activity feed yet.</td></tr>`;
+    $("mcount").textContent = "";
+    $("act-count").textContent = "";
+    $("updated").textContent = "Awaiting activity";
+  }
+}
+
+function renderActivity(data) {
+  const trades = (data && data.trades) || [];
+  $("updated").textContent = "Updated " + relTime(data && data.updated_at);
+  $("updated").title = (data && data.updated_at) || "";
+  $("mcount").textContent = trades.length + " recent trades";
+  $("act-count").textContent = trades.length + " trades";
+  const tb = $("act-rows");
+  tb.innerHTML = "";
+  if (!trades.length) {
+    tb.innerHTML = `<tr><td colspan="7" class="empty">No recent trades.</td></tr>`;
+    return;
+  }
+  for (const t of trades) {
+    const isNo = t.side === "no";
+    const price = isNo ? t.no_price : t.yes_price;
+    const value = (typeof price === "number" && typeof t.count === "number")
+      ? t.count * price / 100 : null;
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td class="l num muted" title="${t.created_time || ""}">${relTime(t.created_time)}</td>
+      <td class="l driver">${escapeHtml(t.driver || t.ticker)}</td>
+      <td class="l"><span class="pill">${escapeHtml(t.tier || "")}</span></td>
+      <td class="l"><span class="delta ${isNo ? "down" : "up"}">${isNo ? "No" : "Yes"}</span></td>
+      <td class="num">${fmtInt(t.count)}</td>
+      <td class="num">${(typeof price === "number") ? price + "¢" : "—"} <span class="muted">${usOdds(price)}</span></td>
+      <td class="num">${fmtUSD(value)}</td>`;
+    tb.appendChild(tr);
+  }
+}
+
+function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
+function fmtUSD(v) {
+  if (typeof v !== "number" || isNaN(v)) return "—";
+  const dec = v >= 1000 ? 0 : 2;
+  return "$" + v.toLocaleString(undefined, { minimumFractionDigits: dec, maximumFractionDigits: dec });
+}
+function fmtVal(v) { return (v == null) ? "—" : v; }
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, (c) =>
+    ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+function showEmpty() {
+  $("notice").innerHTML =
+    `<div class="banner"><strong>No data yet.</strong> Trigger the <b>Track Kalshi Golf market</b> workflow from the Actions tab, or wait for the next scheduled run.</div>`;
+  $("updated").textContent = "Awaiting first scrape";
+  $("rows").innerHTML = `<tr><td colspan="7" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
+  $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
+}
+
+// Hash format is #<series>/<tab> (e.g. #cup/winner, #truck/compare).
+const hashSeries = () => (location.hash || "").replace("#", "").split("/")[0] || "";
+const hashTab = () => (location.hash || "").replace("#", "").split("/")[1] || "";
+
+function buildSeriesTabs() {
+  const box = $("series-tabs");
+  box.innerHTML = "";
+  const list = SERIESLIST || [];
+  box.style.display = list.length > 1 ? "" : "none";  // hide if only one race
+  for (const s of list) {
+    const b = document.createElement("button");
+    b.className = "tab"; b.role = "tab"; b.textContent = s.label;
+    b.title = s.race_title || "";
+    b.setAttribute("aria-selected", String(s.key === currentSeries));
+    b.onclick = () => selectSeries(s.key);
+    box.appendChild(b);
+  }
+}
+
+async function selectSeries(key) {
+  currentSeries = key;
+  currentKey = null;   // reset inner tab; loadSeries picks from hash/default
+  cmpSub = null;       // reset comparison subtab
+  buildSeriesTabs();
+  await loadSeries();
+}
+
+async function loadSeries() {
+  try {
+    INDEX = await loadJSON(dbase() + "index.json");
+    if (!INDEX.markets || !INDEX.markets.length) { showEmpty(); return; }
+    $("notice").innerHTML = "";
+    $("title").textContent = INDEX.race_title || "Golf Tracker";
+    $("src").href = INDEX.source_url || "https://kalshi.com";
+    const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "activity");
+    if (!currentKey || !validKeys.includes(currentKey))
+      currentKey = validKeys.includes(hashTab()) ? hashTab() : INDEX.markets[0].key;
+    await selectTier(currentKey);
+  } catch (e) {
+    showEmpty();
+  }
+}
+
+// Initial load: read the series list, pick the series from the hash (or first).
+async function boot() {
+  try {
+    const sj = await loadJSON(SERIES_URL);
+    SERIESLIST = (sj && sj.series) || [];
+  } catch { SERIESLIST = []; }
+  if (!SERIESLIST.length) { $("series-tabs").style.display = "none"; showEmpty(); return; }
+  currentSeries = SERIESLIST.find((s) => s.key === hashSeries()) ? hashSeries() : SERIESLIST[0].key;
+  buildSeriesTabs();
+  await loadSeries();
+}
+
+// Periodic/manual refresh: re-read the series list (so a newly-opened race
+// appears on its own) and reload the active series' data, preserving the tab.
+async function refresh() {
+  try {
+    const sj = await loadJSON(SERIES_URL);
+    if (sj && sj.series && sj.series.length) SERIESLIST = sj.series;
+  } catch { /* keep existing list */ }
+  if (!SERIESLIST || !SERIESLIST.length) { showEmpty(); return; }
+  if (!SERIESLIST.find((s) => s.key === currentSeries)) currentSeries = SERIESLIST[0].key;
+  buildSeriesTabs();
+  await loadSeries();
+}
+
+// ---- Kalshi vs the books comparison ----
+const CMP_TIERS = [
+  { key: "winner", label: "Winner" }, { key: "top5", label: "Top 5" },
+  { key: "top10", label: "Top 10" }, { key: "top20", label: "Top 20" },
+];
+// Books to compare against Kalshi. `live` books are scraped on a schedule;
+// others are entered manually from posted odds (stamped with a capture time).
+const BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
+];
+const BOOKDATA = {};    // key -> parsed odds json (or null if unavailable)
+let compareTier = null; // currently shown comparison tier
+
+// Match drivers across sources despite formatting differences: strip accents
+// (Suárez→suarez), drop name-suffixes and middle names/initials, and key on
+// first + last token (so "John H. Nemechek" == "John Hunter Nemechek").
+function normName(s) {
+  const toks = (s || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .split(/[^a-z0-9]+/)
+    .filter((t) => t && !["jr", "sr", "ii", "iii", "iv"].includes(t));
+  if (!toks.length) return "";
+  return toks.length === 1 ? toks[0] : toks[0] + toks[toks.length - 1];
+}
+const pct = (p) => (p == null ? `<span class="muted">—</span>` : (p * 100).toFixed(1) + "%");
+const usAmerican = (a) => (typeof a !== "number" ? "—" : (a > 0 ? "+" : "") + a);
+
+// Expected value of a $1 book bet, using Kalshi's implied prob p as "true".
+// profit = net decimal payout per $1; EV = p·profit − (1−p). Returned as a %.
+// EV > 0 exactly when the book line is longer than the Kalshi-implied fair line.
+function evPct(p, american) {
+  if (typeof p !== "number" || typeof american !== "number") return null;
+  const profit = american > 0 ? american / 100 : 100 / (-american);
+  return (p * profit - (1 - p)) * 100;
+}
+
+const bookTime = (d) => (d && (d.scraped_at || d.captured_at)) || null;
+// Books that actually carry the given tier right now.
+function booksForTier(tierKey) {
+  return BOOKS.filter((bk) => BOOKDATA[bk.key] && BOOKDATA[bk.key].tiers && BOOKDATA[bk.key].tiers[tierKey]);
+}
+function cmpTiersAvailable() {
+  const kalshiKeys = new Set(INDEX.markets.map((m) => m.key));
+  return CMP_TIERS.filter((t) => kalshiKeys.has(t.key) && booksForTier(t.key).length);
+}
+
+// Odds Comparison subtabs: the per-tier driver comparison plus the derived
+// Manufacturer and Team views (each a separate panel inside #compare-view).
+let cmpSub = null; // 'winner'|'top3'|'top5'|'top10'|'mfr'|'team'
+
+function cmpSubItems() {
+  const items = cmpTiersAvailable().map((t) => ({ key: t.key, label: t.label }));
+  // Manufacturer/Team are Cup-only (imputed from the Kalshi winner market with
+  // Cup rosters; those markets don't exist for the support series).
+  if (seriesFull()) {
+    items.push({ key: "mfr", label: "Manufacturer" });
+    items.push({ key: "team", label: "Team" });
+  }
+  // Kalshi line-movement view (available whenever any Kalshi tier exists).
+  if (cmpTiersAvailable().length || INDEX.markets.length) items.push({ key: "move", label: "Movement" });
+  return items;
+}
+
+function buildCmpTabs() {
+  const items = cmpSubItems();
+  if (!cmpSub || !items.find((i) => i.key === cmpSub)) cmpSub = items.length ? items[0].key : null;
+  const box = $("cmp-tabs");
+  box.innerHTML = "";
+  for (const it of items) {
+    const b = document.createElement("button");
+    b.className = "tab"; b.role = "tab"; b.textContent = it.label;
+    b.setAttribute("aria-selected", String(it.key === cmpSub));
+    b.onclick = () => { cmpSub = it.key; buildCmpTabs(); renderCmpSub(); };
+    box.appendChild(b);
+  }
+}
+
+function showCmpPanel(which) {
+  $("cmp-driver-panel").style.display = which === "driver" ? "" : "none";
+  $("cmp-mfr-panel").style.display = which === "mfr" ? "" : "none";
+  $("cmp-team-panel").style.display = which === "team" ? "" : "none";
+  $("cmp-move-panel").style.display = which === "move" ? "" : "none";
+}
+
+async function renderCmpSub() {
+  if (cmpSub === "mfr") { showCmpPanel("mfr"); return loadManufacturers(); }
+  if (cmpSub === "team") { showCmpPanel("team"); return loadTeams(); }
+  if (cmpSub === "move") { showCmpPanel("move"); return loadMovement(); }
+  showCmpPanel("driver");
+  compareTier = cmpSub;
+  return renderCompare();
+}
+
+// Kalshi line movement since the previous scrape, reconstructed from each tier's
+// history.jsonl (last record's from→to) plus the current snapshot. Midpoint basis.
+async function loadMovement() {
+  const fresh = $("move-fresh"); const rows = $("move-rows");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  const ks = new Set(INDEX.markets.map((m) => m.key));
+  const tiers = CMP_TIERS.filter((t) => ks.has(t.key));
+  const midC = (m) => (typeof m.yes_bid === "number" && typeof m.yes_ask === "number")
+    ? (m.yes_bid + m.yes_ask) / 2 : m.last_price;
+  const all = []; let stamp = null;
+  for (const t of tiers) {
+    let snap, rec = null;
+    try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
+    try {
+      const txt = await (await fetch(dbase() + t.key + "/history.jsonl?t=" + Date.now(), { cache: "no-store" })).text();
+      const lines = txt.trim().split("\n").filter(Boolean);
+      if (lines.length) rec = JSON.parse(lines[lines.length - 1]);
+    } catch { rec = null; }
+    if (!rec || !Array.isArray(rec.changes)) continue;
+    stamp = stamp || rec.scraped_at;
+    for (const c of rec.changes) {
+      if (c.type !== "market_changed") continue;
+      const cur = (snap.markets || {})[c.ticker]; if (!cur) continue;
+      const f = c.fields || {};
+      if (!("yes_bid" in f) && !("yes_ask" in f) && !("last_price" in f)) continue;
+      const prevM = {
+        yes_bid: ("yes_bid" in f) ? f.yes_bid.from : cur.yes_bid,
+        yes_ask: ("yes_ask" in f) ? f.yes_ask.from : cur.yes_ask,
+        last_price: ("last_price" in f) ? f.last_price.from : cur.last_price,
+      };
+      const pv = midC(prevM), cv = midC(cur);
+      if (typeof pv !== "number" || typeof cv !== "number" || pv === cv) continue;
+      all.push({ name: c.name || cur.name, tier: t.label, d: cv - pv, pv, cv });
+    }
+  }
+  all.sort((a, b) => Math.abs(b.d) - Math.abs(a.d));
+  fresh.innerHTML = stamp
+    ? `Kalshi movement since previous refresh · <b>${relTime(stamp)}</b> · ${all.length} market${all.length === 1 ? "" : "s"} moved`
+    : "No Kalshi movement recorded yet.";
+  rows.innerHTML = all.length ? all.map((r) => {
+    const cls = r.d > 0 ? "pos" : "neg", arrow = r.d > 0 ? "▲" : "▼";
+    return `<tr><td class="l driver">${escapeHtml(r.name)}</td><td class="l">${escapeHtml(r.tier)}</td>` +
+      `<td class="num"><span class="edge ${cls}">${arrow} ${r.d > 0 ? "+" : ""}${r.d.toFixed(1)}</span></td>` +
+      `<td class="num">${usOdds(r.pv)} <span class="muted">→</span> ${usOdds(r.cv)}</td></tr>`;
+  }).join("") : `<tr><td class="empty" colspan="4">No line moves since the previous refresh.</td></tr>`;
+}
+
+async function loadCompare() {
+  $("updated").textContent = "Loading books…";
+  await Promise.all(BOOKS.map(async (bk) => {
+    try { BOOKDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { BOOKDATA[bk.key] = null; }
+  }));
+  buildCmpTabs();
+  await renderCmpSub();
+}
+
+async function renderCompare() {
+  const rows = $("cmp-rows");
+  const head = $("cmp-head");
+  const books = compareTier ? booksForTier(compareTier) : [];
+  if (!books.length || !compareTier) {
+    head.innerHTML = "";
+    rows.innerHTML = `<tr><td class="empty">No book odds yet.</td></tr>`;
+    $("cmp-count").textContent = "";
+    $("cmp-fresh").innerHTML = "";
+    $("updated").textContent = "Awaiting book data";
+    $("mcount").textContent = "";
+    return;
+  }
+  const label = (CMP_TIERS.find((t) => t.key === compareTier) || {}).label || compareTier;
+  $("cmp-title").textContent = label + " — Kalshi vs the books";
+  $("updated").textContent = "Kalshi vs the books";
+  $("mcount").textContent = (BOOKDATA[books[0].key] && BOOKDATA[books[0].key].race) || "";
+
+  // Freshness line per book.
+  $("cmp-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(BOOKDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
+  // Header: #, Driver, Kalshi, then (odds, EV) per book.
+  head.innerHTML = `<th class="l">#</th><th class="l">Driver</th><th>Kalshi (Yes / No)</th>` +
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
+
+  // Kalshi side (source of truth): implied prob + Yes/No cents.
+  const kal = {};
+  try {
+    const snap = await loadJSON(dbase() + compareTier + "/snapshot.json");
+    for (const m of Object.values(snap.markets || {})) {
+      const p = priceYes(m);
+      // Display keeps the Yes/No buy prices; EV uses the conservative no-side prob.
+      if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: worstProb(m) };
+    }
+  } catch { /* leave Kalshi side empty */ }
+
+  // Per-book driver maps for this tier.
+  const bookMaps = {};
+  for (const bk of books) {
+    const map = {};
+    for (const d of BOOKDATA[bk.key].tiers[compareTier].drivers || []) map[normName(d.name)] = d;
+    bookMaps[bk.key] = map;
+  }
+
+  const dash = `<span class="muted">—</span>`;
+  const allKeys = new Set(Object.keys(kal));
+  for (const bk of books) Object.keys(bookMaps[bk.key]).forEach((k) => allKeys.add(k));
+
+  const merged = [];
+  for (const k of allKeys) {
+    const kp = kal[k] ? kal[k].prob : null;
+    const cells = books.map((bk) => {
+      const d = bookMaps[bk.key][k] || null;
+      // EV of a $1 bet at this book's odds, with Kalshi implied prob as truth.
+      // Positive = book line longer than Kalshi → pays more than fair → +EV.
+      const ev = (d && typeof d.american === "number") ? evPct(kp, d.american) : null;
+      return { american: d ? d.american : null, ev };
+    });
+    const evs = cells.map((c) => c.ev).filter((e) => e != null);
+    merged.push({
+      name: (kal[k] && kal[k].name) || (books.map((bk) => bookMaps[bk.key][k]).find(Boolean) || {}).name || k,
+      kYes: kal[k] ? kal[k].yes : null,
+      kNo: kal[k] ? kal[k].no : null,
+      kp, cells,
+      bestEV: evs.length ? Math.max(...evs) : null,
+    });
+  }
+  // Sort by best EV across books; rows with no EV sink to the bottom.
+  merged.sort((a, b) => {
+    if (a.bestEV == null && b.bestEV == null) return (b.kp ?? -1) - (a.kp ?? -1);
+    if (a.bestEV == null) return 1;
+    if (b.bestEV == null) return -1;
+    return b.bestEV - a.bestEV;
+  });
+
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  rows.innerHTML = "";
+  merged.forEach((r, i) => {
+    const kalCell = (r.kYes == null && r.kNo == null) ? dash
+      : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`;
+    const bookCells = r.cells.map((c) =>
+      `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${evCell(c.ev)}</td>`).join("");
+    const tr = document.createElement("tr");
+    tr.innerHTML =
+      `<td class="l rank ${i === 0 && r.bestEV != null && r.bestEV > 0 ? "top" : ""}">${i + 1}</td>` +
+      `<td class="l driver">${escapeHtml(r.name)}</td>` +
+      `<td class="num">${kalCell}</td>` + bookCells;
+    rows.appendChild(tr);
+  });
+  $("cmp-count").textContent = merged.length + " players";
+}
+
+// ---- Top-manufacturer implied odds (derived from the Kalshi winner market) ----
+// Driver -> manufacturer for the current Cup field (user-provided, authoritative).
+// The field is stable across a season, so this is a static map; unmapped drivers
+// are surfaced in the UI so the map can be corrected if the field changes.
+const MFR_GROUPS = {
+  Chevrolet: ["Chase Elliott", "William Byron", "Kyle Larson", "Carson Hocevar", "Ross Chastain",
+    "Ricky Stenhouse Jr", "Alex Bowman", "Shane Van Gisbergen", "Daniel Suarez", "Austin Dillon",
+    "Michael McDowell", "Connor Zilisch", "AJ Allmendinger", "Ty Dillon", "Austin Hill",
+    "Cole Custer", "BJ McLeod", "Cody Ware"],
+  Ford: ["Ryan Blaney", "Joey Logano", "Brad Keselowski", "Austin Cindric", "Chris Buescher",
+    "Ryan Preece", "Josh Berry", "Zane Smith", "Todd Gilliland", "Noah Gragson", "Chad Finchum"],
+  Toyota: ["Tyler Reddick", "Christopher Bell", "Denny Hamlin", "Chase Briscoe", "Bubba Wallace",
+    "Ty Gibbs", "Erik Jones", "Riley Herbst", "John Hunter Nemechek"],
+};
+const MFR_ORDER = ["Chevrolet", "Ford", "Toyota"];
+const MFR_KEY = {};   // normName -> manufacturer
+for (const [mfr, names] of Object.entries(MFR_GROUPS)) for (const n of names) MFR_KEY[normName(n)] = mfr;
+
+// Kalshi win probability for a driver market: yes-price midpoint (bid/ask) when
+// both sides are quoted, else the displayed yes price. Midpoint removes the
+// half-spread so the implied number matches a fair line, not the buy button.
+function winProb(m) {
+  if (typeof m.yes_bid === "number" && typeof m.yes_ask === "number") return (m.yes_bid + m.yes_ask) / 200;
+  const p = priceYes(m);
+  return p == null ? null : p / 100;
+}
+// Worst-case (conservative) yes probability used only for EV: the low end of the
+// spread, taken from the NO side = 1 − no_ask/100 (equivalently the yes bid).
+// EV rises with p, so pricing against the no gives a floor — the EV you'd still
+// get if the true chance sits at the pessimistic edge of Kalshi's quote.
+function worstProb(m) {
+  if (typeof m.no_ask === "number") return (100 - m.no_ask) / 100;
+  if (typeof m.yes_bid === "number") return m.yes_bid / 100;
+  const p = priceYes(m);
+  return p == null ? null : p / 100;
+}
+// American odds from a probability (0..1).
+function usFromProb(p) {
+  if (typeof p !== "number" || p <= 0 || p >= 1) return "—";
+  return p < 0.5 ? "+" + Math.round((100 * (1 - p)) / p) : "-" + Math.round((100 * p) / (1 - p));
+}
+
+// Books carrying manufacturer markets. `live` books are scraped on a schedule;
+// others are entered manually from posted odds (stamped with a capture time).
+const MFR_BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
+  { key: "caesars", label: "Caesars", url: "manual/mfr_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "manual/mfr_betus.json", live: false },
+  { key: "prime", label: "Prime", url: "manual/mfr_prime.json", live: false },
+  { key: "betonline", label: "BetOnline", url: "manual/mfr_betonline.json", live: false },
+];
+const MFRDATA = {};   // key -> parsed json (or null)
+
+async function loadManufacturers() {
+  $("updated").textContent = "Loading…";
+  let snap;
+  try {
+    snap = await loadJSON(dbase() + "winner/snapshot.json");
+  } catch {
+    $("mfr-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
+    $("mfr-groups").innerHTML = "";
+    $("mfr-fresh").innerHTML = "";
+    $("updated").textContent = "Awaiting winner data";
+    $("mcount").textContent = "";
+    return;
+  }
+  await Promise.all(MFR_BOOKS.map(async (bk) => {
+    try { MFRDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { MFRDATA[bk.key] = null; }
+  }));
+  renderManufacturers(snap);
+}
+
+function renderManufacturers(snap) {
+  $("updated").textContent = "Updated " + relTime(snap.scraped_at);
+  $("updated").title = snap.scraped_at || "";
+  $("src").href = snap.source_url || "https://kalshi.com";
+
+  // Bucket drivers into makes; collect anything unmapped for a visible warning.
+  const groups = {}; for (const k of MFR_ORDER) groups[k] = [];
+  const unmapped = [];
+  for (const m of Object.values(snap.markets || {})) {
+    const p = winProb(m);
+    if (p == null) continue;
+    const mfr = MFR_KEY[normName(m.name)];
+    if (!mfr) { unmapped.push(m.name); continue; }
+    groups[mfr].push({ name: m.name, p, pw: worstProb(m) ?? p });
+  }
+  const present = MFR_ORDER.filter((k) => groups[k].length);
+  $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " makes";
+
+  // Available books, and per-book driver maps keyed by make.
+  const books = MFR_BOOKS.filter((bk) => MFRDATA[bk.key]);
+  const byMake = {}; // bookKey -> make -> { driverKey -> {american, implied, novig} }
+  for (const bk of books) {
+    const d = MFRDATA[bk.key];
+    const mm = {};
+    for (const [mk, obj] of Object.entries((d && d.makes) || {})) {
+      const map = {};
+      for (const dr of obj.drivers || []) map[normName(dr.name)] = dr;
+      mm[mk] = map;
+    }
+    byMake[bk.key] = mm;
+  }
+  // Which books carry a winning-manufacturer line, and any per-make market.
+  const winnerBooks = books.filter((bk) => MFRDATA[bk.key].winner && Object.keys(MFRDATA[bk.key].winner).length);
+
+  // Freshness line per available book.
+  $("mfr-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(MFRDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
+  const dash = `<span class="muted">—</span>`;
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  // A book's (odds, EV) pair of cells; both tinted when the bet is +EV
+  // (book line longer than the Kalshi-implied fair line, i.e. EV > 0).
+  const bookPair = (american, ev) => {
+    const tint = ev != null && ev > 0 ? " ev" : "";
+    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${tint}">${evCell(ev)}</td>`;
+  };
+
+  // "Which make wins": each make's summed win prob, normalized across the makes.
+  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  const totals = present.map((k) => ({
+    mfr: k,
+    sum: groups[k].reduce((a, d) => a + d.p, 0),
+    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
+  }));
+  const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
+  totals.sort((a, b) => b.sum - a.sum);
+  $("mfr-win-head").innerHTML =
+    `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
+    winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
+  $("mfr-win-rows").innerHTML = totals.map((t) => {
+    const pn = t.sum / grand;
+    const pnW = t.sumW / grandW;
+    const bookCells = winnerBooks.map((bk) => {
+      const fm = MFRDATA[bk.key].winner[t.mfr];
+      // EV of a $1 bet at the book's posted odds, worst-case Kalshi make prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
+      return bookPair(fm ? fm.american : null, ev);
+    }).join("");
+    return `<tr>
+      <td class="l driver">${escapeHtml(t.mfr)}</td>
+      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
+  }).join("");
+  $("mfr-win-count").textContent = winnerBooks.length ? "" : (books.length ? "books list per-make only" : "");
+
+  // Per-make "top driver" tables: normalize Kalshi win prob within the make.
+  // Each book that carries this make gets an odds + EV column; EV values the
+  // book's posted payout against Kalshi's normalized (no-vig) chance for the make.
+  const box = $("mfr-groups");
+  box.innerHTML = "";
+  for (const mfr of present) {
+    const drivers = groups[mfr].slice().sort((a, b) => b.p - a.p);
+    const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
+    const sumW = drivers.reduce((a, d) => a + d.pw, 0) || 1;
+    const makeBooks = books.filter((bk) => byMake[bk.key][mfr]);
+    const rows = drivers.map((d, i) => {
+      const pt = d.p / sum;              // displayed midpoint chance
+      const ptW = d.pw / sumW;           // worst-case chance for EV
+      const bookCells = makeBooks.map((bk) => {
+        const dd = byMake[bk.key][mfr][normName(d.name)];
+        const ev = dd && typeof dd.american === "number" ? evPct(ptW, dd.american) : null;
+        return bookPair(dd ? dd.american : null, ev);
+      }).join("");
+      return `<tr>
+        <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+        <td class="l driver">${escapeHtml(d.name)}</td>
+        <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
+          <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
+        <td class="num">${usFromProb(pt)}</td>${bookCells}</tr>`;
+    }).join("");
+    const head = `<th class="l">#</th><th class="l">Driver</th><th>Top-${escapeHtml(mfr)} chance</th><th>Implied odds</th>` +
+      makeBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
+    const card = document.createElement("section");
+    card.className = "card";
+    card.innerHTML =
+      `<div class="card-head"><h2>Top ${escapeHtml(mfr)} driver</h2>
+        <span class="count">${drivers.length} drivers</span></div>
+       <div class="scroll"><table><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>`;
+    box.appendChild(card);
+  }
+
+  if (unmapped.length) {
+    const warn = document.createElement("div");
+    warn.className = "cmp-note";
+    warn.innerHTML = `<b>Unmapped drivers</b> (no manufacturer assigned, excluded above): ` +
+      unmapped.map(escapeHtml).join(", ") + `.`;
+    box.appendChild(warn);
+  }
+}
+
+// ---- Top-team implied odds (derived from the Kalshi winner market) ----
+// Driver -> race team for the current Cup field (user-confirmed). Team keys are
+// canonical display names; book winning-team markets are normalized to these
+// same names via teamCanon() so lookups are direct.
+const TEAM_GROUPS = {
+  "Team Penske": ["Ryan Blaney", "Joey Logano", "Austin Cindric"],
+  "Hendrick Motorsports": ["Kyle Larson", "William Byron", "Chase Elliott", "Alex Bowman"],
+  "Joe Gibbs Racing": ["Denny Hamlin", "Christopher Bell", "Chase Briscoe", "Ty Gibbs"],
+  "23XI Racing": ["Tyler Reddick", "Bubba Wallace", "Riley Herbst"],
+  "RFK Racing": ["Brad Keselowski", "Chris Buescher", "Ryan Preece"],
+  "Spire Motorsports": ["Carson Hocevar", "Michael McDowell", "Daniel Suarez"],
+  "Trackhouse Racing": ["Ross Chastain", "Shane Van Gisbergen", "Connor Zilisch"],
+  "Front Row Motorsports": ["Todd Gilliland", "Zane Smith", "Noah Gragson"],
+  "Hyak Motorsports": ["Ricky Stenhouse Jr"],
+  "Legacy Motor Club": ["Erik Jones", "John Hunter Nemechek"],
+  "Richard Childress Racing": ["Austin Dillon", "Austin Hill"],
+  "Kaulig Racing": ["AJ Allmendinger", "Ty Dillon"],
+  "Wood Brothers Racing": ["Josh Berry"],
+  "Haas Factory Team": ["Cole Custer"],
+  "Rick Ware Racing": ["Cody Ware"],
+  "Garage 66": ["Chad Finchum"],
+  "Live Fast Motorsports": ["BJ McLeod"],
+};
+const TEAM_KEY = {};   // normName(driver) -> team
+for (const [team, names] of Object.entries(TEAM_GROUPS)) for (const n of names) TEAM_KEY[normName(n)] = team;
+
+// Map a book's team-name string to our canonical team key by keyword, so
+// "Trackhouse Racing Team", "LEGACY MOTOR CLUB", "Hass Factory Team" all match.
+function teamCanon(name) {
+  const n = (name || "").toLowerCase();
+  const rules = [
+    ["penske", "Team Penske"], ["hendrick", "Hendrick Motorsports"], ["gibbs", "Joe Gibbs Racing"],
+    ["23xi", "23XI Racing"], ["rfk", "RFK Racing"], ["roush", "RFK Racing"], ["spire", "Spire Motorsports"],
+    ["trackhouse", "Trackhouse Racing"], ["front row", "Front Row Motorsports"], ["hyak", "Hyak Motorsports"],
+    ["legacy", "Legacy Motor Club"], ["childress", "Richard Childress Racing"], ["kaulig", "Kaulig Racing"],
+    ["wood brothers", "Wood Brothers Racing"], ["haas", "Haas Factory Team"], ["hass", "Haas Factory Team"],
+    ["rick ware", "Rick Ware Racing"], ["garage 66", "Garage 66"], ["garage66", "Garage 66"],
+    ["live fast", "Live Fast Motorsports"],
+  ];
+  for (const [kw, canon] of rules) if (n.includes(kw)) return canon;
+  return null;
+}
+
+const TEAM_BOOKS = [
+  { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
+  { key: "caesars", label: "Caesars", url: "manual/team_caesars.json", live: false },
+  { key: "betus", label: "BetUS", url: "manual/team_betus.json", live: false },
+  { key: "prime", label: "Prime", url: "manual/team_prime.json", live: false },
+  { key: "betonline", label: "BetOnline", url: "manual/team_betonline.json", live: false },
+];
+const TEAMDATA = {};
+
+async function loadTeams() {
+  $("updated").textContent = "Loading…";
+  let snap;
+  try {
+    snap = await loadJSON(dbase() + "winner/snapshot.json");
+  } catch {
+    $("team-win-rows").innerHTML = `<tr><td class="empty">No Kalshi winner snapshot yet.</td></tr>`;
+    $("team-groups").innerHTML = "";
+    $("team-fresh").innerHTML = "";
+    $("updated").textContent = "Awaiting winner data";
+    $("mcount").textContent = "";
+    return;
+  }
+  await Promise.all(TEAM_BOOKS.map(async (bk) => {
+    try { TEAMDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { TEAMDATA[bk.key] = null; }
+  }));
+  renderTeams(snap);
+}
+
+function renderTeams(snap) {
+  $("updated").textContent = "Updated " + relTime(snap.scraped_at);
+  $("updated").title = snap.scraped_at || "";
+  $("src").href = snap.source_url || "https://kalshi.com";
+
+  // Bucket drivers into teams; collect unmapped for a visible warning.
+  const groups = {}; for (const k of Object.keys(TEAM_GROUPS)) groups[k] = [];
+  const unmapped = [];
+  for (const m of Object.values(snap.markets || {})) {
+    const p = winProb(m);
+    if (p == null) continue;
+    const team = TEAM_KEY[normName(m.name)];
+    if (!team) { unmapped.push(m.name); continue; }
+    groups[team].push({ name: m.name, p, pw: worstProb(m) ?? p });
+  }
+  const present = Object.keys(TEAM_GROUPS).filter((k) => groups[k].length);
+  $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " teams";
+
+  const books = TEAM_BOOKS.filter((bk) => TEAMDATA[bk.key] && TEAMDATA[bk.key].winner);
+
+  $("team-fresh").innerHTML = books.map((bk) => {
+    const ts = bookTime(TEAMDATA[bk.key]);
+    const tag = bk.live ? "updated" : "captured";
+    return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
+  }).join("");
+
+  const dash = `<span class="muted">—</span>`;
+  const evCell = (e) => e == null ? dash
+    : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  const bookPair = (american, ev) => {
+    const tint = ev != null && ev > 0 ? " ev" : "";
+    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+      `<td class="num${tint}">${evCell(ev)}</td>`;
+  };
+
+  // "Which team wins": summed win prob per team, normalized across teams.
+  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  const totals = present.map((k) => ({
+    team: k,
+    sum: groups[k].reduce((a, d) => a + d.p, 0),
+    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
+  }));
+  const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
+  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
+  totals.sort((a, b) => b.sum - a.sum);
+  $("team-win-head").innerHTML =
+    `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
+    books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
+  $("team-win-rows").innerHTML = totals.map((t) => {
+    const pn = t.sum / grand;
+    const pnW = t.sumW / grandW;
+    const bookCells = books.map((bk) => {
+      const fm = TEAMDATA[bk.key].winner[t.team];
+      // EV of a $1 bet at the book's posted odds, worst-case Kalshi team prob as truth.
+      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
+      return bookPair(fm ? fm.american : null, ev);
+    }).join("");
+    return `<tr>
+      <td class="l driver">${escapeHtml(t.team)}</td>
+      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
+  }).join("");
+  $("team-win-count").textContent = present.length + " teams";
+
+  // Per-team "top driver" tables (Kalshi only), for teams with 2+ drivers.
+  const box = $("team-groups");
+  box.innerHTML = "";
+  for (const team of totals.map((t) => t.team)) {
+    const drivers = groups[team].slice().sort((a, b) => b.p - a.p);
+    if (drivers.length < 2) continue;
+    const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
+    const rows = drivers.map((d, i) => {
+      const pt = d.p / sum;
+      return `<tr>
+        <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
+        <td class="l driver">${escapeHtml(d.name)}</td>
+        <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
+          <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
+        <td class="num">${usFromProb(pt)}</td></tr>`;
+    }).join("");
+    const card = document.createElement("section");
+    card.className = "card";
+    card.innerHTML =
+      `<div class="card-head"><h2>Top ${escapeHtml(team)} driver</h2>
+        <span class="count">${drivers.length} drivers</span></div>
+       <div class="scroll"><table><thead><tr>
+         <th class="l">#</th><th class="l">Driver</th><th>Top-team chance</th><th>Implied odds</th>
+       </tr></thead><tbody>${rows}</tbody></table></div>`;
+    box.appendChild(card);
+  }
+
+  if (unmapped.length) {
+    const warn = document.createElement("div");
+    warn.className = "cmp-note";
+    warn.innerHTML = `<b>Unmapped drivers</b> (no team assigned, excluded above): ` +
+      unmapped.map(escapeHtml).join(", ") + `.`;
+    box.appendChild(warn);
+  }
+}
+
+// Manual refresh: reload the latest snapshot on demand and restart the
+// auto-refresh timer so the next tick is a full interval away.
+let autoTimer = null;
+function scheduleAuto() {
+  if (autoTimer) clearInterval(autoTimer);
+  autoTimer = setInterval(refresh, 60000);
+}
+async function manualRefresh() {
+  const btn = $("refresh");
+  if (btn.disabled) return;
+  btn.disabled = true;
+  try {
+    await refresh();
+  } finally {
+    btn.disabled = false;
+    scheduleAuto();
+  }
+}
+$("refresh").addEventListener("click", manualRefresh);
+
+boot();
+scheduleAuto();
+</script>
+</body>
+</html>
