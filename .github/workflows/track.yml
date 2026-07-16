@@ -1,6 +1,6 @@
-name: Track Kalshi Golf market
+name: Track Kalshi NASCAR market
 
-# Scrapes the Kalshi PGA golf markets, commits any changes back to the repo
+# Scrapes the Kalshi NASCAR race market, commits any changes back to the repo
 # (git history == change log), then publishes the dashboard to GitHub Pages.
 #
 # NOTE: GitHub-hosted runners have unrestricted outbound internet, which is why

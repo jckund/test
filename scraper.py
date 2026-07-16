@@ -1,31 +1,23 @@
 #!/usr/bin/env python3
-"""Scrape Kalshi PGA golf markets for the tracked tournament(s).
+"""Scrape Kalshi NASCAR race markets for every current national-series race.
 
-Unlike NASCAR (where every race winner lives under one series and the tiers are
-sibling series sharing a race code), Kalshi files each golf finish tier under
-its **own** series, and the per-tournament events all share one tournament code
-suffix:
+Kalshi files all race winners under one series (``KXNASCARRACE``) with a
+per-race Top 3/5/10/20 sibling series. Rather than hardcode a race code that
+changes every weekend, we **auto-discover** the open race events, group them by
+race, and write one namespaced data tree per race:
 
-  Winner  KXPGATOUR-<code>     (series KXPGATOUR,   /pga-tour)
-  Top 5   KXPGATOP5-<code>     (series KXPGATOP5,   /pga-top-5-finisher)
-  Top 10  KXPGATOP10-<code>    (series KXPGATOP10,  /pga-top-10-finisher)
-  Top 20  KXPGATOP20-<code>    (series KXPGATOP20,  /pga-top-20-finisher)
-
-e.g. The Open Championship 2026 has code ``THOC26`` → KXPGATOUR-THOC26,
-KXPGATOP5-THOC26, … We write one namespaced data tree per tournament:
-
-  data/series.json                      — list of tournaments (drives the tabs)
-  data/<series>/index.json              — that tournament's tier list (dashboard)
+  data/series.json                      — list of races (drives the series tabs)
+  data/<series>/index.json              — that race's tier list (dashboard)
   data/<series>/<tier>/snapshot.json    — normalized current state
   data/<series>/<tier>/history.jsonl    — append-only change log
   data/<series>/<tier>/series.jsonl     — aligned price series for sparklines
   data/<series>/<tier>/CHANGES.md       — human-readable change log
-  data/<series>/activity.json           — recent trades feed for that tournament
+  data/<series>/activity.json           — recent trades feed for that race
 
-The ``TOURNAMENTS`` config lists the tournament(s) to track by their Kalshi
-code + a friendly tab label. To follow a different tournament, add/replace an
-entry (the code is the suffix in the Kalshi URL, e.g. ``.../kxpgatour-thoc26``
-→ ``THOC26``).
+A small SERIES config maps each discovered race to a friendly tab label (via
+lowercase name matchers) and whether it gets the full Cup treatment. Any race
+that matches no series falls to the `default` series, so a support race appears
+on its own the moment Kalshi posts it — no code change needed.
 
 Run manually with:  python3 scraper.py
 """
@@ -47,34 +39,41 @@ import alerts
 # Configuration
 # ---------------------------------------------------------------------------
 
-# (tier key, display label, odds-column label, Kalshi series ticker, URL path).
-# Each golf finish tier is its OWN Kalshi series; the event ticker for a given
-# tournament is "<series>-<code>". The URL path is only used to build the
-# human-facing kalshi.com link shown on the dashboard.
+# (tier key, display label, odds-column label, Kalshi series ticker). The
+# winner series is also what we enumerate to discover which races are open.
 TIERS = [
-    ("winner", "Winner", "Win", "KXPGATOUR", "pga-tour"),
-    ("top5", "Top 5", "Top 5", "KXPGATOP5", "pga-top-5-finisher"),
-    ("top10", "Top 10", "Top 10", "KXPGATOP10", "pga-top-10-finisher"),
-    ("top20", "Top 20", "Top 20", "KXPGATOP20", "pga-top-20-finisher"),
+    ("winner", "Winner", "Win", "KXNASCARRACE"),
+    ("top3", "Top 3", "Top 3", "KXNASCARTOP3"),
+    ("top5", "Top 5", "Top 5", "KXNASCARTOP5"),
+    ("top10", "Top 10", "Top 10", "KXNASCARTOP10"),
+    ("top20", "Top 20", "Top 20", "KXNASCARTOP20"),
 ]
-TIER_BY_KEY = {k: (k, lbl, odl, s, path) for (k, lbl, odl, s, path) in TIERS}
+TIER_BY_KEY = {k: (k, lbl, odl, s) for (k, lbl, odl, s) in TIERS}
+WINNER_SERIES = "KXNASCARRACE"
 
-# Tournaments to track. `code` is the suffix in the Kalshi event ticker / URL
-# (e.g. .../kxpgatour-thoc26 → "THOC26"). `key` names the data dir + dashboard
-# tab; `title` is the heading shown on the page. `tiers` lists which finish
-# tiers to scrape for this tournament. Add an entry to follow another event.
-TOURNAMENTS = [
-    {"key": "theopen", "label": "The Open", "title": "The Open Championship",
-     "code": "THOC26", "tiers": ["winner", "top5", "top10", "top20"], "full": False},
+# Race -> tab. `matchers` are lowercase substrings tested against the race
+# name/subtitle; the first series to match a race claims it. `default` claims
+# any leftover race (the support race whose name we don't know in advance).
+# `full` series get the extra Top 20 tier plus the Manufacturer/Team views
+# (those are Cup-only and handled in the dashboard).
+#
+# NOTE: Kalshi files every national-series race under the single KXNASCARRACE
+# series and its event payload carries no Cup/Xfinity/Truck marker (just the
+# race name), so the only signal we have is the race name itself. That means
+# the `cup`/`truck` matchers must be refreshed to the current weekend's race
+# names — a race that matches nothing falls to the `xfinity` default. Update the
+# substrings below each race weekend (or when Kalshi posts a new race).
+SERIES = [
+    {"key": "cup", "label": "NASCAR", "matchers": ["window world"],
+     "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
+    {"key": "truck", "label": "Trucks", "matchers": ["faithfest", "faith fest"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    {"key": "xfinity", "label": "O'Reilly Auto Parts", "matchers": [], "default": True,
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
-
-
-def tier_page_url(series_ticker: str, path: str, code: str) -> str:
-    """Build the human-facing kalshi.com market page URL for a tier/tournament."""
-    s = series_ticker.lower()
-    return f"https://kalshi.com/markets/{s}/{path}/{s}-{code.lower()}"
+PAGE_BASE = "https://kalshi.com/markets/kxnascarrace/nascar-race"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
@@ -105,7 +104,7 @@ TRACKED_FIELDS = [
     "no_bid", "no_ask", "volume", "open_interest",
 ]
 MAX_SERIES = 1000
-USER_AGENT = "kalshi-golf-tracker/1.0 (+https://github.com; scheduled scraper)"
+USER_AGENT = "kalshi-nascar-tracker/3.0 (+https://github.com; scheduled scraper)"
 # Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
 # under the limit while scraping several races x several tiers.
 THROTTLE_S = 0.35
@@ -142,19 +141,53 @@ def fetch_event(ticker: str) -> dict:
     return _get_json(url)
 
 
-def resolve_tournaments() -> list:
-    """Turn the TOURNAMENTS config into resolved series dicts. The winner tier's
-    page becomes the series-level source link shown on the dashboard."""
-    resolved = []
-    for cfg in TOURNAMENTS:
-        code = cfg["code"]
-        _, _, _, win_series, win_path = TIER_BY_KEY["winner"]
-        resolved.append({
+def discover_races() -> list:
+    """Enumerate open race-winner events. Returns [{race_code, title, sub_title}]."""
+    url = f"{API_BASE}/events?series_ticker={WINNER_SERIES}&status=open&limit=200"
+    print(f"Discovering races: {url}", file=sys.stderr)
+    events = _get_json(url).get("events", []) or []
+    races = []
+    for e in events:
+        et = e.get("event_ticker") or ""
+        if "-" not in et:
+            continue
+        races.append({
+            "race_code": et.split("-", 1)[1],
+            "title": e.get("title") or "",
+            "sub_title": e.get("sub_title") or "",
+        })
+    print(f"  found {len(races)} open race(s): "
+          + ", ".join(f"{r['race_code']}={r['sub_title'] or r['title']}" for r in races),
+          file=sys.stderr)
+    return races
+
+
+def resolve_series(races: list) -> list:
+    """Map discovered races onto the SERIES config. Returns a list of resolved
+    series dicts with a race attached (skipping series whose race isn't open)."""
+    used, resolved = set(), []
+
+    def attach(cfg, r):
+        code = r["race_code"]
+        return {
             "key": cfg["key"], "label": cfg["label"], "full": cfg.get("full", False),
             "tier_keys": cfg["tiers"], "race_code": code,
-            "race_title": cfg["title"],
-            "page_url": tier_page_url(win_series, win_path, code),
-        })
+            "race_title": r["sub_title"] or r["title"],
+            "page_url": f"{PAGE_BASE}/{WINNER_SERIES.lower()}-{code.lower()}",
+        }
+
+    # Named series first (matcher-based), then the default series claims a leftover.
+    for cfg in [s for s in SERIES if not s.get("default")]:
+        for r in races:
+            if r["race_code"] in used:
+                continue
+            hay = f"{r['title']} {r['sub_title']}".lower()
+            if any(m in hay for m in cfg["matchers"]):
+                resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
+    for cfg in [s for s in SERIES if s.get("default")]:
+        for r in races:
+            if r["race_code"] not in used:
+                resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
     return resolved
 
 
@@ -526,7 +559,7 @@ def build_index(events: list, series_dir: str, race_title: str, page_url: str) -
             "market_count": snap.get("market_count"),
             "scraped_at": snap.get("scraped_at"),
         })
-    index = {"race_title": race_title or "PGA Tournament", "source_url": page_url, "markets": markets}
+    index = {"race_title": race_title or "NASCAR Race", "source_url": page_url, "markets": markets}
     os.makedirs(series_dir, exist_ok=True)
     with open(os.path.join(series_dir, "index.json"), "w", encoding="utf-8") as fh:
         json.dump(index, fh, indent=2)
@@ -538,11 +571,10 @@ def process_series(rs: dict) -> dict | None:
     series_dir = os.path.join(DATA_DIR, rs["key"])
     events = []
     for tk in rs["tier_keys"]:
-        key, label, odds_label, series_ticker, path = TIER_BY_KEY[tk]
+        key, label, odds_label, series_ticker = TIER_BY_KEY[tk]
         events.append({
             "key": key, "label": label, "odds_label": odds_label,
-            "ticker": f"{series_ticker}-{rs['race_code']}",
-            "page_url": tier_page_url(series_ticker, path, rs["race_code"]),
+            "ticker": f"{series_ticker}-{rs['race_code']}", "page_url": rs["page_url"],
         })
 
     scraped = [process_event(ev, series_dir) for ev in events]
@@ -587,11 +619,12 @@ def write_series_index(entries: list) -> None:
 
 
 def main() -> int:
-    resolved = resolve_tournaments()
-    if not resolved:
-        print("No tournaments configured.", file=sys.stderr)
+    races = discover_races()
+    if not races:
+        print("No open NASCAR race events found.", file=sys.stderr)
         return 1
-    print("Tracking tournament(s): " + ", ".join(
+    resolved = resolve_series(races)
+    print("Resolved series: " + ", ".join(
         f"{r['key']}={r['race_code']} ({r['race_title']})" for r in resolved), file=sys.stderr)
 
     entries = []
@@ -600,7 +633,7 @@ def main() -> int:
         if summary:
             entries.append(summary)
     if not entries:
-        print("No tournaments could be scraped.", file=sys.stderr)
+        print("No series could be scraped.", file=sys.stderr)
         return 1
     write_series_index(entries)
     return 0

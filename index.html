@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kalshi Golf Tracker — The Open Championship</title>
+<title>Kalshi NASCAR Race Tracker</title>
 <style>
   :root {
     --bg: #f4f5f7; --surface: #ffffff; --surface-2: #eef0f3;
@@ -159,8 +159,8 @@
 <body>
 <div class="wrap">
   <header>
-    <p class="eyebrow">Golf · Kalshi</p>
-    <h1 id="title">Golf Tracker</h1>
+    <p class="eyebrow">NASCAR · Kalshi</p>
+    <h1 id="title">NASCAR Race Tracker</h1>
     <div class="checker"></div>
     <div class="meta">
       <span class="live"><span class="dot"></span> <span id="updated">Loading…</span></span>
@@ -340,8 +340,8 @@
   </div>
 
   <footer>
-    Kalshi snapshots by <code>scraper.py</code> (public API), committed every scrape.
-    Git history is the full change log. Kalshi is treated as the fair-odds source.
+    Kalshi snapshots by <code>scraper.py</code> (public API); FanDuel by <code>fanduel_scraper.js</code>
+    (headless browser); other books entered manually from posted odds. Git history is the full change log.
   </footer>
 </div>
 
@@ -508,23 +508,13 @@ function render(snapshot, history, seriesPoints, meta) {
   const oddsLabel = (meta && meta.odds_label) || snapshot.odds_label || "Win";
   $("updated").textContent = "Updated " + relTime(snapshot.scraped_at);
   $("updated").title = snapshot.scraped_at || "";
-  $("mcount").textContent = (snapshot.market_count ?? 0) + " players";
+  $("mcount").textContent = (snapshot.market_count ?? 0) + " drivers";
   $("src").href = snapshot.source_url || "https://kalshi.com";
   $("stand-title").textContent = (meta ? meta.label : "Standings") + " — American odds";
   $("odds-col").textContent = oddsLabel + " odds";
 
   const markets = Object.values(snapshot.markets || {});
-  // A resolved (non-active) market's orderbook is stale: an eliminated player
-  // reads yes_ask=100 (settled No) even though their true win prob is 0. Use
-  // last_price for settled markets and sort them below the live field so they
-  // don't masquerade as leaders mid-tournament.
-  const isSettled = (m) => !!(m.status && m.status !== "active");
-  const dispYes = (m) => (isSettled(m) && typeof m.last_price === "number") ? m.last_price : priceYes(m);
-  markets.sort((a, b) => {
-    const sa = isSettled(a) ? 1 : 0, sb = isSettled(b) ? 1 : 0;
-    if (sa !== sb) return sa - sb;                 // live markets first
-    return (dispYes(b) ?? -1) - (dispYes(a) ?? -1); // then by YES price desc
-  });
+  markets.sort((a, b) => (priceYes(b) ?? -1) - (priceYes(a) ?? -1));
   const moves = latestMoves(history);
   const series = seriesByTicker(seriesPoints || []);
 
@@ -534,7 +524,7 @@ function render(snapshot, history, seriesPoints, meta) {
     rows.innerHTML = `<tr><td colspan="7" class="empty">No markets.</td></tr>`;
   }
   markets.forEach((m, i) => {
-    const p = dispYes(m);
+    const p = priceYes(m);
     const mv = moves[m.ticker];
     let delta = "";
     if (mv && typeof mv.from === "number" && typeof mv.to === "number" && mv.to !== mv.from) {
@@ -559,7 +549,7 @@ function render(snapshot, history, seriesPoints, meta) {
       <td class="num">${fmtInt(m.open_interest)}</td>`;
     rows.appendChild(tr);
   });
-  $("stand-count").textContent = markets.length + " players";
+  $("stand-count").textContent = markets.length + " drivers";
 
   renderFeed(history);
 }
@@ -656,7 +646,7 @@ function escapeHtml(s) {
 
 function showEmpty() {
   $("notice").innerHTML =
-    `<div class="banner"><strong>No data yet.</strong> Trigger the <b>Track Kalshi Golf market</b> workflow from the Actions tab, or wait for the next scheduled run.</div>`;
+    `<div class="banner"><strong>No data yet.</strong> Trigger the <b>Track Kalshi NASCAR market</b> workflow from the Actions tab, or wait for the next scheduled run.</div>`;
   $("updated").textContent = "Awaiting first scrape";
   $("rows").innerHTML = `<tr><td colspan="7" class="empty">The scheduled scraper hasn't produced a snapshot yet.</td></tr>`;
   $("feed").innerHTML = `<li class="empty">Nothing tracked yet.</li>`;
@@ -694,7 +684,7 @@ async function loadSeries() {
     INDEX = await loadJSON(dbase() + "index.json");
     if (!INDEX.markets || !INDEX.markets.length) { showEmpty(); return; }
     $("notice").innerHTML = "";
-    $("title").textContent = INDEX.race_title || "Golf Tracker";
+    $("title").textContent = INDEX.race_title || "NASCAR Race Tracker";
     $("src").href = INDEX.source_url || "https://kalshi.com";
     const validKeys = INDEX.markets.map((m) => m.key).concat("compare", "activity");
     if (!currentKey || !validKeys.includes(currentKey))
@@ -732,8 +722,8 @@ async function refresh() {
 
 // ---- Kalshi vs the books comparison ----
 const CMP_TIERS = [
-  { key: "winner", label: "Winner" }, { key: "top5", label: "Top 5" },
-  { key: "top10", label: "Top 10" }, { key: "top20", label: "Top 20" },
+  { key: "winner", label: "Winner" }, { key: "top3", label: "Top 3" },
+  { key: "top5", label: "Top 5" }, { key: "top10", label: "Top 10" },
 ];
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
