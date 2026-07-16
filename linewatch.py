@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-"""Kalshi Cup line-move watch — runs in CI, wakes a Claude session only on a move.
+"""Kalshi golf line-move watch — runs in CI, wakes a Claude session only on a move.
 
 Companion to ``alerts.py`` (which watches large *trades*). This module watches
-*prices*: after each scrape it compares every Cup market's YES price (``yes_ask``,
-the cost in cents to buy Yes) against a committed baseline and raises an alert for
-any market whose YES moved at least ``THRESH`` cents/pp since the last check. It
-also carries a fixed-anchor trip-wire on Austin Cindric (Win / Top 3): if his YES
-rises at least ``CIND_THRESH`` pp above the anchor — i.e. the market shortens him
-toward Bookmaker/Prime's number — that fires too.
+*prices*: after each scrape it compares every tracked market's YES price
+(``yes_ask``, the cost in cents to buy Yes) against a committed baseline and
+raises an alert for any market whose YES moved at least ``THRESH`` cents/pp since
+the last check.
 
 Why this lives in CI: GitHub-hosted runners have unrestricted egress (they can
 reach kalshi.com) and public-repo Actions minutes are free, so polling here costs
@@ -16,10 +14,9 @@ that comment's webhook wakes the subscribed Claude session, which pushes the use
 No move → no comment → the session stays asleep. That is the whole point: the
 expensive session wake happens only when something actually moved.
 
-State is the committed baseline ``data/cup/watch_baseline.json`` (the CI runner is
-stateless between runs, so the repo is the memory). The Cindric anchor is written
-once and never rewritten; the per-market YES baseline is refreshed every run so
-reported moves are "since last check", matching the old in-session watch.
+State is the committed baseline ``data/theopen/watch_baseline.json`` (the CI runner
+is stateless between runs, so the repo is the memory). The per-market YES baseline
+is refreshed every run so reported moves are "since last check".
 
 Environment:
   WATCH_THRESH_PP    move threshold in pp (default 3)
@@ -38,19 +35,13 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-TIERS = ["winner", "top3", "top5", "top10"]
-TIER_LABEL = {"winner": "Win", "top3": "Top 3", "top5": "Top 5", "top10": "Top 10"}
-DATA_DIR = "data/cup"
+TIERS = ["winner", "top5", "top10", "top20"]
+TIER_LABEL = {"winner": "Win", "top5": "Top 5", "top10": "Top 10", "top20": "Top 20"}
+DATA_DIR = "data/theopen"
 BASELINE = f"{DATA_DIR}/watch_baseline.json"
 WATCH_MD = f"{DATA_DIR}/WATCH.md"
 
 THRESH = float(os.environ.get("WATCH_THRESH_PP", "3"))
-CIND_NAME = "Austin Cindric"
-CIND_THRESH = 2.0
-# Fixed anchor for the Cindric trip-wire (established from the in-session watch).
-CIND_ANCHOR = {"winner": 6, "top3": 16}
-# Bookmaker/Prime raw-implied reference (context only): Win +800 ~ 11c, Top3 +200 ~ 33c.
-CIND_TGT = {"winner": 11, "top3": 33}
 
 
 def yesc(m: dict):
@@ -162,12 +153,10 @@ def main() -> int:
     first_run = not os.path.exists(BASELINE)
     if first_run:
         base = {}
-        anchor = dict(CIND_ANCHOR)
     else:
         with open(BASELINE) as fh:
             saved = json.load(fh)
         base = saved.get("yes", {})
-        anchor = saved.get("cindric_anchor", dict(CIND_ANCHOR))
 
     # --- detect per-market moves since last check ---
     moves = []
@@ -181,27 +170,13 @@ def main() -> int:
             moves.append((abs(d), d, TIER_LABEL[tk], name, b, c))
     moves.sort(reverse=True)
 
-    # --- Cindric fixed-anchor trip-wire ---
-    cind_alerts = []
-    for t in ("winner", "top3"):
-        a = anchor.get(t)
-        c = cur.get(f"{t}|{CIND_NAME}")
-        if a is None or c is None:
-            continue
-        if c - a >= CIND_THRESH:
-            cind_alerts.append(
-                f"Cindric {TIER_LABEL[t]} {a:.0f}c->{c:.0f}c (+{c - a:.0f}pp toward "
-                f"Bookmaker ~{CIND_TGT[t]}c, now {american(c)})"
-            )
-
-    # --- persist baseline (YES refreshed every run; anchor fixed forever) ---
+    # --- persist baseline (YES refreshed every run so moves are "since last check") ---
     with open(BASELINE, "w") as fh:
         json.dump(
             {
                 "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "scraped_at": scraped,
                 "yes": cur,
-                "cindric_anchor": anchor,
             },
             fh,
             indent=2,
@@ -211,7 +186,7 @@ def main() -> int:
         print("linewatch: baseline established (first run); no alert.")
         return 0
 
-    if not moves and not cind_alerts:
+    if not moves:
         print("linewatch: no moves >= %.0fpp since last check." % THRESH)
         return 0
 
@@ -224,12 +199,10 @@ def main() -> int:
             f"- **{name}** {tk}: {b:.0f}c -> {c:.0f}c ({american(c)}, {d:+.0f}pp)"
             for _, d, tk, name, b, c in top
         ]
-        lines.append("**Kalshi Cup YES moves >= %.0fpp (since last check):**" % THRESH)
+        lines.append("**Kalshi YES moves >= %.0fpp (since last check):**" % THRESH)
         lines.extend(parts)
         if extra > 0:
             lines.append(f"- (+{extra} more)")
-    if cind_alerts:
-        lines.append("**TRIP-WIRE — Cindric:** " + " ; ".join(cind_alerts))
     lines.append(f"\n_leader win YES {leader:.0f}c · scraped {scraped}_")
     body = "\n".join(lines)
 
