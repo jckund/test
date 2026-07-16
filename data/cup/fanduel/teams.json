@@ -1,94 +1,84 @@
 {
-  "scraped_at": "2026-07-12T23:13:25.953Z",
+  "scraped_at": "2026-07-16T01:30:57.057Z",
   "source": "FanDuel",
-  "source_url": "https://sportsbook.fanduel.com/motorsport",
-  "race": "Quaker State 400",
-  "kalshi_race": "Quaker State 400 Available at Walmart",
+  "source_url": "https://nj.sportsbook.fanduel.com/motorsport",
+  "race": "Window World 450",
+  "kalshi_race": "Window World 450",
   "winner": {
+    "Joe Gibbs Racing": {
+      "american": 150,
+      "implied": 0.4,
+      "novig": 0.3395744263366066
+    },
     "Team Penske": {
-      "american": 310,
-      "implied": 0.24390243902439024,
-      "novig": 0.20383276653162694
+      "american": 280,
+      "implied": 0.2631578947368421,
+      "novig": 0.22340422785303063
     },
     "Hendrick Motorsports": {
-      "american": 340,
-      "implied": 0.22727272727272727,
-      "novig": 0.18993507790447056
-    },
-    "Joe Gibbs Racing": {
-      "american": 480,
-      "implied": 0.1724137931034483,
-      "novig": 0.14408867978959836
+      "american": 390,
+      "implied": 0.20408163265306123,
+      "novig": 0.17325225833500338
     },
     "23XI Racing": {
-      "american": 750,
-      "implied": 0.11764705882352941,
-      "novig": 0.09831933444466712
+      "american": 850,
+      "implied": 0.10526315789473684,
+      "novig": 0.08936169114121226
     },
     "RFK Racing": {
-      "american": 950,
-      "implied": 0.09523809523809523,
-      "novig": 0.07959184216949242
-    },
-    "Spire Motorsports": {
-      "american": 950,
-      "implied": 0.09523809523809523,
-      "novig": 0.07959184216949242
-    },
-    "Trackhouse Racing": {
       "american": 1500,
       "implied": 0.0625,
-      "novig": 0.052232146423729406
+      "novig": 0.05305850411509478
     },
-    "Richard Childress Racing": {
-      "american": 2500,
-      "implied": 0.038461538461538464,
-      "novig": 0.03214285933767964
+    "Spire Motorsports": {
+      "american": 1900,
+      "implied": 0.05,
+      "novig": 0.04244680329207583
     },
-    "Front Row Motorsports": {
-      "american": 2700,
-      "implied": 0.03571428571428571,
-      "novig": 0.029846940813559656
-    },
-    "Legacy Motor Club": {
-      "american": 3500,
-      "implied": 0.027777777777777776,
-      "novig": 0.02321428729943529
-    },
-    "Hyak Motorsports": {
+    "Trackhouse Racing": {
       "american": 4000,
       "implied": 0.024390243902439025,
-      "novig": 0.020383276653162696
-    },
-    "Kaulig Racing": {
-      "american": 5000,
-      "implied": 0.0196078431372549,
-      "novig": 0.016386555740777853
+      "novig": 0.02070575770345162
     },
     "Wood Brothers Racing": {
-      "american": 6000,
-      "implied": 0.01639344262295082,
-      "novig": 0.013700235127535583
+      "american": 5500,
+      "implied": 0.017857142857142856,
+      "novig": 0.015159572604312794
     },
-    "Haas Factory Team": {
-      "american": 10000,
-      "implied": 0.009900990099009901,
-      "novig": 0.008274399433462084
+    "Front Row Motorsports": {
+      "american": 8000,
+      "implied": 0.012345679012345678,
+      "novig": 0.010480692170882919
     },
-    "Live Fast Motorsports": {
-      "american": 22500,
-      "implied": 0.004424778761061947,
-      "novig": 0.0036978510742463294
+    "Richard Childress Racing": {
+      "american": 8000,
+      "implied": 0.012345679012345678,
+      "novig": 0.010480692170882919
     },
-    "Garage 66": {
-      "american": 35000,
-      "implied": 0.002849002849002849,
-      "novig": 0.0023809525435318246
+    "Legacy Motor Club": {
+      "american": 8000,
+      "implied": 0.012345679012345678,
+      "novig": 0.010480692170882919
+    },
+    "Kaulig Racing": {
+      "american": 17500,
+      "implied": 0.005681818181818182,
+      "novig": 0.004823500374099525
+    },
+    "Hyak Motorsports": {
+      "american": 25000,
+      "implied": 0.00398406374501992,
+      "novig": 0.0033822154017590297
     },
     "Rick Ware Racing": {
-      "american": 35000,
-      "implied": 0.002849002849002849,
-      "novig": 0.0023809525435318246
+      "american": 50000,
+      "implied": 0.001996007984031936,
+      "novig": 0.001694483165352328
+    },
+    "Garage 66": {
+      "american": 50000,
+      "implied": 0.001996007984031936,
+      "novig": 0.001694483165352328
     }
   }
 }
