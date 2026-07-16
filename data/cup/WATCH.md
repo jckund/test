@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-16T01:23:43.341553+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 3: 39c -> 5c (+1900, -34pp)
+- **Denny Hamlin** Top 5: 87c -> 60c (-150, -27pp)
+- **Denny Hamlin** Top 10: 44c -> 70c (-233, +26pp)
+- **Tyler Reddick** Win: 31c -> 5c (+1900, -26pp)
+- **Ricky Stenhouse** Top 10: 35c -> 9c (+1011, -26pp)
+- **Christopher Bell** Top 5: 28c -> 53c (-113, +25pp)
+- **Christopher Bell** Top 10: 44c -> 68c (-213, +24pp)
+- **Carson Hocevar** Top 10: 58c -> 35c (+186, -23pp)
+- **Austin Hill** Top 10: 33c -> 11c (+809, -22pp)
+- **Ty Gibbs** Top 10: 37c -> 57c (-133, +20pp)
+- (+91 more)
+
+_leader win YES 17c · scraped 2026-07-16T01:23:43.341553+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-12T23:58:43.202173+00:00
 
 **TRIP-WIRE — Cindric:** Cindric Top 3 16c->20c (+4pp toward Bookmaker ~33c, now +400)

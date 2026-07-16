@@ -1,19 +1,33 @@
 {
-  "updated_at": "2026-07-15T23:46:02.338937+00:00",
+  "updated_at": "2026-07-16T01:27:47.137992+00:00",
   "series": [
     {
-      "key": "xfinity",
-      "label": "O'Reilly Auto Parts",
+      "key": "cup",
+      "label": "NASCAR",
       "race_title": "Window World 450",
-      "full": false,
+      "full": true,
       "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
       "tiers": [
         "winner",
         "top3",
         "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-07-16T01:26:24.003678+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
+      "race_title": "FaithFest 250 presented by Mercer Transportation",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fai2pbm26",
+      "tiers": [
+        "winner",
+        "top3",
         "top10"
       ],
-      "scraped_at": "2026-07-15T23:46:02.338849+00:00"
+      "scraped_at": "2026-07-16T01:27:47.137956+00:00"
     }
   ]
 }
