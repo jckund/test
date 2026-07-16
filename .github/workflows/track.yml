@@ -106,6 +106,10 @@ jobs:
           cp -r data _site/data
           # Don't publish the internal marker file.
           rm -f _site/data/.gitkeep
+          # Golf tracker: a separate site published at /golf/ that shares the
+          # same data/ tree (scraped by golf.yml / golf_fanduel.yml). NASCAR at
+          # the root is unaffected; this only adds the /golf/ subtree.
+          if [ -f golf.html ]; then mkdir -p _site/golf && cp golf.html _site/golf/index.html; fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
