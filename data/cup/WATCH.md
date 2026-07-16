@@ -1,6 +1,15 @@
 ### 📊 Kalshi line move — 2026-07-16T01:23:43.341553+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 59c -> 56c (-127, -3pp)
+
+_leader win YES 17c · scraped 2026-07-16T01:23:43.341553+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-07-16T01:23:43.341553+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
 - **AJ Allmendinger** Top 3: 39c -> 5c (+1900, -34pp)
 - **Denny Hamlin** Top 5: 87c -> 60c (-150, -27pp)
 - **Denny Hamlin** Top 10: 44c -> 70c (-233, +26pp)

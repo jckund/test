@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-07-16T01:27:47.136766+00:00",
+  "updated_at": "2026-07-16T01:37:09.818603+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "434ccf36-e862-40e5-bb5c-fee6c9691d4c",
+      "tier": "Top 10",
+      "driver": "Corey Heim",
+      "ticker": "KXNASCARTOP10-FAI2PBM26-COHE",
+      "side": "yes",
+      "count": 0,
+      "yes_price": 42,
+      "no_price": 58,
+      "created_time": "2026-07-16T01:29:41.241422Z"
+    },
     {
       "trade_id": "6209997e-ce78-52f1-5566-3f8c9be2a1fc",
       "tier": "Top 10",
@@ -1640,17 +1651,6 @@
       "yes_price": 24,
       "no_price": 76,
       "created_time": "2026-07-15T18:13:19.600406Z"
-    },
-    {
-      "trade_id": "d57504ff-c256-5a13-378b-25e53c8745a8",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-FAI2PBM26-LARI",
-      "side": "yes",
-      "count": 5,
-      "yes_price": 18,
-      "no_price": 82,
-      "created_time": "2026-07-15T17:50:13.994334Z"
     }
   ]
 }
