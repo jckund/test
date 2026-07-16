@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-07-16T01:34:37.239309+00:00",
+  "updated_at": "2026-07-16T01:42:10.558888+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "77bc0c94-50b8-454c-141a-5a3ff1a85c58",
+      "tier": "Winner",
+      "driver": "Ryan Blaney",
+      "ticker": "KXNASCARRACE-WINW26-RYBL",
+      "side": "yes",
+      "count": 28,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-16T01:34:54.82311Z"
+    },
     {
       "trade_id": "bf2be29e-e2fe-4ada-d676-e257bac99ded",
       "tier": "Top 10",
@@ -1640,17 +1651,6 @@
       "yes_price": 8,
       "no_price": 92,
       "created_time": "2026-07-15T22:31:09.192915Z"
-    },
-    {
-      "trade_id": "e779ead4-568b-7f18-38d7-a3ab96236a1f",
-      "tier": "Top 5",
-      "driver": "Ryan Blaney",
-      "ticker": "KXNASCARTOP5-WINW26-RYBL",
-      "side": "yes",
-      "count": 147,
-      "yes_price": 54,
-      "no_price": 46,
-      "created_time": "2026-07-15T22:28:35.699355Z"
     }
   ]
 }
