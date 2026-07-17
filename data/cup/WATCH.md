@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-17T11:59:52.995468+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Alex Bowman** Top 10: 28c -> 25c (+300, -3pp)
+- **AJ Allmendinger** Top 10: 10c -> 7c (+1329, -3pp)
+
+_leader win YES 18c · scraped 2026-07-17T11:59:52.995468+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T07:33:44.572746+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
