@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-17T07:33:44.572746+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Bubba Wallace** Top 3: 13c -> 10c (+900, -3pp)
+
+_leader win YES 18c · scraped 2026-07-17T07:33:44.572746+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-16T21:50:12.235107+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
