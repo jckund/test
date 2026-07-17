@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-17T13:30:26.646422+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Top 3: 17c -> 23c (+335, +6pp)
+
+_leader win YES 18c · scraped 2026-07-17T13:30:26.646422+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T11:59:52.995468+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
