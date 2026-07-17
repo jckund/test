@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-17T20:14:37.245127+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Daniel Suárez** Top 10: 26c -> 22c (+355, -4pp)
+
+_leader win YES 18c · scraped 2026-07-17T20:14:37.245127+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T16:37:20.199163+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
