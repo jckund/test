@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 94,
-      "no_bid": 91,
+      "no_bid": 89,
       "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-BUWA",
       "volume": 2,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 11,
       "yes_bid": 6
     },
     "KXNASCARTOP3-WINW26-CAHO": {
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-CHBE",
       "volume": 727,
-      "volume_24h": 86,
+      "volume_24h": 75,
       "yes_ask": 35,
       "yes_bid": 34
     },
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 74,
       "no_bid": 69,
-      "open_interest": 75,
+      "open_interest": 152,
       "status": "active",
       "ticker": "KXNASCARTOP3-WINW26-KYLA",
-      "volume": 75,
-      "volume_24h": 0,
+      "volume": 152,
+      "volume_24h": 77,
       "yes_ask": 31,
       "yes_bid": 26
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-17T23:12:32.547235+00:00",
+  "scraped_at": "2026-07-17T23:46:04.415000+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top3"
 }
