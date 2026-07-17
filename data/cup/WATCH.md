@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-17T16:37:20.199163+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Top 3: 16c -> 22c (+355, +6pp)
+- **Carson Hocevar** Top 3: 13c -> 18c (+456, +5pp)
+
+_leader win YES 18c · scraped 2026-07-17T16:37:20.199163+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T13:30:26.646422+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
