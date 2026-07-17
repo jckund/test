@@ -1,8 +1,24 @@
 {
-  "captured_at": "2026-07-16T21:49:36Z",
+  "captured_at": "2026-07-17T23:58:39Z",
   "source": "Caesars",
   "race": "Window World 450",
-  "winner": {},
+  "winner": {
+    "Chevrolet": {
+      "american": 255,
+      "implied": 0.28169014084507044,
+      "novig": 0.2541114350145756
+    },
+    "Ford": {
+      "american": 230,
+      "implied": 0.30303030303030304,
+      "novig": 0.27336230130355865
+    },
+    "Toyota": {
+      "american": -110,
+      "implied": 0.5238095238095238,
+      "novig": 0.4725262636818656
+    }
+  },
   "makes": {
     "Chevrolet": {
       "drivers": [
