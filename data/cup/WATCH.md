@@ -1,3 +1,20 @@
+### 📊 Kalshi line move — 2026-07-18T20:27:15.347020+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 5: 53c -> 57c (-133, +4pp)
+- **Joey Logano** Top 10: 58c -> 62c (-163, +4pp)
+- **Denny Hamlin** Top 10: 72c -> 68c (-213, -4pp)
+- **Daniel Suárez** Top 10: 22c -> 25c (+300, +3pp)
+- **Brad Keselowski** Top 5: 13c -> 10c (+900, -3pp)
+- **Ricky Stenhouse** Top 3: 8c -> 5c (+1900, -3pp)
+- **William Byron** Top 10: 60c -> 57c (-133, -3pp)
+- **Ryan Blaney** Top 10: 79c -> 76c (-317, -3pp)
+- **Christopher Bell** Top 10: 71c -> 68c (-213, -3pp)
+
+_leader win YES 18c · scraped 2026-07-18T20:27:15.347020+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T17:43:15.637161+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

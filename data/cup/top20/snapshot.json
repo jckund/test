@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 31,
-      "no_bid": 24,
+      "no_bid": 25,
       "open_interest": 504,
       "status": "active",
       "ticker": "KXNASCARTOP20-WINW26-CAHO",
       "volume": 504,
       "volume_24h": 504,
-      "yes_ask": 76,
+      "yes_ask": 75,
       "yes_bid": 69
     },
     "KXNASCARTOP20-WINW26-CHBE": {
@@ -248,18 +248,18 @@
       "yes_bid": 56
     },
     "KXNASCARTOP20-WINW26-DEHA": {
-      "last_price": 0,
+      "last_price": 89,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 10,
-      "no_bid": 2,
-      "open_interest": 0,
+      "no_ask": 12,
+      "no_bid": 5,
+      "open_interest": 137,
       "status": "active",
       "ticker": "KXNASCARTOP20-WINW26-DEHA",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 98,
-      "yes_bid": 90
+      "volume": 137,
+      "volume_24h": 137,
+      "yes_ask": 95,
+      "yes_bid": 88
     },
     "KXNASCARTOP20-WINW26-ERJO": {
       "last_price": 57,
@@ -430,16 +430,16 @@
       "yes_bid": 71
     },
     "KXNASCARTOP20-WINW26-SHVA": {
-      "last_price": 48,
+      "last_price": 49,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 57,
       "no_bid": 51,
-      "open_interest": 622,
+      "open_interest": 808,
       "status": "active",
       "ticker": "KXNASCARTOP20-WINW26-SHVA",
-      "volume": 622,
-      "volume_24h": 0,
+      "volume": 808,
+      "volume_24h": 186,
       "yes_ask": 49,
       "yes_bid": 43
     },
@@ -518,18 +518,18 @@
       "liquidity": 0.0,
       "name": "Zane Smith",
       "no_ask": 65,
-      "no_bid": 59,
+      "no_bid": 60,
       "open_interest": 534,
       "status": "active",
       "ticker": "KXNASCARTOP20-WINW26-ZASM",
       "volume": 534,
       "volume_24h": 0,
-      "yes_ask": 41,
+      "yes_ask": 40,
       "yes_bid": 35
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-18T17:43:17.452195+00:00",
+  "scraped_at": "2026-07-18T20:27:16.948786+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top20"
 }
