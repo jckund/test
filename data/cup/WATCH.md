@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-07-18T23:35:55.748859+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Cindric** Top 3: 6c -> 47c (+113, +41pp)
+- **Todd Gilliland** Top 3: 2c -> 40c (+150, +38pp)
+- **Chris Buescher** Top 3: 9c -> 47c (+113, +38pp)
+- **Ryan Blaney** Top 3: 38c -> 69c (-223, +31pp)
+- **Shane Van Gisbergen** Top 10: 23c -> 54c (-117, +31pp)
+- **Connor Zilisch** Top 10: 7c -> 38c (+163, +31pp)
+- **Christopher Bell** Top 10: 68c -> 98c (-4900, +30pp)
+- **Joey Logano** Top 10: 62c -> 90c (-900, +28pp)
+- **Joey Logano** Top 3: 20c -> 47c (+113, +27pp)
+- **Chase Elliott** Top 3: 20c -> 46c (+117, +26pp)
+- (+50 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->47c (+31pp toward Bookmaker ~33c, now +113)
+
+_leader win YES 26c · scraped 2026-07-18T23:35:55.748859+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T20:41:22.685119+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
