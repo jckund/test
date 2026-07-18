@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-18T06:31:34.694405+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 5: 59c -> 56c (-127, -3pp)
+- **Christopher Bell** Top 5: 54c -> 51c (-104, -3pp)
+
+_leader win YES 17c · scraped 2026-07-18T06:31:34.694405+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T23:58:57.984153+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
