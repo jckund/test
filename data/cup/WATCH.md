@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-18T10:49:00.072118+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Bubba Wallace** Top 10: 42c -> 36c (+178, -6pp)
+- **Joey Logano** Top 10: 58c -> 55c (-122, -3pp)
+- **Chase Elliott** Top 10: 55c -> 52c (-108, -3pp)
+
+_leader win YES 17c · scraped 2026-07-18T10:49:00.072118+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T06:31:34.694405+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
