@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-07-18T14:37:15.069908+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Top 10: 57c -> 60c (-150, +3pp)
+- **Ryan Preece** Top 10: 38c -> 41c (+144, +3pp)
+- **Chase Elliott** Top 10: 51c -> 54c (-117, +3pp)
+- **Austin Cindric** Top 10: 31c -> 34c (+194, +3pp)
+- **Ryan Blaney** Top 10: 79c -> 76c (-317, -3pp)
+
+_leader win YES 17c · scraped 2026-07-18T14:37:15.069908+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T14:24:08.491016+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
