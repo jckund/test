@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-17T23:58:57.984153+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Bubba Wallace** Top 3: 9c -> 12c (+733, +3pp)
+- **Ryan Preece** Top 5: 21c -> 18c (+456, -3pp)
+- **Michael McDowell** Top 5: 9c -> 6c (+1567, -3pp)
+- **John H. Nemechek** Top 5: 8c -> 5c (+1900, -3pp)
+- **Cole Custer** Top 5: 5c -> 2c (+4900, -3pp)
+- **Chase Elliott** Top 5: 36c -> 33c (+203, -3pp)
+- **Brad Keselowski** Top 5: 13c -> 10c (+900, -3pp)
+- **Austin Hill** Top 5: 6c -> 3c (+3233, -3pp)
+- **William Byron** Top 3: 22c -> 19c (+426, -3pp)
+- **John H. Nemechek** Top 3: 5c -> 2c (+4900, -3pp)
+- (+1 more)
+
+_leader win YES 17c · scraped 2026-07-17T23:58:57.984153+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-17T23:12:31.976995+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
