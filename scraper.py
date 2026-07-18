@@ -641,3 +641,5 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
+# manual re-scrape/deploy trigger 2026-07-18T14:23:55Z (MCP dispatch unavailable)
