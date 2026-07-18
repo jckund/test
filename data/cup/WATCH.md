@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-07-18T17:43:15.637161+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Top 5: 28c -> 31c (+223, +3pp)
+- **Ryan Blaney** Top 10: 76c -> 79c (-376, +3pp)
+- **Kyle Larson** Top 10: 61c -> 64c (-178, +3pp)
+- **Denny Hamlin** Top 10: 69c -> 72c (-257, +3pp)
+- **Christopher Bell** Top 10: 68c -> 71c (-245, +3pp)
+
+_leader win YES 17c · scraped 2026-07-18T17:43:15.637161+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T14:37:15.069908+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
