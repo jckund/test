@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-18T20:34:53.609954+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Cindric** Top 10: 32c -> 35c (+186, +3pp)
+
+_leader win YES 18c · scraped 2026-07-18T20:34:53.609954+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T20:27:15.347020+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
