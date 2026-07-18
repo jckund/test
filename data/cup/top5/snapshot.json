@@ -38,16 +38,16 @@
       "yes_bid": 4
     },
     "KXNASCARTOP5-WINW26-AUCI": {
-      "last_price": 11,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 95,
       "no_bid": 90,
-      "open_interest": 121,
+      "open_interest": 122,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-AUCI",
-      "volume": 121,
-      "volume_24h": 0,
+      "volume": 122,
+      "volume_24h": 1,
       "yes_ask": 10,
       "yes_bid": 5
     },
@@ -252,13 +252,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 49,
-      "no_bid": 42,
+      "no_bid": 43,
       "open_interest": 302,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-DEHA",
       "volume": 405,
       "volume_24h": 103,
-      "yes_ask": 58,
+      "yes_ask": 57,
       "yes_bid": 51
     },
     "KXNASCARTOP5-WINW26-ERJO": {
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 44,
-      "no_bid": 43,
+      "no_bid": 41,
       "open_interest": 775,
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-RYBL",
       "volume": 926,
       "volume_24h": 35,
-      "yes_ask": 57,
+      "yes_ask": 59,
       "yes_bid": 56
     },
     "KXNASCARTOP5-WINW26-RYPR": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-WINW26-TYRE",
       "volume": 164,
-      "volume_24h": 95,
+      "volume_24h": 96,
       "yes_ask": 30,
       "yes_bid": 24
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-07-18T20:34:54.531636+00:00",
+  "scraped_at": "2026-07-18T20:41:23.707322+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-winw26",
   "tier": "top5"
 }
