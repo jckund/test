@@ -389,3 +389,5 @@ main().catch((e) => {
   console.error("FATAL:", e.message);
   process.exit(1);
 });
+
+// manual re-scrape trigger 2026-07-18T14:21:40Z (MCP dispatch unavailable)
