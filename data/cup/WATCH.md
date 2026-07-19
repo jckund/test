@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-07-19T01:59:13.105128+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Daniel Suárez** Top 3: 7c -> 40c (+150, +33pp)
+- **Shane Van Gisbergen** Top 10: 55c -> 26c (+285, -29pp)
+- **AJ Allmendinger** Top 10: 32c -> 5c (+1900, -27pp)
+- **Connor Zilisch** Top 10: 38c -> 13c (+669, -25pp)
+- **Zane Smith** Top 10: 35c -> 11c (+809, -24pp)
+- **Christopher Bell** Top 10: 95c -> 71c (-245, -24pp)
+- **Joey Logano** Top 10: 86c -> 64c (-178, -22pp)
+- **Connor Zilisch** Top 5: 3c -> 22c (+355, +19pp)
+- **Alex Bowman** Top 10: 48c -> 29c (+245, -19pp)
+- **Erik Jones** Top 10: 34c -> 16c (+525, -18pp)
+- (+21 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->45c (+29pp toward Bookmaker ~33c, now +122)
+
+_leader win YES 23c · scraped 2026-07-19T01:59:13.105128+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T00:47:12.883312+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
