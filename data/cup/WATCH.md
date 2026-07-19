@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-07-19T12:26:02.254525+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Cindric** Top 10: 33c -> 20c (+400, -13pp)
+- **Tyler Reddick** Top 5: 38c -> 30c (+233, -8pp)
+- **Joey Logano** Top 5: 32c -> 36c (+178, +4pp)
+- **Bubba Wallace** Top 10: 34c -> 37c (+170, +3pp)
+
+_leader win YES 24c · scraped 2026-07-19T12:26:02.254525+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T12:06:32.568728+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
