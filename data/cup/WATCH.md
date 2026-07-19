@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-19T20:58:03.720039+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ricky Stenhouse** Top 5: 7c -> 15c (+567, +8pp)
+- **Chris Buescher** Top 5: 13c -> 10c (+900, -3pp)
+
+_leader win YES 25c · scraped 2026-07-19T20:58:03.720039+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T20:34:04.896761+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
