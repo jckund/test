@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-19T15:45:02.627817+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 5: 40c -> 25c (+300, -15pp)
+- **Austin Cindric** Top 5: 28c -> 13c (+669, -15pp)
+- **Shane Van Gisbergen** Top 5: 24c -> 11c (+809, -13pp)
+- **Ryan Preece** Top 5: 6c -> 18c (+456, +12pp)
+- **Bubba Wallace** Top 5: 13c -> 4c (+2400, -9pp)
+- **Ty Gibbs** Top 3: 25c -> 32c (+212, +7pp)
+- **William Byron** Top 5: 30c -> 25c (+300, -5pp)
+- **Shane Van Gisbergen** Top 3: 43c -> 38c (+163, -5pp)
+- **Riley Herbst** Top 10: 18c -> 22c (+355, +4pp)
+- **Riley Herbst** Top 5: 25c -> 21c (+376, -4pp)
+- (+6 more)
+
+_leader win YES 23c · scraped 2026-07-19T15:45:02.627817+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T14:43:44.643770+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
