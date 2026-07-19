@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-07-19T15:54:26.355910+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 5: 32c -> 42c (+138, +10pp)
+- **Bubba Wallace** Top 5: 4c -> 12c (+733, +8pp)
+- **William Byron** Top 5: 25c -> 31c (+223, +6pp)
+- **Ricky Stenhouse** Top 5: 15c -> 11c (+809, -4pp)
+- **Riley Herbst** Top 5: 21c -> 18c (+456, -3pp)
+
+_leader win YES 24c · scraped 2026-07-19T15:54:26.355910+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T15:45:02.627817+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
