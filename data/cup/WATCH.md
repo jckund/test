@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-19T11:40:00.887214+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Todd Gilliland** Top 3: 49c -> 3c (+3233, -46pp)
+- **John H. Nemechek** Top 3: 43c -> 3c (+3233, -40pp)
+- **AJ Allmendinger** Top 3: 43c -> 3c (+3233, -40pp)
+- **Zane Smith** Top 10: 14c -> 35c (+186, +21pp)
+- **Cole Custer** Top 10: 3c -> 23c (+335, +20pp)
+- **Austin Cindric** Top 10: 22c -> 42c (+138, +20pp)
+- **Ryan Preece** Top 5: 23c -> 7c (+1329, -16pp)
+- **Erik Jones** Top 10: 25c -> 15c (+567, -10pp)
+- **Chris Buescher** Top 5: 8c -> 16c (+525, +8pp)
+- **Ty Dillon** Top 10: 3c -> 7c (+1329, +4pp)
+- (+4 more)
+
+_leader win YES 24c · scraped 2026-07-19T11:40:00.887214+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T07:48:21.722444+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
