@@ -1114,8 +1114,11 @@ function renderManufacturers(snap) {
     const pnW = t.sumW / grandW;
     const bookCells = winnerBooks.map((bk) => {
       const fm = MFRDATA[bk.key].winner[t.mfr];
-      // EV of a $1 bet at the book's posted odds, worst-case Kalshi make prob as truth.
-      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
+      // EV of a $1 bet at the book's posted odds, against the SAME make prob shown
+      // as the fair line (midpoint-normalized). Worst-case normalization is not
+      // monotonic within a make — illiquid longshots collapse to 0 and inflate the
+      // favorite's share — so it must not drive EV. See top-make note below.
+      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
@@ -1141,7 +1144,11 @@ function renderManufacturers(snap) {
       const ptW = d.pw / sumW;           // worst-case chance for EV
       const bookCells = makeBooks.map((bk) => {
         const dd = byMake[bk.key][mfr][normName(d.name)];
-        const ev = dd && typeof dd.american === "number" ? evPct(ptW, dd.american) : null;
+        // EV against the displayed fair (midpoint-normalized within the make), NOT
+        // the worst-case normalization: collapsing illiquid longshots to 0 shrinks
+        // the denominator and falsely inflates the liquid favorite (e.g. Larson),
+        // flagging shorter-than-fair lines as +EV. Match EV to the shown fair line.
+        const ev = dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
         return bookPair(dd ? dd.american : null, ev);
       }).join("");
       return `<tr>
