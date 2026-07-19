@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-07-19T00:47:12.883312+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 3: 6c -> 44c (+127, +38pp)
+- **John H. Nemechek** Top 3: 5c -> 42c (+138, +37pp)
+- **Alex Bowman** Top 10: 23c -> 48c (+108, +25pp)
+- **Riley Herbst** Top 5: 3c -> 25c (+300, +22pp)
+- **Brad Keselowski** Top 5: 12c -> 32c (+212, +20pp)
+- **Denny Hamlin** Top 3: 49c -> 68c (-213, +19pp)
+- **Ross Chastain** Top 10: 31c -> 13c (+669, -18pp)
+- **Riley Herbst** Top 10: 10c -> 27c (+270, +17pp)
+- **Erik Jones** Top 5: 6c -> 21c (+376, +15pp)
+- **Ryan Preece** Top 10: 35c -> 50c (-100, +15pp)
+- (+14 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->46c (+30pp toward Bookmaker ~33c, now +117)
+
+_leader win YES 24c · scraped 2026-07-19T00:47:12.883312+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-18T23:35:55.748859+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
