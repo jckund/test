@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-07-19T23:42:19.960174+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Michael McDowell** Top 10: 19c -> 82c (-456, +63pp)
+- **Michael McDowell** Top 3: 3c -> 48c (+108, +45pp)
+- **John H. Nemechek** Top 3: 3c -> 48c (+108, +45pp)
+- **Connor Zilisch** Top 3: 3c -> 48c (+108, +45pp)
+- **Cole Custer** Top 3: 3c -> 48c (+108, +45pp)
+- **Todd Gilliland** Top 5: 5c -> 49c (+104, +44pp)
+- **Todd Gilliland** Top 3: 3c -> 47c (+113, +44pp)
+- **Austin Dillon** Top 3: 4c -> 48c (+108, +44pp)
+- **Brad Keselowski** Top 3: 5c -> 48c (+108, +43pp)
+- **Austin Cindric** Top 3: 6c -> 49c (+104, +43pp)
+- (+69 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->49c (+33pp toward Bookmaker ~33c, now +104)
+
+_leader win YES 26c · scraped 2026-07-19T23:42:19.960174+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T23:05:18.444193+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
