@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-19T12:06:32.568728+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 10: 48c -> 33c (+203, -15pp)
+- **Tyler Reddick** Top 5: 24c -> 38c (+163, +14pp)
+- **Shane Van Gisbergen** Top 10: 33c -> 47c (+113, +14pp)
+- **Chase Elliott** Top 5: 20c -> 31c (+223, +11pp)
+- **Erik Jones** Top 10: 15c -> 25c (+300, +10pp)
+- **Austin Cindric** Top 10: 42c -> 33c (+203, -9pp)
+- **Riley Herbst** Top 10: 21c -> 27c (+270, +6pp)
+- **Joey Logano** Top 5: 36c -> 32c (+212, -4pp)
+- **Shane Van Gisbergen** Top 5: 6c -> 9c (+1011, +3pp)
+- **Erik Jones** Top 5: 4c -> 7c (+1329, +3pp)
+- (+2 more)
+
+_leader win YES 24c · scraped 2026-07-19T12:06:32.568728+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T11:40:00.887214+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
