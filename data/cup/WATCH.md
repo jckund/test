@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-19T21:33:32.932432+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Alex Bowman** Top 5: 13c -> 32c (+212, +19pp)
+- **Ryan Preece** Top 5: 17c -> 22c (+355, +5pp)
+- **Ross Chastain** Top 5: 9c -> 12c (+733, +3pp)
+
+_leader win YES 25c · scraped 2026-07-19T21:33:32.932432+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T21:27:53.071818+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
