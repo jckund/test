@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-19T22:46:50.633064+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Cole Custer** Top 5: 2c -> 19c (+426, +17pp)
+- **Josh Berry** Top 5: 6c -> 21c (+376, +15pp)
+- **Tyler Reddick** Top 5: 21c -> 34c (+194, +13pp)
+- **Daniel Suárez** Top 5: 8c -> 21c (+376, +13pp)
+- **Riley Herbst** Top 5: 14c -> 25c (+300, +11pp)
+- **Ryan Preece** Top 5: 22c -> 15c (+567, -7pp)
+- **Alex Bowman** Top 5: 32c -> 25c (+300, -7pp)
+- **AJ Allmendinger** Top 5: 1c -> 7c (+1329, +6pp)
+- **Chase Elliott** Win: 5c -> 9c (+1011, +4pp)
+- **Denny Hamlin** Win: 17c -> 20c (+400, +3pp)
+- (+5 more)
+
+_leader win YES 27c · scraped 2026-07-19T22:46:50.633064+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T21:33:32.932432+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
