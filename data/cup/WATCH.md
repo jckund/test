@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-19T14:43:44.643770+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 5: 19c -> 26c (+285, +7pp)
+- **Bubba Wallace** Top 5: 10c -> 13c (+669, +3pp)
+
+_leader win YES 25c · scraped 2026-07-19T14:43:44.643770+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T14:21:35.420466+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
