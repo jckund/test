@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-07-19T14:18:33.367658+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 5: 9c -> 23c (+335, +14pp)
+- **Shane Van Gisbergen** Top 3: 4c -> 18c (+456, +14pp)
+- **Ricky Stenhouse** Top 5: 3c -> 15c (+567, +12pp)
+- **Riley Herbst** Top 5: 19c -> 25c (+300, +6pp)
+
+_leader win YES 25c · scraped 2026-07-19T14:18:33.367658+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T14:05:42.270018+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
