@@ -1,3 +1,21 @@
+### 📊 Kalshi line move — 2026-07-19T20:34:04.896761+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Dillon** Top 5: 2c -> 14c (+614, +12pp)
+- **William Byron** Top 3: 16c -> 23c (+335, +7pp)
+- **Alex Bowman** Top 5: 9c -> 14c (+614, +5pp)
+- **Ryan Preece** Top 5: 16c -> 20c (+400, +4pp)
+- **Ross Chastain** Top 5: 8c -> 11c (+809, +3pp)
+- **Carson Hocevar** Top 3: 16c -> 19c (+426, +3pp)
+- **Shane Van Gisbergen** Top 10: 25c -> 28c (+257, +3pp)
+- **Chase Briscoe** Top 10: 37c -> 40c (+150, +3pp)
+- **AJ Allmendinger** Top 5: 4c -> 1c (+9900, -3pp)
+- **Todd Gilliland** Top 10: 13c -> 10c (+900, -3pp)
+
+_leader win YES 25c · scraped 2026-07-19T20:34:04.896761+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T18:27:06.446705+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
