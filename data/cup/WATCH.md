@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-19T07:48:21.722444+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 10: 6c -> 25c (+300, +19pp)
+- **Bubba Wallace** Top 10: 33c -> 36c (+178, +3pp)
+
+_leader win YES 24c · scraped 2026-07-19T07:48:21.722444+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T07:12:55.861405+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
