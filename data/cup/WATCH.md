@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-19T07:12:55.861405+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Cindric** Top 3: 45c -> 6c (+1567, -39pp)
+- **AJ Allmendinger** Top 3: 4c -> 42c (+138, +38pp)
+- **Shane Van Gisbergen** Top 3: 42c -> 5c (+1900, -37pp)
+- **Chris Buescher** Top 3: 46c -> 9c (+1011, -37pp)
+- **Daniel Suárez** Top 3: 40c -> 4c (+2400, -36pp)
+- **Chase Elliott** Top 3: 50c -> 16c (+525, -34pp)
+- **William Byron** Top 3: 47c -> 17c (+488, -30pp)
+- **Denny Hamlin** Top 3: 67c -> 37c (+170, -30pp)
+- **Joey Logano** Top 3: 47c -> 22c (+355, -25pp)
+- **Brad Keselowski** Top 5: 31c -> 7c (+1329, -24pp)
+- (+69 more)
+
+_leader win YES 24c · scraped 2026-07-19T07:12:55.861405+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T01:59:13.105128+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
