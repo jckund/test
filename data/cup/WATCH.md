@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-07-19T16:33:39.102925+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 3: 36c -> 10c (+900, -26pp)
+- **Riley Herbst** Top 5: 18c -> 12c (+733, -6pp)
+- **Ricky Stenhouse** Top 5: 11c -> 5c (+1900, -6pp)
+- **Ryan Blaney** Top 5: 62c -> 57c (-133, -5pp)
+- **Tyler Reddick** Top 5: 24c -> 28c (+257, +4pp)
+- **Joey Logano** Top 5: 42c -> 38c (+163, -4pp)
+- **William Byron** Top 10: 57c -> 60c (-150, +3pp)
+
+_leader win YES 25c · scraped 2026-07-19T16:33:39.102925+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T15:54:26.355910+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
