@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-07-19T18:21:37.777719+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ross Chastain** Top 10: 25c -> 18c (+456, -7pp)
+- **Denny Hamlin** Top 3: 37c -> 40c (+150, +3pp)
+- **Alex Bowman** Top 3: 7c -> 10c (+900, +3pp)
+- **Connor Zilisch** Top 10: 20c -> 17c (+488, -3pp)
+- **Brad Keselowski** Top 10: 25c -> 22c (+355, -3pp)
+
+_leader win YES 25c · scraped 2026-07-19T18:21:37.777719+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T18:06:14.301434+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
