@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-07-19T07:14:16.060667+00:00",
+  "updated_at": "2026-07-19T07:18:44.915952+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "437ada29-643f-761c-8dcf-15a8fcb804d5",
+      "tier": "Winner",
+      "driver": "Tyler Reddick",
+      "ticker": "KXNASCARRACE-WINW26-TYRE",
+      "side": "yes",
+      "count": 6,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-19T07:14:07.181638Z"
+    },
     {
       "trade_id": "a2da5f1b-5b0d-7e36-eaca-f89e7cf38408",
       "tier": "Winner",
@@ -1640,17 +1651,6 @@
       "yes_price": 20,
       "no_price": 80,
       "created_time": "2026-07-19T05:48:13.761023Z"
-    },
-    {
-      "trade_id": "3cffb456-1643-5c28-48ca-2e10436f9611",
-      "tier": "Winner",
-      "driver": "Tyler Reddick",
-      "ticker": "KXNASCARRACE-WINW26-TYRE",
-      "side": "yes",
-      "count": 94,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-07-19T05:47:37.576257Z"
     }
   ]
 }
