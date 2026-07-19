@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-19T21:27:53.071818+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 5: 35c -> 21c (+376, -14pp)
+- **Ryan Preece** Top 5: 22c -> 17c (+488, -5pp)
+
+_leader win YES 25c · scraped 2026-07-19T21:27:53.071818+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T21:17:22.582788+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
