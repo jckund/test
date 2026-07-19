@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-07-19T17:38:45.923523+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Alex Bowman** Top 5: 6c -> 26c (+285, +20pp)
+- **Christopher Bell** Top 10: 75c -> 83c (-488, +8pp)
+- **Tyler Reddick** Top 5: 38c -> 35c (+186, -3pp)
+- **Bubba Wallace** Top 5: 12c -> 9c (+1011, -3pp)
+
+_leader win YES 25c · scraped 2026-07-19T17:38:45.923523+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-19T17:18:10.073109+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
