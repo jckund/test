@@ -111,7 +111,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Conor Daly",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 94,
       "open_interest": 0,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 6,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-TSP2PBW26-COLA": {
       "last_price": 0,
@@ -360,16 +360,16 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-TSP2PBW26-LARI": {
-      "last_price": 49,
+      "last_price": 58,
       "liquidity": 0.0,
       "name": "Layne Riggs",
       "no_ask": 48,
       "no_bid": 42,
-      "open_interest": 1071,
+      "open_interest": 1076,
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-LARI",
-      "volume": 1072,
-      "volume_24h": 1072,
+      "volume": 1077,
+      "volume_24h": 1077,
       "yes_ask": 58,
       "yes_bid": 52
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-21T20:51:15.007695+00:00",
+  "scraped_at": "2026-07-21T23:46:47.166562+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-tsp2pbw26",
   "tier": "top3"
 }

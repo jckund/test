@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Connor Mosack",
       "no_ask": 81,
-      "no_bid": 75,
+      "no_bid": 74,
       "open_interest": 99,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-COMO",
       "volume": 99,
       "volume_24h": 99,
-      "yes_ask": 25,
+      "yes_ask": 26,
       "yes_bid": 19
     },
     "KXNASCARTOP10-TSP2PBW26-DAHE": {
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Gavan Boschele",
       "no_ask": 90,
-      "no_bid": 83,
+      "no_bid": 84,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-GABO",
       "volume": 100,
       "volume_24h": 100,
-      "yes_ask": 17,
+      "yes_ask": 16,
       "yes_bid": 10
     },
     "KXNASCARTOP10-TSP2PBW26-GIRU": {
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Justin Haley",
       "no_ask": 60,
-      "no_bid": 53,
+      "no_bid": 54,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-JUHA",
       "volume": 100,
       "volume_24h": 100,
-      "yes_ask": 47,
+      "yes_ask": 46,
       "yes_bid": 40
     },
     "KXNASCARTOP10-TSP2PBW26-KAHO": {
@@ -374,18 +374,18 @@
       "yes_bid": 79
     },
     "KXNASCARTOP10-TSP2PBW26-MICH": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Michael Christopher",
-      "no_ask": 98,
-      "no_bid": 91,
-      "open_interest": 0,
+      "no_ask": 92,
+      "no_bid": 85,
+      "open_interest": 292,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-MICH",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 9,
-      "yes_bid": 2
+      "volume": 292,
+      "volume_24h": 292,
+      "yes_ask": 15,
+      "yes_bid": 8
     },
     "KXNASCARTOP10-TSP2PBW26-MITY": {
       "last_price": 0,
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Nicholas Sanchez",
       "no_ask": 82,
-      "no_bid": 74,
+      "no_bid": 75,
       "open_interest": 820,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-NISA",
       "volume": 820,
       "volume_24h": 820,
-      "yes_ask": 26,
+      "yes_ask": 25,
       "yes_bid": 18
     },
     "KXNASCARTOP10-TSP2PBW26-PAEA": {
@@ -500,17 +500,17 @@
       "yes_bid": 4
     },
     "KXNASCARTOP10-TSP2PBW26-TYAN": {
-      "last_price": 56,
+      "last_price": 53,
       "liquidity": 0.0,
       "name": "Tyler Ankrum",
       "no_ask": 51,
-      "no_bid": 46,
-      "open_interest": 4,
+      "no_bid": 47,
+      "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP10-TSP2PBW26-TYAN",
-      "volume": 4,
-      "volume_24h": 4,
-      "yes_ask": 54,
+      "volume": 8,
+      "volume_24h": 8,
+      "yes_ask": 53,
       "yes_bid": 49
     },
     "KXNASCARTOP10-TSP2PBW26-TYMA": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-07-21T21:02:37.866151+00:00",
+  "scraped_at": "2026-07-21T23:47:20.023365+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-tsp2pbw26",
   "tier": "top10"
 }
