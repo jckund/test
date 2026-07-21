@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-21T19:40:49.836206+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Corey Heim** Top 10: 27c -> 34c (+194, +7pp)
+- **Ty Dillon** Top 10: 3c -> 9c (+1011, +6pp)
+- **Ross Chastain** Top 5: 20c -> 14c (+614, -6pp)
+- **Ross Chastain** Top 3: 13c -> 7c (+1329, -6pp)
+- **Shane Van Gisbergen** Top 10: 15c -> 20c (+400, +5pp)
+- **Alex Bowman** Top 10: 25c -> 30c (+233, +5pp)
+- **Ryan Blaney** Top 10: 53c -> 57c (-133, +4pp)
+- **Connor Zilisch** Top 10: 10c -> 14c (+614, +4pp)
+- **Cole Custer** Top 10: 5c -> 9c (+1011, +4pp)
+- **Cody Ware** Top 10: 2c -> 6c (+1567, +4pp)
+- (+1 more)
+
+_leader win YES 21c · scraped 2026-07-21T19:40:49.836206+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-21T15:53:19.853322+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

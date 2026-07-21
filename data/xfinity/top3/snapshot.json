@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-PEN2PBT5O26",
   "label": "Top 3",
-  "market_count": 36,
+  "market_count": 37,
   "markets": {
     "KXNASCARTOP3-PEN2PBT5O26-ANAL": {
       "last_price": 0,
@@ -149,6 +149,20 @@
       "yes_ask": 8,
       "yes_bid": 0
     },
+    "KXNASCARTOP3-PEN2PBT5O26-DACR": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Dawson Cram",
+      "no_ask": 100,
+      "no_bid": 96,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARTOP3-PEN2PBT5O26-DACR",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 4,
+      "yes_bid": 0
+    },
     "KXNASCARTOP3-PEN2PBT5O26-DETH": {
       "last_price": 0,
       "liquidity": 0.0,
@@ -280,13 +294,13 @@
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 69,
-      "no_bid": 62,
+      "no_bid": 63,
       "open_interest": 537,
       "status": "active",
       "ticker": "KXNASCARTOP3-PEN2PBT5O26-JUAL",
       "volume": 537,
       "volume_24h": 537,
-      "yes_ask": 38,
+      "yes_ask": 37,
       "yes_bid": 31
     },
     "KXNASCARTOP3-PEN2PBT5O26-KYSI": {
@@ -515,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-21T14:53:22.436014+00:00",
+  "scraped_at": "2026-07-21T19:44:49.589580+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-pen2pbt5o26",
   "tier": "top3"
 }
