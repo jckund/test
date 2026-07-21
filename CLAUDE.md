@@ -69,6 +69,18 @@ Jr" + "Bubba Wallace") — `gen_books` canonicalizes and keeps the first; use ma
 values. If a book omits a tier/the which-make 3-way, preserve the existing file's
 values for what's missing.
 
+## Analysis scripts
+
+- **`ev_model.py`** — finish-distribution EV model (implements the matchup convention
+  below). `python ev_model.py h2h "Ty Gibbs,-201,Tyler Reddick,165" ...` prints an EV
+  table (edge pp + EV% = model_P·decimal−1), +EV first. `python ev_model.py book
+  data/cup/manual/<book>.json <tier>` values a book's tier vs Kalshi fair. Reads the
+  committed `data/cup/<tier>/snapshot.json` — no setup. NOTE: the `book` scan is only
+  meaningful **pre-race**; once the race is live the Kalshi snapshot reflects running
+  order and pre-race book prices look absurdly +EV.
+- **`trades.py`** — biggest Kalshi trades from `alerts.jsonl`, splitting directional
+  YES/NO from the field-lay harvest. `python trades.py [--hours N | --date YYYY-MM-DD]`.
+
 ## Analysis conventions
 
 - **Kalshi = fair.** A book bet is +EV iff Kalshi's fair prob > the book's raw
