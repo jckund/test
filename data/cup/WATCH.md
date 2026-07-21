@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-21T15:53:19.853322+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Connor Zilisch** Top 10: 20c -> 10c (+900, -10pp)
+- **Ryan Blaney** Top 10: 60c -> 53c (-113, -7pp)
+- **Alex Bowman** Top 10: 32c -> 25c (+300, -7pp)
+- **Zane Smith** Top 10: 16c -> 22c (+355, +6pp)
+- **Ty Dillon** Top 10: 9c -> 3c (+3233, -6pp)
+- **Shane Van Gisbergen** Top 10: 21c -> 15c (+567, -6pp)
+- **Josh Berry** Top 10: 19c -> 13c (+669, -6pp)
+- **Austin Hill** Top 10: 15c -> 9c (+1011, -6pp)
+- **Noah Gragson** Top 10: 13c -> 8c (+1150, -5pp)
+- **Michael McDowell** Top 10: 21c -> 16c (+525, -5pp)
+- (+6 more)
+
+_leader win YES 22c · scraped 2026-07-21T15:53:19.853322+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-21T14:49:23.841939+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

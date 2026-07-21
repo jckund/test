@@ -1,7 +1,84 @@
 {
-  "updated_at": "2026-07-21T15:27:16.319635+00:00",
+  "updated_at": "2026-07-21T15:59:18.329720+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "5936fc87-f4e5-59c0-3b06-1bf79fe39633",
+      "tier": "Winner",
+      "driver": "Brent Crews",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-BRCR",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-21T15:47:05.645621Z"
+    },
+    {
+      "trade_id": "db3b848e-9309-4204-43c1-aea585b5c9b1",
+      "tier": "Winner",
+      "driver": "Taylor Gray",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-TAGR",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-21T15:46:34.073763Z"
+    },
+    {
+      "trade_id": "679020cf-30b9-7469-0e0c-46ec8bbf4756",
+      "tier": "Top 5",
+      "driver": "Erik Jones",
+      "ticker": "KXNASCARTOP5-BRI4PB26-ERJO",
+      "side": "yes",
+      "count": 30,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-07-21T15:36:10.262215Z"
+    },
+    {
+      "trade_id": "21b1d0e9-ccaa-6d77-4bf2-292399ef399a",
+      "tier": "Top 5",
+      "driver": "Brad Keselowski",
+      "ticker": "KXNASCARTOP5-BRI4PB26-BRKE",
+      "side": "yes",
+      "count": 28,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-21T15:34:41.341728Z"
+    },
+    {
+      "trade_id": "ebf79622-e161-4265-56da-f3d20ae55845",
+      "tier": "Top 5",
+      "driver": "Bubba Wallace",
+      "ticker": "KXNASCARTOP5-BRI4PB26-BUWA",
+      "side": "yes",
+      "count": 8,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-21T15:33:32.384533Z"
+    },
+    {
+      "trade_id": "93858cd2-caa7-40da-6044-2d6d39c4223f",
+      "tier": "Top 5",
+      "driver": "Bubba Wallace",
+      "ticker": "KXNASCARTOP5-BRI4PB26-BUWA",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 29,
+      "no_price": 71,
+      "created_time": "2026-07-21T15:33:32.384533Z"
+    },
+    {
+      "trade_id": "c66e01aa-613c-44ca-125d-8303541f7538",
+      "tier": "Top 5",
+      "driver": "Christopher Bell",
+      "ticker": "KXNASCARTOP5-BRI4PB26-CHBE",
+      "side": "no",
+      "count": 1,
+      "yes_price": 35,
+      "no_price": 65,
+      "created_time": "2026-07-21T15:30:05.890342Z"
+    },
     {
       "trade_id": "d8128188-f3dc-49ee-c7dc-a5eba369d0b9",
       "tier": "Winner",
@@ -1574,83 +1651,6 @@
       "yes_price": 1,
       "no_price": 99,
       "created_time": "2026-07-21T02:04:25.384356Z"
-    },
-    {
-      "trade_id": "435fdf08-190f-7653-3eda-adc2e7a14327",
-      "tier": "Winner",
-      "driver": "Brandon Jones",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-BRJO",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T02:03:58.82818Z"
-    },
-    {
-      "trade_id": "1cd6b5d1-e87a-488c-7204-6698b5b8b61a",
-      "tier": "Winner",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-CODA",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T02:03:36.864756Z"
-    },
-    {
-      "trade_id": "ee6b0405-584c-647d-0164-c3e6b93e4dc2",
-      "tier": "Winner",
-      "driver": "Taylor Gray",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-TAGR",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-21T02:03:23.904568Z"
-    },
-    {
-      "trade_id": "6b63210b-f3da-5dd9-0e0d-443e31408a36",
-      "tier": "Winner",
-      "driver": "Sam Mayer",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-SAMA",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T02:03:13.362862Z"
-    },
-    {
-      "trade_id": "2dbe23c5-b52b-57a2-2eca-c1f344f30861",
-      "tier": "Winner",
-      "driver": "Sam Mayer",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-SAMA",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T02:03:13.362862Z"
-    },
-    {
-      "trade_id": "df84e185-5b27-4a8b-16eb-3122bff4ffa8",
-      "tier": "Winner",
-      "driver": "Taylor Gray",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-TAGR",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T02:01:51.209472Z"
-    },
-    {
-      "trade_id": "e84d1513-f979-518f-7859-fa106d6108bc",
-      "tier": "Winner",
-      "driver": "Justin Allgaier",
-      "ticker": "KXNASCARRACE-PEN2PBT5O26-JUAL",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-07-21T01:51:18.00891Z"
     }
   ]
 }
