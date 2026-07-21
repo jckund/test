@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-07-21T19:44:48.737149+00:00",
+  "updated_at": "2026-07-21T20:43:01.458088+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "f828d17a-9138-5a1c-6055-bceb597b7679",
+      "tier": "Top 10",
+      "driver": "Stewart Friesen",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-STFR",
+      "side": "yes",
+      "count": 48,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-21T20:20:11.371216Z"
+    },
+    {
+      "trade_id": "64f342bf-c4bf-6468-085a-a41f69946eea",
+      "tier": "Winner",
+      "driver": "Chandler Smith",
+      "ticker": "KXNASCARRACE-TSP2PBW26-CHSM",
+      "side": "yes",
+      "count": 18,
+      "yes_price": 26,
+      "no_price": 74,
+      "created_time": "2026-07-21T19:58:36.562267Z"
+    },
     {
       "trade_id": "00b77cfd-827e-4e22-f126-e3f4ace1c515",
       "tier": "Top 10",
@@ -1629,28 +1651,6 @@
       "yes_price": 3,
       "no_price": 97,
       "created_time": "2026-07-21T01:45:34.78851Z"
-    },
-    {
-      "trade_id": "00d9738a-3fd6-4bc1-a5b7-abf53be11fc5",
-      "tier": "Winner",
-      "driver": "Tyler Ankrum",
-      "ticker": "KXNASCARRACE-TSP2PBW26-TYAN",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-07-21T01:45:34.78851Z"
-    },
-    {
-      "trade_id": "325779d7-af54-757b-5ac1-c5abb9b632f9",
-      "tier": "Winner",
-      "driver": "Tanner Gray",
-      "ticker": "KXNASCARRACE-TSP2PBW26-TAGR",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-07-21T01:42:35.088867Z"
     }
   ]
 }
