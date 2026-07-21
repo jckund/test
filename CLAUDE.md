@@ -69,6 +69,14 @@ Jr" + "Bubba Wallace") — `gen_books` canonicalizes and keeps the first; use ma
 values. If a book omits a tier/the which-make 3-way, preserve the existing file's
 values for what's missing.
 
+**Capture completeness (IMPORTANT):** For every book **except Prime**, transcribe the
+**full board** — a single mid-pack or longshot driver moving meaningfully matters, so
+never shortcut to just the favorites. **Prime only** is the exception: its sportsbook
+reprices the whole board by a few points each capture (proportional drift) rather than
+moving individual drivers, so on a Prime refresh eyeball the top ~6 favorites vs the
+live Prime board and, if none moved meaningfully (more than a few %), treat it as drift
+and skip the re-entry. Never apply this favorites-only shortcut to any other book.
+
 ## Analysis scripts
 
 - **`ev_model.py`** — finish-distribution EV model (implements the matchup convention
