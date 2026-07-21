@@ -1,19 +1,46 @@
 {
-  "updated_at": "2026-07-21T09:39:45.904674+00:00",
+  "updated_at": "2026-07-21T14:54:54.829066+00:00",
   "series": [
     {
-      "key": "xfinity",
-      "label": "O'Reilly Auto Parts",
+      "key": "cup",
+      "label": "NASCAR",
       "race_title": "Brickyard 400 presented by PPG",
-      "full": false,
+      "full": true,
       "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
       "tiers": [
         "winner",
         "top3",
         "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-07-21T14:52:04.922356+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
+      "race_title": "TSport 200 presented by Warn Industries",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-tsp2pbw26",
+      "tiers": [
+        "winner",
+        "top3",
         "top10"
       ],
-      "scraped_at": "2026-07-21T09:39:45.904643+00:00"
+      "scraped_at": "2026-07-21T14:53:21.614581+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "O'Reilly Auto Parts",
+      "race_title": "Pennzoil 250 presented by Take 5 Oil Change",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-pen2pbt5o26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-07-21T14:54:54.829020+00:00"
     }
   ]
 }
