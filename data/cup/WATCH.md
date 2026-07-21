@@ -1,5 +1,13 @@
 ### 📊 Kalshi line move — 2026-07-19T23:42:19.960174+00:00
 
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->49c (+33pp toward Bookmaker ~33c, now +104)
+
+_leader win YES 26c · scraped 2026-07-19T23:42:19.960174+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-07-19T23:42:19.960174+00:00
+
 **Kalshi Cup YES moves >= 3pp (since last check):**
 - **Michael McDowell** Top 10: 19c -> 82c (-456, +63pp)
 - **Michael McDowell** Top 3: 3c -> 48c (+108, +45pp)
