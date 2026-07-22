@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-22T17:50:56.935249+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 10: 22c -> 27c (+270, +5pp)
+- **Alex Bowman** Top 5: 15c -> 11c (+809, -4pp)
+- **Ross Chastain** Top 5: 12c -> 9c (+1011, -3pp)
+
+_leader win YES 20c · scraped 2026-07-22T17:50:56.935249+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-22T13:52:40.966492+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
