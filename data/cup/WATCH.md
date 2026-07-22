@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-07-22T13:11:52.263421+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Top 3: 25c -> 20c (+400, -5pp)
+- **Shane Van Gisbergen** Top 3: 8c -> 4c (+2400, -4pp)
+- **Noah Gragson** Top 3: 4c -> 1c (+9900, -3pp)
+- **Josh Berry** Top 3: 5c -> 2c (+4900, -3pp)
+- **Joey Logano** Top 3: 16c -> 13c (+669, -3pp)
+- **Denny Hamlin** Top 3: 41c -> 38c (+163, -3pp)
+- **Austin Hill** Top 3: 4c -> 1c (+9900, -3pp)
+
+_leader win YES 20c · scraped 2026-07-22T13:11:52.263421+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-22T08:00:44.671342+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
