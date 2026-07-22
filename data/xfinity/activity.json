@@ -1,7 +1,106 @@
 {
-  "updated_at": "2026-07-22T22:35:09.401932+00:00",
+  "updated_at": "2026-07-22T22:58:07.639465+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "73d48099-9653-4323-9993-5e2553eb03d6",
+      "tier": "Top 5",
+      "driver": "Kyle Larson",
+      "ticker": "KXNASCARTOP5-BRI4PB26-KYLA",
+      "side": "yes",
+      "count": 11,
+      "yes_price": 42,
+      "no_price": 58,
+      "created_time": "2026-07-22T22:47:14.859904Z"
+    },
+    {
+      "trade_id": "dd12ba41-7099-6133-171c-1561c0db8652",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-JUAL",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 18,
+      "no_price": 82,
+      "created_time": "2026-07-22T22:47:07.347389Z"
+    },
+    {
+      "trade_id": "049cbd2e-c7d9-6f77-1725-6cc192845040",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-JUAL",
+      "side": "yes",
+      "count": 52,
+      "yes_price": 18,
+      "no_price": 82,
+      "created_time": "2026-07-22T22:47:07.347389Z"
+    },
+    {
+      "trade_id": "449c0a2c-85da-7e7b-84ee-e38cc073b238",
+      "tier": "Winner",
+      "driver": "Chase Elliott",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-CHEL",
+      "side": "yes",
+      "count": 6,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-22T22:42:02.786112Z"
+    },
+    {
+      "trade_id": "328f7fdd-4426-701d-b719-9132a9a07edd",
+      "tier": "Winner",
+      "driver": "Chase Elliott",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-CHEL",
+      "side": "yes",
+      "count": 44,
+      "yes_price": 17,
+      "no_price": 83,
+      "created_time": "2026-07-22T22:42:02.786112Z"
+    },
+    {
+      "trade_id": "a4f30112-e4cf-4e22-7017-19efc61d70c5",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-CODA",
+      "side": "no",
+      "count": 35,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-07-22T22:38:50.206362Z"
+    },
+    {
+      "trade_id": "5e03a56e-ff4a-4b24-66d4-71d693499352",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-CODA",
+      "side": "no",
+      "count": 5,
+      "yes_price": 5,
+      "no_price": 95,
+      "created_time": "2026-07-22T22:38:50.206362Z"
+    },
+    {
+      "trade_id": "fe1e2ca1-812b-5c44-a062-57566b88ad08",
+      "tier": "Top 10",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARTOP10-PEN2PBT5O26-CODA",
+      "side": "no",
+      "count": 64,
+      "yes_price": 49,
+      "no_price": 51,
+      "created_time": "2026-07-22T22:38:40.941256Z"
+    },
+    {
+      "trade_id": "c808653e-bfea-5ddb-bf71-e4332d264e7b",
+      "tier": "Top 10",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARTOP10-PEN2PBT5O26-CODA",
+      "side": "no",
+      "count": 36,
+      "yes_price": 49,
+      "no_price": 51,
+      "created_time": "2026-07-22T22:38:40.941256Z"
+    },
     {
       "trade_id": "570a3903-0707-4ac7-e060-1578f8ba3d3d",
       "tier": "Winner",
@@ -1552,105 +1651,6 @@
       "yes_price": 35,
       "no_price": 65,
       "created_time": "2026-07-22T14:36:04.136686Z"
-    },
-    {
-      "trade_id": "5865eb9f-7938-4820-7374-188e016a1582",
-      "tier": "Top 3",
-      "driver": "Brent Crews",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-BRCR",
-      "side": "no",
-      "count": 100,
-      "yes_price": 36,
-      "no_price": 64,
-      "created_time": "2026-07-22T14:36:04.136686Z"
-    },
-    {
-      "trade_id": "68849605-42ac-47aa-f84a-3534c85c9905",
-      "tier": "Top 10",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARTOP10-PEN2PBT5O26-CAKV",
-      "side": "yes",
-      "count": 163,
-      "yes_price": 51,
-      "no_price": 49,
-      "created_time": "2026-07-22T14:35:52.277466Z"
-    },
-    {
-      "trade_id": "ed266fce-4a76-4509-94cc-f87a769fab38",
-      "tier": "Top 5",
-      "driver": "Denny Hamlin",
-      "ticker": "KXNASCARTOP5-BRI4PB26-DEHA",
-      "side": "yes",
-      "count": 39,
-      "yes_price": 50,
-      "no_price": 50,
-      "created_time": "2026-07-22T14:35:46.72321Z"
-    },
-    {
-      "trade_id": "d4f65461-3c9c-41d4-f406-5457af1adc84",
-      "tier": "Top 3",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CODA",
-      "side": "yes",
-      "count": 66,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-07-22T14:10:54.465587Z"
-    },
-    {
-      "trade_id": "5bb11a76-0412-48fd-f641-a991bc828bb4",
-      "tier": "Top 3",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CODA",
-      "side": "yes",
-      "count": 33,
-      "yes_price": 15,
-      "no_price": 85,
-      "created_time": "2026-07-22T14:10:54.465587Z"
-    },
-    {
-      "trade_id": "34fba16a-5867-5d59-eb6c-8416402b2354",
-      "tier": "Top 3",
-      "driver": "Brent Crews",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-BRCR",
-      "side": "yes",
-      "count": 129,
-      "yes_price": 22,
-      "no_price": 78,
-      "created_time": "2026-07-22T14:09:35.556494Z"
-    },
-    {
-      "trade_id": "8d3e307f-d6c7-441f-dff3-feb7ea1d3e79",
-      "tier": "Top 3",
-      "driver": "Brent Crews",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-BRCR",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 19,
-      "no_price": 81,
-      "created_time": "2026-07-22T14:08:15.480574Z"
-    },
-    {
-      "trade_id": "bcb5bd50-0f46-4fa0-5aad-905a82edcf0b",
-      "tier": "Top 3",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CAKV",
-      "side": "yes",
-      "count": 162,
-      "yes_price": 19,
-      "no_price": 81,
-      "created_time": "2026-07-22T14:08:13.88752Z"
-    },
-    {
-      "trade_id": "a4ec54c8-85e3-4189-5281-69172d1b693d",
-      "tier": "Top 3",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CAKV",
-      "side": "yes",
-      "count": 24,
-      "yes_price": 18,
-      "no_price": 82,
-      "created_time": "2026-07-22T14:08:13.88752Z"
     }
   ]
 }
