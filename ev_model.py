@@ -28,9 +28,24 @@ CUP = os.path.join(HERE, "data", "cup")
 RNG_SEED = 21          # fixed so runs are reproducible
 N_SAMPLES = 300_000
 
+# Book/matchup inputs spell some drivers differently than the Kalshi snapshot
+# (e.g. "John Hunter Nemechek" vs Kalshi's "John H. Nemechek", or a trailing
+# "Jr"). Strip suffixes + punctuation and map the non-collapsing variants onto
+# the Kalshi spelling so lookups don't silently return 0. Mirrors gen_books.
+_ALIAS = {
+    "john hunter nemechek": "john h nemechek",
+    "darrell wallace": "bubba wallace",
+}
+
 def norm(s):
-    return ' '.join(unicodedata.normalize('NFKD', s or '')
-                    .encode('ascii', 'ignore').decode().lower().replace('.', '').split())
+    n = (unicodedata.normalize('NFKD', s or '')
+         .encode('ascii', 'ignore').decode().lower().replace('.', '').replace('-', ' '))
+    n = ' '.join(n.split())
+    for suf in (' jr', ' sr', ' ii', ' iii'):
+        if n.endswith(suf):
+            n = n[:-len(suf)]
+    n = ' '.join(n.split())
+    return _ALIAS.get(n, n)
 
 def am_imp(o):
     o = int(o); return (-o)/((-o)+100) if o < 0 else 100/(o+100)
