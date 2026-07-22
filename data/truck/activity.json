@@ -1,7 +1,95 @@
 {
-  "updated_at": "2026-07-22T21:46:03.847862+00:00",
+  "updated_at": "2026-07-22T22:33:32.182552+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "62d563a9-c6ca-7ba7-4a2f-8221aed83c48",
+      "tier": "Top 10",
+      "driver": "Stewart Friesen",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-STFR",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 37,
+      "no_price": 63,
+      "created_time": "2026-07-22T22:33:29.331757Z"
+    },
+    {
+      "trade_id": "9753d097-60bb-7fc2-782b-5b093caf1e45",
+      "tier": "Top 10",
+      "driver": "Stewart Friesen",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-STFR",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 42,
+      "no_price": 58,
+      "created_time": "2026-07-22T22:31:46.857158Z"
+    },
+    {
+      "trade_id": "433849ec-4b2b-7270-7d47-ce6c282e3043",
+      "tier": "Top 10",
+      "driver": "Stewart Friesen",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-STFR",
+      "side": "yes",
+      "count": 200,
+      "yes_price": 32,
+      "no_price": 68,
+      "created_time": "2026-07-22T22:31:46.857158Z"
+    },
+    {
+      "trade_id": "2c3ebe57-aa19-7df7-577b-eb9d20ff0408",
+      "tier": "Top 10",
+      "driver": "Stewart Friesen",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-STFR",
+      "side": "yes",
+      "count": 100,
+      "yes_price": 30,
+      "no_price": 70,
+      "created_time": "2026-07-22T22:31:46.857158Z"
+    },
+    {
+      "trade_id": "e08ec061-d939-6e32-fcea-ed44fd7b8985",
+      "tier": "Winner",
+      "driver": "Chandler Smith",
+      "ticker": "KXNASCARRACE-TSP2PBW26-CHSM",
+      "side": "yes",
+      "count": 24,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-07-22T22:21:08.385863Z"
+    },
+    {
+      "trade_id": "bb8e430d-c8e2-6c99-e298-fc78740246ba",
+      "tier": "Winner",
+      "driver": "Ty Majeski",
+      "ticker": "KXNASCARRACE-TSP2PBW26-TYMA",
+      "side": "yes",
+      "count": 7,
+      "yes_price": 14,
+      "no_price": 86,
+      "created_time": "2026-07-22T22:10:08.764898Z"
+    },
+    {
+      "trade_id": "7a7baaef-a065-5696-8e55-9b9a33d363e5",
+      "tier": "Winner",
+      "driver": "Chandler Smith",
+      "ticker": "KXNASCARRACE-TSP2PBW26-CHSM",
+      "side": "yes",
+      "count": 5,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-07-22T22:09:49.403246Z"
+    },
+    {
+      "trade_id": "b5e7d812-6ea9-7ff6-b2cb-84bdb471a429",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-TSP2PBW26-LARI",
+      "side": "yes",
+      "count": 7,
+      "yes_price": 28,
+      "no_price": 72,
+      "created_time": "2026-07-22T22:09:38.918957Z"
+    },
     {
       "trade_id": "be0d06cc-aa53-4c92-f526-3085d1a92c43",
       "tier": "Top 10",
@@ -1563,94 +1651,6 @@
       "yes_price": 35,
       "no_price": 65,
       "created_time": "2026-07-22T12:31:40.900942Z"
-    },
-    {
-      "trade_id": "309eba06-34f4-717f-5c70-b30e1c9e8bae",
-      "tier": "Top 3",
-      "driver": "Ty Majeski",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-TYMA",
-      "side": "no",
-      "count": 100,
-      "yes_price": 34,
-      "no_price": 66,
-      "created_time": "2026-07-22T12:31:40.900942Z"
-    },
-    {
-      "trade_id": "007ea936-e8ef-7a51-7e89-f7adc6f94dc7",
-      "tier": "Top 3",
-      "driver": "Ty Majeski",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-TYMA",
-      "side": "no",
-      "count": 100,
-      "yes_price": 32,
-      "no_price": 68,
-      "created_time": "2026-07-22T12:31:40.900942Z"
-    },
-    {
-      "trade_id": "dfd1696f-2080-4f3a-bae4-5ae12334fd06",
-      "tier": "Top 3",
-      "driver": "Justin Haley",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-JUHA",
-      "side": "no",
-      "count": 66,
-      "yes_price": 5,
-      "no_price": 95,
-      "created_time": "2026-07-22T12:28:21.748403Z"
-    },
-    {
-      "trade_id": "a82b7e57-0fe5-4118-8721-b11e74cca692",
-      "tier": "Top 3",
-      "driver": "Justin Haley",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-JUHA",
-      "side": "no",
-      "count": 134,
-      "yes_price": 5,
-      "no_price": 95,
-      "created_time": "2026-07-22T12:28:21.748403Z"
-    },
-    {
-      "trade_id": "854af103-2a6d-4092-9ee5-a5f9c568811c",
-      "tier": "Top 3",
-      "driver": "Justin Haley",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-JUHA",
-      "side": "no",
-      "count": 67,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-07-22T12:28:21.748403Z"
-    },
-    {
-      "trade_id": "0d18398e-dbcb-4660-92c8-16ae0c86f432",
-      "tier": "Top 3",
-      "driver": "Justin Haley",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-JUHA",
-      "side": "no",
-      "count": 33,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-07-22T12:28:21.748403Z"
-    },
-    {
-      "trade_id": "480f9c43-2d05-6e40-0f23-8faf1e370110",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-TSP2PBW26-LARI",
-      "side": "yes",
-      "count": 8,
-      "yes_price": 24,
-      "no_price": 76,
-      "created_time": "2026-07-22T12:08:16.281013Z"
-    },
-    {
-      "trade_id": "5a0b410e-4ba1-6624-94be-97b77d00178a",
-      "tier": "Top 3",
-      "driver": "Grant Enfinger",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-GREN",
-      "side": "yes",
-      "count": 5,
-      "yes_price": 21,
-      "no_price": 79,
-      "created_time": "2026-07-22T05:54:21.659946Z"
     }
   ]
 }

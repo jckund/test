@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-07-22T21:47:35.977927+00:00",
+  "updated_at": "2026-07-22T22:35:09.401932+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "570a3903-0707-4ac7-e060-1578f8ba3d3d",
+      "tier": "Winner",
+      "driver": "Ross Chastain",
+      "ticker": "KXNASCARRACE-PEN2PBT5O26-ROCH",
+      "side": "no",
+      "count": 10,
+      "yes_price": 8,
+      "no_price": 92,
+      "created_time": "2026-07-22T22:22:35.798225Z"
+    },
+    {
+      "trade_id": "f544f2f3-3344-7303-8580-7ab535718a31",
+      "tier": "Top 5",
+      "driver": "Erik Jones",
+      "ticker": "KXNASCARTOP5-BRI4PB26-ERJO",
+      "side": "yes",
+      "count": 236,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-07-22T22:06:22.074079Z"
+    },
     {
       "trade_id": "93cae5e5-c995-5c0d-eed6-c41e1ee0df3d",
       "tier": "Winner",
@@ -1629,28 +1651,6 @@
       "yes_price": 18,
       "no_price": 82,
       "created_time": "2026-07-22T14:08:13.88752Z"
-    },
-    {
-      "trade_id": "6febb0c7-260f-44d4-5c04-5abe37a197ff",
-      "tier": "Top 3",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CAKV",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 17,
-      "no_price": 83,
-      "created_time": "2026-07-22T14:08:13.88752Z"
-    },
-    {
-      "trade_id": "64024f45-ffc9-48d1-ae0e-c1980bd030cc",
-      "tier": "Top 3",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARTOP3-PEN2PBT5O26-CAKV",
-      "side": "yes",
-      "count": 59,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-07-22T14:07:29.950484Z"
     }
   ]
 }
