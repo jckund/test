@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-07-22T13:56:29.897326+00:00",
+  "updated_at": "2026-07-22T14:15:16.421072+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "8528961b-8d41-7565-ef13-90630ae80449",
+      "tier": "Top 10",
+      "driver": "Daniel Hemric",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-DAHE",
+      "side": "no",
+      "count": 100,
+      "yes_price": 51,
+      "no_price": 49,
+      "created_time": "2026-07-22T14:10:34.999431Z"
+    },
+    {
+      "trade_id": "50605ba7-cdea-775f-ea58-242c783609ae",
+      "tier": "Top 10",
+      "driver": "Daniel Hemric",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-DAHE",
+      "side": "no",
+      "count": 200,
+      "yes_price": 50,
+      "no_price": 50,
+      "created_time": "2026-07-22T14:10:34.999431Z"
+    },
+    {
+      "trade_id": "9acf4aef-ce71-7b9f-b599-dfa4cafcbbfa",
+      "tier": "Top 10",
+      "driver": "Tyler Ankrum",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-TYAN",
+      "side": "no",
+      "count": 200,
+      "yes_price": 47,
+      "no_price": 53,
+      "created_time": "2026-07-22T14:10:18.756225Z"
+    },
+    {
+      "trade_id": "2dfce46b-36a2-773e-aea6-2d3a32f61dd1",
+      "tier": "Top 10",
+      "driver": "Tyler Ankrum",
+      "ticker": "KXNASCARTOP10-TSP2PBW26-TYAN",
+      "side": "no",
+      "count": 100,
+      "yes_price": 49,
+      "no_price": 51,
+      "created_time": "2026-07-22T14:10:18.756225Z"
+    },
     {
       "trade_id": "82cc8a35-134c-67fc-7562-89b311c266c1",
       "tier": "Winner",
@@ -1607,50 +1651,6 @@
       "yes_price": 24,
       "no_price": 76,
       "created_time": "2026-07-21T12:17:29.40017Z"
-    },
-    {
-      "trade_id": "00f02016-1dbe-655d-b194-f4075439a72d",
-      "tier": "Winner",
-      "driver": "Chandler Smith",
-      "ticker": "KXNASCARRACE-TSP2PBW26-CHSM",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 23,
-      "no_price": 77,
-      "created_time": "2026-07-21T12:17:29.40017Z"
-    },
-    {
-      "trade_id": "0a92f661-a153-4e45-22fd-62d99ee6dac6",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-TSP2PBW26-LARI",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 25,
-      "no_price": 75,
-      "created_time": "2026-07-21T12:17:12.04209Z"
-    },
-    {
-      "trade_id": "45b0e469-f57a-726a-5890-750983850c74",
-      "tier": "Top 3",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARTOP3-TSP2PBW26-LARI",
-      "side": "yes",
-      "count": 1,
-      "yes_price": 49,
-      "no_price": 51,
-      "created_time": "2026-07-21T12:17:02.521593Z"
-    },
-    {
-      "trade_id": "f60879e4-31e2-67e8-bd62-a51e130c2f2f",
-      "tier": "Winner",
-      "driver": "Chandler Smith",
-      "ticker": "KXNASCARRACE-TSP2PBW26-CHSM",
-      "side": "yes",
-      "count": 123,
-      "yes_price": 35,
-      "no_price": 65,
-      "created_time": "2026-07-21T12:14:58.210312Z"
     }
   ]
 }

@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Corey Heim",
       "no_ask": 45,
-      "no_bid": 41,
-      "open_interest": 563,
+      "no_bid": 40,
+      "open_interest": 758,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-COHE",
-      "volume": 563,
-      "volume_24h": 5,
-      "yes_ask": 59,
+      "volume": 758,
+      "volume_24h": 200,
+      "yes_ask": 60,
       "yes_bid": 55
     },
     "KXNASCARTOP20-BRI4PB26-COWA": {
@@ -262,18 +262,18 @@
       "yes_bid": 5
     },
     "KXNASCARTOP20-BRI4PB26-DASU": {
-      "last_price": 0,
+      "last_price": 59,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 48,
+      "no_ask": 47,
       "no_bid": 41,
-      "open_interest": 0,
+      "open_interest": 14,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-DASU",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 14,
+      "volume_24h": 14,
       "yes_ask": 59,
-      "yes_bid": 52
+      "yes_bid": 53
     },
     "KXNASCARTOP20-BRI4PB26-DEHA": {
       "last_price": 81,
@@ -335,15 +335,15 @@
       "last_price": 52,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
-      "no_ask": 53,
-      "no_bid": 49,
-      "open_interest": 796,
+      "no_ask": 54,
+      "no_bid": 47,
+      "open_interest": 1026,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-JONE",
-      "volume": 812,
-      "volume_24h": 216,
-      "yes_ask": 51,
-      "yes_bid": 47
+      "volume": 1042,
+      "volume_24h": 446,
+      "yes_ask": 53,
+      "yes_bid": 46
     },
     "KXNASCARTOP20-BRI4PB26-KYLA": {
       "last_price": 91,
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-RIHE",
       "volume": 880,
-      "volume_24h": 435,
+      "volume_24h": 310,
       "yes_ask": 38,
       "yes_bid": 32
     },
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-22T13:52:42.682815+00:00",
+  "scraped_at": "2026-07-22T14:10:53.978472+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top20"
 }
