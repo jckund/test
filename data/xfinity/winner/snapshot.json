@@ -13,7 +13,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Anthony Alfredo",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 98,
       "open_interest": 0,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 2,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARRACE-PEN2PBT5O26-AUHI": {
       "last_price": 5,
@@ -69,28 +69,28 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Brent Crews",
-      "no_ask": 94,
-      "no_bid": 93,
-      "open_interest": 1413,
+      "no_ask": 91,
+      "no_bid": 89,
+      "open_interest": 1664,
       "status": "active",
       "ticker": "KXNASCARRACE-PEN2PBT5O26-BRCR",
-      "volume": 1433,
-      "volume_24h": 631,
-      "yes_ask": 7,
-      "yes_bid": 6
+      "volume": 1689,
+      "volume_24h": 715,
+      "yes_ask": 11,
+      "yes_bid": 9
     },
     "KXNASCARRACE-PEN2PBT5O26-BRJO": {
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Brandon Jones",
       "no_ask": 95,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 801,
       "status": "active",
       "ticker": "KXNASCARRACE-PEN2PBT5O26-BRJO",
       "volume": 802,
       "volume_24h": 800,
-      "yes_ask": 7,
+      "yes_ask": 6,
       "yes_bid": 5
     },
     "KXNASCARRACE-PEN2PBT5O26-BRPO": {
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 96,
-      "no_bid": 95,
-      "open_interest": 608,
+      "no_bid": 90,
+      "open_interest": 1021,
       "status": "active",
       "ticker": "KXNASCARRACE-PEN2PBT5O26-CAKV",
-      "volume": 611,
+      "volume": 1024,
       "volume_24h": 608,
-      "yes_ask": 5,
+      "yes_ask": 10,
       "yes_bid": 4
     },
     "KXNASCARRACE-PEN2PBT5O26-CHEL": {
@@ -290,17 +290,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-PEN2PBT5O26-JUAL": {
-      "last_price": 23,
+      "last_price": 17,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 84,
-      "no_bid": 83,
-      "open_interest": 1113,
+      "no_bid": 79,
+      "open_interest": 1397,
       "status": "active",
       "ticker": "KXNASCARRACE-PEN2PBT5O26-JUAL",
-      "volume": 1145,
-      "volume_24h": 172,
-      "yes_ask": 17,
+      "volume": 1429,
+      "volume_24h": 456,
+      "yes_ask": 21,
       "yes_bid": 16
     },
     "KXNASCARRACE-PEN2PBT5O26-KYSI": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-07-22T13:16:06.322136+00:00",
+  "scraped_at": "2026-07-22T13:56:30.291979+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-pen2pbt5o26",
   "tier": "winner"
 }
