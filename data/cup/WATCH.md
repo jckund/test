@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-23T20:05:08.636465+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Todd Gilliland** Top 10: 14c -> 25c (+300, +11pp)
+- **Ryan Preece** Top 10: 24c -> 27c (+270, +3pp)
+
+_leader win YES 20c · scraped 2026-07-23T20:05:08.636465+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-23T17:05:20.193290+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
