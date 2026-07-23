@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-23T06:43:45.804349+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Josh Berry** Top 5: 7c -> 3c (+3233, -4pp)
+- **Connor Zilisch** Top 5: 7c -> 4c (+2400, -3pp)
+- **Erik Jones** Top 10: 37c -> 34c (+194, -3pp)
+
+_leader win YES 21c · scraped 2026-07-23T06:43:45.804349+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-22T22:29:22.864491+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
