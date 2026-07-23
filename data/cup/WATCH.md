@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-23T17:05:20.193290+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 10: 35c -> 39c (+156, +4pp)
+- **Riley Herbst** Top 10: 12c -> 15c (+567, +3pp)
+- **Chase Elliott** Top 10: 48c -> 51c (-104, +3pp)
+
+_leader win YES 21c · scraped 2026-07-23T17:05:20.193290+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-23T06:43:45.804349+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
