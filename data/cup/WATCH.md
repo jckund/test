@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-24T20:53:15.140466+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Hill** Top 5: 2c -> 6c (+1567, +4pp)
+- **Alex Bowman** Top 5: 11c -> 15c (+567, +4pp)
+- **Ross Chastain** Top 5: 11c -> 14c (+614, +3pp)
+
+_leader win YES 16c · scraped 2026-07-24T20:53:15.140466+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T20:03:47.131252+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
