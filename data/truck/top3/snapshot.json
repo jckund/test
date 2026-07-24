@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Chandler Smith",
       "no_ask": 61,
-      "no_bid": 55,
+      "no_bid": 56,
       "open_interest": 279,
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-CHSM",
       "volume": 286,
       "volume_24h": 100,
-      "yes_ask": 45,
+      "yes_ask": 44,
       "yes_bid": 39
     },
     "KXNASCARTOP3-TSP2PBW26-COBU": {
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-DAHE",
       "volume": 399,
-      "volume_24h": 399,
+      "volume_24h": 299,
       "yes_ask": 8,
       "yes_bid": 3
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-GIRU",
       "volume": 300,
-      "volume_24h": 300,
+      "volume_24h": 0,
       "yes_ask": 16,
       "yes_bid": 11
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-KAHO",
       "volume": 386,
-      "volume_24h": 29,
+      "volume_24h": 0,
       "yes_ask": 33,
       "yes_bid": 26
     },
@@ -364,28 +364,28 @@
       "liquidity": 0.0,
       "name": "Landen Lewis",
       "no_ask": 97,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 103,
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-LALE",
       "volume": 103,
       "volume_24h": 2,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 3
     },
     "KXNASCARTOP3-TSP2PBW26-LARI": {
-      "last_price": 56,
+      "last_price": 58,
       "liquidity": 0.0,
       "name": "Layne Riggs",
-      "no_ask": 48,
-      "no_bid": 42,
-      "open_interest": 1078,
+      "no_ask": 42,
+      "no_bid": 40,
+      "open_interest": 1178,
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-LARI",
-      "volume": 1089,
-      "volume_24h": 0,
-      "yes_ask": 58,
-      "yes_bid": 52
+      "volume": 1190,
+      "volume_24h": 101,
+      "yes_ask": 60,
+      "yes_bid": 58
     },
     "KXNASCARTOP3-TSP2PBW26-MICH": {
       "last_price": 0,
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-TSP2PBW26-TYMA",
       "volume": 5744,
-      "volume_24h": 4668,
+      "volume_24h": 4600,
       "yes_ask": 34,
       "yes_bid": 29
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-23T20:46:02.643648+00:00",
+  "scraped_at": "2026-07-24T00:13:30.862605+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-tsp2pbw26",
   "tier": "top3"
 }
