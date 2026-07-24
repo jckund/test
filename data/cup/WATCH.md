@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-24T22:07:10.834186+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Win: 16c -> 20c (+400, +4pp)
+- **Daniel Suárez** Top 10: 28c -> 31c (+223, +3pp)
+
+_leader win YES 20c · scraped 2026-07-24T22:07:10.834186+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T20:53:15.140466+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

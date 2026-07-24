@@ -10,16 +10,16 @@
   "market_count": 39,
   "markets": {
     "KXNASCARTOP20-BRI4PB26-AJAL": {
-      "last_price": 37,
+      "last_price": 38,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 68,
       "no_bid": 62,
-      "open_interest": 543,
+      "open_interest": 556,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-AJAL",
-      "volume": 543,
-      "volume_24h": 321,
+      "volume": 556,
+      "volume_24h": 334,
       "yes_ask": 38,
       "yes_bid": 32
     },
@@ -239,11 +239,11 @@
       "name": "Connor Zilisch",
       "no_ask": 59,
       "no_bid": 52,
-      "open_interest": 95,
+      "open_interest": 97,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-COZI",
-      "volume": 153,
-      "volume_24h": 7,
+      "volume": 193,
+      "volume_24h": 47,
       "yes_ask": 48,
       "yes_bid": 41
     },
@@ -458,16 +458,16 @@
       "yes_bid": 50
     },
     "KXNASCARTOP20-BRI4PB26-SHVA": {
-      "last_price": 48,
+      "last_price": 47,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 59,
       "no_bid": 53,
-      "open_interest": 335,
+      "open_interest": 375,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-SHVA",
-      "volume": 335,
-      "volume_24h": 10,
+      "volume": 375,
+      "volume_24h": 50,
       "yes_ask": 47,
       "yes_bid": 41
     },
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "Ty Dillon",
       "no_ask": 82,
-      "no_bid": 76,
+      "no_bid": 75,
       "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-TYDI",
       "volume": 36,
-      "volume_24h": 19,
-      "yes_ask": 24,
+      "volume_24h": 0,
+      "yes_ask": 25,
       "yes_bid": 18
     },
     "KXNASCARTOP20-BRI4PB26-TYGI": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-24T20:53:16.761546+00:00",
+  "scraped_at": "2026-07-24T22:07:12.658433+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top20"
 }
