@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-07-24T20:03:47.131252+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ross Chastain** Top 10: 26c -> 33c (+203, +7pp)
+- **Kyle Larson** Win: 19c -> 15c (+567, -4pp)
+
+_leader win YES 17c · scraped 2026-07-24T20:03:47.131252+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T19:23:39.643583+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
