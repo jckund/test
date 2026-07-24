@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-PEN2PBT5O26-JELO",
       "volume": 413,
-      "volume_24h": 59,
+      "volume_24h": 0,
       "yes_ask": 21,
       "yes_bid": 15
     },
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-PEN2PBT5O26-JUAL": {
-      "last_price": 39,
+      "last_price": 41,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 65,
+      "no_ask": 64,
       "no_bid": 59,
-      "open_interest": 805,
+      "open_interest": 922,
       "status": "active",
       "ticker": "KXNASCARTOP3-PEN2PBT5O26-JUAL",
-      "volume": 805,
-      "volume_24h": 0,
+      "volume": 922,
+      "volume_24h": 117,
       "yes_ask": 41,
-      "yes_bid": 35
+      "yes_bid": 36
     },
     "KXNASCARTOP3-PEN2PBT5O26-KYSI": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-24T19:27:58.876810+00:00",
+  "scraped_at": "2026-07-24T23:49:08.308630+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-pen2pbt5o26",
   "tier": "top3"
 }

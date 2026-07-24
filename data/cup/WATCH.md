@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-24T23:44:47.105326+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Win: 20c -> 23c (+335, +3pp)
+
+_leader win YES 23c · scraped 2026-07-24T23:44:47.105326+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T22:07:10.834186+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
