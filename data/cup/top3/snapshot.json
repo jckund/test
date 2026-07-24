@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 92,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 494,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-CAHO",
       "volume": 504,
       "volume_24h": 382,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 8
     },
     "KXNASCARTOP3-BRI4PB26-CAME": {
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 81,
-      "no_bid": 77,
+      "no_bid": 76,
       "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-CHBE",
       "volume": 114,
       "volume_24h": 32,
-      "yes_ask": 23,
+      "yes_ask": 24,
       "yes_bid": 19
     },
     "KXNASCARTOP3-BRI4PB26-CHBR": {
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-COWA",
       "volume": 187,
-      "volume_24h": 187,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 62,
-      "no_bid": 61,
+      "no_bid": 58,
       "open_interest": 1451,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-DEHA",
       "volume": 1512,
-      "volume_24h": 713,
-      "yes_ask": 39,
+      "volume_24h": 20,
+      "yes_ask": 42,
       "yes_bid": 38
     },
     "KXNASCARTOP3-BRI4PB26-ERJO": {
@@ -472,17 +472,17 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-BRI4PB26-TOGI": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": 0.0,
       "name": "Todd Gilliland",
       "no_ask": 100,
-      "no_bid": 97,
-      "open_interest": 0,
+      "no_bid": 99,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-TOGI",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 3,
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARTOP3-BRI4PB26-TYDI": {
@@ -532,13 +532,13 @@
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 83,
-      "no_bid": 80,
+      "no_bid": 78,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-WIBY",
       "volume": 100,
       "volume_24h": 100,
-      "yes_ask": 20,
+      "yes_ask": 22,
       "yes_bid": 17
     },
     "KXNASCARTOP3-BRI4PB26-ZASM": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-24T09:12:18.376953+00:00",
+  "scraped_at": "2026-07-24T15:15:03.106008+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top3"
 }

@@ -10,17 +10,17 @@
   "market_count": 39,
   "markets": {
     "KXNASCARTOP20-BRI4PB26-AJAL": {
-      "last_price": 36,
+      "last_price": 37,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 70,
-      "no_bid": 63,
-      "open_interest": 222,
+      "no_bid": 64,
+      "open_interest": 248,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-AJAL",
-      "volume": 222,
-      "volume_24h": 0,
-      "yes_ask": 37,
+      "volume": 248,
+      "volume_24h": 26,
+      "yes_ask": 36,
       "yes_bid": 30
     },
     "KXNASCARTOP20-BRI4PB26-ALBO": {
@@ -55,7 +55,7 @@
       "last_price": 46,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 62,
+      "no_ask": 61,
       "no_bid": 55,
       "open_interest": 21,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 21,
       "volume_24h": 21,
       "yes_ask": 45,
-      "yes_bid": 38
+      "yes_bid": 39
     },
     "KXNASCARTOP20-BRI4PB26-AUHI": {
       "last_price": 35,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-CAME",
       "volume": 1100,
-      "volume_24h": 781,
+      "volume_24h": 311,
       "yes_ask": 12,
       "yes_bid": 10
     },
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-COCU",
       "volume": 117,
-      "volume_24h": 100,
+      "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 25
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-COWA",
       "volume": 422,
-      "volume_24h": 330,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 10
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-DADY",
       "volume": 907,
-      "volume_24h": 623,
+      "volume_24h": 153,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-ERJO",
       "volume": 1269,
-      "volume_24h": 162,
+      "volume_24h": 146,
       "yes_ask": 60,
       "yes_bid": 54
     },
@@ -335,15 +335,15 @@
       "last_price": 55,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
-      "no_ask": 45,
-      "no_bid": 42,
+      "no_ask": 48,
+      "no_bid": 43,
       "open_interest": 1313,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-JONE",
       "volume": 1330,
-      "volume_24h": 287,
-      "yes_ask": 58,
-      "yes_bid": 55
+      "volume_24h": 0,
+      "yes_ask": 57,
+      "yes_bid": 52
     },
     "KXNASCARTOP20-BRI4PB26-KYLA": {
       "last_price": 81,
@@ -477,11 +477,11 @@
       "name": "Todd Gilliland",
       "no_ask": 49,
       "no_bid": 45,
-      "open_interest": 2346,
+      "open_interest": 2478,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-TOGI",
-      "volume": 2496,
-      "volume_24h": 665,
+      "volume": 2628,
+      "volume_24h": 169,
       "yes_ask": 55,
       "yes_bid": 51
     },
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "Ty Dillon",
       "no_ask": 82,
-      "no_bid": 76,
+      "no_bid": 75,
       "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-TYDI",
       "volume": 36,
       "volume_24h": 19,
-      "yes_ask": 24,
+      "yes_ask": 25,
       "yes_bid": 18
     },
     "KXNASCARTOP20-BRI4PB26-TYGI": {
@@ -546,18 +546,18 @@
       "liquidity": 0.0,
       "name": "Zane Smith",
       "no_ask": 55,
-      "no_bid": 51,
+      "no_bid": 49,
       "open_interest": 949,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-ZASM",
       "volume": 949,
       "volume_24h": 309,
-      "yes_ask": 49,
+      "yes_ask": 51,
       "yes_bid": 45
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-24T09:12:19.763434+00:00",
+  "scraped_at": "2026-07-24T15:15:04.537141+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top20"
 }

@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-24T15:15:02.669864+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 10: 40c -> 44c (+127, +4pp)
+- **Denny Hamlin** Top 3: 39c -> 42c (+138, +3pp)
+- **Denny Hamlin** Top 10: 66c -> 63c (-170, -3pp)
+
+_leader win YES 20c · scraped 2026-07-24T15:15:02.669864+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T09:12:17.953968+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
