@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-07-24T09:12:17.953968+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chris Buescher** Top 10: 36c -> 41c (+144, +5pp)
+- **Chase Elliott** Top 5: 25c -> 28c (+257, +3pp)
+- **Bubba Wallace** Top 10: 53c -> 56c (-127, +3pp)
+- **Daniel Suárez** Top 10: 30c -> 27c (+270, -3pp)
+
+_leader win YES 21c · scraped 2026-07-24T09:12:17.953968+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T00:10:29.810246+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
