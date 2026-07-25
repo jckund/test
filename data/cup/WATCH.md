@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-07-25T16:10:06.460945+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 5: 21c -> 24c (+317, +3pp)
+
+_leader win YES 20c · scraped 2026-07-25T16:10:06.460945+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T13:58:48.801030+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
