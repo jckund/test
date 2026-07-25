@@ -111,7 +111,7 @@
       "last_price": 99,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 25,
+      "no_ask": 5,
       "no_bid": 0,
       "open_interest": 10190,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 10817,
       "volume_24h": 10205,
       "yes_ask": 100,
-      "yes_bid": 75
+      "yes_bid": 95
     },
     "KXNASCARTOP3-PEN2PBT5O26-CHEL": {
       "last_price": 1,
@@ -290,17 +290,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-PEN2PBT5O26-JUAL": {
-      "last_price": 98,
+      "last_price": 97,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 3,
-      "no_bid": 0,
-      "open_interest": 16489,
+      "no_bid": 1,
+      "open_interest": 16488,
       "status": "active",
       "ticker": "KXNASCARTOP3-PEN2PBT5O26-JUAL",
-      "volume": 19271,
-      "volume_24h": 18460,
-      "yes_ask": 100,
+      "volume": 20228,
+      "volume_24h": 19423,
+      "yes_ask": 99,
       "yes_bid": 97
     },
     "KXNASCARTOP3-PEN2PBT5O26-KYSI": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-25T22:23:13.488089+00:00",
+  "scraped_at": "2026-07-25T22:34:58.192938+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-pen2pbt5o26",
   "tier": "top3"
 }

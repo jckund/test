@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-25T22:32:02.650704+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 5: 18c -> 23c (+335, +5pp)
+- **Chase Briscoe** Top 5: 34c -> 39c (+156, +5pp)
+- **Christopher Bell** Top 10: 59c -> 64c (-178, +5pp)
+
+_leader win YES 20c · scraped 2026-07-25T22:32:02.650704+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T22:20:27.153987+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
