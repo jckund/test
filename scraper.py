@@ -31,7 +31,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 import alerts
 
@@ -517,6 +517,64 @@ def collect_alert_trades(events: list, series_dir: str, min_ts: int) -> list:
     return list(trades.values())
 
 
+try:
+    TRADES_WINDOW_HOURS = max(1, int(os.environ.get("TRADES_WINDOW_HOURS", "6")))
+except ValueError:
+    TRADES_WINDOW_HOURS = 6
+
+
+def persist_trades_window(series_dir: str, atrades: list, hours: int = TRADES_WINDOW_HOURS) -> int:
+    """Append this run's fetched trades to a rolling <hours>h log of ALL trades
+    (every size, not just the >$100 alerts) at <series>/trades_window.jsonl.
+
+    Reuses the trades already paginated for alerting (collect_alert_trades) — no
+    extra API calls. Deduped by trade_id, pruned to the window each run. Compact
+    one-line-per-trade JSON to keep the committed file small. NOTE: coverage is
+    continuous only while the 15-min scrape keeps up with the 20-min lookback; a
+    long GitHub scheduler delay (>20min) can leave a small gap in the record."""
+    path = os.path.join(series_dir, "trades_window.jsonl")
+    keep: dict = {}
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    r = json.loads(line)
+                    if r.get("trade_id"):
+                        keep[r["trade_id"]] = r
+        except Exception as e:  # noqa: BLE001 - corrupt/partial file: rebuild from this run
+            print(f"trades_window: unreadable existing file ({e}); starting fresh", file=sys.stderr)
+            keep = {}
+    for t in atrades:
+        tid = t.get("trade_id")
+        if not tid:
+            continue
+        keep[tid] = {"trade_id": tid, "created_time": t.get("created_time"),
+                     "driver": t.get("driver"), "tier": t.get("tier"), "side": t.get("side"),
+                     "count": t.get("count"), "yes_price": t.get("yes_price"),
+                     "no_price": t.get("no_price")}
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+
+    def _within(r: dict) -> bool:
+        ct = r.get("created_time")
+        if not ct:
+            return False
+        try:
+            return datetime.fromisoformat(ct.replace("Z", "+00:00")) >= cutoff
+        except ValueError:
+            return False
+
+    rows = sorted((r for r in keep.values() if _within(r)),
+                  key=lambda r: r.get("created_time") or "")
+    with open(path, "w", encoding="utf-8") as fh:
+        for r in rows:
+            fh.write(json.dumps(r, separators=(",", ":")) + "\n")
+    print(f"trades_window: {len(rows)} trades in last {hours}h", file=sys.stderr)
+    return len(rows)
+
+
 def build_activity(events: list, series_dir: str) -> list:
     """Merge recent trades across this race's markets into <series>/activity.json.
 
@@ -597,6 +655,10 @@ def process_series(rs: dict) -> dict | None:
         try:
             min_ts = int(time.time()) - ALERT_LOOKBACK_MIN * 60
             atrades = collect_alert_trades(events, series_dir, min_ts)
+            try:
+                persist_trades_window(series_dir, atrades)
+            except Exception as e:  # noqa: BLE001 - rolling log is best-effort
+                print(f"trades_window persist failed for {rs['key']}: {e}", file=sys.stderr)
             fired = alerts.process(series_dir, rs["label"], atrades)
             print(f"alerts: scanned {len(atrades)} trade(s) from last "
                   f"{ALERT_LOOKBACK_MIN}min; {len(fired)} new over "
