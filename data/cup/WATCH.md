@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-25T22:20:27.153987+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ross Chastain** Top 3: 6c -> 47c (+113, +41pp)
+- **Connor Zilisch** Top 10: 35c -> 19c (+426, -16pp)
+- **Shane Van Gisbergen** Top 3: 33c -> 48c (+108, +15pp)
+- **Denny Hamlin** Top 3: 49c -> 35c (+186, -14pp)
+- **Shane Van Gisbergen** Top 10: 35c -> 22c (+355, -13pp)
+- **AJ Allmendinger** Top 10: 32c -> 21c (+376, -11pp)
+- **Austin Hill** Top 10: 24c -> 15c (+567, -9pp)
+- **Ricky Stenhouse** Top 10: 26c -> 18c (+456, -8pp)
+- **Carson Hocevar** Top 10: 60c -> 52c (-108, -8pp)
+- **Todd Gilliland** Top 10: 37c -> 30c (+233, -7pp)
+- (+12 more)
+
+_leader win YES 20c · scraped 2026-07-25T22:20:27.153987+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T20:13:32.479691+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
