@@ -1,3 +1,19 @@
+### 📊 Kalshi line move — 2026-07-25T22:47:37.743007+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Denny Hamlin** Top 3: 35c -> 58c (-138, +23pp)
+- **Chris Buescher** Top 5: 16c -> 23c (+335, +7pp)
+- **William Byron** Top 5: 30c -> 35c (+186, +5pp)
+- **Chase Elliott** Top 10: 45c -> 50c (-100, +5pp)
+- **Kyle Larson** Top 5: 41c -> 45c (+122, +4pp)
+- **William Byron** Top 10: 52c -> 56c (-127, +4pp)
+- **Ryan Blaney** Top 10: 57c -> 54c (-117, -3pp)
+- **Connor Zilisch** Top 10: 19c -> 16c (+525, -3pp)
+
+_leader win YES 20c · scraped 2026-07-25T22:47:37.743007+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T22:32:02.650704+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

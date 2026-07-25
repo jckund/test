@@ -279,15 +279,15 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 66,
-      "no_bid": 65,
+      "no_ask": 65,
+      "no_bid": 42,
       "open_interest": 1740,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-DEHA",
-      "volume": 1801,
-      "volume_24h": 286,
-      "yes_ask": 35,
-      "yes_bid": 34
+      "volume": 1802,
+      "volume_24h": 288,
+      "yes_ask": 58,
+      "yes_bid": 35
     },
     "KXNASCARTOP3-BRI4PB26-ERJO": {
       "last_price": 10,
@@ -332,18 +332,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-BRI4PB26-JONE": {
-      "last_price": 6,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 52,
-      "open_interest": 53,
+      "open_interest": 63,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-JONE",
-      "volume": 53,
+      "volume": 63,
       "volume_24h": 0,
       "yes_ask": 48,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-BRI4PB26-KYLA": {
       "last_price": 34,
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 99,
-      "no_bid": 53,
+      "no_bid": 52,
       "open_interest": 417,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-ROCH",
       "volume": 417,
       "volume_24h": 117,
-      "yes_ask": 47,
+      "yes_ask": 48,
       "yes_bid": 1
     },
     "KXNASCARTOP3-BRI4PB26-RYBL": {
@@ -444,18 +444,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-BRI4PB26-RYPR": {
-      "last_price": 22,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 52,
-      "open_interest": 60,
+      "open_interest": 70,
       "status": "active",
       "ticker": "KXNASCARTOP3-BRI4PB26-RYPR",
-      "volume": 60,
-      "volume_24h": 60,
+      "volume": 70,
+      "volume_24h": 70,
       "yes_ask": 48,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-BRI4PB26-SHVA": {
       "last_price": 7,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-07-25T22:20:27.609439+00:00",
+  "scraped_at": "2026-07-25T22:47:38.219437+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top3"
 }
