@@ -10,17 +10,17 @@
   "market_count": 39,
   "markets": {
     "KXNASCARTOP20-BRI4PB26-AJAL": {
-      "last_price": 38,
+      "last_price": 37,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 68,
-      "no_bid": 63,
-      "open_interest": 581,
+      "no_bid": 61,
+      "open_interest": 606,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-AJAL",
-      "volume": 581,
+      "volume": 606,
       "volume_24h": 333,
-      "yes_ask": 37,
+      "yes_ask": 39,
       "yes_bid": 32
     },
     "KXNASCARTOP20-BRI4PB26-ALBO": {
@@ -192,18 +192,18 @@
       "yes_bid": 71
     },
     "KXNASCARTOP20-BRI4PB26-COCU": {
-      "last_price": 28,
+      "last_price": 33,
       "liquidity": 0.0,
       "name": "Cole Custer",
-      "no_ask": 74,
-      "no_bid": 67,
-      "open_interest": 417,
+      "no_ask": 72,
+      "no_bid": 66,
+      "open_interest": 717,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-COCU",
-      "volume": 417,
+      "volume": 717,
       "volume_24h": 300,
-      "yes_ask": 33,
-      "yes_bid": 26
+      "yes_ask": 34,
+      "yes_bid": 28
     },
     "KXNASCARTOP20-BRI4PB26-COHE": {
       "last_price": 59,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-TOGI",
       "volume": 2731,
-      "volume_24h": 3,
+      "volume_24h": 103,
       "yes_ask": 52,
       "yes_bid": 47
     },
@@ -545,19 +545,19 @@
       "last_price": 54,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 53,
+      "no_ask": 51,
       "no_bid": 45,
       "open_interest": 1572,
       "status": "active",
       "ticker": "KXNASCARTOP20-BRI4PB26-ZASM",
       "volume": 1572,
-      "volume_24h": 323,
+      "volume_24h": 623,
       "yes_ask": 55,
-      "yes_bid": 47
+      "yes_bid": 49
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-07-25T16:10:08.564402+00:00",
+  "scraped_at": "2026-07-25T16:20:11.874638+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
   "tier": "top20"
 }
