@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-25T07:33:40.672668+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Win: 23c -> 14c (+614, -9pp)
+- **Denny Hamlin** Win: 15c -> 19c (+426, +4pp)
+- **Kyle Larson** Top 10: 66c -> 69c (-223, +3pp)
+
+_leader win YES 19c · scraped 2026-07-25T07:33:40.672668+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-24T23:44:47.105326+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
