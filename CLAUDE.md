@@ -66,8 +66,12 @@ gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
 Then deploy (see flow above). Boards often list a driver twice (e.g. "Darrell Wallace
 Jr" + "Bubba Wallace") — `gen_books` canonicalizes and keeps the first; use main-grid
-values. If a book omits a tier/the which-make 3-way, preserve the existing file's
-values for what's missing.
+values. **If a re-uploaded book omits a tier/market (a finish tier, the which-make
+3-way, team board, etc.), REMOVE it — do not preserve the old values.** Books don't
+always repost everything, so treat an absent line as pulled/stale rather than
+carrying forward a prior capture. (Exception: a partial screenshot that's clearly
+just cut off mid-board — e.g. the bottom longshots scrolled off — is not the same as
+a tier being dropped; keep the off-screen rows for that same tier.)
 
 **Capture completeness (IMPORTANT):** For every book **except Prime**, transcribe the
 **full board** — a single mid-pack or longshot driver moving meaningfully matters, so
