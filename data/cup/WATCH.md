@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-07-25T23:35:30.573460+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 5: 41c -> 46c (+117, +5pp)
+- **Christopher Bell** Top 10: 64c -> 67c (-203, +3pp)
+- **Chase Elliott** Top 10: 50c -> 47c (+113, -3pp)
+
+_leader win YES 20c · scraped 2026-07-25T23:35:30.573460+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T22:57:33.316242+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
