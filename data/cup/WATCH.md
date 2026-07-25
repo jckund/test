@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-25T20:13:32.479691+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 3: 6c -> 48c (+108, +42pp)
+- **John H. Nemechek** Top 3: 6c -> 48c (+108, +42pp)
+- **Corey Heim** Top 3: 7c -> 48c (+108, +41pp)
+- **Erik Jones** Top 3: 10c -> 48c (+108, +38pp)
+- **Carson Hocevar** Top 3: 13c -> 50c (-100, +37pp)
+- **Ty Gibbs** Top 3: 16c -> 49c (+104, +33pp)
+- **Tyler Reddick** Top 5: 37c -> 67c (-203, +30pp)
+- **Shane Van Gisbergen** Top 3: 5c -> 33c (+203, +28pp)
+- **Chase Briscoe** Top 3: 20c -> 48c (+108, +28pp)
+- **Bubba Wallace** Top 3: 20c -> 48c (+108, +28pp)
+- (+68 more)
+
+_leader win YES 20c · scraped 2026-07-25T20:13:32.479691+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-25T16:10:06.460945+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
