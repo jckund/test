@@ -49,6 +49,12 @@ Published to GitHub Pages from `index.html` + the `data/` tree.
 - `data/cup/alerts.jsonl` — committed large-**trade** log (>$100), the source for
   "big trades" questions. Each row: driver, tier, side (yes/no), count, price_cents,
   value_usd, created_time.
+- `data/cup/trades_window.jsonl` — rolling **6h log of ALL trades** (every size, not
+  just >$100), for full-volume flow analysis. Compact one-line JSON per trade:
+  `{trade_id, created_time, driver, tier, side, count, yes_price, no_price}`. Built
+  each run from the trades already paginated for alerting (no extra API calls),
+  deduped by `trade_id`, pruned to `TRADES_WINDOW_HOURS` (default 6). Watched
+  (Cup) series only. `$ = count * price/100`; use `yes_price`/`no_price` by `side`.
 - `data/cup/fanduel/{odds,manufacturers,teams}.json` — FanDuel scrape.
 - `data/cup/manual/<book>.json`, `mfr_<book>.json`, `team_<book>.json` — hand-entered
   books. Books: fanduel (auto), caesars, betus, betonline, betboss, prime.
