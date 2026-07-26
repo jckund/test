@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-26T18:03:36.813373+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Dillon** Top 3: 1c -> 45c (+122, +44pp)
+- **Ty Dillon** Top 10: 6c -> 20c (+400, +14pp)
+- **Cole Custer** Top 5: 3c -> 14c (+614, +11pp)
+- **Todd Gilliland** Top 10: 17c -> 25c (+300, +8pp)
+- **Ricky Stenhouse** Top 10: 10c -> 18c (+456, +8pp)
+- **Denny Hamlin** Top 10: 69c -> 77c (-335, +8pp)
+- **Shane Van Gisbergen** Top 5: 4c -> 11c (+809, +7pp)
+- **Todd Gilliland** Top 5: 4c -> 10c (+900, +6pp)
+- **Kyle Larson** Win: 25c -> 19c (+426, -6pp)
+- **Kyle Larson** Top 5: 45c -> 50c (-100, +5pp)
+- (+12 more)
+
+_leader win YES 23c · scraped 2026-07-26T18:03:36.813373+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T17:36:24.431604+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
