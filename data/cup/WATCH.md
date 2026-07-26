@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-26T15:28:03.789695+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Top 10: 57c -> 48c (+108, -9pp)
+- **William Byron** Top 10: 52c -> 59c (-144, +7pp)
+- **AJ Allmendinger** Top 5: 4c -> 9c (+1011, +5pp)
+- **Tyler Reddick** Top 10: 59c -> 54c (-117, -5pp)
+- **Erik Jones** Top 10: 38c -> 33c (+203, -5pp)
+- **Denny Hamlin** Top 5: 54c -> 58c (-138, +4pp)
+- **Daniel Suárez** Top 5: 14c -> 18c (+456, +4pp)
+- **Cole Custer** Top 3: 1c -> 5c (+1900, +4pp)
+- **Carson Hocevar** Top 3: 15c -> 19c (+426, +4pp)
+- **AJ Allmendinger** Top 10: 18c -> 22c (+355, +4pp)
+- (+10 more)
+
+_leader win YES 19c · scraped 2026-07-26T15:28:03.789695+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T11:48:41.206333+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
