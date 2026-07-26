@@ -79,6 +79,15 @@ batch. This collapses the expensive poll/notify/confirm loop from once-per-book 
 once-per-batch. (If the user explicitly wants a single book live immediately, deploy
 it — but the default is stage-then-batch.)
 
+**Fire-and-trust deploys + terse confirms (cost).** CI is reliable — do NOT poll/watch
+every deploy. Fire `track.yml`, then move on; verify opportunistically (a cheap
+`git fetch` + HEAD/`data: market update` check next time you touch the branch), and
+actively watch only when debugging a failure or when the user asks to confirm. Confirm
+**per batch, not per push**. Keep post-deploy write-ups to ~1–2 lines; run line-move /
+"notable steam" / EV summaries only when the user asks, not automatically. For deploy
+status prefer `git fetch` over the GitHub Actions API (`actions_list`/`get_workflow_run`
+return huge payloads) — reserve those for debugging.
+
 Then deploy (see flow above). Boards often list a driver twice (e.g. "Darrell Wallace
 Jr" + "Bubba Wallace") — `gen_books` canonicalizes and keeps the first; use main-grid
 values. **If a re-uploaded book omits a tier/market (a finish tier, the which-make
