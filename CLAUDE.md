@@ -70,6 +70,15 @@ gb.write_book("caesars.json", "Caesars",
 gb.write_mfr("mfr_caesars.json", "Caesars", which_make_3way, {"Chevrolet":..,"Ford":..,"Toyota":..})
 gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
+**Batch the deploy (IMPORTANT — cost).** Do NOT deploy per book. As each book/tier
+arrives, generate the file(s) and commit to the **dev branch only** (a quick one-line
+confirm, no CI). Hold the deploy-branch land + `track.yml` fire + deploy-watch until
+the user signals the batch is done ("deploy" / "that's all" / "go live" / "push it").
+Then do **one** landing commit, **one** `track.yml` run, **one** watch for the whole
+batch. This collapses the expensive poll/notify/confirm loop from once-per-book to
+once-per-batch. (If the user explicitly wants a single book live immediately, deploy
+it — but the default is stage-then-batch.)
+
 Then deploy (see flow above). Boards often list a driver twice (e.g. "Darrell Wallace
 Jr" + "Bubba Wallace") — `gen_books` canonicalizes and keeps the first; use main-grid
 values. **If a re-uploaded book omits a tier/market (a finish tier, the which-make
