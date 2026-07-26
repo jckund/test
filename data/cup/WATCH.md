@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-26T07:58:32.668834+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 10: 37c -> 22c (+355, -15pp)
+- **Austin Dillon** Top 10: 24c -> 9c (+1011, -15pp)
+- **Austin Hill** Top 5: 15c -> 1c (+9900, -14pp)
+- **Ross Chastain** Top 10: 39c -> 25c (+300, -14pp)
+- **Ryan Blaney** Top 5: 40c -> 27c (+270, -13pp)
+- **Noah Gragson** Top 5: 14c -> 1c (+9900, -13pp)
+- **Christopher Bell** Top 5: 45c -> 32c (+212, -13pp)
+- **Denny Hamlin** Top 10: 71c -> 83c (-488, +12pp)
+- **Josh Berry** Top 5: 14c -> 2c (+4900, -12pp)
+- **John H. Nemechek** Top 5: 21c -> 9c (+1011, -12pp)
+- (+70 more)
+
+_leader win YES 20c · scraped 2026-07-26T07:58:32.668834+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T02:22:19.239411+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
