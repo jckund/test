@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-07-26T15:45:02.529583+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Dillon** Top 10: 9c -> 18c (+456, +9pp)
+- **William Byron** Top 10: 59c -> 51c (-104, -8pp)
+- **Zane Smith** Top 10: 12c -> 17c (+488, +5pp)
+- **Kyle Larson** Top 10: 59c -> 64c (-178, +5pp)
+
+_leader win YES 19c · scraped 2026-07-26T15:45:02.529583+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T15:28:03.789695+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
