@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-07-26T17:36:24.431604+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Top 10: 48c -> 54c (-117, +6pp)
+- **Kyle Larson** Win: 20c -> 25c (+300, +5pp)
+- **Chase Elliott** Top 10: 38c -> 43c (+133, +5pp)
+- **Shane Van Gisbergen** Top 10: 17c -> 21c (+376, +4pp)
+- **Michael McDowell** Top 5: 8c -> 11c (+809, +3pp)
+
+_leader win YES 25c · scraped 2026-07-26T17:36:24.431604+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T17:05:47.332798+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
