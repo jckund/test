@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-07-26T23:34:12.527833+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Corey Heim** Win: 10c -> 99c (-9900, +89pp)
+- **Alex Bowman** Top 10: 88c -> 2c (+4900, -86pp)
+- **Ty Gibbs** Top 10: 84c -> 1c (+9900, -83pp)
+- **Ryan Blaney** Top 10: 86c -> 3c (+3233, -83pp)
+- **Joey Logano** Top 3: 16c -> 98c (-4900, +82pp)
+- **Daniel Suárez** Top 10: 78c -> 1c (+9900, -77pp)
+- **Carson Hocevar** Top 5: 74c -> 1c (+9900, -73pp)
+- **Chris Buescher** Top 10: 74c -> 1c (+9900, -73pp)
+- **Michael McDowell** Top 10: 74c -> 2c (+4900, -72pp)
+- **William Byron** Top 10: 72c -> 1c (+9900, -71pp)
+- (+84 more)
+
+_leader win YES 99c · scraped 2026-07-26T23:34:12.527833+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T19:59:17.137873+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
