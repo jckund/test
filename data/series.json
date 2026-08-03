@@ -1,20 +1,18 @@
 {
-  "updated_at": "2026-07-26T23:36:53.405950+00:00",
+  "updated_at": "2026-08-03T22:38:24.863179+00:00",
   "series": [
     {
-      "key": "cup",
-      "label": "NASCAR",
-      "race_title": "Brickyard 400 presented by PPG",
-      "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-bri4pb26",
+      "key": "xfinity",
+      "label": "O'Reilly Auto Parts",
+      "race_title": "HyVee Perks 250",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-hyvp26",
       "tiers": [
         "winner",
         "top3",
-        "top5",
-        "top10",
-        "top20"
+        "top10"
       ],
-      "scraped_at": "2026-07-26T23:36:53.405863+00:00"
+      "scraped_at": "2026-08-03T22:38:24.863132+00:00"
     }
   ]
 }
