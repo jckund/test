@@ -1,745 +1,2581 @@
 {
-  "scraped_at": "2026-08-02T12:45:54.605Z",
+  "scraped_at": "2026-08-03T12:44:19.949Z",
   "source": "FanDuel",
   "source_url": "https://nj.sportsbook.fanduel.com/golf",
   "race": "The Open Championship",
   "kalshi_race": "The Open Championship",
   "tiers": {
+    "top5": {
+      "market_name": "Top 5 Finish (Incl. Ties)",
+      "number_of_winners": 5,
+      "drivers": [
+        {
+          "name": "Cameron Young",
+          "american": 230,
+          "implied": 0.30303030303030304,
+          "novig": 0.18439313503083593
+        },
+        {
+          "name": "Patrick Cantlay",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.12169946912035172
+        },
+        {
+          "name": "Jackson Koivun",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.10141622426695976
+        },
+        {
+          "name": "Hideki Matsuyama",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.09361497624642441
+        },
+        {
+          "name": "Justin Thomas",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.08692819222882264
+        },
+        {
+          "name": "Ben Griffin",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.08692819222882264
+        },
+        {
+          "name": "Ryan Gerard",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.07606216820021983
+        },
+        {
+          "name": "Maverick McNealy",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.07606216820021983
+        },
+        {
+          "name": "Tom Kim",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.0715879230119716
+        },
+        {
+          "name": "Brooks Koepka",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.0715879230119716
+        },
+        {
+          "name": "Keegan Bradley",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.0715879230119716
+        },
+        {
+          "name": "Michael Brennan",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.0715879230119716
+        },
+        {
+          "name": "Keith Mitchell",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.06761081617797318
+        },
+        {
+          "name": "Alex Fitzpatrick",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.06761081617797318
+        },
+        {
+          "name": "Jordan Spieth",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.06761081617797318
+        },
+        {
+          "name": "Aaron Rai",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.06761081617797318
+        },
+        {
+          "name": "Harris English",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.06761081617797318
+        },
+        {
+          "name": "Blades Brown",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.05795212815254844
+        },
+        {
+          "name": "Doug Ghim",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.05795212815254844
+        },
+        {
+          "name": "Davis Thompson",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Jordan Smith",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Michael Thorbjornsen",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Rasmus Højgaard",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Mac Meissner",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Alex Noren",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05531794050925078
+        },
+        {
+          "name": "Sahith Theegala",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Alex Smalley",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Christiaan Bezuidenhout",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Eric Cole",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Brian Harman",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Marco Penge",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Matt Wallace",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.05070811213347988
+        },
+        {
+          "name": "Sungjae Im",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Ben James",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Max Greyserman",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Ben Kohles",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "J.T. Poston",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Pierceson Coody",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Michael Kim",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Bud Cauley",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.046807488123212206
+        },
+        {
+          "name": "Sepp Straka",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.04346409611441132
+        },
+        {
+          "name": "Johnny Keefer",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.04346409611441132
+        },
+        {
+          "name": "Chris Kirk",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.04346409611441132
+        },
+        {
+          "name": "Ryo Hisatsune",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.04346409611441132
+        },
+        {
+          "name": "Emiliano Grillo",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.04346409611441132
+        },
+        {
+          "name": "Rasmus Neergaard-Petersen",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.03803108410010991
+        },
+        {
+          "name": "Richard Hoey",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.03803108410010991
+        },
+        {
+          "name": "Kevin Yu",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.03803108410010991
+        },
+        {
+          "name": "Tony Finau",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.03803108410010991
+        },
+        {
+          "name": "Nick Taylor",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Zac Blair",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Stephan Jaeger",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Jackson Suber",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Mackenzie Hughes",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Denny McCarthy",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Jason Day",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Daniel Berger",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.0357939615059858
+        },
+        {
+          "name": "Max McGreevy",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Austin Eckroat",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Ricky Castillo",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Thorbjørn Olesen",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Harry Hall",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Beau Hossler",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Zach Bauchou",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Kevin Roy",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Andrew Novak",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Steven Fisk",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Luke Clanton",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Taylor Moore",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Billy Horschel",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.03380540808898659
+        },
+        {
+          "name": "Taylor Pendrith",
+          "american": 1900,
+          "implied": 0.05,
+          "novig": 0.03042486728008793
+        },
+        {
+          "name": "Seamus Power",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Nico Echavarria",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Lee Hodges",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Lucas Glover",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Matt McCarty",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Jesper Svensson",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Matti Schmid",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Aldrich Potgieter",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.02897606407627422
+        },
+        {
+          "name": "Patrick Fishburn",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.02645640633051124
+        },
+        {
+          "name": "Andrew Putnam",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.02645640633051124
+        },
+        {
+          "name": "Samuel Stevens",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.02645640633051124
+        },
+        {
+          "name": "William Mouw",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.02645640633051124
+        },
+        {
+          "name": "Kristoffer Ventura",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.023403744061606103
+        },
+        {
+          "name": "Haotong Li",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.023403744061606103
+        },
+        {
+          "name": "John Parry",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.023403744061606103
+        },
+        {
+          "name": "Zecheng Dou",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.023403744061606103
+        },
+        {
+          "name": "Adrien Dumont de Chassart",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.023403744061606103
+        },
+        {
+          "name": "Tom Hoge",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Chandler Blanchet",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Webb Simpson",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Neal Shipley",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Davis Riley",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Karl Vilips",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Mark Hubbard",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Aaron Wise",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02173204805720566
+        },
+        {
+          "name": "Chad Ramey",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "Garrick Higgo",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "A.J. Ewart",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "Takumi Kanaya",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "Austin Smotherman",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "Patrick Rodgers",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.019628946632314792
+        },
+        {
+          "name": "Matt Kuchar",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Joel Dahmen",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Chandler Phillips",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Matthieu Pavon",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Kihei Akina",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Vince Whaley",
+          "american": 3300,
+          "implied": 0.029411764705882353,
+          "novig": 0.0178969807529929
+        },
+        {
+          "name": "Adrien Saddier",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.016902704044493295
+        },
+        {
+          "name": "David Lipsky",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.016902704044493295
+        },
+        {
+          "name": "Brandt Snedeker",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.016902704044493295
+        },
+        {
+          "name": "Adam Svensson",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.016902704044493295
+        },
+        {
+          "name": "Justin Lower",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.016902704044493295
+        },
+        {
+          "name": "Trace Crowe",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "Hank Lebioda",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "Lanto Griffin",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "C.T. Pan",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "John VanDerLaan",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "Erik van Rooyen",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "Nick Dunlap",
+          "american": 4000,
+          "implied": 0.024390243902439025,
+          "novig": 0.014841398673213624
+        },
+        {
+          "name": "Pontus Nyholm",
+          "american": 4500,
+          "implied": 0.021739130434782608,
+          "novig": 0.01322820316525562
+        },
+        {
+          "name": "Dylan Wu",
+          "american": 4500,
+          "implied": 0.021739130434782608,
+          "novig": 0.01322820316525562
+        },
+        {
+          "name": "Davis Chatfield",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.011931320501995267
+        },
+        {
+          "name": "Brice Garnett",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.011931320501995267
+        },
+        {
+          "name": "Kevin Streelman",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.011931320501995267
+        },
+        {
+          "name": "Joe Highsmith",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.011931320501995267
+        },
+        {
+          "name": "Marcelo Rozo",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.009975366321340306
+        },
+        {
+          "name": "Brian Campbell",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.009975366321340306
+        },
+        {
+          "name": "Gordon Sargent",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.009975366321340306
+        },
+        {
+          "name": "Christo Lamprecht",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.009975366321340306
+        },
+        {
+          "name": "Stefano Mazzoli",
+          "american": 7000,
+          "implied": 0.014084507042253521,
+          "novig": 0.008570385149320544
+        },
+        {
+          "name": "Adam Schenk",
+          "american": 7000,
+          "implied": 0.014084507042253521,
+          "novig": 0.008570385149320544
+        },
+        {
+          "name": "Danny Walker",
+          "american": 7000,
+          "implied": 0.014084507042253521,
+          "novig": 0.008570385149320544
+        },
+        {
+          "name": "Jeffrey Kang",
+          "american": 7000,
+          "implied": 0.014084507042253521,
+          "novig": 0.008570385149320544
+        },
+        {
+          "name": "Peter Malnati",
+          "american": 7500,
+          "implied": 0.013157894736842105,
+          "novig": 0.00800654402107577
+        },
+        {
+          "name": "Alejandro Tosti",
+          "american": 7500,
+          "implied": 0.013157894736842105,
+          "novig": 0.00800654402107577
+        },
+        {
+          "name": "Cam Davis",
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.007512312908663686
+        },
+        {
+          "name": "Kensei Hirata",
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.007512312908663686
+        },
+        {
+          "name": "Rafael Campos",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.006024726194076818
+        },
+        {
+          "name": "Tyler Collet",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.006024726194076818
+        },
+        {
+          "name": "Patton Kizzire",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.006024726194076818
+        },
+        {
+          "name": "Cooper Hrabak",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.006024726194076818
+        }
+      ]
+    },
     "top10": {
-      "market_name": "Top 10",
+      "market_name": "Top 10 Finish (Incl. Ties)",
       "number_of_winners": 10,
       "drivers": [
         {
-          "name": "Yealimi Noh",
-          "american": -2000,
-          "implied": 0.9523809523809523,
-          "novig": 0.8732064304810776
+          "name": "Cameron Young",
+          "american": 135,
+          "implied": 0.425531914893617,
+          "novig": 0.27771396432581785
         },
         {
-          "name": "Haeran Ryu",
-          "american": -900,
-          "implied": 0.9,
-          "novig": 0.8251800768046184
+          "name": "Patrick Cantlay",
+          "american": 210,
+          "implied": 0.3225806451612903,
+          "novig": 0.21052510198892643
         },
         {
-          "name": "Jeeno Thitikul",
-          "american": -900,
-          "implied": 0.9,
-          "novig": 0.8251800768046184
+          "name": "Jackson Koivun",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.1673404656835056
         },
         {
-          "name": "Shiho Kuwaki",
-          "american": -390,
-          "implied": 0.7959183673469388,
-          "novig": 0.7297510883306149
+          "name": "Hideki Matsuyama",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.1673404656835056
         },
         {
-          "name": "Esther Henseleit",
-          "american": -390,
-          "implied": 0.7959183673469388,
-          "novig": 0.7297510883306149
+          "name": "Justin Thomas",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.15538757527754093
         },
         {
-          "name": "Lottie Woad",
-          "american": -320,
-          "implied": 0.7619047619047619,
-          "novig": 0.6985651443848621
+          "name": "Ben Griffin",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.15538757527754093
         },
         {
-          "name": "Lucy Li",
-          "american": -250,
-          "implied": 0.7142857142857143,
-          "novig": 0.6549048228608083
+          "name": "Ryan Gerard",
+          "american": 360,
+          "implied": 0.21739130434782608,
+          "novig": 0.14187561220992867
         },
         {
-          "name": "Charley Hull",
-          "american": -190,
-          "implied": 0.6551724137931034,
-          "novig": 0.6007058030378447
+          "name": "Keegan Bradley",
+          "american": 390,
+          "implied": 0.20408163265306123,
+          "novig": 0.13318935023789225
         },
         {
-          "name": "Nelly Korda",
-          "american": -190,
-          "implied": 0.6551724137931034,
-          "novig": 0.6007058030378447
+          "name": "Maverick McNealy",
+          "american": 390,
+          "implied": 0.20408163265306123,
+          "novig": 0.13318935023789225
         },
         {
-          "name": "Minami Katsu",
-          "american": -120,
-          "implied": 0.5454545454545454,
-          "novig": 0.5001091374573444
+          "name": "Tom Kim",
+          "american": 390,
+          "implied": 0.20408163265306123,
+          "novig": 0.13318935023789225
         },
         {
-          "name": "Ayaka Furue",
-          "american": -110,
-          "implied": 0.5238095238095238,
-          "novig": 0.4802635367645927
+          "name": "Michael Brennan",
+          "american": 390,
+          "implied": 0.20408163265306123,
+          "novig": 0.13318935023789225
         },
         {
-          "name": "Lydia Ko",
-          "american": 115,
-          "implied": 0.46511627906976744,
-          "novig": 0.42644965209541
+          "name": "Brooks Koepka",
+          "american": 390,
+          "implied": 0.20408163265306123,
+          "novig": 0.13318935023789225
         },
         {
-          "name": "Rio Takeda",
-          "american": 140,
-          "implied": 0.4166666666666667,
-          "novig": 0.3820278133354715
+          "name": "Aaron Rai",
+          "american": 420,
+          "implied": 0.19230769230769232,
+          "novig": 0.1255053492626292
         },
         {
-          "name": "Chanettee Wannasaen",
-          "american": 140,
-          "implied": 0.4166666666666667,
-          "novig": 0.3820278133354715
+          "name": "Alex Fitzpatrick",
+          "american": 420,
+          "implied": 0.19230769230769232,
+          "novig": 0.1255053492626292
         },
         {
-          "name": "Lauren Coughlin",
+          "name": "Harris English",
+          "american": 420,
+          "implied": 0.19230769230769232,
+          "novig": 0.1255053492626292
+        },
+        {
+          "name": "Jordan Spieth",
+          "american": 450,
+          "implied": 0.18181818181818182,
+          "novig": 0.1186596029392131
+        },
+        {
+          "name": "Keith Mitchell",
+          "american": 450,
+          "implied": 0.18181818181818182,
+          "novig": 0.1186596029392131
+        },
+        {
+          "name": "Doug Ghim",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11252203726994345
+        },
+        {
+          "name": "Mac Meissner",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11252203726994345
+        },
+        {
+          "name": "Blades Brown",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11252203726994345
+        },
+        {
+          "name": "Davis Thompson",
           "american": 500,
           "implied": 0.16666666666666666,
-          "novig": 0.15281112533418856
+          "novig": 0.10877130269427865
         },
         {
-          "name": "Sei Young Kim",
+          "name": "Rasmus Højgaard",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.10877130269427865
+        },
+        {
+          "name": "Alex Noren",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.10877130269427865
+        },
+        {
+          "name": "Michael Thorbjornsen",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.10877130269427865
+        },
+        {
+          "name": "Jordan Smith",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.10877130269427865
+        },
+        {
+          "name": "Christiaan Bezuidenhout",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10040427941010338
+        },
+        {
+          "name": "Alex Smalley",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10040427941010338
+        },
+        {
+          "name": "Brian Harman",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10040427941010338
+        },
+        {
+          "name": "Sahith Theegala",
           "american": 600,
           "implied": 0.14285714285714285,
-          "novig": 0.13098096457216163
+          "novig": 0.09323254516652456
         },
         {
-          "name": "Sara Kouskova",
+          "name": "Sungjae Im",
           "american": 600,
           "implied": 0.14285714285714285,
-          "novig": 0.13098096457216163
+          "novig": 0.09323254516652456
         },
         {
-          "name": "Soo Bin Joo",
+          "name": "Marco Penge",
           "american": 600,
           "implied": 0.14285714285714285,
-          "novig": 0.13098096457216163
+          "novig": 0.09323254516652456
         },
         {
-          "name": "Wei-Ling Hsu",
+          "name": "Eric Cole",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09323254516652456
+        },
+        {
+          "name": "Max Greyserman",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09323254516652456
+        },
+        {
+          "name": "Matt Wallace",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09323254516652456
+        },
+        {
+          "name": "Bud Cauley",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09323254516652456
+        },
+        {
+          "name": "Ben James",
           "american": 650,
           "implied": 0.13333333333333333,
-          "novig": 0.12224890026735086
+          "novig": 0.08701704215542293
         },
         {
-          "name": "Jin Hee Im",
+          "name": "Michael Kim",
           "american": 650,
           "implied": 0.13333333333333333,
-          "novig": 0.12224890026735086
+          "novig": 0.08701704215542293
         },
         {
-          "name": "Celine Boutier",
+          "name": "J.T. Poston",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Chris Kirk",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Richard Hoey",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Ben Kohles",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Emiliano Grillo",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Pierceson Coody",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Sepp Straka",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.08701704215542293
+        },
+        {
+          "name": "Rasmus Neergaard-Petersen",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.081578477020709
+        },
+        {
+          "name": "Ryo Hisatsune",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.081578477020709
+        },
+        {
+          "name": "Johnny Keefer",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.081578477020709
+        },
+        {
+          "name": "Kevin Yu",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.081578477020709
+        },
+        {
+          "name": "Stephan Jaeger",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Mackenzie Hughes",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Tony Finau",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Jackson Suber",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Jason Day",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Nick Taylor",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07677974307831435
+        },
+        {
+          "name": "Austin Eckroat",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Kevin Roy",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Harry Hall",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Taylor Moore",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Zach Bauchou",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Daniel Berger",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Luke Clanton",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Denny McCarthy",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Thorbjørn Olesen",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Steven Fisk",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Beau Hossler",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Seamus Power",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Taylor Pendrith",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Billy Horschel",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Zac Blair",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Max McGreevy",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Ricky Castillo",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Andrew Novak",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.06869766485954441
+        },
+        {
+          "name": "Nico Echavarria",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Andrew Putnam",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Lucas Glover",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Lee Hodges",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Matt McCarty",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Aldrich Potgieter",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "William Mouw",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Matti Schmid",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Jesper Svensson",
+          "american": 950,
+          "implied": 0.09523809523809523,
+          "novig": 0.06215503011101637
+        },
+        {
+          "name": "Patrick Fishburn",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05932980146960655
+        },
+        {
+          "name": "Dan Brown",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05932980146960655
+        },
+        {
+          "name": "Samuel Stevens",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05932980146960655
+        },
+        {
+          "name": "Zecheng Dou",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.05932980146960655
+        },
+        {
+          "name": "Haotong Li",
           "american": 1100,
           "implied": 0.08333333333333333,
-          "novig": 0.07640556266709428
+          "novig": 0.054385651347139324
         },
         {
-          "name": "Shannon Tan",
+          "name": "Kristoffer Ventura",
           "american": 1100,
           "implied": 0.08333333333333333,
-          "novig": 0.07640556266709428
+          "novig": 0.054385651347139324
         },
         {
-          "name": "Jing Yan",
+          "name": "Adrien Dumont de Chassart",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.054385651347139324
+        },
+        {
+          "name": "John Parry",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.054385651347139324
+        },
+        {
+          "name": "Davis Riley",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Chandler Blanchet",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Karl Vilips",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Tom Hoge",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Neal Shipley",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Webb Simpson",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05020213970505169
+        },
+        {
+          "name": "Adrien Saddier",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Aaron Wise",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Austin Smotherman",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Mark Hubbard",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Chad Ramey",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "A.J. Ewart",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Garrick Higgo",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.043508521077711464
+        },
+        {
+          "name": "Patrick Rodgers",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.0407892385103545
+        },
+        {
+          "name": "Matthieu Pavon",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.0407892385103545
+        },
+        {
+          "name": "Vince Whaley",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.0407892385103545
+        },
+        {
+          "name": "Joel Dahmen",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.038389871539157176
+        },
+        {
+          "name": "Kihei Akina",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.038389871539157176
+        },
+        {
+          "name": "Chandler Phillips",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.038389871539157176
+        },
+        {
+          "name": "Takumi Kanaya",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.038389871539157176
+        },
+        {
+          "name": "Matt Kuchar",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.038389871539157176
+        },
+        {
+          "name": "David Lipsky",
           "american": 1700,
           "implied": 0.05555555555555555,
-          "novig": 0.050937041778062866
+          "novig": 0.036257100898092885
         },
         {
-          "name": "Carla Tejedo Mulet",
-          "american": 1900,
-          "implied": 0.05,
-          "novig": 0.04584333760025658
+          "name": "Lanto Griffin",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.036257100898092885
         },
         {
-          "name": "Hannah Green",
+          "name": "Justin Lower",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.036257100898092885
+        },
+        {
+          "name": "Brandt Snedeker",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.036257100898092885
+        },
+        {
+          "name": "Hank Lebioda",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.03434883242977221
+        },
+        {
+          "name": "Erik van Rooyen",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.03434883242977221
+        },
+        {
+          "name": "Adam Svensson",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.03434883242977221
+        },
+        {
+          "name": "Trace Crowe",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.03434883242977221
+        },
+        {
+          "name": "Dylan Wu",
           "american": 2000,
           "implied": 0.047619047619047616,
-          "novig": 0.04366032152405388
+          "novig": 0.031077515055508185
         },
         {
-          "name": "Mao Saigo",
+          "name": "Davis Chatfield",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.031077515055508185
+        },
+        {
+          "name": "Pontus Nyholm",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.031077515055508185
+        },
+        {
+          "name": "C.T. Pan",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.031077515055508185
+        },
+        {
+          "name": "John VanDerLaan",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.031077515055508185
+        },
+        {
+          "name": "Nick Dunlap",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.031077515055508185
+        },
+        {
+          "name": "Joe Highsmith",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.028375122441985735
+        },
+        {
+          "name": "Brice Garnett",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.025101069852525845
+        },
+        {
+          "name": "Kevin Streelman",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.025101069852525845
+        },
+        {
+          "name": "Gordon Sargent",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.025101069852525845
+        },
+        {
+          "name": "Christo Lamprecht",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.025101069852525845
+        },
+        {
+          "name": "Adam Schenk",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Alejandro Tosti",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Stefano Mazzoli",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Marcelo Rozo",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Danny Walker",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Brian Campbell",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.02330813629163114
+        },
+        {
+          "name": "Kensei Hirata",
           "american": 3000,
           "implied": 0.03225806451612903,
-          "novig": 0.02957634683887521
+          "novig": 0.021052510198892642
         },
         {
-          "name": "Chizzy Iwai",
-          "american": 4500,
-          "implied": 0.021739130434782608,
-          "novig": 0.01993188591315503
+          "name": "Jeffrey Kang",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.021052510198892642
         },
         {
-          "name": "Robyn Choi",
+          "name": "Peter Malnati",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.021052510198892642
+        },
+        {
+          "name": "Cam Davis",
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.021052510198892642
+        },
+        {
+          "name": "Patton Kizzire",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.018128550449046443
+        },
+        {
+          "name": "Rafael Campos",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.01069881665845364
+        },
+        {
+          "name": "Tyler Collet",
           "american": 7000,
           "implied": 0.014084507042253521,
-          "novig": 0.012913616225424389
+          "novig": 0.009191941072755944
         },
         {
-          "name": "Brooke M. Henderson",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Amy Yang",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Paula Martin Sampedro",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Mimi Rhodes",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Jenny Shin",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Yuka Saso",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Alexandra Forsterling",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Patty Tavatanakit",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Lindy Duncan",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Dewi Weber",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Nastasia Nadaud",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Pia Babnik",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Hyo Joo Kim",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Yunseo Yang",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Annabell Fuller",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
-        },
-        {
-          "name": "Manon De Roey",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009077888633714174
+          "name": "Cooper Hrabak",
+          "american": 7500,
+          "implied": 0.013157894736842105,
+          "novig": 0.008587208107443052
         }
       ]
     },
     "top20": {
-      "market_name": "Top 20",
+      "market_name": "Top 20 Finish (Incl. Ties)",
       "number_of_winners": 20,
       "drivers": [
         {
-          "name": "Shiho Kuwaki",
-          "american": -5000,
-          "implied": 0.9803921568627451,
-          "novig": 1.1164173828778081
+          "name": "Cameron Young",
+          "american": -150,
+          "implied": 0.6,
+          "novig": 0.40502557563891445
         },
         {
-          "name": "Esther Henseleit",
-          "american": -5000,
-          "implied": 0.9803921568627451,
-          "novig": 1.1164173828778081
-        },
-        {
-          "name": "Lottie Woad",
-          "american": -4000,
-          "implied": 0.975609756097561,
-          "novig": 1.1109714444247456
-        },
-        {
-          "name": "Nelly Korda",
-          "american": -2000,
-          "implied": 0.9523809523809523,
-          "novig": 1.0845197433670137
-        },
-        {
-          "name": "Lucy Li",
-          "american": -2000,
-          "implied": 0.9523809523809523,
-          "novig": 1.0845197433670137
-        },
-        {
-          "name": "Charley Hull",
-          "american": -1500,
-          "implied": 0.9375,
-          "novig": 1.067574122376904
-        },
-        {
-          "name": "Minami Katsu",
-          "american": -900,
-          "implied": 0.9,
-          "novig": 1.0248711574818279
-        },
-        {
-          "name": "Ayaka Furue",
-          "american": -750,
-          "implied": 0.8823529411764706,
-          "novig": 1.0047756445900273
-        },
-        {
-          "name": "Rio Takeda",
-          "american": -600,
-          "implied": 0.8571428571428571,
-          "novig": 0.9760677690303122
-        },
-        {
-          "name": "Lydia Ko",
-          "american": -550,
-          "implied": 0.8461538461538461,
-          "novig": 0.9635540796837698
-        },
-        {
-          "name": "Chanettee Wannasaen",
-          "american": -450,
-          "implied": 0.8181818181818182,
-          "novig": 0.9317010522562071
-        },
-        {
-          "name": "Sara Kouskova",
-          "american": -320,
-          "implied": 0.7619047619047619,
-          "novig": 0.8676157946936108
-        },
-        {
-          "name": "Sei Young Kim",
-          "american": -210,
-          "implied": 0.6774193548387096,
-          "novig": 0.7714083981046016
-        },
-        {
-          "name": "Lauren Coughlin",
-          "american": -175,
-          "implied": 0.6363636363636364,
-          "novig": 0.72465637397705
-        },
-        {
-          "name": "Soo Bin Joo",
-          "american": -135,
-          "implied": 0.574468085106383,
-          "novig": 0.6541730792437199
-        },
-        {
-          "name": "Wei-Ling Hsu",
-          "american": -135,
-          "implied": 0.574468085106383,
-          "novig": 0.6541730792437199
-        },
-        {
-          "name": "Jin Hee Im",
-          "american": -125,
-          "implied": 0.5555555555555556,
-          "novig": 0.6326365169640913
-        },
-        {
-          "name": "Celine Boutier",
-          "american": 110,
-          "implied": 0.47619047619047616,
-          "novig": 0.5422598716835069
-        },
-        {
-          "name": "Shannon Tan",
-          "american": 125,
-          "implied": 0.4444444444444444,
-          "novig": 0.506109213571273
-        },
-        {
-          "name": "Hannah Green",
-          "american": 130,
-          "implied": 0.43478260869565216,
-          "novig": 0.4951068393632019
-        },
-        {
-          "name": "Jing Yan",
-          "american": 155,
-          "implied": 0.39215686274509803,
-          "novig": 0.44656695315112327
-        },
-        {
-          "name": "Mao Saigo",
-          "american": 170,
-          "implied": 0.37037037037037035,
-          "novig": 0.4217576779760608
-        },
-        {
-          "name": "Carla Tejedo Mulet",
-          "american": 175,
-          "implied": 0.36363636363636365,
-          "novig": 0.41408935655831436
-        },
-        {
-          "name": "Chizzy Iwai",
-          "american": 300,
-          "implied": 0.25,
-          "novig": 0.2846864326338411
-        },
-        {
-          "name": "Paula Martin Sampedro",
-          "american": 470,
-          "implied": 0.17543859649122806,
-          "novig": 0.1997799527255025
-        },
-        {
-          "name": "Robyn Choi",
-          "american": 550,
-          "implied": 0.15384615384615385,
-          "novig": 0.17519165085159452
-        },
-        {
-          "name": "Yuka Saso",
-          "american": 700,
-          "implied": 0.125,
-          "novig": 0.14234321631692054
-        },
-        {
-          "name": "Brooke M. Henderson",
-          "american": 700,
-          "implied": 0.125,
-          "novig": 0.14234321631692054
-        },
-        {
-          "name": "Patty Tavatanakit",
-          "american": 850,
-          "implied": 0.10526315789473684,
-          "novig": 0.1198679716353015
-        },
-        {
-          "name": "Alexandra Forsterling",
-          "american": 1000,
-          "implied": 0.09090909090909091,
-          "novig": 0.10352233913957859
-        },
-        {
-          "name": "Hyo Joo Kim",
-          "american": 1100,
-          "implied": 0.08333333333333333,
-          "novig": 0.09489547754461368
-        },
-        {
-          "name": "Dewi Weber",
-          "american": 1400,
-          "implied": 0.06666666666666667,
-          "novig": 0.07591638203569095
-        },
-        {
-          "name": "Nastasia Nadaud",
-          "american": 2200,
-          "implied": 0.043478260869565216,
-          "novig": 0.04951068393632019
-        }
-      ]
-    },
-    "top5": {
-      "market_name": "Top 5",
-      "number_of_winners": 5,
-      "drivers": [
-        {
-          "name": "Yealimi Noh",
-          "american": -350,
-          "implied": 0.7777777777777778,
-          "novig": 0.6810487091725258
-        },
-        {
-          "name": "Jeeno Thitikul",
-          "american": -220,
-          "implied": 0.6875,
-          "novig": 0.6019984125721433
-        },
-        {
-          "name": "Haeran Ryu",
-          "american": -210,
-          "implied": 0.6774193548387096,
-          "novig": 0.5931714563760707
-        },
-        {
-          "name": "Esther Henseleit",
-          "american": 100,
-          "implied": 0.5,
-          "novig": 0.4378170273251951
-        },
-        {
-          "name": "Shiho Kuwaki",
+          "name": "Patrick Cantlay",
           "american": 105,
           "implied": 0.4878048780487805,
-          "novig": 0.42713856324409283
+          "novig": 0.3292890858852963
         },
         {
-          "name": "Lottie Woad",
-          "american": 125,
-          "implied": 0.4444444444444444,
-          "novig": 0.38917069095572904
+          "name": "Jackson Koivun",
+          "american": 135,
+          "implied": 0.425531914893617,
+          "novig": 0.28725218130419466
         },
         {
-          "name": "Lucy Li",
-          "american": 175,
-          "implied": 0.36363636363636365,
-          "novig": 0.31841238350923284
+          "name": "Hideki Matsuyama",
+          "american": 150,
+          "implied": 0.4,
+          "novig": 0.270017050425943
         },
         {
-          "name": "Charley Hull",
+          "name": "Ben Griffin",
+          "american": 155,
+          "implied": 0.39215686274509803,
+          "novig": 0.26472259845680685
+        },
+        {
+          "name": "Justin Thomas",
+          "american": 155,
+          "implied": 0.39215686274509803,
+          "novig": 0.26472259845680685
+        },
+        {
+          "name": "Ryan Gerard",
+          "american": 170,
+          "implied": 0.37037037037037035,
+          "novig": 0.25001578743142866
+        },
+        {
+          "name": "Tom Kim",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.24108665216602052
+        },
+        {
+          "name": "Maverick McNealy",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.24108665216602052
+        },
+        {
+          "name": "Brooks Koepka",
+          "american": 190,
+          "implied": 0.3448275862068966,
+          "novig": 0.23277331933270948
+        },
+        {
+          "name": "Aaron Rai",
+          "american": 190,
+          "implied": 0.3448275862068966,
+          "novig": 0.23277331933270948
+        },
+        {
+          "name": "Keegan Bradley",
+          "american": 190,
+          "implied": 0.3448275862068966,
+          "novig": 0.23277331933270948
+        },
+        {
+          "name": "Harris English",
+          "american": 195,
+          "implied": 0.3389830508474576,
+          "novig": 0.22882800883554488
+        },
+        {
+          "name": "Michael Brennan",
+          "american": 195,
+          "implied": 0.3389830508474576,
+          "novig": 0.22882800883554488
+        },
+        {
+          "name": "Alex Fitzpatrick",
+          "american": 195,
+          "implied": 0.3389830508474576,
+          "novig": 0.22882800883554488
+        },
+        {
+          "name": "Keith Mitchell",
+          "american": 200,
+          "implied": 0.3333333333333333,
+          "novig": 0.22501420868828578
+        },
+        {
+          "name": "Jordan Spieth",
+          "american": 200,
+          "implied": 0.3333333333333333,
+          "novig": 0.22501420868828578
+        },
+        {
+          "name": "Doug Ghim",
+          "american": 210,
+          "implied": 0.3225806451612903,
+          "novig": 0.21775568582737334
+        },
+        {
+          "name": "Mac Meissner",
+          "american": 220,
+          "implied": 0.3125,
+          "novig": 0.21095082064526793
+        },
+        {
+          "name": "Davis Thompson",
+          "american": 220,
+          "implied": 0.3125,
+          "novig": 0.21095082064526793
+        },
+        {
+          "name": "Michael Thorbjornsen",
+          "american": 220,
+          "implied": 0.3125,
+          "novig": 0.21095082064526793
+        },
+        {
+          "name": "Jordan Smith",
           "american": 230,
           "implied": 0.30303030303030304,
-          "novig": 0.2653436529243607
+          "novig": 0.20455837153480527
         },
         {
-          "name": "Nelly Korda",
+          "name": "Blades Brown",
           "american": 230,
           "implied": 0.30303030303030304,
-          "novig": 0.2653436529243607
+          "novig": 0.20455837153480527
         },
         {
-          "name": "Minami Katsu",
-          "american": 380,
-          "implied": 0.20833333333333334,
-          "novig": 0.18242376138549798
+          "name": "Rasmus Højgaard",
+          "american": 240,
+          "implied": 0.29411764705882354,
+          "novig": 0.19854194884260515
         },
         {
-          "name": "Ayaka Furue",
+          "name": "Alex Noren",
+          "american": 240,
+          "implied": 0.29411764705882354,
+          "novig": 0.19854194884260515
+        },
+        {
+          "name": "Max Greyserman",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Eric Cole",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Sahith Theegala",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Matt Wallace",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Alex Smalley",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Brian Harman",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Sungjae Im",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Christiaan Bezuidenhout",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.1875118405735715
+        },
+        {
+          "name": "Marco Penge",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Chris Kirk",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Ben James",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Ryo Hisatsune",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "J.T. Poston",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Richard Hoey",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Michael Kim",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Bud Cauley",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Sepp Straka",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Emiliano Grillo",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Ben Kohles",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Pierceson Coody",
+          "american": 290,
+          "implied": 0.2564102564102564,
+          "novig": 0.17308785283714292
+        },
+        {
+          "name": "Johnny Keefer",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.160724434777347
+        },
+        {
+          "name": "Kevin Yu",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.160724434777347
+        },
+        {
+          "name": "Rasmus Neergaard-Petersen",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.160724434777347
+        },
+        {
+          "name": "Tony Finau",
+          "american": 320,
+          "implied": 0.23809523809523808,
+          "novig": 0.160724434777347
+        },
+        {
+          "name": "Harry Hall",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Mackenzie Hughes",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Nick Taylor",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Ricky Castillo",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Billy Horschel",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Max McGreevy",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Denny McCarthy",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Jackson Suber",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Stephan Jaeger",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Thorbjørn Olesen",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Jason Day",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.15341877865110395
+        },
+        {
+          "name": "Austin Eckroat",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Taylor Moore",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Beau Hossler",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Steven Fisk",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Taylor Pendrith",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Zac Blair",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Seamus Power",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Daniel Berger",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Andrew Novak",
+          "american": 370,
+          "implied": 0.2127659574468085,
+          "novig": 0.14362609065209733
+        },
+        {
+          "name": "Zach Bauchou",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Aldrich Potgieter",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Lee Hodges",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Kevin Roy",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Luke Clanton",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Jesper Svensson",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.1350085252129715
+        },
+        {
+          "name": "Patrick Fishburn",
           "american": 430,
           "implied": 0.18867924528301888,
-          "novig": 0.16521397257554535
+          "novig": 0.12736653321978442
         },
         {
-          "name": "Lydia Ko",
+          "name": "Nico Echavarria",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "Matt McCarty",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "Lucas Glover",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "Matti Schmid",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "William Mouw",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "Andrew Putnam",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.12736653321978442
+        },
+        {
+          "name": "Samuel Stevens",
+          "american": 450,
+          "implied": 0.18181818181818182,
+          "novig": 0.12273502292088317
+        },
+        {
+          "name": "John Parry",
+          "american": 450,
+          "implied": 0.18181818181818182,
+          "novig": 0.12273502292088317
+        },
+        {
+          "name": "Dan Brown",
+          "american": 450,
+          "implied": 0.18181818181818182,
+          "novig": 0.12273502292088317
+        },
+        {
+          "name": "Zecheng Dou",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11638665966635474
+        },
+        {
+          "name": "Kristoffer Ventura",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11638665966635474
+        },
+        {
+          "name": "Haotong Li",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11638665966635474
+        },
+        {
+          "name": "Adrien Dumont de Chassart",
+          "american": 480,
+          "implied": 0.1724137931034483,
+          "novig": 0.11638665966635474
+        },
+        {
+          "name": "Neal Shipley",
           "american": 500,
           "implied": 0.16666666666666666,
-          "novig": 0.14593900910839835
+          "novig": 0.11250710434414289
         },
         {
-          "name": "Chanettee Wannasaen",
+          "name": "Karl Vilips",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.11250710434414289
+        },
+        {
+          "name": "Tom Hoge",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.11250710434414289
+        },
+        {
+          "name": "Chandler Blanchet",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.11250710434414289
+        },
+        {
+          "name": "Webb Simpson",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.11250710434414289
+        },
+        {
+          "name": "Chad Ramey",
           "american": 550,
           "implied": 0.15384615384615385,
-          "novig": 0.13471293148467545
+          "novig": 0.10385271170228576
         },
         {
-          "name": "Rio Takeda",
+          "name": "Garrick Higgo",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10385271170228576
+        },
+        {
+          "name": "Davis Riley",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10385271170228576
+        },
+        {
+          "name": "Austin Smotherman",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10385271170228576
+        },
+        {
+          "name": "A.J. Ewart",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.10385271170228576
+        },
+        {
+          "name": "Matthieu Pavon",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Patrick Rodgers",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Vince Whaley",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Matt Kuchar",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Aaron Wise",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Chandler Phillips",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Adrien Saddier",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Takumi Kanaya",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Mark Hubbard",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.09643466086640819
+        },
+        {
+          "name": "Erik van Rooyen",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Brandt Snedeker",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Justin Lower",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Joel Dahmen",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Lanto Griffin",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "David Lipsky",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Kihei Akina",
+          "american": 650,
+          "implied": 0.13333333333333333,
+          "novig": 0.09000568347531432
+        },
+        {
+          "name": "Trace Crowe",
           "american": 750,
           "implied": 0.11764705882352941,
-          "novig": 0.10301577113534004
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Soo Bin Joo",
-          "american": 2700,
-          "implied": 0.03571428571428571,
-          "novig": 0.031272644808942505
+          "name": "Hank Lebioda",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Lauren Coughlin",
-          "american": 3000,
-          "implied": 0.03225806451612903,
-          "novig": 0.028246259827431945
+          "name": "Adam Svensson",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Wei-Ling Hsu",
-          "american": 3300,
-          "implied": 0.029411764705882353,
-          "novig": 0.02575394278383501
+          "name": "John VanDerLaan",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Jin Hee Im",
-          "american": 3500,
-          "implied": 0.027777777777777776,
-          "novig": 0.024323168184733065
+          "name": "Pontus Nyholm",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Sei Young Kim",
-          "american": 5000,
-          "implied": 0.0196078431372549,
-          "novig": 0.01716929518922334
+          "name": "Davis Chatfield",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.07941677953704206
         },
         {
-          "name": "Sara Kouskova",
-          "american": 6000,
-          "implied": 0.01639344262295082,
-          "novig": 0.014354656633612956
+          "name": "C.T. Pan",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.0750047362294286
         },
         {
-          "name": "Shannon Tan",
-          "american": 7500,
-          "implied": 0.013157894736842105,
-          "novig": 0.011521500719084083
+          "name": "Nick Dunlap",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.0750047362294286
         },
         {
-          "name": "Celine Boutier",
-          "american": 8000,
-          "implied": 0.012345679012345678,
-          "novig": 0.010810296970992473
+          "name": "Dylan Wu",
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.0750047362294286
         },
         {
-          "name": "Carla Tejedo Mulet",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.008669644105449409
+          "name": "Brian Campbell",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Jing Yan",
-          "american": 12500,
-          "implied": 0.007936507936507936,
-          "novig": 0.006949476624209446
+          "name": "Kevin Streelman",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Robyn Choi",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Gordon Sargent",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Yuka Saso",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Adam Schenk",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Lindy Duncan",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Christo Lamprecht",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Mao Saigo",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Brice Garnett",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Hyo Joo Kim",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Alejandro Tosti",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Amy Yang",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Stefano Mazzoli",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Pia Babnik",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Joe Highsmith",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.06136751146044159
         },
         {
-          "name": "Hannah Green",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Danny Walker",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Alexandra Forsterling",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Kensei Hirata",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Paula Martin Sampedro",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Cam Davis",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Dewi Weber",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Jeffrey Kang",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Brooke M. Henderson",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Peter Malnati",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Mimi Rhodes",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Marcelo Rozo",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05192635585114288
         },
         {
-          "name": "Chizzy Iwai",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Patton Kizzire",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.04500284173765716
         },
         {
-          "name": "Nastasia Nadaud",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
-        },
-        {
-          "name": "Jenny Shin",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
-        },
-        {
-          "name": "Yunseo Yang",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
-        },
-        {
-          "name": "Annabell Fuller",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
-        },
-        {
-          "name": "Manon De Roey",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.00579890102417477
+          "name": "Rafael Campos",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.029349679394124233
         }
       ]
     }
