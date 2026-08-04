@@ -5,6 +5,27 @@ A dashboard comparing **Kalshi** (prediction market — treated as source of tru
 scraped automatically in CI; other books are entered by hand from posted boards.
 Published to GitHub Pages from `index.html` + the `data/` tree.
 
+## Start of week (new race — DO THIS FIRST)
+
+At the top of a new race weekend, the #1 thing that breaks is the Kalshi
+**SERIES matchers** in `scraper.py` still pointing at last week's race, so the
+new race silently falls to the `xfinity` catch-all and everything downstream is
+misclassified. Kickoff sequence:
+
+1. **Re-point matchers + clear stale data.** Update the `SERIES` matchers in
+   `scraper.py` (case-insensitive substring on the race name) for this week's
+   Cup / Xfinity / Truck races; `xfinity` is the default catch-all. Clear stale
+   lines from every book/tier across Cup + support series (don't carry last
+   week's boards forward).
+2. **First pull + deploy.** Run `fanduel.yml`, then `track.yml` (Kalshi scrape +
+   publish). Confirm the deploy branch advanced / a `data: market update` landed.
+3. **Then** enter hand books as they arrive (batch — see below) and answer
+   analysis asks.
+
+Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`,
+Trucks is `<RACE>`. Update the SERIES matchers in `scraper.py`, clear all stale
+lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
+
 ## Branches & deploy flow (IMPORTANT)
 
 - **Pages / default / deploy branch:** `claude/nascar-page-scraper-mwi55a`. This is
@@ -114,6 +135,15 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
   committed `data/cup/<tier>/snapshot.json` — no setup. NOTE: the `book` scan is only
   meaningful **pre-race**; once the race is live the Kalshi snapshot reflects running
   order and pre-race book prices look absurdly +EV.
+  **STALE-SNAPSHOT GOTCHA (read before any EV run):** `ev_model.py`/`trades.py`
+  read the **working-tree** `data/cup/**` files. CI commits fresh scrapes to the
+  **deploy branch**, NOT to the dev branch, so the dev working copy goes stale
+  (can be days old) and silently poisons every EV/trade number. Before running
+  analysis, pull the live snapshots from deploy, e.g.
+  `git fetch origin claude/nascar-page-scraper-mwi55a` then read the tier
+  `snapshot.json` / `alerts.jsonl` from that ref (or point the script at a temp
+  dir populated from it). Sanity-check a known driver's tier % against the live
+  site before trusting the output.
 - **`trades.py`** — biggest Kalshi trades from `alerts.jsonl`, splitting directional
   YES/NO from the field-lay harvest. `python trades.py [--hours N | --date YYYY-MM-DD]`.
 
@@ -133,6 +163,12 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
 
 ## Standard task prompts
 
+- "New race week. Cup is <RACE>, Xfinity is <RACE>, Trucks is <RACE>. Update the
+  SERIES matchers in `scraper.py`, clear all stale lines, grab fresh Kalshi +
+  FanDuel, deploy, and confirm." (start-of-week kickoff — see top of file)
+- "<Book> <tier(s)>: <paste / screenshots / screen-recording>." (stage to dev;
+  hold deploy for the batch — see 'Entering a hand-entered book')
+- "Deploy" / "go live" / "that's all" — land the staged batch + refresh FanDuel + Kalshi.
 - "Trigger a fresh Kalshi scrape (`track.yml`) and confirm the site updated."
 - "Refresh FanDuel (`fanduel.yml`), deploy, and report line moves ≥3pp vs the prior board."
 - "Updated <Book> lines: <paste>. Regenerate the manual JSON with `gen_books.py`,
