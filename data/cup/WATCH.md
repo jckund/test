@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-04T23:34:44.496714+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 3: 98c -> 22c (+355, -76pp)
+- **Josh Berry** Top 10: 99c -> 24c (+317, -75pp)
+- **Brad Keselowski** Top 5: 97c -> 23c (+335, -74pp)
+- **Ty Gibbs** Top 5: 97c -> 27c (+270, -70pp)
+- **Ryan Preece** Top 10: 99c -> 32c (+212, -67pp)
+- **William Byron** Top 10: 1c -> 67c (-203, +66pp)
+- **Josh Berry** Top 5: 74c -> 8c (+1150, -66pp)
+- **Ryan Blaney** Top 10: 3c -> 68c (-213, +65pp)
+- **Todd Gilliland** Top 10: 75c -> 10c (+900, -65pp)
+- **Tyler Reddick** Top 5: 89c -> 26c (+285, -63pp)
+- (+98 more)
+
+_leader win YES 17c · scraped 2026-08-04T23:34:44.496714+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-07-26T23:34:12.527833+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
