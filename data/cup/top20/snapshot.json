@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-AJAL",
       "volume": 101,
-      "volume_24h": 101,
+      "volume_24h": 0,
       "yes_ask": 39,
       "yes_bid": 34
     },
@@ -41,15 +41,15 @@
       "last_price": 61,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 43,
+      "no_ask": 44,
       "no_bid": 41,
       "open_interest": 321,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-AUCI",
       "volume": 325,
-      "volume_24h": 292,
+      "volume_24h": 216,
       "yes_ask": 59,
-      "yes_bid": 57
+      "yes_bid": 56
     },
     "KXNASCARTOP20-IOWC3PB26-AUDI": {
       "last_price": 82,
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-BRKE",
       "volume": 778,
-      "volume_24h": 775,
+      "volume_24h": 498,
       "yes_ask": 71,
       "yes_bid": 67
     },
@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 44,
-      "no_bid": 39,
+      "no_bid": 38,
       "open_interest": 197,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-DASU",
       "volume": 197,
       "volume_24h": 166,
-      "yes_ask": 61,
+      "yes_ask": 62,
       "yes_bid": 56
     },
     "KXNASCARTOP20-IOWC3PB26-DEHA": {
@@ -350,13 +350,13 @@
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 74,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 431,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-RIHE",
       "volume": 431,
-      "volume_24h": 397,
-      "yes_ask": 32,
+      "volume_24h": 300,
+      "yes_ask": 31,
       "yes_bid": 26
     },
     "KXNASCARTOP20-IOWC3PB26-RIST": {
@@ -416,18 +416,18 @@
       "yes_bid": 68
     },
     "KXNASCARTOP20-IOWC3PB26-SHVA": {
-      "last_price": 53,
+      "last_price": 52,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
-      "no_ask": 51,
-      "no_bid": 49,
-      "open_interest": 602,
+      "no_ask": 53,
+      "no_bid": 48,
+      "open_interest": 743,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-SHVA",
-      "volume": 602,
-      "volume_24h": 523,
-      "yes_ask": 51,
-      "yes_bid": 49
+      "volume": 743,
+      "volume_24h": 491,
+      "yes_ask": 52,
+      "yes_bid": 47
     },
     "KXNASCARTOP20-IOWC3PB26-TOGI": {
       "last_price": 40,
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Ty Dillon",
       "no_ask": 81,
-      "no_bid": 75,
+      "no_bid": 76,
       "open_interest": 230,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-TYDI",
       "volume": 230,
       "volume_24h": 230,
-      "yes_ask": 25,
+      "yes_ask": 24,
       "yes_bid": 19
     },
     "KXNASCARTOP20-IOWC3PB26-TYGI": {
@@ -509,13 +509,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-ZASM",
       "volume": 91,
-      "volume_24h": 91,
+      "volume_24h": 38,
       "yes_ask": 37,
       "yes_bid": 32
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-05T06:14:00.295354+00:00",
+  "scraped_at": "2026-08-05T12:27:33.521810+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top20"
 }
