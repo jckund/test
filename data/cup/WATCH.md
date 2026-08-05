@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-05T06:13:58.423760+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Bubba Wallace** Top 10: 39c -> 45c (+122, +6pp)
+- **Ricky Stenhouse** Top 5: 6c -> 2c (+4900, -4pp)
+- **Noah Gragson** Top 5: 5c -> 1c (+9900, -4pp)
+- **Cole Custer** Top 5: 5c -> 1c (+9900, -4pp)
+- **Austin Hill** Top 5: 6c -> 2c (+4900, -4pp)
+- **Michael McDowell** Top 3: 5c -> 1c (+9900, -4pp)
+- **Ty Dillon** Top 5: 5c -> 2c (+4900, -3pp)
+- **Ryan Preece** Top 5: 18c -> 15c (+567, -3pp)
+- **Ross Chastain** Top 5: 15c -> 12c (+733, -3pp)
+- **Riley Herbst** Top 5: 5c -> 2c (+4900, -3pp)
+- (+9 more)
+
+_leader win YES 17c · scraped 2026-08-05T06:13:58.423760+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-04T23:34:44.496714+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
