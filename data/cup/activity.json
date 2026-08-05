@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-08-05T22:20:38.764318+00:00",
+  "updated_at": "2026-08-05T22:28:38.585837+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "dc0d3e89-431b-4c26-3865-b37ff70f39a9",
+      "tier": "Winner",
+      "driver": "Chase Elliott",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CHEL",
+      "side": "no",
+      "count": 140,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-08-05T22:21:12.735671Z"
+    },
+    {
+      "trade_id": "14ea1f65-dc8a-4a74-12a8-93fc6ac1b820",
+      "tier": "Winner",
+      "driver": "Chase Elliott",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CHEL",
+      "side": "no",
+      "count": 2,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-08-05T22:21:12.735671Z"
+    },
     {
       "trade_id": "8190ca06-4ae5-4110-3f52-b917a64d21c9",
       "tier": "Top 5",
@@ -1629,28 +1651,6 @@
       "yes_price": 16,
       "no_price": 84,
       "created_time": "2026-08-05T19:54:19.289565Z"
-    },
-    {
-      "trade_id": "7e434cab-90cf-73be-65c2-f811a709160a",
-      "tier": "Top 3",
-      "driver": "Kyle Larson",
-      "ticker": "KXNASCARTOP3-IOWC3PB26-KYLA",
-      "side": "yes",
-      "count": 34,
-      "yes_price": 28,
-      "no_price": 72,
-      "created_time": "2026-08-05T19:52:14.402506Z"
-    },
-    {
-      "trade_id": "ccff9462-4478-4f7b-8298-22fdff166566",
-      "tier": "Winner",
-      "driver": "Christopher Bell",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBE",
-      "side": "yes",
-      "count": 341,
-      "yes_price": 15,
-      "no_price": 85,
-      "created_time": "2026-08-05T19:46:20.827094Z"
     }
   ]
 }
