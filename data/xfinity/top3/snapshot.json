@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-BRCR",
       "volume": 591,
-      "volume_24h": 159,
+      "volume_24h": 0,
       "yes_ask": 19,
       "yes_bid": 17
     },
@@ -108,18 +108,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-HYVP26-CAKV": {
-      "last_price": 0,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 89,
+      "no_ask": 88,
       "no_bid": 83,
-      "open_interest": 0,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-CAKV",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 4,
+      "volume_24h": 4,
       "yes_ask": 17,
-      "yes_bid": 11
+      "yes_bid": 12
     },
     "KXNASCARTOP3-HYVP26-CAWA": {
       "last_price": 1,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-JELO",
       "volume": 51,
-      "volume_24h": 51,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 23
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-JUAL",
       "volume": 27,
-      "volume_24h": 7,
+      "volume_24h": 4,
       "yes_ask": 44,
       "yes_bid": 39
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-ROCH",
       "volume": 30,
-      "volume_24h": 19,
+      "volume_24h": 0,
       "yes_ask": 33,
       "yes_bid": 29
     },
@@ -453,23 +453,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-SAMA",
       "volume": 519,
-      "volume_24h": 480,
+      "volume_24h": 470,
       "yes_ask": 32,
       "yes_bid": 31
     },
     "KXNASCARTOP3-HYVP26-SASM": {
-      "last_price": 22,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Sammy Smith",
-      "no_ask": 83,
-      "no_bid": 79,
-      "open_interest": 303,
+      "no_ask": 90,
+      "no_bid": 84,
+      "open_interest": 596,
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-SASM",
-      "volume": 303,
-      "volume_24h": 303,
-      "yes_ask": 21,
-      "yes_bid": 17
+      "volume": 596,
+      "volume_24h": 596,
+      "yes_ask": 16,
+      "yes_bid": 10
     },
     "KXNASCARTOP3-HYVP26-SHCR": {
       "last_price": 0,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-TAGR",
       "volume": 118,
-      "volume_24h": 118,
+      "volume_24h": 0,
       "yes_ask": 20,
       "yes_bid": 16
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-05T12:30:02.775547+00:00",
+  "scraped_at": "2026-08-05T15:25:25.334777+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-hyvp26",
   "tier": "top3"
 }

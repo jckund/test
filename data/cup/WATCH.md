@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-05T15:22:12.244477+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Win: 9c -> 6c (+1567, -3pp)
+
+_leader win YES 17c · scraped 2026-08-05T15:22:12.244477+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-05T12:27:31.708058+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
