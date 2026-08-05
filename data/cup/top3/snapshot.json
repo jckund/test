@@ -10,18 +10,18 @@
   "market_count": 36,
   "markets": {
     "KXNASCARTOP3-IOWC3PB26-AJAL": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 97,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-AJAL",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 3,
+      "yes_bid": 0
     },
     "KXNASCARTOP3-IOWC3PB26-ALBO": {
       "last_price": 8,
@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-ALBO",
       "volume": 59,
-      "volume_24h": 59,
+      "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 2
     },
@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 95,
-      "no_bid": 87,
+      "no_bid": 89,
       "open_interest": 460,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-BRKE",
       "volume": 460,
-      "volume_24h": 205,
-      "yes_ask": 13,
+      "volume_24h": 451,
+      "yes_ask": 11,
       "yes_bid": 5
     },
     "KXNASCARTOP3-IOWC3PB26-BUWA": {
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 67,
-      "no_bid": 64,
+      "no_bid": 65,
       "open_interest": 513,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-CHBE",
       "volume": 513,
-      "volume_24h": 0,
-      "yes_ask": 36,
+      "volume_24h": 8,
+      "yes_ask": 35,
       "yes_bid": 33
     },
     "KXNASCARTOP3-IOWC3PB26-CHBR": {
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 86,
-      "no_bid": 81,
+      "no_bid": 80,
       "open_interest": 443,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-CHBR",
       "volume": 443,
-      "volume_24h": 24,
-      "yes_ask": 19,
+      "volume_24h": 0,
+      "yes_ask": 20,
       "yes_bid": 14
     },
     "KXNASCARTOP3-IOWC3PB26-CHBU": {
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-JOLO",
       "volume": 281,
-      "volume_24h": 22,
+      "volume_24h": 0,
       "yes_ask": 22,
       "yes_bid": 17
     },
@@ -304,17 +304,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-IOWC3PB26-KYLA": {
-      "last_price": 29,
+      "last_price": 28,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 73,
-      "no_bid": 71,
-      "open_interest": 100,
+      "no_bid": 72,
+      "open_interest": 134,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-KYLA",
-      "volume": 100,
-      "volume_24h": 100,
-      "yes_ask": 29,
+      "volume": 134,
+      "volume_24h": 134,
+      "yes_ask": 28,
       "yes_bid": 27
     },
     "KXNASCARTOP3-IOWC3PB26-MIMC": {
@@ -391,28 +391,28 @@
       "last_price": 34,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 69,
-      "no_bid": 66,
+      "no_ask": 70,
+      "no_bid": 67,
       "open_interest": 578,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-RYBL",
       "volume": 578,
-      "volume_24h": 236,
-      "yes_ask": 34,
-      "yes_bid": 31
+      "volume_24h": 174,
+      "yes_ask": 33,
+      "yes_bid": 30
     },
     "KXNASCARTOP3-IOWC3PB26-RYPR": {
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 95,
-      "no_bid": 91,
+      "no_bid": 92,
       "open_interest": 162,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-RYPR",
       "volume": 162,
-      "volume_24h": 0,
-      "yes_ask": 9,
+      "volume_24h": 42,
+      "yes_ask": 8,
       "yes_bid": 5
     },
     "KXNASCARTOP3-IOWC3PB26-SHVA": {
@@ -475,15 +475,15 @@
       "last_price": 18,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 86,
-      "no_bid": 83,
+      "no_ask": 87,
+      "no_bid": 85,
       "open_interest": 15,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-TYRE",
       "volume": 15,
       "volume_24h": 5,
-      "yes_ask": 17,
-      "yes_bid": 14
+      "yes_ask": 15,
+      "yes_bid": 13
     },
     "KXNASCARTOP3-IOWC3PB26-WIBY": {
       "last_price": 23,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-05T18:08:34.426750+00:00",
+  "scraped_at": "2026-08-05T20:28:12.190111+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top3"
 }

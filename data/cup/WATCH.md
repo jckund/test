@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-08-05T20:28:11.670787+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Cindric** Top 10: 29c -> 36c (+178, +7pp)
+- **Denny Hamlin** Top 5: 48c -> 54c (-117, +6pp)
+- **Ryan Blaney** Top 5: 51c -> 55c (-122, +4pp)
+- **Christopher Bell** Top 5: 52c -> 55c (-122, +3pp)
+- **Zane Smith** Top 10: 10c -> 13c (+669, +3pp)
+- **Kyle Larson** Top 5: 43c -> 40c (+150, -3pp)
+
+_leader win YES 16c · scraped 2026-08-05T20:28:11.670787+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-05T18:08:33.959574+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
