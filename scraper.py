@@ -96,6 +96,22 @@ try:
     ALERT_LOOKBACK_MIN = max(1, int(os.environ.get("ALERT_LOOKBACK_MIN", "20")))
 except ValueError:
     ALERT_LOOKBACK_MIN = 20
+# Adaptive alert lookback. ALERT_LOOKBACK_MIN is only the FLOOR / first-run
+# default (~one poll interval). Normally runs land every ~15 min, but GitHub can
+# drop/delay scheduled runs and a stalled deploy can block the queue, opening
+# multi-hour gaps. When that happens a fixed 20-min window silently skips every
+# trade in the gap. Instead we look back to the last SUCCESSFUL scan (persisted
+# in alerts_state.json, committed so a fresh CI runner can read it) plus a small
+# overlap margin, capped so paging stays bounded. Trade-id dedup against the
+# committed alerts log makes the re-scanned overlap duplicate-free.
+try:
+    ALERT_MAX_LOOKBACK_MIN = max(ALERT_LOOKBACK_MIN, int(os.environ.get("ALERT_MAX_LOOKBACK_MIN", "1440")))
+except ValueError:
+    ALERT_MAX_LOOKBACK_MIN = 1440
+try:
+    ALERT_OVERLAP_MARGIN_MIN = max(0, int(os.environ.get("ALERT_OVERLAP_MARGIN_MIN", "5")))
+except ValueError:
+    ALERT_OVERLAP_MARGIN_MIN = 5
 TRADES_PAGE_LIMIT = 1000   # Kalshi max page size
 TRADES_MAX_PAGES = 25      # backstop against a runaway cursor loop
 
@@ -517,6 +533,44 @@ def collect_alert_trades(events: list, series_dir: str, min_ts: int) -> list:
     return list(trades.values())
 
 
+# ---------------------------------------------------------------------------
+# Adaptive alert-scan window (self-healing across run-cadence gaps)
+# ---------------------------------------------------------------------------
+
+def _alert_state_path(series_dir: str) -> str:
+    return os.path.join(series_dir, "alerts_state.json")
+
+
+def read_alert_scan_ts(series_dir: str):
+    """Unix ts of the last successful alert scan, or None if unknown."""
+    try:
+        with open(_alert_state_path(series_dir), encoding="utf-8") as fh:
+            return int(json.load(fh).get("last_scan_ts"))
+    except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        return None
+
+
+def write_alert_scan_ts(series_dir: str, ts: int) -> None:
+    os.makedirs(series_dir, exist_ok=True)
+    with open(_alert_state_path(series_dir), "w", encoding="utf-8") as fh:
+        json.dump({"last_scan_ts": int(ts),
+                   "last_scan_at": datetime.fromtimestamp(ts, timezone.utc).isoformat()},
+                  fh, indent=2)
+        fh.write("\n")
+
+
+def alert_lookback_seconds(series_dir: str, now: int) -> int:
+    """How far back (seconds) to page trades for alerting: enough to cover the
+    gap since the last successful scan plus a margin, floored at one poll
+    interval and capped to keep paging bounded. Self-heals after run gaps."""
+    last = read_alert_scan_ts(series_dir)
+    floor_s, cap_s = ALERT_LOOKBACK_MIN * 60, ALERT_MAX_LOOKBACK_MIN * 60
+    if last is None:
+        return floor_s
+    gap = (now - last) + ALERT_OVERLAP_MARGIN_MIN * 60
+    return max(floor_s, min(cap_s, gap))
+
+
 try:
     TRADES_WINDOW_HOURS = max(1, int(os.environ.get("TRADES_WINDOW_HOURS", "6")))
 except ValueError:
@@ -653,15 +707,20 @@ def process_series(rs: dict) -> dict | None:
     # must not lose the scraped data we already wrote.
     if rs["key"] in alerts.watched_series():
         try:
-            min_ts = int(time.time()) - ALERT_LOOKBACK_MIN * 60
+            now_ts = int(time.time())
+            lookback_s = alert_lookback_seconds(series_dir, now_ts)
+            min_ts = now_ts - lookback_s
             atrades = collect_alert_trades(events, series_dir, min_ts)
             try:
                 persist_trades_window(series_dir, atrades)
             except Exception as e:  # noqa: BLE001 - rolling log is best-effort
                 print(f"trades_window persist failed for {rs['key']}: {e}", file=sys.stderr)
             fired = alerts.process(series_dir, rs["label"], atrades)
-            print(f"alerts: scanned {len(atrades)} trade(s) from last "
-                  f"{ALERT_LOOKBACK_MIN}min; {len(fired)} new over "
+            # Only advance the scan marker after a successful scan+process, so a
+            # failure mid-run leaves the gap to be re-covered next run.
+            write_alert_scan_ts(series_dir, now_ts)
+            print(f"alerts: scanned {len(atrades)} trade(s) over last "
+                  f"{lookback_s // 60}min; {len(fired)} new over "
                   f"${alerts.min_usd():,.0f}", file=sys.stderr)
         except Exception as e:  # noqa: BLE001
             print(f"alerts failed for {rs['key']}: {e}", file=sys.stderr)
