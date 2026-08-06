@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-06T08:02:31.917197+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 5: 3c -> 9c (+1011, +6pp)
+- **Connor Zilisch** Top 5: 2c -> 8c (+1150, +6pp)
+- **Ricky Stenhouse** Top 5: 2c -> 7c (+1329, +5pp)
+- **Noah Gragson** Top 5: 1c -> 6c (+1567, +5pp)
+- **Austin Hill** Top 5: 2c -> 7c (+1329, +5pp)
+- **Michael McDowell** Top 3: 1c -> 6c (+1567, +5pp)
+- **Connor Zilisch** Top 3: 1c -> 6c (+1567, +5pp)
+- **Riley Herbst** Top 5: 2c -> 6c (+1567, +4pp)
+- **Josh Berry** Top 5: 8c -> 12c (+733, +4pp)
+- **Cole Custer** Top 5: 1c -> 5c (+1900, +4pp)
+- (+20 more)
+
+_leader win YES 16c · scraped 2026-08-06T08:02:31.917197+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-05T22:19:26.027458+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
