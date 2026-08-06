@@ -160,6 +160,13 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
   directional; discount it. **YES** buys (and NO at 80–90¢) are directional
   conviction. Cross-confirm price moves against trade flow and FanDuel.
 - Report line moves at a **≥3pp** threshold by default.
+- **Trade odds are reported NET OF KALSHI FEES.** Recorded trade `price_cents` are
+  raw (pre-fee). When summarizing aggregated Kalshi trades, convert each execution
+  price to American odds on the **fee-inclusive** effective price
+  `p_net = p + 0.07·p·(1−p)` (Kalshi's fee ≈ `ceil(0.07·C·p·(1−p))`), NOT the raw
+  price — e.g. $300 of Gibbs bought at 6¢ shows as **+1464 net**, not +1567 raw.
+  Use `alerts.net_american_odds(price_cents)` / `alerts.fee_usd(count, price_cents)`.
+  Fees are an estimate (standard 0.07 schedule; exact rate can vary by market).
 
 ## Standard task prompts
 

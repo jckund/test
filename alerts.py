@@ -148,6 +148,37 @@ def american_odds(a: dict):
     return f"+{round((1 - p) / p * 100)}" if p <= 0.5 else f"-{round(p / (1 - p) * 100)}"
 
 
+# Kalshi's standard trading fee: ceil(rate * contracts * p * (1-p)), charged on
+# top of the execution price. Recorded trade prices are RAW (pre-fee); these
+# helpers express a trade net of fees for "what did the taker really pay/get".
+KALSHI_FEE_RATE = 0.07
+
+
+def fee_usd(count, price_cents, rate: float = KALSHI_FEE_RATE):
+    """Estimated Kalshi trading fee (dollars) for `count` contracts at
+    `price_cents`, rounded up to the next cent. Estimate: the exact schedule can
+    vary by market/promotion."""
+    import math
+    if not isinstance(count, (int, float)) or not isinstance(price_cents, (int, float)):
+        return None
+    p = price_cents / 100.0
+    return math.ceil(rate * count * p * (1 - p) * 100) / 100.0
+
+
+def net_american_odds(price_cents, rate: float = KALSHI_FEE_RATE):
+    """American odds of the taker's execution price INCLUDING the fee. The
+    effective per-contract cost is ``p + rate*p*(1-p)``, so the odds are always
+    a touch worse than the raw price. Use this when reporting trades net of fees
+    (e.g. a 6¢ YES buy is +1464 net, vs +1567 raw)."""
+    if not isinstance(price_cents, (int, float)) or price_cents <= 0 or price_cents >= 100:
+        return None
+    p = price_cents / 100.0
+    p_net = p + rate * p * (1 - p)
+    if p_net >= 1:
+        return None
+    return f"+{round((1 - p_net) / p_net * 100)}" if p_net <= 0.5 else f"-{round(p_net / (1 - p_net) * 100)}"
+
+
 def _odds_suffix(a: dict) -> str:
     odds = american_odds(a)
     return f" [{odds}]" if odds else ""
