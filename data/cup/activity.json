@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-08-06T15:13:13.475943+00:00",
+  "updated_at": "2026-08-06T15:28:22.496130+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "5ff2036a-9bf3-5231-7360-0dbacd6ed91d",
+      "tier": "Top 5",
+      "driver": "Austin Cindric",
+      "ticker": "KXNASCARTOP5-IOWC3PB26-AUCI",
+      "side": "yes",
+      "count": 60,
+      "yes_price": 11,
+      "no_price": 89,
+      "created_time": "2026-08-06T15:21:18.609975Z"
+    },
+    {
+      "trade_id": "77b104fe-1297-484a-c6f3-7a51fb4b8afb",
+      "tier": "Winner",
+      "driver": "Austin Cindric",
+      "ticker": "KXNASCARRACE-IOWC3PB26-AUCI",
+      "side": "yes",
+      "count": 234,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-08-06T15:20:47.123917Z"
+    },
+    {
+      "trade_id": "8db70a55-dfa7-7aa1-82d3-c2923bc260fa",
+      "tier": "Winner",
+      "driver": "Alex Bowman",
+      "ticker": "KXNASCARRACE-IOWC3PB26-ALBO",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-08-06T15:20:26.466532Z"
+    },
+    {
+      "trade_id": "c6aca051-fc52-5edd-395f-ac13c1278745",
+      "tier": "Top 5",
+      "driver": "Ryan Blaney",
+      "ticker": "KXNASCARTOP5-IOWC3PB26-RYBL",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 56,
+      "no_price": 44,
+      "created_time": "2026-08-06T15:19:27.655005Z"
+    },
+    {
+      "trade_id": "f9302828-86be-562b-c3b8-04869b02faec",
+      "tier": "Winner",
+      "driver": "Chase Briscoe",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CHBR",
+      "side": "yes",
+      "count": 604,
+      "yes_price": 7,
+      "no_price": 93,
+      "created_time": "2026-08-06T15:15:58.840834Z"
+    },
+    {
+      "trade_id": "b562cb46-221c-47cc-7c7a-8c5702730f4e",
+      "tier": "Winner",
+      "driver": "Ryan Preece",
+      "ticker": "KXNASCARRACE-IOWC3PB26-RYPR",
+      "side": "yes",
+      "count": 1217,
+      "yes_price": 2,
+      "no_price": 98,
+      "created_time": "2026-08-06T15:15:40.81005Z"
+    },
     {
       "trade_id": "6117c6f5-085b-5814-bd57-180e31c79a5d",
       "tier": "Winner",
@@ -1585,72 +1651,6 @@
       "yes_price": 16,
       "no_price": 84,
       "created_time": "2026-08-06T11:20:53.258631Z"
-    },
-    {
-      "trade_id": "e94e1192-9c55-6460-9f16-513706cdcac1",
-      "tier": "Top 20",
-      "driver": "Todd Gilliland",
-      "ticker": "KXNASCARTOP20-IOWC3PB26-TOGI",
-      "side": "yes",
-      "count": 100,
-      "yes_price": 42,
-      "no_price": 58,
-      "created_time": "2026-08-06T11:16:24.842204Z"
-    },
-    {
-      "trade_id": "dc5dd0a6-5ef6-6eff-84c2-577f1b9f3632",
-      "tier": "Top 20",
-      "driver": "Todd Gilliland",
-      "ticker": "KXNASCARTOP20-IOWC3PB26-TOGI",
-      "side": "yes",
-      "count": 13,
-      "yes_price": 43,
-      "no_price": 57,
-      "created_time": "2026-08-06T11:16:24.842204Z"
-    },
-    {
-      "trade_id": "3b923110-fa37-6766-b34f-91a2b2a60c5f",
-      "tier": "Top 20",
-      "driver": "Todd Gilliland",
-      "ticker": "KXNASCARTOP20-IOWC3PB26-TOGI",
-      "side": "yes",
-      "count": 59,
-      "yes_price": 41,
-      "no_price": 59,
-      "created_time": "2026-08-06T11:16:24.842204Z"
-    },
-    {
-      "trade_id": "c5b4e4bc-b9e4-4358-f51a-38a02d187f20",
-      "tier": "Winner",
-      "driver": "Denny Hamlin",
-      "ticker": "KXNASCARRACE-IOWC3PB26-DEHA",
-      "side": "yes",
-      "count": 58,
-      "yes_price": 15,
-      "no_price": 85,
-      "created_time": "2026-08-06T11:02:12.767059Z"
-    },
-    {
-      "trade_id": "f420bafd-d30e-5e19-f144-db9e3a8e3ef9",
-      "tier": "Winner",
-      "driver": "Christopher Bell",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBE",
-      "side": "yes",
-      "count": 55,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-08-06T11:01:50.384337Z"
-    },
-    {
-      "trade_id": "f75bb7bd-e112-58ba-6f23-69572c469ea2",
-      "tier": "Winner",
-      "driver": "Carson Hocevar",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CAHO",
-      "side": "yes",
-      "count": 31,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-08-06T11:01:24.385661Z"
     }
   ]
 }
