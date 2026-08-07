@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-07T01:43:46.474512+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Top 10: 55c -> 60c (-150, +5pp)
+- **Ricky Stenhouse** Top 10: 6c -> 10c (+900, +4pp)
+- **William Byron** Top 5: 36c -> 39c (+156, +3pp)
+- **Chris Buescher** Top 10: 32c -> 35c (+186, +3pp)
+
+_leader win YES 16c · scraped 2026-08-07T01:43:46.474512+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-06T08:02:31.917197+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
