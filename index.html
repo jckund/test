@@ -257,8 +257,9 @@
         <span class="edge pos">green</span> means the book's line is <b>longer than Kalshi's</b>
         (positive EV), <span class="edge neg">red</span> means negative. Rows are sorted by the
         <b>best EV across books</b>. Book odds include vig. For each driver, the
-        <span class="best-swatch"></span> <b>highlighted</b> book price is the <b>best (longest-payout)
-        number</b> available across the books (shown when two or more books quote the driver).
+        <span class="best-swatch"></span> <b>highlighted</b> cell is the <b>best (longest-payout)
+        number</b> to back that driver across <b>Kalshi (Yes) and the books</b> — so a highlighted
+        book means it's beating Kalshi's price. (Shown when two or more quotes exist.)
       </div>
       <div class="cmp-fresh" id="cmp-fresh"></div>
       <section class="card">
@@ -946,19 +947,26 @@ async function renderCompare() {
       const ev = (d && typeof d.american === "number") ? evPct(kp, d.american) : null;
       return { american: d ? d.american : null, ev };
     });
-    // Mark the best (longest-payout) book price for this driver. Compare decimal
-    // payout so +/- American odds sort correctly; needs >=2 books quoting to bother.
+    // Mark the best (longest-payout) price to BACK this driver — Kalshi's Yes
+    // buy price included alongside the books. Compare decimal payout so ±American
+    // and the Kalshi cents price sort together; Kalshi Yes at c¢ pays 100/c.
+    // Needs >=2 quotes total (Kalshi + a book, or two books) to be worth marking.
     const decOf = (a) => a == null ? null : (a > 0 ? 1 + a / 100 : 1 + 100 / (-a));
+    const kYes = kal[k] ? kal[k].yes : null;
+    const kYesDec = (typeof kYes === "number" && kYes > 0) ? 100 / kYes : null;
     const decs = cells.map((c) => decOf(c.american));
-    const present = decs.filter((d) => d != null);
-    const maxDec = present.length >= 2 ? Math.max(...present) : null;
-    if (maxDec != null) cells.forEach((c, idx) => { c.best = decs[idx] != null && Math.abs(decs[idx] - maxDec) < 1e-9; });
+    const pool = decs.filter((d) => d != null).concat(kYesDec != null ? [kYesDec] : []);
+    const maxDec = pool.length >= 2 ? Math.max(...pool) : null;
+    let kBest = false;
+    if (maxDec != null) {
+      cells.forEach((c, idx) => { c.best = decs[idx] != null && Math.abs(decs[idx] - maxDec) < 1e-9; });
+      kBest = kYesDec != null && Math.abs(kYesDec - maxDec) < 1e-9;
+    }
     const evs = cells.map((c) => c.ev).filter((e) => e != null);
     merged.push({
       name: (kal[k] && kal[k].name) || (books.map((bk) => bookMaps[bk.key][k]).find(Boolean) || {}).name || k,
-      kYes: kal[k] ? kal[k].yes : null,
-      kNo: kal[k] ? kal[k].no : null,
-      kp, cells,
+      kYes, kNo: kal[k] ? kal[k].no : null,
+      kp, cells, kBest,
       bestEV: evs.length ? Math.max(...evs) : null,
     });
   }
@@ -982,7 +990,7 @@ async function renderCompare() {
     tr.innerHTML =
       `<td class="l rank ${i === 0 && r.bestEV != null && r.bestEV > 0 ? "top" : ""}">${i + 1}</td>` +
       `<td class="l driver">${escapeHtml(r.name)}</td>` +
-      `<td class="num">${kalCell}</td>` + bookCells;
+      `<td class="num${r.kBest ? " best" : ""}">${kalCell}</td>` + bookCells;
     rows.appendChild(tr);
   });
   $("cmp-count").textContent = merged.length + " drivers";
