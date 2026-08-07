@@ -1,7 +1,51 @@
 {
-  "updated_at": "2026-08-07T22:21:15.979870+00:00",
+  "updated_at": "2026-08-07T23:07:13.371911+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "60315ad6-82ee-412d-232d-fd5a332b835b",
+      "tier": "Winner",
+      "driver": "Ross Chastain",
+      "ticker": "KXNASCARRACE-HYVP26-ROCH",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 14,
+      "no_price": 86,
+      "created_time": "2026-08-07T23:03:05.296527Z"
+    },
+    {
+      "trade_id": "fbb12cd0-5a72-40d8-0f42-cc7325ee8f22",
+      "tier": "Winner",
+      "driver": "Sam Mayer",
+      "ticker": "KXNASCARRACE-HYVP26-SAMA",
+      "side": "yes",
+      "count": 28,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-07T22:49:02.804528Z"
+    },
+    {
+      "trade_id": "a0f040f0-818e-532d-8dfb-a314fdaef783",
+      "tier": "Winner",
+      "driver": "Ross Chastain",
+      "ticker": "KXNASCARRACE-HYVP26-ROCH",
+      "side": "yes",
+      "count": 50,
+      "yes_price": 14,
+      "no_price": 86,
+      "created_time": "2026-08-07T22:45:29.696781Z"
+    },
+    {
+      "trade_id": "f4f8307c-62d2-50a4-1e79-b8efa5955a4f",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-HYVP26-JUAL",
+      "side": "yes",
+      "count": 45,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-08-07T22:24:16.168997Z"
+    },
     {
       "trade_id": "40c0e0c3-4eba-5114-f5bf-52f9710ee87f",
       "tier": "Winner",
@@ -1607,50 +1651,6 @@
       "yes_price": 15,
       "no_price": 85,
       "created_time": "2026-08-07T20:07:22.78122Z"
-    },
-    {
-      "trade_id": "570bfc71-213d-540d-3401-79d50bf99d3b",
-      "tier": "Winner",
-      "driver": "Sammy Smith",
-      "ticker": "KXNASCARRACE-HYVP26-SASM",
-      "side": "no",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-08-07T20:06:33.177029Z"
-    },
-    {
-      "trade_id": "cac9e898-a1d5-5a62-4fef-f958b0953330",
-      "tier": "Winner",
-      "driver": "Sheldon Creed",
-      "ticker": "KXNASCARRACE-HYVP26-SHCR",
-      "side": "no",
-      "count": 1,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-08-07T20:06:33.176966Z"
-    },
-    {
-      "trade_id": "5eddcb50-538d-50ae-243f-0067afc95e0b",
-      "tier": "Winner",
-      "driver": "Austin Hill",
-      "ticker": "KXNASCARRACE-HYVP26-AUHI",
-      "side": "no",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-08-07T20:06:33.176962Z"
-    },
-    {
-      "trade_id": "40da4ddd-9302-45b8-5052-0174c875fe15",
-      "tier": "Winner",
-      "driver": "Taylor Gray",
-      "ticker": "KXNASCARRACE-HYVP26-TAGR",
-      "side": "no",
-      "count": 1,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-08-07T20:06:33.176962Z"
     }
   ]
 }
