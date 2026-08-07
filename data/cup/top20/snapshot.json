@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-COZI",
       "volume": 293,
-      "volume_24h": 26,
+      "volume_24h": 10,
       "yes_ask": 39,
       "yes_bid": 38
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-JONE",
       "volume": 469,
-      "volume_24h": 127,
+      "volume_24h": 0,
       "yes_ask": 46,
       "yes_bid": 41
     },
@@ -346,16 +346,16 @@
       "yes_bid": 22
     },
     "KXNASCARTOP20-IOWC3PB26-RIHE": {
-      "last_price": 31,
+      "last_price": 32,
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 74,
       "no_bid": 68,
-      "open_interest": 522,
+      "open_interest": 525,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-RIHE",
-      "volume": 522,
-      "volume_24h": 0,
+      "volume": 525,
+      "volume_24h": 3,
       "yes_ask": 32,
       "yes_bid": 26
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-07T20:09:45.553464+00:00",
+  "scraped_at": "2026-08-07T20:56:30.646833+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top20"
 }

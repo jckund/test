@@ -1,7 +1,106 @@
 {
-  "updated_at": "2026-08-07T20:29:00.862156+00:00",
+  "updated_at": "2026-08-07T20:57:43.644062+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "31f66d78-c841-6dae-27ca-7cf2c37ca103",
+      "tier": "Winner",
+      "driver": "Christopher Bell",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CHBE",
+      "side": "yes",
+      "count": 222,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-07T20:33:46.042481Z"
+    },
+    {
+      "trade_id": "a16e2791-3f96-4f7e-be3b-d7a2b199322c",
+      "tier": "Winner",
+      "driver": "Denny Hamlin",
+      "ticker": "KXNASCARRACE-IOWC3PB26-DEHA",
+      "side": "yes",
+      "count": 176,
+      "yes_price": 15,
+      "no_price": 85,
+      "created_time": "2026-08-07T20:32:21.065331Z"
+    },
+    {
+      "trade_id": "b33083b6-c33b-66bc-523f-9b7573555ff6",
+      "tier": "Top 10",
+      "driver": "Daniel Su\u00e1rez",
+      "ticker": "KXNASCARTOP10-IOWC3PB26-DASU",
+      "side": "yes",
+      "count": 118,
+      "yes_price": 25,
+      "no_price": 75,
+      "created_time": "2026-08-07T20:31:44.408622Z"
+    },
+    {
+      "trade_id": "ceb88756-4dc5-4350-84b6-a03d3eab1dbf",
+      "tier": "Top 20",
+      "driver": "Riley Herbst",
+      "ticker": "KXNASCARTOP20-IOWC3PB26-RIHE",
+      "side": "yes",
+      "count": 3,
+      "yes_price": 32,
+      "no_price": 68,
+      "created_time": "2026-08-07T20:30:52.118533Z"
+    },
+    {
+      "trade_id": "7d5c98e3-874d-7bfd-1a49-0bebb7b2304b",
+      "tier": "Winner",
+      "driver": "Ryan Blaney",
+      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
+      "side": "yes",
+      "count": 28,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-07T20:30:12.651112Z"
+    },
+    {
+      "trade_id": "4bb70701-8623-7c84-2497-4fa586d711cc",
+      "tier": "Winner",
+      "driver": "Ryan Blaney",
+      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-07T20:30:12.651112Z"
+    },
+    {
+      "trade_id": "039d331e-c4cd-77bf-12a6-14fe22a1acd6",
+      "tier": "Winner",
+      "driver": "Ryan Blaney",
+      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
+      "side": "yes",
+      "count": 71,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-07T20:30:12.651112Z"
+    },
+    {
+      "trade_id": "d2d6f5ec-2df1-663b-e494-d49e4f11fc9b",
+      "tier": "Winner",
+      "driver": "Joey Logano",
+      "ticker": "KXNASCARRACE-IOWC3PB26-JOLO",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-08-07T20:29:03.077434Z"
+    },
+    {
+      "trade_id": "844300bf-d225-5c32-3848-6b8471edd4e7",
+      "tier": "Top 5",
+      "driver": "Ty Gibbs",
+      "ticker": "KXNASCARTOP5-IOWC3PB26-TYGI",
+      "side": "yes",
+      "count": 18,
+      "yes_price": 27,
+      "no_price": 73,
+      "created_time": "2026-08-07T20:28:40.089895Z"
+    },
     {
       "trade_id": "6be44719-1bc5-5e4e-c97e-7597aaf3e003",
       "tier": "Top 5",
@@ -1552,105 +1651,6 @@
       "yes_price": 43,
       "no_price": 57,
       "created_time": "2026-08-07T16:08:00.336293Z"
-    },
-    {
-      "trade_id": "437b0dc3-d52d-58e0-2ae7-4076a891fb46",
-      "tier": "Top 20",
-      "driver": "Todd Gilliland",
-      "ticker": "KXNASCARTOP20-IOWC3PB26-TOGI",
-      "side": "no",
-      "count": 67,
-      "yes_price": 44,
-      "no_price": 56,
-      "created_time": "2026-08-07T16:08:00.336293Z"
-    },
-    {
-      "trade_id": "34e91b63-1200-4b47-f5c4-5a36e226ff54",
-      "tier": "Winner",
-      "driver": "William Byron",
-      "ticker": "KXNASCARRACE-IOWC3PB26-WIBY",
-      "side": "yes",
-      "count": 101,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-08-07T15:55:33.257293Z"
-    },
-    {
-      "trade_id": "958837c4-cbd4-4c77-9437-cedee74fcc58",
-      "tier": "Winner",
-      "driver": "Brad Keselowski",
-      "ticker": "KXNASCARRACE-IOWC3PB26-BRKE",
-      "side": "yes",
-      "count": 96,
-      "yes_price": 4,
-      "no_price": 96,
-      "created_time": "2026-08-07T15:52:04.370077Z"
-    },
-    {
-      "trade_id": "ceb4d1a4-e3e8-6dc4-cc4e-9d100417fec9",
-      "tier": "Winner",
-      "driver": "Denny Hamlin",
-      "ticker": "KXNASCARRACE-IOWC3PB26-DEHA",
-      "side": "yes",
-      "count": 30,
-      "yes_price": 15,
-      "no_price": 85,
-      "created_time": "2026-08-07T15:50:59.3521Z"
-    },
-    {
-      "trade_id": "222f63fb-bfdc-7749-4dab-42632029cd0c",
-      "tier": "Winner",
-      "driver": "Ryan Blaney",
-      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
-      "side": "yes",
-      "count": 111,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-08-07T15:50:46.975201Z"
-    },
-    {
-      "trade_id": "aa719dcb-315a-4748-3e92-a9b0f54f3195",
-      "tier": "Winner",
-      "driver": "Carson Hocevar",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CAHO",
-      "side": "yes",
-      "count": 241,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-08-07T15:49:52.013146Z"
-    },
-    {
-      "trade_id": "8eec47f1-2a5a-4494-15e8-f4cc53da06e9",
-      "tier": "Winner",
-      "driver": "Carson Hocevar",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CAHO",
-      "side": "yes",
-      "count": 24,
-      "yes_price": 3,
-      "no_price": 97,
-      "created_time": "2026-08-07T15:49:30.323253Z"
-    },
-    {
-      "trade_id": "4010a242-251c-6bce-cefe-6c7f891ece48",
-      "tier": "Winner",
-      "driver": "Austin Dillon",
-      "ticker": "KXNASCARRACE-IOWC3PB26-AUDI",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-08-07T15:44:54.092634Z"
-    },
-    {
-      "trade_id": "74178562-9a37-4cc6-220b-6c224bcea4c8",
-      "tier": "Winner",
-      "driver": "Cole Custer",
-      "ticker": "KXNASCARRACE-IOWC3PB26-COCU",
-      "side": "yes",
-      "count": 23,
-      "yes_price": 1,
-      "no_price": 99,
-      "created_time": "2026-08-07T15:44:35.834355Z"
     }
   ]
 }
