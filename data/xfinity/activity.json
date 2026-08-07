@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-08-07T21:38:23.413702+00:00",
+  "updated_at": "2026-08-07T22:21:15.979870+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "40c0e0c3-4eba-5114-f5bf-52f9710ee87f",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-HYVP26-JUAL",
+      "side": "yes",
+      "count": 36,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-08-07T22:16:24.324175Z"
+    },
+    {
+      "trade_id": "76591fb3-49e9-48e7-eb23-5b4ddd46027a",
+      "tier": "Winner",
+      "driver": "Rajah Caruth",
+      "ticker": "KXNASCARRACE-HYVP26-RACA",
+      "side": "yes",
+      "count": 1,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-08-07T22:14:41.325393Z"
+    },
+    {
+      "trade_id": "cc1d392c-eba6-7e74-ffad-1e66cf7e373b",
+      "tier": "Winner",
+      "driver": "Justin Allgaier",
+      "ticker": "KXNASCARRACE-HYVP26-JUAL",
+      "side": "yes",
+      "count": 14,
+      "yes_price": 20,
+      "no_price": 80,
+      "created_time": "2026-08-07T22:11:13.216165Z"
+    },
     {
       "trade_id": "85f1e964-04f2-4a1c-9018-fe479f70bcb3",
       "tier": "Winner",
@@ -1618,39 +1651,6 @@
       "yes_price": 9,
       "no_price": 91,
       "created_time": "2026-08-07T20:06:33.176962Z"
-    },
-    {
-      "trade_id": "445b1cb4-b778-6cca-83dc-07c74f58f63a",
-      "tier": "Winner",
-      "driver": "William Sawalich",
-      "ticker": "KXNASCARRACE-HYVP26-WISA",
-      "side": "no",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-08-07T20:06:33.176954Z"
-    },
-    {
-      "trade_id": "564829b6-218c-78e4-af66-c1411bd53ae6",
-      "tier": "Winner",
-      "driver": "Brent Crews",
-      "ticker": "KXNASCARRACE-HYVP26-BRCR",
-      "side": "no",
-      "count": 1,
-      "yes_price": 10,
-      "no_price": 90,
-      "created_time": "2026-08-07T20:06:33.17694Z"
-    },
-    {
-      "trade_id": "72659eb3-c614-73b4-bd52-fd736b7b7251",
-      "tier": "Winner",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARRACE-HYVP26-CAKV",
-      "side": "no",
-      "count": 1,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-08-07T20:06:33.176943Z"
     }
   ]
 }

@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-ALBO",
       "volume": 123,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 11,
       "yes_bid": 9
     },
@@ -393,11 +393,11 @@
       "name": "Ryan Blaney",
       "no_ask": 45,
       "no_bid": 43,
-      "open_interest": 5393,
+      "open_interest": 5396,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-RYBL",
-      "volume": 5481,
-      "volume_24h": 37,
+      "volume": 5484,
+      "volume_24h": 41,
       "yes_ask": 57,
       "yes_bid": 55
     },
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 67,
-      "no_bid": 61,
+      "no_bid": 63,
       "open_interest": 5563,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-WIBY",
       "volume": 5563,
       "volume_24h": 248,
-      "yes_ask": 39,
+      "yes_ask": 37,
       "yes_bid": 33
     },
     "KXNASCARTOP5-IOWC3PB26-ZASM": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-07T21:33:56.239220+00:00",
+  "scraped_at": "2026-08-07T22:16:54.870051+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top5"
 }
