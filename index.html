@@ -1319,14 +1319,25 @@ function renderTeams(snap) {
   }));
   const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
   totals.sort((a, b) => b.sum - a.sum);
+  // Canonicalize each book's team-name keys ("Trackhouse Racing Team" ->
+  // "Trackhouse Racing", "Hass Factory Team" -> "Haas Factory Team") so a lookup
+  // by our canonical team name hits regardless of how the book spelled it.
+  const bookTeamMap = {};
+  for (const bk of books) {
+    const m = {};
+    for (const [raw, fm] of Object.entries(TEAMDATA[bk.key].winner)) m[teamCanon(raw) || raw] = fm;
+    bookTeamMap[bk.key] = m;
+  }
+  // The "Kalshi" column is the team's SUMMED driver win probability (Kalshi has
+  // no team market), shown as implied American odds for a like-for-like compare.
   $("team-win-head").innerHTML =
-    `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
+    `<th class="l">Team</th><th>Win chance</th><th>Kalshi</th>` +
     books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("team-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
     const bookCells = books.map((bk) => {
-      const fm = TEAMDATA[bk.key].winner[t.team];
-      // EV of a $1 bet at the book's posted odds vs Kalshi's midpoint team prob.
+      const fm = bookTeamMap[bk.key][t.team];
+      // EV of a $1 bet at the book's posted odds vs Kalshi's summed team prob.
       const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
