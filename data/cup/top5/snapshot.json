@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-JOBE",
       "volume": 108,
-      "volume_24h": 77,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -388,16 +388,16 @@
       "yes_bid": 11
     },
     "KXNASCARTOP5-IOWC3PB26-RYBL": {
-      "last_price": 55,
+      "last_price": 57,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 45,
       "no_bid": 43,
-      "open_interest": 5388,
+      "open_interest": 5393,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-RYBL",
-      "volume": 5476,
-      "volume_24h": 32,
+      "volume": 5481,
+      "volume_24h": 37,
       "yes_ask": 57,
       "yes_bid": 55
     },
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Ty Gibbs",
       "no_ask": 77,
-      "no_bid": 73,
+      "no_bid": 74,
       "open_interest": 440,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-TYGI",
       "volume": 440,
       "volume_24h": 21,
-      "yes_ask": 27,
+      "yes_ask": 26,
       "yes_bid": 23
     },
     "KXNASCARTOP5-IOWC3PB26-TYRE": {
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 67,
-      "no_bid": 63,
+      "no_bid": 61,
       "open_interest": 5563,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-WIBY",
       "volume": 5563,
       "volume_24h": 248,
-      "yes_ask": 37,
+      "yes_ask": 39,
       "yes_bid": 33
     },
     "KXNASCARTOP5-IOWC3PB26-ZASM": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-07T20:56:29.782902+00:00",
+  "scraped_at": "2026-08-07T21:33:56.239220+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top5"
 }
