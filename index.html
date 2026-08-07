@@ -1308,26 +1308,26 @@ function renderTeams(snap) {
       `<td class="num${tint}">${evCell(ev)}</td>`;
   };
 
-  // "Which team wins": summed win prob per team, normalized across teams.
-  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  // "Which team wins": summed driver win prob per team, de-vigged across teams.
+  // EV prices against this same Kalshi midpoint (the "Win chance" shown). A
+  // per-driver worst-case (bid) floor is meaningless once summed over a multi-car
+  // team — thin longshot bids collapse to ~0 and crater the EV (e.g. a 3-car
+  // longshot team would show wildly -EV even at a fair price).
   const totals = present.map((k) => ({
     team: k,
     sum: groups[k].reduce((a, d) => a + d.p, 0),
-    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
   }));
   const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
-  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
   totals.sort((a, b) => b.sum - a.sum);
   $("team-win-head").innerHTML =
     `<th class="l">Team</th><th>Win chance</th><th>Implied odds</th>` +
     books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("team-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
-    const pnW = t.sumW / grandW;
     const bookCells = books.map((bk) => {
       const fm = TEAMDATA[bk.key].winner[t.team];
-      // EV of a $1 bet at the book's posted odds, worst-case Kalshi team prob as truth.
-      const ev = fm && typeof fm.american === "number" ? evPct(pnW, fm.american) : null;
+      // EV of a $1 bet at the book's posted odds vs Kalshi's midpoint team prob.
+      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
