@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 97,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-AUCI",
       "volume": 20,
-      "volume_24h": 13,
-      "yes_ask": 7,
+      "volume_24h": 0,
+      "yes_ask": 8,
       "yes_bid": 3
     },
     "KXNASCARTOP3-IOWC3PB26-AUDI": {
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-BRKE",
       "volume": 469,
-      "volume_24h": 9,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 6
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-CAHO",
       "volume": 53,
-      "volume_24h": 53,
+      "volume_24h": 47,
       "yes_ask": 11,
       "yes_bid": 6
     },
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 67,
-      "no_bid": 65,
+      "no_bid": 64,
       "open_interest": 516,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-CHBE",
       "volume": 516,
-      "volume_24h": 3,
-      "yes_ask": 35,
+      "volume_24h": 0,
+      "yes_ask": 36,
       "yes_bid": 33
     },
     "KXNASCARTOP3-IOWC3PB26-CHBR": {
@@ -234,7 +234,7 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-IOWC3PB26-DEHA": {
-      "last_price": 36,
+      "last_price": 35,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 67,
@@ -242,8 +242,8 @@
       "open_interest": 447,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-DEHA",
-      "volume": 447,
-      "volume_24h": 66,
+      "volume": 448,
+      "volume_24h": 67,
       "yes_ask": 35,
       "yes_bid": 33
     },
@@ -266,26 +266,26 @@
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 99,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 111,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-JOBE",
       "volume": 111,
       "volume_24h": 111,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 1
     },
     "KXNASCARTOP3-IOWC3PB26-JOLO": {
-      "last_price": 23,
+      "last_price": 22,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 82,
       "no_bid": 78,
-      "open_interest": 374,
+      "open_interest": 375,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-JOLO",
-      "volume": 374,
-      "volume_24h": 93,
+      "volume": 375,
+      "volume_24h": 63,
       "yes_ask": 22,
       "yes_bid": 18
     },
@@ -294,13 +294,13 @@
       "liquidity": 0.0,
       "name": "John H. Nemechek",
       "no_ask": 100,
-      "no_bid": 94,
+      "no_bid": 95,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-JONE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 6,
+      "yes_ask": 5,
       "yes_bid": 0
     },
     "KXNASCARTOP3-IOWC3PB26-KYLA": {
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-RYBL",
       "volume": 896,
-      "volume_24h": 43,
+      "volume_24h": 0,
       "yes_ask": 36,
       "yes_bid": 35
     },
@@ -486,18 +486,18 @@
       "yes_bid": 13
     },
     "KXNASCARTOP3-IOWC3PB26-WIBY": {
-      "last_price": 23,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 79,
-      "no_bid": 77,
-      "open_interest": 476,
+      "no_ask": 78,
+      "no_bid": 76,
+      "open_interest": 589,
       "status": "active",
       "ticker": "KXNASCARTOP3-IOWC3PB26-WIBY",
-      "volume": 476,
-      "volume_24h": 0,
-      "yes_ask": 23,
-      "yes_bid": 21
+      "volume": 589,
+      "volume_24h": 113,
+      "yes_ask": 24,
+      "yes_bid": 22
     },
     "KXNASCARTOP3-IOWC3PB26-ZASM": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-07T01:43:47.008753+00:00",
+  "scraped_at": "2026-08-07T06:00:55.032917+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top3"
 }
