@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-08-07T23:40:02.959368+00:00",
+  "updated_at": "2026-08-07T23:47:10.344444+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "7cc229c0-5774-4df3-a8ac-c73abb22598a",
+      "tier": "Winner",
+      "driver": "Kyle Larson",
+      "ticker": "KXNASCARRACE-IOWC3PB26-KYLA",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-08-07T23:40:43.956569Z"
+    },
     {
       "trade_id": "e78d0fc4-3528-7e86-9dac-ae7d4640142c",
       "tier": "Winner",
@@ -1640,17 +1651,6 @@
       "yes_price": 15,
       "no_price": 85,
       "created_time": "2026-08-07T17:54:46.268602Z"
-    },
-    {
-      "trade_id": "3525b69f-fd04-44c9-4da6-3cdd8187ddac",
-      "tier": "Winner",
-      "driver": "Ryan Blaney",
-      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
-      "side": "yes",
-      "count": 59,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-08-07T17:52:38.168449Z"
     }
   ]
 }
