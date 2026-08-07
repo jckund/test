@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-08-07T23:07:13.371911+00:00",
+  "updated_at": "2026-08-07T23:42:45.363745+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "4ff3471c-52d2-5041-c1e9-f8eb1f2a29af",
+      "tier": "Winner",
+      "driver": "Nicholas Sanchez",
+      "ticker": "KXNASCARRACE-HYVP26-NISA",
+      "side": "yes",
+      "count": 561,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-08-07T23:37:17.670355Z"
+    },
+    {
+      "trade_id": "beb0a282-72ea-433a-cf39-d1c574137b20",
+      "tier": "Winner",
+      "driver": "Corey Day",
+      "ticker": "KXNASCARRACE-HYVP26-CODA",
+      "side": "yes",
+      "count": 70,
+      "yes_price": 4,
+      "no_price": 96,
+      "created_time": "2026-08-07T23:36:07.959481Z"
+    },
+    {
+      "trade_id": "71bb22b6-7f16-7a5c-cf3c-d4516c920a4f",
+      "tier": "Top 3",
+      "driver": "Sammy Smith",
+      "ticker": "KXNASCARTOP3-HYVP26-SASM",
+      "side": "yes",
+      "count": 9,
+      "yes_price": 11,
+      "no_price": 89,
+      "created_time": "2026-08-07T23:29:39.471601Z"
+    },
     {
       "trade_id": "60315ad6-82ee-412d-232d-fd5a332b835b",
       "tier": "Winner",
@@ -1618,39 +1651,6 @@
       "yes_price": 13,
       "no_price": 87,
       "created_time": "2026-08-07T20:07:22.781456Z"
-    },
-    {
-      "trade_id": "e35aca8b-1a86-7275-4806-0d9cf4b41537",
-      "tier": "Winner",
-      "driver": "Rajah Caruth",
-      "ticker": "KXNASCARRACE-HYVP26-RACA",
-      "side": "no",
-      "count": 1,
-      "yes_price": 2,
-      "no_price": 98,
-      "created_time": "2026-08-07T20:07:22.781454Z"
-    },
-    {
-      "trade_id": "c3e3788b-83a5-6c4c-3182-9e94aad69af3",
-      "tier": "Winner",
-      "driver": "Justin Allgaier",
-      "ticker": "KXNASCARRACE-HYVP26-JUAL",
-      "side": "no",
-      "count": 1,
-      "yes_price": 21,
-      "no_price": 79,
-      "created_time": "2026-08-07T20:07:22.781449Z"
-    },
-    {
-      "trade_id": "ddd4a84c-aa2e-5acf-7578-52eb870c0da1",
-      "tier": "Winner",
-      "driver": "Sam Mayer",
-      "ticker": "KXNASCARRACE-HYVP26-SAMA",
-      "side": "no",
-      "count": 1,
-      "yes_price": 15,
-      "no_price": 85,
-      "created_time": "2026-08-07T20:07:22.78122Z"
     }
   ]
 }
