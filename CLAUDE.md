@@ -146,6 +146,15 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
   site before trusting the output.
 - **`trades.py`** — biggest Kalshi trades from `alerts.jsonl`, splitting directional
   YES/NO from the field-lay harvest. `python trades.py [--hours N | --date YYYY-MM-DD]`.
+- **`gen_stages.py` / `stages.py`** — hand-entered **stage/pole** markets (Stage 1,
+  Stage 2, pole "which driver wins"). Kalshi doesn't list these, so there's **no fair
+  anchor** — it's a **book-vs-book** view only. `gen_stages.write_stages("<book>.json",
+  "<Book>", {"pole": rows, "stage1": rows, "stage2": rows})` writes
+  `data/cup/stages/<book>.json` (de-vigged, 1 winner; reuses `gen_books` canon; not
+  read by the dashboard). `python stages.py [pole|stage1|stage2|all]` lines the books
+  up per driver with a consensus + deviation and flags soft lines. Stage 1 is largely a
+  track-position market (anchor to pole/grid, not the win market); Stage 2 adds pit
+  strategy; both carry heavy vig (~180%) so only relative/book-vs-book value matters.
 
 ## Analysis conventions
 
