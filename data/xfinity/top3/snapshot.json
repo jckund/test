@@ -55,7 +55,7 @@
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Brent Crews",
-      "no_ask": 81,
+      "no_ask": 80,
       "no_bid": 76,
       "open_interest": 618,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 817,
       "volume_24h": 0,
       "yes_ask": 24,
-      "yes_bid": 19
+      "yes_bid": 20
     },
     "KXNASCARTOP3-HYVP26-BRJO": {
       "last_price": 0,
@@ -276,16 +276,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-HYVP26-JUAL": {
-      "last_price": 48,
+      "last_price": 46,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 58,
       "no_bid": 54,
-      "open_interest": 616,
+      "open_interest": 658,
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-JUAL",
-      "volume": 636,
-      "volume_24h": 584,
+      "volume": 678,
+      "volume_24h": 617,
       "yes_ask": 46,
       "yes_bid": 42
     },
@@ -444,17 +444,17 @@
       "yes_bid": 4
     },
     "KXNASCARTOP3-HYVP26-SAMA": {
-      "last_price": 33,
+      "last_price": 27,
       "liquidity": 0.0,
       "name": "Sam Mayer",
       "no_ask": 72,
-      "no_bid": 67,
-      "open_interest": 1150,
+      "no_bid": 68,
+      "open_interest": 1149,
       "status": "active",
       "ticker": "KXNASCARTOP3-HYVP26-SAMA",
-      "volume": 1152,
-      "volume_24h": 37,
-      "yes_ask": 33,
+      "volume": 1213,
+      "volume_24h": 137,
+      "yes_ask": 32,
       "yes_bid": 28
     },
     "KXNASCARTOP3-HYVP26-SASM": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-08T05:56:40.938189+00:00",
+  "scraped_at": "2026-08-08T06:38:51.296615+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-hyvp26",
   "tier": "top3"
 }
