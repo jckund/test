@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-08T10:58:09.000524+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Dillon** Top 10: 27c -> 20c (+400, -7pp)
+- **Christopher Bell** Top 3: 36c -> 31c (+223, -5pp)
+- **Cole Custer** Top 10: 5c -> 9c (+1011, +4pp)
+- **Christopher Bell** Top 5: 53c -> 49c (+104, -4pp)
+- **Christopher Bell** Top 10: 71c -> 67c (-203, -4pp)
+- **Austin Cindric** Top 5: 10c -> 13c (+669, +3pp)
+- **Daniel Suárez** Top 10: 22c -> 25c (+300, +3pp)
+
+_leader win YES 16c · scraped 2026-08-08T10:58:09.000524+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T10:22:09.202349+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
