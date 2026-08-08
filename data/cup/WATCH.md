@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-08T21:53:53.317055+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 10: 31c -> 24c (+317, -7pp)
+- **Ross Chastain** Top 10: 25c -> 30c (+233, +5pp)
+- **William Byron** Win: 5c -> 8c (+1150, +3pp)
+- **Chase Briscoe** Top 10: 57c -> 54c (-117, -3pp)
+
+_leader win YES 28c · scraped 2026-08-08T21:53:53.317055+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T21:22:53.310918+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
