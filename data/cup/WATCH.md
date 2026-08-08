@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-08-08T23:51:56.432182+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Bubba Wallace** Top 10: 45c -> 41c (+144, -4pp)
+- **Austin Cindric** Top 5: 14c -> 17c (+488, +3pp)
+- **Carson Hocevar** Top 3: 12c -> 15c (+567, +3pp)
+
+_leader win YES 26c · scraped 2026-08-08T23:51:56.432182+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T22:19:30.904954+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
