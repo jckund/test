@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-08T20:18:50.484640+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Top 10: 57c -> 97c (-3233, +40pp)
+- **Joey Logano** Top 10: 59c -> 87c (-669, +28pp)
+- **Brad Keselowski** Top 10: 52c -> 31c (+223, -21pp)
+- **Denny Hamlin** Top 10: 67c -> 48c (+108, -19pp)
+- **Christopher Bell** Top 10: 71c -> 56c (-127, -15pp)
+- **Denny Hamlin** Top 5: 55c -> 43c (+133, -12pp)
+- **Bubba Wallace** Top 10: 48c -> 38c (+163, -10pp)
+- **Riley Herbst** Top 10: 9c -> 18c (+456, +9pp)
+- **Christopher Bell** Top 5: 49c -> 40c (+150, -9pp)
+- **Shane Van Gisbergen** Top 10: 31c -> 22c (+355, -9pp)
+- (+16 more)
+
+_leader win YES 23c · scraped 2026-08-08T20:18:50.484640+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T19:50:53.870208+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
