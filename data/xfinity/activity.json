@@ -1,7 +1,29 @@
 {
-  "updated_at": "2026-08-08T08:24:23.182990+00:00",
+  "updated_at": "2026-08-08T09:12:31.627981+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "b0c5b6c7-ddab-49b2-f862-2db457565e2d",
+      "tier": "Winner",
+      "driver": "Ross Chastain",
+      "ticker": "KXNASCARRACE-HYVP26-ROCH",
+      "side": "yes",
+      "count": 41,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-08T08:25:22.288851Z"
+    },
+    {
+      "trade_id": "17a7afbe-b1d7-5f45-d836-a413000a9890",
+      "tier": "Winner",
+      "driver": "Sam Mayer",
+      "ticker": "KXNASCARRACE-HYVP26-SAMA",
+      "side": "yes",
+      "count": 41,
+      "yes_price": 16,
+      "no_price": 84,
+      "created_time": "2026-08-08T08:25:11.925216Z"
+    },
     {
       "trade_id": "387f2094-d656-66ad-7499-b9469f312d15",
       "tier": "Winner",
@@ -1629,28 +1651,6 @@
       "yes_price": 9,
       "no_price": 91,
       "created_time": "2026-08-08T03:05:10.99006Z"
-    },
-    {
-      "trade_id": "5dad6af0-4c8d-70da-4549-032508361988",
-      "tier": "Top 10",
-      "driver": "Corey Day",
-      "ticker": "KXNASCARTOP10-HYVP26-CODA",
-      "side": "yes",
-      "count": 17,
-      "yes_price": 56,
-      "no_price": 44,
-      "created_time": "2026-08-08T03:04:52.449436Z"
-    },
-    {
-      "trade_id": "9e8bac2c-5a93-5d5f-05a0-9379e8795ca2",
-      "tier": "Winner",
-      "driver": "Carson Kvapil",
-      "ticker": "KXNASCARRACE-HYVP26-CAKV",
-      "side": "yes",
-      "count": 52,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-08-08T03:04:44.895584Z"
     }
   ]
 }
