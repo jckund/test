@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-CHBE",
       "volume": 17,
-      "volume_24h": 8,
+      "volume_24h": 0,
       "yes_ask": 91,
       "yes_bid": 85
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-CHBR",
       "volume": 21,
-      "volume_24h": 9,
+      "volume_24h": 0,
       "yes_ask": 79,
       "yes_bid": 73
     },
@@ -210,28 +210,28 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 62,
-      "no_bid": 61,
+      "no_bid": 60,
       "open_interest": 292,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-COZI",
       "volume": 293,
       "volume_24h": 0,
-      "yes_ask": 39,
+      "yes_ask": 40,
       "yes_bid": 38
     },
     "KXNASCARTOP20-IOWC3PB26-DASU": {
-      "last_price": 60,
+      "last_price": 64,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 44,
-      "no_bid": 38,
-      "open_interest": 197,
+      "no_ask": 41,
+      "no_bid": 35,
+      "open_interest": 352,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-DASU",
-      "volume": 197,
-      "volume_24h": 0,
-      "yes_ask": 62,
-      "yes_bid": 56
+      "volume": 352,
+      "volume_24h": 155,
+      "yes_ask": 65,
+      "yes_bid": 59
     },
     "KXNASCARTOP20-IOWC3PB26-DEHA": {
       "last_price": 84,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-DEHA",
       "volume": 24,
-      "volume_24h": 14,
+      "volume_24h": 6,
       "yes_ask": 89,
       "yes_bid": 85
     },
@@ -350,20 +350,20 @@
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 78,
-      "no_bid": 75,
+      "no_bid": 74,
       "open_interest": 418,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-RIHE",
       "volume": 996,
       "volume_24h": 475,
-      "yes_ask": 25,
+      "yes_ask": 26,
       "yes_bid": 22
     },
     "KXNASCARTOP20-IOWC3PB26-RIST": {
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
-      "no_ask": 67,
+      "no_ask": 69,
       "no_bid": 65,
       "open_interest": 0,
       "status": "active",
@@ -371,7 +371,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 35,
-      "yes_bid": 33
+      "yes_bid": 31
     },
     "KXNASCARTOP20-IOWC3PB26-ROCH": {
       "last_price": 62,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-TYGI",
       "volume": 63,
-      "volume_24h": 9,
+      "volume_24h": 0,
       "yes_ask": 78,
       "yes_bid": 72
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-08T02:54:20.164610+00:00",
+  "scraped_at": "2026-08-08T04:06:28.566345+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top20"
 }
