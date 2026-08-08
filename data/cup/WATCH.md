@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-08T19:50:53.870208+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Dillon** Top 10: 17c -> 36c (+178, +19pp)
+- **Todd Gilliland** Top 10: 43c -> 31c (+223, -12pp)
+- **Daniel Suárez** Top 10: 36c -> 25c (+300, -11pp)
+- **Alex Bowman** Top 10: 39c -> 30c (+233, -9pp)
+- **Ryan Preece** Top 10: 42c -> 35c (+186, -7pp)
+- **Shane Van Gisbergen** Top 10: 37c -> 31c (+223, -6pp)
+- **John H. Nemechek** Top 10: 32c -> 26c (+285, -6pp)
+- **William Byron** Top 10: 56c -> 52c (-108, -4pp)
+- **Carson Hocevar** Top 10: 42c -> 38c (+163, -4pp)
+- **Bubba Wallace** Top 10: 52c -> 48c (+108, -4pp)
+- (+1 more)
+
+_leader win YES 20c · scraped 2026-08-08T19:50:53.870208+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T19:23:36.794043+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
