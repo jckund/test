@@ -167,15 +167,15 @@
       "last_price": 78,
       "liquidity": 0.0,
       "name": "Chase Elliott",
-      "no_ask": 27,
-      "no_bid": 20,
+      "no_ask": 26,
+      "no_bid": 21,
       "open_interest": 99,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-CHEL",
       "volume": 99,
-      "volume_24h": 0,
-      "yes_ask": 80,
-      "yes_bid": 73
+      "volume_24h": 99,
+      "yes_ask": 79,
+      "yes_bid": 74
     },
     "KXNASCARTOP20-IOWC3PB26-COCU": {
       "last_price": 26,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-DEHA",
       "volume": 58,
-      "volume_24h": 6,
+      "volume_24h": 40,
       "yes_ask": 89,
       "yes_bid": 83
     },
@@ -378,13 +378,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 38,
-      "no_bid": 36,
+      "no_bid": 37,
       "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-ROCH",
       "volume": 8,
       "volume_24h": 3,
-      "yes_ask": 64,
+      "yes_ask": 63,
       "yes_bid": 62
     },
     "KXNASCARTOP20-IOWC3PB26-RYBL": {
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 39,
-      "no_bid": 37,
+      "no_bid": 33,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-RYPR",
       "volume": 100,
-      "volume_24h": 0,
-      "yes_ask": 63,
+      "volume_24h": 100,
+      "yes_ask": 67,
       "yes_bid": 61
     },
     "KXNASCARTOP20-IOWC3PB26-SHVA": {
@@ -433,7 +433,7 @@
       "last_price": 44,
       "liquidity": 0.0,
       "name": "Todd Gilliland",
-      "no_ask": 61,
+      "no_ask": 62,
       "no_bid": 56,
       "open_interest": 1590,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 1892,
       "volume_24h": 309,
       "yes_ask": 44,
-      "yes_bid": 39
+      "yes_bid": 38
     },
     "KXNASCARTOP20-IOWC3PB26-TYDI": {
       "last_price": 21,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-08T10:58:11.408827+00:00",
+  "scraped_at": "2026-08-08T11:27:39.383197+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top20"
 }
