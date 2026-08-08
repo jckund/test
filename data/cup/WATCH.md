@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-08T19:23:36.794043+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 10: 19c -> 31c (+223, +12pp)
+- **John H. Nemechek** Top 10: 23c -> 32c (+212, +9pp)
+- **Carson Hocevar** Top 10: 33c -> 42c (+138, +9pp)
+- **Ryan Blaney** Top 3: 37c -> 45c (+122, +8pp)
+- **Erik Jones** Top 5: 10c -> 16c (+525, +6pp)
+- **Christopher Bell** Top 10: 66c -> 71c (-245, +5pp)
+- **Bubba Wallace** Top 10: 47c -> 52c (-108, +5pp)
+- **William Byron** Top 10: 61c -> 56c (-127, -5pp)
+- **Kyle Larson** Win: 5c -> 8c (+1150, +3pp)
+- **Christopher Bell** Top 3: 33c -> 36c (+178, +3pp)
+- (+1 more)
+
+_leader win YES 20c · scraped 2026-08-08T19:23:36.794043+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T18:55:40.351251+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
