@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-08-08T09:53:18.471809+00:00",
+  "updated_at": "2026-08-08T10:23:21.498134+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "c5a34d99-fa7b-4f39-2f19-d04b7a6d6274",
+      "tier": "Winner",
+      "driver": "Erik Jones",
+      "ticker": "KXNASCARRACE-IOWC3PB26-ERJO",
+      "side": "yes",
+      "count": 1870,
+      "yes_price": 1,
+      "no_price": 99,
+      "created_time": "2026-08-08T10:17:06.455638Z"
+    },
+    {
+      "trade_id": "c96c4f98-a8bb-4647-8a18-99e1a41112c5",
+      "tier": "Winner",
+      "driver": "Carson Hocevar",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CAHO",
+      "side": "yes",
+      "count": 312,
+      "yes_price": 3,
+      "no_price": 97,
+      "created_time": "2026-08-08T10:17:01.84851Z"
+    },
+    {
+      "trade_id": "9bc8f219-fbe7-4510-922d-b9078fcaf24b",
+      "tier": "Top 10",
+      "driver": "Chase Briscoe",
+      "ticker": "KXNASCARTOP10-IOWC3PB26-CHBR",
+      "side": "yes",
+      "count": 124,
+      "yes_price": 58,
+      "no_price": 42,
+      "created_time": "2026-08-08T10:00:56.907804Z"
+    },
+    {
+      "trade_id": "1885253b-2cf1-49cb-8e19-12e9328b4d40",
+      "tier": "Top 10",
+      "driver": "Chase Briscoe",
+      "ticker": "KXNASCARTOP10-IOWC3PB26-CHBR",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-08-08T10:00:56.907804Z"
+    },
+    {
+      "trade_id": "17b7db5c-7022-4678-b622-31fec9454d6b",
+      "tier": "Top 10",
+      "driver": "Chase Briscoe",
+      "ticker": "KXNASCARTOP10-IOWC3PB26-CHBR",
+      "side": "yes",
+      "count": 100,
+      "yes_price": 59,
+      "no_price": 41,
+      "created_time": "2026-08-08T10:00:56.907804Z"
+    },
+    {
+      "trade_id": "1e756901-005b-6647-cd46-2c7c08582a4e",
+      "tier": "Winner",
+      "driver": "Christopher Bell",
+      "ticker": "KXNASCARRACE-IOWC3PB26-CHBE",
+      "side": "yes",
+      "count": 674,
+      "yes_price": 14,
+      "no_price": 86,
+      "created_time": "2026-08-08T09:59:56.433641Z"
+    },
     {
       "trade_id": "f7fe9fce-82df-4749-6622-eb926f538c84",
       "tier": "Winner",
@@ -1585,72 +1651,6 @@
       "yes_price": 8,
       "no_price": 92,
       "created_time": "2026-08-08T03:11:58.854954Z"
-    },
-    {
-      "trade_id": "a9897ac9-4245-67a1-0f1d-40d92990e2cf",
-      "tier": "Winner",
-      "driver": "Chase Briscoe",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBR",
-      "side": "yes",
-      "count": 1174,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-08-08T03:11:52.114774Z"
-    },
-    {
-      "trade_id": "fb484192-45f5-6568-de4e-5e215d1d8869",
-      "tier": "Winner",
-      "driver": "Chase Briscoe",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBR",
-      "side": "yes",
-      "count": 851,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-08-08T03:11:45.044547Z"
-    },
-    {
-      "trade_id": "8108423c-55b9-6c8d-e658-e1940a65c1b3",
-      "tier": "Winner",
-      "driver": "Chase Briscoe",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBR",
-      "side": "yes",
-      "count": 123,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-08-08T03:11:45.044547Z"
-    },
-    {
-      "trade_id": "0db3e4f5-856b-6ac5-d894-022033c1fce1",
-      "tier": "Winner",
-      "driver": "Chase Briscoe",
-      "ticker": "KXNASCARRACE-IOWC3PB26-CHBR",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 8,
-      "no_price": 92,
-      "created_time": "2026-08-08T03:11:45.044547Z"
-    },
-    {
-      "trade_id": "1086fddd-10d5-4f99-a841-17a9f53cb013",
-      "tier": "Winner",
-      "driver": "Ryan Blaney",
-      "ticker": "KXNASCARRACE-IOWC3PB26-RYBL",
-      "side": "yes",
-      "count": 52,
-      "yes_price": 16,
-      "no_price": 84,
-      "created_time": "2026-08-08T03:01:15.615324Z"
-    },
-    {
-      "trade_id": "b0ad6bb0-04fc-7d33-f4cb-c9fbcb965ca2",
-      "tier": "Winner",
-      "driver": "Kyle Larson",
-      "ticker": "KXNASCARRACE-IOWC3PB26-KYLA",
-      "side": "yes",
-      "count": 52,
-      "yes_price": 9,
-      "no_price": 91,
-      "created_time": "2026-08-08T02:59:48.372807Z"
     }
   ]
 }
