@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-ERJO",
       "volume": 76,
-      "volume_24h": 4,
+      "volume_24h": 0,
       "yes_ask": 54,
       "yes_bid": 48
     },
@@ -374,18 +374,18 @@
       "yes_bid": 31
     },
     "KXNASCARTOP20-IOWC3PB26-ROCH": {
-      "last_price": 62,
+      "last_price": 69,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 38,
-      "no_bid": 36,
-      "open_interest": 7,
+      "no_ask": 36,
+      "no_bid": 31,
+      "open_interest": 113,
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-ROCH",
-      "volume": 8,
-      "volume_24h": 0,
-      "yes_ask": 64,
-      "yes_bid": 62
+      "volume": 116,
+      "volume_24h": 108,
+      "yes_ask": 69,
+      "yes_bid": 64
     },
     "KXNASCARTOP20-IOWC3PB26-RYBL": {
       "last_price": 82,
@@ -509,13 +509,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-IOWC3PB26-ZASM",
       "volume": 127,
-      "volume_24h": 32,
+      "volume_24h": 27,
       "yes_ask": 38,
       "yes_bid": 33
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-08T17:00:21.570114+00:00",
+  "scraped_at": "2026-08-08T17:44:05.264249+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top20"
 }
