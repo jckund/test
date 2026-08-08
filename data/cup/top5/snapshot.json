@@ -83,7 +83,7 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 79,
+      "no_ask": 80,
       "no_bid": 76,
       "open_interest": 1145,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 1148,
       "volume_24h": 10,
       "yes_ask": 24,
-      "yes_bid": 21
+      "yes_bid": 20
     },
     "KXNASCARTOP5-IOWC3PB26-BUWA": {
       "last_price": 0,
@@ -276,16 +276,16 @@
       "yes_bid": 7
     },
     "KXNASCARTOP5-IOWC3PB26-JOLO": {
-      "last_price": 38,
+      "last_price": 39,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 63,
       "no_bid": 61,
-      "open_interest": 4170,
+      "open_interest": 4181,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-JOLO",
-      "volume": 4174,
-      "volume_24h": 756,
+      "volume": 4185,
+      "volume_24h": 768,
       "yes_ask": 39,
       "yes_bid": 37
     },
@@ -393,11 +393,11 @@
       "name": "Ryan Blaney",
       "no_ask": 45,
       "no_bid": 44,
-      "open_interest": 5578,
+      "open_interest": 5579,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-RYBL",
-      "volume": 5666,
-      "volume_24h": 190,
+      "volume": 5667,
+      "volume_24h": 191,
       "yes_ask": 56,
       "yes_bid": 55
     },
@@ -461,28 +461,28 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 75,
+      "no_ask": 77,
       "no_bid": 73,
-      "open_interest": 2607,
+      "open_interest": 2807,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-TYGI",
-      "volume": 2607,
-      "volume_24h": 2188,
+      "volume": 2807,
+      "volume_24h": 2388,
       "yes_ask": 27,
-      "yes_bid": 25
+      "yes_bid": 23
     },
     "KXNASCARTOP5-IOWC3PB26-TYRE": {
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 76,
-      "no_bid": 74,
+      "no_bid": 73,
       "open_interest": 364,
       "status": "active",
       "ticker": "KXNASCARTOP5-IOWC3PB26-TYRE",
       "volume": 364,
       "volume_24h": 364,
-      "yes_ask": 26,
+      "yes_ask": 27,
       "yes_bid": 24
     },
     "KXNASCARTOP5-IOWC3PB26-WIBY": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-08T14:47:43.990986+00:00",
+  "scraped_at": "2026-08-08T15:20:44.921943+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
   "tier": "top5"
 }
