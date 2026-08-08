@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-08T12:28:52.259065+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 10: 67c -> 64c (-178, -3pp)
+
+_leader win YES 16c · scraped 2026-08-08T12:28:52.259065+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-08T10:58:09.000524+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
