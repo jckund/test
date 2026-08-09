@@ -75,6 +75,17 @@ SERIES = [
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 PAGE_BASE = "https://kalshi.com/markets/kxnascarrace/nascar-race"
 
+# Kalshi "which team/organization wins" market (Cup-only). Unlike the driver
+# tiers, its exact series ticker isn't known from the dev environment (Kalshi is
+# unreachable there), so discover_team_event() probes these likely spellings at
+# runtime and uses the first that yields markets — logging which one won so it
+# can be pinned to the front later. Override the list with KALSHI_TEAM_SERIES
+# (comma-separated) if the real ticker is known.
+TEAM_SERIES_CANDIDATES = [s for s in os.environ.get(
+    "KALSHI_TEAM_SERIES",
+    "KXNASCARTEAM,KXNASCARTEAMWIN,KXNASCARWINTEAM,KXNASCARTEAMWINNER,KXNASCARORG,KXNASCARTEAMS",
+).split(",") if s.strip()]
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(HERE, "data")
 SERIES_INDEX_PATH = os.path.join(DATA_DIR, "series.json")
@@ -205,6 +216,45 @@ def resolve_series(races: list) -> list:
             if r["race_code"] not in used:
                 resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
     return resolved
+
+
+def discover_team_event(race_title: str, race_code: str):
+    """Best-effort locate the Cup 'which team/org wins' event on Kalshi.
+
+    The exact series ticker isn't known from the dev environment, so we try each
+    candidate in TEAM_SERIES_CANDIDATES: first the direct ``{series}-{race_code}``
+    event (team market sharing the winner event's race code), then enumerating
+    the candidate series' open events and matching this race by the Cup matchers
+    or race code. Uses single-attempt fetches so a wrong candidate fails fast
+    instead of burning the full retry/backoff. Returns (event_ticker,
+    series_ticker) or (None, None); logs what matched so the ticker can be pinned."""
+    cup_matchers = next((s["matchers"] for s in SERIES if s.get("key") == "cup"), [])
+    for cand in TEAM_SERIES_CANDIDATES:
+        direct = f"{cand}-{race_code}"
+        try:
+            raw = _get_json(f"{API_BASE}/events/{direct}?with_nested_markets=true", retries=1)
+            mk = raw.get("markets") or (raw.get("event") or {}).get("markets") or []
+            if mk:
+                print(f"  team: matched direct event {direct}", file=sys.stderr)
+                return direct, cand
+        except Exception as e:  # noqa: BLE001 - candidate miss, try the next
+            print(f"  team probe {direct}: {e}", file=sys.stderr)
+        try:
+            url = f"{API_BASE}/events?series_ticker={cand}&status=open&limit=200"
+            events = _get_json(url, retries=1).get("events", []) or []
+        except Exception as e:  # noqa: BLE001
+            print(f"  team series {cand}: enum failed ({e})", file=sys.stderr)
+            continue
+        for ev in events:
+            et = ev.get("event_ticker") or ""
+            hay = f"{ev.get('title', '')} {ev.get('sub_title', '')}".lower()
+            if (cup_matchers and any(m in hay for m in cup_matchers)) or \
+               (race_code and race_code.lower() in et.lower()):
+                print(f"  team: matched {et} under series {cand}", file=sys.stderr)
+                return et, cand
+        print(f"  team series {cand}: {len(events)} open event(s), no race match", file=sys.stderr)
+    print("  team: no candidate series yielded a Cup team market", file=sys.stderr)
+    return None, None
 
 
 # ---------------------------------------------------------------------------
@@ -696,6 +746,20 @@ def process_series(rs: dict) -> dict | None:
         return None
 
     build_index(events, series_dir, rs["race_title"], rs["page_url"])
+
+    # Cup-only "which team/org wins" market — a separate Kalshi series scraped
+    # into <series>/team/. Best-effort and kept OUT of `events` so it never feeds
+    # the driver tiers, index, activity, or alerting: a miss (or unknown ticker)
+    # just leaves the Team tab's synthesized driver-sum number in place.
+    if rs.get("full"):
+        try:
+            tev_ticker, _tev_series = discover_team_event(rs["race_title"], rs["race_code"])
+            if tev_ticker:
+                process_event({"key": "team", "label": "Team", "odds_label": "Team",
+                               "ticker": tev_ticker, "page_url": rs["page_url"]}, series_dir)
+        except Exception as e:  # noqa: BLE001 - team market is best-effort
+            print(f"team scrape failed for {rs['key']}: {e}", file=sys.stderr)
+
     try:
         build_activity(events, series_dir)
     except Exception as e:  # noqa: BLE001 - activity is best-effort

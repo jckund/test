@@ -76,6 +76,14 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   each run from the trades already paginated for alerting (no extra API calls),
   deduped by `trade_id`, pruned to `TRADES_WINDOW_HOURS` (default 6). Watched
   (Cup) series only. `$ = count * price/100`; use `yes_price`/`no_price` by `side`.
+- `data/cup/team/snapshot.json` — Kalshi's actual "which team/org wins" market
+  (Cup-only, best-effort). Same market shape as a tier. The scraper doesn't know
+  Kalshi's team-series ticker from dev, so `discover_team_event()` probes
+  `TEAM_SERIES_CANDIDATES` (override via `KALSHI_TEAM_SERIES`) and uses the first
+  that yields markets — check the CI log line `team: matched …` for the real
+  ticker and pin it to the front once known. The Team tab shows this as a
+  separate **Kalshi (Yes/No)** column beside the driver-sum **Implied** line; if
+  the market isn't found the column is hidden and only Implied shows.
 - `data/cup/fanduel/{odds,manufacturers,teams}.json` — FanDuel scrape.
 - `data/cup/manual/<book>.json`, `mfr_<book>.json`, `team_<book>.json` — hand-entered
   books. Books: fanduel (auto), caesars, betus, betonline, betboss, prime.
