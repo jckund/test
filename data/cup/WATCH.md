@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-09T15:04:57.604119+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 5: 24c -> 20c (+400, -4pp)
+- **Denny Hamlin** Top 3: 28c -> 24c (+317, -4pp)
+- **Brad Keselowski** Top 3: 13c -> 9c (+1011, -4pp)
+- **Chase Elliott** Top 10: 35c -> 31c (+223, -4pp)
+- **Connor Zilisch** Top 5: 4c -> 7c (+1329, +3pp)
+- **John H. Nemechek** Top 10: 10c -> 13c (+669, +3pp)
+- **Tyler Reddick** Top 3: 21c -> 18c (+456, -3pp)
+
+_leader win YES 28c · scraped 2026-08-09T15:04:57.604119+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T14:33:28.324935+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
