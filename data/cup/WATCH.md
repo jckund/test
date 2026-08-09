@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-08-09T07:30:48.015084+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Dillon** Top 10: 21c -> 27c (+270, +6pp)
+- **Denny Hamlin** Top 10: 67c -> 61c (-156, -6pp)
+- **Denny Hamlin** Top 5: 40c -> 36c (+178, -4pp)
+- **Denny Hamlin** Top 3: 23c -> 20c (+400, -3pp)
+- **Michael McDowell** Top 10: 21c -> 18c (+456, -3pp)
+
+_leader win YES 29c · scraped 2026-08-09T07:30:48.015084+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T06:26:54.031533+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
