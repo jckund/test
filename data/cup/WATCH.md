@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-09T08:21:13.465407+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 10: 22c -> 19c (+426, -3pp)
+
+_leader win YES 29c · scraped 2026-08-09T08:21:13.465407+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T07:30:48.015084+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
