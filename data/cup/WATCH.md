@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-09T01:27:00.575194+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 10: 16c -> 5c (+1900, -11pp)
+- **Joey Logano** Top 10: 75c -> 80c (-400, +5pp)
+- **Ryan Blaney** Win: 28c -> 32c (+212, +4pp)
+- **Todd Gilliland** Top 10: 27c -> 31c (+223, +4pp)
+
+_leader win YES 32c · scraped 2026-08-09T01:27:00.575194+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T01:06:44.443793+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
