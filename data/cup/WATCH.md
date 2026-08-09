@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-09T15:44:24.712577+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Josh Berry** Top 10: 35c -> 40c (+150, +5pp)
+- **Austin Dillon** Top 5: 6c -> 10c (+900, +4pp)
+- **Todd Gilliland** Top 3: 5c -> 8c (+1150, +3pp)
+- **Zane Smith** Top 10: 14c -> 17c (+488, +3pp)
+- **Joey Logano** Top 10: 63c -> 66c (-194, +3pp)
+- **Chase Elliott** Top 10: 31c -> 34c (+194, +3pp)
+- **Chase Briscoe** Top 3: 17c -> 14c (+614, -3pp)
+
+_leader win YES 28c · scraped 2026-08-09T15:44:24.712577+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T15:04:57.604119+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
