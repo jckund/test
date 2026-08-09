@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-09T13:12:50.224254+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Elliott** Top 3: 19c -> 7c (+1329, -12pp)
+- **Tyler Reddick** Top 5: 26c -> 34c (+194, +8pp)
+- **Josh Berry** Top 3: 14c -> 7c (+1329, -7pp)
+- **William Byron** Top 10: 53c -> 59c (-144, +6pp)
+- **Christopher Bell** Top 3: 26c -> 20c (+400, -6pp)
+- **Christopher Bell** Top 10: 61c -> 66c (-194, +5pp)
+- **Denny Hamlin** Top 3: 26c -> 21c (+376, -5pp)
+- **Ricky Stenhouse** Top 5: 3c -> 7c (+1329, +4pp)
+- **Ross Chastain** Top 3: 15c -> 11c (+809, -4pp)
+- **Denny Hamlin** Top 10: 62c -> 58c (-138, -4pp)
+- (+6 more)
+
+_leader win YES 29c · scraped 2026-08-09T13:12:50.224254+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T12:00:57.312854+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
