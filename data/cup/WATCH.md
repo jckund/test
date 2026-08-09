@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-09T01:06:44.443793+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 82c -> 75c (-300, -7pp)
+- **Todd Gilliland** Top 10: 30c -> 27c (+270, -3pp)
+
+_leader win YES 28c · scraped 2026-08-09T01:06:44.443793+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T01:00:24.950013+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
