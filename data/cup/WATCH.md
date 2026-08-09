@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-08-09T14:33:28.324935+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Elliott** Top 10: 29c -> 35c (+186, +6pp)
+- **Ryan Blaney** Top 10: 71c -> 76c (-317, +5pp)
+- **Tyler Reddick** Top 5: 34c -> 30c (+233, -4pp)
+- **Brad Keselowski** Top 10: 43c -> 39c (+156, -4pp)
+- **Kyle Larson** Top 10: 63c -> 60c (-150, -3pp)
+- **Alex Bowman** Top 10: 27c -> 24c (+317, -3pp)
+
+_leader win YES 29c · scraped 2026-08-09T14:33:28.324935+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T13:58:11.702035+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
