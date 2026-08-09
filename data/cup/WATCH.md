@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-09T21:00:07.949242+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Connor Zilisch** Top 5: 1c -> 43c (+133, +42pp)
+- **Ricky Stenhouse** Top 5: 10c -> 42c (+138, +32pp)
+- **Denny Hamlin** Top 3: 16c -> 48c (+108, +32pp)
+- **Shane Van Gisbergen** Top 5: 49c -> 20c (+400, -29pp)
+- **Shane Van Gisbergen** Top 10: 69c -> 40c (+150, -29pp)
+- **Michael McDowell** Top 5: 9c -> 34c (+194, +25pp)
+- **Josh Berry** Top 10: 64c -> 89c (-809, +25pp)
+- **Bubba Wallace** Top 5: 49c -> 72c (-257, +23pp)
+- **Bubba Wallace** Top 3: 39c -> 60c (-150, +21pp)
+- **Austin Cindric** Top 3: 41c -> 20c (+400, -21pp)
+- (+37 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->20c (+4pp toward Bookmaker ~33c, now +400)
+
+_leader win YES 35c · scraped 2026-08-09T21:00:07.949242+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T20:21:18.109654+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
