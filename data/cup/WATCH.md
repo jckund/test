@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-08-09T17:09:17.001115+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 10: 4c -> 9c (+1011, +5pp)
+- **Austin Hill** Top 5: 3c -> 7c (+1329, +4pp)
+- **Michael McDowell** Top 10: 15c -> 19c (+426, +4pp)
+- **Noah Gragson** Top 5: 3c -> 6c (+1567, +3pp)
+- **Cole Custer** Top 5: 2c -> 5c (+1900, +3pp)
+- **AJ Allmendinger** Top 5: 3c -> 6c (+1567, +3pp)
+
+_leader win YES 30c · scraped 2026-08-09T17:09:17.001115+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T16:52:10.589357+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
