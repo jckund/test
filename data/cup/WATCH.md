@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-09T13:58:11.702035+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 20c -> 29c (+245, +9pp)
+- **Denny Hamlin** Top 3: 21c -> 28c (+257, +7pp)
+- **Denny Hamlin** Top 5: 32c -> 36c (+178, +4pp)
+- **Austin Dillon** Top 10: 24c -> 28c (+257, +4pp)
+- **Todd Gilliland** Top 10: 24c -> 27c (+270, +3pp)
+- **Joey Logano** Top 5: 43c -> 40c (+150, -3pp)
+- **Tyler Reddick** Top 10: 53c -> 50c (-100, -3pp)
+
+_leader win YES 29c · scraped 2026-08-09T13:58:11.702035+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T13:12:50.224254+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
