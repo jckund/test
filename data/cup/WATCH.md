@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-09T20:21:18.109654+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 10: 55c -> 1c (+9900, -54pp)
+- **Austin Hill** Top 10: 5c -> 54c (-117, +49pp)
+- **Zane Smith** Top 10: 31c -> 79c (-376, +48pp)
+- **Ty Dillon** Top 10: 8c -> 54c (-117, +46pp)
+- **Austin Dillon** Top 3: 6c -> 49c (+104, +43pp)
+- **Connor Zilisch** Top 10: 30c -> 69c (-223, +39pp)
+- **Zane Smith** Top 5: 6c -> 43c (+133, +37pp)
+- **Ty Dillon** Top 5: 7c -> 42c (+138, +35pp)
+- **Noah Gragson** Top 5: 7c -> 42c (+138, +35pp)
+- **Shane Van Gisbergen** Top 5: 15c -> 49c (+104, +34pp)
+- (+64 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->41c (+25pp toward Bookmaker ~33c, now +144)
+
+_leader win YES 47c · scraped 2026-08-09T20:21:18.109654+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T19:47:08.538270+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
