@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-09T18:07:41.959032+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 10: 37c -> 40c (+150, +3pp)
+- **Ryan Preece** Top 10: 19c -> 16c (+525, -3pp)
+
+_leader win YES 30c · scraped 2026-08-09T18:07:41.959032+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T17:55:27.026950+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
