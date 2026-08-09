@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-09T22:47:41.349156+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Win: 11c -> 99c (-9900, +88pp)
+- **Zane Smith** Top 10: 79c -> 3c (+3233, -76pp)
+- **Joey Logano** Top 10: 63c -> 1c (+9900, -62pp)
+- **Noah Gragson** Top 10: 59c -> 2c (+4900, -57pp)
+- **Ty Dillon** Top 10: 54c -> 1c (+9900, -53pp)
+- **Josh Berry** Top 5: 48c -> 99c (-9900, +51pp)
+- **Ty Gibbs** Top 3: 49c -> 99c (-9900, +50pp)
+- **Christopher Bell** Win: 47c -> 1c (+9900, -46pp)
+- **AJ Allmendinger** Top 10: 54c -> 99c (-9900, +45pp)
+- **Bubba Wallace** Top 5: 46c -> 2c (+4900, -44pp)
+- (+44 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->24c (+8pp toward Bookmaker ~33c, now +317)
+
+_leader win YES 99c · scraped 2026-08-09T22:47:41.349156+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T22:02:44.811579+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
