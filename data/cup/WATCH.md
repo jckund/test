@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-08-09T17:55:27.026950+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 10: 13c -> 17c (+488, +4pp)
+- **Ross Chastain** Top 5: 20c -> 23c (+335, +3pp)
+- **Michael McDowell** Top 5: 7c -> 4c (+2400, -3pp)
+
+_leader win YES 30c · scraped 2026-08-09T17:55:27.026950+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T17:22:59.128416+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
