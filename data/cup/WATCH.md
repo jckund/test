@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-09T16:52:10.589357+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Connor Zilisch** Top 10: 22c -> 26c (+285, +4pp)
+- **Austin Dillon** Top 5: 10c -> 7c (+1329, -3pp)
+
+_leader win YES 30c · scraped 2026-08-09T16:52:10.589357+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T16:04:55.846233+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
