@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-09T19:47:08.538270+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 10: 50c -> 1c (+9900, -49pp)
+- **Riley Herbst** Top 10: 7c -> 54c (-117, +47pp)
+- **Noah Gragson** Top 10: 7c -> 54c (-117, +47pp)
+- **Cody Ware** Top 3: 3c -> 49c (+104, +46pp)
+- **Michael McDowell** Top 10: 18c -> 64c (-178, +46pp)
+- **AJ Allmendinger** Top 10: 10c -> 54c (-117, +44pp)
+- **Zane Smith** Top 3: 6c -> 49c (+104, +43pp)
+- **Michael McDowell** Top 3: 5c -> 48c (+108, +43pp)
+- **Daniel Suárez** Top 3: 7c -> 49c (+104, +42pp)
+- **Connor Zilisch** Top 3: 7c -> 49c (+104, +42pp)
+- (+68 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->48c (+32pp toward Bookmaker ~33c, now +108)
+
+_leader win YES 42c · scraped 2026-08-09T19:47:08.538270+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T19:11:04.072422+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
