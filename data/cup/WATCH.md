@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-09T04:34:00.475858+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 10: 91c -> 72c (-257, -19pp)
+- **Connor Zilisch** Top 10: 30c -> 12c (+733, -18pp)
+- **Austin Dillon** Top 10: 35c -> 19c (+426, -16pp)
+- **Zane Smith** Top 10: 27c -> 13c (+669, -14pp)
+- **Erik Jones** Top 10: 35c -> 21c (+376, -14pp)
+- **Chase Briscoe** Top 5: 37c -> 24c (+317, -13pp)
+- **William Byron** Top 10: 60c -> 47c (+113, -13pp)
+- **Kyle Larson** Top 10: 74c -> 61c (-156, -13pp)
+- **Zane Smith** Top 5: 18c -> 6c (+1567, -12pp)
+- **Christopher Bell** Top 5: 54c -> 42c (+138, -12pp)
+- (+39 more)
+
+_leader win YES 29c · scraped 2026-08-09T04:34:00.475858+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T03:06:32.765920+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
