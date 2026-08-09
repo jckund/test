@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-09T17:22:59.128416+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 5: 8c -> 11c (+809, +3pp)
+- **Riley Herbst** Top 5: 3c -> 6c (+1567, +3pp)
+- **Ryan Preece** Top 10: 16c -> 19c (+426, +3pp)
+- **Ross Chastain** Top 10: 37c -> 40c (+150, +3pp)
+
+_leader win YES 30c · scraped 2026-08-09T17:22:59.128416+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T17:09:17.001115+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
