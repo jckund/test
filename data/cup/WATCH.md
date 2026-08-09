@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-09T06:26:54.031533+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 10: 48c -> 54c (-117, +6pp)
+- **John H. Nemechek** Top 10: 13c -> 19c (+426, +6pp)
+- **Ross Chastain** Top 3: 12c -> 16c (+525, +4pp)
+- **Josh Berry** Top 10: 30c -> 34c (+194, +4pp)
+
+_leader win YES 29c · scraped 2026-08-09T06:26:54.031533+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T05:32:37.807849+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
