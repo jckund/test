@@ -1,7 +1,73 @@
 {
-  "updated_at": "2026-08-13T00:53:34.209895+00:00",
+  "updated_at": "2026-08-13T01:06:08.867884+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "72dd99d2-559d-47a8-fd17-07685194e03c",
+      "tier": "Top 10",
+      "driver": "Riley Herbst",
+      "ticker": "KXNASCARTOP10-COOO81526-RIHE",
+      "side": "yes",
+      "count": 13,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-08-13T00:58:40.075967Z"
+    },
+    {
+      "trade_id": "4ee6a9d9-e5bc-4c6e-dcff-c927b93a0581",
+      "tier": "Top 10",
+      "driver": "Riley Herbst",
+      "ticker": "KXNASCARTOP10-COOO81526-RIHE",
+      "side": "yes",
+      "count": 141,
+      "yes_price": 10,
+      "no_price": 90,
+      "created_time": "2026-08-13T00:58:40.075967Z"
+    },
+    {
+      "trade_id": "a0e429ae-ba7e-4fcd-8341-71d526684e75",
+      "tier": "Winner",
+      "driver": "Kyle Larson",
+      "ticker": "KXNASCARRACE-COOO81526-KYLA",
+      "side": "yes",
+      "count": 4,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-08-13T00:57:44.070868Z"
+    },
+    {
+      "trade_id": "8577ef9c-e161-5d23-4128-26a16cca0887",
+      "tier": "Top 10",
+      "driver": "Austin Hill",
+      "ticker": "KXNASCARTOP10-COOO81526-AUHI",
+      "side": "yes",
+      "count": 25,
+      "yes_price": 18,
+      "no_price": 82,
+      "created_time": "2026-08-13T00:57:31.63227Z"
+    },
+    {
+      "trade_id": "619ceb4f-5fad-607e-e623-15bb68a5f2a5",
+      "tier": "Top 10",
+      "driver": "Tyler Reddick",
+      "ticker": "KXNASCARTOP10-COOO81526-TYRE",
+      "side": "yes",
+      "count": 10,
+      "yes_price": 48,
+      "no_price": 52,
+      "created_time": "2026-08-13T00:56:45.294461Z"
+    },
+    {
+      "trade_id": "fe2d0210-b22e-77ee-aa60-2ed6e4f7ed83",
+      "tier": "Top 10",
+      "driver": "Riley Herbst",
+      "ticker": "KXNASCARTOP10-COOO81526-RIHE",
+      "side": "yes",
+      "count": 26,
+      "yes_price": 9,
+      "no_price": 91,
+      "created_time": "2026-08-13T00:53:37.221102Z"
+    },
     {
       "trade_id": "b619eb22-d565-584b-da0c-a0eca81f5f22",
       "tier": "Top 10",
@@ -1585,72 +1651,6 @@
       "yes_price": 48,
       "no_price": 52,
       "created_time": "2026-08-12T23:05:55.983561Z"
-    },
-    {
-      "trade_id": "ec745e1b-c185-6f7b-133b-353d64b8e220",
-      "tier": "Winner",
-      "driver": "Bubba Wallace",
-      "ticker": "KXNASCARRACE-COOO81526-BUWA",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-08-12T23:05:45.054297Z"
-    },
-    {
-      "trade_id": "259e1558-2826-640a-2d44-e515e18c8873",
-      "tier": "Winner",
-      "driver": "Bubba Wallace",
-      "ticker": "KXNASCARRACE-COOO81526-BUWA",
-      "side": "yes",
-      "count": 1000,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-08-12T23:05:45.054297Z"
-    },
-    {
-      "trade_id": "21bbcdaa-6599-680c-2f7c-902d939f6aff",
-      "tier": "Winner",
-      "driver": "Bubba Wallace",
-      "ticker": "KXNASCARRACE-COOO81526-BUWA",
-      "side": "yes",
-      "count": 274,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-08-12T23:05:45.054297Z"
-    },
-    {
-      "trade_id": "4d040e66-282b-7093-5e38-cb4a6aed7592",
-      "tier": "Winner",
-      "driver": "Denny Hamlin",
-      "ticker": "KXNASCARRACE-COOO81526-DEHA",
-      "side": "yes",
-      "count": 5,
-      "yes_price": 18,
-      "no_price": 82,
-      "created_time": "2026-08-12T23:05:16.709835Z"
-    },
-    {
-      "trade_id": "db7e15a1-d2f3-78b7-01e9-10fd4b4c2756",
-      "tier": "Winner",
-      "driver": "Denny Hamlin",
-      "ticker": "KXNASCARRACE-COOO81526-DEHA",
-      "side": "yes",
-      "count": 16,
-      "yes_price": 18,
-      "no_price": 82,
-      "created_time": "2026-08-12T23:03:28.995301Z"
-    },
-    {
-      "trade_id": "716b514b-9c90-46cb-d309-99d39e2c9a28",
-      "tier": "Top 10",
-      "driver": "Chase Briscoe",
-      "ticker": "KXNASCARTOP10-COOO81526-CHBR",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 42,
-      "no_price": 58,
-      "created_time": "2026-08-12T22:58:28.630664Z"
     }
   ]
 }
