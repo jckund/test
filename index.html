@@ -739,6 +739,7 @@ const CMP_TIERS = [
 // others are entered manually from posted odds (stamped with a capture time).
 const BOOKS = [
   { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
+  { key: "sg", label: "SG (model)", url: "manual/sg.json", live: false, model: true },
   { key: "betus", label: "BetUS", url: "manual/betus.json", live: false },
   { key: "caesars", label: "Caesars", url: "manual/caesars.json", live: false },
   { key: "prime", label: "Prime", url: "manual/prime.json", live: false },
@@ -944,8 +945,10 @@ async function renderCompare() {
       const d = bookMaps[bk.key][k] || null;
       // EV of a $1 bet at this book's odds, with Kalshi implied prob as truth.
       // Positive = book line longer than Kalshi → pays more than fair → +EV.
-      const ev = (d && typeof d.american === "number") ? evPct(kp, d.american) : null;
-      return { american: d ? d.american : null, ev };
+      // Model sources (e.g. SG) aren't bettable — show their odds as a reference
+      // only: no EV, and excluded from the best-price star below.
+      const ev = (!bk.model && d && typeof d.american === "number") ? evPct(kp, d.american) : null;
+      return { american: d ? d.american : null, ev, model: !!bk.model };
     });
     // Mark the best (longest-payout) price to BACK this driver — Kalshi's Yes
     // buy price included alongside the books. Compare decimal payout so ±American
@@ -954,7 +957,7 @@ async function renderCompare() {
     const decOf = (a) => a == null ? null : (a > 0 ? 1 + a / 100 : 1 + 100 / (-a));
     const kYes = kal[k] ? kal[k].yes : null;
     const kYesDec = (typeof kYes === "number" && kYes > 0) ? 100 / kYes : null;
-    const decs = cells.map((c) => decOf(c.american));
+    const decs = cells.map((c) => c.model ? null : decOf(c.american));
     const pool = decs.filter((d) => d != null).concat(kYesDec != null ? [kYesDec] : []);
     const maxDec = pool.length >= 2 ? Math.max(...pool) : null;
     let kBest = false;
@@ -1042,6 +1045,7 @@ function usFromProb(p) {
 // others are entered manually from posted odds (stamped with a capture time).
 const MFR_BOOKS = [
   { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
+  { key: "sg", label: "SG (model)", url: "manual/mfr_sg.json", live: false, model: true },
   { key: "betus", label: "BetUS", url: "manual/mfr_betus.json", live: false },
   { key: "prime", label: "Prime", url: "manual/mfr_prime.json", live: false },
   { key: "caesars", label: "Caesars", url: "manual/mfr_caesars.json", live: false },
@@ -1142,7 +1146,8 @@ function renderManufacturers(snap) {
       // as the fair line (midpoint-normalized). Worst-case normalization is not
       // monotonic within a make — illiquid longshots collapse to 0 and inflate the
       // favorite's share — so it must not drive EV. See top-make note below.
-      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      // Model sources (SG) are reference-only: show odds, no EV.
+      const ev = !bk.model && fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     return `<tr>
@@ -1172,7 +1177,7 @@ function renderManufacturers(snap) {
         // the worst-case normalization: collapsing illiquid longshots to 0 shrinks
         // the denominator and falsely inflates the liquid favorite (e.g. Larson),
         // flagging shorter-than-fair lines as +EV. Match EV to the shown fair line.
-        const ev = dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
+        const ev = !bk.model && dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
         return bookPair(dd ? dd.american : null, ev);
       }).join("");
       return `<tr>
@@ -1247,6 +1252,7 @@ function teamCanon(name) {
 
 const TEAM_BOOKS = [
   { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
+  { key: "sg", label: "SG (model)", url: "manual/team_sg.json", live: false, model: true },
   { key: "caesars", label: "Caesars", url: "manual/team_caesars.json", live: false },
   { key: "prime", label: "Prime", url: "manual/team_prime.json", live: false },
   { key: "betus", label: "BetUS", url: "manual/team_betus.json", live: false },
@@ -1357,7 +1363,8 @@ function renderTeams(snap, kteam) {
     const bookCells = books.map((bk) => {
       const fm = bookTeamMap[bk.key][t.team];
       // EV of a $1 bet at the book's posted odds vs Kalshi's summed team prob.
-      const ev = fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
+      // Model sources (SG) are reference-only: show odds, no EV.
+      const ev = !bk.model && fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
       return bookPair(fm ? fm.american : null, ev);
     }).join("");
     let kCell = "";

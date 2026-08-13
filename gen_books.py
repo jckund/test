@@ -53,7 +53,7 @@ CANON = [
     "Austin Dillon", "Erik Jones", "Michael McDowell", "Zane Smith", "AJ Allmendinger",
     "Shane Van Gisbergen", "Josh Berry", "Connor Zilisch", "Todd Gilliland", "Riley Herbst",
     "John H. Nemechek", "Noah Gragson", "Ty Dillon", "Cole Custer", "Cody Ware", "BJ McLeod",
-    "Chad Finchum", "Corey Heim", "Casey Mears", "Daniel Dye",
+    "Chad Finchum", "Corey Heim", "Casey Mears", "Daniel Dye", "Josh Bilicki",
 ]
 
 
