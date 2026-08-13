@@ -1,32 +1,33 @@
 {
-  "updated_at": "2026-08-13T00:45:55.970741+00:00",
+  "updated_at": "2026-08-13T00:56:47.033562+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "Black's Tire 250 presented by BTS Rewards at Richmond Raceway",
+      "race_title": "Cook Out 400",
       "full": true,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooo81526",
+      "tiers": [
+        "winner",
+        "top3",
+        "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-08-13T00:55:11.535000+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
+      "race_title": "Black's Tire 250 presented by BTS Rewards at Richmond Raceway",
+      "full": false,
       "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blat2pbbrar26",
       "tiers": [
         "winner",
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-08-13T00:44:56.489004+00:00"
-    },
-    {
-      "key": "xfinity",
-      "label": "Support race",
-      "race_title": "Cook Out 400",
-      "full": false,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooo81526",
-      "tiers": [
-        "winner",
-        "top3",
-        "top5",
-        "top10"
-      ],
-      "scraped_at": "2026-08-13T00:45:55.970706+00:00"
+      "scraped_at": "2026-08-13T00:56:47.033524+00:00"
     }
   ]
 }
