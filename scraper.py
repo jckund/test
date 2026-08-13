@@ -64,11 +64,11 @@ WINNER_SERIES = "KXNASCARRACE"
 # names — a race that matches nothing falls to the `xfinity` default. Update the
 # substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    {"key": "cup", "label": "NASCAR", "matchers": ["iowa corn", "corn 350"],
+    {"key": "cup", "label": "NASCAR", "matchers": ["richmond", "cook out 400"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": ["tsport", "t-sport"],
+    {"key": "truck", "label": "Trucks", "matchers": ["blacks tire", "blacks tire 250"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    {"key": "xfinity", "label": "HyVee Perks 250", "matchers": [], "default": True,
+    {"key": "xfinity", "label": "Support race", "matchers": [], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
