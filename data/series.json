@@ -1,20 +1,32 @@
 {
-  "updated_at": "2026-08-09T22:50:12.103173+00:00",
+  "updated_at": "2026-08-13T00:45:55.970741+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "Iowa Corn 350 Powered by Ethanol",
+      "race_title": "Black's Tire 250 presented by BTS Rewards at Richmond Raceway",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-iowc3pb26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blat2pbbrar26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-08-13T00:44:56.489004+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Support race",
+      "race_title": "Cook Out 400",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooo81526",
       "tiers": [
         "winner",
         "top3",
         "top5",
-        "top10",
-        "top20"
+        "top10"
       ],
-      "scraped_at": "2026-08-09T22:50:12.100895+00:00"
+      "scraped_at": "2026-08-13T00:45:55.970706+00:00"
     }
   ]
 }

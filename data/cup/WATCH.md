@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-08-13T00:41:17.556936+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 95c -> 32c (+212, -63pp)
+- **Shane Van Gisbergen** Top 10: 40c -> 71c (-245, +31pp)
+- **Christopher Bell** Top 10: 99c -> 79c (-376, -20pp)
+- **Christopher Bell** Win: 1c -> 13c (+669, +12pp)
+- **Shane Van Gisbergen** Win: 1c -> 5c (+1900, +4pp)
+- **Shane Van Gisbergen** Top 3: 24c -> 20c (+400, -4pp)
+
+_leader win YES 26c · scraped 2026-08-13T00:41:17.556936+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-09T22:47:41.349156+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
