@@ -738,8 +738,8 @@ const CMP_TIERS = [
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
   { key: "sg", label: "SG (model)", url: "manual/sg.json", live: false, model: true },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
   { key: "betus", label: "BetUS", url: "manual/betus.json", live: false },
   { key: "caesars", label: "Caesars", url: "manual/caesars.json", live: false },
   { key: "prime", label: "Prime", url: "manual/prime.json", live: false },
@@ -1044,8 +1044,8 @@ function usFromProb(p) {
 // Books carrying manufacturer markets. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const MFR_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
   { key: "sg", label: "SG (model)", url: "manual/mfr_sg.json", live: false, model: true },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
   { key: "betus", label: "BetUS", url: "manual/mfr_betus.json", live: false },
   { key: "prime", label: "Prime", url: "manual/mfr_prime.json", live: false },
   { key: "caesars", label: "Caesars", url: "manual/mfr_caesars.json", live: false },
@@ -1251,8 +1251,8 @@ function teamCanon(name) {
 }
 
 const TEAM_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
   { key: "sg", label: "SG (model)", url: "manual/team_sg.json", live: false, model: true },
+  { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
   { key: "caesars", label: "Caesars", url: "manual/team_caesars.json", live: false },
   { key: "prime", label: "Prime", url: "manual/team_prime.json", live: false },
   { key: "betus", label: "BetUS", url: "manual/team_betus.json", live: false },
