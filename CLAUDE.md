@@ -126,6 +126,20 @@ carrying forward a prior capture. (Exception: a partial screenshot that's clearl
 just cut off mid-board — e.g. the bottom longshots scrolled off — is not the same as
 a tier being dropped; keep the off-screen rows for that same tier.)
 
+**Clear stale data on every refresh (STANDING RULE — IMPORTANT).** Whenever doing a
+refresh/deploy, proactively sweep the whole board for stale data and drop it — don't
+wait to be asked. Stale = not from the current capture cycle. This covers:
+- **Manual markets not re-provided** — a book's mfr/team/finish tier absent from the
+  latest capture (per the don't-carry-forward rule above). Applies across all books.
+- **Auto-scraped markets that stopped updating** — e.g. FanDuel `manufacturers.json` /
+  `teams.json` whose `scraped_at` lags `odds.json` by many hours means FanDuel pulled
+  that market (common on race day); delete the stale file (the scraper recreates it if
+  the market returns). Compare each auto file's timestamp to the freshest one.
+- **Concluded/settled support races** — once a support race (e.g. the Truck race) has
+  run, drop its hand books; its Kalshi data settles on its own.
+Sanity-check timestamps (`captured_at` / `scraped_at`) against the current race day and
+against the freshest sibling file before publishing; flag or drop anything that lags.
+
 **Capture completeness (IMPORTANT):** For every book **except Prime**, transcribe the
 **full board** — a single mid-pack or longshot driver moving meaningfully matters, so
 never shortcut to just the favorites. **Prime only** is the exception: its sportsbook
