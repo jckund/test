@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-15T22:18:12.541734+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Michael McDowell** Top 10: 17c -> 11c (+809, -6pp)
+- **Joey Logano** Top 3: 31c -> 36c (+178, +5pp)
+- **Chase Elliott** Top 5: 24c -> 19c (+426, -5pp)
+- **Zane Smith** Top 10: 10c -> 14c (+614, +4pp)
+- **Riley Herbst** Top 10: 9c -> 13c (+669, +4pp)
+- **Austin Cindric** Top 5: 18c -> 14c (+614, -4pp)
+- **Chase Elliott** Top 3: 17c -> 13c (+669, -4pp)
+- **Chase Briscoe** Top 10: 62c -> 58c (-138, -4pp)
+- **Carson Hocevar** Top 10: 25c -> 21c (+376, -4pp)
+- **Austin Hill** Top 10: 11c -> 7c (+1329, -4pp)
+- (+6 more)
+
+_leader win YES 21c · scraped 2026-08-15T22:18:12.541734+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-15T17:48:34.875315+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
