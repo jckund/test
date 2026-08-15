@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-15T15:55:20.213376+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 9c -> 16c (+525, +7pp)
+- **Chris Buescher** Top 10: 27c -> 20c (+400, -7pp)
+- **Michael McDowell** Top 10: 17c -> 23c (+335, +6pp)
+- **Erik Jones** Top 10: 17c -> 13c (+669, -4pp)
+- **Todd Gilliland** Top 10: 9c -> 12c (+733, +3pp)
+- **Chase Elliott** Top 10: 46c -> 49c (+104, +3pp)
+- **Austin Cindric** Top 5: 19c -> 16c (+525, -3pp)
+
+_leader win YES 21c · scraped 2026-08-15T15:55:20.213376+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-15T15:17:37.755023+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
