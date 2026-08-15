@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-15T17:48:34.875315+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 16c -> 9c (+1011, -7pp)
+- **Ryan Preece** Top 5: 15c -> 9c (+1011, -6pp)
+- **Erik Jones** Top 5: 10c -> 4c (+2400, -6pp)
+- **Michael McDowell** Top 10: 23c -> 17c (+488, -6pp)
+- **Zane Smith** Top 5: 8c -> 3c (+3233, -5pp)
+- **Austin Hill** Top 5: 7c -> 2c (+4900, -5pp)
+- **Chase Elliott** Top 10: 49c -> 44c (+127, -5pp)
+- **Noah Gragson** Top 10: 7c -> 10c (+900, +3pp)
+- **Erik Jones** Top 10: 13c -> 16c (+525, +3pp)
+- **Ricky Stenhouse** Top 5: 6c -> 3c (+3233, -3pp)
+- (+3 more)
+
+_leader win YES 21c · scraped 2026-08-15T17:48:34.875315+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-15T15:55:20.213376+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
