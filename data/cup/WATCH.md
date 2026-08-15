@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-15T15:17:37.755023+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 5: 39c -> 56c (-127, +17pp)
+- **Ryan Blaney** Top 10: 59c -> 76c (-317, +17pp)
+- **Kyle Larson** Top 10: 57c -> 41c (+144, -16pp)
+- **Chase Briscoe** Top 10: 47c -> 62c (-163, +15pp)
+- **Tyler Reddick** Top 10: 46c -> 31c (+223, -15pp)
+- **Ryan Blaney** Top 3: 28c -> 42c (+138, +14pp)
+- **William Byron** Top 10: 41c -> 52c (-108, +11pp)
+- **Ryan Blaney** Win: 13c -> 21c (+376, +8pp)
+- **Tyler Reddick** Top 5: 26c -> 18c (+456, -8pp)
+- **Chase Elliott** Top 10: 39c -> 46c (+117, +7pp)
+- (+39 more)
+
+_leader win YES 21c · scraped 2026-08-15T15:17:37.755023+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-14T12:44:42.988859+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
