@@ -108,6 +108,21 @@ batch. This collapses the expensive poll/notify/confirm loop from once-per-book 
 once-per-batch. (If the user explicitly wants a single book live immediately, deploy
 it — but the default is stage-then-batch.)
 
+**Collect-mode is the DEFAULT (IMPORTANT — cost).** The expensive part is not the number
+of messages — it's processing each paste as it lands (regenerate → reconcile → stage →
+push → confirm every time). Decouple pasting from processing. When the user signals
+updates are coming ("updates incoming", "here comes…", "quick updates") OR starts pasting
+multiple books, stay in **collect-mode**: acknowledge each paste with a one-line "got
+<book> <tiers>" and do NOTHING else — no `gen_books`, no scripts, no staging, no CI. Just
+accumulate the raw boards. Only on an explicit go signal ("deploy" / "go" / "go live" /
+"that's all" / "push it") process the WHOLE batch in a single pass: generate every file,
+reconcile once, one land, one `track.yml`/`fanduel.yml` fire, one watch. This lets the
+user spread a batch across many messages (e.g. the 5-image-per-message cap) with no extra
+cost — many paste messages still collapse to one processing pass. Prefer **text/CSV** over
+screenshots when the book allows it (no image cap, cheaper to process, zero transcription
+risk — BetUS/SG paste cleanly as text). Only break collect-mode early if the user asks for
+a single book live now, or asks an analysis question mid-collect.
+
 **Fire-and-trust deploys + terse confirms (cost).** CI is reliable — do NOT poll/watch
 every deploy. Fire `track.yml`, then move on; verify opportunistically (a cheap
 `git fetch` + HEAD/`data: market update` check next time you touch the branch), and
