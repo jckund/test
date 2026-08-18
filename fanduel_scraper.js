@@ -147,54 +147,20 @@ async function main() {
 
   const events = {};
   const markets = {};
-  const seenUrls = new Set();
   page.on("response", async (r) => {
-    const u = r.url();
-    // Merge market/event attachments from ANY FanDuel sbapi/odds response, so we
-    // capture whatever endpoint the app uses when we drill into a NASCAR event
-    // (not just the landing content-managed-page).
-    if (!/sportsbook\.fanduel\.com\/(sbapi|api)\//.test(u)) return;
-    seenUrls.add(u.length > 160 ? u.slice(0, 160) + "…" : u);
+    if (!/content-managed-page|getMarketPrices/.test(r.url())) return;
     try {
       const att = (await r.json()).attachments || {};
-      if (att.events) Object.assign(events, att.events);
-      if (att.markets) Object.assign(markets, att.markets);
+      Object.assign(events, att.events || {});
+      Object.assign(markets, att.markets || {});
     } catch {
       /* non-JSON or already-consumed body; ignore */
     }
   });
 
-  // The /motorsport landing (content-managed-page?page=SPORT&eventTypeId=8)
-  // lists every motorsport EVENT but only prices the featured competition's
-  // markets (e.g. an F1 Grand Prix on an F1 weekend). NASCAR races are listed
-  // as events but their markets aren't fetched there, so after the landing load
-  // we pull each NASCAR competition's/event's own content-managed-page from the
-  // app's sbapi — called in-page via fetch() so the page's cookies and the _ak
-  // client key apply — and merge the priced markets in.
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
-
-  // Guessing FanDuel's read-API shape kept returning HTTP 400, so let the app
-  // discover it: find the NASCAR links on the Motorsport page and navigate into
-  // them. The SPA then fires its own (correct) market request, which the
-  // broadened response listener above captures. Also log the NASCAR hrefs (URL
-  // scheme) and the API URLs seen, for reference.
-  const hrefs = await page.$$eval("a[href]", (as) => as.map((a) => a.getAttribute("href")).filter(Boolean))
-    .catch(() => []);
-  const nascarHrefs = [...new Set(hrefs.filter((h) => /nascar|dollar[-_ ]?tree/i.test(h)))];
-  console.log(`nascar hrefs (${nascarHrefs.length}):`);
-  for (const h of nascarHrefs.slice(0, 20)) console.log("  " + h);
-  for (const h of nascarHrefs.slice(0, 6)) {
-    const before = Object.keys(markets).length;
-    const url = h.startsWith("http") ? h : new URL(h, MOTORSPORT_URL).toString();
-    await page.goto(url, { waitUntil: "networkidle", timeout: 60000 }).catch(() => {});
-    await page.waitForTimeout(5000);
-    console.log(`nav ${h} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
-  }
   await browser.close();
-
-  console.log("seen api urls:");
-  for (const u of [...seenUrls].slice(0, 25)) console.log("  " + u);
 
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
