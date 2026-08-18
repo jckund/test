@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-18T18:31:10.320026+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 10: 79c -> 66c (-194, -13pp)
+- **Riley Herbst** Top 10: 22c -> 11c (+809, -11pp)
+- **Shane Van Gisbergen** Top 10: 31c -> 22c (+355, -9pp)
+- **Denny Hamlin** Top 10: 73c -> 65c (-186, -8pp)
+- **Chase Briscoe** Top 10: 63c -> 55c (-122, -8pp)
+- **Austin Cindric** Top 10: 41c -> 33c (+203, -8pp)
+- **Michael McDowell** Top 10: 24c -> 17c (+488, -7pp)
+- **Christopher Bell** Top 10: 74c -> 67c (-203, -7pp)
+- **Daniel Suárez** Top 10: 29c -> 23c (+335, -6pp)
+- **AJ Allmendinger** Top 10: 21c -> 16c (+525, -5pp)
+- (+6 more)
+
+_leader win YES 21c · scraped 2026-08-18T18:31:10.320026+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-18T17:36:13.031085+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
