@@ -173,31 +173,31 @@ async function main() {
 
   const cmpUrl = [...seenUrls].find((u) => /content-managed-page/.test(u)) || "";
   const ak = (cmpUrl.match(/[?&]_ak=([^&]+)/) || [])[1] || "";
-  const apiBase = cmpUrl.split("?")[0] ||
-    "https://api.sportsbook.fanduel.com/sbapi/content-managed-page";
+  const apiDir = (cmpUrl.split("?")[0] || "https://api.sportsbook.fanduel.com/sbapi/x")
+    .replace(/\/[^/]*$/, ""); // .../sbapi
   const nascarEvents = Object.values(events).filter((e) => /nascar/i.test(e.name || ""));
   const comps = [...new Set(nascarEvents.map((e) => e.competitionId).filter(Boolean))];
-  const queries = [
-    ...comps.map((cid) => `page=COMPETITION&competitionId=${cid}`),
-    ...nascarEvents.map((e) => e.eventId).filter(Boolean).map((eid) => `page=EVENT&eventId=${eid}`),
+  // FanDuel serves single-event / single-competition markets from dedicated
+  // sbapi paths (event-page / competition-page), NOT content-managed-page
+  // (which 400s for page=EVENT/COMPETITION). Probe both shapes and merge the
+  // first that returns markets; page.request bypasses the browser CORS sandbox.
+  const targets = [
+    ...nascarEvents.filter((e) => e.eventId).map((e) => `event-page?eventId=${e.eventId}`),
+    ...comps.map((cid) => `competition-page?competitionId=${cid}`),
   ];
-  console.log(`nascar comps=[${comps.join(",")}] ak=${ak ? "yes" : "no"} queries=${queries.length}`);
-  // Use Playwright's APIRequestContext (page.request) rather than an in-page
-  // fetch(): it reuses the browser context's cookies (incl. the PerimeterX
-  // tokens set during the page load) but is NOT subject to the page's CORS
-  // sandbox, so the cross-origin api.sportsbook.fanduel.com call succeeds.
-  for (const qs of queries) {
-    const url = `${apiBase}?${qs}&_ak=${ak}&timezone=America/New_York`;
+  console.log(`nascar comps=[${comps.join(",")}] ak=${ak ? "yes" : "no"} targets=${targets.length} dir=${apiDir}`);
+  for (const t of targets) {
+    const url = `${apiDir}/${t}&_ak=${ak}&timezone=America/New_York`;
     const before = Object.keys(markets).length;
     try {
       const resp = await page.request.get(url, { headers: { accept: "application/json" } });
-      if (!resp.ok()) { console.log(`  ${qs} -> HTTP ${resp.status()}`); continue; }
+      if (!resp.ok()) { console.log(`  ${t} -> HTTP ${resp.status()}`); continue; }
       const att = (await resp.json()).attachments || {};
       Object.assign(events, att.events || {});
       Object.assign(markets, att.markets || {});
-      console.log(`  ${qs} -> +${Object.keys(markets).length - before} markets`);
+      console.log(`  ${t} -> +${Object.keys(markets).length - before} markets`);
     } catch (e) {
-      console.log(`  ${qs} -> err ${String(e.message || e).split("\n")[0]}`);
+      console.log(`  ${t} -> err ${String(e.message || e).split("\n")[0]}`);
     }
   }
   await browser.close();
