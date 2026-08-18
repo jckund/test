@@ -182,22 +182,20 @@ async function main() {
     ...nascarEvents.map((e) => e.eventId).filter(Boolean).map((eid) => `page=EVENT&eventId=${eid}`),
   ];
   console.log(`nascar comps=[${comps.join(",")}] ak=${ak ? "yes" : "no"} queries=${queries.length}`);
+  // Use Playwright's APIRequestContext (page.request) rather than an in-page
+  // fetch(): it reuses the browser context's cookies (incl. the PerimeterX
+  // tokens set during the page load) but is NOT subject to the page's CORS
+  // sandbox, so the cross-origin api.sportsbook.fanduel.com call succeeds.
   for (const qs of queries) {
     const url = `${apiBase}?${qs}&_ak=${ak}&timezone=America/New_York`;
     const before = Object.keys(markets).length;
     try {
-      const data = await page.evaluate(async (u) => {
-        const r = await fetch(u, { credentials: "include" });
-        return r.ok ? await r.json() : { _status: r.status };
-      }, url);
-      if (data && data._status) {
-        console.log(`  ${qs} -> HTTP ${data._status}`);
-      } else {
-        const att = (data && data.attachments) || {};
-        Object.assign(events, att.events || {});
-        Object.assign(markets, att.markets || {});
-        console.log(`  ${qs} -> +${Object.keys(markets).length - before} markets`);
-      }
+      const resp = await page.request.get(url, { headers: { accept: "application/json" } });
+      if (!resp.ok()) { console.log(`  ${qs} -> HTTP ${resp.status()}`); continue; }
+      const att = (await resp.json()).attachments || {};
+      Object.assign(events, att.events || {});
+      Object.assign(markets, att.markets || {});
+      console.log(`  ${qs} -> +${Object.keys(markets).length - before} markets`);
     } catch (e) {
       console.log(`  ${qs} -> err ${String(e.message || e).split("\n")[0]}`);
     }
