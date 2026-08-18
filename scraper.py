@@ -64,11 +64,9 @@ WINNER_SERIES = "KXNASCARRACE"
 # names — a race that matches nothing falls to the `xfinity` default. Update the
 # substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    # NOTE: Cup AND Trucks both run at Richmond this weekend, so "richmond" is
-    # ambiguous — match each race by its UNIQUE sponsor name instead. Kalshi
-    # spells the truck race "Black's Tire" (apostrophe), so match "black's tire"
-    # / "tire 250", not "blacks tire".
-    {"key": "cup", "label": "NASCAR", "matchers": ["cook out", "cook out 400"],
+    # Cup this weekend: Dollar Tree 301 at New Hampshire (Loudon). Trucks also
+    # run this weekend — truck matcher below is NOT yet re-pointed (TODO next).
+    {"key": "cup", "label": "NASCAR", "matchers": ["dollar tree", "dollar tree 301"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
     {"key": "truck", "label": "Trucks", "matchers": ["black's tire", "tire 250"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
