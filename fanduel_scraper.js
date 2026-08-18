@@ -161,32 +161,17 @@ async function main() {
     }
   });
 
-  // The /motorsport landing page only carries the currently-featured
-  // competition's markets (e.g. an F1 Grand Prix on an F1 weekend). NASCAR
-  // (Dollar Tree 301) lives INSIDE the Motorsport section and only loads its
-  // getMarketPrices XHRs when you navigate into it, so after the landing load we
-  // click through any NASCAR / race link we can find. DIAGNOSTIC: also logs the
-  // request URLs and event names seen so the real NASCAR endpoint is visible.
+  // The /motorsport landing (content-managed-page?page=SPORT&eventTypeId=8)
+  // returns every motorsport EVENT but only fetches market PRICES for the
+  // featured competition (F1 on an F1 weekend). NASCAR events are listed but
+  // their markets aren't priced. DIAGNOSTIC: dump the raw event objects so we
+  // can see the id/url/competition fields needed to fetch NASCAR's markets.
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
-  console.log(`after /motorsport -> markets=${Object.keys(markets).length}`);
-
-  const clickTargets = [/dollar tree 301/i, /nascar cup/i, /nascar/i];
-  for (const rx of clickTargets) {
-    const before = Object.keys(markets).length;
-    try {
-      const el = page.getByText(rx).first();
-      await el.waitFor({ state: "visible", timeout: 4000 });
-      await el.click({ timeout: 4000 });
-      await page.waitForTimeout(6000);
-      console.log(`clicked ${rx} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
-    } catch (e) {
-      console.log(`click ${rx}: ${String(e.message || e).split("\n")[0]}`);
-    }
-  }
   await browser.close();
 
-  console.log("event names:", JSON.stringify(Object.values(events).map((e) => e.name).slice(0, 40)));
+  console.log("EVENTS_JSON=" + JSON.stringify(events));
+  console.log("SAMPLE_MARKET=" + JSON.stringify(Object.values(markets)[0] || {}));
   console.log("seen request URLs:");
   for (const u of seenUrls) console.log("  " + u);
 
