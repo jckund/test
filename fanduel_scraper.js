@@ -170,10 +170,14 @@ async function main() {
   await page.waitForTimeout(7000);
   await browser.close();
 
-  console.log("EVENTS_JSON=" + JSON.stringify(events));
-  console.log("SAMPLE_MARKET=" + JSON.stringify(Object.values(markets)[0] || {}));
-  console.log("seen request URLs:");
-  for (const u of seenUrls) console.log("  " + u);
+  const evList = Object.values(events);
+  console.log("EVENT_FIELDS=" + Object.keys(evList[0] || {}).join(","));
+  for (const e of evList) {
+    console.log(`EVT id=${e.eventId ?? e.id} name=${JSON.stringify(e.name)} compId=${e.competitionId} etId=${e.eventTypeId} url=${e.url ?? ""}`);
+  }
+  const sm = Object.values(markets)[0] || {};
+  console.log("MARKET_FIELDS=" + Object.keys(sm).join(","));
+  console.log("SAMPLE_MARKET name=" + JSON.stringify(sm.marketName) + " eventId=" + sm.eventId + " compId=" + sm.competitionId);
 
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
