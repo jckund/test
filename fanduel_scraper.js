@@ -147,8 +147,11 @@ async function main() {
 
   const events = {};
   const markets = {};
+  const seenUrls = new Set();
   page.on("response", async (r) => {
-    if (!/content-managed-page|getMarketPrices/.test(r.url())) return;
+    const u = r.url();
+    if (/content-managed-page|getMarketPrices|coupon|competition|nascar/i.test(u)) seenUrls.add(u);
+    if (!/content-managed-page|getMarketPrices/.test(u)) return;
     try {
       const att = (await r.json()).attachments || {};
       Object.assign(events, att.events || {});
@@ -159,22 +162,33 @@ async function main() {
   });
 
   // The /motorsport landing page only carries the currently-featured
-  // competition's markets (e.g. an F1 Grand Prix on an F1 weekend), so NASCAR
-  // markets that FanDuel has posted may not be in that payload. Visit the
-  // NASCAR-specific pages too; the response listener accumulates markets across
-  // all navigations, so any URL that surfaces the NASCAR board fills byRace.
-  const NAV_URLS = [
-    MOTORSPORT_URL,
-    "https://nj.sportsbook.fanduel.com/navigation/nascar",
-    "https://nj.sportsbook.fanduel.com/motorsport/nascar",
-  ];
-  for (const url of NAV_URLS) {
+  // competition's markets (e.g. an F1 Grand Prix on an F1 weekend). NASCAR
+  // (Dollar Tree 301) lives INSIDE the Motorsport section and only loads its
+  // getMarketPrices XHRs when you navigate into it, so after the landing load we
+  // click through any NASCAR / race link we can find. DIAGNOSTIC: also logs the
+  // request URLs and event names seen so the real NASCAR endpoint is visible.
+  await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
+  await page.waitForTimeout(7000);
+  console.log(`after /motorsport -> markets=${Object.keys(markets).length}`);
+
+  const clickTargets = [/dollar tree 301/i, /nascar cup/i, /nascar/i];
+  for (const rx of clickTargets) {
     const before = Object.keys(markets).length;
-    await page.goto(url, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
-    await page.waitForTimeout(7000);
-    console.log(`loaded ${url} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
+    try {
+      const el = page.getByText(rx).first();
+      await el.waitFor({ state: "visible", timeout: 4000 });
+      await el.click({ timeout: 4000 });
+      await page.waitForTimeout(6000);
+      console.log(`clicked ${rx} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
+    } catch (e) {
+      console.log(`click ${rx}: ${String(e.message || e).split("\n")[0]}`);
+    }
   }
   await browser.close();
+
+  console.log("event names:", JSON.stringify(Object.values(events).map((e) => e.name).slice(0, 40)));
+  console.log("seen request URLs:");
+  for (const u of seenUrls) console.log("  " + u);
 
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
