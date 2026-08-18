@@ -1,20 +1,18 @@
 {
-  "updated_at": "2026-08-15T22:27:22.080732+00:00",
+  "updated_at": "2026-08-18T15:44:05.414508+00:00",
   "series": [
     {
-      "key": "cup",
-      "label": "NASCAR",
-      "race_title": "Cook Out 400",
-      "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooo81526",
+      "key": "xfinity",
+      "label": "Support race",
+      "race_title": "Team EJP 175",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-teae26",
       "tiers": [
         "winner",
         "top3",
-        "top5",
-        "top10",
-        "top20"
+        "top10"
       ],
-      "scraped_at": "2026-08-15T22:27:22.080636+00:00"
+      "scraped_at": "2026-08-18T15:44:05.414464+00:00"
     }
   ]
 }
