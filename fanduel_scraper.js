@@ -162,22 +162,47 @@ async function main() {
   });
 
   // The /motorsport landing (content-managed-page?page=SPORT&eventTypeId=8)
-  // returns every motorsport EVENT but only fetches market PRICES for the
-  // featured competition (F1 on an F1 weekend). NASCAR events are listed but
-  // their markets aren't priced. DIAGNOSTIC: dump the raw event objects so we
-  // can see the id/url/competition fields needed to fetch NASCAR's markets.
+  // lists every motorsport EVENT but only prices the featured competition's
+  // markets (e.g. an F1 Grand Prix on an F1 weekend). NASCAR races are listed
+  // as events but their markets aren't fetched there, so after the landing load
+  // we pull each NASCAR competition's/event's own content-managed-page from the
+  // app's sbapi — called in-page via fetch() so the page's cookies and the _ak
+  // client key apply — and merge the priced markets in.
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
-  await browser.close();
 
-  const evList = Object.values(events);
-  console.log("EVENT_FIELDS=" + Object.keys(evList[0] || {}).join(","));
-  for (const e of evList) {
-    console.log(`EVT id=${e.eventId ?? e.id} name=${JSON.stringify(e.name)} compId=${e.competitionId} etId=${e.eventTypeId} url=${e.url ?? ""}`);
+  const cmpUrl = [...seenUrls].find((u) => /content-managed-page/.test(u)) || "";
+  const ak = (cmpUrl.match(/[?&]_ak=([^&]+)/) || [])[1] || "";
+  const apiBase = cmpUrl.split("?")[0] ||
+    "https://api.sportsbook.fanduel.com/sbapi/content-managed-page";
+  const nascarEvents = Object.values(events).filter((e) => /nascar/i.test(e.name || ""));
+  const comps = [...new Set(nascarEvents.map((e) => e.competitionId).filter(Boolean))];
+  const queries = [
+    ...comps.map((cid) => `page=COMPETITION&competitionId=${cid}`),
+    ...nascarEvents.map((e) => e.eventId).filter(Boolean).map((eid) => `page=EVENT&eventId=${eid}`),
+  ];
+  console.log(`nascar comps=[${comps.join(",")}] ak=${ak ? "yes" : "no"} queries=${queries.length}`);
+  for (const qs of queries) {
+    const url = `${apiBase}?${qs}&_ak=${ak}&timezone=America/New_York`;
+    const before = Object.keys(markets).length;
+    try {
+      const data = await page.evaluate(async (u) => {
+        const r = await fetch(u, { credentials: "include" });
+        return r.ok ? await r.json() : { _status: r.status };
+      }, url);
+      if (data && data._status) {
+        console.log(`  ${qs} -> HTTP ${data._status}`);
+      } else {
+        const att = (data && data.attachments) || {};
+        Object.assign(events, att.events || {});
+        Object.assign(markets, att.markets || {});
+        console.log(`  ${qs} -> +${Object.keys(markets).length - before} markets`);
+      }
+    } catch (e) {
+      console.log(`  ${qs} -> err ${String(e.message || e).split("\n")[0]}`);
+    }
   }
-  const sm = Object.values(markets)[0] || {};
-  console.log("MARKET_FIELDS=" + Object.keys(sm).join(","));
-  console.log("SAMPLE_MARKET name=" + JSON.stringify(sm.marketName) + " eventId=" + sm.eventId + " compId=" + sm.competitionId);
+  await browser.close();
 
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
