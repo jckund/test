@@ -150,12 +150,15 @@ async function main() {
   const seenUrls = new Set();
   page.on("response", async (r) => {
     const u = r.url();
-    if (/content-managed-page|getMarketPrices|coupon|competition|nascar/i.test(u)) seenUrls.add(u);
-    if (!/content-managed-page|getMarketPrices/.test(u)) return;
+    // Merge market/event attachments from ANY FanDuel sbapi/odds response, so we
+    // capture whatever endpoint the app uses when we drill into a NASCAR event
+    // (not just the landing content-managed-page).
+    if (!/sportsbook\.fanduel\.com\/(sbapi|api)\//.test(u)) return;
+    seenUrls.add(u.length > 160 ? u.slice(0, 160) + "…" : u);
     try {
       const att = (await r.json()).attachments || {};
-      Object.assign(events, att.events || {});
-      Object.assign(markets, att.markets || {});
+      if (att.events) Object.assign(events, att.events);
+      if (att.markets) Object.assign(markets, att.markets);
     } catch {
       /* non-JSON or already-consumed body; ignore */
     }
@@ -171,36 +174,27 @@ async function main() {
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
 
-  const cmpUrl = [...seenUrls].find((u) => /content-managed-page/.test(u)) || "";
-  const ak = (cmpUrl.match(/[?&]_ak=([^&]+)/) || [])[1] || "";
-  const apiDir = (cmpUrl.split("?")[0] || "https://api.sportsbook.fanduel.com/sbapi/x")
-    .replace(/\/[^/]*$/, ""); // .../sbapi
-  const nascarEvents = Object.values(events).filter((e) => /nascar/i.test(e.name || ""));
-  const comps = [...new Set(nascarEvents.map((e) => e.competitionId).filter(Boolean))];
-  // FanDuel serves single-event / single-competition markets from dedicated
-  // sbapi paths (event-page / competition-page), NOT content-managed-page
-  // (which 400s for page=EVENT/COMPETITION). Probe both shapes and merge the
-  // first that returns markets; page.request bypasses the browser CORS sandbox.
-  const targets = [
-    ...nascarEvents.filter((e) => e.eventId).map((e) => `event-page?eventId=${e.eventId}`),
-    ...comps.map((cid) => `competition-page?competitionId=${cid}`),
-  ];
-  console.log(`nascar comps=[${comps.join(",")}] ak=${ak ? "yes" : "no"} targets=${targets.length} dir=${apiDir}`);
-  for (const t of targets) {
-    const url = `${apiDir}/${t}&_ak=${ak}&timezone=America/New_York`;
+  // Guessing FanDuel's read-API shape kept returning HTTP 400, so let the app
+  // discover it: find the NASCAR links on the Motorsport page and navigate into
+  // them. The SPA then fires its own (correct) market request, which the
+  // broadened response listener above captures. Also log the NASCAR hrefs (URL
+  // scheme) and the API URLs seen, for reference.
+  const hrefs = await page.$$eval("a[href]", (as) => as.map((a) => a.getAttribute("href")).filter(Boolean))
+    .catch(() => []);
+  const nascarHrefs = [...new Set(hrefs.filter((h) => /nascar|dollar[-_ ]?tree/i.test(h)))];
+  console.log(`nascar hrefs (${nascarHrefs.length}):`);
+  for (const h of nascarHrefs.slice(0, 20)) console.log("  " + h);
+  for (const h of nascarHrefs.slice(0, 6)) {
     const before = Object.keys(markets).length;
-    try {
-      const resp = await page.request.get(url, { headers: { accept: "application/json" } });
-      if (!resp.ok()) { console.log(`  ${t} -> HTTP ${resp.status()}`); continue; }
-      const att = (await resp.json()).attachments || {};
-      Object.assign(events, att.events || {});
-      Object.assign(markets, att.markets || {});
-      console.log(`  ${t} -> +${Object.keys(markets).length - before} markets`);
-    } catch (e) {
-      console.log(`  ${t} -> err ${String(e.message || e).split("\n")[0]}`);
-    }
+    const url = h.startsWith("http") ? h : new URL(h, MOTORSPORT_URL).toString();
+    await page.goto(url, { waitUntil: "networkidle", timeout: 60000 }).catch(() => {});
+    await page.waitForTimeout(5000);
+    console.log(`nav ${h} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
   }
   await browser.close();
+
+  console.log("seen api urls:");
+  for (const u of [...seenUrls].slice(0, 25)) console.log("  " + u);
 
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
