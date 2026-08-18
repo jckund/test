@@ -158,8 +158,22 @@ async function main() {
     }
   });
 
-  await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
-  await page.waitForTimeout(7000);
+  // The /motorsport landing page only carries the currently-featured
+  // competition's markets (e.g. an F1 Grand Prix on an F1 weekend), so NASCAR
+  // markets that FanDuel has posted may not be in that payload. Visit the
+  // NASCAR-specific pages too; the response listener accumulates markets across
+  // all navigations, so any URL that surfaces the NASCAR board fills byRace.
+  const NAV_URLS = [
+    MOTORSPORT_URL,
+    "https://nj.sportsbook.fanduel.com/navigation/nascar",
+    "https://nj.sportsbook.fanduel.com/motorsport/nascar",
+  ];
+  for (const url of NAV_URLS) {
+    const before = Object.keys(markets).length;
+    await page.goto(url, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
+    await page.waitForTimeout(7000);
+    console.log(`loaded ${url} -> +${Object.keys(markets).length - before} markets (total ${Object.keys(markets).length})`);
+  }
   await browser.close();
 
   const nMarkets = Object.keys(markets).length;
