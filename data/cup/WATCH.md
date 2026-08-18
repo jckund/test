@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-18T15:55:38.875578+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Top 10: 41c -> 65c (-186, +24pp)
+- **Tyler Reddick** Top 10: 31c -> 53c (-113, +22pp)
+- **Austin Dillon** Top 10: 40c -> 22c (+355, -18pp)
+- **Kyle Larson** Top 5: 21c -> 38c (+163, +17pp)
+- **Chris Buescher** Top 10: 19c -> 35c (+186, +16pp)
+- **Kyle Larson** Top 3: 13c -> 28c (+257, +15pp)
+- **Carson Hocevar** Top 10: 21c -> 36c (+178, +15pp)
+- **Ross Chastain** Top 10: 26c -> 39c (+156, +13pp)
+- **Chase Elliott** Top 5: 19c -> 31c (+223, +12pp)
+- **Ryan Blaney** Top 10: 78c -> 66c (-194, -12pp)
+- (+73 more)
+
+_leader win YES 19c · scraped 2026-08-18T15:55:38.875578+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-15T22:18:12.541734+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

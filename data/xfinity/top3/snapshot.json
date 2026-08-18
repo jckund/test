@@ -323,11 +323,11 @@
       "name": "Kaden Honeycutt",
       "no_ask": 85,
       "no_bid": 79,
-      "open_interest": 200,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP3-TEAE26-KAHO",
-      "volume": 200,
-      "volume_24h": 0,
+      "volume": 400,
+      "volume_24h": 200,
       "yes_ask": 21,
       "yes_bid": 15
     },
@@ -532,13 +532,13 @@
       "liquidity": 0.0,
       "name": "Tristan McKee",
       "no_ask": 97,
-      "no_bid": 91,
+      "no_bid": 96,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-TEAE26-TRMC",
       "volume": 200,
-      "volume_24h": 0,
-      "yes_ask": 9,
+      "volume_24h": 200,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARTOP3-TEAE26-TYAN": {
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-18T15:42:23.022660+00:00",
+  "scraped_at": "2026-08-18T15:58:04.265682+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-teae26",
   "tier": "top3"
 }
