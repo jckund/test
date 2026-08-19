@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-19T23:45:56.909825+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 11c -> 19c (+426, +8pp)
+- **Austin Hill** Top 10: 4c -> 11c (+809, +7pp)
+- **Austin Cindric** Top 5: 17c -> 10c (+900, -7pp)
+- **Alex Bowman** Top 5: 17c -> 10c (+900, -7pp)
+- **Kyle Larson** Top 3: 28c -> 21c (+376, -7pp)
+- **Shane Van Gisbergen** Top 10: 22c -> 28c (+257, +6pp)
+- **Chris Buescher** Top 5: 17c -> 11c (+809, -6pp)
+- **Carson Hocevar** Top 5: 17c -> 11c (+809, -6pp)
+- **Kyle Larson** Top 10: 65c -> 59c (-144, -6pp)
+- **Ross Chastain** Top 5: 19c -> 14c (+614, -5pp)
+- (+44 more)
+
+_leader win YES 20c · scraped 2026-08-19T23:45:56.909825+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-18T18:31:10.320026+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
