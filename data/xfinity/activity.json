@@ -1,7 +1,40 @@
 {
-  "updated_at": "2026-08-20T00:05:20.475777+00:00",
+  "updated_at": "2026-08-20T00:37:19.588907+00:00",
   "count": 150,
   "trades": [
+    {
+      "trade_id": "e295915c-260e-7a31-b61e-e554fd68d213",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-TEAE26-LARI",
+      "side": "yes",
+      "count": 200,
+      "yes_price": 22,
+      "no_price": 78,
+      "created_time": "2026-08-20T00:24:54.89213Z"
+    },
+    {
+      "trade_id": "a98c0dfc-1be1-70d3-301a-5cf78c587bd1",
+      "tier": "Winner",
+      "driver": "John H. Nemechek",
+      "ticker": "KXNASCARRACE-TEAE26-JONE",
+      "side": "yes",
+      "count": 100,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-08-20T00:20:51.818567Z"
+    },
+    {
+      "trade_id": "0ae4a619-4989-7288-1f74-1640cf4a19f1",
+      "tier": "Winner",
+      "driver": "John H. Nemechek",
+      "ticker": "KXNASCARRACE-TEAE26-JONE",
+      "side": "yes",
+      "count": 838,
+      "yes_price": 6,
+      "no_price": 94,
+      "created_time": "2026-08-20T00:20:51.818567Z"
+    },
     {
       "trade_id": "bd2a9742-79dd-63fa-a4a7-17c16c8fa321",
       "tier": "Top 10",
@@ -12,6 +45,17 @@
       "yes_price": 29,
       "no_price": 71,
       "created_time": "2026-08-20T00:04:49.995223Z"
+    },
+    {
+      "trade_id": "2fed331e-ffd5-58ba-682f-93d6238984e2",
+      "tier": "Winner",
+      "driver": "Layne Riggs",
+      "ticker": "KXNASCARRACE-TEAE26-LARI",
+      "side": "yes",
+      "count": 192,
+      "yes_price": 22,
+      "no_price": 78,
+      "created_time": "2026-08-20T00:04:49.788243Z"
     },
     {
       "trade_id": "5316337d-f042-456b-f1ea-a8cabb3be801",
@@ -1607,50 +1651,6 @@
       "yes_price": 22,
       "no_price": 78,
       "created_time": "2026-08-19T11:39:56.836365Z"
-    },
-    {
-      "trade_id": "387bcaad-7695-5053-9851-c74940cf5d41",
-      "tier": "Winner",
-      "driver": "Layne Riggs",
-      "ticker": "KXNASCARRACE-TEAE26-LARI",
-      "side": "yes",
-      "count": 7,
-      "yes_price": 23,
-      "no_price": 77,
-      "created_time": "2026-08-19T11:39:56.836365Z"
-    },
-    {
-      "trade_id": "354797e7-fef1-530d-312a-cb306097b0a6",
-      "tier": "Winner",
-      "driver": "Christopher Bell",
-      "ticker": "KXNASCARRACE-TEAE26-CHBE",
-      "side": "yes",
-      "count": 47,
-      "yes_price": 6,
-      "no_price": 94,
-      "created_time": "2026-08-19T11:03:53.261628Z"
-    },
-    {
-      "trade_id": "0ea7c58f-c9c8-5983-c1da-023ee7f38f01",
-      "tier": "Winner",
-      "driver": "Chandler Smith",
-      "ticker": "KXNASCARRACE-TEAE26-CHSM",
-      "side": "yes",
-      "count": 208,
-      "yes_price": 11,
-      "no_price": 89,
-      "created_time": "2026-08-19T10:16:27.754872Z"
-    },
-    {
-      "trade_id": "9a029042-7c71-42f3-f911-4d2e523e4ee8",
-      "tier": "Winner",
-      "driver": "Chandler Smith",
-      "ticker": "KXNASCARRACE-TEAE26-CHSM",
-      "side": "yes",
-      "count": 200,
-      "yes_price": 11,
-      "no_price": 89,
-      "created_time": "2026-08-19T09:01:19.417282Z"
     }
   ]
 }

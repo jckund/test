@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-CHBE",
       "volume": 12419,
-      "volume_24h": 10574,
+      "volume_24h": 10064,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-CHSM",
       "volume": 13441,
-      "volume_24h": 3606,
+      "volume_24h": 3967,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-D.WI",
       "volume": 50,
-      "volume_24h": 50,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -196,13 +196,13 @@
       "liquidity": 0.0,
       "name": "Daniel Hemric",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 7301,
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-DAHE",
       "volume": 7301,
       "volume_24h": 7204,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-TEAE26-DASU": {
@@ -294,27 +294,27 @@
       "liquidity": 0.0,
       "name": "Jake Garcia",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 7200,
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-JAGA",
       "volume": 7200,
       "volume_24h": 7200,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-TEAE26-JONE": {
-      "last_price": 8,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
       "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 12211,
+      "no_bid": 92,
+      "open_interest": 13149,
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-JONE",
-      "volume": 12211,
-      "volume_24h": 4906,
-      "yes_ask": 6,
+      "volume": 13149,
+      "volume_24h": 5844,
+      "yes_ask": 8,
       "yes_bid": 5
     },
     "KXNASCARRACE-TEAE26-JUHA": {
@@ -374,17 +374,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-TEAE26-LARI": {
-      "last_price": 24,
+      "last_price": 22,
       "liquidity": 0.0,
       "name": "Layne Riggs",
       "no_ask": 79,
-      "no_bid": 77,
-      "open_interest": 9813,
+      "no_bid": 76,
+      "open_interest": 10205,
       "status": "active",
       "ticker": "KXNASCARRACE-TEAE26-LARI",
-      "volume": 9901,
-      "volume_24h": 2288,
-      "yes_ask": 23,
+      "volume": 10293,
+      "volume_24h": 2680,
+      "yes_ask": 24,
       "yes_bid": 21
     },
     "KXNASCARRACE-TEAE26-LUBA": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-08-20T00:03:33.954204+00:00",
+  "scraped_at": "2026-08-20T00:35:43.907499+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-teae26",
   "tier": "winner"
 }
