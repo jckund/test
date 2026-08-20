@@ -161,22 +161,30 @@ async function main() {
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
 
-  // DIAGNOSTIC: replay the user-captured getMarketPrices POST for the Dollar Tree
-  // 301 markets, to learn whether the response carries runner NAMES (needed to
-  // map drivers) or only prices. page.request reuses the context's PerimeterX
-  // cookies from the page load; X-Application is FanDuel's client key.
-  try {
-    const ids = ["734.181497996","734.181863637","734.181863654","734.181863657","734.181863661","734.181863665","734.181863664","734.181863667","734.181863666"];
-    const resp = await page.request.post(
-      "https://smp.nj.sportsbook.fanduel.com/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=0",
-      { headers: { "Content-Type": "application/json", Accept: "application/json", "X-Application": "FhMFpcPWXMeyZxOx" },
-        data: { marketIds: ids } });
-    console.log("PROBE getMarketPrices status", resp.status());
-    const body = await resp.text();
-    console.log("PROBE body length", body.length);
-    console.log("PROBE body head:", body.slice(0, 1800));
-  } catch (e) {
-    console.log("PROBE err", String(e.message || e).split("\n")[0]);
+  // DIAGNOSTIC: getMarketPrices returns prices keyed by selectionId (no names).
+  // Try to fetch the CATALOG (markets+runnerNames) for the Cup race event, now
+  // WITH the X-Application header (the earlier 400s used only the _ak query).
+  const HDR = { Accept: "application/json", "X-Application": "FhMFpcPWXMeyZxOx" };
+  const DIR = "https://api.sportsbook.fanduel.com/sbapi";
+  const AK = "&_ak=FhMFpcPWXMeyZxOx&timezone=America/New_York";
+  const cats = [
+    `${DIR}/content-managed-page?page=EVENT&eventId=35093542${AK}`,
+    `${DIR}/content-managed-page?page=COMPETITION&competitionId=12776276${AK}`,
+    `${DIR}/event-page?eventId=35093542${AK}`,
+    `${DIR}/events/35093542?${AK.slice(1)}`,
+    `${DIR}/events/35093542/markets?${AK.slice(1)}`,
+    `${DIR}/content-managed-page?page=SPORT&eventTypeId=8&competitionId=12776276${AK}`,
+  ];
+  for (const u of cats) {
+    try {
+      const r = await page.request.get(u, { headers: HDR });
+      const b = r.ok() ? await r.text() : "";
+      const hasName = /"runnerName"|Blaney|Hamlin|Layne Riggs/.test(b);
+      console.log(`CAT ${u.split("/sbapi/")[1].split("&_ak")[0]} -> ${r.status()} len=${b.length} names=${hasName}`);
+      if (hasName) console.log("   sample:", (b.match(/"runnerName":"[^"]+"/g) || []).slice(0, 4).join(", "));
+    } catch (e) {
+      console.log(`CAT ${u.slice(0, 70)} -> err ${String(e.message || e).split("\n")[0]}`);
+    }
   }
 
   await browser.close();
