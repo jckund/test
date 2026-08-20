@@ -163,57 +163,61 @@ async function main() {
 
   await browser.close();
 
-  // DIAGNOSTIC: the content-managed-page response (already captured above) is what
-  // the user found "Blaney" in. Check whether the known Dollar Tree 301 race
-  // marketIds are present in captured markets, and how markets group by eventId,
-  // so we can match the race by eventId rather than by parsing the market name.
-  const KNOWN = ["734.181497996","734.181863637","734.181863654","734.181863657","734.181863661","734.181863665","734.181863664","734.181863667","734.181863666"];
-  console.log("--- known race marketIds in captured markets? ---");
-  for (const id of KNOWN) {
-    const m = markets[id];
-    console.log(id, m ? `name=${JSON.stringify(m.marketName)} ev=${m.eventId} nRun=${(m.runners||[]).length} r0=${JSON.stringify((m.runners||[])[0]?.runnerName)}` : "ABSENT");
-  }
-  console.log("--- captured markets grouped by eventId ---");
-  const byEv = {};
-  for (const m of Object.values(markets)) (byEv[m.eventId] = byEv[m.eventId] || []).push(m.marketName);
-  for (const [ev, names] of Object.entries(byEv))
-    console.log(`  ev ${ev}: ${names.length} | ${names.slice(0, 4).join(" | ")}`);
-
   const nMarkets = Object.keys(markets).length;
   console.log(`captured events=${Object.keys(events).length} markets=${nMarkets}`);
   if (!nMarkets) throw new Error("No FanDuel markets captured (page structure changed or blocked).");
 
-  // Group race markets by their race-name prefix so we can pick the one that
-  // matches the Kalshi race. Season/championship futures ("Cup Series 2026
-  // Outright Winner") lack the " - Outright Betting" / " - Top N Finish" suffix
-  // and are naturally excluded.
-  const byRace = {}; // raceName -> { tierKey -> market }
-  for (const m of Object.values(markets)) {
-    const hit = matchTier(m.marketName || "");
-    if (!hit) continue;
-    (byRace[hit.race] = byRace[hit.race] || {})[hit.key] = m;
+  // FanDuel names a single race's markets bare ("Race Winner", "Top 3 Finish"),
+  // with the race identity carried by the EVENT (e.g. "NASCAR - Cup Series -
+  // Race"), not the market name. So we match by event, not by parsing the name.
+  for (const series of seriesList) {
+    const ev = eventForSeries(events, series);
+    if (!ev) { console.log(`[${series.key}] no FanDuel race event; skipping.`); continue; }
+    const evId = ev.eventId ?? ev.id;
+    const evMarkets = Object.values(markets).filter((m) => (m.eventId ?? null) === evId);
+    console.log(`[${series.key}] -> FanDuel event "${ev.name}" (${evMarkets.length} markets)`);
+    emitSeries(series, ev, evMarkets);
   }
-  const raceNames = Object.keys(byRace);
-  console.log("FanDuel race markets found for:", raceNames);
-  if (!raceNames.length) throw new Error("No single-race outright markets found on FanDuel.");
+}
 
-  for (const series of seriesList) emitSeries(series, byRace, markets);
+// The FanDuel event that carries a Kalshi series' single-race markets. Cup (the
+// "full" series) maps to the per-race Cup event ("NASCAR - Cup Series - Race"),
+// excluding the season futures ("... Futures" / "... 2026 Outright Winner").
+// FanDuel's motorsport page only lists futures for the support series (Xfinity/
+// Truck), so those return null and are skipped — FanDuel scraping is Cup-only.
+function eventForSeries(events, series) {
+  const evs = Object.values(events);
+  if (series.key === "cup" || series.full) {
+    return evs.find((e) => {
+      const n = (e.name || "").toLowerCase();
+      return n.includes("cup series") && n.includes("race") && !n.includes("futures");
+    }) || null;
+  }
+  return null;
+}
+
+// Bare FanDuel market name -> our finish-tier key (race identity comes from the
+// event, so no race name is parsed here).
+function tierKeyOf(name) {
+  const n = (name || "").toLowerCase().trim();
+  if (n === "race winner" || n.includes("outright betting") || n === "winner") return "winner";
+  if (n.includes("top 3 finish")) return "top3";
+  if (n.includes("top 5 finish")) return "top5";
+  if (n.includes("top 10 finish")) return "top10";
+  return null;
 }
 
 // Write one series' FanDuel odds (and, for the full series, manufacturer/team
-// markets) under data/<series>/fanduel/.
-function emitSeries(series, byRace, markets) {
+// markets) under data/<series>/fanduel/. `evMarkets` are the markets of the
+// FanDuel event chosen for this series (already race-scoped by event).
+function emitSeries(series, ev, evMarkets) {
   const kalshiRace = series.race_title;
-  const chosen = pickRace(byRace, kalshiRace);
   const outDir = path.join("data", series.key, "fanduel");
-  if (!chosen) {
-    console.log(`[${series.key}] no FanDuel race matches "${kalshiRace}"; skipping.`);
-    return;
-  }
-  console.log(`[${series.key}] "${kalshiRace}" -> FanDuel "${chosen}"`);
 
   const tiers = {};
-  for (const [tierKey, m] of Object.entries(byRace[chosen])) {
+  for (const m of evMarkets) {
+    const tierKey = tierKeyOf(m.marketName || "");
+    if (!tierKey) continue;
     const target = TIER_WINNERS[tierKey] || 1;
     const drivers = [];
     for (const r of m.runners || []) {
@@ -225,6 +229,7 @@ function emitSeries(series, byRace, markets) {
       if (implied == null) continue;
       drivers.push({ name: r.runnerName, american, implied });
     }
+    if (!drivers.length) continue;
     // No-vig: scale raw implied so the field sums to the number of winners.
     const sum = drivers.reduce((a, d) => a + d.implied, 0);
     for (const d of drivers) d.novig = sum > 0 ? (d.implied * target) / sum : null;
@@ -233,11 +238,17 @@ function emitSeries(series, byRace, markets) {
     console.log(`  ${tierKey}: ${drivers.length} drivers (${m.marketName})`);
   }
 
+  if (!Object.keys(tiers).length) {
+    console.log(`  no race tier markets in FanDuel event "${ev.name}"; skipping.`);
+    return;
+  }
+
   const out = {
     scraped_at: new Date().toISOString(),
     source: "FanDuel",
     source_url: MOTORSPORT_URL,
-    race: chosen,
+    race: kalshiRace,
+    fd_event: ev.name,
     kalshi_race: kalshiRace,
     tiers,
   };
@@ -247,8 +258,8 @@ function emitSeries(series, byRace, markets) {
 
   // Manufacturer/Team markets are Cup-only (the support series don't have them).
   if (series.full) {
-    scrapeManufacturers(markets, chosen, kalshiRace, outDir);
-    scrapeTeams(markets, chosen, kalshiRace, outDir);
+    scrapeManufacturers(evMarkets, kalshiRace, outDir);
+    scrapeTeams(evMarkets, kalshiRace, outDir);
   }
 }
 
@@ -256,17 +267,14 @@ function emitSeries(series, byRace, markets) {
 // (rather than market name) so it survives renames, and gated to the chosen race
 // so the season-long owner championship is excluded. Output feeds the Top Team
 // tab's "which team wins" comparison.
-function scrapeTeams(markets, chosenRace, kalshiRace, outDir) {
+function scrapeTeams(evMarkets, kalshiRace, outDir) {
   const teamFile = path.join(outDir, "teams.json");
-  const raceNorm = norm(chosenRace);
   const runnerAmerican = (r) =>
     r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
       ? r.winRunnerOdds.americanDisplayOdds.americanOdds
       : null;
 
-  const raceMarkets = Object.values(markets).filter(
-    (m) => raceNorm && norm(m.marketName || "").includes(raceNorm)
-  );
+  const raceMarkets = evMarkets;
   const teamMkt = raceMarkets.find((m) => {
     const rs = (m.runners || []).map((r) => teamCanon(r.runnerName)).filter(Boolean);
     return rs.length >= 3 && rs.length >= (m.runners || []).length - 1;
@@ -294,7 +302,7 @@ function scrapeTeams(markets, chosenRace, kalshiRace, outDir) {
     scraped_at: new Date().toISOString(),
     source: "FanDuel",
     source_url: MOTORSPORT_URL,
-    race: chosenRace,
+    race: kalshiRace,
     kalshi_race: kalshiRace,
     winner,
   };
@@ -309,9 +317,8 @@ function scrapeTeams(markets, chosenRace, kalshiRace, outDir) {
 // the exact market name) so it keeps working if FanDuel renames it, and we
 // exclude the season-long championship by requiring the market name to reference
 // the chosen race. Output feeds the dashboard's Top Manufacturer tab.
-function scrapeManufacturers(markets, chosenRace, kalshiRace, outDir) {
+function scrapeManufacturers(evMarkets, kalshiRace, outDir) {
   const mfrFile = path.join(outDir, "manufacturers.json");
-  const raceNorm = norm(chosenRace);
   const runnerAmerican = (r) =>
     r.winRunnerOdds && r.winRunnerOdds.americanDisplayOdds
       ? r.winRunnerOdds.americanDisplayOdds.americanOdds
@@ -322,14 +329,9 @@ function scrapeManufacturers(markets, chosenRace, kalshiRace, outDir) {
     return i >= 0 ? MAKES[i] : null;
   };
 
-  const all = Object.values(markets);
-  // Log every market whose name references this race, to reveal manufacturer
-  // market naming for future refinement.
-  const raceMarkets = all.filter((m) => raceNorm && norm(m.marketName || "").includes(raceNorm));
-  console.log("markets for chosen race:", raceMarkets.map((m) => m.marketName));
-
-  // Winning-manufacturer market: runners are (mostly) makes, and the market name
-  // references the chosen race so we don't grab the season championship.
+  const raceMarkets = evMarkets;
+  // Winning-manufacturer market: runners are (mostly) makes. Scoped to the race
+  // event's markets, so the season championship is already excluded.
   const winnerMkt = raceMarkets.find((m) => {
     const rs = (m.runners || []).map((r) => canonMake(r.runnerName)).filter(Boolean);
     return rs.length >= 2 && rs.length >= (m.runners || []).length - 1;
@@ -339,7 +341,7 @@ function scrapeManufacturers(markets, chosenRace, kalshiRace, outDir) {
     scraped_at: new Date().toISOString(),
     source: "FanDuel",
     source_url: MOTORSPORT_URL,
-    race: chosenRace,
+    race: kalshiRace,
     kalshi_race: kalshiRace,
     winner: {},
     makes: {},
