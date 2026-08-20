@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-20T15:10:26.693680+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 60c -> 65c (-186, +5pp)
+- **Joey Logano** Top 3: 30c -> 34c (+194, +4pp)
+- **Chase Briscoe** Top 10: 56c -> 60c (-150, +4pp)
+- **Josh Berry** Top 10: 55c -> 52c (-108, -3pp)
+
+_leader win YES 20c · scraped 2026-08-20T15:10:26.693680+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-19T23:45:56.909825+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
