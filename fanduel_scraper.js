@@ -160,6 +160,25 @@ async function main() {
 
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
+
+  // DIAGNOSTIC: replay the user-captured getMarketPrices POST for the Dollar Tree
+  // 301 markets, to learn whether the response carries runner NAMES (needed to
+  // map drivers) or only prices. page.request reuses the context's PerimeterX
+  // cookies from the page load; X-Application is FanDuel's client key.
+  try {
+    const ids = ["734.181497996","734.181863637","734.181863654","734.181863657","734.181863661","734.181863665","734.181863664","734.181863667","734.181863666"];
+    const resp = await page.request.post(
+      "https://smp.nj.sportsbook.fanduel.com/api/sports/fixedodds/readonly/v1/getMarketPrices?priceHistory=0",
+      { headers: { "Content-Type": "application/json", Accept: "application/json", "X-Application": "FhMFpcPWXMeyZxOx" },
+        data: { marketIds: ids } });
+    console.log("PROBE getMarketPrices status", resp.status());
+    const body = await resp.text();
+    console.log("PROBE body length", body.length);
+    console.log("PROBE body head:", body.slice(0, 1800));
+  } catch (e) {
+    console.log("PROBE err", String(e.message || e).split("\n")[0]);
+  }
+
   await browser.close();
 
   const nMarkets = Object.keys(markets).length;
