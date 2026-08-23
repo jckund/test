@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-23T13:58:26.152644+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 5: 5c -> 8c (+1150, +3pp)
+
+_leader win YES 18c · scraped 2026-08-23T13:58:26.152644+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-23T13:34:44.335460+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
