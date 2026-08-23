@@ -99,6 +99,23 @@ gb.write_book("caesars.json", "Caesars",
 gb.write_mfr("mfr_caesars.json", "Caesars", which_make_3way, {"Chevrolet":..,"Ford":..,"Toyota":..})
 gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
+**HARD RULE — NEVER act on a paste without an explicit go (STANDING, NON-NEGOTIABLE).**
+A book/model paste — including a single `"updated <Book>"` or `"<Book>: <paste>"`, and
+including a re-sent SG/FanDuel/Kalshi drop — is **collect-only**. Acknowledge it with one
+line ("got <book> <tiers>") and do **NOTHING** else: no `gen_books`/scripts, no rebuild,
+no dev commit-per-book beyond staging if already mid-batch, and above all **no deploy**
+(no deploy-branch land, no `track.yml`/`fanduel.yml` fire, no Kalshi/FanDuel refresh).
+Only an explicit go signal from the user in that same session — **"go" / "deploy" /
+"go live" / "that's all" / "push it"** — authorizes processing + deploy. "prepare/refresh
+kalshi and fd" is itself part of the batch and waits for the same go. When unsure whether
+something is a go, treat it as NOT a go and ask.
+- **Analysis is one-shot, never standing.** An analysis request (EV scan, line moves, big
+  trades, matchup) applies to that one ask only. A later data paste (e.g. "updated SG")
+  does **not** re-trigger it. Never re-run analysis, and never deploy, just because new
+  numbers arrived — wait to be asked again.
+- If you ever catch yourself about to rebuild/deploy/analyze off a bare paste, STOP and
+  hold. Over-holding is free; acting without a go is not.
+
 **Batch the deploy (IMPORTANT — cost).** Do NOT deploy per book. As each book/tier
 arrives, generate the file(s) and commit to the **dev branch only** (a quick one-line
 confirm, no CI). Hold the deploy-branch land + `track.yml` fire + deploy-watch until
