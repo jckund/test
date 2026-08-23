@@ -1,523 +1,379 @@
 {
-  "scraped_at": "2026-08-23T20:53:32.402Z",
+  "scraped_at": "2026-08-23T21:51:46.588Z",
   "source": "FanDuel",
   "source_url": "https://nj.sportsbook.fanduel.com/golf",
   "race": "The Open Championship",
   "kalshi_race": "The Open Championship",
   "tiers": {
-    "top10": {
-      "market_name": "Top 10",
-      "number_of_winners": 10,
-      "drivers": [
-        {
-          "name": "Jennifer Kupcho",
-          "american": -750,
-          "implied": 0.8823529411764706,
-          "novig": 0.8809704298500647
-        },
-        {
-          "name": "Yuri Yoshida",
-          "american": -750,
-          "implied": 0.8823529411764706,
-          "novig": 0.8809704298500647
-        },
-        {
-          "name": "Ruoning Yin",
-          "american": -600,
-          "implied": 0.8571428571428571,
-          "novig": 0.8557998461400628
-        },
-        {
-          "name": "Gina Kim",
-          "american": -550,
-          "implied": 0.8461538461538461,
-          "novig": 0.8448280532408312
-        },
-        {
-          "name": "Somi Lee",
-          "american": -450,
-          "implied": 0.8181818181818182,
-          "novig": 0.8168998531336963
-        },
-        {
-          "name": "Sei Young Kim",
-          "american": -290,
-          "implied": 0.7435897435897436,
-          "novig": 0.7424246528480032
-        },
-        {
-          "name": "Ariya Jutanugarn",
-          "american": -175,
-          "implied": 0.6363636363636364,
-          "novig": 0.6353665524373193
-        },
-        {
-          "name": "Kiara Romero",
-          "american": -160,
-          "implied": 0.6153846153846154,
-          "novig": 0.6144204023569682
-        },
-        {
-          "name": "Aphrodite Deng",
-          "american": -120,
-          "implied": 0.5454545454545454,
-          "novig": 0.5445999020891308
-        },
-        {
-          "name": "Anna Huang",
-          "american": 100,
-          "implied": 0.5,
-          "novig": 0.4992165769150366
-        },
-        {
-          "name": "Brooke M. Henderson",
-          "american": 130,
-          "implied": 0.43478260869565216,
-          "novig": 0.4341013712304666
-        },
-        {
-          "name": "Soo Bin Joo",
-          "american": 155,
-          "implied": 0.39215686274509803,
-          "novig": 0.39154241326669537
-        },
-        {
-          "name": "Mao Saigo",
-          "american": 185,
-          "implied": 0.3508771929824561,
-          "novig": 0.35032742239651693
-        },
-        {
-          "name": "Laney Frye",
-          "american": 250,
-          "implied": 0.2857142857142857,
-          "novig": 0.2852666153800209
-        },
-        {
-          "name": "Manon De Roey",
-          "american": 340,
-          "implied": 0.22727272727272727,
-          "novig": 0.22691662587047118
-        },
-        {
-          "name": "Dongeun Lee",
-          "american": 380,
-          "implied": 0.20833333333333334,
-          "novig": 0.20800690704793193
-        },
-        {
-          "name": "Natasha Oon",
-          "american": 600,
-          "implied": 0.14285714285714285,
-          "novig": 0.14263330769001045
-        },
-        {
-          "name": "Nasa Hataoka",
-          "american": 1000,
-          "implied": 0.09090909090909091,
-          "novig": 0.09076665034818848
-        },
-        {
-          "name": "Nelly Korda",
-          "american": 1100,
-          "implied": 0.08333333333333333,
-          "novig": 0.08320276281917276
-        },
-        {
-          "name": "Ayaka Furue",
-          "american": 1300,
-          "implied": 0.07142857142857142,
-          "novig": 0.07131665384500523
-        },
-        {
-          "name": "Yan Liu",
-          "american": 1400,
-          "implied": 0.06666666666666667,
-          "novig": 0.06656221025533822
-        },
-        {
-          "name": "Nataliya Guseva",
-          "american": 1400,
-          "implied": 0.06666666666666667,
-          "novig": 0.06656221025533822
-        },
-        {
-          "name": "Alison Lee",
-          "american": 1600,
-          "implied": 0.058823529411764705,
-          "novig": 0.05873136199000431
-        },
-        {
-          "name": "Hye-Jin Choi",
-          "american": 4500,
-          "implied": 0.021739130434782608,
-          "novig": 0.021705068561523332
-        },
-        {
-          "name": "Nanna Koerstz Madsen",
-          "american": 6000,
-          "implied": 0.01639344262295082,
-          "novig": 0.016367756620165135
-        },
-        {
-          "name": "Jodi Ewart Shadoff",
-          "american": 8000,
-          "implied": 0.012345679012345678,
-          "novig": 0.012326335232470039
-        },
-        {
-          "name": "Lindy Duncan",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Nicole Broch Estrup",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Ashleigh Buhai",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Cassie Porter",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Narin An",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Chizzy Iwai",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Pajaree Anannarukarn",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Brooke Matthews",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Riley Smyth",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Karis Davidson",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Amy Yang",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Yuna Nishimura",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Ana Belac",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Chiara Tamburlini",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Gemma Dryburgh",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        },
-        {
-          "name": "Gurleen Kaur",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.009885476770594785
-        }
-      ]
-    },
     "top5": {
       "market_name": "Top 5",
       "number_of_winners": 5,
       "drivers": [
         {
-          "name": "Jennifer Kupcho",
-          "american": -175,
-          "implied": 0.6363636363636364,
-          "novig": 0.6772296692038773
+          "name": "Sei Young Kim",
+          "american": -320,
+          "implied": 0.7619047619047619,
+          "novig": 0.8412088937258583
         },
         {
           "name": "Yuri Yoshida",
-          "american": -175,
-          "implied": 0.6363636363636364,
-          "novig": 0.6772296692038773
+          "american": -240,
+          "implied": 0.7058823529411765,
+          "novig": 0.779355298598957
+        },
+        {
+          "name": "Jennifer Kupcho",
+          "american": -190,
+          "implied": 0.6551724137931034,
+          "novig": 0.7233671305961582
         },
         {
           "name": "Ruoning Yin",
-          "american": -125,
-          "implied": 0.5555555555555556,
-          "novig": 0.5912322508922738
+          "american": -155,
+          "implied": 0.6078431372549019,
+          "novig": 0.6711115071268796
         },
         {
           "name": "Gina Kim",
-          "american": -110,
-          "implied": 0.5238095238095238,
-          "novig": 0.5574475508412868
-        },
-        {
-          "name": "Somi Lee",
-          "american": 105,
-          "implied": 0.4878048780487805,
-          "novig": 0.519130756881021
-        },
-        {
-          "name": "Sei Young Kim",
-          "american": 160,
-          "implied": 0.38461538461538464,
-          "novig": 0.4093146352331127
-        },
-        {
-          "name": "Ariya Jutanugarn",
-          "american": 300,
-          "implied": 0.25,
-          "novig": 0.26605451290152327
+          "american": -140,
+          "implied": 0.5833333333333334,
+          "novig": 0.6440505592588603
         },
         {
           "name": "Kiara Romero",
-          "american": 300,
-          "implied": 0.25,
-          "novig": 0.26605451290152327
-        },
-        {
-          "name": "Aphrodite Deng",
-          "american": 380,
-          "implied": 0.20833333333333334,
-          "novig": 0.2217120940846027
-        },
-        {
-          "name": "Anna Huang",
-          "american": 700,
-          "implied": 0.125,
-          "novig": 0.13302725645076163
+          "american": 250,
+          "implied": 0.2857142857142857,
+          "novig": 0.3154533351471968
         },
         {
           "name": "Soo Bin Joo",
-          "american": 850,
-          "implied": 0.10526315789473684,
-          "novig": 0.11202295280064135
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.25092878932163387
         },
         {
-          "name": "Brooke M. Henderson",
-          "american": 850,
-          "implied": 0.10526315789473684,
-          "novig": 0.11202295280064135
+          "name": "Somi Lee",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.1840144455025315
         },
         {
-          "name": "Mao Saigo",
-          "american": 1300,
-          "implied": 0.07142857142857142,
-          "novig": 0.07601557511472092
+          "name": "Aphrodite Deng",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.11621964979107252
+        },
+        {
+          "name": "Anna Huang",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.09200722275126574
         },
         {
           "name": "Laney Frye",
-          "american": 1400,
-          "implied": 0.06666666666666667,
-          "novig": 0.07094787010707286
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.0788633337867992
         },
         {
-          "name": "Dongeun Lee",
-          "american": 2200,
-          "implied": 0.043478260869565216,
-          "novig": 0.04627035006983013
+          "name": "Ariya Jutanugarn",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.06494627488324642
         },
         {
-          "name": "Manon De Roey",
-          "american": 2200,
-          "implied": 0.043478260869565216,
-          "novig": 0.04627035006983013
-        },
-        {
-          "name": "Natasha Oon",
-          "american": 4000,
-          "implied": 0.024390243902439025,
-          "novig": 0.025956537844051046
-        },
-        {
-          "name": "Nasa Hataoka",
-          "american": 8000,
-          "implied": 0.012345679012345678,
-          "novig": 0.013138494464272753
-        },
-        {
-          "name": "Ayaka Furue",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.010536812392139536
+          "name": "Mao Saigo",
+          "american": 1900,
+          "implied": 0.05,
+          "novig": 0.055204333650759455
         },
         {
           "name": "Nataliya Guseva",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.010536812392139536
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.04246487203904573
         },
         {
-          "name": "Yan Liu",
-          "american": 12500,
-          "implied": 0.007936507936507936,
-          "novig": 0.008446175012746769
+          "name": "Brooke M. Henderson",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.03066907425042192
         },
         {
-          "name": "Nelly Korda",
+          "name": "Ayaka Furue",
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.013630699666854184
+        },
+        {
+          "name": "Dongeun Lee",
           "american": 12500,
           "implied": 0.007936507936507936,
-          "novig": 0.008446175012746769
+          "novig": 0.00876259264297769
         },
         {
           "name": "Alison Lee",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Jodi Ewart Shadoff",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
-          "name": "Chiara Tamburlini",
+          "name": "Yan Liu",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
-          "name": "Nicole Broch Estrup",
+          "name": "Natasha Oon",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Lindy Duncan",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Yuna Nishimura",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Hye-Jin Choi",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Brooke Matthews",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Nanna Koerstz Madsen",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Amy Yang",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Chizzy Iwai",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Narin An",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Cassie Porter",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Karis Davidson",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Gurleen Kaur",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
-        },
-        {
-          "name": "Gemma Dryburgh",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
           "name": "Riley Smyth",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
         },
         {
-          "name": "Pajaree Anannarukarn",
+          "name": "Manon De Roey",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
+        },
+        {
+          "name": "Nasa Hataoka",
+          "american": 15000,
+          "implied": 0.006622516556291391,
+          "novig": 0.007311832271623769
         },
         {
           "name": "Ana Belac",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "novig": 0.007311832271623769
+        }
+      ]
+    },
+    "top10": {
+      "market_name": "Top 10",
+      "number_of_winners": 10,
+      "drivers": [
+        {
+          "name": "Sei Young Kim",
+          "american": -4000,
+          "implied": 0.975609756097561,
+          "novig": 0.995007547079461
         },
         {
-          "name": "Ashleigh Buhai",
-          "american": 15000,
-          "implied": 0.006622516556291391,
-          "novig": 0.007047801666265517
+          "name": "Yuri Yoshida",
+          "american": -1500,
+          "implied": 0.9375,
+          "novig": 0.9561400647716696
+        },
+        {
+          "name": "Jennifer Kupcho",
+          "american": -1250,
+          "implied": 0.9259259259259259,
+          "novig": 0.9443358664411552
+        },
+        {
+          "name": "Ruoning Yin",
+          "american": -1250,
+          "implied": 0.9259259259259259,
+          "novig": 0.9443358664411552
+        },
+        {
+          "name": "Gina Kim",
+          "american": -900,
+          "implied": 0.9,
+          "novig": 0.9178944621808028
+        },
+        {
+          "name": "Kiara Romero",
+          "american": -290,
+          "implied": 0.7435897435897436,
+          "novig": 0.7583743419727431
+        },
+        {
+          "name": "Soo Bin Joo",
+          "american": -240,
+          "implied": 0.7058823529411765,
+          "novig": 0.7199172252398455
+        },
+        {
+          "name": "Somi Lee",
+          "american": -135,
+          "implied": 0.574468085106383,
+          "novig": 0.5858900822430656
+        },
+        {
+          "name": "Anna Huang",
+          "american": -125,
+          "implied": 0.5555555555555556,
+          "novig": 0.5666015198646931
+        },
+        {
+          "name": "Aphrodite Deng",
+          "american": 125,
+          "implied": 0.4444444444444444,
+          "novig": 0.4532812158917545
+        },
+        {
+          "name": "Laney Frye",
+          "american": 150,
+          "implied": 0.4,
+          "novig": 0.40795309430257903
+        },
+        {
+          "name": "Mao Saigo",
+          "american": 160,
+          "implied": 0.38461538461538464,
+          "novig": 0.3922625906755568
+        },
+        {
+          "name": "Ariya Jutanugarn",
+          "american": 190,
+          "implied": 0.3448275862068966,
+          "novig": 0.35168370198498194
+        },
+        {
+          "name": "Nataliya Guseva",
+          "american": 200,
+          "implied": 0.3333333333333333,
+          "novig": 0.33996091191881583
+        },
+        {
+          "name": "Brooke M. Henderson",
+          "american": 340,
+          "implied": 0.22727272727272727,
+          "novig": 0.23179153085373808
+        },
+        {
+          "name": "Ayaka Furue",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.14569753367949248
+        },
+        {
+          "name": "Dongeun Lee",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.06799218238376317
+        },
+        {
+          "name": "Yan Liu",
+          "american": 1700,
+          "implied": 0.05555555555555555,
+          "novig": 0.056660151986469315
+        },
+        {
+          "name": "Alison Lee",
+          "american": 2700,
+          "implied": 0.03571428571428571,
+          "novig": 0.03642438341987312
+        },
+        {
+          "name": "Nasa Hataoka",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.016719389110761436
+        },
+        {
+          "name": "Jodi Ewart Shadoff",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Narin An",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Pajaree Anannarukarn",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Nanna Koerstz Madsen",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Riley Smyth",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Amy Yang",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Manon De Roey",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Ana Belac",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Nelly Korda",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Gurleen Kaur",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
+        },
+        {
+          "name": "Natasha Oon",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.01009784886887572
         }
       ]
     },
@@ -526,166 +382,154 @@
       "number_of_winners": 20,
       "drivers": [
         {
-          "name": "Somi Lee",
+          "name": "Soo Bin Joo",
           "american": -10000,
           "implied": 0.9900990099009901,
-          "novig": 1.1610245143615596
-        },
-        {
-          "name": "Gina Kim",
-          "american": -10000,
-          "implied": 0.9900990099009901,
-          "novig": 1.1610245143615596
-        },
-        {
-          "name": "Sei Young Kim",
-          "american": -5000,
-          "implied": 0.9803921568627451,
-          "novig": 1.149641921083505
-        },
-        {
-          "name": "Ariya Jutanugarn",
-          "american": -2000,
-          "implied": 0.9523809523809523,
-          "novig": 1.1167950090525478
+          "novig": 1.3408064842877359
         },
         {
           "name": "Kiara Romero",
-          "american": -2000,
-          "implied": 0.9523809523809523,
-          "novig": 1.1167950090525478
+          "american": -10000,
+          "implied": 0.9900990099009901,
+          "novig": 1.3408064842877359
         },
         {
           "name": "Anna Huang",
-          "american": -1500,
-          "implied": 0.9375,
-          "novig": 1.0993450870361017
+          "american": -10000,
+          "implied": 0.9900990099009901,
+          "novig": 1.3408064842877359
         },
         {
-          "name": "Aphrodite Deng",
-          "american": -1000,
-          "implied": 0.9090909090909091,
-          "novig": 1.0660315995501592
-        },
-        {
-          "name": "Brooke M. Henderson",
-          "american": -900,
-          "implied": 0.9,
-          "novig": 1.0553712835546576
+          "name": "Somi Lee",
+          "american": -2000,
+          "implied": 0.9523809523809523,
+          "novig": 1.2897281420291553
         },
         {
           "name": "Mao Saigo",
-          "american": -700,
-          "implied": 0.875,
-          "novig": 1.0260554145670284
-        },
-        {
-          "name": "Soo Bin Joo",
-          "american": -600,
-          "implied": 0.8571428571428571,
-          "novig": 1.0051155081472931
-        },
-        {
-          "name": "Laney Frye",
-          "american": -320,
-          "implied": 0.7619047619047619,
-          "novig": 0.8934360072420382
-        },
-        {
-          "name": "Manon De Roey",
-          "american": -290,
-          "implied": 0.7435897435897436,
-          "novig": 0.871959180144874
-        },
-        {
-          "name": "Nelly Korda",
-          "american": -240,
-          "implied": 0.7058823529411765,
-          "novig": 0.8277421831801237
-        },
-        {
-          "name": "Dongeun Lee",
-          "american": -220,
-          "implied": 0.6875,
-          "novig": 0.806186397159808
-        },
-        {
-          "name": "Natasha Oon",
-          "american": -175,
-          "implied": 0.6363636363636364,
-          "novig": 0.7462221196851114
-        },
-        {
-          "name": "Nasa Hataoka",
-          "american": -145,
-          "implied": 0.5918367346938775,
-          "novig": 0.6940083270540833
-        },
-        {
-          "name": "Hye-Jin Choi",
-          "american": -145,
-          "implied": 0.5918367346938775,
-          "novig": 0.6940083270540833
-        },
-        {
-          "name": "Alison Lee",
-          "american": -125,
-          "implied": 0.5555555555555556,
-          "novig": 0.6514637552806529
-        },
-        {
-          "name": "Ayaka Furue",
-          "american": -120,
-          "implied": 0.5454545454545454,
-          "novig": 0.6396189597300955
+          "american": -2000,
+          "implied": 0.9523809523809523,
+          "novig": 1.2897281420291553
         },
         {
           "name": "Nataliya Guseva",
-          "american": 105,
-          "implied": 0.4878048780487805,
-          "novig": 0.5720169558561831
+          "american": -1500,
+          "implied": 0.9375,
+          "novig": 1.2695761398099499
+        },
+        {
+          "name": "Laney Frye",
+          "american": -1250,
+          "implied": 0.9259259259259259,
+          "novig": 1.2539023603061232
+        },
+        {
+          "name": "Aphrodite Deng",
+          "american": -1100,
+          "implied": 0.9166666666666666,
+          "novig": 1.2413633367030619
+        },
+        {
+          "name": "Ariya Jutanugarn",
+          "american": -900,
+          "implied": 0.9,
+          "novig": 1.2187930942175518
+        },
+        {
+          "name": "Brooke M. Henderson",
+          "american": -750,
+          "implied": 0.8823529411764706,
+          "novig": 1.1948951904093645
+        },
+        {
+          "name": "Ayaka Furue",
+          "american": -600,
+          "implied": 0.8571428571428571,
+          "novig": 1.16075532782624
+        },
+        {
+          "name": "Alison Lee",
+          "american": -220,
+          "implied": 0.6875,
+          "novig": 0.9310225025272966
         },
         {
           "name": "Yan Liu",
+          "american": -160,
+          "implied": 0.6153846153846154,
+          "novig": 0.8333627994649927
+        },
+        {
+          "name": "Dongeun Lee",
+          "american": -115,
+          "implied": 0.5348837209302325,
+          "novig": 0.7243473169768395
+        },
+        {
+          "name": "Nelly Korda",
           "american": 110,
           "implied": 0.47619047619047616,
-          "novig": 0.5583975045262739
+          "novig": 0.6448640710145777
+        },
+        {
+          "name": "Nasa Hataoka",
+          "american": 130,
+          "implied": 0.43478260869565216,
+          "novig": 0.5887889344046143
         },
         {
           "name": "Nanna Koerstz Madsen",
-          "american": 250,
-          "implied": 0.2857142857142857,
-          "novig": 0.3350385027157643
+          "american": 175,
+          "implied": 0.36363636363636365,
+          "novig": 0.4924416542293139
         },
         {
           "name": "Jodi Ewart Shadoff",
-          "american": 300,
-          "implied": 0.25,
-          "novig": 0.2931586898762938
+          "american": 220,
+          "implied": 0.3125,
+          "novig": 0.4231920466033166
+        },
+        {
+          "name": "Robyn Choi",
+          "american": 380,
+          "implied": 0.20833333333333334,
+          "novig": 0.28212803106887774
+        },
+        {
+          "name": "Hye-Jin Choi",
+          "american": 380,
+          "implied": 0.20833333333333334,
+          "novig": 0.28212803106887774
+        },
+        {
+          "name": "Manon De Roey",
+          "american": 430,
+          "implied": 0.18867924528301888,
+          "novig": 0.2555121790812478
         },
         {
           "name": "Narin An",
-          "american": 650,
-          "implied": 0.13333333333333333,
-          "novig": 0.1563513012673567
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.1934592213043733
+        },
+        {
+          "name": "Natasha Oon",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.1593193587212486
         },
         {
           "name": "Pajaree Anannarukarn",
-          "american": 750,
-          "implied": 0.11764705882352941,
-          "novig": 0.13795703053002062
+          "american": 900,
+          "implied": 0.1,
+          "novig": 0.13542145491306132
         },
         {
-          "name": "Ana Belac",
-          "american": 1000,
-          "implied": 0.09090909090909091,
-          "novig": 0.10660315995501594
-        },
-        {
-          "name": "Grace Kim",
-          "american": 1900,
-          "implied": 0.05,
-          "novig": 0.05863173797525876
+          "name": "Nicole Broch Estrup",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.11285121242755108
         }
       ]
     }
