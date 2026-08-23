@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-23T06:22:51.611440+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Elliott** Top 10: 50c -> 35c (+186, -15pp)
+- **Chase Elliott** Top 5: 24c -> 12c (+733, -12pp)
+- **Josh Berry** Top 10: 53c -> 64c (-178, +11pp)
+- **Joey Logano** Top 10: 67c -> 56c (-127, -11pp)
+- **Josh Berry** Top 3: 15c -> 24c (+317, +9pp)
+- **William Byron** Top 10: 52c -> 60c (-150, +8pp)
+- **Bubba Wallace** Top 10: 42c -> 34c (+194, -8pp)
+- **Austin Cindric** Top 10: 36c -> 28c (+257, -8pp)
+- **Josh Berry** Top 5: 31c -> 38c (+163, +7pp)
+- **Shane Van Gisbergen** Top 10: 25c -> 32c (+212, +7pp)
+- (+50 more)
+
+_leader win YES 18c · scraped 2026-08-23T06:22:51.611440+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-21T13:38:25.906018+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
