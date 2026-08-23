@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-23T13:34:44.335460+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 56c -> 62c (-163, +6pp)
+- **Chase Briscoe** Top 5: 29c -> 23c (+335, -6pp)
+- **Christopher Bell** Top 5: 52c -> 48c (+108, -4pp)
+- **Ty Gibbs** Top 5: 29c -> 32c (+212, +3pp)
+- **Josh Berry** Top 10: 58c -> 61c (-156, +3pp)
+- **William Byron** Top 5: 36c -> 33c (+203, -3pp)
+- **Ryan Preece** Top 10: 30c -> 27c (+270, -3pp)
+
+_leader win YES 18c · scraped 2026-08-23T13:34:44.335460+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-23T12:44:36.406680+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
