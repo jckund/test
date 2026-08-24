@@ -738,12 +738,23 @@ const CMP_TIERS = [
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const BOOKS = [
-  // Hand-entered books only (Kalshi is the fair anchor, scraped separately).
-  // Add one line per book you enter, e.g.:
-  //   { key: "draftkings", label: "DraftKings", url: "manual/draftkings.json" },
+  // Hand-entered books (Kalshi/model is the fair anchor, entered separately).
   // The file lives at data/<tourney>/manual/<key>.json (see gen_books.py).
+  { key: "betus", label: "BetUS", url: "manual/betus.json" },
+  { key: "betboss", label: "BetBoss", url: "manual/betboss.json" },
+  { key: "caesars", label: "Caesars", url: "manual/caesars.json" },
 ];
 const BOOKDATA = {};    // key -> parsed odds json (or null if unavailable)
+
+// DataGolf model — a predictive fair-probability source used as the comparison
+// anchor for finish tiers Kalshi doesn't list (Top 5 / Top 10 for this event).
+// Shape: { source, captured_at, model:true, tiers: { <tierKey>: { <name>: prob } } }.
+const MODEL = { key: "datagolf", label: "DataGolf", url: "model/datagolf.json" };
+let MODELDATA = null;   // parsed model json (or null if unavailable)
+function modelHasTier(tierKey) {
+  return !!(MODELDATA && MODELDATA.tiers && MODELDATA.tiers[tierKey]
+            && Object.keys(MODELDATA.tiers[tierKey]).length);
+}
 let compareTier = null; // currently shown comparison tier
 
 // Match drivers across sources despite formatting differences: strip accents
@@ -777,7 +788,9 @@ function booksForTier(tierKey) {
 }
 function cmpTiersAvailable() {
   const kalshiKeys = new Set(INDEX.markets.map((m) => m.key));
-  return CMP_TIERS.filter((t) => kalshiKeys.has(t.key) && booksForTier(t.key).length);
+  // A tier shows if it has a fair anchor (Kalshi OR the DataGolf model) AND at
+  // least one book carries it.
+  return CMP_TIERS.filter((t) => (kalshiKeys.has(t.key) || modelHasTier(t.key)) && booksForTier(t.key).length);
 }
 
 // Odds Comparison subtabs: the per-tier driver comparison plus the derived
@@ -879,6 +892,7 @@ async function loadCompare() {
   await Promise.all(BOOKS.map(async (bk) => {
     try { BOOKDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { BOOKDATA[bk.key] = null; }
   }));
+  try { MODELDATA = await loadJSON(dbase() + MODEL.url); } catch { MODELDATA = null; }
   buildCmpTabs();
   await renderCmpSub();
 }
@@ -897,31 +911,51 @@ async function renderCompare() {
     return;
   }
   const label = (CMP_TIERS.find((t) => t.key === compareTier) || {}).label || compareTier;
-  $("cmp-title").textContent = label + " — Kalshi vs the books";
-  $("updated").textContent = "Kalshi vs the books";
+
+  // Fair anchor for this tier: Kalshi when it lists the market (source of
+  // truth), otherwise the DataGolf model — used for finish tiers Kalshi doesn't
+  // offer (Top 5 / Top 10 here). EV is priced against whichever anchors the tier.
+  const kal = {};   // normName -> { name, yes, no, prob }
+  const kalshiHas = INDEX.markets.some((m) => m.key === compareTier);
+  let fairSrc = "kalshi";
+  if (kalshiHas) {
+    try {
+      const snap = await loadJSON(dbase() + compareTier + "/snapshot.json");
+      for (const m of Object.values(snap.markets || {})) {
+        const p = priceYes(m);
+        // Display keeps the Yes/No buy prices; EV uses the conservative no-side prob.
+        if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: worstProb(m) };
+      }
+    } catch { /* leave Kalshi side empty */ }
+  }
+  if (!Object.keys(kal).length && modelHasTier(compareTier)) {
+    // Model gives one fair probability per player; show it as a no-vig fair line
+    // (yes cents = round(prob·100), no NO side) and price EV straight off prob.
+    fairSrc = "model";
+    for (const [nm, prob] of Object.entries(MODELDATA.tiers[compareTier])) {
+      kal[normName(nm)] = { name: nm, yes: Math.round(prob * 100), no: null, prob };
+    }
+  }
+  const fairName = fairSrc === "model" ? MODEL.label : "Kalshi";
+  const fairLabel = fairSrc === "model" ? escapeHtml(MODEL.label) + " (model fair)" : "Kalshi (Yes / No)";
+
+  $("cmp-title").textContent = label + " — " + fairName + " vs the books";
+  $("updated").textContent = fairName + " vs the books";
   $("mcount").textContent = (BOOKDATA[books[0].key] && BOOKDATA[books[0].key].race) || "";
 
-  // Freshness line per book.
-  $("cmp-fresh").innerHTML = books.map((bk) => {
+  // Freshness line: the fair source first (model tiers note their capture), then each book.
+  const fairFresh = fairSrc === "model"
+    ? `<span><b>${escapeHtml(MODEL.label)}</b> model ${MODELDATA && MODELDATA.captured_at ? relTime(MODELDATA.captured_at) : "—"}</span>`
+    : "";
+  $("cmp-fresh").innerHTML = fairFresh + books.map((bk) => {
     const ts = bookTime(BOOKDATA[bk.key]);
     const tag = bk.live ? "updated" : "captured";
     return `<span><b>${bk.label}</b> ${tag} ${ts ? relTime(ts) : "—"}</span>`;
   }).join("");
 
-  // Header: #, Driver, Kalshi, then (odds, EV) per book.
-  head.innerHTML = `<th class="l">#</th><th class="l">Driver</th><th>Kalshi (Yes / No)</th>` +
+  // Header: #, Driver, fair anchor, then (odds, EV) per book.
+  head.innerHTML = `<th class="l">#</th><th class="l">Driver</th><th>${fairLabel}</th>` +
     books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
-
-  // Kalshi side (source of truth): implied prob + Yes/No cents.
-  const kal = {};
-  try {
-    const snap = await loadJSON(dbase() + compareTier + "/snapshot.json");
-    for (const m of Object.values(snap.markets || {})) {
-      const p = priceYes(m);
-      // Display keeps the Yes/No buy prices; EV uses the conservative no-side prob.
-      if (p != null) kal[normName(m.name)] = { name: m.name, yes: p, no: priceNo(m), prob: worstProb(m) };
-    }
-  } catch { /* leave Kalshi side empty */ }
 
   // Per-book driver maps for this tier.
   const bookMaps = {};
@@ -967,7 +1001,8 @@ async function renderCompare() {
   rows.innerHTML = "";
   merged.forEach((r, i) => {
     const kalCell = (r.kYes == null && r.kNo == null) ? dash
-      : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`;
+      : (r.kNo == null ? usOdds(r.kYes)   // model fair: single no-vig line, no NO side
+        : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`);
     const bookCells = r.cells.map((c) =>
       `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${evCell(c.ev)}</td>`).join("");
     const tr = document.createElement("tr");
