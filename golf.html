@@ -340,8 +340,8 @@
   </div>
 
   <footer>
-    Kalshi snapshots by <code>golf_scraper.py</code> (public API); FanDuel by <code>fanduel_golf.js</code>
-    (headless browser). Git history is the full change log. Kalshi is treated as the fair-odds source.
+    Kalshi snapshots by <code>golf_scraper.py</code> (public API); other books are hand-entered from
+    posted boards. Git history is the full change log. Kalshi is treated as the fair-odds source.
   </footer>
 </div>
 
@@ -738,7 +738,10 @@ const CMP_TIERS = [
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
 const BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/odds.json", live: true },
+  // Hand-entered books only (Kalshi is the fair anchor, scraped separately).
+  // Add one line per book you enter, e.g.:
+  //   { key: "draftkings", label: "DraftKings", url: "manual/draftkings.json" },
+  // The file lives at data/<tourney>/manual/<key>.json (see gen_books.py).
 ];
 const BOOKDATA = {};    // key -> parsed odds json (or null if unavailable)
 let compareTier = null; // currently shown comparison tier
@@ -1021,13 +1024,11 @@ function usFromProb(p) {
 
 // Books carrying manufacturer markets. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
-const MFR_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/manufacturers.json", live: true },
-  { key: "caesars", label: "Caesars", url: "manual/mfr_caesars.json", live: false },
-  { key: "betus", label: "BetUS", url: "manual/mfr_betus.json", live: false },
-  { key: "prime", label: "Prime", url: "manual/mfr_prime.json", live: false },
-  { key: "betonline", label: "BetOnline", url: "manual/mfr_betonline.json", live: false },
-];
+// Manufacturer/Team are NASCAR-only views (inherited from the shared template)
+// and never render for golf — golf tournaments are never `full`. Left empty so
+// golf carries no auto-scrape (FanDuel) references; hand-entered finish-tier
+// books go in BOOKS above.
+const MFR_BOOKS = [];
 const MFRDATA = {};   // key -> parsed json (or null)
 
 async function loadManufacturers() {
@@ -1219,13 +1220,8 @@ function teamCanon(name) {
   return null;
 }
 
-const TEAM_BOOKS = [
-  { key: "fanduel", label: "FanDuel", url: "fanduel/teams.json", live: true },
-  { key: "caesars", label: "Caesars", url: "manual/team_caesars.json", live: false },
-  { key: "betus", label: "BetUS", url: "manual/team_betus.json", live: false },
-  { key: "prime", label: "Prime", url: "manual/team_prime.json", live: false },
-  { key: "betonline", label: "BetOnline", url: "manual/team_betonline.json", live: false },
-];
+// NASCAR-only (see MFR_BOOKS note above); never rendered for golf.
+const TEAM_BOOKS = [];
 const TEAMDATA = {};
 
 async function loadTeams() {
