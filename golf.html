@@ -148,6 +148,10 @@
   /* +EV highlight: a book line longer than the Kalshi-implied fair line. */
   td.ev { background: color-mix(in srgb, var(--pos) 15%, transparent); }
   tr:hover td.ev { background: color-mix(in srgb, var(--pos) 22%, transparent); }
+  /* Best price in the row: the book paying the most for this player. */
+  td.best { font-weight: 700; color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 16%, transparent); }
+  tr:hover td.best { background: color-mix(in srgb, var(--accent) 24%, transparent); }
   .cmp-fresh { font-size: 12px; color: var(--ink-2); margin: 0 0 14px; display: flex;
     flex-wrap: wrap; gap: 4px 16px; }
   .cmp-fresh b { color: var(--ink); font-weight: 600; }
@@ -998,13 +1002,23 @@ async function renderCompare() {
 
   const evCell = (e) => e == null ? dash
     : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
+  // Net decimal payout per $1 — bigger = better price. Used to flag the best
+  // book in each row.
+  const payout = (a) => (a == null ? -Infinity : (a > 0 ? a / 100 : 100 / -a));
   rows.innerHTML = "";
   merged.forEach((r, i) => {
+    // Kalshi/model fair: show the ¢ price AND American odds so Yes and No read
+    // as distinct prices (a thin longshot's No is ~the mirror of its Yes in
+    // American terms, which looks duplicated without the cents).
     const kalCell = (r.kYes == null && r.kNo == null) ? dash
-      : (r.kNo == null ? usOdds(r.kYes)   // model fair: single no-vig line, no NO side
-        : `${usOdds(r.kYes)} <span class="muted">/</span> ${usOdds(r.kNo)}`);
-    const bookCells = r.cells.map((c) =>
-      `<td class="num">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${evCell(c.ev)}</td>`).join("");
+      : (r.kNo == null
+        ? `${cCents(r.kYes)} ${usOdds(r.kYes)}`   // model fair: single no-vig line, no NO side
+        : `${cCents(r.kYes)} ${usOdds(r.kYes)} <span class="muted">/</span> ${cCents(r.kNo)} ${usOdds(r.kNo)}`);
+    // Best (longest-paying) book price in this row.
+    let bestIdx = -1, bestP = -Infinity;
+    r.cells.forEach((c, ci) => { const p = payout(c.american); if (p > bestP) { bestP = p; bestIdx = ci; } });
+    const bookCells = r.cells.map((c, ci) =>
+      `<td class="num${ci === bestIdx && c.american != null ? " best" : ""}">${c.american == null ? dash : usAmerican(c.american)}</td><td class="num">${evCell(c.ev)}</td>`).join("");
     const tr = document.createElement("tr");
     tr.innerHTML =
       `<td class="l rank ${i === 0 && r.bestEV != null && r.bestEV > 0 ? "top" : ""}">${i + 1}</td>` +
