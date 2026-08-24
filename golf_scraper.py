@@ -25,10 +25,13 @@ KXPGATOP5-THOC26, … Output tree per tournament:
   data/<key>/<tier>/CHANGES.md          — human-readable change log
   data/<key>/activity.json              — recent trades feed
 
-The ``TOURNAMENTS`` config lists the tournament(s) to track by their Kalshi
-code + a friendly tab label. To follow a different event, add/replace an entry
-(the code is the suffix in the Kalshi URL, e.g. ``.../kxpgatour-thoc26`` →
-``THOC26``).
+The ``TOURNAMENTS`` config lists the tournament(s) to track by a lowercase
+name ``match`` substring (plus a friendly tab label) — the SAME name-matching
+approach the NASCAR scraper uses, so there is NO per-week code to hunt down.
+Each run enumerates the *open* events under the winner series (``KXPGATOUR``)
+and picks the one whose Kalshi title/subtitle contains ``match``, reading the
+code straight off that event's ticker. To follow a different event, just change
+``match`` (e.g. ``"tour championship"`` → ``"the open"``).
 
 Run manually with:  python3 golf_scraper.py
 """
@@ -59,14 +62,21 @@ TIERS = [
 ]
 TIER_BY_KEY = {k: (k, lbl, odl, s, path) for (k, lbl, odl, s, path) in TIERS}
 
-# Tournaments to track. `code` is the suffix in the Kalshi event ticker / URL
-# (e.g. .../kxpgatour-thoc26 → "THOC26"). `key` names the data dir + dashboard
-# tab; `title` is the heading shown on the page. `tiers` lists which finish
-# tiers to scrape. Add an entry to follow another event.
+# Tournaments to track. `match` is a lowercase substring tested against the
+# Kalshi event name/subtitle under the winner series (KXPGATOUR); the open event
+# it matches supplies the tournament code at runtime (no hardcoded code — see
+# resolve_tournaments). `key` names the data dir + dashboard tab; `label` is the
+# tab label; the page heading comes from Kalshi's own event title. `tiers` lists
+# which finish tiers to scrape. To follow another event, change `match`.
 TOURNAMENTS = [
-    {"key": "theopen", "label": "The Open", "title": "The Open Championship",
-     "code": "THOC26", "tiers": ["winner", "top5", "top10", "top20"]},
+    {"key": "tourchamp", "label": "Tour Championship", "match": "tour championship",
+     "tiers": ["winner", "top5", "top10", "top20"]},
 ]
+
+# The winner tier's Kalshi series — every tournament's per-tier events share one
+# code suffix (KXPGATOUR-<code>, KXPGATOP5-<code>, …), so we discover the code
+# once from the open winner-series events and reuse it across tiers.
+WINNER_SERIES = "KXPGATOUR"
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
 
@@ -114,6 +124,12 @@ def _get_json(url: str, retries: int = 5) -> dict:
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
             last_err = err
             code = getattr(err, "code", None)
+            if code == 404:
+                # A missing event/market won't reappear on retry — fail fast so
+                # tiers Kalshi doesn't offer for this tournament (e.g. no top-20
+                # market for the 30-player Tour Championship) skip instantly
+                # instead of burning ~30s of backoff each.
+                break
             if attempt < retries - 1:
                 wait = 2 ** (attempt + 1) * (2 if code == 429 else 1)
                 print(f"  fetch failed ({err}); retrying in {wait}s", file=sys.stderr)
@@ -127,12 +143,56 @@ def fetch_event(ticker: str) -> dict:
     return _get_json(url)
 
 
+def discover_open_events() -> list:
+    """Enumerate the currently-OPEN events under the winner series. Returns
+    [{code, title, sub_title}] — the code is the ticker suffix shared by every
+    finish tier of that tournament (KXPGATOUR-<code>, KXPGATOP5-<code>, …)."""
+    url = f"{API_BASE}/events?series_ticker={WINNER_SERIES}&status=open&limit=200"
+    print(f"Discovering open golf events: {url}", file=sys.stderr)
+    events = _get_json(url).get("events", []) or []
+    out = []
+    for e in events:
+        et = e.get("event_ticker") or ""
+        if "-" not in et:
+            continue
+        out.append({
+            "code": et.split("-", 1)[1],
+            "title": e.get("title") or "",
+            "sub_title": e.get("sub_title") or "",
+        })
+    print(f"  found {len(out)} open event(s): "
+          + ", ".join(f"{o['code']}={o['sub_title'] or o['title']}" for o in out),
+          file=sys.stderr)
+    return out
+
+
 def resolve_tournaments() -> list:
-    """Turn the TOURNAMENTS config into resolved dicts, each carrying a fully
-    built list of per-tier events. The winner tier's page is the series link."""
-    resolved = []
+    """Match each TOURNAMENTS entry to an open Kalshi event by name substring
+    (mirrors the NASCAR scraper), then build its per-tier events from the
+    discovered code. Skips a tournament with no matching open event."""
+    open_events = discover_open_events()
+    _, _, _, win_series, win_path = TIER_BY_KEY["winner"]
+    resolved, used = [], set()
+
     for cfg in TOURNAMENTS:
-        code = cfg["code"]
+        match = cfg["match"].lower()
+        chosen = None
+        for o in open_events:
+            if o["code"] in used:
+                continue
+            if match in f"{o['title']} {o['sub_title']}".lower():
+                chosen = o
+                break
+        if not chosen:
+            print(f"tournament {cfg['key']}: no open event matched "
+                  f"'{cfg['match']}'; skipping.", file=sys.stderr)
+            continue
+        used.add(chosen["code"])
+        code = chosen["code"]
+        title = chosen["sub_title"] or chosen["title"]
+        print(f"tournament {cfg['key']}: matched {win_series}-{code} ({title})",
+              file=sys.stderr)
+
         events = []
         for tk in cfg["tiers"]:
             key, label, odds_label, series_ticker, path = TIER_BY_KEY[tk]
@@ -141,10 +201,9 @@ def resolve_tournaments() -> list:
                 "ticker": f"{series_ticker}-{code}",
                 "page_url": tier_page_url(series_ticker, path, code),
             })
-        _, _, _, win_series, win_path = TIER_BY_KEY["winner"]
         resolved.append({
             "key": cfg["key"], "label": cfg["label"],
-            "race_title": cfg["title"],
+            "race_title": title,
             "page_url": tier_page_url(win_series, win_path, code),
             "events": events,
         })

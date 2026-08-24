@@ -4,15 +4,16 @@ name: Track Kalshi Golf market
 # data/golf.json + data/<key>/ changes. This workflow does NOT deploy — the
 # NASCAR workflow (track.yml) publishes the shared GitHub Pages site on its own
 # schedule and copies the whole data/ dir plus golf.html, so golf updates reach
-# /golf/ within ~15 min. Data commits here don't match track.yml's path filter,
-# so there is no deploy loop.
+# /golf/ on the next publish. Data commits here don't match track.yml's path
+# filter, so there is no deploy loop.
 #
-# GitHub-hosted runners have open egress (Kalshi is reachable there but not from
-# a Claude session, whose proxy blocks kalshi.com), so the scrape runs here.
+# ON-DEMAND ONLY: golf runs when you ask for it (manual `workflow_dispatch`, or
+# a push that changes the scraper) — there is NO 15-min schedule. Kalshi is the
+# only auto source for golf; other books are hand-entered. GitHub-hosted runners
+# have open egress (Kalshi is reachable there but not from a Claude session,
+# whose proxy blocks kalshi.com), so the scrape runs here.
 
 on:
-  schedule:
-    - cron: "*/15 * * * *"   # every 15 min, like the NASCAR Kalshi scrape
   workflow_dispatch: {}
   push:
     branches: [claude/nascar-page-scraper-mwi55a]
