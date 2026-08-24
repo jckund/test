@@ -124,6 +124,12 @@ def _get_json(url: str, retries: int = 5) -> dict:
         except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
             last_err = err
             code = getattr(err, "code", None)
+            if code == 404:
+                # A missing event/market won't reappear on retry — fail fast so
+                # tiers Kalshi doesn't offer for this tournament (e.g. no top-20
+                # market for the 30-player Tour Championship) skip instantly
+                # instead of burning ~30s of backoff each.
+                break
             if attempt < retries - 1:
                 wait = 2 ** (attempt + 1) * (2 if code == 429 else 1)
                 print(f"  fetch failed ({err}); retrying in {wait}s", file=sys.stderr)

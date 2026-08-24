@@ -67,9 +67,24 @@ def _key(name: str) -> str:
     return " ".join(n.split())
 
 
+# For non-NASCAR trackers (golf) the canonical roster isn't a fixed list — it's
+# whatever players Kalshi lists for the event. Point CANON_SNAPSHOT at a scraped
+# winner snapshot (e.g. data/tourchamp/winner/snapshot.json) and the roster +
+# exact name spellings come straight from it; the NASCAR driver list and aliases
+# don't apply.
+_CANON_SNAPSHOT = os.environ.get("CANON_SNAPSHOT")
+if _CANON_SNAPSHOT:
+    import json as _json
+    with open(_CANON_SNAPSHOT, encoding="utf-8") as _fh:
+        _snap = _json.load(_fh)
+    CANON = sorted({(m.get("name") or "").strip()
+                    for m in _snap.get("markets", {}).values() if m.get("name")})
+    _ALIAS = {}
+else:
+    # Aliases whose key doesn't collapse onto the canonical spelling.
+    _ALIAS = {"john hunter nemechek": "John H. Nemechek", "darrell wallace": "Bubba Wallace"}
+
 _BYKEY = {_key(c): c for c in CANON}
-# Aliases whose key doesn't collapse onto the canonical spelling.
-_ALIAS = {"john hunter nemechek": "John H. Nemechek", "darrell wallace": "Bubba Wallace"}
 
 
 def canon(name: str) -> str:
