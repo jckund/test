@@ -1,23 +1,29 @@
-name: Track Kalshi Golf market
+name: Track & publish Kalshi Golf site
 
-# Scrapes the Kalshi PGA golf markets for the tracked tournament(s) and commits
-# data/golf.json + data/<key>/ changes. This workflow does NOT deploy — the
-# NASCAR workflow (track.yml) publishes the shared GitHub Pages site on its own
-# schedule and copies the whole data/ dir plus golf.html, so golf updates reach
-# /golf/ on the next publish. Data commits here don't match track.yml's path
-# filter, so there is no deploy loop.
+# Self-contained golf pipeline: scrape the Kalshi PGA golf market(s), commit
+# data changes, then publish the golf page to GitHub Pages — all WITHOUT running
+# the NASCAR scraper. This decouples golf from the NASCAR workflow (track.yml):
+# golf can go live any time, including between NASCAR race weekends when the
+# NASCAR scraper has no open race to scrape.
 #
-# ON-DEMAND ONLY: golf runs when you ask for it (manual `workflow_dispatch`, or
-# a push that changes the scraper) — there is NO 15-min schedule. Kalshi is the
-# only auto source for golf; other books are hand-entered. GitHub-hosted runners
-# have open egress (Kalshi is reachable there but not from a Claude session,
-# whose proxy blocks kalshi.com), so the scrape runs here.
+# NASCAR IS NEVER OVERWRITTEN. GitHub Pages serves one site per repo, so the
+# deploy below rebuilds the WHOLE site from committed files — NASCAR at the root
+# (index.html + data/, exactly as last committed by track.yml) plus golf at
+# /golf/. It only ever republishes NASCAR's existing content; it never scrapes
+# or mutates it. track.yml still owns NASCAR's own refresh/publish.
+#
+# ON-DEMAND ONLY: runs on manual `workflow_dispatch` or a push to the golf page/
+# scraper/this workflow — there is NO 15-min schedule. Kalshi is the only auto
+# source for golf; other books are hand-entered. GitHub-hosted runners have open
+# egress (Kalshi is reachable there but not from a Claude session, whose proxy
+# blocks kalshi.com), so the scrape runs here.
 
 on:
   workflow_dispatch: {}
   push:
     branches: [claude/nascar-page-scraper-mwi55a]
     paths:
+      - golf.html
       - golf_scraper.py
       - .github/workflows/golf.yml
 
@@ -26,11 +32,16 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: write        # commit scraped golf data back to the repo
+  pages: write           # deploy to GitHub Pages
+  id-token: write        # required by actions/deploy-pages
 
 jobs:
-  scrape:
+  scrape-and-publish:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -61,3 +72,27 @@ jobs:
             done
             if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
           fi
+
+      - name: Assemble site (NASCAR root preserved + golf at /golf/)
+        run: |
+          rm -rf _site && mkdir -p _site
+          # NASCAR site, exactly as last committed — never scraped or altered here.
+          if [ -f index.html ]; then cp index.html _site/; fi
+          cp -r data _site/data
+          rm -f _site/data/.gitkeep
+          # Golf page at /golf/.
+          mkdir -p _site/golf && cp golf.html _site/golf/index.html
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
