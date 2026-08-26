@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-26T01:51:39.133726+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Michael McDowell** Top 5: 19c -> 11c (+809, -8pp)
+- **Denny Hamlin** Top 5: 27c -> 19c (+426, -8pp)
+- **Austin Hill** Top 5: 17c -> 9c (+1011, -8pp)
+- **Ross Chastain** Top 3: 15c -> 7c (+1329, -8pp)
+- **Michael McDowell** Top 3: 15c -> 7c (+1329, -8pp)
+- **Joey Logano** Top 3: 25c -> 17c (+488, -8pp)
+- **Austin Hill** Top 3: 12c -> 4c (+2400, -8pp)
+- **Tyler Reddick** Top 10: 47c -> 39c (+156, -8pp)
+- **Shane Van Gisbergen** Top 10: 17c -> 24c (+317, +7pp)
+- **Ross Chastain** Top 5: 21c -> 14c (+614, -7pp)
+- (+47 more)
+
+_leader win YES 7c · scraped 2026-08-26T01:51:39.133726+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-25T13:47:40.309293+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
