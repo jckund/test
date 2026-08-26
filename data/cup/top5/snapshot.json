@@ -10,15 +10,15 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP5-COKZS26-AJAL": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 97,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-AJAL",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 3
@@ -97,7 +97,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 89,
+      "no_ask": 84,
       "no_bid": 82,
       "open_interest": 0,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 18,
-      "yes_bid": 11
+      "yes_bid": 16
     },
     "KXNASCARTOP5-COKZS26-CAHO": {
       "last_price": 19,
@@ -192,15 +192,15 @@
       "yes_bid": 12
     },
     "KXNASCARTOP5-COKZS26-COCU": {
-      "last_price": 3,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Cole Custer",
       "no_ask": 100,
       "no_bid": 95,
-      "open_interest": 3,
+      "open_interest": 203,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-COCU",
-      "volume": 3,
+      "volume": 203,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 0
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-DEHA",
       "volume": 25,
-      "volume_24h": 15,
+      "volume_24h": 6,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-MIMC",
       "volume": 207,
-      "volume_24h": 207,
+      "volume_24h": 200,
       "yes_ask": 11,
       "yes_bid": 6
     },
@@ -467,22 +467,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-RYBL",
       "volume": 375,
-      "volume_24h": 375,
+      "volume_24h": 370,
       "yes_ask": 36,
       "yes_bid": 30
     },
     "KXNASCARTOP5-COKZS26-RYPR": {
-      "last_price": 25,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 89,
-      "no_bid": 87,
-      "open_interest": 56,
+      "no_bid": 88,
+      "open_interest": 756,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-RYPR",
-      "volume": 56,
+      "volume": 756,
       "volume_24h": 0,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 11
     },
     "KXNASCARTOP5-COKZS26-SHVA": {
@@ -500,18 +500,18 @@
       "yes_bid": 3
     },
     "KXNASCARTOP5-COKZS26-TOGI": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Todd Gilliland",
-      "no_ask": 97,
-      "no_bid": 90,
-      "open_interest": 0,
+      "no_ask": 96,
+      "no_bid": 89,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-TOGI",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 10,
-      "yes_bid": 3
+      "yes_ask": 11,
+      "yes_bid": 4
     },
     "KXNASCARTOP5-COKZS26-TYDI": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-26T01:51:39.973488+00:00",
+  "scraped_at": "2026-08-26T02:20:26.515135+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top5"
 }
