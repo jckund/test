@@ -9,9 +9,10 @@ name: Track Kalshi NASCAR market
 
 on:
   schedule:
-    # Every 15 minutes. GitHub schedules are best-effort and can be delayed
-    # under load; this is the practical floor for a market tracker.
-    - cron: "*/15 * * * *"
+    # Every ~15 minutes, but OFFSET off the top-of-hour minutes. GitHub's shared
+    # scheduler heavily throttles/skips crons at :00/:15/:30/:45 (peak load), so
+    # firing at :03/:18/:33/:48 runs far more reliably. Still best-effort.
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch: {}  # allow manual runs from the Actions tab
   push:
     # Redeploy the site when the page or scraper code changes. (Data commits
