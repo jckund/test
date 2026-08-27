@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-27T21:30:23.320495+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Top 10: 27c -> 38c (+163, +11pp)
+- **Todd Gilliland** Top 10: 20c -> 29c (+245, +9pp)
+- **Bubba Wallace** Top 10: 32c -> 40c (+150, +8pp)
+- **Cole Custer** Top 10: 14c -> 20c (+400, +6pp)
+
+_leader win YES 8c · scraped 2026-08-27T21:30:23.320495+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-27T21:00:24.508752+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
