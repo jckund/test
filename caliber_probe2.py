@@ -1,71 +1,96 @@
 #!/usr/bin/env python3
-"""ONE-TIME PROBE 2 (not part of the weekly pipeline).
+"""ONE-TIME PROBE 3 (not part of the weekly pipeline).
 
-Tests whether a Caliber state directory page (/locations/<st>) server-renders
-its centers into the Next.js __NEXT_DATA__ blob when fetched with a plain HTTP
-GET (no browser). If yes, the production scraper can be lightweight `requests`
-instead of Playwright. Saves the parsed blobs under data/caliber/_discovery/ for
-inspection and prints the discovered center shape.
+We learned the individual location content type is dotCMS `Center`. This probe
+tries the standard anonymous dotCMS content endpoints for +contentType:Center,
+saves the responses, and prints how many centers each returns plus one sample
+record's fields. It also pulls the raw /locations/ca HTML and extracts the
+/locations/... link hierarchy (state -> city -> center) as a fallback path.
+Whichever endpoint returns the full Center set with address/geo fields becomes
+the basis for caliber_scraper.py.
 """
 import json
 import re
-import sys
+import urllib.parse
 import urllib.request
 
 OUT = "data/caliber/_discovery"
+BASE = "https://www.caliber.com"
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
 
-NEXT_RE = re.compile(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', re.S)
+
+def req(url, method="GET", body=None, ctype="application/json"):
+    headers = {"User-Agent": UA, "Accept": "application/json"}
+    data = None
+    if body is not None:
+        data = body.encode() if isinstance(body, str) else json.dumps(body).encode()
+        headers["Content-Type"] = ctype
+    r = urllib.request.Request(url, data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(r, timeout=60) as resp:
+            return resp.status, resp.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        return e.code, e.read().decode("utf-8", "replace")
+    except Exception as e:
+        return None, f"ERROR {e}"
 
 
-def get(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "text/html"})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.status, r.read().decode("utf-8", "replace")
-
-
-def find_center_arrays(obj, path="$"):
-    """Yield (path, list) for lists whose items look like center records."""
-    hits = []
-    if isinstance(obj, dict):
-        for k, v in obj.items():
-            hits += find_center_arrays(v, f"{path}.{k}")
-    elif isinstance(obj, list):
-        if obj and isinstance(obj[0], dict):
-            keys = set(obj[0].keys())
-            markers = {"address", "address1", "city", "state", "zip", "zipCode",
-                       "latitude", "longitude", "phone", "centerName", "name",
-                       "storeNumber", "locationName", "title"}
-            if len(keys & markers) >= 3:
-                hits.append((path, obj))
-        for i, v in enumerate(obj):
-            hits += find_center_arrays(v, f"{path}[{i}]")
-    return hits
+def summarize(tag, status, text):
+    print(f"\n[{tag}] status={status} len={len(text) if text else 0}")
+    fn = f"{OUT}/probe3_{tag}.json"
+    open(fn, "w").write(text or "")
+    try:
+        d = json.loads(text)
+    except Exception:
+        print(f"    (non-JSON) head: {text[:300]!r}")
+        return
+    conts = None
+    if isinstance(d, dict):
+        if "contentlets" in d:
+            conts = d["contentlets"]
+        elif "entity" in d and isinstance(d["entity"], dict) and "jsonObjectView" in d["entity"]:
+            conts = d["entity"]["jsonObjectView"].get("contentlets")
+        elif "entity" in d and isinstance(d["entity"], list):
+            conts = d["entity"]
+    if conts is not None:
+        print(f"    contentlets: {len(conts)}")
+        if conts:
+            print(f"    sample keys: {sorted(conts[0].keys())}")
+            print(f"    sample: {json.dumps(conts[0])[:900]}")
+    else:
+        print(f"    top-level keys: {list(d.keys()) if isinstance(d, dict) else type(d)}")
+        print(f"    head: {text[:400]}")
 
 
 def main():
-    for st in ["ca", "wy"]:
-        url = f"https://www.caliber.com/locations/{st}"
-        try:
-            status, html = get(url)
-        except Exception as e:
-            print(f"[{st}] FETCH ERROR: {e}")
-            continue
-        print(f"[{st}] GET {url} -> {status}, {len(html)} bytes")
-        m = NEXT_RE.search(html)
-        if not m:
-            print(f"[{st}] no __NEXT_DATA__ found")
-            # save a slice so we can see what came back (bot wall?)
-            open(f"{OUT}/state_{st}_raw_head.html", "w").write(html[:4000])
-            continue
-        data = json.loads(m.group(1))
-        open(f"{OUT}/state_{st}_next.json", "w").write(json.dumps(data, indent=2))
-        arrays = find_center_arrays(data)
-        print(f"[{st}] __NEXT_DATA__ parsed; candidate center arrays: {len(arrays)}")
-        for path, arr in sorted(arrays, key=lambda x: -len(x[1]))[:5]:
-            print(f"    {path}  ->  {len(arr)} items; sample keys: {sorted(arr[0].keys())[:20]}")
-            print(f"    sample item: {json.dumps(arr[0])[:600]}")
+    q = "+contentType:Center +live:true +languageId:1"
+    # 1) Classic Content REST API (path-encoded query)
+    path_q = urllib.parse.quote(q, safe="")
+    summarize("content_rest", *req(
+        f"{BASE}/api/content/render/false/query/{path_q}/limit/3/orderby/modDate%20desc"))
+    # 2) Newer _search POST (dotCMS 5.3+)
+    summarize("content_search_post", *req(
+        f"{BASE}/api/content/_search", "POST",
+        {"query": q, "sort": "modDate desc", "limit": 3, "offset": 0}))
+    # 3) ES search POST (query_string form)
+    summarize("es_search_qs", *req(
+        f"{BASE}/api/es/search", "POST",
+        {"query": {"query_string": {"query": q}}, "size": 3, "from": 0}))
+    # 4) ES search POST (dotCMS shorthand form)
+    summarize("es_search_short", *req(
+        f"{BASE}/api/es/search", "POST",
+        {"query": q, "size": 3, "from": 0}))
+
+    # 5) Link hierarchy from the raw CA state page
+    st, html = req(f"{BASE}/locations/ca", "GET")
+    print(f"\n[locations/ca html] status={st} len={len(html) if html else 0}")
+    if html and html.startswith("<"):
+        links = sorted(set(re.findall(r'href="(/locations/[^"#?]+)"', html)))
+        open(f"{OUT}/ca_sublinks.json", "w").write(json.dumps(links, indent=2))
+        print(f"    /locations/* links on CA page: {len(links)}")
+        for l in links[:25]:
+            print("     ", l)
 
 
 if __name__ == "__main__":
