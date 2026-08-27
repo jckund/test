@@ -7,6 +7,13 @@ name: Caliber location discovery (one-time probe)
 
 on:
   workflow_dispatch: {}
+  # workflow_dispatch/schedule only fire from the default branch, so while this
+  # lives on the feature branch we trigger the probe by pushing the probe files.
+  push:
+    branches: [claude/location-scraper-weekly-email-2wu2yc]
+    paths:
+      - caliber_discover.mjs
+      - .github/workflows/caliber_discover.yml
 
 concurrency:
   group: caliber-discover
