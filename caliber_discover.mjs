@@ -18,9 +18,9 @@
  * file + its workflow can be deleted.
  */
 
-const fs = require("fs");
-const path = require("path");
-const { chromium } = require("playwright");
+import fs from "fs";
+import path from "path";
+import { chromium } from "playwright";
 
 const START = "https://www.caliber.com/find-a-location";
 const OUT = path.join("data", "caliber", "_discovery");
