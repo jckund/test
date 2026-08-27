@@ -51,8 +51,8 @@ jobs:
         id: report
         run: python caliber_report.py
 
-      - name: Send email (only if new/removed locations)
-        if: steps.report.outputs.changed == 'true'
+      - name: Send weekly email (changes, or a "no changes" heartbeat)
+        if: steps.report.outputs.send == 'true'
         continue-on-error: true   # a mail/creds problem must not block the baseline commit
         env:
           MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}

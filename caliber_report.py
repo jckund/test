@@ -105,16 +105,24 @@ def section_html(title, color, locs):
 
 def build_email(added, removed, total, when):
     week = when.strftime("%Y-%m-%d")
-    subject = f"Caliber locations: +{len(added)} new, −{len(removed)} removed (week of {week})"
+    quiet = not added and not removed
+    if quiet:
+        subject = f"Caliber locations: no changes this week ({total:,} tracked)"
+    else:
+        subject = f"Caliber locations: +{len(added)} new, −{len(removed)} removed (week of {week})"
     head = f"""<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:680px;margin:0 auto;color:#1a1a1a">
 <h1 style="font-size:20px;margin:0 0 4px">Caliber Collision — weekly location changes</h1>
-<p style="color:#666;margin:0 0 16px;font-size:14px">Week of {week} &middot; {total} locations tracked</p>
+<p style="color:#666;margin:0 0 16px;font-size:14px">Week of {week} &middot; {total:,} locations tracked</p>
 <p style="font-size:15px;margin:0 0 8px">
 <strong style="color:#1a7f37">{len(added)}</strong> new &nbsp;|&nbsp;
 <strong style="color:#b00020">{len(removed)}</strong> removed
 </p>"""
-    body = section_html("New locations", "#1a7f37", added)
-    body += section_html("Removed locations", "#b00020", removed)
+    if quiet:
+        body = ('<p style="font-size:15px;margin:8px 0 0">No new or removed locations this week — '
+                'the full set is unchanged from last week.</p>')
+    else:
+        body = section_html("New locations", "#1a7f37", added)
+        body += section_html("Removed locations", "#b00020", removed)
     foot = f"""<hr style="border:none;border-top:1px solid #eee;margin:24px 0 10px">
 <p style="color:#999;font-size:12px;margin:0">
 Source: <a href="https://www.caliber.com/find-a-location" style="color:#999">caliber.com/find-a-location</a>
@@ -129,38 +137,37 @@ def main():
     baseline = load_baseline()
 
     if baseline is None:
+        # First run on a fresh branch: everything would look "new", so seed the
+        # baseline silently. Weekly heartbeat emails start from the next run.
         print("No committed baseline yet — seeding silently (no email).")
-        set_output(changed="false", added="0", removed="0", total=str(len(current)), subject="")
+        set_output(send="false", changed="false", added="0", removed="0",
+                   total=str(len(current)), subject="")
         return 0
 
     cur_ids = set(current)
     base_ids = set(baseline)
-    added_ids = cur_ids - base_ids
-    removed_ids = base_ids - cur_ids
+    added = [current[i] for i in cur_ids - base_ids]
+    removed = [baseline[i] for i in base_ids - cur_ids]
+    changed = bool(added or removed)
 
-    added = [current[i] for i in added_ids]
-    removed = [baseline[i] for i in removed_ids]
-
-    if not added and not removed:
-        print("No new or removed locations this week — no email.")
-        set_output(changed="false", added="0", removed="0", total=str(len(current)), subject="")
-        return 0
-
+    # Always build + send a weekly email (heartbeat when nothing changed).
     subject, body = build_email(added, removed, len(current), when)
     with open(BODY_PATH, "w") as f:
         f.write(body)
     with open(SUBJECT_PATH, "w") as f:
         f.write(subject)
 
-    row = {
-        "week": when.strftime("%Y-%m-%d"),
-        "captured_at": when.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "added": sorted(f"{l.get('name')} ({l.get('city')}, {l.get('state')})" for l in added),
-        "removed": sorted(f"{l.get('name')} ({l.get('city')}, {l.get('state')})" for l in removed),
-        "total": len(current),
-    }
-    with open(CHANGES_PATH, "a") as f:
-        f.write(json.dumps(row) + "\n")
+    # Only log weeks that actually changed — heartbeats aren't history.
+    if changed:
+        row = {
+            "week": when.strftime("%Y-%m-%d"),
+            "captured_at": when.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "added": sorted(f"{l.get('name')} ({l.get('city')}, {l.get('state')})" for l in added),
+            "removed": sorted(f"{l.get('name')} ({l.get('city')}, {l.get('state')})" for l in removed),
+            "total": len(current),
+        }
+        with open(CHANGES_PATH, "a") as f:
+            f.write(json.dumps(row) + "\n")
 
     print(f"{subject}")
     for l in added:
@@ -168,7 +175,8 @@ def main():
     for l in removed:
         print(f"  - {l.get('name')} ({l.get('city')}, {l.get('state')})")
 
-    set_output(changed="true", added=str(len(added)), removed=str(len(removed)),
+    set_output(send="true", changed="true" if changed else "false",
+               added=str(len(added)), removed=str(len(removed)),
                total=str(len(current)), subject=subject)
     return 0
 
