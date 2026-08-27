@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-08-27T14:11:46.355144+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ross Chastain** Top 5: 12c -> 15c (+567, +3pp)
+- **Austin Hill** Top 5: 6c -> 9c (+1011, +3pp)
+- **Bubba Wallace** Top 3: 11c -> 14c (+614, +3pp)
+- **Michael McDowell** Top 5: 11c -> 8c (+1150, -3pp)
+- **Denny Hamlin** Top 5: 21c -> 18c (+456, -3pp)
+
+_leader win YES 8c · scraped 2026-08-27T14:11:46.355144+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-27T13:28:28.125374+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
