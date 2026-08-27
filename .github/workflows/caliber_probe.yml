@@ -1,0 +1,47 @@
+name: Caliber probe 2 (state-page SSR test)
+
+# Fast Python-only probe: checks whether /locations/<st> server-renders centers
+# into __NEXT_DATA__ over plain HTTP. Commits parsed blobs to _discovery/.
+# Delete once caliber_scraper.py is finalized.
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [claude/location-scraper-weekly-email-2wu2yc]
+    paths:
+      - caliber_probe2.py
+      - .github/workflows/caliber_probe.yml
+
+concurrency:
+  group: caliber-probe2
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run probe
+        run: python caliber_probe2.py
+      - name: Commit probe output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/caliber/_discovery
+          if git diff --cached --quiet; then
+            echo "No probe output to commit."
+          else
+            git commit -m "chore(caliber): state-page SSR probe output"
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+          fi
