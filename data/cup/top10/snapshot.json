@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-CAHO",
       "volume": 282,
-      "volume_24h": 38,
+      "volume_24h": 0,
       "yes_ask": 38,
       "yes_bid": 35
     },
@@ -349,15 +349,15 @@
       "last_price": 41,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 72,
-      "no_bid": 62,
+      "no_ask": 70,
+      "no_bid": 59,
       "open_interest": 237,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-JOLO",
       "volume": 237,
       "volume_24h": 218,
-      "yes_ask": 38,
-      "yes_bid": 28
+      "yes_ask": 41,
+      "yes_bid": 30
     },
     "KXNASCARTOP10-COKZS26-JONE": {
       "last_price": 24,
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-NOGR",
       "volume": 25,
-      "volume_24h": 0,
+      "volume_24h": 8,
       "yes_ask": 23,
       "yes_bid": 15
     },
@@ -461,7 +461,7 @@
       "last_price": 44,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 75,
+      "no_ask": 74,
       "no_bid": 56,
       "open_interest": 134,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 134,
       "volume_24h": 26,
       "yes_ask": 44,
-      "yes_bid": 25
+      "yes_bid": 26
     },
     "KXNASCARTOP10-COKZS26-RYPR": {
       "last_price": 0,
@@ -489,15 +489,15 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
-      "no_ask": 78,
-      "no_bid": 77,
+      "no_ask": 79,
+      "no_bid": 76,
       "open_interest": 253,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-SHVA",
       "volume": 253,
       "volume_24h": 8,
-      "yes_ask": 23,
-      "yes_bid": 22
+      "yes_ask": 24,
+      "yes_bid": 21
     },
     "KXNASCARTOP10-COKZS26-TOGI": {
       "last_price": 20,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-08-27T19:30:22.986358+00:00",
+  "scraped_at": "2026-08-27T19:45:20.379015+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top10"
 }
