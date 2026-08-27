@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-27T19:00:23.586359+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Josh Berry** Top 10: 23c -> 26c (+285, +3pp)
+
+_leader win YES 8c · scraped 2026-08-27T19:00:23.586359+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-27T18:45:20.617022+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
