@@ -102,7 +102,7 @@ try:
     TRADES_PER_MARKET = max(1, int(os.environ.get("KALSHI_TRADES_PER_MARKET", "10")))
 except ValueError:
     TRADES_PER_MARKET = 10
-ACTIVITY_MAX = 150
+ACTIVITY_MAX = 20000   # full-event feed cap (accumulates every trade for the race)
 
 # For alerting, we don't sample — we paginate EVERY trade a watched market saw
 # since the last run, so no large trade can slip through between polls. The
@@ -684,32 +684,61 @@ def persist_trades_window(series_dir: str, atrades: list, hours: int = TRADES_WI
     return len(rows)
 
 
-def build_activity(events: list, series_dir: str) -> list:
-    """Merge recent trades across this race's markets into <series>/activity.json.
+def update_activity(series_dir: str, new_trades: list, race_id: str) -> list:
+    """Accumulate a FULL-EVENT trade feed at <series>/activity.json.
 
-    Returns the full deduped trade list (not just the truncated feed) so callers
-    like large-trade alerting can inspect every trade fetched this run."""
-    trades = {}
+    Unlike a rolling snapshot, this merges each run's trades (deduped by
+    trade_id) into whatever the file already holds, so the feed spans the whole
+    event — from the first scrape through completion. It resets automatically
+    when the race changes (the stored ``race`` id no longer matches), so a new
+    weekend starts clean. Capped at ACTIVITY_MAX and written compact to keep the
+    committed file manageable."""
+    path = os.path.join(series_dir, "activity.json")
+    keep: dict = {}
+    if os.path.exists(path):
+        try:
+            with open(path, encoding="utf-8") as fh:
+                old = json.load(fh)
+            if old.get("race") == race_id:      # same event -> carry history forward
+                for t in old.get("trades", []):
+                    if t.get("trade_id"):
+                        keep[t["trade_id"]] = t
+        except (OSError, json.JSONDecodeError):
+            keep = {}
+    for t in new_trades or []:
+        tid = t.get("trade_id")
+        if not tid:
+            continue
+        keep[tid] = {"trade_id": tid, "created_time": t.get("created_time"),
+                     "driver": t.get("driver"), "ticker": t.get("ticker"),
+                     "tier": t.get("tier"), "side": t.get("side"),
+                     "count": t.get("count"), "yes_price": t.get("yes_price"),
+                     "no_price": t.get("no_price")}
+    ordered = sorted(keep.values(), key=lambda x: x.get("created_time") or "",
+                     reverse=True)[:ACTIVITY_MAX]
+    out = {"updated_at": datetime.now(timezone.utc).isoformat(),
+           "race": race_id, "count": len(ordered), "trades": ordered}
+    os.makedirs(series_dir, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(out, fh, separators=(",", ":"))
+        fh.write("\n")
+    print(f"activity: {len(ordered)} trades in event feed", file=sys.stderr)
+    return ordered
+
+
+def build_activity(events: list, series_dir: str, race_id: str) -> list:
+    """Fetch this run's recent trades per market and fold them into the
+    accumulating full-event feed (see update_activity)."""
+    trades = []
     for tk, (label, driver) in _series_market_meta(events, series_dir).items():
         try:
             for t in fetch_trades(tk):
                 norm = _norm_trade(t, label, driver, tk)
                 if norm:
-                    trades[norm["trade_id"]] = norm
+                    trades.append(norm)
         except Exception as e:  # noqa: BLE001 - skip a market, keep the feed
             print(f"trades failed for {tk}: {e}", file=sys.stderr)
-
-    ordered_all = sorted(trades.values(), key=lambda x: x.get("created_time") or "",
-                         reverse=True)
-    ordered = ordered_all[:ACTIVITY_MAX]
-    out = {"updated_at": datetime.now(timezone.utc).isoformat(),
-           "count": len(ordered), "trades": ordered}
-    os.makedirs(series_dir, exist_ok=True)
-    with open(os.path.join(series_dir, "activity.json"), "w", encoding="utf-8") as fh:
-        json.dump(out, fh, indent=2)
-        fh.write("\n")
-    print(f"activity: {len(ordered)} recent trades", file=sys.stderr)
-    return ordered_all
+    return update_activity(series_dir, trades, race_id)
 
 
 def build_index(events: list, series_dir: str, race_title: str, page_url: str) -> None:
@@ -766,7 +795,7 @@ def process_series(rs: dict) -> dict | None:
             print(f"team scrape failed for {rs['key']}: {e}", file=sys.stderr)
 
     try:
-        build_activity(events, series_dir)
+        build_activity(events, series_dir, rs["race_code"])
     except Exception as e:  # noqa: BLE001 - activity is best-effort
         print(f"activity build failed for {rs['key']}: {e}", file=sys.stderr)
 
@@ -784,6 +813,13 @@ def process_series(rs: dict) -> dict | None:
                 persist_trades_window(series_dir, atrades)
             except Exception as e:  # noqa: BLE001 - rolling log is best-effort
                 print(f"trades_window persist failed for {rs['key']}: {e}", file=sys.stderr)
+            # Fold the COMPREHENSIVE (fully-paginated, gap-free) trade feed into
+            # the full-event activity log so watched series miss nothing between
+            # scrapes — not just the 10-per-market sample build_activity fetched.
+            try:
+                update_activity(series_dir, atrades, rs["race_code"])
+            except Exception as e:  # noqa: BLE001 - activity merge is best-effort
+                print(f"activity merge failed for {rs['key']}: {e}", file=sys.stderr)
             fired = alerts.process(series_dir, rs["label"], atrades)
             # Only advance the scan marker after a successful scan+process, so a
             # failure mid-run leaves the gap to be re-covered next run.

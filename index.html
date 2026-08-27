@@ -130,6 +130,10 @@
   .feed .ts { font-size: 12px; color: var(--ink-2); font-family: var(--mono); margin-bottom: 6px; }
   .feed .chg { font-size: 13px; margin: 3px 0; }
   .feed .chg b { font-weight: 600; }
+  .act-controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin: 0 0 14px; }
+  .act-controls input[type=search] { flex: 1 1 240px; min-width: 160px; padding: 8px 11px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
+  .act-controls label { font-size: 13px; color: var(--ink-2); display: inline-flex; gap: 6px; align-items: center; white-space: nowrap; }
+  .act-controls select { padding: 7px 9px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); font: inherit; }
   .arrow.up { color: var(--pos); } .arrow.down { color: var(--neg); }
 
   /* The comparison grid is wide (many books). Let it break out of the 980px
@@ -227,8 +231,18 @@
   <div id="activity-view" style="display:none">
     <section class="card">
       <div class="card-head">
-        <h2>Recent activity</h2>
+        <h2>Activity</h2>
         <span class="count" id="act-count"></span>
+      </div>
+      <div class="act-controls">
+        <input id="act-search" type="search" placeholder="Filter by driver…" oninput="onActSearch(this.value)" autocomplete="off" spellcheck="false">
+        <label>Sort
+          <select id="act-sort" onchange="onActSort(this.value)">
+            <option value="recent">Newest</option>
+            <option value="value">Value (high → low)</option>
+            <option value="size">Size (high → low)</option>
+          </select>
+        </label>
       </div>
       <div class="scroll">
         <table>
@@ -617,23 +631,53 @@ async function loadActivity() {
   }
 }
 
+// Full-event activity feed state + view controls (filter by driver, sort).
+let ACT = { trades: [], updated_at: null };
+let ACT_Q = "", ACT_SORT = "recent";
+const ACT_RENDER_CAP = 750;   // keep the DOM light; full set stays searchable/sortable
+
+function tradeValue(t) {
+  const price = t.side === "no" ? t.no_price : t.yes_price;
+  return (typeof price === "number" && typeof t.count === "number")
+    ? t.count * price / 100 : null;
+}
+function onActSearch(q) { ACT_Q = (q || "").trim().toLowerCase(); drawActivity(); }
+function onActSort(s) { ACT_SORT = s || "recent"; drawActivity(); }
+
 function renderActivity(data) {
-  const trades = (data && data.trades) || [];
-  $("updated").textContent = "Updated " + relTime(data && data.updated_at);
-  $("updated").title = (data && data.updated_at) || "";
-  $("mcount").textContent = trades.length + " recent trades";
-  $("act-count").textContent = trades.length + " trades";
+  ACT = { trades: (data && data.trades) || [], updated_at: (data && data.updated_at) || null };
+  $("updated").textContent = "Updated " + relTime(ACT.updated_at);
+  $("updated").title = ACT.updated_at || "";
+  drawActivity();
+}
+
+function drawActivity() {
+  const total = ACT.trades.length;
+  let rows = ACT_Q
+    ? ACT.trades.filter((t) => (t.driver || t.ticker || "").toLowerCase().includes(ACT_Q))
+    : ACT.trades.slice();
+  if (ACT_SORT === "value") rows.sort((a, b) => (tradeValue(b) ?? -1) - (tradeValue(a) ?? -1));
+  else if (ACT_SORT === "size") rows.sort((a, b) => (b.count || 0) - (a.count || 0));
+  else rows.sort((a, b) => String(b.created_time || "").localeCompare(String(a.created_time || "")));
+
+  const matched = rows.length;
+  const shown = Math.min(matched, ACT_RENDER_CAP);
+  const label = (ACT_Q ? `${matched} of ${total}` : `${total}`) + " trades"
+    + (matched > shown ? ` · showing ${shown}` : "");
+  $("act-count").textContent = label;
+  $("mcount").textContent = label;
+
   const tb = $("act-rows");
   tb.innerHTML = "";
-  if (!trades.length) {
-    tb.innerHTML = `<tr><td colspan="7" class="empty">No recent trades.</td></tr>`;
+  if (!matched) {
+    tb.innerHTML = `<tr><td colspan="7" class="empty">${total ? "No trades match that driver." : "No trades yet."}</td></tr>`;
     return;
   }
-  for (const t of trades) {
+  const frag = document.createDocumentFragment();
+  for (const t of rows.slice(0, ACT_RENDER_CAP)) {
     const isNo = t.side === "no";
     const price = isNo ? t.no_price : t.yes_price;
-    const value = (typeof price === "number" && typeof t.count === "number")
-      ? t.count * price / 100 : null;
+    const value = tradeValue(t);
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td class="l num muted" title="${t.created_time || ""}">${relTime(t.created_time)}</td>
@@ -643,8 +687,9 @@ function renderActivity(data) {
       <td class="num">${fmtInt(t.count)}</td>
       <td class="num">${(typeof price === "number") ? price + "¢" : "—"} <span class="muted">${usOdds(price)}</span></td>
       <td class="num">${fmtUSD(value)}</td>`;
-    tb.appendChild(tr);
+    frag.appendChild(tr);
   }
+  tb.appendChild(frag);
 }
 
 function fmtInt(v) { return (typeof v === "number") ? v.toLocaleString() : "—"; }
