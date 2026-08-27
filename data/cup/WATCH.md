@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-08-27T23:30:20.465519+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 10: 43c -> 34c (+194, -9pp)
+- **Bubba Wallace** Top 10: 40c -> 33c (+203, -7pp)
+- **Zane Smith** Top 10: 25c -> 21c (+376, -4pp)
+- **Alex Bowman** Top 10: 29c -> 25c (+300, -4pp)
+- **Chase Elliott** Top 10: 33c -> 36c (+178, +3pp)
+- **Austin Hill** Top 10: 28c -> 25c (+300, -3pp)
+
+_leader win YES 8c · scraped 2026-08-27T23:30:20.465519+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-27T23:15:18.486566+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
