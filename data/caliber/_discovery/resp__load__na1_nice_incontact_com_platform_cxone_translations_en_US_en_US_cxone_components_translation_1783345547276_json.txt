@@ -1,0 +1,1887 @@
+{
+  "cxoneNavigation": {
+    "appPicker": {
+      "header": "Applications",
+      "launchedAppTooltip": "Opens into separate window",
+      "expandSubMenu": "Expand sub menu",
+      "categories": {
+        "others": "OTHERS",
+        "general": "GENERAL",
+        "omnichannel": "OMNICHANNEL ROUTING",
+        "wfo": "WORKFORCE ENGAGEMENT",
+        "analytics": "DATA & ANALYTICS",
+        "automation": "AUTOMATION",
+        "cxmanagement": "CX MANAGEMENT",
+        "smartreach": "SMARTREACH",
+        "customerengagement": "CUSTOMER ENGAGEMENT"
+      },
+      "quickAccess": {
+        "header": "QUICK ACCESS",
+        "emptyMenu": "Pages marked as favorites will appear here"
+      },
+      "modules": {
+        "admin": {
+          "title": "Admin",
+          "tooltip": "Admin"
+        },
+        "cxsup": {
+          "title": "Supervisor",
+          "tooltip": "Supervisor"
+        },
+        "acd": {
+          "title": "ACD",
+          "tooltip": "Automatic Call Distribution"
+        },
+        "demo": {
+          "title": "Demo",
+          "tooltip": "Demo"
+        },
+        "wfm": {
+          "title": "WFM",
+          "tooltip": "Workforce Management"
+        },
+        "agenticAnalytics": {
+          "title": "Agentic Analytics",
+          "tooltip": "Agentic Analytics"
+        },
+        "quality-management": {
+          "title": "Quality Management",
+          "tooltip": "Quality Management"
+        },
+        "qm": {
+          "title": "QM",
+          "tooltip": "Quality Management"
+        },
+        "qma": {
+          "title": "QM Analytics",
+          "tooltip": "Quality Analytics"
+        },
+        "qma_New": {
+          "title": "QM Advanced",
+          "tooltip": "Quality Advanced"
+        },
+        "qmp": {
+          "title": "QM Premium",
+          "tooltip": "Quality Premium"
+        },
+        "myZone": {
+          "title": "My Zone",
+          "tooltip": "My Zone"
+        },
+        "wfi": {
+          "title": "Workforce Intelligence",
+          "tooltip": "Workforce Intelligence"
+        },
+        "reporting": {
+          "title": "Reporting",
+          "tooltip": "Reporting"
+        },
+        "search": {
+          "title": "Search",
+          "tooltip": "Search"
+        },
+        "interactions": {
+          "title": "Interactions",
+          "tooltip": "Interactions"
+        },
+        "tm": {
+          "title": "TM",
+          "tooltip": "Tenant Management"
+        },
+        "dashboard": {
+          "title": "Dashboard",
+          "tooltip": "Dashboard"
+        },
+        "cxoneDashboard": {
+          "title": "Dashboard",
+          "tooltip": "Dashboard"
+        },
+        "analytics": {
+          "title": "Analytics",
+          "tooltip": "Analytics"
+        },
+        "embeddedClient": {
+          "title": "Embedded Client",
+          "tooltip": "Embedded Client"
+        },
+        "persona": {
+          "title": "Persona",
+          "tooltip": "Persona"
+        },
+        "coaching": {
+          "title": "Coaching",
+          "tooltip": "Coaching"
+        },
+        "voc": {
+          "title": "Feedback Management",
+          "tooltip": "Feedback Management"
+        },
+        "xsight": {
+          "title": "XSight",
+          "tooltip": "XSight"
+        },
+        "max": {
+          "title": "MAX",
+          "tooltip": "MAX"
+        },
+        "supervisor": {
+          "title": "Supervisor",
+          "tooltip": "Supervisor"
+        },
+        "cxOneAttendant": {
+          "title": "CXone Attendant",
+          "tooltip": "CXone Attendant"
+        },
+        "partnerhub": {
+          "title": "Monitoring Gateway",
+          "tooltip": "Monitoring Gateway"
+        },
+        "inview": {
+          "title": "Performance Management",
+          "tooltip": "Performance Management"
+        },
+        "npxview": {
+          "title": "Feedback Management",
+          "tooltip": "Feedback Management"
+        },
+        "digital": {
+          "title": "Digital",
+          "tooltip": "Digital"
+        },
+        "presencesync": {
+          "title": "PresenceSync",
+          "tooltip": "PresenceSync"
+        },
+        "adapter": {
+          "title": "Adapters",
+          "tooltip": "Adapters"
+        },
+        "ssa": {
+          "title": "Self-Service Analytics",
+          "tooltip": "Self-Service Analytics"
+        },
+        "enlightenxo": {
+          "title": "Enlighten XO",
+          "tooltip": "Enlighten XO"
+        },
+        "enlightenautosummary": {
+          "title": "Enlighten AutoSummary",
+          "tooltip": "Enlighten AutoSummary"
+        },
+        "em": {
+          "title": "EM",
+          "tooltip": "Engagement Manager"
+        },
+        "cxStudio": {
+          "title": "Studio",
+          "tooltip": "Studio"
+        },
+        "webStudio": {
+          "title": "CXone Studio",
+          "tooltip": "CXone Studio"
+        },
+        "studio": {
+          "title": "Studio Authentication",
+          "tooltip": "Studio Authentication"
+        },
+        "expert": {
+          "title": "CXone Expert",
+          "tooltip": "CXone Expert"
+        },
+        "pt": {
+          "title": "Platform Tools",
+          "tooltip": "Platform Tools"
+        },
+        "mc": {
+          "title": "Message Center",
+          "tooltip": "Message Center"
+        },
+        "cm": {
+          "title": "Campaigns",
+          "tooltip": "Campaigns"
+        },
+        "bo": {
+          "title": "Analytics Backoffice",
+          "tooltip": "Analytics Backoffice"
+        },
+        "frontendDemo": {
+          "title": "Frontend Demo",
+          "tooltip": "Frontend Demo"
+        },
+        "reactBoilerplate": {
+          "title": "React Boilerplate",
+          "tooltip": "React Boilerplate"
+        },
+        "guide": {
+          "title": "Guide",
+          "tooltip": "Guide"
+        },
+        "iframeAppDemo": {
+          "title": "Iframe App Demo",
+          "tooltip": "Iframe App Demo"
+        },
+        "cognigy": {
+          "title": "AI Agents (Cognigy)",
+          "tooltip": "AI Agents (Cognigy)"
+        },
+        "aiAdminIntegrations": {
+          "title": "Automation & AI",
+          "tooltip": "Automation & AI"
+        },
+        "aiStudio": {
+          "title": "AI Studio",
+          "tooltip": "AI Studio"
+        },
+        "agentIntegrations": {
+          "title": "Agent Integrations",
+          "tooltip": "Agent Integrations"
+        },
+        "connectionsHub": {
+          "title": "Connections Hub",
+          "tooltip": "Connections Hub"
+        },
+        "neva": {
+          "title": "Desktop Discovery",
+          "tooltip": "Agent desktop data collection"
+        },
+        "automationstudio": {
+          "title": "NEVA Studio",
+          "tooltip": "NEVA Studio"
+        },
+        "metrics": {
+          "title": "Metrics",
+          "tooltip": "Metrics"
+        },
+        "performanceManagement": {
+          "title": "Performance Management",
+          "tooltip": "Performance Management"
+        },
+        "interactionsHub": {
+          "title": "Interactions Hub",
+          "tooltip": "Interactions Hub"
+        },
+        "cxa": {
+          "title": "Agent",
+          "tooltip": "Agent"
+        },
+        "botbuilder": {
+          "title": "Bot Builder",
+          "tooltip": "Bot Builder"
+        },
+        "enlightenactions": {
+          "title": "Enlighten Actions",
+          "tooltip": "Enlighten Actions"
+        },
+        "actions": {
+          "title": "Actions",
+          "tooltip": "Actions"
+        },
+        "enhancedStrategicPlanner": {
+          "title": "Enhanced Strategic Planner",
+          "tooltip": "Enhanced Strategic Planner"
+        },
+        "smartreachadmin": {
+          "title": "SmartReach Admin",
+          "tooltip": "SmartReach Admin"
+        },
+        "smartreach": {
+          "title": "SmartReach",
+          "tooltip": "SmartReach"
+        },
+        "smartreachecc": {
+          "title": "Enhanced Customer Card",
+          "tooltip": "Enhanced Customer Card"
+        },
+        "smartreachdesk": {
+          "title": "Desk",
+          "tooltip": "Desk"
+        },
+        "smartreachagent": {
+          "title": "SmartReach Agent",
+          "tooltip": "SmartReach Agent"
+        },
+        "routingCenter": {
+          "title": "Routing Center",
+          "tooltip": "Routing Center"
+        },
+        "orchestrator": {
+          "title": "Orchestrator",
+          "tooltip": "Orchestrator"
+        },
+        "conversations": {
+          "title": "Conversations",
+          "tooltip": "Conversations"
+        },
+        "fiAdmin": {
+          "title": "Feedback Intelligence",
+          "tooltip": "Feedback Intelligence"
+        },
+        "cxdv-dashboard": {
+          "title": "Dashboard & Reports",
+          "tooltip": "Dashboard & Reports"
+        }
+      }
+    },
+    "sidebar": {
+      "performanceManagement": {
+        "pmDashboards": {
+          "title": "Dashboards"
+        },
+        "ETL": {
+          "title": "ETL"
+        },
+        "objectives": {
+          "title": "Objectives"
+        },
+        "metrics": {
+          "title": "Metrics"
+        },
+        "Gamification": {
+          "title": "Gamification"
+        },
+        "dataFeed": {
+          "title": "Data Feed"
+        },
+        "importData": {
+          "title": "Import Data"
+        },
+        "reportingSet": {
+          "title": "Reporting Set"
+        },
+        "marketplace": {
+          "title": "Marketplace"
+        },
+        "marketplaceManagement": {
+          "title": "Marketplace Management"
+        },
+        "orderManagement": {
+          "title": "Order Management"
+        },
+        "dataRecalculation": {
+          "title": "Data Recalculation"
+        },
+        "gamificationAdmin": {
+          "title": "Admin"
+        },
+        "launchWallboard": {
+          "title": "Launch Wallboard"
+        },
+        "wallboardManagement": {
+          "title": "Wallboard Management"
+        },
+        "wallboardManagementNew": {
+          "title": "Wallboard Management"
+        },
+        "desktopDiscovery": {
+          "title": "Desktop Discovery"
+        },
+        "pmCoachingManager": {
+          "title": "Coaching Manager"
+        },
+        "pmDesktopDiscoveryProcessAnalytics": {
+          "title": "Process Analytics"
+        },
+        "pmDesktopDiscoverySettings": {
+          "title": "Application Settings"
+        },
+        "insight": {
+          "title": "Insights"
+        },
+        "dataManagement": {
+          "title": "Data Management"
+        },
+        "pmDesktopDiscoveryProcessDiscovery": {
+          "title": "Process Discovery"
+        }
+      },
+      "metrics": {
+        "metricsManagement": {
+          "title": "Metrics"
+        },
+        "objectives": {
+          "title": "Objectives"
+        },
+        "performanceAlerts": {
+          "title": "Alerts"
+        }
+      },
+      "dashboard": {
+        "myDashboards": {
+          "title": "Dashboards"
+        },
+        "PredefinedDashboard": {
+          "title": "Predefined Dashboards"
+        },
+        "qmSupervisor": {
+          "title": "QM Supervisor"
+        },
+        "manageDashboards": {
+          "title": "Manage Dashboards"
+        }
+      },
+      "hello": {
+        "title": "Hello"
+      },
+      "helloagain": {
+        "title": "Hello Again"
+      },
+      "mylinks": {
+        "title": "My Links"
+      },
+      "mylinks2": {
+        "title": "More Links"
+      },
+      "link1": {
+        "title": "Link1"
+      },
+      "link2": {
+        "title": "Link2"
+      },
+      "link3": {
+        "title": "Link3"
+      },
+      "link4": {
+        "title": "Link4"
+      },
+      "goodbye": {
+        "title": "Goodbye"
+      },
+      "admin": {
+        "users": {
+          "title": "User Management"
+        },
+        "userManagement": {
+          "title": "Employees"
+        },
+        "skills": {
+          "title": "WEM Skills"
+        },
+        "enterpriseGroups": {
+          "title": "Enterprise Groups"
+        },
+        "groups": {
+          "title": "Groups"
+        },
+        "teams": {
+          "title": "Teams"
+        },
+        "templates": {
+          "title": "Employee Templates"
+        },
+        "employeeGroups": {
+          "title": "Scheduling Unit"
+        },
+        "locations": {
+          "title": "Locations"
+        },
+        "locationDefinitions": {
+          "title": "Location Definitions"
+        },
+        "roleManagement": {
+          "title": "Roles and Permissions"
+        },
+        "bcp": {
+          "title": "BCP Settings"
+        },
+        "bcpEnable": {
+          "title": "BCP Enablement"
+        },
+        "syncConfig": {
+          "title": "Sync Configuration"
+        },
+        "syncDashboard": {
+          "title": "Sync Dashboard"
+        },
+        "division": {
+          "title": "Divisions"
+        },
+        "recording": {
+          "title": "Recording"
+        },
+        "businessDataConfiguration": {
+          "title": "Business Data"
+        },
+        "recordingPolicies": {
+          "title": "Recording Policies"
+        },
+        "screenRecordingScheduler": {
+          "title": "Screen Recording Scheduler"
+        },
+        "realtimeAiPolicies": {
+          "title": "Real Time AI Policies"
+        },
+        "3rdPartyConnectivity": {
+          "title": "Third Party Systems"
+        },
+        "analytics": {
+          "title": "Analytics Services"
+        },
+        "niceTranscription": {
+          "title": "NiCE Transcription"
+        },
+        "analyticsPolicies": {
+          "title": "Analytics Policies"
+        },
+        "redactionProfiles": {
+          "title": "Redaction Profiles"
+        },
+        "samanager": {
+          "title": "ScreenAgent Manager"
+        },
+        "loginAuthenticatorManagement": {
+          "title": "Login Authenticator"
+        },
+        "tenantConfiguration": {
+          "title": "Tenant Configuration"
+        },
+        "accountSettings": {
+          "title": "Account Settings"
+        },
+        "notificationSettings": {
+          "title": "Notification Configuration"
+        },
+        "tenantAccountSettings": {
+          "title": "Account Settings"
+        },
+        "dataStreamsDestinations": {
+          "title": "Event Data Stream"
+        },
+        "dataShare": {
+          "title": "Data Share"
+        },
+        "dataShare(Legacy)": {
+          "title": "Data Share (Legacy)"
+        },
+        "customerDataShare": {
+          "title": "Customer Data Share"
+        },
+        "security": {
+          "title": "Security Settings"
+        },
+        "privacy": {
+          "title": "Privacy"
+        },
+        "lockedEmployees": {
+          "title": "Locked Employees"
+        },
+        "viewManagement": {
+          "title": "Views"
+        },
+        "bulkUploadDownload": {
+          "title": "Bulk Upload Portal"
+        },
+        "outboundRequests": {
+          "title": "Outbound Requests"
+        },
+        "incomingRequests": {
+          "title": "Incoming Requests"
+        },
+        "hierarchies": {
+          "title": "Hierarchies"
+        },
+        "enlightenManager": {
+          "title": "AI Studio"
+        },
+        "enlightenEditor": {
+          "title": "GenAI Prompt Editor"
+        },
+        "testSuite": {
+          "title": "GenAI Test Suite"
+        },
+        "knowledgehub": {
+          "title": "Knowledge Hub"
+        },
+        "knowledgehubuat": {
+          "title": "Knowledge Hub UAT"
+        },
+        "mpowerCopilotProfile": {
+          "title": "Copilot for Agents Config"
+        },
+        "csaCopilotTools": {
+          "title": "Elements"
+        },
+        "macConfig": {
+          "title": "Multi Agent Coordinator"
+        },
+        "mlModels": {
+          "title": "ML Models"
+        },
+        "accessKeyManager": {
+          "title": "Access Key Manager"
+        },
+        "storage": {
+          "title": "Cloud Storage"
+        },
+        "lifecycleManagement": {
+          "title": "Life Cycle Management"
+        },
+        "advancedTtl": {
+          "title": "Life Cycle Management"
+        },
+        "storageSearch": {
+          "title": "Search"
+        },
+        "longTermFileRetrievalNew": {
+          "title": "Long-term File Retrieval"
+        },
+        "credentialManagement": {
+          "title": "Credential Management"
+        },
+        "storageSettings": {
+          "title": "Storage Settings"
+        },
+        "fileActivity": {
+          "title": "File Activity"
+        },
+        "multiRegionStorage": {
+          "title": "Multi Region Storage"
+        },
+        "topicAiEditor": {
+          "title": "Topic AI Editor"
+        }
+      },
+      "aiStudio": {
+        "title": "AI Studio",
+        "topicAiEditor": {
+          "title": "Topic AI"
+        },
+        "enlightenEditor": {
+          "title": "GenAI Prompts"
+        },
+        "testSuite": {
+          "title": "Test Suite"
+        },
+        "knowledgehub": {
+          "title": "Knowledge"
+        },
+        "unifiedKnowledge": {
+          "title": "Federated Knowledge"
+        },
+        "documentManager": {
+          "title": "Document Manager"
+        },
+        "mpowerCopilotProfile": {
+          "title": "Profiles"
+        },
+        "knowledgehubuat": {
+          "title": "Knowledge Hub UAT"
+        },
+        "ruleEngine": {
+          "title": "Rules"
+        },
+        "csaCopilotTools": {
+          "title": "Elements"
+        },
+        "mlModels": {
+          "title": "ML Models"
+        },
+        "cognigy": {
+          "title": "AI Agents (Cognigy)"
+        }
+      },
+      "coaching": {
+        "coachingPlans": {
+          "title": "Coaching Plans (Retiring)"
+        },
+        "coachingPackage": {
+          "title": "Coaching Packages (Retiring)"
+        },
+        "coachingManager": {
+          "title": "Coaching Manager"
+        },
+        "simulationLibrary": {
+          "title": "Simulation Library"
+        },
+        "coachingTemplate": {
+          "title": "Coaching Template"
+        },
+        "manageCategories": {
+          "title": "Coaching Categories"
+        },
+        "focusArea": {
+          "title": "Focus Area"
+        },
+        "behavior": {
+          "title": "Behavior"
+        },
+        "advancedAiSetup": {
+          "title": "Advanced AI Setup"
+        }
+      },
+      "scheduler": {
+        "scheduler": {
+          "title": "Schedule Manager"
+        },
+        "realTimeAdherence": {
+          "title": "Real Time Adherence"
+        },
+        "intradayDashboard": {
+          "title": "Intraday"
+        },
+        "forecaster": {
+          "title": "Forecasting"
+        },
+        "forecasting": {
+          "title": "Forecasting"
+        },
+        "generatedForecasts": {
+          "title": "Generate Forecast"
+        },
+        "importedForecasts": {
+          "title": "Import Forecast Data"
+        },
+        "skillAllocationRules": {
+          "title": "Skill Allocation Rules"
+        },
+        "forecastingProfiles": {
+          "title": "Forecasting Profiles"
+        },
+        "staffingProfiles": {
+          "title": "ESP Staffing Profile"
+        },
+        "specialDays": {
+          "title": "Special Days"
+        },
+        "forecastTroubleshooter": {
+          "title": "Forecast Troubleshooter"
+        },
+        "historicalData": {
+          "title": "ACD Historical Data"
+        },
+        "scheduling": {
+          "title": "Scheduling"
+        },
+        "generateschedule": {
+          "title": "Generate Schedule"
+        },
+        "biddingManager": {
+          "title": "Bidding Manager"
+        },
+        "importStaffingJob": {
+          "title": "Import Staffing Plan"
+        },
+        "importSchedule": {
+          "title": "Import Schedule"
+        },
+        "timeOffRequests": {
+          "title": "Requests"
+        },
+        "scheduleOptimization": {
+          "title": "SCHEDULE OPTIMIZATION"
+        },
+        "scheduleOptimizer": {
+          "title": "SCHEDULE OPTIMIZATION"
+        },
+        "scheduleOptimizationRules": {
+          "title": "Rules"
+        },
+        "scheduleOptimizationPlans": {
+          "title": "Plans"
+        },
+        "requests": {
+          "title": "Requests"
+        },
+        "request-handling": {
+          "title": "Manage Requests"
+        },
+        "approval-rules": {
+          "title": "Approval Rules"
+        },
+        "scheduler-setup": {
+          "title": "Setup"
+        },
+        "agentConfiguration": {
+          "title": "Agent Configuration"
+        },
+        "activityCodes": {
+          "title": "Activity Codes"
+        },
+        "adherenceCategory": {
+          "title": "Adherence Category"
+        },
+        "acdActivitiesMapping": {
+          "title": "ACD Mapping"
+        },
+        "distributionRules": {
+          "title": "Distribution Rules"
+        },
+        "breakPolicies": {
+          "title": "Break Policies"
+        },
+        "dailyRule": {
+          "title": "Daily Rules"
+        },
+        "weeklyRules": {
+          "title": "Weekly Rules"
+        },
+        "rotationRules": {
+          "title": "Rotation Rules"
+        },
+        "shiftBiddingTemplates": {
+          "title": "Bidding Templates"
+        },
+        "shiftTrading": {
+          "title": "Shift Trading"
+        },
+        "seatLimits": {
+          "title": "Seat Limits"
+        },
+        "intradayManager": {
+          "title": "Intraday Manager"
+        },
+        "intraday-manager": {
+          "title": "Intraday Manager"
+        },
+        "timeOffPlanning": {
+          "title": "Time-Off Planning"
+        },
+        "summary": {
+          "title": "Summary"
+        },
+        "rules": {
+          "title": "Rules"
+        },
+        "allowance": {
+          "title": "Allowance Management"
+        },
+        "customGroups": {
+          "title": "Custom Groups"
+        },
+        "insights": {
+          "title": "Insights"
+        }
+      },
+      "analytics": {
+        "myTopics": {
+          "title": "My Data"
+        },
+        "search": {
+          "title": "Search"
+        },
+        "autoDiscovery": {
+          "title": "AutoDiscovery"
+        },
+        "settings": {
+          "title": "Settings"
+        },
+        "languageModel": {
+          "title": "Language Model"
+        },
+        "companyProfile": {
+          "title": "Company Profile"
+        },
+        "corrections": {
+          "title": "Corrections"
+        },
+        "customSentiment": {
+          "title": "Custom Sentiment"
+        },
+        "ignoredPhrases": {
+          "title": "Ignored Phrases"
+        },
+        "templates": {
+          "title": "Templates"
+        },
+        "categoryTemplates": {
+          "title": "Category Templates"
+        },
+        "workspaceTemplates": {
+          "title": "Workspace Templates"
+        },
+        "records": {
+          "title": "Records"
+        },
+        "felixAiFleet": {
+          "title": "Copilot for Analytics"
+        },
+        "routing": {
+          "title": "Interaction Routing"
+        },
+        "routingProfile": {
+          "title": "Routing Profile"
+        },
+        "routingCategories": {
+          "title": "Categories"
+        }
+      },
+      "bo": {
+        "analyticsBackOffice": {
+          "title": "Account List"
+        },
+        "interactionStatus": {
+          "title": "Where's my Interaction"
+        },
+        "liveParse": {
+          "title": "Live Parse"
+        },
+        "categoryImportExport": {
+          "title": "Category Import/Export"
+        },
+        "languageModel": {
+          "title": "Language Model"
+        }
+      },
+      "formManager": {
+        "manageForms": {
+          "title": "Manage Forms"
+        },
+        "categoryManager": {
+          "title": "Category Manager"
+        },
+        "qpPlanManager": {
+          "title": "Quality Planner"
+        },
+        "setup": {
+          "title": "Setup"
+        },
+        "qmScoreMetric": {
+          "title": "QM Score Metric"
+        },
+        "autoScore": {
+          "title": "Auto Score"
+        },
+        "scorecard": {
+          "title": "Scorecard"
+        }
+      },
+      "my-space": {
+        "tasks": {
+          "title": "Tasks"
+        },
+        "evaluationTasks": {
+          "title": "Evaluation Tasks"
+        },
+        "evaluations": {
+          "title": "Evaluations"
+        },
+        "recentInteractions": {
+          "title": "Recent Interactions"
+        },
+        "plansMonitoring": {
+          "title": "Plans Monitoring"
+        },
+        "evaluatorAssignments": {
+          "title": "Evaluator Assignments"
+        },
+        "qualityPerformance": {
+          "title": "Quality Performance"
+        },
+        "performanceMonitoring": {
+          "title": "Performance Monitoring"
+        },
+        "autoScoreDashboard": {
+          "title": "Auto Score Dashboard"
+        },
+        "calibrations": {
+          "title": "Calibrations"
+        },
+        "selfAssessments": {
+          "title": "Self Assessments"
+        },
+        "shiftBidding": {
+          "title": "Shift Bidding"
+        },
+        "groupCoaching": {
+          "title": "Group Coaching"
+        },
+        "pursuits": {
+          "title": "My Pursuits"
+        },
+        "myPersona": {
+          "title": "My Persona"
+        },
+        "marketplace": {
+          "title": "Marketplace"
+        },
+        "mySchedule": {
+          "title": "My Schedule"
+        },
+        "managerActions": {
+          "title": "Manager Actions"
+        },
+        "myProfile": {
+          "title": "My Profile"
+        },
+        "myTimeOffRequests": {
+          "title": "Schedule Requests"
+        },
+        "coachings": {
+          "title": "Coaching (Retiring)"
+        },
+        "cxpmCoaching": {
+          "title": "Coaching Sessions"
+        },
+        "myzoneDashboards": {
+          "title": "Dashboards"
+        },
+        "myMarketplace": {
+          "title": "Marketplace"
+        }
+      },
+      "ssa": {
+        "journeyManager": {
+          "title": "Journey Manager"
+        },
+        "journeyResults": {
+          "title": "Journey Insights"
+        },
+        "eventsAnalysis": {
+          "title": "Event Analysis"
+        },
+        "containmentInsights": {
+          "title": "Containment Insights"
+        }
+      },
+      "enlighten-auto-summary": {
+        "intentBuilder": {
+          "title": "Ontology Studio"
+        }
+      },
+      "enlighten-xo": {
+        "intentAnalysis": {
+          "title": "Intent Analysis"
+        },
+        "taskAnalysis": {
+          "title": "Task Analysis"
+        },
+        "intentsTrendingReport": {
+          "title": "Intents Trending Report"
+        },
+        "conversationalFlow": {
+          "title": "Conversational Flow"
+        },
+        "intentBuilder": {
+          "title": "Intent Builder"
+        }
+      },
+      "tenantManagement": {
+        "tenants": {
+          "title": "Tenants"
+        },
+        "tmPartners": {
+          "title": "Partners"
+        },
+        "tmUsers": {
+          "title": "Users"
+        },
+        "tm-brandingProfiles": {
+          "title": "Branding Profiles"
+        },
+        "loginAuthenticatorManagement": {
+          "title": "Login Authenticator"
+        },
+        "partnerTemplate": {
+          "title": "Partner Template"
+        },
+        "presenceSyncSettings": {
+          "title": "Adapters"
+        },
+        "uhConversion": {
+          "title": "UH Conversion"
+        }
+      },
+      "mc": {
+        "messageCenter": {
+          "title": "Message Center"
+        }
+      },
+      "cm": {
+        "campaign": {
+          "title": "Campaigns"
+        },
+        "dashboard": {
+          "title": "Dashboard"
+        }
+      },
+      "em": {
+        "acb": {
+          "title": "Program Manager"
+        },
+        "programs": {
+          "title": "Programs"
+        },
+        "activityCodes": {
+          "title": "Activity Code Mapping"
+        },
+        "hoursOfOperations": {
+          "title": "Hours of Operation"
+        },
+        "trade": {
+          "title": "Trade"
+        },
+        "setup": {
+          "title": "Setup"
+        },
+        "adgs": {
+          "title": "ADGs"
+        }
+      },
+      "acd": {
+        "UserList": {
+          "title": "ACD Users"
+        },
+        "contactSettings": {
+          "title": "Contact Settings"
+        },
+        "SkillsList": {
+          "title": "ACD Skills"
+        },
+        "RoutingAttributes": {
+          "title": "Routing Attributes"
+        },
+        "CampaignList": {
+          "title": "Campaigns"
+        },
+        "DispositionList": {
+          "title": "Dispositions"
+        },
+        "PointOfContact": {
+          "title": "Points of Contact"
+        },
+        "EmailDomains": {
+          "title": "Email Domains"
+        },
+        "SMSBrandList": {
+          "title": "SMS Branding"
+        },
+        "SMSRegistrationList": {
+          "title": "SMS Registrations"
+        },
+        "Scripts": {
+          "title": "Scripts"
+        },
+        "ScriptSchedulesList": {
+          "title": "Script Schedules"
+        },
+        "ProfileList": {
+          "title": "Hours of Operation"
+        },
+        "WFDProfileList": {
+          "title": "Workflow Data"
+        },
+        "ChatBrandingProfileList": {
+          "title": "Chat Profiles"
+        },
+        "TagsList": {
+          "title": "Tags"
+        },
+        "outbound": {
+          "title": "Outbound"
+        },
+        "NCSkillControl": {
+          "title": "Skill Control"
+        },
+        "NCSkillChannelSettings": {
+          "title": "Skill Channel Settings"
+        },
+        "attestations": {
+          "title": "Attestations"
+        },
+        "MessageTemplateList": {
+          "title": "Message Templates"
+        },
+        "lists": {
+          "title": "Lists"
+        },
+        "CallingLists": {
+          "title": "Calling"
+        },
+        "CallSuppressionManager": {
+          "title": "Call Suppression"
+        },
+        "DncLists": {
+          "title": "DNC"
+        },
+        "UserDefinedFieldsManager": {
+          "title": "Custom Data Definitions"
+        },
+        "ProcessQueue": {
+          "title": "Process Queue"
+        },
+        "acdSettings": {
+          "title": "ACD Settings"
+        },
+        "UnavailableCodes": {
+          "title": "Unavailable Codes"
+        },
+        "StationList": {
+          "title": "Stations"
+        },
+        "AddressBookList": {
+          "title": "Address Books"
+        },
+        "QuickResponseList": {
+          "title": "Quick Responses"
+        },
+        "StationProfileList": {
+          "title": "Station Profiles"
+        },
+        "QuickReplyList": {
+          "title": "Quick Replies"
+        },
+        "AgentPatternsDetails": {
+          "title": "Agent Patterns"
+        },
+        "acdConfiguration": {
+          "title": "ACD Configuration"
+        },
+        "Details": {
+          "title": "Business Units"
+        },
+        "ManageGroup": {
+          "title": "DB Connectors"
+        },
+        "AgentMessageList": {
+          "title": "Agent Messaging"
+        },
+        "support": {
+          "title": "Support"
+        },
+        "SoftwareUpdate": {
+          "title": "Software Updates"
+        },
+        "BrowserCheckResult": {
+          "title": "Browser Compatibility Test"
+        },
+        "AgentIssueDashboard": {
+          "title": "Agent Issues"
+        },
+        "BrowseACDFiles": {
+          "title": "Browse ACD Files"
+        },
+        "internalAdmin": {
+          "title": "Internal Admin"
+        },
+        "BusinessUnits": {
+          "title": "Business Units"
+        },
+        "DNIS": {
+          "title": "DNIS"
+        },
+        "DialingPatterns": {
+          "title": "Dialing Patterns"
+        },
+        "AgentPatterns": {
+          "title": "Agent Patterns"
+        },
+        "Partners": {
+          "title": "Partners"
+        },
+        "OutboundTelecomRoutes": {
+          "title": "Telecom Routes"
+        },
+        "OutboundTelecomTrafficTypeDefaultRoutes": {
+          "title": "Telecom Traffic Type Default Routes"
+        },
+        "LockScriptSaving": {
+          "title": "Lock Script Saving"
+        },
+        "NiceConfigurations": {
+          "title": "NICE Integration Configurations"
+        },
+        "GDPR": {
+          "title": "GDPR Request"
+        },
+        "dfoSettings": {
+          "title": "Digital"
+        },
+        "sla": {
+          "title": "SLA"
+        },
+        "business_hours": {
+          "title": "Hours of Operation"
+        },
+        "custom_fields": {
+          "title": "Custom Fields"
+        },
+        "intelligent-routing-general": {
+          "title": "Routing"
+        },
+        "intelligent-routing-queues": {
+          "title": "Routing Queues"
+        },
+        "channels-all": {
+          "title": "Points of Contact Digital"
+        },
+        "channel-integrations": {
+          "title": "Bring Your Own Channel"
+        },
+        "roles": {
+          "title": "Roles"
+        },
+        "tags_v2": {
+          "title": "Tags"
+        },
+        "quick_responses": {
+          "title": "Quick Responses"
+        },
+        "custom_field_form": {
+          "title": "Forms"
+        },
+        "surveyGeneral": {
+          "title": "Satisfaction Surveys"
+        },
+        "workflow-triggers": {
+          "title": "Automation Triggers"
+        },
+        "scheduler": {
+          "title": "Automation Schedulers"
+        },
+        "workflow-jobs": {
+          "title": "Automation Jobs"
+        },
+        "Locations": {
+          "title": "Locations"
+        },
+        "dfoGuideSettings": {
+          "title": "Guide"
+        },
+        "guide-proactive-rules": {
+          "title": "Engagement Rules"
+        },
+        "guide-proactive-actions": {
+          "title": "Engagement Actions"
+        }
+      },
+      "supervisor": {
+        "liveMonitoring": {
+          "title": "Live Monitoring"
+        },
+        "insights": {
+          "title": "Insights"
+        },
+        "tasks": {
+          "title": "Tasks"
+        },
+        "evaluationTasks": {
+          "title": "Evaluation Tasks"
+        },
+        "performanceMonitoring": {
+          "title": "Performance Monitoring"
+        },
+        "qualityPerformance": {
+          "title": "Quality Performance"
+        },
+        "myDashboards": {
+          "title": "Dashboards"
+        },
+        "supervisorDashboards": {
+          "title": "Dashboards"
+        },
+        "basicDashboards": {
+          "title": "Dashboards"
+        },
+        "reporting": {
+          "title": "Reporting"
+        },
+        "supervisor": {
+          "title": "Supervisor (Legacy)"
+        },
+        "search": {
+          "title": "Interactions Search"
+        },
+        "supervisorConfig": {
+          "title": "Settings"
+        },
+        "px-insightsWorkspace": {
+          "title": "Insights Workspace"
+        },
+        "multiAcd": {
+          "title": "Live Monitoring (Multi-ACD)"
+        },
+        "autoScoreDashboard": {
+          "title": "Auto Score Dashboard"
+        }
+      },
+      "reporting": {
+        "Dashboards": {
+          "title": "Dashboards"
+        },
+        "partnerLogReader": {
+          "title": "Partner Log Reader"
+        },
+        "PrebuiltReports": {
+          "title": "Prebuilt Reports"
+        },
+        "BIReports": {
+          "title": "BI Reports"
+        },
+        "Subscriptions": {
+          "title": "Subscriptions"
+        },
+        "Schedules": {
+          "title": "Schedules"
+        },
+        "ACD": {
+          "title": "ACD"
+        },
+        "WFO": {
+          "title": "General"
+        },
+        "customReporting": {
+          "title": "ACD Custom Reports"
+        },
+        "ReportTemplateList": {
+          "title": "Report Templates"
+        },
+        "AdHocReportExecutedList": {
+          "title": "Executed Reports"
+        },
+        "AdHocReportScheduleList": {
+          "title": "Schedules"
+        },
+        "FtpAccountList": {
+          "title": "SFTP Accounts"
+        },
+        "ReportTemplateCategoryList": {
+          "title": "Categories"
+        },
+        "ReportTemplateHeaderList": {
+          "title": "Headers"
+        },
+        "dataDownload": {
+          "title": "ACD Data Download"
+        },
+        "ReportSchedulesList": {
+          "title": "Report Schedules"
+        },
+        "ScriptScheduleRunHistory": {
+          "title": "Schedule Run History Report"
+        },
+        "DataDownload": {
+          "title": "Data Download"
+        },
+        "outbound": {
+          "title": "Outbound"
+        },
+        "callSuppressionAuditHistoryReport": {
+          "title": "Call Suppression Audit History Report"
+        },
+        "abandonRateComplianceReport": {
+          "title": "Abandon Rate Compliance Report"
+        },
+        "outboundReportStore": {
+          "title": "Outbound Report Store"
+        },
+        "wfi": {
+          "title": "Workforce Intelligence"
+        },
+        "RuleActionHistory": {
+          "title": "Rule Action History"
+        },
+        "RuleActionSummaryReport": {
+          "title": "Rule Action Summary Report"
+        },
+        "CallSuppressionAuditHistory": {
+          "title": "Call Suppression Audit History Report"
+        },
+        "AbandonRateCompliance": {
+          "title": "Abandon Rate Compliance Report"
+        },
+        "OutboundReportStore": {
+          "title": "Outbound Report Store"
+        },
+        "DataDownloadCustomReports": {
+          "title": "Data Download Custom Reports"
+        }
+      },
+      "wfi": {
+        "NotificationSettings": {
+          "title": "Notification Settings"
+        },
+        "DataPointList": {
+          "title": "Data Points"
+        },
+        "RuleList": {
+          "title": "Rules"
+        },
+        "PendingRuleActionsList": {
+          "title": "Pending Rule Actions"
+        }
+      },
+      "embedded-client": {
+        "evaluations": {
+          "title": "Evaluations"
+        },
+        "recentInteractions": {
+          "title": "Recent Interactions"
+        },
+        "shiftBidding": {
+          "title": "Shift Bidding"
+        },
+        "mySchedule": {
+          "title": "My Schedule"
+        },
+        "managerActions": {
+          "title": "Manager Actions"
+        },
+        "myTimeOffRequests": {
+          "title": "Schedule Requests"
+        },
+        "coachings": {
+          "title": "Coaching"
+        },
+        "cxpmCoaching": {
+          "title": "Coaching Sessions"
+        },
+        "myzoneDashboards": {
+          "title": "Dashboards"
+        },
+        "myMarketplace": {
+          "title": "Marketplace"
+        }
+      },
+      "pt": {
+        "instrumentationDashboard": {
+          "title": "Instrumentation Dashboard"
+        }
+      },
+      "guide": {
+        "rules": {
+          "title": "Rules"
+        },
+        "buttons": {
+          "title": "Buttons"
+        },
+        "entryPoints": {
+          "title": "Entry Points"
+        },
+        "templates": {
+          "title": "Templates"
+        },
+        "branding": {
+          "title": "Branding"
+        },
+        "localization": {
+          "title": "Localization"
+        },
+        "webAssistant": {
+          "title": "Web Assistant"
+        },
+        "integrations": {
+          "title": "Integrations"
+        }
+      },
+      "frontendDemo": {
+        "angularValidation": {
+          "title": "Angular Validation"
+        },
+        "angularMfeFolder": {
+          "title": "Angular Micro Frontend"
+        },
+        "solShowcase": {
+          "title": "SOL Showcase"
+        },
+        "gridDemo": {
+          "title": "Grid Demo"
+        },
+        "reactValidation": {
+          "title": "React Validation"
+        },
+        "reactCxoneEnvironment": {
+          "title": "React CXone Environment"
+        },
+        "reactSolShowcase": {
+          "title": "React SOL Showcase"
+        }
+      },
+      "iframeAppDemo": {
+        "homeDemo": {
+          "title": "Home Demo"
+        }
+      },
+      "cxone-dashboards": {
+        "basicDashboards": {
+          "title": "Dashboards"
+        },
+        "dashboardManagement": {
+          "title": "Manage Dashboards"
+        },
+        "reports": {
+          "title": "Reports"
+        },
+        "dashboardCustomReporting": {
+          "title": "Custom Reports"
+        },
+        "dashboardMigrationUtility": {
+          "title": "CXOne Migration Utility"
+        },
+        "dashboardMigration": {
+          "title": "Dashboard Migration"
+        },
+        "dashboardCustomReports": {
+          "title": "Custom Templates"
+        },
+        "dashboardReportSubscriptions": {
+          "title": "Subscriptions"
+        },
+        "dashboardReportCategories": {
+          "title": "Categories"
+        },
+        "dashboardReportHeaders": {
+          "title": "Headers"
+        }
+      },
+      "neva": {
+        "nevaDiscover": {
+          "title": "Application Management"
+        },
+        "processAnalytics": {
+          "title": "Process Analytics"
+        },
+        "desktopAnalytics": {
+          "title": "Desktop Analytics"
+        },
+        "settings": {
+          "title": "Application Settings"
+        },
+        "processDiscovery": {
+          "title": "Process Discovery"
+        },
+        "clientManagement": {
+          "title": "Client Management"
+        },
+        "installUpdate": {
+          "title": "Installation Update"
+        },
+        "configManagement": {
+          "title": "Configuration Update"
+        },
+        "nodeWatch": {
+          "title": "Node Watch"
+        }
+      },
+      "xsight": {
+        "projectWorkspace": {
+          "title": "Project Workspace"
+        },
+        "dataExploration": {
+          "title": "Data Exploration"
+        },
+        "visualAnalytics": {
+          "title": "Visual Analytics"
+        },
+        "AMLSegmentationReport": {
+          "title": "AML Segmentation Report"
+        },
+        "AMLRulePerformanceReport": {
+          "title": "AML Rule Performance Report"
+        },
+        "AMLSnapshots": {
+          "title": "Snapshots"
+        },
+        "AMLDataHealthReport": {
+          "title": "AML Data Health Report"
+        },
+        "FraudDataHealthReport": {
+          "title": "Fraud Data Health Report"
+        },
+        "FraudPerformanceReport": {
+          "title": "Fraud Model Performance Report"
+        },
+        "FraudCrossFITrends": {
+          "title": "Fraud Market Insights Report"
+        },
+        "AMLStaticDataHealthReport": {
+          "title": "AML Static Data Health Report"
+        },
+        "AMLTuningAnalysisReport": {
+          "title": "AML Tuning Analysis Report"
+        },
+        "AMLAlertPerformanceReport": {
+          "title": "AML Alert Performance Report"
+        },
+        "AMLTransactionalDataHealthReport": {
+          "title": "AML Transactional Data Health Report"
+        },
+        "FraudRulesIAReport": {
+          "title": "Fraud Rules Impact Assessment Report"
+        },
+        "FraudCrossFIModelInsights": {
+          "title": "Cross FI Model Insights Report"
+        }
+      },
+      "agentIntegrations": {
+        "agentIntegrations": {
+          "title": "Agent Integrations"
+        },
+        "configurations": {
+          "title": "Configurations"
+        },
+        "addressbook": {
+          "title": "Address Book"
+        },
+        "acs": {
+          "title": "ACS Onboarding"
+        },
+        "adapters": {
+          "title": "Adapters"
+        },
+        "adapterAccountMapping": {
+          "title": "Account Mapping"
+        },
+        "adapterPresenceSync": {
+          "title": "Presence Sync"
+        },
+        "agentProfile": {
+          "title": "Desktop Profiles"
+        },
+        "ucaasIntegrations": {
+          "title": "UCaaS Integrations"
+        },
+        "onboarding": {
+          "title": "Onboarding"
+        },
+        "directorySync": {
+          "title": "Directory Sync"
+        }
+      },
+      "interactionsHub": {
+        "search": {
+          "title": "Interactions Search"
+        },
+        "tickets": {
+          "title": "Tickets Search"
+        },
+        "policies": {
+          "title": "Data Policies"
+        }
+      },
+      "cxStudio": {
+        "scripts": {
+          "title": "Scripts"
+        },
+        "developmentWorkflows": {
+          "title": "Development Workflows"
+        },
+        "files": {
+          "title": "Files"
+        },
+        "dataMaps": {
+          "title": "Data Maps"
+        },
+        "promptManager": {
+          "title": "Prompts"
+        },
+        "grammars": {
+          "title": "Grammars"
+        }
+      },
+      "enlightenactions": {
+        "actions": {
+          "title": "Enlighten Actions"
+        },
+        "settings": {
+          "title": "Settings"
+        },
+        "dashboard": {
+          "title": "Observability Dashboard"
+        },
+        "actionsBrandingName": {
+          "title": "Actions"
+        }
+      },
+      "interactions": {
+        "search": {
+          "title": "Interactions Search"
+        }
+      },
+      "enhancedStrategicPlanner": {
+        "plans": {
+          "title": "Manage Plans"
+        },
+        "importedForecasts": {
+          "title": "Import Forecasts"
+        },
+        "historicalData": {
+          "title": "Historical Data"
+        }
+      },
+      "routingCenter": {
+        "agentCapacityProfiles": {
+          "title": "Agent Capacity Profiles"
+        },
+        "realtimeRoutingRules": {
+          "title": "Real-Time Routing Rules"
+        }
+      },
+      "orchestrator": {
+        "dashboard": {
+          "title": "Dashboards"
+        },
+        "customVariable": {
+          "title": "Custom Variables"
+        },
+        "settings": {
+          "title": "Settings"
+        },
+        "connectorManagement": {
+          "title": "Connector Management"
+        }
+      },
+      "agenticAnalytics": {
+        "agenticAnalyticsDashboard": {
+          "title": "Agentic Analytics Dashboard"
+        }
+      },
+      "smartreach": {
+        "smartreach": {
+          "title": "SmartReach"
+        }
+      },
+      "smartreachDesk": {
+        "smartreach": {
+          "title": "Desk"
+        }
+      },
+      "smartreachEcc": {
+        "smartreach": {
+          "title": "Enhanced Customer Card"
+        }
+      },
+      "fiAdmin": {
+        "dashboard": {
+          "title": "Dashboard"
+        },
+        "campaignManagement": {
+          "title": "Campaign Management"
+        },
+        "surveyCampaigns": {
+          "title": "Survey Campaigns"
+        },
+        "surveyTemplates": {
+          "title": "Survey Templates"
+        },
+        "ontology": {
+          "title": "Ontology"
+        }
+      },
+      "cxdv-dashboard": {
+        "dashboards": {
+          "title": "Dashboards"
+        },
+        "prebuiltReports": {
+          "title": "Prebuilt Reports"
+        },
+        "customReports": {
+          "title": "Custom Reports"
+        },
+        "widgetLibrary": {
+          "title": "Widget Library"
+        },
+        "dashboardUtilities": {
+          "title": "Dashboard Utilities"
+        },
+        "scheduledReports": {
+          "title": "Scheduled"
+        },
+        "customReportMigration": {
+          "title": "Custom Report Migration"
+        }
+      },
+      "cxOneAttendant": {
+        "title": "CXone Attendant"
+      }
+    }
+  }
+}
