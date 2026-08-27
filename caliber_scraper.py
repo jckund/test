@@ -21,6 +21,7 @@ Output:
 """
 import json
 import os
+import re
 import sys
 import time
 import urllib.error
@@ -84,6 +85,15 @@ def _clean(v):
     return str(v).strip()
 
 
+def _clean_date(v):
+    """dotCMS serializes dates as /Date(<ms>)/ — reduce to YYYY-MM-DD."""
+    s = _clean(v)
+    m = re.search(r"/Date\((\d+)\)/", s)
+    if m:
+        return datetime.fromtimestamp(int(m.group(1)) / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
+    return s
+
+
 def normalize(c):
     """Reduce a raw dotCMS Center contentlet to the fields we track.
 
@@ -105,7 +115,7 @@ def normalize(c):
         "email": _clean(c.get("emailAddress")),
         "latitude": lat if isinstance(lat, (int, float)) else _clean(lat),
         "longitude": lng if isinstance(lng, (int, float)) else _clean(lng),
-        "openDate": _clean(c.get("openDate")),
+        "openDate": _clean_date(c.get("openDate")),
         "status": _clean(c.get("standardWarningTitle")),  # e.g. "TEMPORARILY CLOSED"
         "url": (BASE + url_map) if url_map.startswith("/") else url_map,
     }
