@@ -1,0 +1,78 @@
+name: Caliber locations weekly watch
+
+# Weekly: scrape every Caliber Collision location, diff against last week's
+# committed snapshot, email new/removed locations (only when something changed),
+# and commit the updated snapshot as the new baseline.
+#
+# IMPORTANT: `schedule` (and `workflow_dispatch` via the API/UI) only fire from
+# the repository's DEFAULT branch. This workflow currently lives on the feature
+# branch claude/location-scraper-weekly-email-2wu2yc, so the weekly cron will NOT
+# fire until these files are merged to the default branch. Until then, the `push`
+# trigger below runs the pipeline on the feature branch for testing.
+#
+# Requires two repo secrets for email (Settings -> Secrets and variables ->
+# Actions): MAIL_USERNAME (a Gmail/Workspace address) and MAIL_PASSWORD (a Google
+# app password). Optional repo variable MAIL_TO overrides the recipient
+# (defaults to justin@vivecollision.com).
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Mondays 13:00 UTC (~8-9am US Eastern)
+  workflow_dispatch: {}
+  push:
+    branches: [claude/location-scraper-weekly-email-2wu2yc]
+    paths:
+      - caliber_scraper.py
+      - caliber_report.py
+      - caliber_sendmail.py
+      - .github/workflows/caliber_locations.yml
+
+concurrency:
+  group: caliber-locations
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape Caliber locations
+        run: python caliber_scraper.py
+
+      - name: Diff vs baseline + build email
+        id: report
+        run: python caliber_report.py
+
+      - name: Send email (only if new/removed locations)
+        if: steps.report.outputs.changed == 'true'
+        continue-on-error: true   # a mail/creds problem must not block the baseline commit
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ vars.MAIL_TO }}
+        run: python caliber_sendmail.py
+
+      - name: Commit snapshot (new baseline + heartbeat)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/caliber
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "data(caliber): weekly location snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+          fi
