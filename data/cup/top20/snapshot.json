@@ -83,7 +83,7 @@
       "last_price": 59,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 41,
+      "no_ask": 42,
       "no_bid": 40,
       "open_interest": 17,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 19,
       "volume_24h": 12,
       "yes_ask": 60,
-      "yes_bid": 59
+      "yes_bid": 58
     },
     "KXNASCARTOP20-COKZS26-BUWA": {
       "last_price": 60,
@@ -153,7 +153,7 @@
       "last_price": 52,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 56,
+      "no_ask": 55,
       "no_bid": 50,
       "open_interest": 20,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 20,
       "volume_24h": 20,
       "yes_ask": 50,
-      "yes_bid": 44
+      "yes_bid": 45
     },
     "KXNASCARTOP20-COKZS26-CHBU": {
       "last_price": 64,
@@ -192,24 +192,24 @@
       "yes_bid": 52
     },
     "KXNASCARTOP20-COKZS26-COCU": {
-      "last_price": 39,
+      "last_price": 40,
       "liquidity": 0.0,
       "name": "Cole Custer",
-      "no_ask": 63,
-      "no_bid": 60,
-      "open_interest": 903,
+      "no_ask": 62,
+      "no_bid": 54,
+      "open_interest": 1103,
       "status": "active",
       "ticker": "KXNASCARTOP20-COKZS26-COCU",
-      "volume": 1011,
-      "volume_24h": 526,
-      "yes_ask": 40,
-      "yes_bid": 37
+      "volume": 1211,
+      "volume_24h": 726,
+      "yes_ask": 46,
+      "yes_bid": 38
     },
     "KXNASCARTOP20-COKZS26-COHE": {
       "last_price": 47,
       "liquidity": 0.0,
       "name": "Corey Heim",
-      "no_ask": 61,
+      "no_ask": 60,
       "no_bid": 53,
       "open_interest": 323,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 374,
       "volume_24h": 86,
       "yes_ask": 47,
-      "yes_bid": 39
+      "yes_bid": 40
     },
     "KXNASCARTOP20-COKZS26-COWA": {
       "last_price": 48,
@@ -360,17 +360,17 @@
       "yes_bid": 63
     },
     "KXNASCARTOP20-COKZS26-JONE": {
-      "last_price": 52,
+      "last_price": 45,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
       "no_ask": 62,
-      "no_bid": 56,
-      "open_interest": 575,
+      "no_bid": 55,
+      "open_interest": 583,
       "status": "active",
       "ticker": "KXNASCARTOP20-COKZS26-JONE",
-      "volume": 576,
-      "volume_24h": 0,
-      "yes_ask": 44,
+      "volume": 584,
+      "volume_24h": 9,
+      "yes_ask": 45,
       "yes_bid": 38
     },
     "KXNASCARTOP20-COKZS26-KYLA": {
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 53,
-      "no_bid": 46,
+      "no_bid": 45,
       "open_interest": 498,
       "status": "active",
       "ticker": "KXNASCARTOP20-COKZS26-SHVA",
       "volume": 672,
-      "volume_24h": 125,
-      "yes_ask": 54,
+      "volume_24h": 143,
+      "yes_ask": 55,
       "yes_bid": 47
     },
     "KXNASCARTOP20-COKZS26-TOGI": {
@@ -531,7 +531,7 @@
       "last_price": 54,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 54,
+      "no_ask": 53,
       "no_bid": 48,
       "open_interest": 40,
       "status": "active",
@@ -539,7 +539,7 @@
       "volume": 40,
       "volume_24h": 40,
       "yes_ask": 52,
-      "yes_bid": 46
+      "yes_bid": 47
     },
     "KXNASCARTOP20-COKZS26-TYRE": {
       "last_price": 63,
@@ -573,7 +573,7 @@
       "last_price": 43,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 58,
+      "no_ask": 59,
       "no_bid": 56,
       "open_interest": 393,
       "status": "active",
@@ -581,11 +581,11 @@
       "volume": 505,
       "volume_24h": 148,
       "yes_ask": 44,
-      "yes_bid": 42
+      "yes_bid": 41
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-27T23:30:22.128580+00:00",
+  "scraped_at": "2026-08-27T23:45:18.281954+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top20"
 }
