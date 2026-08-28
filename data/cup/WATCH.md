@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-28T01:45:17.715360+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 10: 22c -> 25c (+300, +3pp)
+
+_leader win YES 8c · scraped 2026-08-28T01:45:17.715360+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T01:30:21.479922+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
