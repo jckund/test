@@ -1,0 +1,70 @@
+name: Gerber locations weekly watch
+
+# Weekly: scrape every Gerber Collision & Glass location, diff against last
+# week's committed snapshot, email new/removed locations ("no changes" heartbeat
+# when nothing moved), and commit the updated snapshot as the new baseline.
+#
+# NOTE: on the feature branch this only runs via the push trigger below; the
+# weekly cron fires from a repo's default branch (this ships to its own repo,
+# gerber-location-watch, where main is default). Email needs repo secrets
+# MAIL_USERNAME + MAIL_PASSWORD (Gmail app password); optional var MAIL_TO.
+
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Mondays 13:00 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [claude/location-scraper-weekly-email-2wu2yc]
+    paths:
+      - gerber_scraper.py
+      - gerber_report.py
+      - gerber_sendmail.py
+      - .github/workflows/gerber_locations.yml
+
+concurrency:
+  group: gerber-locations
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape Gerber locations
+        run: python gerber_scraper.py
+
+      - name: Diff vs baseline + build email
+        id: report
+        run: python gerber_report.py
+
+      - name: Send weekly email (changes, or a "no changes" heartbeat)
+        if: steps.report.outputs.send == 'true'
+        env:
+          MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+          MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
+          MAIL_TO: ${{ vars.MAIL_TO }}
+        run: python gerber_sendmail.py
+
+      - name: Commit snapshot (new baseline + heartbeat)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data/gerber
+          if git diff --cached --quiet; then
+            echo "No snapshot changes to commit."
+          else
+            git commit -m "data(gerber): weekly location snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+            for i in 1 2 3 4; do
+              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+                echo "Pushed."; break
+              fi
+              echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+            done
+          fi
