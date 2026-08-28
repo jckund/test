@@ -19,12 +19,12 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-AJAL",
       "volume": 14274,
-      "volume_24h": 3811,
+      "volume_24h": 3624,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-COKZS26-ALBO": {
-      "last_price": 2,
+      "last_price": 3,
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 98,
@@ -32,8 +32,8 @@
       "open_interest": 25951,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-ALBO",
-      "volume": 26748,
-      "volume_24h": 544,
+      "volume": 27060,
+      "volume_24h": 857,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -94,18 +94,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-COKZS26-BUWA": {
-      "last_price": 6,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 96,
-      "no_bid": 95,
+      "no_ask": 95,
+      "no_bid": 94,
       "open_interest": 40123,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-BUWA",
-      "volume": 40148,
+      "volume": 40173,
       "volume_24h": 32581,
-      "yes_ask": 5,
-      "yes_bid": 4
+      "yes_ask": 6,
+      "yes_bid": 5
     },
     "KXNASCARRACE-COKZS26-CAHO": {
       "last_price": 5,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-CHBE",
       "volume": 20636,
-      "volume_24h": 2841,
+      "volume_24h": 3216,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 97,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 30625,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-CHBU",
       "volume": 30625,
-      "volume_24h": 4884,
-      "yes_ask": 5,
+      "volume_24h": 4696,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARRACE-COKZS26-CHEL": {
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-COCU",
       "volume": 16426,
-      "volume_24h": 1655,
+      "volume_24h": 1468,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-DEHA",
       "volume": 20796,
-      "volume_24h": 4160,
+      "volume_24h": 3785,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-ERJO",
       "volume": 26995,
-      "volume_24h": 1238,
+      "volume_24h": 926,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -349,15 +349,15 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 92,
       "open_interest": 27117,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-JOLO",
       "volume": 27766,
-      "volume_24h": 6274,
+      "volume_24h": 6039,
       "yes_ask": 8,
-      "yes_bid": 6
+      "yes_bid": 7
     },
     "KXNASCARRACE-COKZS26-JONE": {
       "last_price": 2,
@@ -463,11 +463,11 @@
       "name": "Ryan Blaney",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 39826,
+      "open_interest": 40060,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-RYBL",
-      "volume": 41439,
-      "volume_24h": 11605,
+      "volume": 41674,
+      "volume_24h": 9843,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -561,11 +561,11 @@
       "name": "William Byron",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 8884,
+      "open_interest": 9040,
       "status": "active",
       "ticker": "KXNASCARRACE-COKZS26-WIBY",
-      "volume": 8884,
-      "volume_24h": 1417,
+      "volume": 9040,
+      "volume_24h": 1573,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-08-28T00:00:22.923338+00:00",
+  "scraped_at": "2026-08-28T00:15:15.730347+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "winner"
 }

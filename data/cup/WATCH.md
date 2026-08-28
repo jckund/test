@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-28T00:15:15.730347+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 10: 39c -> 35c (+186, -4pp)
+- **Noah Gragson** Top 5: 9c -> 12c (+733, +3pp)
+
+_leader win YES 8c · scraped 2026-08-28T00:15:15.730347+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-27T23:45:16.454963+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
