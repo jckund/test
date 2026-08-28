@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-28T17:30:23.521299+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 3: 12c -> 15c (+567, +3pp)
+
+_leader win YES 8c · scraped 2026-08-28T17:30:23.521299+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T15:30:21.768314+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
