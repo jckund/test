@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-28T01:30:21.479922+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chase Briscoe** Top 10: 38c -> 27c (+270, -11pp)
+
+_leader win YES 8c · scraped 2026-08-28T01:30:21.479922+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T01:15:17.557448+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
