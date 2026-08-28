@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-BUWA",
       "volume": 82,
-      "volume_24h": 82,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 94,
-      "no_bid": 91,
+      "no_bid": 92,
       "open_interest": 6493,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-ROCH",
       "volume": 6493,
       "volume_24h": 974,
-      "yes_ask": 9,
+      "yes_ask": 8,
       "yes_bid": 6
     },
     "KXNASCARTOP3-COKZS26-RYBL": {
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 83,
-      "no_bid": 77,
+      "no_bid": 79,
       "open_interest": 96,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-RYBL",
       "volume": 96,
       "volume_24h": 47,
-      "yes_ask": 23,
+      "yes_ask": 21,
       "yes_bid": 17
     },
     "KXNASCARTOP3-COKZS26-RYPR": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-28T14:00:20.694815+00:00",
+  "scraped_at": "2026-08-28T14:15:21.373097+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top3"
 }
