@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-28T22:00:20.342848+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 5: 6c -> 12c (+733, +6pp)
+- **Connor Zilisch** Top 5: 6c -> 12c (+733, +6pp)
+- **Denny Hamlin** Top 3: 11c -> 17c (+488, +6pp)
+- **Ross Chastain** Top 5: 13c -> 18c (+456, +5pp)
+- **Austin Hill** Top 5: 9c -> 14c (+614, +5pp)
+- **Erik Jones** Top 5: 9c -> 13c (+669, +4pp)
+- **Zane Smith** Top 5: 8c -> 11c (+809, +3pp)
+- **Ty Gibbs** Top 5: 14c -> 17c (+488, +3pp)
+- **Ryan Preece** Top 5: 14c -> 17c (+488, +3pp)
+- **Brad Keselowski** Top 5: 18c -> 21c (+376, +3pp)
+- (+5 more)
+
+_leader win YES 9c · scraped 2026-08-28T22:00:20.342848+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T21:15:20.448113+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
