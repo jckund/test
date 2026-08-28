@@ -1,3 +1,19 @@
+### 📊 Kalshi line move — 2026-08-28T14:45:19.339158+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 10: 41c -> 32c (+212, -9pp)
+- **Chase Elliott** Top 10: 42c -> 33c (+203, -9pp)
+- **Chase Briscoe** Top 10: 37c -> 29c (+245, -8pp)
+- **Bubba Wallace** Top 10: 39c -> 34c (+194, -5pp)
+- **Alex Bowman** Top 10: 29c -> 24c (+317, -5pp)
+- **Todd Gilliland** Top 10: 29c -> 25c (+300, -4pp)
+- **Carson Hocevar** Top 10: 40c -> 36c (+178, -4pp)
+- **Ross Chastain** Top 10: 28c -> 31c (+223, +3pp)
+
+_leader win YES 8c · scraped 2026-08-28T14:45:19.339158+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T14:30:20.097344+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
