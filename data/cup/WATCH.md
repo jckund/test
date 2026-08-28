@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-28T23:30:18.944205+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 10: 19c -> 23c (+335, +4pp)
+- **Joey Logano** Top 3: 22c -> 19c (+426, -3pp)
+
+_leader win YES 9c · scraped 2026-08-28T23:30:18.944205+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T23:15:16.422007+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
