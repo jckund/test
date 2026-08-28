@@ -10,17 +10,17 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP10-COKZS26-AJAL": {
-      "last_price": 20,
+      "last_price": 19,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 83,
-      "no_bid": 82,
-      "open_interest": 5232,
+      "no_bid": 81,
+      "open_interest": 5357,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-AJAL",
-      "volume": 5232,
-      "volume_24h": 3903,
-      "yes_ask": 18,
+      "volume": 5357,
+      "volume_24h": 4027,
+      "yes_ask": 19,
       "yes_bid": 17
     },
     "KXNASCARTOP10-COKZS26-ALBO": {
@@ -265,27 +265,27 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 76,
+      "no_ask": 77,
       "no_bid": 74,
-      "open_interest": 2311,
+      "open_interest": 2402,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-DASU",
-      "volume": 2311,
-      "volume_24h": 2267,
+      "volume": 2402,
+      "volume_24h": 2359,
       "yes_ask": 26,
-      "yes_bid": 24
+      "yes_bid": 23
     },
     "KXNASCARTOP10-COKZS26-DEHA": {
-      "last_price": 39,
+      "last_price": 40,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 62,
       "no_bid": 60,
-      "open_interest": 2805,
+      "open_interest": 2875,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-DEHA",
-      "volume": 2805,
-      "volume_24h": 89,
+      "volume": 2875,
+      "volume_24h": 159,
       "yes_ask": 40,
       "yes_bid": 38
     },
@@ -472,18 +472,18 @@
       "yes_bid": 40
     },
     "KXNASCARTOP10-COKZS26-RYPR": {
-      "last_price": 0,
+      "last_price": 32,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 77,
-      "no_bid": 68,
-      "open_interest": 0,
+      "no_ask": 73,
+      "no_bid": 67,
+      "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-RYPR",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 32,
-      "yes_bid": 23
+      "volume": 250,
+      "volume_24h": 250,
+      "yes_ask": 33,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-COKZS26-SHVA": {
       "last_price": 26,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-08-28T22:00:21.781267+00:00",
+  "scraped_at": "2026-08-28T22:15:16.998915+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top10"
 }

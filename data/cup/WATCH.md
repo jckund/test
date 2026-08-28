@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-28T22:15:15.741828+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Gase** Top 5: 6c -> 19c (+426, +13pp)
+- **Cody Ware** Top 5: 6c -> 19c (+426, +13pp)
+- **Corey Heim** Top 5: 13c -> 20c (+400, +7pp)
+- **Josh Berry** Top 5: 13c -> 18c (+456, +5pp)
+- **Todd Gilliland** Top 5: 10c -> 14c (+614, +4pp)
+- **Shane Van Gisbergen** Top 5: 7c -> 11c (+809, +4pp)
+- **Denny Hamlin** Top 5: 18c -> 22c (+355, +4pp)
+- **Chase Briscoe** Top 5: 16c -> 20c (+400, +4pp)
+- **Bubba Wallace** Top 5: 19c -> 23c (+335, +4pp)
+- **Ty Dillon** Top 5: 8c -> 11c (+809, +3pp)
+- (+5 more)
+
+_leader win YES 9c · scraped 2026-08-28T22:15:15.741828+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T22:00:20.342848+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
