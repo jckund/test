@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-28T23:45:19.199869+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Cody Ware** Top 10: 13c -> 17c (+488, +4pp)
+- **Riley Herbst** Top 3: 4c -> 7c (+1329, +3pp)
+
+_leader win YES 9c · scraped 2026-08-28T23:45:19.199869+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T23:30:18.944205+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
