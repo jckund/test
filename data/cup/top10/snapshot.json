@@ -10,17 +10,17 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP10-COKZS26-AJAL": {
-      "last_price": 19,
+      "last_price": 20,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 83,
-      "no_bid": 81,
-      "open_interest": 5084,
+      "no_bid": 80,
+      "open_interest": 5232,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-AJAL",
-      "volume": 5084,
-      "volume_24h": 3933,
-      "yes_ask": 19,
+      "volume": 5232,
+      "volume_24h": 4081,
+      "yes_ask": 20,
       "yes_bid": 17
     },
     "KXNASCARTOP10-COKZS26-ALBO": {
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-AUDI",
       "volume": 83,
-      "volume_24h": 77,
+      "volume_24h": 4,
       "yes_ask": 27,
       "yes_bid": 19
     },
@@ -153,15 +153,15 @@
       "last_price": 29,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 74,
-      "no_bid": 71,
-      "open_interest": 461,
+      "no_ask": 73,
+      "no_bid": 70,
+      "open_interest": 494,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-CHBR",
-      "volume": 461,
+      "volume": 494,
       "volume_24h": 330,
-      "yes_ask": 29,
-      "yes_bid": 26
+      "yes_ask": 30,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-COKZS26-CHBU": {
       "last_price": 36,
@@ -267,11 +267,11 @@
       "name": "Daniel Su\u00e1rez",
       "no_ask": 75,
       "no_bid": 74,
-      "open_interest": 2292,
+      "open_interest": 2311,
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-DASU",
-      "volume": 2292,
-      "volume_24h": 2249,
+      "volume": 2311,
+      "volume_24h": 2267,
       "yes_ask": 26,
       "yes_bid": 25
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COKZS26-TYDI",
       "volume": 3154,
-      "volume_24h": 2802,
+      "volume_24h": 2780,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-08-28T16:45:22.613081+00:00",
+  "scraped_at": "2026-08-28T17:00:23.726050+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top10"
 }
