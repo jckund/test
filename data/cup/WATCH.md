@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-28T19:45:21.057911+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Dillon** Top 5: 10c -> 5c (+1900, -5pp)
+- **Ty Dillon** Top 3: 8c -> 4c (+2400, -4pp)
+- **Michael McDowell** Top 5: 11c -> 8c (+1150, -3pp)
+- **Cody Ware** Top 5: 7c -> 4c (+2400, -3pp)
+
+_leader win YES 8c · scraped 2026-08-28T19:45:21.057911+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-28T19:00:26.035962+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
