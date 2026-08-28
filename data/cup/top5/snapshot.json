@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-BRKE",
       "volume": 26,
-      "volume_24h": 0,
+      "volume_24h": 26,
       "yes_ask": 18,
       "yes_bid": 16
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-BUWA",
       "volume": 107,
-      "volume_24h": 0,
+      "volume_24h": 25,
       "yes_ask": 18,
       "yes_bid": 16
     },
@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 85,
-      "no_bid": 83,
+      "no_bid": 84,
       "open_interest": 1516,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-CHBR",
       "volume": 1516,
       "volume_24h": 1384,
-      "yes_ask": 17,
+      "yes_ask": 16,
       "yes_bid": 15
     },
     "KXNASCARTOP5-COKZS26-CHBU": {
@@ -220,15 +220,15 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-COKZS26-COWA": {
-      "last_price": 7,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "Cody Ware",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 56,
+      "open_interest": 91,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-COWA",
-      "volume": 56,
+      "volume": 91,
       "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 3
@@ -279,29 +279,29 @@
       "last_price": 18,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 83,
+      "no_ask": 84,
       "no_bid": 82,
       "open_interest": 154,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-DEHA",
       "volume": 160,
-      "volume_24h": 22,
+      "volume_24h": 48,
       "yes_ask": 18,
-      "yes_bid": 17
+      "yes_bid": 16
     },
     "KXNASCARTOP5-COKZS26-ERJO": {
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Erik Jones",
-      "no_ask": 92,
-      "no_bid": 90,
+      "no_ask": 93,
+      "no_bid": 91,
       "open_interest": 146,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-ERJO",
       "volume": 146,
       "volume_24h": 52,
-      "yes_ask": 10,
-      "yes_bid": 8
+      "yes_ask": 9,
+      "yes_bid": 7
     },
     "KXNASCARTOP5-COKZS26-GRGA": {
       "last_price": 3,
@@ -349,7 +349,7 @@
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 78,
+      "no_ask": 79,
       "no_bid": 76,
       "open_interest": 255,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 265,
       "volume_24h": 0,
       "yes_ask": 24,
-      "yes_bid": 22
+      "yes_bid": 21
     },
     "KXNASCARTOP5-COKZS26-JONE": {
       "last_price": 10,
@@ -377,7 +377,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 85,
+      "no_ask": 83,
       "no_bid": 82,
       "open_interest": 0,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 18,
-      "yes_bid": 15
+      "yes_bid": 17
     },
     "KXNASCARTOP5-COKZS26-MIMC": {
       "last_price": 12,
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-TYDI",
       "volume": 2148,
-      "volume_24h": 0,
+      "volume_24h": 39,
       "yes_ask": 6,
       "yes_bid": 4
     },
@@ -531,15 +531,15 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 90,
-      "no_bid": 84,
+      "no_ask": 89,
+      "no_bid": 86,
       "open_interest": 48,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-TYGI",
       "volume": 48,
       "volume_24h": 0,
-      "yes_ask": 16,
-      "yes_bid": 10
+      "yes_ask": 14,
+      "yes_bid": 11
     },
     "KXNASCARTOP5-COKZS26-TYRE": {
       "last_price": 0,
@@ -574,18 +574,18 @@
       "liquidity": 0.0,
       "name": "Zane Smith",
       "no_ask": 97,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-ZASM",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 7,
+      "yes_ask": 8,
       "yes_bid": 3
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-28T21:27:27.094342+00:00",
+  "scraped_at": "2026-08-28T21:45:18.044637+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top5"
 }
