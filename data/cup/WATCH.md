@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T19:55:03.951973+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Connor Zilisch** Top 10: 11c -> 15c (+567, +4pp)
+
+_leader win YES 8c · scraped 2026-08-29T19:55:03.951973+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T19:30:23.435258+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
