@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T23:00:23.633361+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Brad Keselowski** Top 5: 19c -> 15c (+567, -4pp)
+- **Austin Dillon** Top 3: 5c -> 8c (+1150, +3pp)
+
+_leader win YES 8c · scraped 2026-08-29T23:00:23.633361+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T22:45:17.941181+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
