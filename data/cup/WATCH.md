@@ -1,3 +1,19 @@
+### 📊 Kalshi line move — 2026-08-29T23:34:13.826914+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **William Byron** Win: 7c -> 16c (+525, +9pp)
+- **Riley Herbst** Top 10: 1c -> 7c (+1329, +6pp)
+- **Carson Hocevar** Top 10: 34c -> 40c (+150, +6pp)
+- **Ryan Preece** Top 10: 36c -> 41c (+144, +5pp)
+- **Alex Bowman** Top 3: 10c -> 6c (+1567, -4pp)
+- **Ross Chastain** Top 5: 19c -> 22c (+355, +3pp)
+- **Tyler Reddick** Top 10: 37c -> 40c (+150, +3pp)
+- **Austin Dillon** Top 3: 9c -> 6c (+1567, -3pp)
+
+_leader win YES 16c · scraped 2026-08-29T23:34:13.826914+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T23:30:21.869960+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
