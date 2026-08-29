@@ -52,6 +52,7 @@ jobs:
           python-version: "3.12"
 
       - name: Run scraper
+        id: scrape
         env:
           # Large-trade alerting for the Cup series (see alerts.py). Alert on any
           # single trade over this many dollars.
@@ -66,12 +67,13 @@ jobs:
         run: python3 scraper.py
 
       - name: Kalshi line-move watch
-        # Publish path is decoupled from the Kalshi scrape: the steps from here
-        # down run even if an earlier step failed (e.g. a Kalshi 403 in "Run
-        # scraper"), so a data/roster/code change still deploys to Pages. A
-        # scrape failure still marks the run red for visibility — it just no
-        # longer blocks publishing what's already committed.
-        if: ${{ !cancelled() }}
+        # Runs ONLY on a clean scrape: linewatch and the commit below touch the
+        # freshly-written snapshots, so a failed/partial scrape must not reach
+        # them — otherwise it could commit empty/half data and publish an
+        # "awaiting first scrape" site. The publish steps further down still run
+        # unconditionally, so data/roster/code changes deploy even when Kalshi 403s
+        # (they republish the last-good committed tree, never a broken scrape).
+        if: ${{ steps.scrape.outcome == 'success' }}
         # Diff each Cup market's YES price vs the committed baseline; on a move
         # >= WATCH_THRESH_PP (or the Cindric trip-wire) post a comment to the
         # watch PR so the subscribed Claude session wakes. No move -> no comment.
@@ -85,7 +87,8 @@ jobs:
         run: python3 linewatch.py
 
       - name: Commit changes if any
-        if: ${{ !cancelled() }}
+        # Commit only fresh scraper output — never a failed/partial scrape.
+        if: ${{ steps.scrape.outcome == 'success' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
