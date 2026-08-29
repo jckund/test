@@ -1,3 +1,19 @@
+### 📊 Kalshi line move — 2026-08-29T00:58:35.382348+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Gase** Top 3: 6c -> 46c (+117, +40pp)
+- **Gray Gaulding** Top 3: 6c -> 46c (+117, +40pp)
+- **Daniel Dye** Top 3: 6c -> 46c (+117, +40pp)
+- **Cody Ware** Top 3: 6c -> 46c (+117, +40pp)
+- **Cole Custer** Top 3: 7c -> 46c (+117, +39pp)
+- **Casey Mears** Top 3: 7c -> 46c (+117, +39pp)
+- **Ty Dillon** Top 3: 8c -> 46c (+117, +38pp)
+- **Bubba Wallace** Top 3: 12c -> 15c (+567, +3pp)
+
+_leader win YES 8c · scraped 2026-08-29T00:58:35.382348+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T00:45:20.059898+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
