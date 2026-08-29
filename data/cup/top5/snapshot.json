@@ -43,11 +43,11 @@
       "name": "Austin Cindric",
       "no_ask": 80,
       "no_bid": 76,
-      "open_interest": 204,
+      "open_interest": 212,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-AUCI",
-      "volume": 204,
-      "volume_24h": 150,
+      "volume": 212,
+      "volume_24h": 158,
       "yes_ask": 24,
       "yes_bid": 20
     },
@@ -80,18 +80,18 @@
       "yes_bid": 8
     },
     "KXNASCARTOP5-COKZS26-BRKE": {
-      "last_price": 24,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 84,
+      "no_ask": 79,
       "no_bid": 77,
-      "open_interest": 27,
+      "open_interest": 127,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-BRKE",
-      "volume": 27,
-      "volume_24h": 27,
+      "volume": 127,
+      "volume_24h": 127,
       "yes_ask": 23,
-      "yes_bid": 16
+      "yes_bid": 21
     },
     "KXNASCARTOP5-COKZS26-BUWA": {
       "last_price": 19,
@@ -136,16 +136,16 @@
       "yes_bid": 3
     },
     "KXNASCARTOP5-COKZS26-CHBE": {
-      "last_price": 20,
+      "last_price": 21,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 82,
       "no_bid": 79,
-      "open_interest": 1734,
+      "open_interest": 1738,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-CHBE",
-      "volume": 1739,
-      "volume_24h": 1301,
+      "volume": 1744,
+      "volume_24h": 1305,
       "yes_ask": 21,
       "yes_bid": 18
     },
@@ -416,18 +416,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP5-COKZS26-RIHE": {
-      "last_price": 7,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Riley Herbst",
-      "no_ask": 97,
+      "no_ask": 93,
       "no_bid": 90,
-      "open_interest": 3042,
+      "open_interest": 3142,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-RIHE",
-      "volume": 3042,
-      "volume_24h": 200,
+      "volume": 3142,
+      "volume_24h": 300,
       "yes_ask": 10,
-      "yes_bid": 3
+      "yes_bid": 7
     },
     "KXNASCARTOP5-COKZS26-RIST": {
       "last_price": 16,
@@ -447,15 +447,15 @@
       "last_price": 17,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 86,
-      "no_bid": 83,
-      "open_interest": 4618,
+      "no_ask": 85,
+      "no_bid": 84,
+      "open_interest": 4748,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-ROCH",
-      "volume": 4674,
-      "volume_24h": 143,
-      "yes_ask": 17,
-      "yes_bid": 14
+      "volume": 4804,
+      "volume_24h": 273,
+      "yes_ask": 16,
+      "yes_bid": 15
     },
     "KXNASCARTOP5-COKZS26-RYBL": {
       "last_price": 36,
@@ -475,15 +475,15 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 90,
+      "no_ask": 86,
       "no_bid": 84,
-      "open_interest": 3512,
+      "open_interest": 3572,
       "status": "active",
       "ticker": "KXNASCARTOP5-COKZS26-RYPR",
-      "volume": 3522,
-      "volume_24h": 41,
+      "volume": 3582,
+      "volume_24h": 101,
       "yes_ask": 16,
-      "yes_bid": 10
+      "yes_bid": 14
     },
     "KXNASCARTOP5-COKZS26-SHVA": {
       "last_price": 9,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-08-29T13:30:20.618100+00:00",
+  "scraped_at": "2026-08-29T13:45:20.361222+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top5"
 }
