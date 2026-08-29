@@ -1,3 +1,21 @@
+### 📊 Kalshi line move — 2026-08-29T22:30:21.250595+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 10: 29c -> 36c (+178, +7pp)
+- **Riley Herbst** Top 10: 3c -> 10c (+900, +7pp)
+- **Ryan Blaney** Top 5: 29c -> 25c (+300, -4pp)
+- **Ty Gibbs** Top 3: 10c -> 6c (+1567, -4pp)
+- **Cole Custer** Top 10: 17c -> 20c (+400, +3pp)
+- **Austin Dillon** Top 10: 21c -> 24c (+317, +3pp)
+- **Ty Gibbs** Top 5: 16c -> 13c (+669, -3pp)
+- **Josh Berry** Top 5: 14c -> 11c (+809, -3pp)
+- **Cole Custer** Top 5: 12c -> 9c (+1011, -3pp)
+- **AJ Allmendinger** Top 5: 8c -> 5c (+1900, -3pp)
+
+_leader win YES 8c · scraped 2026-08-29T22:30:21.250595+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T22:15:19.103539+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
