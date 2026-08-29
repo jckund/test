@@ -99,11 +99,11 @@
       "name": "Bubba Wallace",
       "no_ask": 90,
       "no_bid": 86,
-      "open_interest": 315,
+      "open_interest": 317,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-BUWA",
-      "volume": 315,
-      "volume_24h": 200,
+      "volume": 317,
+      "volume_24h": 234,
       "yes_ask": 14,
       "yes_bid": 10
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-CAHO",
       "volume": 49,
-      "volume_24h": 0,
+      "volume_24h": 18,
       "yes_ask": 16,
       "yes_bid": 9
     },
@@ -178,17 +178,17 @@
       "yes_bid": 13
     },
     "KXNASCARTOP3-COKZS26-CHEL": {
-      "last_price": 11,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 88,
-      "no_bid": 85,
-      "open_interest": 1,
+      "no_bid": 84,
+      "open_interest": 183,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-CHEL",
-      "volume": 1,
-      "volume_24h": 0,
-      "yes_ask": 15,
+      "volume": 183,
+      "volume_24h": 182,
+      "yes_ask": 16,
       "yes_bid": 12
     },
     "KXNASCARTOP3-COKZS26-COCU": {
@@ -276,15 +276,15 @@
       "yes_bid": 5
     },
     "KXNASCARTOP3-COKZS26-DEHA": {
-      "last_price": 17,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 89,
       "no_bid": 85,
-      "open_interest": 52,
+      "open_interest": 54,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-DEHA",
-      "volume": 52,
+      "volume": 54,
       "volume_24h": 6,
       "yes_ask": 15,
       "yes_bid": 11
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-JOLO",
       "volume": 452,
-      "volume_24h": 118,
+      "volume_24h": 32,
       "yes_ask": 20,
       "yes_bid": 16
     },
@@ -378,13 +378,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 91,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 72,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-KYLA",
       "volume": 72,
       "volume_24h": 0,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 9
     },
     "KXNASCARTOP3-COKZS26-MIMC": {
@@ -461,15 +461,15 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 84,
+      "no_ask": 83,
       "no_bid": 80,
-      "open_interest": 355,
+      "open_interest": 381,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-RYBL",
-      "volume": 355,
+      "volume": 381,
       "volume_24h": 259,
       "yes_ask": 20,
-      "yes_bid": 16
+      "yes_bid": 17
     },
     "KXNASCARTOP3-COKZS26-RYPR": {
       "last_price": 7,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-29T11:30:19.662740+00:00",
+  "scraped_at": "2026-08-29T12:45:18.369864+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top3"
 }
