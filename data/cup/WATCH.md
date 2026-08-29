@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-29T02:45:19.740924+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 10: 34c -> 28c (+257, -6pp)
+- **Casey Mears** Top 3: 7c -> 2c (+4900, -5pp)
+- **Cole Custer** Top 10: 20c -> 15c (+567, -5pp)
+- **Ryan Blaney** Top 3: 24c -> 20c (+400, -4pp)
+- **Joey Gase** Top 3: 6c -> 2c (+4900, -4pp)
+- **Gray Gaulding** Top 3: 6c -> 2c (+4900, -4pp)
+- **Daniel Dye** Top 3: 6c -> 2c (+4900, -4pp)
+- **Austin Hill** Top 3: 10c -> 6c (+1567, -4pp)
+- **Riley Herbst** Top 10: 24c -> 20c (+400, -4pp)
+- **Ryan Preece** Top 3: 11c -> 8c (+1150, -3pp)
+- (+2 more)
+
+_leader win YES 10c · scraped 2026-08-29T02:45:19.740924+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T02:30:19.939137+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
