@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-08-29T16:45:16.829813+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 3: 18c -> 23c (+335, +5pp)
+- **Alex Bowman** Top 5: 14c -> 10c (+900, -4pp)
+- **Ty Gibbs** Top 5: 17c -> 14c (+614, -3pp)
+- **Noah Gragson** Top 5: 11c -> 8c (+1150, -3pp)
+
+_leader win YES 7c · scraped 2026-08-29T16:45:16.829813+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T16:15:20.804044+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
