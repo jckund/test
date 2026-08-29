@@ -41,7 +41,7 @@
       "last_price": 80,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 97,
+      "no_ask": 1,
       "no_bid": 0,
       "open_interest": 724,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 1284,
       "volume_24h": 1070,
       "yes_ask": 100,
-      "yes_bid": 3
+      "yes_bid": 99
     },
     "KXNASCARTOP10-WIN2PB26-BLPE": {
       "last_price": 1,
@@ -57,11 +57,11 @@
       "name": "Blaine Perkins",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 2218,
+      "open_interest": 2312,
       "status": "active",
       "ticker": "KXNASCARTOP10-WIN2PB26-BLPE",
-      "volume": 2258,
-      "volume_24h": 1164,
+      "volume": 2352,
+      "volume_24h": 1257,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -99,10 +99,10 @@
       "name": "Brennan Poole",
       "no_ask": 1,
       "no_bid": 0,
-      "open_interest": 3291,
+      "open_interest": 3491,
       "status": "active",
       "ticker": "KXNASCARTOP10-WIN2PB26-BRPO",
-      "volume": 3794,
+      "volume": 4115,
       "volume_24h": 1385,
       "yes_ask": 100,
       "yes_bid": 99
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-WIN2PB26-JEBU",
       "volume": 556,
-      "volume_24h": 311,
+      "volume_24h": 314,
       "yes_ask": 100,
       "yes_bid": 99
     },
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-08-29T02:49:21.744765+00:00",
+  "scraped_at": "2026-08-29T03:04:13.514866+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-win2pb26",
   "tier": "top10"
 }
