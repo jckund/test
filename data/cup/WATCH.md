@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T21:45:21.964790+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Cole Custer** Top 10: 20c -> 17c (+488, -3pp)
+
+_leader win YES 8c · scraped 2026-08-29T21:45:21.964790+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T21:30:21.752910+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
