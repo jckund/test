@@ -1,3 +1,19 @@
+### 📊 Kalshi line move — 2026-08-29T14:15:55.630064+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Denny Hamlin** Top 5: 27c -> 21c (+376, -6pp)
+- **Ryan Blaney** Top 5: 36c -> 31c (+223, -5pp)
+- **Daniel Suárez** Top 5: 20c -> 15c (+567, -5pp)
+- **Kyle Larson** Top 5: 18c -> 21c (+376, +3pp)
+- **Chase Elliott** Top 5: 19c -> 22c (+355, +3pp)
+- **William Byron** Top 5: 27c -> 24c (+317, -3pp)
+- **Ricky Stenhouse** Top 5: 16c -> 13c (+669, -3pp)
+- **Austin Cindric** Top 5: 24c -> 21c (+376, -3pp)
+
+_leader win YES 10c · scraped 2026-08-29T14:15:55.630064+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T14:00:22.393965+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
