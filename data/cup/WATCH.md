@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T07:15:17.471253+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Denny Hamlin** Top 10: 40c -> 43c (+133, +3pp)
+
+_leader win YES 9c · scraped 2026-08-29T07:15:17.471253+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T06:30:23.288246+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
