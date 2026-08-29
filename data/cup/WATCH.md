@@ -1,3 +1,18 @@
+### 📊 Kalshi line move — 2026-08-29T18:30:21.816761+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 10: 21c -> 16c (+525, -5pp)
+- **Cole Custer** Top 10: 20c -> 15c (+567, -5pp)
+- **Zane Smith** Top 5: 9c -> 12c (+733, +3pp)
+- **Ty Dillon** Top 5: 8c -> 5c (+1900, -3pp)
+- **Noah Gragson** Top 5: 11c -> 8c (+1150, -3pp)
+- **Corey Heim** Top 3: 10c -> 7c (+1329, -3pp)
+- **Todd Gilliland** Top 10: 23c -> 20c (+400, -3pp)
+
+_leader win YES 7c · scraped 2026-08-29T18:30:21.816761+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T18:15:21.130908+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
