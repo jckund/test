@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T14:45:18.733457+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Gray Gaulding** Top 10: 1c -> 4c (+2400, +3pp)
+
+_leader win YES 7c · scraped 2026-08-29T14:45:18.733457+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T14:30:18.674446+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
