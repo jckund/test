@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-08-29T18:00:24.747704+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Top 5: 11c -> 14c (+614, +3pp)
+- **Joey Logano** Top 3: 17c -> 14c (+614, -3pp)
+- **Austin Hill** Top 10: 28c -> 25c (+300, -3pp)
+
+_leader win YES 7c · scraped 2026-08-29T18:00:24.747704+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T17:45:19.082369+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
