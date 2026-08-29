@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T17:45:19.082369+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Cole Custer** Top 10: 16c -> 21c (+376, +5pp)
+- **Ty Gibbs** Top 5: 14c -> 11c (+809, -3pp)
+
+_leader win YES 7c · scraped 2026-08-29T17:45:19.082369+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T17:30:21.032349+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
