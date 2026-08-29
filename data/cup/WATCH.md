@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T02:15:18.351407+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Hill** Top 10: 29c -> 24c (+317, -5pp)
+
+_leader win YES 9c · scraped 2026-08-29T02:15:18.351407+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T02:00:21.287515+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
