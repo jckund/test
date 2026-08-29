@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-29T20:45:24.440827+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 10: 13c -> 22c (+355, +9pp)
+- **Ty Dillon** Top 10: 11c -> 19c (+426, +8pp)
+- **Casey Mears** Top 10: 6c -> 12c (+733, +6pp)
+- **Riley Herbst** Top 10: 12c -> 6c (+1567, -6pp)
+- **Connor Zilisch** Top 10: 15c -> 20c (+400, +5pp)
+- **Todd Gilliland** Top 10: 19c -> 23c (+335, +4pp)
+- **Riley Herbst** Top 5: 3c -> 6c (+1567, +3pp)
+- **Cole Custer** Top 5: 9c -> 12c (+733, +3pp)
+- **Cody Ware** Top 10: 12c -> 15c (+567, +3pp)
+- **Austin Dillon** Top 10: 18c -> 21c (+376, +3pp)
+- (+1 more)
+
+_leader win YES 8c · scraped 2026-08-29T20:45:24.440827+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T20:30:21.639480+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
