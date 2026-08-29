@@ -10,16 +10,16 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP20-COKZS26-AJAL": {
-      "last_price": 44,
+      "last_price": 43,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 60,
       "no_bid": 57,
-      "open_interest": 46,
+      "open_interest": 50,
       "status": "active",
       "ticker": "KXNASCARTOP20-COKZS26-AJAL",
-      "volume": 46,
-      "volume_24h": 2,
+      "volume": 50,
+      "volume_24h": 7,
       "yes_ask": 43,
       "yes_bid": 40
     },
@@ -237,15 +237,15 @@
       "last_price": 47,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
-      "no_ask": 62,
-      "no_bid": 53,
-      "open_interest": 3,
+      "no_ask": 61,
+      "no_bid": 54,
+      "open_interest": 6,
       "status": "active",
       "ticker": "KXNASCARTOP20-COKZS26-COZI",
-      "volume": 4,
-      "volume_24h": 2,
-      "yes_ask": 47,
-      "yes_bid": 38
+      "volume": 8,
+      "volume_24h": 6,
+      "yes_ask": 46,
+      "yes_bid": 39
     },
     "KXNASCARTOP20-COKZS26-DADY": {
       "last_price": 28,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-08-29T11:15:18.356960+00:00",
+  "scraped_at": "2026-08-29T11:45:21.510862+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top20"
 }

@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T11:45:19.577490+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Dillon** Top 10: 29c -> 23c (+335, -6pp)
+
+_leader win YES 9c · scraped 2026-08-29T11:45:19.577490+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T10:23:26.698174+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
