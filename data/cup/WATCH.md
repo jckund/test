@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T02:00:21.287515+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Hill** Top 10: 25c -> 29c (+245, +4pp)
+- **Tyler Reddick** Top 10: 36c -> 39c (+156, +3pp)
+
+_leader win YES 9c · scraped 2026-08-29T02:00:21.287515+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T01:15:18.905497+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
