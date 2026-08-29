@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-08-29T22:45:17.941181+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 10c -> 5c (+1900, -5pp)
+- **Riley Herbst** Top 5: 5c -> 8c (+1150, +3pp)
+- **Alex Bowman** Top 5: 14c -> 11c (+809, -3pp)
+
+_leader win YES 8c · scraped 2026-08-29T22:45:17.941181+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T22:30:21.250595+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
