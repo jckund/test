@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T02:30:19.939137+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ricky Stenhouse** Top 3: 7c -> 11c (+809, +4pp)
+- **Joey Logano** Top 5: 24c -> 27c (+270, +3pp)
+
+_leader win YES 10c · scraped 2026-08-29T02:30:19.939137+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T02:15:18.351407+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
