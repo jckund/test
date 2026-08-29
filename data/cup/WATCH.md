@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T19:30:23.435258+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 18c -> 12c (+733, -6pp)
+- **Todd Gilliland** Top 10: 15c -> 18c (+456, +3pp)
+
+_leader win YES 7c · scraped 2026-08-29T19:30:23.435258+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T19:00:24.249144+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
