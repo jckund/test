@@ -1,3 +1,20 @@
+### 📊 Kalshi line move — 2026-08-29T13:00:23.341774+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Daniel Suárez** Top 5: 22c -> 30c (+233, +8pp)
+- **Chase Elliott** Top 5: 19c -> 27c (+270, +8pp)
+- **Chase Briscoe** Top 5: 17c -> 24c (+317, +7pp)
+- **Christopher Bell** Top 5: 21c -> 27c (+270, +6pp)
+- **Alex Bowman** Top 5: 14c -> 20c (+400, +6pp)
+- **Shane Van Gisbergen** Top 5: 9c -> 14c (+614, +5pp)
+- **Tyler Reddick** Top 5: 23c -> 27c (+270, +4pp)
+- **Kyle Larson** Top 5: 18c -> 22c (+355, +4pp)
+- **Ty Gibbs** Top 5: 17c -> 20c (+400, +3pp)
+
+_leader win YES 9c · scraped 2026-08-29T13:00:23.341774+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T12:30:22.223633+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
