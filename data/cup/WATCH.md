@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-08-29T17:00:24.097687+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Zane Smith** Top 10: 24c -> 31c (+223, +7pp)
+- **Chase Briscoe** Top 10: 34c -> 39c (+156, +5pp)
+- **Tyler Reddick** Top 10: 35c -> 39c (+156, +4pp)
+- **Christopher Bell** Top 10: 35c -> 39c (+156, +4pp)
+- **Austin Hill** Top 10: 25c -> 29c (+245, +4pp)
+
+_leader win YES 7c · scraped 2026-08-29T17:00:24.097687+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T16:45:16.829813+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
