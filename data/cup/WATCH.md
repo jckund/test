@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T20:30:21.639480+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Alex Bowman** Top 10: 22c -> 28c (+257, +6pp)
+- **Austin Hill** Top 10: 24c -> 29c (+245, +5pp)
+
+_leader win YES 8c · scraped 2026-08-29T20:30:21.639480+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T20:15:21.382560+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
