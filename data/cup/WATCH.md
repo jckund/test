@@ -1,3 +1,21 @@
+### 📊 Kalshi line move — 2026-08-29T23:30:21.869960+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 37c -> 46c (+117, +9pp)
+- **William Byron** Top 10: 36c -> 44c (+127, +8pp)
+- **Ricky Stenhouse** Top 3: 11c -> 18c (+456, +7pp)
+- **Riley Herbst** Top 10: 7c -> 1c (+9900, -6pp)
+- **Shane Van Gisbergen** Top 5: 10c -> 14c (+614, +4pp)
+- **Joey Logano** Top 5: 26c -> 30c (+233, +4pp)
+- **Ross Chastain** Top 3: 10c -> 14c (+614, +4pp)
+- **Riley Herbst** Top 3: 5c -> 1c (+9900, -4pp)
+- **Riley Herbst** Top 5: 6c -> 9c (+1011, +3pp)
+- **Cody Ware** Top 10: 15c -> 18c (+456, +3pp)
+
+_leader win YES 9c · scraped 2026-08-29T23:30:21.869960+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T23:15:17.861496+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
