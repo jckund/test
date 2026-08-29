@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-08-29T20:00:22.607286+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Riley Herbst** Top 10: 14c -> 10c (+900, -4pp)
+- **Austin Hill** Top 10: 29c -> 25c (+300, -4pp)
+
+_leader win YES 8c · scraped 2026-08-29T20:00:22.607286+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T19:55:03.951973+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
