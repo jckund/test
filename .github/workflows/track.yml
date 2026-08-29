@@ -66,6 +66,12 @@ jobs:
         run: python3 scraper.py
 
       - name: Kalshi line-move watch
+        # Publish path is decoupled from the Kalshi scrape: the steps from here
+        # down run even if an earlier step failed (e.g. a Kalshi 403 in "Run
+        # scraper"), so a data/roster/code change still deploys to Pages. A
+        # scrape failure still marks the run red for visibility — it just no
+        # longer blocks publishing what's already committed.
+        if: ${{ !cancelled() }}
         # Diff each Cup market's YES price vs the committed baseline; on a move
         # >= WATCH_THRESH_PP (or the Cindric trip-wire) post a comment to the
         # watch PR so the subscribed Claude session wakes. No move -> no comment.
@@ -79,6 +85,7 @@ jobs:
         run: python3 linewatch.py
 
       - name: Commit changes if any
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -101,6 +108,7 @@ jobs:
           fi
 
       - name: Assemble site
+        if: ${{ !cancelled() }}
         run: |
           rm -rf _site && mkdir -p _site
           cp index.html _site/
@@ -114,6 +122,7 @@ jobs:
           if [ -f golf.html ]; then mkdir -p _site/golf && cp golf.html _site/golf/index.html; fi
 
       - name: Configure Pages
+        if: ${{ !cancelled() }}
         uses: actions/configure-pages@v5
         with:
           # Auto-enable Pages (build type = GitHub Actions) so no manual
@@ -122,10 +131,12 @@ jobs:
           enablement: true
 
       - name: Upload Pages artifact
+        if: ${{ !cancelled() }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
+        if: ${{ !cancelled() }}
         id: deploy
         uses: actions/deploy-pages@v4
