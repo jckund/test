@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T21:19:37.110016+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 5: 6c -> 9c (+1011, +3pp)
+
+_leader win YES 8c · scraped 2026-08-29T21:19:37.110016+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T21:00:23.421851+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
