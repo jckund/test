@@ -83,21 +83,21 @@
       "last_price": 15,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 90,
-      "no_bid": 87,
+      "no_ask": 92,
+      "no_bid": 88,
       "open_interest": 2036,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-BRKE",
       "volume": 2036,
       "volume_24h": 0,
-      "yes_ask": 13,
-      "yes_bid": 10
+      "yes_ask": 12,
+      "yes_bid": 8
     },
     "KXNASCARTOP3-COKZS26-BUWA": {
       "last_price": 14,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 90,
+      "no_ask": 88,
       "no_bid": 87,
       "open_interest": 331,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 331,
       "volume_24h": 249,
       "yes_ask": 13,
-      "yes_bid": 10
+      "yes_bid": 12
     },
     "KXNASCARTOP3-COKZS26-CAHO": {
       "last_price": 16,
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 89,
-      "no_bid": 87,
+      "no_bid": 86,
       "open_interest": 1630,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-CHBE",
       "volume": 1630,
       "volume_24h": 0,
-      "yes_ask": 13,
+      "yes_ask": 14,
       "yes_bid": 11
     },
     "KXNASCARTOP3-COKZS26-CHBR": {
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Corey Heim",
       "no_ask": 97,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 2471,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-COHE",
       "volume": 2471,
       "volume_24h": 0,
-      "yes_ask": 7,
+      "yes_ask": 6,
       "yes_bid": 3
     },
     "KXNASCARTOP3-COKZS26-COWA": {
@@ -281,11 +281,11 @@
       "name": "Denny Hamlin",
       "no_ask": 86,
       "no_bid": 85,
-      "open_interest": 54,
+      "open_interest": 148,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-DEHA",
-      "volume": 54,
-      "volume_24h": 7,
+      "volume": 148,
+      "volume_24h": 39,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -293,7 +293,7 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Erik Jones",
-      "no_ask": 96,
+      "no_ask": 95,
       "no_bid": 93,
       "open_interest": 276,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 276,
       "volume_24h": 104,
       "yes_ask": 7,
-      "yes_bid": 4
+      "yes_bid": 5
     },
     "KXNASCARTOP3-COKZS26-GRGA": {
       "last_price": 0,
@@ -433,7 +433,7 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
-      "no_ask": 93,
+      "no_ask": 95,
       "no_bid": 92,
       "open_interest": 108,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 108,
       "volume_24h": 108,
       "yes_ask": 8,
-      "yes_bid": 7
+      "yes_bid": 5
     },
     "KXNASCARTOP3-COKZS26-ROCH": {
       "last_price": 10,
@@ -475,7 +475,7 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 93,
+      "no_ask": 91,
       "no_bid": 90,
       "open_interest": 3789,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 3789,
       "volume_24h": 436,
       "yes_ask": 10,
-      "yes_bid": 7
+      "yes_bid": 9
     },
     "KXNASCARTOP3-COKZS26-SHVA": {
       "last_price": 0,
@@ -542,16 +542,16 @@
       "yes_bid": 8
     },
     "KXNASCARTOP3-COKZS26-TYRE": {
-      "last_price": 0,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 89,
       "no_bid": 85,
-      "open_interest": 0,
+      "open_interest": 31,
       "status": "active",
       "ticker": "KXNASCARTOP3-COKZS26-TYRE",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 31,
+      "volume_24h": 31,
       "yes_ask": 15,
       "yes_bid": 11
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-08-29T14:15:56.112776+00:00",
+  "scraped_at": "2026-08-29T14:30:19.154702+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
   "tier": "top3"
 }
