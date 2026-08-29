@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-29T18:15:21.130908+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Casey Mears** Top 10: 12c -> 6c (+1567, -6pp)
+- **Noah Gragson** Top 5: 7c -> 11c (+809, +4pp)
+- **Joey Logano** Top 3: 14c -> 18c (+456, +4pp)
+- **Corey Heim** Top 3: 6c -> 10c (+900, +4pp)
+- **Cody Ware** Top 10: 16c -> 12c (+733, -4pp)
+- **Alex Bowman** Top 10: 26c -> 22c (+355, -4pp)
+- **Ty Gibbs** Top 5: 14c -> 17c (+488, +3pp)
+- **Ty Dillon** Top 5: 5c -> 8c (+1150, +3pp)
+- **Cole Custer** Top 5: 9c -> 12c (+733, +3pp)
+- **Christopher Bell** Top 5: 17c -> 20c (+400, +3pp)
+- (+4 more)
+
+_leader win YES 7c · scraped 2026-08-29T18:15:21.130908+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T18:00:24.747704+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
