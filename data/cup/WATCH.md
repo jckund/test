@@ -1,3 +1,20 @@
+### 📊 Kalshi line move — 2026-08-29T08:00:21.966458+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ricky Stenhouse** Top 5: 16c -> 11c (+809, -5pp)
+- **Ryan Blaney** Top 5: 36c -> 32c (+212, -4pp)
+- **Daniel Suárez** Top 5: 14c -> 10c (+900, -4pp)
+- **Austin Dillon** Top 5: 15c -> 11c (+809, -4pp)
+- **Austin Cindric** Top 5: 24c -> 20c (+400, -4pp)
+- **Alex Bowman** Top 5: 14c -> 10c (+900, -4pp)
+- **Tyler Reddick** Top 5: 23c -> 20c (+400, -3pp)
+- **Ty Dillon** Top 5: 8c -> 5c (+1900, -3pp)
+- **Noah Gragson** Top 5: 11c -> 8c (+1150, -3pp)
+
+_leader win YES 9c · scraped 2026-08-29T08:00:21.966458+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T07:15:17.471253+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
