@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-08-29T15:45:17.691071+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 3: 20c -> 15c (+567, -5pp)
+- **Ryan Blaney** Top 3: 24c -> 20c (+400, -4pp)
+- **Tyler Reddick** Top 10: 39c -> 35c (+186, -4pp)
+- **Carson Hocevar** Top 3: 14c -> 11c (+809, -3pp)
+- **Austin Hill** Top 10: 27c -> 24c (+317, -3pp)
+
+_leader win YES 7c · scraped 2026-08-29T15:45:17.691071+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T15:00:21.318147+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
