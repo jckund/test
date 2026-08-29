@@ -163,6 +163,13 @@ refresh/deploy, proactively sweep the whole board for stale data and drop it —
 wait to be asked. Stale = not from the current capture cycle. This covers:
 - **Manual markets not re-provided** — a book's mfr/team/finish tier absent from the
   latest capture (per the don't-carry-forward rule above). Applies across all books.
+- **Entire hand book not re-provided this cycle** — if a whole hand book (e.g. BetUS,
+  BetRivers) isn't part of the current batch, it's stale: `git rm` ALL its files
+  (`<book>.json`, `mfr_<book>.json`, `team_<book>.json`), don't carry it forward. A book
+  the user flags as still-coming ("dont have BUS yet") is NOT an exception — drop it now;
+  it reappears when they actually send it. Only SG/Kalshi/FanDuel (auto or explicitly the
+  baseline) persist across a refresh without a fresh paste. Leave the book in the
+  index.html rosters so it lights up again when re-sent.
 - **Auto-scraped markets that stopped updating** — e.g. FanDuel `manufacturers.json` /
   `teams.json` whose `scraped_at` lags `odds.json` by many hours means FanDuel pulled
   that market (common on race day); delete the stale file (the scraper recreates it if
