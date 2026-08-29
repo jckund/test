@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-29T23:45:17.764750+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Austin Hill** Top 10: 29c -> 39c (+156, +10pp)
+- **William Byron** Win: 16c -> 8c (+1150, -8pp)
+- **Denny Hamlin** Top 10: 38c -> 45c (+122, +7pp)
+- **Christopher Bell** Top 5: 19c -> 24c (+317, +5pp)
+- **Daniel Suárez** Top 3: 7c -> 12c (+733, +5pp)
+- **Joey Logano** Top 10: 46c -> 41c (+144, -5pp)
+- **Erik Jones** Top 5: 12c -> 16c (+525, +4pp)
+- **Chase Briscoe** Top 5: 19c -> 23c (+335, +4pp)
+- **Austin Hill** Top 5: 12c -> 16c (+525, +4pp)
+- **Ryan Preece** Top 3: 11c -> 15c (+567, +4pp)
+- (+7 more)
+
+_leader win YES 10c · scraped 2026-08-29T23:45:17.764750+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T23:34:13.826914+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
