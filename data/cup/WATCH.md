@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-08-29T00:45:20.059898+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Win: 5c -> 8c (+1150, +3pp)
+
+_leader win YES 8c · scraped 2026-08-29T00:45:20.059898+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-29T00:30:18.427762+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
