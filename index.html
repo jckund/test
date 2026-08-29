@@ -366,6 +366,53 @@
         </div>
       </section>
     </div>
+
+    <div id="cmp-ev-panel" style="display:none">
+      <div class="cmp-note">
+        The <b>highest-EV book bets</b> across every finish tier (Winner / Top&nbsp;3 / Top&nbsp;5 /
+        Top&nbsp;10), ranked best first. <b>EV</b> is the expected return on a $1 bet at the book's
+        posted odds, with <b>Kalshi as source of truth</b> — priced against Kalshi's <b>worst-case
+        no-side</b> chance, so it's the return you'd still clear if the true chance sits at the
+        pessimistic edge of the market. Model sources (SG) are excluded — they aren't bettable.
+        <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
+      </div>
+      <div class="cmp-fresh" id="ev-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Highest EV bets</h2>
+          <span class="count" id="ev-count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>EV</th></tr></thead>
+            <tbody id="ev-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <div id="cmp-ksg-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Kalshi vs the SG model</b>, ranked by edge. For each market this prices buying Kalshi's
+        <b>Yes</b> at its current ask using <b>SG's model probability</b> as truth:
+        <b>EV = p·payout − (1−p)</b>. Positive means SG rates Kalshi's Yes <b>cheap</b> (model prob
+        above what you pay); negative means rich. Spans every finish tier.
+        <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
+      </div>
+      <div class="cmp-fresh" id="ksg-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Kalshi vs SG — EV</h2>
+          <span class="count" id="ksg-count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th>Kalshi (Yes)</th><th>SG fair</th><th>EV</th></tr></thead>
+            <tbody id="ksg-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
   </div>
 
   <footer>
@@ -841,6 +888,10 @@ let cmpSub = null; // 'winner'|'top3'|'top5'|'top10'|'mfr'|'team'
 
 function cmpSubItems() {
   const items = cmpTiersAvailable().map((t) => ({ key: t.key, label: t.label }));
+  // Aggregate EV views spanning every available finish tier.
+  const anyBookTier = cmpTiersAvailable().length > 0;
+  if (anyBookTier) items.push({ key: "ev", label: "Best EV" });
+  if (anyBookTier && BOOKDATA.sg && BOOKDATA.sg.tiers) items.push({ key: "ksg", label: "Kalshi vs SG" });
   // Manufacturer/Team are Cup-only (imputed from the Kalshi winner market with
   // Cup rosters; those markets don't exist for the support series).
   if (seriesFull()) {
@@ -871,12 +922,16 @@ function showCmpPanel(which) {
   $("cmp-mfr-panel").style.display = which === "mfr" ? "" : "none";
   $("cmp-team-panel").style.display = which === "team" ? "" : "none";
   $("cmp-move-panel").style.display = which === "move" ? "" : "none";
+  $("cmp-ev-panel").style.display = which === "ev" ? "" : "none";
+  $("cmp-ksg-panel").style.display = which === "ksg" ? "" : "none";
 }
 
 async function renderCmpSub() {
   if (cmpSub === "mfr") { showCmpPanel("mfr"); return loadManufacturers(); }
   if (cmpSub === "team") { showCmpPanel("team"); return loadTeams(); }
   if (cmpSub === "move") { showCmpPanel("move"); return loadMovement(); }
+  if (cmpSub === "ev") { showCmpPanel("ev"); return loadBestEV(); }
+  if (cmpSub === "ksg") { showCmpPanel("ksg"); return loadKalshiSG(); }
   showCmpPanel("driver");
   compareTier = cmpSub;
   return renderCompare();
@@ -927,6 +982,91 @@ async function loadMovement() {
       `<td class="num"><span class="edge ${cls}">${arrow} ${r.d > 0 ? "+" : ""}${r.d.toFixed(1)}</span></td>` +
       `<td class="num">${usOdds(r.pv)} <span class="muted">→</span> ${usOdds(r.cv)}</td></tr>`;
   }).join("") : `<tr><td class="empty" colspan="4">No line moves since the previous refresh.</td></tr>`;
+}
+
+// Highest-EV book bets across every available finish tier, ranked. Same EV
+// convention as the per-tier compare (Kalshi worst-case no-side prob as truth);
+// model books (SG) are excluded because they aren't bettable.
+async function loadBestEV() {
+  const rows = $("ev-rows"), fresh = $("ev-fresh");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  $("updated").textContent = "Highest EV bets";
+  const tiers = cmpTiersAvailable();
+  const out = [];
+  for (const t of tiers) {
+    let snap; try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
+    const kp = {}; // normName -> Kalshi worst-case prob
+    for (const m of Object.values(snap.markets || {})) {
+      const p = worstProb(m);
+      if (p != null) kp[normName(m.name)] = p;
+    }
+    for (const bk of booksForTier(t.key)) {
+      if (bk.model) continue;
+      for (const d of BOOKDATA[bk.key].tiers[t.key].drivers || []) {
+        if (typeof d.american !== "number") continue;
+        const ev = evPct(kp[normName(d.name)], d.american);
+        if (ev == null) continue;
+        out.push({ book: bk.label, driver: d.name, tier: t.label, american: d.american, ev });
+      }
+    }
+  }
+  out.sort((a, b) => b.ev - a.ev);
+  fresh.innerHTML = out.length
+    ? `Every book × driver across ${tiers.length} tier${tiers.length === 1 ? "" : "s"}, priced vs Kalshi's worst-case fair · ${out.length} bets`
+    : "No book odds yet.";
+  rows.innerHTML = out.length ? out.slice(0, 100).map((r, i) =>
+    `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
+    `<td class="l">${escapeHtml(r.book)}</td>` +
+    `<td class="l driver">${escapeHtml(r.driver)}</td>` +
+    `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
+    `<td class="num">${usAmerican(r.american)}</td>` +
+    `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
+  ).join("") : `<tr><td class="empty" colspan="6">No book odds yet.</td></tr>`;
+  $("ev-count").textContent = out.length ? out.length + " bets" + (out.length > 100 ? " (top 100 shown)" : "") : "";
+}
+
+// Kalshi vs the SG model, ranked by edge. Prices buying Kalshi Yes at its ask
+// using SG's model probability as truth; spans every available finish tier.
+async function loadKalshiSG() {
+  const rows = $("ksg-rows"), fresh = $("ksg-fresh");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  $("updated").textContent = "Kalshi vs SG";
+  const sg = BOOKDATA.sg;
+  if (!sg || !sg.tiers) {
+    fresh.textContent = ""; $("ksg-count").textContent = "";
+    rows.innerHTML = `<tr><td class="empty" colspan="6">No SG model loaded.</td></tr>`;
+    return;
+  }
+  const tiers = cmpTiersAvailable();
+  const out = [];
+  for (const t of tiers) {
+    const sgT = sg.tiers[t.key]; if (!sgT) continue;
+    const sgMap = {};
+    for (const d of sgT.drivers || []) sgMap[normName(d.name)] = d;
+    let snap; try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
+    for (const m of Object.values(snap.markets || {})) {
+      const yes = priceYes(m); // cents paid for Yes
+      if (typeof yes !== "number" || yes <= 0 || yes >= 100) continue;
+      const sd = sgMap[normName(m.name)];
+      if (!sd || typeof sd.novig !== "number") continue;
+      const p = sd.novig;                 // SG fair prob (as truth)
+      const ev = (p * (100 - yes) / yes - (1 - p)) * 100;
+      out.push({ driver: m.name, tier: t.label, yes, sgFair: p, ev });
+    }
+  }
+  out.sort((a, b) => b.ev - a.ev);
+  fresh.innerHTML = out.length
+    ? `Buying Kalshi <b>Yes</b> at its ask, priced against <b>SG</b>'s model fair · ${out.length} markets`
+    : "No overlap between Kalshi and SG.";
+  rows.innerHTML = out.length ? out.map((r, i) =>
+    `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
+    `<td class="l driver">${escapeHtml(r.driver)}</td>` +
+    `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
+    `<td class="num">${usOdds(r.yes)}</td>` +
+    `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
+    `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
+  ).join("") : `<tr><td class="empty" colspan="6">No overlap between Kalshi and SG.</td></tr>`;
+  $("ksg-count").textContent = out.length ? out.length + " markets" : "";
 }
 
 async function loadCompare() {
