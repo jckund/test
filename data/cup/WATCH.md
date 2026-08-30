@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-30T00:30:20.651965+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 5: 6c -> 36c (+178, +30pp)
+- **Austin Dillon** Top 3: 10c -> 39c (+156, +29pp)
+- **Josh Berry** Top 5: 11c -> 39c (+156, +28pp)
+- **Cody Ware** Top 5: 12c -> 39c (+156, +27pp)
+- **Noah Gragson** Top 5: 13c -> 39c (+156, +26pp)
+- **Erik Jones** Top 5: 14c -> 39c (+156, +25pp)
+- **Alex Bowman** Top 5: 14c -> 39c (+156, +25pp)
+- **Casey Mears** Top 10: 39c -> 14c (+614, -25pp)
+- **Michael McDowell** Top 5: 15c -> 39c (+156, +24pp)
+- **Austin Dillon** Top 5: 16c -> 39c (+156, +23pp)
+- (+52 more)
+
+_leader win YES 11c · scraped 2026-08-30T00:30:20.651965+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T00:15:22.972241+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
