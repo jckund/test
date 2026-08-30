@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T02:00:24.523376+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 10: 34c -> 89c (-809, +55pp)
+- **Ty Gibbs** Top 10: 39c -> 64c (-178, +25pp)
+- **Erik Jones** Top 10: 39c -> 64c (-178, +25pp)
+- **Alex Bowman** Top 10: 39c -> 64c (-178, +25pp)
+- **Carson Hocevar** Top 3: 13c -> 37c (+170, +24pp)
+- **William Byron** Top 3: 20c -> 36c (+178, +16pp)
+- **Ty Gibbs** Top 5: 27c -> 42c (+138, +15pp)
+- **Tyler Reddick** Top 3: 25c -> 39c (+156, +14pp)
+- **Ross Chastain** Win: 8c -> 20c (+400, +12pp)
+- **Ross Chastain** Top 3: 28c -> 39c (+156, +11pp)
+- (+24 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 20c · scraped 2026-08-30T02:00:24.523376+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T01:45:19.257500+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
