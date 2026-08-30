@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-08-30T00:15:22.972241+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 10: 39c -> 74c (-285, +35pp)
+- **Cole Custer** Top 3: 5c -> 39c (+156, +34pp)
+- **Alex Bowman** Top 3: 6c -> 39c (+156, +33pp)
+- **Connor Zilisch** Top 5: 9c -> 39c (+156, +30pp)
+- **Cole Custer** Top 5: 11c -> 39c (+156, +28pp)
+- **Cody Ware** Top 5: 39c -> 12c (+733, -27pp)
+- **Casey Mears** Top 10: 13c -> 39c (+156, +26pp)
+- **Chris Buescher** Top 10: 39c -> 16c (+525, -23pp)
+- **William Byron** Top 10: 48c -> 36c (+178, -12pp)
+- **John H. Nemechek** Top 10: 22c -> 33c (+203, +11pp)
+- (+29 more)
+
+_leader win YES 11c · scraped 2026-08-30T00:15:22.972241+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T00:00:24.565798+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
