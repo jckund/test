@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T02:30:21.105319+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Michael McDowell** Top 3: 20c -> 99c (-9900, +79pp)
+- **Daniel Suárez** Top 3: 20c -> 97c (-3233, +77pp)
+- **Ryan Preece** Win: 23c -> 99c (-9900, +76pp)
+- **Ricky Stenhouse** Top 5: 39c -> 99c (-9900, +60pp)
+- **Michael McDowell** Top 5: 39c -> 99c (-9900, +60pp)
+- **Michael McDowell** Top 10: 39c -> 99c (-9900, +60pp)
+- **Austin Dillon** Top 10: 39c -> 99c (-9900, +60pp)
+- **Cole Custer** Top 10: 39c -> 94c (-1567, +55pp)
+- **Ryan Blaney** Top 3: 56c -> 4c (+2400, -52pp)
+- **Gray Gaulding** Top 5: 1c -> 39c (+156, +38pp)
+- (+57 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 99c · scraped 2026-08-30T02:30:21.105319+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T02:15:21.302596+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
