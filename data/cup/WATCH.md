@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-08-30T03:15:19.307691+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Denny Hamlin** Top 10: 9c -> 88c (-733, +79pp)
+- **Ryan Preece** Top 5: 99c -> 75c (-300, -24pp)
+- **Tyler Reddick** Top 3: 88c -> 98c (-4900, +10pp)
+- **Ricky Stenhouse** Top 5: 95c -> 99c (-9900, +4pp)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 99c · scraped 2026-08-30T03:15:19.307691+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T03:00:23.066908+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
