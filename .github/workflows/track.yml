@@ -8,11 +8,13 @@ name: Track Kalshi NASCAR market
 # proxy blocks kalshi.com).
 
 on:
-  schedule:
-    # Every ~15 minutes, but OFFSET off the top-of-hour minutes. GitHub's shared
-    # scheduler heavily throttles/skips crons at :00/:15/:30/:45 (peak load), so
-    # firing at :03/:18/:33/:48 runs far more reliably. Still best-effort.
-    - cron: "3,18,33,48 * * * *"
+  # Auto-scrape is PAUSED between race weekends (race over + settled). The 15-min
+  # poll below is disabled so the runner isn't scraping a resolved market.
+  # Re-enable at start of a new race week (see CLAUDE.md kickoff).
+  # schedule:
+  #   # Every ~15 minutes, OFFSET off the top-of-hour minutes (GitHub throttles
+  #   # crons at :00/:15/:30/:45), so :03/:18/:33/:48 runs more reliably.
+  #   - cron: "3,18,33,48 * * * *"
   workflow_dispatch: {}  # allow manual runs from the Actions tab
   push:
     # Redeploy the site when the page or scraper code changes. (Data commits
