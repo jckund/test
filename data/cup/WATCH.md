@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T01:30:24.299046+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Shane Van Gisbergen** Top 10: 86c -> 34c (+194, -52pp)
+- **Riley Herbst** Top 5: 1c -> 39c (+156, +38pp)
+- **Ricky Stenhouse** Top 10: 39c -> 64c (-178, +25pp)
+- **Joey Logano** Top 5: 39c -> 60c (-150, +21pp)
+- **AJ Allmendinger** Top 10: 39c -> 60c (-150, +21pp)
+- **Chris Buescher** Top 5: 1c -> 21c (+376, +20pp)
+- **Kyle Larson** Top 10: 45c -> 64c (-178, +19pp)
+- **Ryan Blaney** Top 10: 65c -> 82c (-456, +17pp)
+- **Ty Gibbs** Top 3: 17c -> 33c (+203, +16pp)
+- **Shane Van Gisbergen** Top 5: 48c -> 33c (+203, -15pp)
+- (+30 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 12c · scraped 2026-08-30T01:30:24.299046+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T01:15:22.938721+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
