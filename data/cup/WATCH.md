@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T01:45:19.257500+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Noah Gragson** Top 10: 39c -> 69c (-223, +30pp)
+- **Ross Chastain** Top 10: 64c -> 88c (-733, +24pp)
+- **Riley Herbst** Top 10: 3c -> 25c (+300, +22pp)
+- **Cody Ware** Top 10: 39c -> 57c (-133, +18pp)
+- **Shane Van Gisbergen** Top 3: 32c -> 19c (+426, -13pp)
+- **Ty Gibbs** Top 3: 33c -> 43c (+133, +10pp)
+- **Brad Keselowski** Top 3: 39c -> 49c (+104, +10pp)
+- **Todd Gilliland** Top 3: 18c -> 27c (+270, +9pp)
+- **Tyler Reddick** Top 5: 19c -> 27c (+270, +8pp)
+- **Todd Gilliland** Top 5: 16c -> 24c (+317, +8pp)
+- (+14 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 13c · scraped 2026-08-30T01:45:19.257500+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T01:30:24.299046+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
