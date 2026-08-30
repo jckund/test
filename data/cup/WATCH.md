@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T02:45:18.681680+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Joey Logano** Top 10: 75c -> 2c (+4900, -73pp)
+- **Brad Keselowski** Top 10: 64c -> 2c (+4900, -62pp)
+- **Daniel Suárez** Top 5: 39c -> 99c (-9900, +60pp)
+- **Zane Smith** Top 5: 59c -> 2c (+4900, -57pp)
+- **Denny Hamlin** Top 5: 74c -> 25c (+300, -49pp)
+- **Austin Cindric** Top 5: 49c -> 3c (+3233, -46pp)
+- **Chase Briscoe** Top 5: 42c -> 1c (+9900, -41pp)
+- **Daniel Dye** Top 10: 39c -> 1c (+9900, -38pp)
+- **Zane Smith** Top 10: 74c -> 42c (+138, -32pp)
+- **Chris Buescher** Top 3: 10c -> 38c (+163, +28pp)
+- (+18 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 99c · scraped 2026-08-30T02:45:18.681680+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T02:30:21.105319+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
