@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-08-30T02:15:21.302596+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 10: 64c -> 1c (+9900, -63pp)
+- **Carson Hocevar** Top 10: 55c -> 1c (+9900, -54pp)
+- **Ryan Preece** Top 3: 23c -> 66c (-194, +43pp)
+- **Ryan Preece** Top 5: 39c -> 79c (-376, +40pp)
+- **Erik Jones** Top 5: 39c -> 1c (+9900, -38pp)
+- **Carson Hocevar** Top 5: 39c -> 1c (+9900, -38pp)
+- **Daniel Suárez** Top 10: 39c -> 75c (-300, +36pp)
+- **Carson Hocevar** Top 3: 37c -> 1c (+9900, -36pp)
+- **Tyler Reddick** Top 5: 31c -> 63c (-170, +32pp)
+- **Ryan Preece** Top 10: 64c -> 95c (-1900, +31pp)
+- (+32 more)
+**TRIP-WIRE — Cindric:** Cindric Win 6c->11c (+5pp toward Bookmaker ~11c, now +809) ; Cindric Top 3 16c->39c (+23pp toward Bookmaker ~33c, now +156)
+
+_leader win YES 25c · scraped 2026-08-30T02:15:21.302596+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-08-30T02:00:24.523376+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
