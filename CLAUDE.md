@@ -17,10 +17,15 @@ misclassified. Kickoff sequence:
    Cup / Xfinity / Truck races; `xfinity` is the default catch-all. Clear stale
    lines from every book/tier across Cup + support series (don't carry last
    week's boards forward).
-2. **First pull + deploy.** Run `fanduel.yml`, then `track.yml` (Kalshi scrape +
+2. **Turn the scraper ON.** Set the auto-scrape gate to live: commit
+   `.github/scrape_active` = `true` on the deploy branch (see "Pausing the
+   auto-scraper" below). While it's `false` every scrape is skipped.
+3. **First pull + deploy.** Run `fanduel.yml`, then `track.yml` (Kalshi scrape +
    publish). Confirm the deploy branch advanced / a `data: market update` landed.
-3. **Then** enter hand books as they arrive (batch — see below) and answer
+4. **Then** enter hand books as they arrive (batch — see below) and answer
    analysis asks.
+5. **After the race settles,** turn the scraper OFF: set `.github/scrape_active`
+   = `false` (stops scraping a resolved market; pinger ticks become no-ops).
 
 Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`,
 Trucks is `<RACE>`. Update the SERIES matchers in `scraper.py`, clear all stale
@@ -51,7 +56,28 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
 - **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
   `linewatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
-  kalshi.com, so always scrape via CI, never inline).
+  kalshi.com, so always scrape via CI, never inline). The 15-min cadence is driven by
+  an **external cron-job.org pinger** hitting `workflow_dispatch` (GitHub's own
+  `schedule` cron is unreliable and is left commented out); that pinger runs 24/7 and
+  is set up once — do **not** re-create it per race.
+
+### Pausing the auto-scraper (kill-switch — IMPORTANT)
+
+Between race weekends the scraper must be OFF so it isn't polling a settled market.
+The on/off switch is a committed flag file **`.github/scrape_active`** read by
+`track.yml`'s "Scrape gate" step:
+- `true`  ⇒ scrape + deploy normally.
+- anything else (incl. missing) ⇒ the scrape step is **skipped**; each pinger tick
+  is an instant green no-op (no scrape, no deploy, no red failure). Code pushes still
+  deploy the site regardless.
+
+**To pause/resume, just flip that one file on the deploy branch** (`claude/nascar-page-scraper-mwi55a`)
+— no workflow edit, no touching cron-job.org. Claude can do it on request ("pause the
+scraper" / "resume for race week"); it's a one-line commit. The flag file is NOT in the
+push-trigger paths, so flipping it won't itself fire a run — the next pinger tick (≤15
+min) picks up the new value; fire `track.yml` once if you want it live immediately.
+(Fully stopping even the empty no-op runs requires pausing the cron-job.org job itself,
+which is optional — the no-ops are harmless and free on a public repo.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
 - **`linewatch.py`** — line-move watch: diffs each Cup market's YES price vs a

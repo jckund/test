@@ -53,7 +53,23 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Scrape gate
+        # Master on/off switch for the auto-scraper between race weekends. Reads
+        # the committed flag file .github/scrape_active: "true" => scrape+deploy
+        # as normal; anything else (incl. missing) => the scrape is SKIPPED and
+        # the pinger's 15-min dispatch becomes an instant green no-op. Flip the
+        # file to pause/resume without editing this workflow or touching the
+        # external cron-job.org pinger. (A code push still deploys regardless.)
+        id: gate
+        run: |
+          active="$(tr -d '[:space:]' < .github/scrape_active 2>/dev/null || echo false)"
+          [ "$active" = "true" ] || active=false
+          echo "active=$active" >> "$GITHUB_OUTPUT"
+          echo "Scrape gate: active=$active"
+
       - name: Run scraper
+        # Skipped when the gate is off (race settled / between weekends).
+        if: ${{ steps.gate.outputs.active == 'true' }}
         id: scrape
         env:
           # Large-trade alerting for the Cup series (see alerts.py). Alert on any
@@ -113,7 +129,7 @@ jobs:
           fi
 
       - name: Assemble site
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.gate.outputs.active == 'true' || github.event_name == 'push') }}
         run: |
           rm -rf _site && mkdir -p _site
           cp index.html _site/
@@ -127,7 +143,7 @@ jobs:
           if [ -f golf.html ]; then mkdir -p _site/golf && cp golf.html _site/golf/index.html; fi
 
       - name: Configure Pages
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.gate.outputs.active == 'true' || github.event_name == 'push') }}
         uses: actions/configure-pages@v5
         with:
           # Auto-enable Pages (build type = GitHub Actions) so no manual
@@ -136,12 +152,12 @@ jobs:
           enablement: true
 
       - name: Upload Pages artifact
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.gate.outputs.active == 'true' || github.event_name == 'push') }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
       - name: Deploy to GitHub Pages
-        if: ${{ !cancelled() }}
+        if: ${{ !cancelled() && (steps.gate.outputs.active == 'true' || github.event_name == 'push') }}
         id: deploy
         uses: actions/deploy-pages@v4
