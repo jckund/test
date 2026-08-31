@@ -45,6 +45,11 @@ BASELINE = f"{DATA_DIR}/watch_baseline.json"
 WATCH_MD = f"{DATA_DIR}/WATCH.md"
 
 THRESH = float(os.environ.get("WATCH_THRESH_PP", "3"))
+# Above this winner-YES, the race is effectively decided/settled (one driver
+# pinned near 100c). Between race weekends the last race sits here until Kalshi
+# rolls to the next event, so while the scraper is unpaused-but-idle we stay
+# silent (no line-move/trip-wire email) unless a NEW race event is detected.
+SETTLED_YES = float(os.environ.get("WATCH_SETTLED_YES_PP", "98"))
 CIND_NAME = "Austin Cindric"
 CIND_THRESH = 2.0
 # Fixed anchor for the Cindric trip-wire (established from the in-session watch).
@@ -239,6 +244,15 @@ def main() -> int:
 
     if first_run:
         print("linewatch: baseline established (first run); no alert.")
+        return 0
+
+    # No live race to alert on: the winner market is settled (a driver pinned
+    # near 100c) and this isn't a new-race flip. Stay silent so an unpaused-but-
+    # idle scraper between weekends doesn't email line-move noise off a dead
+    # board. A genuine new race (new_race) always alerts regardless.
+    if leader >= SETTLED_YES and not new_race:
+        print("linewatch: winner settled (leader %.0fc >= %.0f) and no new race; "
+              "staying silent." % (leader, SETTLED_YES))
         return 0
 
     if not moves and not cind_alerts and not new_race:
