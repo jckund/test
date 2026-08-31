@@ -1,20 +1,16 @@
 {
-  "updated_at": "2026-08-30T03:33:35.429801+00:00",
+  "updated_at": "2026-08-31T21:17:54.298944+00:00",
   "series": [
     {
-      "key": "cup",
-      "label": "NASCAR",
-      "race_title": "Coke Zero Sugar 400",
-      "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cokzs26",
+      "key": "xfinity",
+      "label": "Support race",
+      "race_title": "Auto Parts - FLE (Sep 5)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
       "tiers": [
-        "winner",
-        "top3",
-        "top5",
-        "top10",
-        "top20"
+        "winner"
       ],
-      "scraped_at": "2026-08-30T03:33:35.429729+00:00"
+      "scraped_at": "2026-08-31T21:17:54.298893+00:00"
     }
   ]
 }
