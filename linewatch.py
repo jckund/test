@@ -95,6 +95,24 @@ def read_current():
     return cur, scraped, leader
 
 
+def read_event():
+    """Canonical race identity from the winner snapshot.
+
+    Returns (event_ticker, race_name, market_count). The winner tier's
+    ``event_ticker`` (e.g. ``KXNASCARRACE-COKZS26``) uniquely identifies the
+    race; when Kalshi rolls to the next week's race it changes wholesale, which
+    is how we detect a *new race event* (as opposed to a price move within the
+    same race). ``race_name`` is the human-readable subtitle for the alert.
+    """
+    s = load_snapshot("winner")
+    if not s:
+        return None, None, 0
+    ev = s.get("event") or {}
+    name = ev.get("sub_title") or ev.get("title")
+    count = s.get("market_count") or len(s.get("markets", {}))
+    return s.get("event_ticker"), name, count
+
+
 def post_pr_comment(body: str) -> str:
     pr = os.environ.get("WATCH_PR_NUMBER", "").strip()
     token = os.environ.get("GITHUB_TOKEN", "").strip()
@@ -154,20 +172,24 @@ def prepend_md(header: str, body: str) -> None:
 
 def main() -> int:
     cur, scraped, leader = read_current()
+    event_ticker, race_name, market_count = read_event()
     if not cur:
         print("linewatch: no snapshots found; nothing to do.")
         return 0
-    print(f"linewatch: scraped={scraped} leader_win_yes={leader:.0f}c thresh={THRESH:.0f}pp")
+    print(f"linewatch: scraped={scraped} leader_win_yes={leader:.0f}c thresh={THRESH:.0f}pp "
+          f"event={event_ticker}")
 
     first_run = not os.path.exists(BASELINE)
     if first_run:
         base = {}
         anchor = dict(CIND_ANCHOR)
+        base_event = None
     else:
         with open(BASELINE) as fh:
             saved = json.load(fh)
         base = saved.get("yes", {})
         anchor = saved.get("cindric_anchor", dict(CIND_ANCHOR))
+        base_event = saved.get("event_ticker")
 
     # --- detect per-market moves since last check ---
     moves = []
@@ -194,12 +216,20 @@ def main() -> int:
                 f"Bookmaker ~{CIND_TGT[t]}c, now {american(c)})"
             )
 
-    # --- persist baseline (YES refreshed every run; anchor fixed forever) ---
+    # --- detect a new race event (Kalshi rolled to next week's race) ---
+    # A change in the winner-tier event_ticker means the whole board is a new
+    # race, not a price move. When this fires the per-market diff above is empty
+    # (no ticker/name carries over), so this is the sole, clean signal.
+    new_race = bool(event_ticker and base_event and event_ticker != base_event)
+
+    # --- persist baseline (YES + event refreshed every run; anchor fixed forever) ---
     with open(BASELINE, "w") as fh:
         json.dump(
             {
                 "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "scraped_at": scraped,
+                "event_ticker": event_ticker,
+                "race_name": race_name,
                 "yes": cur,
                 "cindric_anchor": anchor,
             },
@@ -211,12 +241,18 @@ def main() -> int:
         print("linewatch: baseline established (first run); no alert.")
         return 0
 
-    if not moves and not cind_alerts:
+    if not moves and not cind_alerts and not new_race:
         print("linewatch: no moves >= %.0fpp since last check." % THRESH)
         return 0
 
     # --- build alert text ---
     lines = []
+    if new_race:
+        lines.append(
+            f"🏁 **New Kalshi NASCAR race detected:** {race_name or event_ticker} "
+            f"(`{event_ticker}`) — {market_count} driver markets. "
+            f"Previous event `{base_event}`."
+        )
     if moves:
         top = moves[:10]
         extra = len(moves) - len(top)
@@ -233,7 +269,10 @@ def main() -> int:
     lines.append(f"\n_leader win YES {leader:.0f}c · scraped {scraped}_")
     body = "\n".join(lines)
 
-    header = f"### 📊 Kalshi line move — {scraped}"
+    if new_race:
+        header = f"### 🏁 New Kalshi NASCAR race — {race_name or event_ticker}"
+    else:
+        header = f"### 📊 Kalshi line move — {scraped}"
     print(body)
     write_summary(header + "\n\n" + body)
     prepend_md(header, body)
