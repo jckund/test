@@ -847,8 +847,13 @@ def write_series_index(entries: list) -> None:
 def main() -> int:
     races = discover_races()
     if not races:
-        print("No open NASCAR race events found.", file=sys.stderr)
-        return 1
+        # No open race is a normal between-weekends state, NOT an error: exit
+        # cleanly so the 15-min auto-scrape tick stays green instead of emailing
+        # a failed-run notification every time. A genuine scrape failure (403,
+        # network) still raises upstream and fails the run. When a race opens
+        # this returns markets again and the pipeline resumes normally.
+        print("No open NASCAR race events found; nothing to scrape.", file=sys.stderr)
+        return 0
     resolved = resolve_series(races)
     print("Resolved series: " + ", ".join(
         f"{r['key']}={r['race_code']} ({r['race_title']})" for r in resolved), file=sys.stderr)

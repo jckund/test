@@ -223,24 +223,32 @@ def main() -> int:
 
     # --- detect a new race event (Kalshi rolled to next week's race) ---
     # A change in the winner-tier event_ticker means the whole board is a new
-    # race, not a price move. When this fires the per-market diff above is empty
-    # (no ticker/name carries over), so this is the sole, clean signal.
+    # race, not a price move within one. That is the clean "new race" signal;
+    # a genuine new race always alerts (below) even off a settled board.
     new_race = bool(event_ticker and base_event and event_ticker != base_event)
 
+    settled = leader >= SETTLED_YES
+
     # --- persist baseline (YES + event refreshed every run; anchor fixed forever) ---
-    with open(BASELINE, "w") as fh:
-        json.dump(
-            {
-                "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "scraped_at": scraped,
-                "event_ticker": event_ticker,
-                "race_name": race_name,
-                "yes": cur,
-                "cindric_anchor": anchor,
-            },
-            fh,
-            indent=2,
-        )
+    # Skip the rewrite on an idle settled tick whose event is already recorded:
+    # its only change would be `updated_at`, which would commit data/ (and churn
+    # a "market update" every 15 min) for a no-race weekend. First run and the
+    # one-time event_ticker backfill still write; active races write every run.
+    record_only = settled and not new_race and event_ticker == base_event and not first_run
+    if not record_only:
+        with open(BASELINE, "w") as fh:
+            json.dump(
+                {
+                    "updated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "scraped_at": scraped,
+                    "event_ticker": event_ticker,
+                    "race_name": race_name,
+                    "yes": cur,
+                    "cindric_anchor": anchor,
+                },
+                fh,
+                indent=2,
+            )
 
     if first_run:
         print("linewatch: baseline established (first run); no alert.")
@@ -250,7 +258,7 @@ def main() -> int:
     # near 100c) and this isn't a new-race flip. Stay silent so an unpaused-but-
     # idle scraper between weekends doesn't email line-move noise off a dead
     # board. A genuine new race (new_race) always alerts regardless.
-    if leader >= SETTLED_YES and not new_race:
+    if settled and not new_race:
         print("linewatch: winner settled (leader %.0fc >= %.0f) and no new race; "
               "staying silent." % (leader, SETTLED_YES))
         return 0
