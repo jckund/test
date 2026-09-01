@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-09-01T23:30:22.055211+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Cole Custer** Top 3: 46c -> 6c (+1567, -40pp)
+- **Austin Hill** Top 3: 46c -> 7c (+1329, -39pp)
+- **Austin Dillon** Top 3: 46c -> 8c (+1150, -38pp)
+- **AJ Allmendinger** Top 3: 45c -> 7c (+1329, -38pp)
+- **Connor Zilisch** Top 3: 42c -> 5c (+1900, -37pp)
+- **Riley Herbst** Top 3: 42c -> 6c (+1567, -36pp)
+- **Brad Keselowski** Top 3: 48c -> 13c (+669, -35pp)
+- **Austin Cindric** Top 3: 44c -> 9c (+1011, -35pp)
+- **Carson Hocevar** Top 3: 48c -> 14c (+614, -34pp)
+- **Erik Jones** Top 3: 48c -> 15c (+567, -33pp)
+- (+9 more)
+
+_leader win YES 16c · scraped 2026-09-01T23:30:22.055211+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-01T23:15:19.913006+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

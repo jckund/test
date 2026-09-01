@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-AUHI",
       "volume": 468,
-      "volume_24h": 0,
+      "volume_24h": 468,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -108,18 +108,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-COOOS26-CAHO": {
-      "last_price": 14,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 95,
-      "no_bid": 90,
-      "open_interest": 28848,
+      "no_ask": 96,
+      "no_bid": 94,
+      "open_interest": 28852,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CAHO",
-      "volume": 28848,
-      "volume_24h": 28485,
-      "yes_ask": 10,
-      "yes_bid": 5
+      "volume": 28852,
+      "volume_24h": 28847,
+      "yes_ask": 6,
+      "yes_bid": 4
     },
     "KXNASCARRACE-COOOS26-CHBE": {
       "last_price": 7,
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 90,
       "no_bid": 88,
-      "open_interest": 25183,
+      "open_interest": 25187,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CHBR",
-      "volume": 25183,
+      "volume": 25187,
       "volume_24h": 24252,
       "yes_ask": 12,
       "yes_bid": 10
@@ -211,10 +211,10 @@
       "name": "Corey Heim",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 2162,
+      "open_interest": 2168,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-COHE",
-      "volume": 2185,
+      "volume": 2191,
       "volume_24h": 2134,
       "yes_ask": 4,
       "yes_bid": 3
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-COWA",
       "volume": 548,
-      "volume_24h": 80,
+      "volume_24h": 548,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-COZI",
       "volume": 1053,
-      "volume_24h": 488,
+      "volume_24h": 956,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-DASU",
       "volume": 1399,
-      "volume_24h": 1024,
+      "volume_24h": 1399,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -267,11 +267,11 @@
       "name": "Denny Hamlin",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 26058,
+      "open_interest": 26397,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-DEHA",
-      "volume": 26171,
-      "volume_24h": 26060,
+      "volume": 26510,
+      "volume_24h": 26399,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -281,10 +281,10 @@
       "name": "Erik Jones",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 6438,
+      "open_interest": 6451,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-ERJO",
-      "volume": 6438,
+      "volume": 6451,
       "volume_24h": 5128,
       "yes_ask": 3,
       "yes_bid": 2
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-JOBE",
       "volume": 11166,
-      "volume_24h": 8499,
+      "volume_24h": 8733,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -332,15 +332,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-COOOS26-KYLA": {
-      "last_price": 8,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 29821,
+      "open_interest": 29825,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-KYLA",
-      "volume": 29822,
+      "volume": 29826,
       "volume_24h": 29628,
       "yes_ask": 9,
       "yes_bid": 8
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-WIBY",
       "volume": 10055,
-      "volume_24h": 9920,
+      "volume_24h": 10054,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T23:15:19.913006+00:00",
+  "scraped_at": "2026-09-01T23:30:22.055211+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "winner"
 }
