@@ -56,28 +56,28 @@
       "liquidity": 0.0,
       "name": "Brent Crews",
       "no_ask": 91,
-      "no_bid": 84,
+      "no_bid": 85,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-BRCR",
       "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 16,
+      "volume_24h": 0,
+      "yes_ask": 15,
       "yes_bid": 9
     },
     "KXNASCARTOP3-FLE26-BRJO": {
       "last_price": 34,
       "liquidity": 0.0,
       "name": "Brandon Jones",
-      "no_ask": 73,
+      "no_ask": 72,
       "no_bid": 66,
       "open_interest": 312,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-BRJO",
       "volume": 312,
-      "volume_24h": 298,
+      "volume_24h": 312,
       "yes_ask": 34,
-      "yes_bid": 27
+      "yes_bid": 28
     },
     "KXNASCARTOP3-FLE26-BRPE": {
       "last_price": 0,
@@ -111,28 +111,28 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 80,
+      "no_ask": 79,
       "no_bid": 74,
       "open_interest": 435,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-CAKV",
       "volume": 435,
-      "volume_24h": 416,
+      "volume_24h": 435,
       "yes_ask": 26,
-      "yes_bid": 20
+      "yes_bid": 21
     },
     "KXNASCARTOP3-FLE26-CODA": {
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Corey Day",
       "no_ask": 81,
-      "no_bid": 73,
+      "no_bid": 76,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-CODA",
       "volume": 600,
-      "volume_24h": 600,
-      "yes_ask": 27,
+      "volume_24h": 400,
+      "yes_ask": 24,
       "yes_bid": 19
     },
     "KXNASCARTOP3-FLE26-DACR": {
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-GLRE",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 10,
       "yes_bid": 0
     },
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-MAMA",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 10,
       "yes_bid": 0
     },
@@ -476,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Sam Mayer",
       "no_ask": 78,
-      "no_bid": 69,
+      "no_bid": 70,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-SAMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 31,
+      "yes_ask": 30,
       "yes_bid": 22
     },
     "KXNASCARTOP3-FLE26-SASM": {
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "Sammy Smith",
       "no_ask": 89,
-      "no_bid": 80,
+      "no_bid": 81,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-SASM",
       "volume": 400,
       "volume_24h": 400,
-      "yes_ask": 20,
+      "yes_ask": 19,
       "yes_bid": 11
     },
     "KXNASCARTOP3-FLE26-SHCR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-01T22:33:19.676778+00:00",
+  "scraped_at": "2026-09-01T22:48:18.452140+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top3"
 }
