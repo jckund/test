@@ -43,11 +43,11 @@
       "name": "Austin Cindric",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 5686,
+      "open_interest": 5966,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-AUCI",
-      "volume": 5686,
-      "volume_24h": 5686,
+      "volume": 5966,
+      "volume_24h": 5826,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -113,11 +113,11 @@
       "name": "Carson Hocevar",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 1931,
+      "open_interest": 2087,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CAHO",
-      "volume": 1931,
-      "volume_24h": 1931,
+      "volume": 2087,
+      "volume_24h": 2087,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -125,7 +125,7 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 93,
       "open_interest": 22692,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 22813,
       "volume_24h": 22813,
       "yes_ask": 7,
-      "yes_bid": 6
+      "yes_bid": 5
     },
     "KXNASCARRACE-COOOS26-CHBR": {
       "last_price": 11,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CHBR",
       "volume": 21811,
-      "volume_24h": 21042,
+      "volume_24h": 21811,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -281,11 +281,11 @@
       "name": "Erik Jones",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 6084,
+      "open_interest": 6118,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-ERJO",
-      "volume": 6084,
-      "volume_24h": 6084,
+      "volume": 6118,
+      "volume_24h": 6118,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -336,13 +336,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 92,
-      "no_bid": 89,
+      "no_bid": 90,
       "open_interest": 25702,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-KYLA",
       "volume": 25702,
-      "volume_24h": 24870,
-      "yes_ask": 11,
+      "volume_24h": 25702,
+      "yes_ask": 10,
       "yes_bid": 8
     },
     "KXNASCARRACE-COOOS26-MIMC": {
@@ -374,15 +374,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-COOOS26-RIHE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-RIHE",
-      "volume": 0,
+      "volume": 140,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -421,11 +421,11 @@
       "name": "Ryan Blaney",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 851,
+      "open_interest": 867,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-RYBL",
-      "volume": 971,
-      "volume_24h": 971,
+      "volume": 987,
+      "volume_24h": 987,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T17:30:23.948337+00:00",
+  "scraped_at": "2026-09-01T17:45:29.657618+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "winner"
 }
