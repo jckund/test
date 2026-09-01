@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-AUHI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 18
     },
@@ -266,13 +266,13 @@
       "liquidity": 0.0,
       "name": "Jesse Love",
       "no_ask": 85,
-      "no_bid": 77,
+      "no_bid": 78,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-JELO",
       "volume": 400,
-      "volume_24h": 400,
-      "yes_ask": 23,
+      "volume_24h": 200,
+      "yes_ask": 22,
       "yes_bid": 15
     },
     "KXNASCARTOP3-FLE26-JOBI": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-SASM",
       "volume": 400,
-      "volume_24h": 400,
+      "volume_24h": 200,
       "yes_ask": 19,
       "yes_bid": 11
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-01T22:48:18.452140+00:00",
+  "scraped_at": "2026-09-01T23:03:22.552605+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top3"
 }
