@@ -97,15 +97,15 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 84,
-      "no_bid": 78,
-      "open_interest": 73,
+      "no_ask": 82,
+      "no_bid": 75,
+      "open_interest": 210,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-CAKV",
-      "volume": 73,
-      "volume_24h": 73,
-      "yes_ask": 22,
-      "yes_bid": 16
+      "volume": 210,
+      "volume_24h": 210,
+      "yes_ask": 25,
+      "yes_bid": 18
     },
     "KXNASCARTOP3-FLE26-CODA": {
       "last_price": 18,
@@ -237,7 +237,7 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Jesse Love",
-      "no_ask": 84,
+      "no_ask": 85,
       "no_bid": 75,
       "open_interest": 400,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 400,
       "volume_24h": 400,
       "yes_ask": 25,
-      "yes_bid": 16
+      "yes_bid": 15
     },
     "KXNASCARTOP3-FLE26-JOBI": {
       "last_price": 0,
@@ -276,18 +276,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-FLE26-JUAL": {
-      "last_price": 0,
+      "last_price": 46,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 64,
-      "no_bid": 54,
-      "open_interest": 0,
+      "no_ask": 55,
+      "no_bid": 51,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-JUAL",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 46,
-      "yes_bid": 36
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 49,
+      "yes_bid": 45
     },
     "KXNASCARTOP3-FLE26-KYSI": {
       "last_price": 0,
@@ -473,7 +473,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-01T12:45:20.766372+00:00",
+  "scraped_at": "2026-09-01T13:15:20.643491+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top3"
 }
