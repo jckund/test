@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-FLE26",
   "label": "Winner",
-  "market_count": 33,
+  "market_count": 36,
   "markets": {
     "KXNASCARRACE-FLE26-ANAL": {
       "last_price": 0,
@@ -56,13 +56,13 @@
       "liquidity": 0.0,
       "name": "Brent Crews",
       "no_ask": 96,
-      "no_bid": 94,
+      "no_bid": 95,
       "open_interest": 430,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRCR",
       "volume": 430,
       "volume_24h": 430,
-      "yes_ask": 6,
+      "yes_ask": 5,
       "yes_bid": 4
     },
     "KXNASCARRACE-FLE26-BRJO": {
@@ -70,13 +70,13 @@
       "liquidity": 0.0,
       "name": "Brandon Jones",
       "no_ask": 93,
-      "no_bid": 89,
+      "no_bid": 90,
       "open_interest": 426,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 533,
       "volume_24h": 533,
-      "yes_ask": 11,
+      "yes_ask": 10,
       "yes_bid": 7
     },
     "KXNASCARRACE-FLE26-BRPO": {
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Corey Day",
       "no_ask": 98,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 378,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CODA",
       "volume": 378,
       "volume_24h": 378,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 2
     },
     "KXNASCARRACE-FLE26-DACR": {
@@ -175,6 +175,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-FLE26-GLRE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Glen Reen",
+      "no_ask": 100,
+      "no_bid": 52,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARRACE-FLE26-GLRE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 48,
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-HABU": {
@@ -285,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 5647,
-      "volume_24h": 5646,
+      "volume_24h": 5647,
       "yes_ask": 22,
       "yes_bid": 21
     },
@@ -315,6 +329,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-FLE26-MAMA": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Mason Maggio",
+      "no_ask": 100,
+      "no_bid": 52,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARRACE-FLE26-MAMA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 48,
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-NISA": {
@@ -357,6 +385,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-FLE26-PRPA": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Preston Pardus",
+      "no_ask": 100,
+      "no_bid": 52,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARRACE-FLE26-PRPA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 48,
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-RACA": {
@@ -406,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Sam Mayer",
       "no_ask": 99,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 143,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-SAMA",
       "volume": 143,
       "volume_24h": 143,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARRACE-FLE26-SASM": {
@@ -434,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Sheldon Creed",
       "no_ask": 98,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 178,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-SHCR",
       "volume": 178,
-      "volume_24h": 174,
-      "yes_ask": 5,
+      "volume_24h": 178,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARRACE-FLE26-TAGR": {
@@ -473,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T16:00:28.125303+00:00",
+  "scraped_at": "2026-09-01T16:15:20.747007+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }

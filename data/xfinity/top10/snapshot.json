@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-FLE26",
   "label": "Top 10",
-  "market_count": 33,
+  "market_count": 36,
   "markets": {
     "KXNASCARTOP10-FLE26-ANAL": {
       "last_price": 23,
@@ -70,13 +70,13 @@
       "liquidity": 0.0,
       "name": "Brandon Jones",
       "no_ask": 50,
-      "no_bid": 40,
+      "no_bid": 41,
       "open_interest": 106,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-BRJO",
       "volume": 106,
       "volume_24h": 106,
-      "yes_ask": 60,
+      "yes_ask": 59,
       "yes_bid": 50
     },
     "KXNASCARTOP10-FLE26-BRPO": {
@@ -176,6 +176,20 @@
       "volume_24h": 200,
       "yes_ask": 6,
       "yes_bid": 5
+    },
+    "KXNASCARTOP10-FLE26-GLRE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Glen Reen",
+      "no_ask": 100,
+      "no_bid": 1,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARTOP10-FLE26-GLRE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 99,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-HABU": {
       "last_price": 0,
@@ -317,6 +331,20 @@
       "yes_ask": 6,
       "yes_bid": 0
     },
+    "KXNASCARTOP10-FLE26-MAMA": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Mason Maggio",
+      "no_ask": 100,
+      "no_bid": 1,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARTOP10-FLE26-MAMA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 99,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-FLE26-NISA": {
       "last_price": 25,
       "liquidity": 0.0,
@@ -359,18 +387,32 @@
       "yes_ask": 10,
       "yes_bid": 0
     },
+    "KXNASCARTOP10-FLE26-PRPA": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Preston Pardus",
+      "no_ask": 100,
+      "no_bid": 1,
+      "open_interest": 0,
+      "status": "active",
+      "ticker": "KXNASCARTOP10-FLE26-PRPA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 99,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-FLE26-RACA": {
       "last_price": 30,
       "liquidity": 0.0,
       "name": "Rajah Caruth",
       "no_ask": 77,
-      "no_bid": 67,
+      "no_bid": 68,
       "open_interest": 280,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-RACA",
       "volume": 280,
       "volume_24h": 280,
-      "yes_ask": 33,
+      "yes_ask": 32,
       "yes_bid": 23
     },
     "KXNASCARTOP10-FLE26-RYEL": {
@@ -406,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Sam Mayer",
       "no_ask": 46,
-      "no_bid": 36,
+      "no_bid": 37,
       "open_interest": 380,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-SAMA",
       "volume": 390,
       "volume_24h": 390,
-      "yes_ask": 64,
+      "yes_ask": 63,
       "yes_bid": 54
     },
     "KXNASCARTOP10-FLE26-SASM": {
@@ -473,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-01T16:01:01.372325+00:00",
+  "scraped_at": "2026-09-01T16:15:53.900438+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
