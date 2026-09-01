@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-09-01T19:00:35.104317+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Dillon** Top 3: 46c -> 6c (+1567, -40pp)
+- **Riley Herbst** Top 3: 46c -> 6c (+1567, -40pp)
+- **Cole Custer** Top 3: 46c -> 6c (+1567, -40pp)
+- **Todd Gilliland** Top 3: 46c -> 7c (+1329, -39pp)
+- **Austin Hill** Top 3: 46c -> 7c (+1329, -39pp)
+- **Ricky Stenhouse** Top 3: 46c -> 8c (+1150, -38pp)
+- **Noah Gragson** Top 3: 46c -> 8c (+1150, -38pp)
+- **Austin Dillon** Top 3: 46c -> 8c (+1150, -38pp)
+- **AJ Allmendinger** Top 3: 45c -> 7c (+1329, -38pp)
+- **Michael McDowell** Top 3: 45c -> 8c (+1150, -37pp)
+- (+20 more)
+
+_leader win YES 15c · scraped 2026-09-01T19:00:35.104317+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-01T18:45:20.041039+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-FLE26",
   "label": "Winner",
-  "market_count": 36,
+  "market_count": 37,
   "markets": {
     "KXNASCARRACE-FLE26-ANAL": {
       "last_price": 0,
@@ -69,15 +69,29 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Brandon Jones",
-      "no_ask": 95,
-      "no_bid": 91,
+      "no_ask": 96,
+      "no_bid": 93,
       "open_interest": 623,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 730,
       "volume_24h": 730,
-      "yes_ask": 9,
-      "yes_bid": 5
+      "yes_ask": 7,
+      "yes_bid": 4
+    },
+    "KXNASCARRACE-FLE26-BRPE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Brad Perez",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-FLE26-BRPE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-BRPO": {
       "last_price": 0,
@@ -97,15 +111,15 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 91,
-      "no_bid": 90,
+      "no_ask": 92,
+      "no_bid": 91,
       "open_interest": 1123,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CAKV",
       "volume": 1190,
       "volume_24h": 1190,
-      "yes_ask": 10,
-      "yes_bid": 9
+      "yes_ask": 9,
+      "yes_bid": 8
     },
     "KXNASCARRACE-FLE26-CODA": {
       "last_price": 3,
@@ -448,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Sam Mayer",
       "no_ask": 99,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 198,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-SAMA",
       "volume": 198,
       "volume_24h": 198,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 1
     },
     "KXNASCARRACE-FLE26-SASM": {
@@ -515,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T18:48:06.772601+00:00",
+  "scraped_at": "2026-09-01T19:03:29.884322+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }

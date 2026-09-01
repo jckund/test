@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-FLE26",
   "label": "Top 10",
-  "market_count": 36,
+  "market_count": 37,
   "markets": {
     "KXNASCARTOP10-FLE26-ANAL": {
       "last_price": 23,
@@ -78,6 +78,20 @@
       "volume_24h": 106,
       "yes_ask": 60,
       "yes_bid": 51
+    },
+    "KXNASCARTOP10-FLE26-BRPE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Brad Perez",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-FLE26-BRPE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-BRPO": {
       "last_price": 0,
@@ -196,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Harrison Burton",
       "no_ask": 99,
-      "no_bid": 82,
+      "no_bid": 83,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-HABU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 18,
+      "yes_ask": 17,
       "yes_bid": 1
     },
     "KXNASCARTOP10-FLE26-JAFI": {
@@ -515,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-01T18:48:39.771959+00:00",
+  "scraped_at": "2026-09-01T19:04:03.006115+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
