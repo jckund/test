@@ -54,9 +54,9 @@
         "volume_24h_fp": "600.00",
         "volume_fp": "600.00",
         "yes_ask_dollars": "0.2600",
-        "yes_ask_size_fp": "231.97",
+        "yes_ask_size_fp": "234.52",
         "yes_bid_dollars": "0.1900",
-        "yes_bid_size_fp": "231.97",
+        "yes_bid_size_fp": "200.00",
         "yes_sub_title": "Corey Day"
       },
       {
@@ -368,7 +368,7 @@
         "yes_ask_dollars": "0.2800",
         "yes_ask_size_fp": "226.29",
         "yes_bid_dollars": "0.1800",
-        "yes_bid_size_fp": "226.29",
+        "yes_bid_size_fp": "200.00",
         "yes_sub_title": "Austin Hill"
       },
       {
@@ -1200,7 +1200,7 @@
         "yes_ask_dollars": "0.2200",
         "yes_ask_size_fp": "25.00",
         "yes_bid_dollars": "0.1400",
-        "yes_bid_size_fp": "228.87",
+        "yes_bid_size_fp": "200.00",
         "yes_sub_title": "Taylor Gray"
       },
       {
@@ -1564,7 +1564,7 @@
         "yes_ask_dollars": "0.1600",
         "yes_ask_size_fp": "25.00",
         "yes_bid_dollars": "0.0800",
-        "yes_bid_size_fp": "228.87",
+        "yes_bid_size_fp": "200.00",
         "yes_sub_title": "William Sawalich"
       },
       {
@@ -1897,7 +1897,7 @@
         "liquidity_dollars": "0.0000",
         "market_type": "binary",
         "no_ask_dollars": "1.0000",
-        "no_bid_dollars": "1.0000",
+        "no_bid_dollars": "0.9000",
         "no_sub_title": "Brad Perez",
         "notional_value_dollars": "1.0000",
         "occurrence_datetime": "2026-09-06T05:30:00Z",
@@ -1918,15 +1918,15 @@
         "rules_primary": "If Brad Perez finishes in the top 3 in the main race at the 2026 NASCAR Fleetio 200 originally scheduled for Sep 5, 2026, then the market resolves to Yes.",
         "rules_secondary": "Important information: NASCAR races will be paid out after the final race results have been posted by NASCAR. Determinations are not based on provisional results, we appreciate your patience.\n\nIf Brad Perez retires, is disqualified, or otherwise is not classified as a finisher in the race, the market for that competitor resolves to No. If the race is postponed but begins within 48 hours of its originally scheduled start time, the market will remain open and resolve based on the official final result. If the race is cancelled or not started within 48 hours of its originally scheduled start, all markets will resolve to a fair price.\n\nKalshi is not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Governing League. All trademarks, logos, and brand names are the property of their respective owners.",
         "settlement_timer_seconds": 300,
-        "status": "initialized",
+        "status": "active",
         "strike_type": "structured",
         "ticker": "KXNASCARTOP3-FLE26-BRPE",
         "title": "Auto Parts: Brad Perez to finish in the top 3",
-        "updated_time": "2026-09-01T19:01:11.995276Z",
+        "updated_time": "2026-09-01T19:05:00.541518Z",
         "volume_24h_fp": "0.00",
         "volume_fp": "0.00",
-        "yes_ask_dollars": "0.0000",
-        "yes_ask_size_fp": "0.00",
+        "yes_ask_dollars": "0.1000",
+        "yes_ask_size_fp": "200.00",
         "yes_bid_dollars": "0.0000",
         "yes_bid_size_fp": "0.00",
         "yes_sub_title": "Brad Perez"
