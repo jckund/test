@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHFI",
       "volume": 60,
-      "volume_24h": 60,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -209,7 +209,7 @@
       "last_price": 32,
       "liquidity": 0.0,
       "name": "Corey Heim",
-      "no_ask": 73,
+      "no_ask": 74,
       "no_bid": 68,
       "open_interest": 477,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 477,
       "volume_24h": 477,
       "yes_ask": 32,
-      "yes_bid": 27
+      "yes_bid": 26
     },
     "KXNASCARTOP10-COOOS26-COWA": {
       "last_price": 3,
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-COWA",
       "volume": 76,
-      "volume_24h": 76,
+      "volume_24h": 0,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -290,17 +290,17 @@
       "yes_bid": 35
     },
     "KXNASCARTOP10-COOOS26-JOBE": {
-      "last_price": 22,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 79,
-      "no_bid": 77,
-      "open_interest": 728,
+      "no_bid": 76,
+      "open_interest": 1054,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-JOBE",
-      "volume": 728,
-      "volume_24h": 728,
-      "yes_ask": 23,
+      "volume": 1054,
+      "volume_24h": 1054,
+      "yes_ask": 24,
       "yes_bid": 21
     },
     "KXNASCARTOP10-COOOS26-JOLO": {
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-KYLA",
       "volume": 190,
-      "volume_24h": 190,
+      "volume_24h": 90,
       "yes_ask": 71,
       "yes_bid": 7
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-01T22:00:26.624676+00:00",
+  "scraped_at": "2026-09-01T22:30:25.947358+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
