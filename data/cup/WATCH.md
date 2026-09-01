@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-01T19:45:20.845612+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Win: 9c -> 6c (+1567, -3pp)
+
+_leader win YES 15c · scraped 2026-09-01T19:45:20.845612+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-01T19:00:35.104317+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
