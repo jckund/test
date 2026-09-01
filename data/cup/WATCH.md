@@ -1,3 +1,23 @@
+### 📊 Kalshi line move — 2026-09-01T18:15:22.294887+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Dillon** Top 3: 6c -> 46c (+117, +40pp)
+- **Riley Herbst** Top 3: 6c -> 46c (+117, +40pp)
+- **Cole Custer** Top 3: 6c -> 46c (+117, +40pp)
+- **Todd Gilliland** Top 3: 7c -> 46c (+117, +39pp)
+- **Austin Hill** Top 3: 7c -> 46c (+117, +39pp)
+- **Ricky Stenhouse** Top 3: 8c -> 46c (+117, +38pp)
+- **Noah Gragson** Top 3: 8c -> 46c (+117, +38pp)
+- **Austin Dillon** Top 3: 8c -> 46c (+117, +38pp)
+- **AJ Allmendinger** Top 3: 7c -> 45c (+122, +38pp)
+- **Michael McDowell** Top 3: 8c -> 45c (+122, +37pp)
+- (+19 more)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->46c (+30pp toward Bookmaker ~33c, now +117)
+
+_leader win YES 15c · scraped 2026-09-01T18:15:22.294887+00:00_
+
+---
+
 ### 🏁 New Kalshi NASCAR race — Cup - COOOS (Sep 6)
 
 🏁 **New Kalshi NASCAR race detected:** Cup - COOOS (Sep 6) (`KXNASCARRACE-COOOS26`) — 38 driver markets. Previous event `KXNASCARRACE-COKZS26`.
