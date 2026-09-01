@@ -1,6 +1,17 @@
 ### 📊 Kalshi line move — 2026-09-01T18:15:22.294887+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
+- **Josh Berry** Top 10: 20c -> 25c (+300, +5pp)
+- **Erik Jones** Top 3: 45c -> 48c (+108, +3pp)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->46c (+30pp toward Bookmaker ~33c, now +117)
+
+_leader win YES 15c · scraped 2026-09-01T18:15:22.294887+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-09-01T18:15:22.294887+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
 - **Ty Dillon** Top 3: 6c -> 46c (+117, +40pp)
 - **Riley Herbst** Top 3: 6c -> 46c (+117, +40pp)
 - **Cole Custer** Top 3: 6c -> 46c (+117, +40pp)
