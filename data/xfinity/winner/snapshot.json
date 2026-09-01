@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-FLE26",
   "label": "Winner",
-  "market_count": 37,
+  "market_count": 38,
   "markets": {
     "KXNASCARRACE-FLE26-ANAL": {
       "last_price": 0,
@@ -69,15 +69,15 @@
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Brandon Jones",
-      "no_ask": 94,
-      "no_bid": 89,
+      "no_ask": 93,
+      "no_bid": 90,
       "open_interest": 5905,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 6012,
       "volume_24h": 6012,
-      "yes_ask": 11,
-      "yes_bid": 6
+      "yes_ask": 10,
+      "yes_bid": 7
     },
     "KXNASCARRACE-FLE26-BRPE": {
       "last_price": 0,
@@ -125,7 +125,7 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Corey Day",
-      "no_ask": 95,
+      "no_ask": 96,
       "no_bid": 92,
       "open_interest": 723,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 723,
       "volume_24h": 723,
       "yes_ask": 8,
-      "yes_bid": 5
+      "yes_bid": 4
     },
     "KXNASCARRACE-FLE26-DACR": {
       "last_price": 0,
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-HABU",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JEBU",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JECL",
       "volume": 48,
-      "volume_24h": 48,
+      "volume_24h": 47,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 6077,
-      "volume_24h": 6052,
+      "volume_24h": 6077,
       "yes_ask": 25,
       "yes_bid": 22
     },
@@ -345,6 +345,20 @@
       "yes_ask": 1,
       "yes_bid": 0
     },
+    "KXNASCARRACE-FLE26-LOBE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Logan Bearden",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-FLE26-LOBE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARRACE-FLE26-MAMA": {
       "last_price": 0,
       "liquidity": 0.0,
@@ -369,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-NISA",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -529,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T21:47:55.710345+00:00",
+  "scraped_at": "2026-09-01T22:03:24.828691+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
