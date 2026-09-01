@@ -64,12 +64,13 @@ WINNER_SERIES = "KXNASCARRACE"
 # names — a race that matches nothing falls to the `xfinity` default. Update the
 # substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    # Cup this weekend: Coke Zero Sugar 400 at Daytona (regular-season finale,
-    # Sat 8/29). Match on "coke zero" only — NOT "daytona", since the Xfinity
-    # race is also at Daytona and would collide. No Truck race this weekend
-    # (Trucks are off at Daytona in August; Cup + Xfinity only), so the truck
-    # matcher is empty and the Xfinity race falls to the `xfinity` default.
-    {"key": "cup", "label": "NASCAR", "matchers": ["coke zero"],
+    # Cup this weekend: Cook Out Southern 500 at Darlington (playoff opener,
+    # Sun 9/6). Match on "southern 500" only — NOT "darlington" or "cook out",
+    # since the Xfinity race is also at Darlington and "Cook Out" is a recurring
+    # Richmond/Darlington sponsor name that would collide. No Truck race this
+    # weekend (Cup + Xfinity only), so the truck matcher is empty and the
+    # Xfinity race (Fleetio 200, Sat 9/5) falls to the `xfinity` default.
+    {"key": "cup", "label": "NASCAR", "matchers": ["southern 500"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
     {"key": "truck", "label": "Trucks", "matchers": [],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
