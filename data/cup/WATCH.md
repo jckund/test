@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-01T18:45:20.041039+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 10: 59c -> 56c (-127, -3pp)
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->46c (+30pp toward Bookmaker ~33c, now +117)
+
+_leader win YES 15c · scraped 2026-09-01T18:45:20.041039+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-01T18:15:22.294887+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
