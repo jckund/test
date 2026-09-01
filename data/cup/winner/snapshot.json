@@ -29,11 +29,11 @@
       "name": "Alex Bowman",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 331,
+      "open_interest": 798,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-ALBO",
-      "volume": 331,
-      "volume_24h": 235,
+      "volume": 798,
+      "volume_24h": 702,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -66,15 +66,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-COOOS26-AUHI": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 468,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-AUHI",
-      "volume": 0,
+      "volume": 468,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -108,18 +108,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-COOOS26-CAHO": {
-      "last_price": 3,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 98,
-      "no_bid": 96,
-      "open_interest": 28486,
+      "no_ask": 95,
+      "no_bid": 90,
+      "open_interest": 28848,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CAHO",
-      "volume": 28486,
+      "volume": 28848,
       "volume_24h": 28485,
-      "yes_ask": 4,
-      "yes_bid": 2
+      "yes_ask": 10,
+      "yes_bid": 5
     },
     "KXNASCARRACE-COOOS26-CHBE": {
       "last_price": 7,
@@ -225,10 +225,10 @@
       "name": "Cody Ware",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 80,
+      "open_interest": 548,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-COWA",
-      "volume": 80,
+      "volume": 548,
       "volume_24h": 80,
       "yes_ask": 1,
       "yes_bid": 0
@@ -239,10 +239,10 @@
       "name": "Connor Zilisch",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 585,
+      "open_interest": 1053,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-COZI",
-      "volume": 585,
+      "volume": 1053,
       "volume_24h": 488,
       "yes_ask": 1,
       "yes_bid": 0
@@ -253,10 +253,10 @@
       "name": "Daniel Su\u00e1rez",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 1024,
+      "open_interest": 1399,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-DASU",
-      "volume": 1024,
+      "volume": 1399,
       "volume_24h": 1024,
       "yes_ask": 2,
       "yes_bid": 1
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-DEHA",
       "volume": 26171,
-      "volume_24h": 26054,
+      "volume_24h": 26060,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -295,10 +295,10 @@
       "name": "Josh Berry",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 10369,
+      "open_interest": 10603,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-JOBE",
-      "volume": 10932,
+      "volume": 11166,
       "volume_24h": 8499,
       "yes_ask": 2,
       "yes_bid": 1
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-KYLA",
       "volume": 29822,
-      "volume_24h": 29666,
+      "volume_24h": 29628,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -519,10 +519,10 @@
       "name": "William Byron",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 9921,
+      "open_interest": 10055,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-WIBY",
-      "volume": 9921,
+      "volume": 10055,
       "volume_24h": 9920,
       "yes_ask": 7,
       "yes_bid": 6
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-01T23:00:26.351732+00:00",
+  "scraped_at": "2026-09-01T23:15:19.913006+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "winner"
 }
