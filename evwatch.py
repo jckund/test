@@ -15,7 +15,10 @@ again (the price moving is the point). State lives in
 watch state, so it survives across runs.
 
 Channels (all optional, all no-ops when unset):
-  ALERT_WEBHOOK_URL  Slack/Discord/ntfy/Pushover/generic incoming webhook
+  PUSHOVER_TOKEN /   Pushover application token + user key. Phone push, and the
+  PUSHOVER_USER      only channel here that does not depend on GitHub's email
+                     delivery (which notifies the web inbox but was not mailing).
+  ALERT_WEBHOOK_URL  Slack/Discord/ntfy/generic incoming webhook
                      (shared with alerts.py / linewatch.py). This is the hook a
                      Twilio/IFTTT/Zapier relay would use to fan out to SMS.
   WATCH_PR_NUMBER    issue/PR to comment on -- GitHub then emails its watchers,
@@ -49,6 +52,10 @@ KALSHI_FEE_RATE = 0.07
 
 THRESH = float(os.environ.get("EV_ALERT_THRESH", "30"))
 MENTION = os.environ.get("EV_ALERT_MENTION", "").strip()
+SITE_URL = os.environ.get("EV_ALERT_URL", "").strip()
+# Pushover caps message at 1024 chars and title at 250.
+PUSHOVER_MSG_LIMIT = 1024
+PUSHOVER_TITLE_LIMIT = 250
 STATE_PATH = "data/ev_alert_state.json"
 LOG_MD = "data/EV_ALERTS.md"
 TIERS = ["winner", "top3", "top5", "top10", "top20"]
@@ -196,6 +203,51 @@ def post_webhook(body: str) -> str:
         return f"webhook failed: {e}"
 
 
+def pushover_body(rows) -> str:
+    """Compact one-line-per-row body that fits Pushover's 1024-char cap."""
+    lines = [f"{r['driver']} - {TIER_LABEL.get(r['tier'], r['tier'])} - "
+             f"{r['yes_c']:.0f}c {american(r['net_c'])} net - "
+             f"SG {r['sg']:.1f}% - EV +{r['ev']:.0f}%" for r in rows]
+    kept, used = [], 0
+    for ln in lines:
+        # +24 leaves room for a trailing "+N more" line.
+        if used + len(ln) + 1 + 24 > PUSHOVER_MSG_LIMIT:
+            break
+        kept.append(ln); used += len(ln) + 1
+    if len(kept) < len(lines):
+        kept.append(f"+{len(lines) - len(kept)} more")
+    return "\n".join(kept)
+
+
+def post_pushover(rows) -> str:
+    token = os.environ.get("PUSHOVER_TOKEN", "").strip()
+    user = os.environ.get("PUSHOVER_USER", "").strip()
+    if not (token and user):
+        return "pushover skipped (PUSHOVER_TOKEN / PUSHOVER_USER unset)"
+    import urllib.parse
+    n = len(rows)
+    fields = {
+        "token": token,
+        "user": user,
+        "title": f"{n} new {THRESH:.0f}%+ EV line{'' if n == 1 else 's'}"[:PUSHOVER_TITLE_LIMIT],
+        "message": pushover_body(rows)[:PUSHOVER_MSG_LIMIT],
+    }
+    if SITE_URL:
+        fields["url"] = SITE_URL
+        fields["url_title"] = "Open dashboard"
+    req = urllib.request.Request("https://api.pushover.net/1/messages.json",
+                                 data=urllib.parse.urlencode(fields).encode(),
+                                 method="POST")
+    req.add_header("Content-Type", "application/x-www-form-urlencoded")
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return f"pushover sent ({resp.status})"
+    except urllib.error.HTTPError as e:
+        return f"pushover failed: HTTP {e.code} {e.read()[:200]!r}"
+    except Exception as e:  # noqa: BLE001
+        return f"pushover failed: {e}"
+
+
 def write_summary(text: str) -> None:
     path = os.environ.get("GITHUB_STEP_SUMMARY")
     if path:
@@ -268,6 +320,7 @@ def main() -> int:
     print(body)
     write_summary(body)
     prepend_md(head, f"{table}\n\n{note}")
+    print(" ", post_pushover(rows))
     print(" ", post_webhook(body))
     print(" ", post_pr_comment(body))
     return 0
