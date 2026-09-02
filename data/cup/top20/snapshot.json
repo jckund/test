@@ -41,7 +41,7 @@
       "last_price": 65,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 40,
+      "no_ask": 39,
       "no_bid": 36,
       "open_interest": 635,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 635,
       "volume_24h": 231,
       "yes_ask": 64,
-      "yes_bid": 60
+      "yes_bid": 61
     },
     "KXNASCARTOP20-COOOS26-AUDI": {
       "last_price": 42,
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-AUDI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 49,
       "yes_bid": 42
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-BRKE",
       "volume": 636,
-      "volume_24h": 634,
+      "volume_24h": 512,
       "yes_ask": 68,
       "yes_bid": 62
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CHBE",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 84,
       "yes_bid": 76
     },
@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Cody Ware",
       "no_ask": 98,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 871,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-COWA",
       "volume": 871,
       "volume_24h": 232,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARTOP20-COOOS26-COZI": {
@@ -251,15 +251,15 @@
       "last_price": 45,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 54,
+      "no_ask": 55,
       "no_bid": 48,
       "open_interest": 258,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-DASU",
       "volume": 260,
-      "volume_24h": 234,
+      "volume_24h": 34,
       "yes_ask": 52,
-      "yes_bid": 46
+      "yes_bid": 45
     },
     "KXNASCARTOP20-COOOS26-DEHA": {
       "last_price": 90,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-ERJO",
       "volume": 1236,
-      "volume_24h": 723,
+      "volume_24h": 702,
       "yes_ask": 67,
       "yes_bid": 61
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-JONE",
       "volume": 238,
-      "volume_24h": 227,
+      "volume_24h": 14,
       "yes_ask": 50,
       "yes_bid": 43
     },
@@ -335,7 +335,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 57,
+      "no_ask": 58,
       "no_bid": 10,
       "open_interest": 0,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 90,
-      "yes_bid": 43
+      "yes_bid": 42
     },
     "KXNASCARTOP20-COOOS26-MIMC": {
       "last_price": 0,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-RYPR",
       "volume": 385,
-      "volume_24h": 364,
+      "volume_24h": 210,
       "yes_ask": 60,
       "yes_bid": 57
     },
@@ -503,7 +503,7 @@
       "last_price": 78,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 29,
+      "no_ask": 28,
       "no_bid": 23,
       "open_interest": 20,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 20,
       "volume_24h": 6,
       "yes_ask": 77,
-      "yes_bid": 71
+      "yes_bid": 72
     },
     "KXNASCARTOP20-COOOS26-WIBY": {
       "last_price": 80,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-02T13:00:31.955520+00:00",
+  "scraped_at": "2026-09-02T13:45:21.310686+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top20"
 }
