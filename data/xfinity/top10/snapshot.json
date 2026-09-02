@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-BRCR",
       "volume": 1325,
-      "volume_24h": 401,
+      "volume_24h": 1,
       "yes_ask": 57,
       "yes_bid": 49
     },
@@ -220,18 +220,18 @@
       "yes_bid": 15
     },
     "KXNASCARTOP10-FLE26-JAFI": {
-      "last_price": 35,
+      "last_price": 31,
       "liquidity": 0.0,
       "name": "Jake Finch",
-      "no_ask": 76,
-      "no_bid": 69,
-      "open_interest": 590,
+      "no_ask": 71,
+      "no_bid": 64,
+      "open_interest": 790,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-JAFI",
-      "volume": 590,
-      "volume_24h": 0,
-      "yes_ask": 31,
-      "yes_bid": 24
+      "volume": 790,
+      "volume_24h": 678,
+      "yes_ask": 36,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-FLE26-JEBU": {
       "last_price": 0,
@@ -251,7 +251,7 @@
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Jeremy Clements",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 73,
       "open_interest": 506,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 506,
       "volume_24h": 56,
       "yes_ask": 27,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARTOP10-FLE26-JELO": {
       "last_price": 69,
@@ -430,18 +430,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-RACA": {
-      "last_price": 30,
+      "last_price": 32,
       "liquidity": 0.0,
       "name": "Rajah Caruth",
-      "no_ask": 77,
-      "no_bid": 68,
-      "open_interest": 280,
+      "no_ask": 75,
+      "no_bid": 66,
+      "open_interest": 509,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-RACA",
-      "volume": 280,
-      "volume_24h": 0,
-      "yes_ask": 32,
-      "yes_bid": 23
+      "volume": 509,
+      "volume_24h": 229,
+      "yes_ask": 34,
+      "yes_bid": 25
     },
     "KXNASCARTOP10-FLE26-RYEL": {
       "last_price": 12,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T16:48:26.888569+00:00",
+  "scraped_at": "2026-09-02T17:03:50.180543+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
