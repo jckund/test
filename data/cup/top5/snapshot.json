@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-BRKE",
       "volume": 278,
-      "volume_24h": 251,
+      "volume_24h": 51,
       "yes_ask": 25,
       "yes_bid": 15
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBU",
       "volume": 326,
-      "volume_24h": 126,
+      "volume_24h": 107,
       "yes_ask": 25,
       "yes_bid": 18
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-ERJO",
       "volume": 340,
-      "volume_24h": 139,
+      "volume_24h": 0,
       "yes_ask": 20,
       "yes_bid": 12
     },
@@ -486,18 +486,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP5-COOOS26-TYGI": {
-      "last_price": 0,
+      "last_price": 27,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 82,
-      "no_bid": 73,
-      "open_interest": 0,
+      "no_ask": 81,
+      "no_bid": 74,
+      "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-TYGI",
-      "volume": 0,
+      "volume": 20,
       "volume_24h": 0,
-      "yes_ask": 27,
-      "yes_bid": 18
+      "yes_ask": 26,
+      "yes_bid": 19
     },
     "KXNASCARTOP5-COOOS26-TYRE": {
       "last_price": 49,
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-TYRE",
       "volume": 1241,
-      "volume_24h": 439,
+      "volume_24h": 210,
       "yes_ask": 50,
       "yes_bid": 44
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-02T15:00:28.732735+00:00",
+  "scraped_at": "2026-09-02T16:00:29.349969+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }

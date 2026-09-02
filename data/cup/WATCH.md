@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T16:00:28.535032+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 10: 22c -> 18c (+456, -4pp)
+- **Ryan Blaney** Top 3: 29c -> 26c (+285, -3pp)
+
+_leader win YES 16c · scraped 2026-09-02T16:00:28.535032+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T15:45:21.878703+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
