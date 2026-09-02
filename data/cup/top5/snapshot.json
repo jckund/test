@@ -139,15 +139,15 @@
       "last_price": 42,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 64,
+      "no_ask": 65,
       "no_bid": 58,
       "open_interest": 623,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBR",
       "volume": 623,
-      "volume_24h": 278,
+      "volume_24h": 114,
       "yes_ask": 42,
-      "yes_bid": 36
+      "yes_bid": 35
     },
     "KXNASCARTOP5-COOOS26-CHBU": {
       "last_price": 25,
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DASU",
       "volume": 16,
-      "volume_24h": 16,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 2
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-MIMC",
       "volume": 17,
-      "volume_24h": 17,
+      "volume_24h": 0,
       "yes_ask": 11,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-02T12:45:20.104257+00:00",
+  "scraped_at": "2026-09-02T14:00:31.269538+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
