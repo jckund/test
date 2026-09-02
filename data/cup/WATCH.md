@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-02T01:30:21.885258+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Chris Buescher** Top 10: 45c -> 48c (+108, +3pp)
+
+_leader win YES 16c · scraped 2026-09-02T01:30:21.885258+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-01T23:30:22.055211+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
