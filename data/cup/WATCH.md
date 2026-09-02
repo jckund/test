@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T18:30:25.282140+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 3: 32c -> 39c (+156, +7pp)
+- **Ty Gibbs** Top 10: 46c -> 52c (-108, +6pp)
+
+_leader win YES 16c · scraped 2026-09-02T18:30:25.282140+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T17:30:24.517959+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
