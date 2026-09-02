@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T20:00:27.426986+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 10: 12c -> 19c (+426, +7pp)
+- **Kyle Larson** Top 10: 68c -> 65c (-186, -3pp)
+
+_leader win YES 18c · scraped 2026-09-02T20:00:27.426986+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T19:30:23.222590+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
