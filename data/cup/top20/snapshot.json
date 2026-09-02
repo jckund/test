@@ -94,18 +94,18 @@
       "yes_bid": 62
     },
     "KXNASCARTOP20-COOOS26-BUWA": {
-      "last_price": 0,
+      "last_price": 62,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 42,
-      "no_bid": 38,
-      "open_interest": 0,
+      "no_ask": 39,
+      "no_bid": 32,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-BUWA",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 62,
-      "yes_bid": 58
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 68,
+      "yes_bid": 61
     },
     "KXNASCARTOP20-COOOS26-CAHO": {
       "last_price": 56,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-02T12:00:27.724184+00:00",
+  "scraped_at": "2026-09-02T12:15:23.411102+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top20"
 }
