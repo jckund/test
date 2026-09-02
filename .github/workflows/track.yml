@@ -130,6 +130,11 @@ jobs:
           # notification, emailed by default; a plain comment is not).
           # Override with the ALERT_MENTION repo variable; defaults to the owner.
           EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
+          # Phone push. The only channel that doesn't depend on GitHub email
+          # delivery, which notifies the web inbox but wasn't mailing.
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          EV_ALERT_URL: https://jckund.github.io/test/
           WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
