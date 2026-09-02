@@ -47,7 +47,16 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Check out repository
+        # Check out the BRANCH TIP, not github.sha. Runs serialize on the
+        # concurrency group, so a queued run's trigger SHA is often already
+        # stale by the time it starts — checking that out meant its data commit
+        # had to rebase onto a moved remote, which conflicted on the append-only
+        # logs, failed the commit step, and left conflict markers in the tree
+        # that the Pages deploy below then published. Starting from the tip
+        # makes the common case a plain fast-forward.
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -137,12 +146,24 @@ jobs:
             # Rebase in case a concurrent/previous run pushed first, then push.
             pushed=false
             for i in 1 2 3 4; do
-              if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              # Rebase onto the current tip. Append-only *.jsonl logs union-merge
+              # via .gitattributes (keeping both runs' rows); wholesale-rewritten
+              # state takes the fresher scrape via -X theirs ("theirs" == the
+              # commit being replayed, i.e. ours).
+              if git pull --rebase -X theirs --autostash origin "${GITHUB_REF_NAME}" \
+                 && git push origin HEAD:"${GITHUB_REF_NAME}"; then
                 echo "Pushed."; pushed=true; break
               fi
+              # Never leave a half-finished rebase behind: the assemble/deploy
+              # steps below run even when this step fails, and would otherwise
+              # publish files containing conflict markers.
+              git rebase --abort 2>/dev/null || true
               echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
             done
-            if [ "$pushed" != true ]; then echo "Failed to push after retries" >&2; exit 1; fi
+            if [ "$pushed" != true ]; then
+              echo "Failed to push after retries — data stays local; the deploy below still publishes it." >&2
+              exit 1
+            fi
           fi
 
       - name: Assemble site

@@ -53,6 +53,15 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
 
 ## CI workflows
 
+- **Concurrent-run safety (why `.gitattributes` exists):** runs serialize on the
+  `track-kalshi` concurrency group, so a queued run's trigger SHA can be stale.
+  Checkout therefore takes `ref: github.ref_name` (the branch **tip**), and the
+  commit step rebases with `-X theirs` so wholesale-rewritten state
+  (`snapshot`/`latest`/`index.json`) keeps the fresher scrape, while
+  `data/**/*.jsonl merge=union` in `.gitattributes` keeps **both** runs' rows in
+  the append-only logs. A failed rebase is always `--abort`ed, because the
+  assemble/deploy steps run even when the commit step fails and would otherwise
+  publish conflict-markered JSON (that is what blanked the site on 9/2).
 - **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
   `linewatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
