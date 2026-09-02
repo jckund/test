@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T21:45:20.128342+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 26c -> 23c (+335, -3pp)
+- **Todd Gilliland** Top 10: 11c -> 8c (+1150, -3pp)
+
+_leader win YES 17c · scraped 2026-09-02T21:45:20.128342+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T21:30:25.836758+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
