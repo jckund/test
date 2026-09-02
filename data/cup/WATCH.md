@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-09-02T23:15:22.465520+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Top 3: 29c -> 34c (+194, +5pp)
+- **Erik Jones** Top 3: 14c -> 11c (+809, -3pp)
+- **Carson Hocevar** Top 10: 38c -> 35c (+186, -3pp)
+
+_leader win YES 18c · scraped 2026-09-02T23:15:22.465520+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T23:00:23.871182+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

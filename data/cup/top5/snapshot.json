@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-BUWA",
       "volume": 244,
-      "volume_24h": 205,
+      "volume_24h": 200,
       "yes_ask": 22,
       "yes_bid": 15
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBE",
       "volume": 244,
-      "volume_24h": 24,
+      "volume_24h": 19,
       "yes_ask": 35,
       "yes_bid": 30
     },
@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 76,
-      "no_bid": 72,
+      "no_bid": 73,
       "open_interest": 833,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBU",
       "volume": 833,
       "volume_24h": 614,
-      "yes_ask": 28,
+      "yes_ask": 27,
       "yes_bid": 24
     },
     "KXNASCARTOP5-COOOS26-CHEL": {
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DEHA",
       "volume": 403,
-      "volume_24h": 92,
+      "volume_24h": 88,
       "yes_ask": 50,
       "yes_bid": 43
     },
@@ -304,16 +304,16 @@
       "yes_bid": 3
     },
     "KXNASCARTOP5-COOOS26-JOLO": {
-      "last_price": 0,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 79,
       "no_bid": 76,
-      "open_interest": 0,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-JOLO",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 4,
+      "volume_24h": 4,
       "yes_ask": 24,
       "yes_bid": 21
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-02T22:45:21.426775+00:00",
+  "scraped_at": "2026-09-02T23:15:23.352772+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
