@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-GLRE",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 7,
       "yes_bid": 0
     },
@@ -220,18 +220,18 @@
       "yes_bid": 15
     },
     "KXNASCARTOP10-FLE26-JAFI": {
-      "last_price": 28,
+      "last_price": 29,
       "liquidity": 0.0,
       "name": "Jake Finch",
-      "no_ask": 78,
-      "no_bid": 71,
-      "open_interest": 790,
+      "no_ask": 73,
+      "no_bid": 66,
+      "open_interest": 990,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-JAFI",
-      "volume": 990,
-      "volume_24h": 678,
-      "yes_ask": 29,
-      "yes_bid": 22
+      "volume": 1190,
+      "volume_24h": 1078,
+      "yes_ask": 34,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-FLE26-JEBU": {
       "last_price": 0,
@@ -364,13 +364,13 @@
       "liquidity": 0.0,
       "name": "Mason Maggio",
       "no_ask": 95,
-      "no_bid": 85,
+      "no_bid": 86,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-MAMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 15,
+      "yes_ask": 14,
       "yes_bid": 5
     },
     "KXNASCARTOP10-FLE26-NISA": {
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Patrick Staropoli",
       "no_ask": 100,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-PAST",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-PRPA": {
@@ -531,7 +531,7 @@
       "last_price": 44,
       "liquidity": 0.0,
       "name": "William Sawalich",
-      "no_ask": 66,
+      "no_ask": 65,
       "no_bid": 56,
       "open_interest": 68,
       "status": "active",
@@ -539,11 +539,11 @@
       "volume": 68,
       "volume_24h": 11,
       "yes_ask": 44,
-      "yes_bid": 34
+      "yes_bid": 35
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T17:48:33.703658+00:00",
+  "scraped_at": "2026-09-02T18:18:31.348067+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
