@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-09-02T22:15:19.105412+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 10: 32c -> 38c (+163, +6pp)
+- **Chris Buescher** Top 5: 25c -> 28c (+257, +3pp)
+- **Todd Gilliland** Top 10: 6c -> 9c (+1011, +3pp)
+- **Shane Van Gisbergen** Top 10: 15c -> 18c (+456, +3pp)
+- **Corey Heim** Top 3: 15c -> 12c (+733, -3pp)
+- **Christopher Bell** Top 3: 30c -> 27c (+270, -3pp)
+
+_leader win YES 17c · scraped 2026-09-02T22:15:19.105412+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T22:00:24.467499+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
