@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T20:45:20.459688+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Top 3: 34c -> 28c (+257, -6pp)
+- **Tyler Reddick** Top 3: 32c -> 36c (+178, +4pp)
+
+_leader win YES 18c · scraped 2026-09-02T20:45:20.459688+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T20:30:25.205705+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
