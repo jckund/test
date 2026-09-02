@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-09-02T16:15:24.031169+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 32c -> 24c (+317, -8pp)
+- **Ross Chastain** Top 5: 21c -> 14c (+614, -7pp)
+- **Connor Zilisch** Top 5: 14c -> 8c (+1150, -6pp)
+- **Chase Elliott** Top 5: 30c -> 24c (+317, -6pp)
+- **Michael McDowell** Top 5: 11c -> 8c (+1150, -3pp)
+- **Austin Cindric** Top 10: 31c -> 28c (+257, -3pp)
+
+_leader win YES 16c · scraped 2026-09-02T16:15:24.031169+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T16:00:28.535032+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
