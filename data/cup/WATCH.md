@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-02T03:00:24.109316+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Win: 9c -> 6c (+1567, -3pp)
+
+_leader win YES 16c · scraped 2026-09-02T03:00:24.109316+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T01:45:20.462373+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
