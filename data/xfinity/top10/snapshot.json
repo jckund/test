@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-BRCR",
       "volume": 1325,
-      "volume_24h": 893,
+      "volume_24h": 601,
       "yes_ask": 57,
       "yes_bid": 49
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-CAKV",
       "volume": 401,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 59,
       "yes_bid": 51
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-CODA",
       "volume": 778,
-      "volume_24h": 453,
+      "volume_24h": 200,
       "yes_ask": 57,
       "yes_bid": 47
     },
@@ -206,18 +206,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-HABU": {
-      "last_price": 0,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Harrison Burton",
-      "no_ask": 99,
-      "no_bid": 83,
-      "open_interest": 0,
+      "no_ask": 85,
+      "no_bid": 82,
+      "open_interest": 128,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-HABU",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 17,
-      "yes_bid": 1
+      "volume": 128,
+      "volume_24h": 128,
+      "yes_ask": 18,
+      "yes_bid": 15
     },
     "KXNASCARTOP10-FLE26-JAFI": {
       "last_price": 21,
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-JAFI",
       "volume": 113,
-      "volume_24h": 113,
+      "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 15
     },
@@ -377,7 +377,7 @@
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Nicholas Sanchez",
-      "no_ask": 74,
+      "no_ask": 75,
       "no_bid": 65,
       "open_interest": 260,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 260,
       "volume_24h": 260,
       "yes_ask": 35,
-      "yes_bid": 26
+      "yes_bid": 25
     },
     "KXNASCARTOP10-FLE26-PARE": {
       "last_price": 42,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-RACA",
       "volume": 280,
-      "volume_24h": 79,
+      "volume_24h": 0,
       "yes_ask": 31,
       "yes_bid": 23
     },
@@ -489,7 +489,7 @@
       "last_price": 45,
       "liquidity": 0.0,
       "name": "Sammy Smith",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 55,
       "open_interest": 54,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 54,
       "volume_24h": 32,
       "yes_ask": 45,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP10-FLE26-SHCR": {
       "last_price": 55,
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-SHCR",
       "volume": 699,
-      "volume_24h": 332,
+      "volume_24h": 233,
       "yes_ask": 58,
       "yes_bid": 50
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T13:04:06.863317+00:00",
+  "scraped_at": "2026-09-02T13:33:31.149057+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
