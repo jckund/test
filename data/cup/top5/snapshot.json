@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CAHO",
       "volume": 5,
-      "volume_24h": 0,
+      "volume_24h": 5,
       "yes_ask": 20,
       "yes_bid": 11
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBR",
       "volume": 623,
-      "volume_24h": 314,
+      "volume_24h": 278,
       "yes_ask": 42,
       "yes_bid": 36
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBU",
       "volume": 326,
-      "volume_24h": 122,
+      "volume_24h": 126,
       "yes_ask": 25,
       "yes_bid": 18
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DEHA",
       "volume": 319,
-      "volume_24h": 119,
+      "volume_24h": 78,
       "yes_ask": 49,
       "yes_bid": 41
     },
@@ -335,15 +335,15 @@
       "last_price": 41,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 65,
+      "no_ask": 64,
       "no_bid": 59,
       "open_interest": 177,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-KYLA",
       "volume": 177,
-      "volume_24h": 47,
+      "volume_24h": 0,
       "yes_ask": 41,
-      "yes_bid": 35
+      "yes_bid": 36
     },
     "KXNASCARTOP5-COOOS26-MIMC": {
       "last_price": 11,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-02T11:30:22.470872+00:00",
+  "scraped_at": "2026-09-02T11:45:20.376133+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
