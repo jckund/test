@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T23:00:23.871182+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Corey Heim** Top 3: 9c -> 14c (+614, +5pp)
+- **Carson Hocevar** Top 10: 33c -> 38c (+163, +5pp)
+
+_leader win YES 18c · scraped 2026-09-02T23:00:23.871182+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T22:45:20.394532+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
