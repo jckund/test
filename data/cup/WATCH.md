@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-02T01:45:20.462373+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Top 10: 48c -> 51c (-104, +3pp)
+
+_leader win YES 16c · scraped 2026-09-02T01:45:20.462373+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T01:30:21.885258+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
