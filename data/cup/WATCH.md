@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-09-02T21:15:21.924150+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Todd Gilliland** Top 10: 6c -> 11c (+809, +5pp)
+- **Tyler Reddick** Top 3: 34c -> 30c (+233, -4pp)
+- **Bubba Wallace** Top 10: 45c -> 41c (+144, -4pp)
+- **Erik Jones** Top 3: 13c -> 10c (+900, -3pp)
+
+_leader win YES 17c · scraped 2026-09-02T21:15:21.924150+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T21:00:34.265358+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
