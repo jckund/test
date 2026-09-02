@@ -1,3 +1,14 @@
+### 📊 Kalshi line move — 2026-09-02T22:00:24.467499+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 23c -> 30c (+233, +7pp)
+- **Corey Heim** Top 3: 10c -> 15c (+567, +5pp)
+- **Chase Elliott** Top 3: 22c -> 18c (+456, -4pp)
+
+_leader win YES 17c · scraped 2026-09-02T22:00:24.467499+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T21:45:20.128342+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
