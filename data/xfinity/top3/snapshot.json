@@ -69,15 +69,15 @@
       "last_price": 33,
       "liquidity": 0.0,
       "name": "Brandon Jones",
-      "no_ask": 71,
-      "no_bid": 66,
+      "no_ask": 70,
+      "no_bid": 65,
       "open_interest": 321,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-BRJO",
       "volume": 321,
-      "volume_24h": 23,
-      "yes_ask": 34,
-      "yes_bid": 29
+      "volume_24h": 9,
+      "yes_ask": 35,
+      "yes_bid": 30
     },
     "KXNASCARTOP3-FLE26-BRPE": {
       "last_price": 0,
@@ -111,15 +111,15 @@
       "last_price": 32,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 77,
+      "no_ask": 76,
       "no_bid": 69,
       "open_interest": 872,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-CAKV",
       "volume": 872,
-      "volume_24h": 456,
+      "volume_24h": 438,
       "yes_ask": 31,
-      "yes_bid": 23
+      "yes_bid": 24
     },
     "KXNASCARTOP3-FLE26-CODA": {
       "last_price": 24,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-GLRE",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 0
     },
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-MAMA",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 0
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-02T22:33:27.366422+00:00",
+  "scraped_at": "2026-09-02T22:48:13.684472+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top3"
 }

@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-BRPE",
       "volume": 400,
-      "volume_24h": 400,
+      "volume_24h": 200,
       "yes_ask": 12,
       "yes_bid": 2
     },
@@ -377,7 +377,7 @@
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Nicholas Sanchez",
-      "no_ask": 75,
+      "no_ask": 74,
       "no_bid": 65,
       "open_interest": 260,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 260,
       "volume_24h": 0,
       "yes_ask": 35,
-      "yes_bid": 25
+      "yes_bid": 26
     },
     "KXNASCARTOP10-FLE26-PARE": {
       "last_price": 42,
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-PARE",
       "volume": 679,
-      "volume_24h": 18,
+      "volume_24h": 7,
       "yes_ask": 42,
       "yes_bid": 34
     },
@@ -489,7 +489,7 @@
       "last_price": 45,
       "liquidity": 0.0,
       "name": "Sammy Smith",
-      "no_ask": 76,
+      "no_ask": 75,
       "no_bid": 55,
       "open_interest": 54,
       "status": "active",
@@ -497,13 +497,13 @@
       "volume": 54,
       "volume_24h": 0,
       "yes_ask": 45,
-      "yes_bid": 24
+      "yes_bid": 25
     },
     "KXNASCARTOP10-FLE26-SHCR": {
       "last_price": 61,
       "liquidity": 0.0,
       "name": "Sheldon Creed",
-      "no_ask": 43,
+      "no_ask": 42,
       "no_bid": 39,
       "open_interest": 1104,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 1104,
       "volume_24h": 405,
       "yes_ask": 61,
-      "yes_bid": 57
+      "yes_bid": 58
     },
     "KXNASCARTOP10-FLE26-TAGR": {
       "last_price": 0,
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-WISA",
       "volume": 68,
-      "volume_24h": 11,
+      "volume_24h": 0,
       "yes_ask": 44,
       "yes_bid": 35
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T22:33:59.932625+00:00",
+  "scraped_at": "2026-09-02T22:48:46.275057+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
