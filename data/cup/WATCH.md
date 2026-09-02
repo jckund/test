@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-02T19:30:23.222590+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Michael McDowell** Top 10: 11c -> 14c (+614, +3pp)
+
+_leader win YES 18c · scraped 2026-09-02T19:30:23.222590+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T18:45:19.541594+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
