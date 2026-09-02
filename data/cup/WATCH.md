@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-02T18:45:19.541594+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Kyle Larson** Top 3: 28c -> 35c (+186, +7pp)
+- **Chase Briscoe** Top 5: 42c -> 45c (+122, +3pp)
+
+_leader win YES 16c · scraped 2026-09-02T18:45:19.541594+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T18:30:25.282140+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**

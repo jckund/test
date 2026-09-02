@@ -41,7 +41,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 95,
+      "no_ask": 100,
       "no_bid": 91,
       "open_interest": 0,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 9,
-      "yes_bid": 5
+      "yes_bid": 0
     },
     "KXNASCARTOP3-COOOS26-AUDI": {
       "last_price": 0,
@@ -153,7 +153,7 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 95,
+      "no_ask": 97,
       "no_bid": 87,
       "open_interest": 43,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 43,
       "volume_24h": 0,
       "yes_ask": 13,
-      "yes_bid": 5
+      "yes_bid": 3
     },
     "KXNASCARTOP3-COOOS26-CHEL": {
       "last_price": 0,
@@ -336,13 +336,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 75,
-      "no_bid": 72,
+      "no_bid": 65,
       "open_interest": 460,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-KYLA",
       "volume": 472,
       "volume_24h": 0,
-      "yes_ask": 28,
+      "yes_ask": 35,
       "yes_bid": 25
     },
     "KXNASCARTOP3-COOOS26-MIMC": {
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 80,
-      "no_bid": 73,
+      "no_bid": 72,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYBL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 27,
+      "yes_ask": 28,
       "yes_bid": 20
     },
     "KXNASCARTOP3-COOOS26-RYPR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-02T18:30:25.805726+00:00",
+  "scraped_at": "2026-09-02T18:45:20.053984+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
