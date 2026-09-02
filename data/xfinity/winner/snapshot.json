@@ -55,15 +55,15 @@
       "last_price": 6,
       "liquidity": 0.0,
       "name": "Brent Crews",
-      "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 7242,
+      "no_ask": 94,
+      "no_bid": 93,
+      "open_interest": 7369,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRCR",
-      "volume": 7756,
+      "volume": 7883,
       "volume_24h": 6782,
-      "yes_ask": 6,
-      "yes_bid": 5
+      "yes_ask": 7,
+      "yes_bid": 6
     },
     "KXNASCARRACE-FLE26-BRJO": {
       "last_price": 12,
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 8051,
-      "volume_24h": 2025,
+      "volume_24h": 2039,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -307,15 +307,15 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 77,
       "open_interest": 7136,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 7379,
-      "volume_24h": 1091,
+      "volume_24h": 1302,
       "yes_ask": 23,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARRACE-FLE26-KYSI": {
       "last_price": 0,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-RACA",
       "volume": 5281,
-      "volume_24h": 4742,
+      "volume_24h": 4695,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-RYSI",
       "volume": 69,
-      "volume_24h": 47,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-02T23:33:57.249106+00:00",
+  "scraped_at": "2026-09-02T23:48:04.864176+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
