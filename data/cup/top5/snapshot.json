@@ -108,15 +108,15 @@
       "yes_bid": 10
     },
     "KXNASCARTOP5-COOOS26-CAHO": {
-      "last_price": 0,
+      "last_price": 20,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 89,
       "no_bid": 80,
-      "open_interest": 0,
+      "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CAHO",
-      "volume": 0,
+      "volume": 5,
       "volume_24h": 0,
       "yes_ask": 20,
       "yes_bid": 11
@@ -150,15 +150,15 @@
       "yes_bid": 36
     },
     "KXNASCARTOP5-COOOS26-CHBU": {
-      "last_price": 23,
+      "last_price": 25,
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 82,
       "no_bid": 75,
-      "open_interest": 322,
+      "open_interest": 326,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBU",
-      "volume": 322,
+      "volume": 326,
       "volume_24h": 122,
       "yes_ask": 25,
       "yes_bid": 18
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-02T10:45:20.598097+00:00",
+  "scraped_at": "2026-09-02T11:30:22.470872+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
