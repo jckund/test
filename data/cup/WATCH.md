@@ -1,3 +1,16 @@
+### 📊 Kalshi line move — 2026-09-02T21:30:25.836758+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Erik Jones** Top 3: 10c -> 14c (+614, +4pp)
+- **Bubba Wallace** Top 10: 41c -> 45c (+122, +4pp)
+- **Corey Heim** Top 3: 15c -> 11c (+809, -4pp)
+- **Christopher Bell** Top 3: 30c -> 26c (+285, -4pp)
+- **Carson Hocevar** Top 10: 38c -> 34c (+194, -4pp)
+
+_leader win YES 17c · scraped 2026-09-02T21:30:25.836758+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T21:15:21.924150+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
