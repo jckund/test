@@ -83,15 +83,15 @@
       "last_price": 37,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 65,
-      "no_bid": 63,
+      "no_ask": 66,
+      "no_bid": 62,
       "open_interest": 585,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BRKE",
       "volume": 585,
       "volume_24h": 245,
-      "yes_ask": 37,
-      "yes_bid": 35
+      "yes_ask": 38,
+      "yes_bid": 34
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
       "last_price": 43,
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHEL",
       "volume": 11,
-      "volume_24h": 0,
+      "volume_24h": 11,
       "yes_ask": 43,
       "yes_bid": 30
     },
@@ -350,13 +350,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 90,
-      "no_bid": 89,
+      "no_bid": 88,
       "open_interest": 308,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-MIMC",
       "volume": 308,
       "volume_24h": 308,
-      "yes_ask": 11,
+      "yes_ask": 12,
       "yes_bid": 10
     },
     "KXNASCARTOP10-COOOS26-NOGR": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-TYGI",
       "volume": 890,
-      "volume_24h": 638,
+      "volume_24h": 636,
       "yes_ask": 46,
       "yes_bid": 44
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T23:45:20.816112+00:00",
+  "scraped_at": "2026-09-02T23:55:09.278037+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
