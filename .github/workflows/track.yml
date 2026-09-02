@@ -104,6 +104,22 @@ jobs:
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python3 linewatch.py
 
+      - name: High-EV watch (Kalshi vs SG)
+        # Same clean-scrape gate as linewatch: it reads the freshly-written
+        # snapshots and writes data/ev_alert_state.json, which the commit step
+        # below picks up so the dedup baseline persists across runs.
+        if: ${{ steps.scrape.outcome == 'success' }}
+        # Prices buying Kalshi YES net of fees against SG's no-vig model, for
+        # every series that has both, and alerts on any line >= EV_ALERT_THRESH
+        # that wasn't already qualifying at the same price last run. Silent when
+        # nothing is new, so an unchanged board never re-pings.
+        env:
+          EV_ALERT_THRESH: "30"
+          WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: python3 evwatch.py
+
       - name: Commit changes if any
         # Commit only fresh scraper output — never a failed/partial scrape.
         if: ${{ steps.scrape.outcome == 'success' }}
