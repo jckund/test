@@ -24,6 +24,7 @@ on:
       - index.html
       - scraper.py
       - linewatch.py
+      - evwatch.py
       - .github/workflows/track.yml
 
 # Prevent overlapping runs from racing on the same commit / deployment.

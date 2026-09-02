@@ -45,7 +45,7 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   git commit -m "..." && git push origin _dl:claude/nascar-page-scraper-mwi55a
   git checkout <dev-branch> && git branch -D _dl
   ```
-- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / the workflow**
+- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / `evwatch.py` / the workflow**
   auto-triggers `track.yml`. A **data-only** push does not — trigger it manually
   (`actions_run_trigger` → `run_workflow track.yml`, ref = deploy branch) to publish.
 - Confirm a deploy by the deploy branch HEAD advancing / a `data: market update`
@@ -80,6 +80,21 @@ min) picks up the new value; fire `track.yml` once if you want it live immediate
 which is optional — the no-ops are harmless and free on a public repo.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
+- **`evwatch.py`** — high-EV watch: the CI twin of the dashboard's **Kalshi vs SG**
+  tab. For every series with both a Kalshi snapshot and an SG book, prices buying
+  Kalshi YES at its ask **net of fees** (`p + 0.07·p·(1−p)`, same as
+  `index.html`'s `netCost()` / `alerts.net_american_odds()`) against SG's no-vig
+  probability, and alerts on anything ≥ `EV_ALERT_THRESH` (default **30%**).
+  **Only NEW lines alert.** Dedup identity is `(series, tier, driver, yes_cents)`:
+  already qualifying at the same price last run ⇒ silent; the same driver/market at
+  a *different* price ⇒ new line, alerts again; drifted out of the money ⇒ dropped
+  from state, so it alerts fresh if it returns. State is `data/ev_alert_state.json`
+  (committed each run — that persistence IS the dedup); history in
+  `data/EV_ALERTS.md`. Channels are the shared ones and each no-ops when unset:
+  `WATCH_PR_NUMBER` + `GITHUB_TOKEN` (PR comment, which GitHub emails to the PR's
+  watchers — the zero-setup email path) and `ALERT_WEBHOOK_URL` (Slack/Discord/
+  ntfy/Pushover, or a Twilio/IFTTT relay for SMS). **Both unset ⇒ it computes and
+  logs to the job summary but pings nobody.**
 - **`linewatch.py`** — line-move watch: diffs each Cup market's YES price vs a
   committed baseline (`data/cup/watch_baseline.json`); on a move ≥3pp (or the fixed
   Cindric trip-wire) posts to the watch PR (`WATCH_PR_NUMBER` repo variable) so a
