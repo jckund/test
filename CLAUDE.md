@@ -45,7 +45,7 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   git commit -m "..." && git push origin _dl:claude/nascar-page-scraper-mwi55a
   git checkout <dev-branch> && git branch -D _dl
   ```
-- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / the workflow**
+- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / `evwatch.py` / the workflow**
   auto-triggers `track.yml`. A **data-only** push does not — trigger it manually
   (`actions_run_trigger` → `run_workflow track.yml`, ref = deploy branch) to publish.
 - Confirm a deploy by the deploy branch HEAD advancing / a `data: market update`
@@ -53,6 +53,15 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
 
 ## CI workflows
 
+- **Concurrent-run safety (why `.gitattributes` exists):** runs serialize on the
+  `track-kalshi` concurrency group, so a queued run's trigger SHA can be stale.
+  Checkout therefore takes `ref: github.ref_name` (the branch **tip**), and the
+  commit step rebases with `-X theirs` so wholesale-rewritten state
+  (`snapshot`/`latest`/`index.json`) keeps the fresher scrape, while
+  `data/**/*.jsonl merge=union` in `.gitattributes` keeps **both** runs' rows in
+  the append-only logs. A failed rebase is always `--abort`ed, because the
+  assemble/deploy steps run even when the commit step fails and would otherwise
+  publish conflict-markered JSON (that is what blanked the site on 9/2).
 - **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
   `linewatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
@@ -80,6 +89,21 @@ min) picks up the new value; fire `track.yml` once if you want it live immediate
 which is optional — the no-ops are harmless and free on a public repo.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
+- **`evwatch.py`** — high-EV watch: the CI twin of the dashboard's **Kalshi vs SG**
+  tab. For every series with both a Kalshi snapshot and an SG book, prices buying
+  Kalshi YES at its ask **net of fees** (`p + 0.07·p·(1−p)`, same as
+  `index.html`'s `netCost()` / `alerts.net_american_odds()`) against SG's no-vig
+  probability, and alerts on anything ≥ `EV_ALERT_THRESH` (default **30%**).
+  **Only NEW lines alert.** Dedup identity is `(series, tier, driver, yes_cents)`:
+  already qualifying at the same price last run ⇒ silent; the same driver/market at
+  a *different* price ⇒ new line, alerts again; drifted out of the money ⇒ dropped
+  from state, so it alerts fresh if it returns. State is `data/ev_alert_state.json`
+  (committed each run — that persistence IS the dedup); history in
+  `data/EV_ALERTS.md`. Channels are the shared ones and each no-ops when unset:
+  `WATCH_PR_NUMBER` + `GITHUB_TOKEN` (PR comment, which GitHub emails to the PR's
+  watchers — the zero-setup email path) and `ALERT_WEBHOOK_URL` (Slack/Discord/
+  ntfy/Pushover, or a Twilio/IFTTT relay for SMS). **Both unset ⇒ it computes and
+  logs to the job summary but pings nobody.**
 - **`linewatch.py`** — line-move watch: diffs each Cup market's YES price vs a
   committed baseline (`data/cup/watch_baseline.json`); on a move ≥3pp (or the fixed
   Cindric trip-wire) posts to the watch PR (`WATCH_PR_NUMBER` repo variable) so a

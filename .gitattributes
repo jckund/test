@@ -1,0 +1,13 @@
+# Append-only data logs: when two scrape runs both appended (a queued run can
+# race the one that pushed before it), a plain rebase conflicts and would leave
+# conflict markers in files the Pages deploy then publishes. Git's built-in
+# `union` driver keeps BOTH sides' lines instead, so no history row is lost.
+#
+# Wholesale-rewritten state (snapshot.json / latest.json / index.json) is NOT
+# union-mergeable — the commit step resolves those with `git pull --rebase
+# -X theirs`, which prefers the freshly scraped side.
+#
+# data/cup/trades_window.jsonl is a pruned rolling window rather than a true
+# append log, so a union merge can briefly resurrect pruned rows; the next
+# run's prune drops them again.
+data/**/*.jsonl merge=union
