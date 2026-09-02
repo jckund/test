@@ -1,6 +1,25 @@
 ### 📊 Kalshi line move — 2026-09-02T04:45:21.461086+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
+- **Corey Heim** Top 5: 40c -> 21c (+376, -19pp)
+- **Bubba Wallace** Top 5: 30c -> 18c (+456, -12pp)
+- **Austin Cindric** Top 5: 23c -> 12c (+733, -11pp)
+- **Ryan Preece** Top 5: 22c -> 12c (+733, -10pp)
+- **Zane Smith** Top 5: 18c -> 9c (+1011, -9pp)
+- **Shane Van Gisbergen** Top 5: 21c -> 12c (+733, -9pp)
+- **Riley Herbst** Top 5: 17c -> 8c (+1150, -9pp)
+- **Daniel Suárez** Top 5: 21c -> 12c (+733, -9pp)
+- **AJ Allmendinger** Top 5: 17c -> 8c (+1150, -9pp)
+- **Alex Bowman** Top 5: 22c -> 14c (+614, -8pp)
+- (+13 more)
+
+_leader win YES 16c · scraped 2026-09-02T04:45:21.461086+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-09-02T04:45:21.461086+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
 - **Corey Heim** Top 5: 21c -> 40c (+150, +19pp)
 - **Bubba Wallace** Top 5: 18c -> 30c (+233, +12pp)
 - **Austin Cindric** Top 5: 12c -> 23c (+335, +11pp)
