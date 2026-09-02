@@ -346,18 +346,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-LOBE": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Logan Bearden",
-      "no_ask": 90,
-      "no_bid": 80,
-      "open_interest": 0,
+      "no_ask": 96,
+      "no_bid": 89,
+      "open_interest": 411,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-LOBE",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 20,
-      "yes_bid": 10
+      "volume": 411,
+      "volume_24h": 225,
+      "yes_ask": 11,
+      "yes_bid": 4
     },
     "KXNASCARTOP10-FLE26-MAMA": {
       "last_price": 0,
@@ -416,18 +416,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-PRPA": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Preston Pardus",
-      "no_ask": 95,
-      "no_bid": 85,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 94,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-PRPA",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 15,
-      "yes_bid": 5
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 6,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-RACA": {
       "last_price": 30,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-02T03:49:40.881293+00:00",
+  "scraped_at": "2026-09-02T04:03:55.881072+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
