@@ -125,6 +125,11 @@ jobs:
         # nothing is new, so an unchanged board never re-pings.
         env:
           EV_ALERT_THRESH: "30"
+          # @mention so the comment emails a human even when they are not
+          # subscribed to the watch thread (a mention is a "Participating"
+          # notification, emailed by default; a plain comment is not).
+          # Override with the ALERT_MENTION repo variable; defaults to the owner.
+          EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
           WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}

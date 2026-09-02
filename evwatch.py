@@ -25,6 +25,10 @@ Channels (all optional, all no-ops when unset):
 Env:
   EV_ALERT_THRESH    minimum EV percent to alert on (default 30)
   EV_ALERT_SERIES    comma-separated series keys (default: all in data/series.json)
+  EV_ALERT_MENTION   GitHub @handle to mention in the PR comment. A mention is a
+                     "Participating" notification, which GitHub emails by
+                     default -- unlike a plain comment, which only reaches you if
+                     you are subscribed to the thread. Empty = no mention.
 
 Run manually with:  python3 evwatch.py
 """
@@ -44,6 +48,7 @@ from datetime import datetime, timezone
 KALSHI_FEE_RATE = 0.07
 
 THRESH = float(os.environ.get("EV_ALERT_THRESH", "30"))
+MENTION = os.environ.get("EV_ALERT_MENTION", "").strip()
 STATE_PATH = "data/ev_alert_state.json"
 LOG_MD = "data/EV_ALERTS.md"
 TIERS = ["winner", "top3", "top5", "top10", "top20"]
@@ -255,7 +260,10 @@ def main() -> int:
             f"({now})")
     note = ("_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the "
             "no-vig model probability. A line stays quiet until its price changes._")
-    body = f"{head}\n\n{table}\n\n{note}"
+    # Lead with the mention: it is what turns this comment into an emailed
+    # notification for someone who is not subscribed to the thread.
+    lead = f"{MENTION} " if MENTION else ""
+    body = f"{lead}{head}\n\n{table}\n\n{note}"
 
     print(body)
     write_summary(body)
