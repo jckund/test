@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-09-02T20:15:22.936485+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 10: 19c -> 14c (+614, -5pp)
+- **Ty Gibbs** Top 10: 52c -> 48c (+108, -4pp)
+- **Todd Gilliland** Top 10: 12c -> 8c (+1150, -4pp)
+- **John H. Nemechek** Top 10: 18c -> 14c (+614, -4pp)
+- **Tyler Reddick** Top 3: 39c -> 36c (+178, -3pp)
+- **Ty Gibbs** Top 3: 19c -> 16c (+525, -3pp)
+- **Bubba Wallace** Top 3: 15c -> 12c (+733, -3pp)
+- **Austin Cindric** Top 3: 9c -> 6c (+1567, -3pp)
+- **Riley Herbst** Top 10: 13c -> 10c (+900, -3pp)
+- **Connor Zilisch** Top 10: 14c -> 11c (+809, -3pp)
+- (+3 more)
+
+_leader win YES 18c · scraped 2026-09-02T20:15:22.936485+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T20:00:27.426986+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
