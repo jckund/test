@@ -849,9 +849,15 @@ async function refresh() {
 }
 
 // ---- Kalshi vs the books comparison ----
+// Finish tiers the comparison / Best-EV / Kalshi-vs-SG views span. Keep this in
+// step with evwatch.py's TIERS, or the watcher can alert on a line (e.g. a Cup
+// Top 20) that the dashboard has no column for. cmpTiersAvailable() drops any
+// tier Kalshi doesn't list for the current race, so Top 20 simply doesn't
+// appear on a support race.
 const CMP_TIERS = [
   { key: "winner", label: "Winner" }, { key: "top3", label: "Top 3" },
   { key: "top5", label: "Top 5" }, { key: "top10", label: "Top 10" },
+  { key: "top20", label: "Top 20" },
 ];
 // Books to compare against Kalshi. `live` books are scraped on a schedule;
 // others are entered manually from posted odds (stamped with a capture time).
