@@ -407,7 +407,7 @@
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th>Kalshi (Yes)</th><th>SG fair</th><th>EV</th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th>Yes ¢</th><th>Net ¢</th><th>Net odds</th><th>SG fair</th><th>EV</th></tr></thead>
             <tbody id="ksg-rows"></tbody>
           </table>
         </div>
@@ -450,6 +450,27 @@ function usOdds(c) {
   const odds = p > 0.5 ? -(100 * p) / (1 - p) : (100 * (1 - p)) / p;
   const r = Math.round(odds);
   return (r > 0 ? "+" : "") + r;
+}
+
+// Kalshi charges ceil(0.07 * contracts * p * (1-p)) on top of the execution
+// price, so a contract quoted at p really costs p + 0.07*p*(1-p). Mirrors
+// alerts.py's fee_usd/net_american_odds convention. Only applies where you
+// actually transact ON Kalshi (the Kalshi-vs-SG view) — not where Kalshi is
+// merely the fair anchor for pricing a sportsbook bet.
+const KALSHI_FEE_RATE = 0.07;
+
+// Fee-inclusive cost, in cents, of one contract quoted at `c` cents.
+function netCost(c) {
+  if (typeof c !== "number" || c <= 0 || c >= 100) return null;
+  const p = c / 100;
+  return (p + KALSHI_FEE_RATE * p * (1 - p)) * 100;
+}
+
+// American odds of a Kalshi price INCLUDING the fee — always a touch worse
+// than the raw quote (a 6¢ Yes buy is +1464 net vs +1567 raw).
+function usOddsNet(c) {
+  const n = netCost(c);
+  return n == null ? "—" : usOdds(n);
 }
 
 // Yes price (cents) as shown on Kalshi's "Yes" buy button = the yes ask.
@@ -1034,7 +1055,7 @@ async function loadKalshiSG() {
   const sg = BOOKDATA.sg;
   if (!sg || !sg.tiers) {
     fresh.textContent = ""; $("ksg-count").textContent = "";
-    rows.innerHTML = `<tr><td class="empty" colspan="6">No SG model loaded.</td></tr>`;
+    rows.innerHTML = `<tr><td class="empty" colspan="8">No SG model loaded.</td></tr>`;
     return;
   }
   const tiers = cmpTiersAvailable();
@@ -1050,22 +1071,29 @@ async function loadKalshiSG() {
       const sd = sgMap[normName(m.name)];
       if (!sd || typeof sd.novig !== "number") continue;
       const p = sd.novig;                 // SG fair prob (as truth)
-      const ev = (p * (100 - yes) / yes - (1 - p)) * 100;
-      out.push({ driver: m.name, tier: t.label, yes, sgFair: p, ev });
+      // Cost is fee-inclusive: you pay p + 0.07*p*(1-p) per contract, so
+      // EV per $1 risked = model_prob / net_cost - 1.
+      const netC = netCost(yes);          // fee-inclusive cost, cents
+      const cost = netC / 100;
+      if (!(cost > 0) || cost >= 1) continue;
+      const ev = (p / cost - 1) * 100;
+      out.push({ driver: m.name, tier: t.label, yes, netC, sgFair: p, ev });
     }
   }
   out.sort((a, b) => b.ev - a.ev);
   fresh.innerHTML = out.length
-    ? `Buying Kalshi <b>Yes</b> at its ask, priced against <b>SG</b>'s model fair · ${out.length} markets`
+    ? `Buying Kalshi <b>Yes</b> at its ask <b>net of fees</b> (0.07·p·(1−p) added to the price), priced against <b>SG</b>'s model fair · ${out.length} markets`
     : "No overlap between Kalshi and SG.";
   rows.innerHTML = out.length ? out.map((r, i) =>
     `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
     `<td class="l driver">${escapeHtml(r.driver)}</td>` +
     `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
-    `<td class="num">${usOdds(r.yes)}</td>` +
+    `<td class="num">${r.yes}¢</td>` +
+    `<td class="num">${r.netC.toFixed(2)}¢</td>` +
+    `<td class="num">${usOddsNet(r.yes)}</td>` +
     `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
     `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
-  ).join("") : `<tr><td class="empty" colspan="6">No overlap between Kalshi and SG.</td></tr>`;
+  ).join("") : `<tr><td class="empty" colspan="8">No overlap between Kalshi and SG.</td></tr>`;
   $("ksg-count").textContent = out.length ? out.length + " markets" : "";
 }
 
