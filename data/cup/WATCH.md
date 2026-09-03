@@ -1,6 +1,15 @@
 ### 📊 Kalshi line move — 2026-09-03T07:00:24.263007+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Preece** Top 5: 11c -> 15c (+567, +4pp)
+
+_leader win YES 18c · scraped 2026-09-03T07:00:24.263007+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-09-03T07:00:24.263007+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
 - **Christopher Bell** Top 3: 28c -> 33c (+203, +5pp)
 - **Ryan Blaney** Top 3: 26c -> 30c (+233, +4pp)
 - **William Byron** Top 3: 23c -> 26c (+285, +3pp)
