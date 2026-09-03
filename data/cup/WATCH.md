@@ -1,6 +1,15 @@
 ### 📊 Kalshi line move — 2026-09-03T09:15:24.950336+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ryan Blaney** Top 3: 30c -> 27c (+270, -3pp)
+
+_leader win YES 18c · scraped 2026-09-03T09:15:24.950336+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-09-03T09:15:24.950336+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
 - **Cole Custer** Top 3: 49c -> 6c (+1567, -43pp)
 - **Austin Hill** Top 3: 49c -> 7c (+1329, -42pp)
 - **Shane Van Gisbergen** Top 3: 49c -> 8c (+1150, -41pp)
