@@ -1,3 +1,17 @@
+### 📊 Kalshi line move — 2026-09-03T16:00:33.294125+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 30c -> 22c (+355, -8pp)
+- **Chase Elliott** Top 3: 20c -> 14c (+614, -6pp)
+- **Alex Bowman** Top 10: 20c -> 24c (+317, +4pp)
+- **Joey Logano** Top 3: 19c -> 15c (+567, -4pp)
+- **Denny Hamlin** Top 3: 36c -> 39c (+156, +3pp)
+- **Ross Chastain** Top 3: 13c -> 10c (+900, -3pp)
+
+_leader win YES 18c · scraped 2026-09-03T16:00:33.294125+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T15:45:20.785713+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
