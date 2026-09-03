@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 8051,
-      "volume_24h": 2039,
+      "volume_24h": 1920,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CAKV",
       "volume": 8842,
-      "volume_24h": 1281,
+      "volume_24h": 1223,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 7379,
-      "volume_24h": 1192,
+      "volume_24h": 1006,
       "yes_ask": 23,
       "yes_bid": 22
     },
@@ -388,15 +388,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-FLE26-PARE": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Parker Retzlaff",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 22,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-PARE",
-      "volume": 0,
+      "volume": 22,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-RACA",
       "volume": 5281,
-      "volume_24h": 4695,
+      "volume_24h": 2356,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-03T01:17:56.313939+00:00",
+  "scraped_at": "2026-09-03T02:18:30.653848+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
