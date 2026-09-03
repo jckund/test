@@ -29,11 +29,11 @@
       "name": "Austin Hill",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 77,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-AUHI",
-      "volume": 77,
-      "volume_24h": 40,
+      "volume": 100,
+      "volume_24h": 63,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -113,11 +113,11 @@
       "name": "Carson Kvapil",
       "no_ask": 88,
       "no_bid": 87,
-      "open_interest": 8977,
+      "open_interest": 8997,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CAKV",
-      "volume": 9059,
-      "volume_24h": 1183,
+      "volume": 9079,
+      "volume_24h": 1421,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -304,18 +304,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-JUAL": {
-      "last_price": 21,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 78,
-      "no_bid": 77,
-      "open_interest": 7136,
+      "no_ask": 77,
+      "no_bid": 76,
+      "open_interest": 7157,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
-      "volume": 7379,
-      "volume_24h": 972,
-      "yes_ask": 23,
-      "yes_bid": 22
+      "volume": 7400,
+      "volume_24h": 993,
+      "yes_ask": 24,
+      "yes_bid": 23
     },
     "KXNASCARRACE-FLE26-KYSI": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-03T03:03:31.731352+00:00",
+  "scraped_at": "2026-09-03T03:18:06.577018+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
