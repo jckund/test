@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-03T01:15:18.126813+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **AJ Allmendinger** Top 10: 12c -> 19c (+426, +7pp)
+- **Daniel Suárez** Top 10: 23c -> 27c (+270, +4pp)
+
+_leader win YES 18c · scraped 2026-09-03T01:15:18.126813+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T00:15:21.559008+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
