@@ -1,3 +1,15 @@
+### 📊 Kalshi line move — 2026-09-03T05:45:19.373314+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Ty Gibbs** Top 3: 19c -> 16c (+525, -3pp)
+- **Denny Hamlin** Top 3: 39c -> 36c (+178, -3pp)
+- **Christopher Bell** Top 3: 31c -> 28c (+257, -3pp)
+- **Alex Bowman** Top 10: 25c -> 22c (+355, -3pp)
+
+_leader win YES 18c · scraped 2026-09-03T05:45:19.373314+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T05:30:22.304610+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
