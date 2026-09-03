@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-09-03T00:15:21.559008+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Tyler Reddick** Top 3: 30c -> 39c (+156, +9pp)
+- **John H. Nemechek** Top 10: 13c -> 18c (+456, +5pp)
+- **Alex Bowman** Top 10: 20c -> 25c (+300, +5pp)
+- **Todd Gilliland** Top 10: 6c -> 10c (+900, +4pp)
+- **Connor Zilisch** Top 10: 10c -> 14c (+614, +4pp)
+- **Carson Hocevar** Top 3: 11c -> 14c (+614, +3pp)
+- **Alex Bowman** Top 3: 6c -> 9c (+1011, +3pp)
+- **Ty Gibbs** Top 10: 46c -> 49c (+104, +3pp)
+- **Shane Van Gisbergen** Top 10: 16c -> 19c (+426, +3pp)
+- **Ryan Preece** Top 10: 26c -> 29c (+245, +3pp)
+- (+2 more)
+
+_leader win YES 17c · scraped 2026-09-03T00:15:21.559008+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-02T23:26:46.293081+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
