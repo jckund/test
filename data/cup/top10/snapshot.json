@@ -13,7 +13,7 @@
       "last_price": 13,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
-      "no_ask": 98,
+      "no_ask": 100,
       "no_bid": 72,
       "open_interest": 573,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 973,
       "volume_24h": 368,
       "yes_ask": 28,
-      "yes_bid": 2
+      "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-ALBO": {
       "last_price": 25,
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-AUCI",
       "volume": 1885,
-      "volume_24h": 1467,
+      "volume_24h": 1385,
       "yes_ask": 28,
       "yes_bid": 25
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBU",
       "volume": 5004,
-      "volume_24h": 4038,
+      "volume_24h": 4036,
       "yes_ask": 51,
       "yes_bid": 46
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-JOBE",
       "volume": 1240,
-      "volume_24h": 158,
+      "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 21
     },
@@ -307,7 +307,7 @@
       "last_price": 44,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 90,
+      "no_ask": 100,
       "no_bid": 55,
       "open_interest": 225,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 225,
       "volume_24h": 154,
       "yes_ask": 45,
-      "yes_bid": 10
+      "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-JONE": {
       "last_price": 22,
@@ -405,7 +405,7 @@
       "last_price": 32,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 96,
+      "no_ask": 100,
       "no_bid": 69,
       "open_interest": 349,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 349,
       "volume_24h": 149,
       "yes_ask": 31,
-      "yes_bid": 4
+      "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-RYBL": {
       "last_price": 56,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-03T07:45:22.292385+00:00",
+  "scraped_at": "2026-09-03T08:30:25.048104+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
