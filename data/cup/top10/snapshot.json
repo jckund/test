@@ -83,7 +83,7 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 67,
+      "no_ask": 100,
       "no_bid": 60,
       "open_interest": 837,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 837,
       "volume_24h": 477,
       "yes_ask": 40,
-      "yes_bid": 33
+      "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
       "last_price": 46,
@@ -111,7 +111,7 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 68,
+      "no_ask": 100,
       "no_bid": 60,
       "open_interest": 454,
       "status": "active",
@@ -119,13 +119,13 @@
       "volume": 454,
       "volume_24h": 12,
       "yes_ask": 40,
-      "yes_bid": 32
+      "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-CHBE": {
       "last_price": 60,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 67,
+      "no_ask": 69,
       "no_bid": 39,
       "open_interest": 11,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 11,
       "volume_24h": 11,
       "yes_ask": 61,
-      "yes_bid": 33
+      "yes_bid": 31
     },
     "KXNASCARTOP10-COOOS26-CHBR": {
       "last_price": 61,
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 77,
-      "no_bid": 58,
+      "no_bid": 57,
       "open_interest": 11,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHEL",
       "volume": 11,
       "volume_24h": 11,
-      "yes_ask": 42,
+      "yes_ask": 43,
       "yes_bid": 23
     },
     "KXNASCARTOP10-COOOS26-CHFI": {
@@ -293,7 +293,7 @@
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 79,
+      "no_ask": 80,
       "no_bid": 75,
       "open_interest": 1240,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 1240,
       "volume_24h": 0,
       "yes_ask": 25,
-      "yes_bid": 21
+      "yes_bid": 20
     },
     "KXNASCARTOP10-COOOS26-JOLO": {
       "last_price": 44,
@@ -335,7 +335,7 @@
       "last_price": 56,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 58,
+      "no_ask": 61,
       "no_bid": 37,
       "open_interest": 190,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 190,
       "volume_24h": 0,
       "yes_ask": 63,
-      "yes_bid": 42
+      "yes_bid": 39
     },
     "KXNASCARTOP10-COOOS26-MIMC": {
       "last_price": 11,
@@ -517,7 +517,7 @@
       "last_price": 57,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 47,
+      "no_ask": 81,
       "no_bid": 41,
       "open_interest": 1045,
       "status": "active",
@@ -525,7 +525,7 @@
       "volume": 1050,
       "volume_24h": 917,
       "yes_ask": 59,
-      "yes_bid": 53
+      "yes_bid": 19
     },
     "KXNASCARTOP10-COOOS26-ZASM": {
       "last_price": 17,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-03T08:30:25.048104+00:00",
+  "scraped_at": "2026-09-03T08:45:22.897301+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
