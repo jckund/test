@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBR",
       "volume": 809,
-      "volume_24h": 300,
+      "volume_24h": 186,
       "yes_ask": 45,
       "yes_bid": 38
     },
@@ -416,18 +416,18 @@
       "yes_bid": 12
     },
     "KXNASCARTOP5-COOOS26-RYBL": {
-      "last_price": 37,
+      "last_price": 36,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 68,
+      "no_ask": 67,
       "no_bid": 64,
-      "open_interest": 124,
+      "open_interest": 163,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-RYBL",
-      "volume": 124,
-      "volume_24h": 0,
+      "volume": 163,
+      "volume_24h": 40,
       "yes_ask": 36,
-      "yes_bid": 32
+      "yes_bid": 33
     },
     "KXNASCARTOP5-COOOS26-RYPR": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-03T01:15:19.011667+00:00",
+  "scraped_at": "2026-09-03T03:00:29.841779+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
