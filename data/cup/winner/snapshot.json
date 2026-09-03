@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CHBE",
       "volume": 36123,
-      "volume_24h": 1468,
+      "volume_24h": 1618,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -141,11 +141,11 @@
       "name": "Chase Briscoe",
       "no_ask": 89,
       "no_bid": 88,
-      "open_interest": 34926,
+      "open_interest": 34965,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CHBR",
-      "volume": 34951,
-      "volume_24h": 8289,
+      "volume": 34990,
+      "volume_24h": 7544,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-CHEL",
       "volume": 2894,
-      "volume_24h": 684,
+      "volume_24h": 784,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -266,13 +266,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 83,
-      "no_bid": 82,
-      "open_interest": 65180,
+      "no_bid": 81,
+      "open_interest": 65280,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-DEHA",
-      "volume": 65559,
-      "volume_24h": 28800,
-      "yes_ask": 18,
+      "volume": 65658,
+      "volume_24h": 28826,
+      "yes_ask": 19,
       "yes_bid": 17
     },
     "KXNASCARRACE-COOOS26-ERJO": {
@@ -337,11 +337,11 @@
       "name": "Kyle Larson",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 31454,
+      "open_interest": 31501,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-KYLA",
-      "volume": 31459,
-      "volume_24h": 1253,
+      "volume": 31506,
+      "volume_24h": 1300,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -500,16 +500,16 @@
       "yes_bid": 5
     },
     "KXNASCARRACE-COOOS26-TYRE": {
-      "last_price": 14,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 86,
       "no_bid": 85,
-      "open_interest": 38356,
+      "open_interest": 38388,
       "status": "active",
       "ticker": "KXNASCARRACE-COOOS26-TYRE",
-      "volume": 38444,
-      "volume_24h": 11799,
+      "volume": 38475,
+      "volume_24h": 11865,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-03T16:45:21.719551+00:00",
+  "scraped_at": "2026-09-03T17:00:26.809716+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "winner"
 }
