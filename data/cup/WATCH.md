@@ -16,6 +16,14 @@ _leader win YES 18c · scraped 2026-09-03T07:00:24.263007+00:00_
 
 ### 📊 Kalshi line move — 2026-09-03T07:00:24.263007+00:00
 
+**TRIP-WIRE — Cindric:** Cindric Top 3 16c->44c (+28pp toward Bookmaker ~33c, now +127)
+
+_leader win YES 18c · scraped 2026-09-03T07:00:24.263007+00:00_
+
+---
+
+### 📊 Kalshi line move — 2026-09-03T07:00:24.263007+00:00
+
 **Kalshi Cup YES moves >= 3pp (since last check):**
 - **Cole Custer** Top 3: 6c -> 46c (+117, +40pp)
 - **Shane Van Gisbergen** Top 3: 9c -> 48c (+108, +39pp)
