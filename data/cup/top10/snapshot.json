@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 54,
-      "no_bid": 52,
+      "no_bid": 51,
       "open_interest": 5105,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBU",
       "volume": 5105,
-      "volume_24h": 4036,
-      "yes_ask": 48,
+      "volume_24h": 4136,
+      "yes_ask": 49,
       "yes_bid": 46
     },
     "KXNASCARTOP10-COOOS26-CHEL": {
@@ -388,18 +388,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP10-COOOS26-RIST": {
-      "last_price": 0,
+      "last_price": 7,
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
-      "no_ask": 100,
+      "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 0,
+      "open_interest": 67,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-RIST",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 67,
+      "volume_24h": 67,
       "yes_ask": 7,
-      "yes_bid": 0
+      "yes_bid": 6
     },
     "KXNASCARTOP10-COOOS26-ROCH": {
       "last_price": 32,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-RYPR",
       "volume": 384,
-      "volume_24h": 0,
+      "volume_24h": 46,
       "yes_ask": 31,
       "yes_bid": 26
     },
@@ -486,18 +486,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-COOOS26-TYGI": {
-      "last_price": 52,
+      "last_price": 51,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 57,
-      "no_bid": 50,
-      "open_interest": 894,
+      "no_ask": 53,
+      "no_bid": 49,
+      "open_interest": 1082,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-TYGI",
-      "volume": 894,
+      "volume": 1082,
       "volume_24h": 524,
-      "yes_ask": 50,
-      "yes_bid": 43
+      "yes_ask": 51,
+      "yes_bid": 47
     },
     "KXNASCARTOP10-COOOS26-TYRE": {
       "last_price": 64,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-03T11:15:20.346131+00:00",
+  "scraped_at": "2026-09-03T11:30:25.235627+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
