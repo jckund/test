@@ -1,3 +1,22 @@
+### 📊 Kalshi line move — 2026-09-03T07:00:24.263007+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Christopher Bell** Top 3: 28c -> 33c (+203, +5pp)
+- **Ryan Blaney** Top 3: 26c -> 30c (+233, +4pp)
+- **William Byron** Top 3: 23c -> 26c (+285, +3pp)
+- **Tyler Reddick** Top 3: 35c -> 38c (+163, +3pp)
+- **Ty Gibbs** Top 3: 16c -> 19c (+426, +3pp)
+- **Denny Hamlin** Top 3: 36c -> 39c (+156, +3pp)
+- **Ryan Preece** Top 10: 29c -> 32c (+212, +3pp)
+- **Erik Jones** Top 10: 36c -> 39c (+156, +3pp)
+- **Corey Heim** Top 10: 32c -> 35c (+186, +3pp)
+- **Chris Buescher** Top 10: 47c -> 50c (-100, +3pp)
+- (+1 more)
+
+_leader win YES 18c · scraped 2026-09-03T07:00:24.263007+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T06:30:24.068276+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
