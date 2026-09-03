@@ -1,3 +1,12 @@
+### 📊 Kalshi line move — 2026-09-03T10:15:39.203553+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Todd Gilliland** Top 10: 12c -> 9c (+1011, -3pp)
+
+_leader win YES 18c · scraped 2026-09-03T10:15:39.203553+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T09:15:24.950336+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
