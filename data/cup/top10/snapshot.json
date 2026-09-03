@@ -69,7 +69,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 93,
+      "no_ask": 92,
       "no_bid": 90,
       "open_interest": 0,
       "status": "active",
@@ -77,20 +77,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 7
+      "yes_bid": 8
     },
     "KXNASCARTOP10-COOOS26-BRKE": {
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 66,
-      "no_bid": 63,
+      "no_bid": 64,
       "open_interest": 837,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BRKE",
       "volume": 837,
       "volume_24h": 351,
-      "yes_ask": 37,
+      "yes_ask": 36,
       "yes_bid": 34
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
@@ -99,11 +99,11 @@
       "name": "Bubba Wallace",
       "no_ask": 55,
       "no_bid": 54,
-      "open_interest": 5474,
+      "open_interest": 5485,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BUWA",
-      "volume": 5474,
-      "volume_24h": 5050,
+      "volume": 5485,
+      "volume_24h": 5061,
       "yes_ask": 46,
       "yes_bid": 45
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 76,
-      "no_bid": 59,
+      "no_bid": 58,
       "open_interest": 11,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHEL",
       "volume": 11,
       "volume_24h": 11,
-      "yes_ask": 41,
+      "yes_ask": 42,
       "yes_bid": 24
     },
     "KXNASCARTOP10-COOOS26-CHFI": {
@@ -206,18 +206,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP10-COOOS26-COHE": {
-      "last_price": 32,
+      "last_price": 34,
       "liquidity": 0.0,
       "name": "Corey Heim",
-      "no_ask": 74,
-      "no_bid": 66,
-      "open_interest": 576,
+      "no_ask": 73,
+      "no_bid": 64,
+      "open_interest": 618,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-COHE",
-      "volume": 576,
-      "volume_24h": 0,
-      "yes_ask": 34,
-      "yes_bid": 26
+      "volume": 618,
+      "volume_24h": 42,
+      "yes_ask": 36,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-COOOS26-COWA": {
       "last_price": 3,
@@ -265,15 +265,15 @@
       "last_price": 71,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 45,
+      "no_ask": 30,
       "no_bid": 29,
-      "open_interest": 32,
+      "open_interest": 60,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-DEHA",
-      "volume": 41,
-      "volume_24h": 22,
+      "volume": 69,
+      "volume_24h": 49,
       "yes_ask": 71,
-      "yes_bid": 55
+      "yes_bid": 70
     },
     "KXNASCARTOP10-COOOS26-ERJO": {
       "last_price": 38,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-TYGI",
       "volume": 1082,
-      "volume_24h": 524,
+      "volume_24h": 712,
       "yes_ask": 51,
       "yes_bid": 47
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-03T11:30:25.235627+00:00",
+  "scraped_at": "2026-09-03T11:45:30.893970+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
