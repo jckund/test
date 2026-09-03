@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-03T05:30:22.304610+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **Carson Hocevar** Top 10: 35c -> 38c (+163, +3pp)
+- **AJ Allmendinger** Top 10: 16c -> 19c (+426, +3pp)
+
+_leader win YES 18c · scraped 2026-09-03T05:30:22.304610+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T04:45:38.549748+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
