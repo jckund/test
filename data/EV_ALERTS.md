@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-03T22:04:33Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Top 3 | Parker Retzlaff | 6c | 6.39c | +1464 | 9.5% | **+48.1%** |
+| Cook Out Southern 500 | Top 20 | Cody Ware | 9c | 9.57c | +945 | 14.0% | **+46.3%** |
+| Fleetio 200 | Top 10 | Jake Finch | 29c | 30.44c | +229 | 41.9% | **+37.5%** |
+| Fleetio 200 | Top 3 | Jake Finch | 6c | 6.39c | +1464 | 8.6% | **+33.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-03T21:04:53Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
