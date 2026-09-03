@@ -1,3 +1,13 @@
+### 📊 Kalshi line move — 2026-09-03T15:45:20.785713+00:00
+
+**Kalshi Cup YES moves >= 3pp (since last check):**
+- **John H. Nemechek** Top 10: 17c -> 13c (+669, -4pp)
+- **Joey Logano** Top 10: 45c -> 42c (+138, -3pp)
+
+_leader win YES 18c · scraped 2026-09-03T15:45:20.785713+00:00_
+
+---
+
 ### 📊 Kalshi line move — 2026-09-03T14:30:22.802636+00:00
 
 **Kalshi Cup YES moves >= 3pp (since last check):**
