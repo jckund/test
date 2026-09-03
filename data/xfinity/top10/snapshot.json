@@ -10,18 +10,18 @@
   "market_count": 38,
   "markets": {
     "KXNASCARTOP10-FLE26-ANAL": {
-      "last_price": 23,
+      "last_price": 30,
       "liquidity": 0.0,
       "name": "Anthony Alfredo",
-      "no_ask": 80,
+      "no_ask": 75,
       "no_bid": 70,
-      "open_interest": 200,
+      "open_interest": 359,
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-ANAL",
-      "volume": 200,
+      "volume": 359,
       "volume_24h": 0,
       "yes_ask": 30,
-      "yes_bid": 20
+      "yes_bid": 25
     },
     "KXNASCARTOP10-FLE26-AUHI": {
       "last_price": 62,
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FLE26-HABU",
       "volume": 314,
-      "volume_24h": 314,
+      "volume_24h": 186,
       "yes_ask": 24,
       "yes_bid": 15
     },
@@ -489,7 +489,7 @@
       "last_price": 45,
       "liquidity": 0.0,
       "name": "Sammy Smith",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 55,
       "open_interest": 54,
       "status": "active",
@@ -497,13 +497,13 @@
       "volume": 54,
       "volume_24h": 0,
       "yes_ask": 45,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-FLE26-SHCR": {
       "last_price": 61,
       "liquidity": 0.0,
       "name": "Sheldon Creed",
-      "no_ask": 43,
+      "no_ask": 44,
       "no_bid": 34,
       "open_interest": 1104,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 1104,
       "volume_24h": 405,
       "yes_ask": 66,
-      "yes_bid": 57
+      "yes_bid": 56
     },
     "KXNASCARTOP10-FLE26-TAGR": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-03T12:48:49.721719+00:00",
+  "scraped_at": "2026-09-03T13:33:59.325146+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top10"
 }
