@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 99,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-AUCI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 7,
+      "yes_ask": 6,
       "yes_bid": 1
     },
     "KXNASCARTOP3-COOOS26-AUDI": {
@@ -167,7 +167,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Chase Elliott",
-      "no_ask": 87,
+      "no_ask": 88,
       "no_bid": 86,
       "open_interest": 0,
       "status": "active",
@@ -175,7 +175,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 13
+      "yes_bid": 12
     },
     "KXNASCARTOP3-COOOS26-CHFI": {
       "last_price": 0,
@@ -252,13 +252,13 @@
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 98,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-DASU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 7,
+      "yes_ask": 6,
       "yes_bid": 2
     },
     "KXNASCARTOP3-COOOS26-DEHA": {
@@ -304,16 +304,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-COOOS26-JOLO": {
-      "last_price": 0,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 88,
       "no_bid": 87,
-      "open_interest": 0,
+      "open_interest": 72,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-JOLO",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 72,
+      "volume_24h": 72,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -405,7 +405,7 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 91,
       "open_interest": 12,
       "status": "active",
@@ -413,21 +413,21 @@
       "volume": 12,
       "volume_24h": 0,
       "yes_ask": 9,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP3-COOOS26-RYBL": {
-      "last_price": 27,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 80,
+      "no_ask": 79,
       "no_bid": 76,
-      "open_interest": 28,
+      "open_interest": 68,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYBL",
-      "volume": 28,
-      "volume_24h": 4,
+      "volume": 68,
+      "volume_24h": 43,
       "yes_ask": 24,
-      "yes_bid": 20
+      "yes_bid": 21
     },
     "KXNASCARTOP3-COOOS26-RYPR": {
       "last_price": 5,
@@ -500,16 +500,16 @@
       "yes_bid": 10
     },
     "KXNASCARTOP3-COOOS26-TYRE": {
-      "last_price": 32,
+      "last_price": 29,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 950,
+      "open_interest": 966,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-TYRE",
-      "volume": 983,
-      "volume_24h": 418,
+      "volume": 1000,
+      "volume_24h": 434,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-04T04:00:26.825580+00:00",
+  "scraped_at": "2026-09-04T04:15:22.458740+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }

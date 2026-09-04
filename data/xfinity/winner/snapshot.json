@@ -19,23 +19,23 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-ANAL",
       "volume": 40,
-      "volume_24h": 0,
+      "volume_24h": 40,
       "yes_ask": 2,
       "yes_bid": 1
     },
     "KXNASCARRACE-FLE26-AUHI": {
-      "last_price": 7,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 96,
-      "no_bid": 95,
-      "open_interest": 384,
+      "no_ask": 95,
+      "no_bid": 94,
+      "open_interest": 1799,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-AUHI",
-      "volume": 384,
-      "volume_24h": 284,
-      "yes_ask": 5,
-      "yes_bid": 4
+      "volume": 1799,
+      "volume_24h": 1700,
+      "yes_ask": 6,
+      "yes_bid": 5
     },
     "KXNASCARRACE-FLE26-BLPE": {
       "last_price": 0,
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 12298,
-      "volume_24h": 4248,
+      "volume_24h": 4247,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -108,18 +108,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-CAKV": {
-      "last_price": 12,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 9283,
+      "no_ask": 89,
+      "no_bid": 87,
+      "open_interest": 9489,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CAKV",
-      "volume": 9365,
+      "volume": 9572,
       "volume_24h": 286,
-      "yes_ask": 11,
-      "yes_bid": 10
+      "yes_ask": 13,
+      "yes_bid": 11
     },
     "KXNASCARRACE-FLE26-CODA": {
       "last_price": 6,
@@ -127,10 +127,10 @@
       "name": "Corey Day",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 2388,
+      "open_interest": 2534,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-CODA",
-      "volume": 2388,
+      "volume": 2534,
       "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 5
@@ -220,16 +220,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-JAFI": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Jake Finch",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 40,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JAFI",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 40,
+      "volume_24h": 40,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 73,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 13472,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 14050,
       "volume_24h": 6613,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 27
     },
     "KXNASCARRACE-FLE26-KYSI": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-04T04:03:24.422928+00:00",
+  "scraped_at": "2026-09-04T04:18:06.670201+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
