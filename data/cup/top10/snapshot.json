@@ -69,7 +69,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 90,
       "open_interest": 0,
       "status": "active",
@@ -77,20 +77,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP10-COOOS26-BRKE": {
       "last_price": 44,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 61,
-      "no_bid": 58,
+      "no_bid": 57,
       "open_interest": 2229,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BRKE",
       "volume": 2229,
       "volume_24h": 1392,
-      "yes_ask": 42,
+      "yes_ask": 43,
       "yes_bid": 39
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
@@ -155,11 +155,11 @@
       "name": "Chris Buescher",
       "no_ask": 53,
       "no_bid": 52,
-      "open_interest": 5212,
+      "open_interest": 5252,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBU",
-      "volume": 5212,
-      "volume_24h": 324,
+      "volume": 5252,
+      "volume_24h": 365,
       "yes_ask": 48,
       "yes_bid": 47
     },
@@ -295,10 +295,10 @@
       "name": "Josh Berry",
       "no_ask": 79,
       "no_bid": 78,
-      "open_interest": 1304,
+      "open_interest": 1368,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-JOBE",
-      "volume": 1304,
+      "volume": 1368,
       "volume_24h": 63,
       "yes_ask": 22,
       "yes_bid": 21
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-04T02:45:23.393734+00:00",
+  "scraped_at": "2026-09-04T03:00:28.425921+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
