@@ -10,15 +10,15 @@
   "market_count": 38,
   "markets": {
     "KXNASCARRACE-FLE26-ANAL": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Anthony Alfredo",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 40,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-ANAL",
-      "volume": 0,
+      "volume": 40,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -27,15 +27,15 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 94,
-      "no_bid": 93,
-      "open_interest": 207,
+      "no_ask": 96,
+      "no_bid": 95,
+      "open_interest": 384,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-AUHI",
-      "volume": 207,
-      "volume_24h": 107,
-      "yes_ask": 7,
-      "yes_bid": 6
+      "volume": 384,
+      "volume_24h": 284,
+      "yes_ask": 5,
+      "yes_bid": 4
     },
     "KXNASCARRACE-FLE26-BLPE": {
       "last_price": 0,
@@ -69,15 +69,15 @@
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Brandon Jones",
-      "no_ask": 81,
-      "no_bid": 77,
+      "no_ask": 82,
+      "no_bid": 81,
       "open_interest": 12142,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRJO",
       "volume": 12298,
-      "volume_24h": 3077,
-      "yes_ask": 23,
-      "yes_bid": 19
+      "volume_24h": 4248,
+      "yes_ask": 19,
+      "yes_bid": 18
     },
     "KXNASCARRACE-FLE26-BRPE": {
       "last_price": 0,
@@ -304,17 +304,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-JUAL": {
-      "last_price": 27,
+      "last_price": 31,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 73,
-      "no_bid": 67,
-      "open_interest": 13165,
+      "no_bid": 68,
+      "open_interest": 13472,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
-      "volume": 13742,
-      "volume_24h": 6141,
-      "yes_ask": 33,
+      "volume": 14050,
+      "volume_24h": 6613,
+      "yes_ask": 32,
       "yes_bid": 27
     },
     "KXNASCARRACE-FLE26-KYSI": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-04T03:48:06.387893+00:00",
+  "scraped_at": "2026-09-04T04:03:24.422928+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
