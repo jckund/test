@@ -9,9 +9,10 @@ race, and write one namespaced data tree per race:
   data/series.json                      — list of races (drives the series tabs)
   data/<series>/index.json              — that race's tier list (dashboard)
   data/<series>/<tier>/snapshot.json    — normalized current state
-  data/<series>/<tier>/history.jsonl    — append-only change log
+  data/<series>/<tier>/history.jsonl    — change log, newest MAX_HISTORY records
   data/<series>/<tier>/series.jsonl     — aligned price series for sparklines
-  data/<series>/<tier>/CHANGES.md       — human-readable change log
+  data/<series>/<tier>/CHANGES.md       — human-readable change log, newest
+                                          MAX_CHANGES_ENTRIES entries
   data/<series>/activity.json           — recent trades feed for that race
 
 A small SERIES config maps each discovered race to a friendly tab label (via
@@ -137,6 +138,43 @@ TRACKED_FIELDS = [
     "no_bid", "no_ask", "volume", "open_interest",
 ]
 MAX_SERIES = 1000
+
+# Retention caps for the two remaining unbounded per-tier logs.
+#
+# WHY: every poll appends a record to history.jsonl and prepends a full rendered
+# board (~50 lines) to CHANGES.md, forever. Nothing reads more than the newest
+# entries — index.html only uses the LAST history record, and CHANGES.md is a
+# human scrollback — so the tail is pure ballast that every clone, every CI
+# checkout and every commit diff pays for. Uncapped they were the two largest
+# things in data/ (~10MB of history.jsonl, ~15MB of CHANGES.md).
+#
+# This is what makes poll frequency free: with these caps the repo footprint is
+# fixed by RECORD COUNT, not by how often we poll. Doubling the cadence halves
+# the wall-clock span each log covers but leaves the committed size flat. At the
+# 15-min poll the defaults hold ~10 days of history and ~2 days of boards.
+def _env_int(name: str, default: int, minimum: int = 1) -> int:
+    try:
+        return max(minimum, int(os.environ.get(name, str(default))))
+    except ValueError:
+        return default
+
+
+MAX_HISTORY = _env_int("MAX_HISTORY_RECORDS", 1000)
+MAX_CHANGES_ENTRIES = _env_int("MAX_CHANGES_ENTRIES", 200)
+
+# SNAPSHOT_ONLY: scrape prices and nothing else. Skips every trade-derived
+# product — build_activity, the fully-paginated alert scan, trades_window,
+# activity.json and large-trade alerting — plus the Cup team-market probe.
+#
+# WHY: measured on CI, a full run is ~4m20s and the "Run scraper" step is 4m02s
+# of it (93%), essentially all of it trade pagination throttled at THROTTLE_S.
+# The tier fetches that produce snapshot.json are a dozen calls and finish in
+# seconds. evwatch.py reads ONLY snapshot.json (+ the committed manual/sg.json),
+# so the EV alert path does not need any of the expensive half. This flag is
+# what lets evalert.yml poll every 5 minutes while track.yml keeps doing the
+# full scrape + commit + Pages deploy every 15.
+SNAPSHOT_ONLY = os.environ.get("SNAPSHOT_ONLY", "").strip().lower() in ("1", "true", "yes")
+
 USER_AGENT = "kalshi-nascar-tracker/3.0 (+https://github.com; scheduled scraper)"
 # Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
 # under the limit while scraping several races x several tiers.
@@ -422,25 +460,37 @@ def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
         fh.write("\n")
 
     record = {"scraped_at": curr["scraped_at"], "change_count": len(changes), "changes": changes}
-    with open(os.path.join(base, "history.jsonl"), "a", encoding="utf-8") as fh:
-        fh.write(json.dumps(record, separators=(",", ":")) + "\n")
+    _append_capped(os.path.join(base, "history.jsonl"),
+                   json.dumps(record, separators=(",", ":")), MAX_HISTORY)
 
     _append_series(base, curr)
     _write_changes_md(base, curr, changes)
 
 
-def _append_series(base: str, curr: dict) -> None:
-    point = {"t": curr["scraped_at"],
-             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
-    path = os.path.join(base, "series.jsonl")
+def _append_capped(path: str, line: str, cap: int) -> None:
+    """Append one JSONL row, keeping only the newest `cap` rows.
+
+    Rewrites the file rather than appending in place, which is what bounds it.
+    NOTE: data/**/*.jsonl is `merge=union` in .gitattributes, so if two runs race
+    the merge can transiently union past `cap` — the next run re-truncates. Same
+    trade-off series.jsonl has always made; keeping both runs' rows is the more
+    important property.
+    """
     lines = []
     if os.path.exists(path):
         with open(path, encoding="utf-8") as fh:
             lines = [ln for ln in fh.read().splitlines() if ln.strip()]
-    lines.append(json.dumps(point, separators=(",", ":")))
-    lines = lines[-MAX_SERIES:]
+    lines.append(line)
+    lines = lines[-cap:]
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
+
+
+def _append_series(base: str, curr: dict) -> None:
+    point = {"t": curr["scraped_at"],
+             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
+    _append_capped(os.path.join(base, "series.jsonl"),
+                   json.dumps(point, separators=(",", ":")), MAX_SERIES)
 
 
 def _write_changes_md(base: str, curr: dict, changes: list) -> None:
@@ -486,9 +536,27 @@ def _write_changes_md(base: str, curr: dict, changes: list) -> None:
             content = fh.read()
         first_entry = content.find("### ")
         if first_entry != -1:
-            existing = content[first_entry:]
+            # Keep MAX_CHANGES_ENTRIES total, counting the block we just built.
+            existing = _trim_changes_entries(content[first_entry:], MAX_CHANGES_ENTRIES - 1)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(header + new_block + existing)
+
+
+def _trim_changes_entries(existing: str, keep: int) -> str:
+    """Keep only the newest `keep` `### <timestamp>` blocks of a CHANGES.md body.
+
+    `existing` starts at the first block, so block boundaries after it are the
+    "\\n### " occurrences; truncating at the `keep`-th one drops everything older.
+    """
+    if keep <= 0:
+        return ""
+    idx = 0
+    for _ in range(keep):
+        nxt = existing.find("\n### ", idx)
+        if nxt == -1:
+            return existing          # fewer blocks than the cap; nothing to drop
+        idx = nxt + 1
+    return existing[:idx]
 
 
 # ---------------------------------------------------------------------------
@@ -686,14 +754,21 @@ def persist_trades_window(series_dir: str, atrades: list, hours: int = TRADES_WI
 
 
 def update_activity(series_dir: str, new_trades: list, race_id: str) -> list:
-    """Accumulate a FULL-EVENT trade feed at <series>/activity.json.
+    """Accumulate a trade feed at <series>/activity.json.
 
-    Unlike a rolling snapshot, this merges each run's trades (deduped by
-    trade_id) into whatever the file already holds, so the feed spans the whole
-    event — from the first scrape through completion. It resets automatically
-    when the race changes (the stored ``race`` id no longer matches), so a new
-    weekend starts clean. Capped at ACTIVITY_MAX and written compact to keep the
-    committed file manageable."""
+    Merges each run's trades (deduped by trade_id) into whatever the file
+    already holds, resetting when the race changes (the stored ``race`` id no
+    longer matches). Capped at ACTIVITY_MAX and written compact.
+
+    NOTE: activity.json is GITIGNORED (see .gitignore for the measurements) —
+    it was 69.5MB of blob storage because a ~700KB file rewritten wholesale
+    every run cannot be delta-compressed. Because a CI runner checks out a tree
+    without it, the accumulation below only spans a single run there; it still
+    accumulates across runs locally. That is fine: nothing in CI or the
+    dashboard reads this file, and the durable trade record lives in the
+    committed trades_window.jsonl (rolling 6h, every trade) and alerts.jsonl
+    (>$100). Don't re-commit it to restore cross-run accumulation without
+    first shrinking ACTIVITY_MAX by an order of magnitude."""
     path = os.path.join(series_dir, "activity.json")
     keep: dict = {}
     if os.path.exists(path):
@@ -786,7 +861,7 @@ def process_series(rs: dict) -> dict | None:
     # into <series>/team/. Best-effort and kept OUT of `events` so it never feeds
     # the driver tiers, index, activity, or alerting: a miss (or unknown ticker)
     # just leaves the Team tab's synthesized driver-sum number in place.
-    if rs.get("full"):
+    if rs.get("full") and not SNAPSHOT_ONLY:
         try:
             tev_ticker, _tev_series = discover_team_event(rs["race_title"], rs["race_code"])
             if tev_ticker:
@@ -794,6 +869,15 @@ def process_series(rs: dict) -> dict | None:
                                "ticker": tev_ticker, "page_url": rs["page_url"]}, series_dir)
         except Exception as e:  # noqa: BLE001 - team market is best-effort
             print(f"team scrape failed for {rs['key']}: {e}", file=sys.stderr)
+
+    if SNAPSHOT_ONLY:
+        # Prices are written; everything below is trade-derived and skipped.
+        print(f"series {rs['key']}: SNAPSHOT_ONLY — skipped activity + alerting.",
+              file=sys.stderr)
+        return {"key": rs["key"], "label": rs["label"], "race_title": rs["race_title"],
+                "full": rs["full"], "source_url": rs["page_url"],
+                "tiers": [s["key"] for s in scraped],
+                "scraped_at": datetime.now(timezone.utc).isoformat()}
 
     try:
         build_activity(events, series_dir, rs["race_code"])

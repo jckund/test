@@ -1,0 +1,142 @@
+name: EV alert (fast poll)
+
+# FAST alert path, split out of track.yml so Pushover doesn't wait on the slow
+# half of a scrape.
+#
+# The problem this solves: track.yml takes 4m20s-5m per run, and measured
+# step-by-step that is ~93% "Run scraper" — almost entirely Kalshi trade
+# pagination. evwatch.py itself takes 0s. So at a 5-minute ping, track.yml runs
+# would overlap, queue on their concurrency group (cancel-in-progress: false),
+# and the backlog would grow all weekend — alerts would get SLOWER, not faster.
+#
+# This workflow runs the cheap half only: SNAPSHOT_ONLY=1 fetches the tier
+# prices (a dozen API calls, seconds) and skips activity/trades/large-trade
+# alerting entirely, then runs evwatch.py. No Pages deploy, and no data commit
+# except the alert log when something actually fires. Well under a minute, its
+# own concurrency group, so it never queues behind the full run.
+#
+# CADENCE: like track.yml, driven by an external cron-job.org pinger hitting
+# workflow_dispatch — point a 5-minute job at this workflow. track.yml stays on
+# its 15-minute ping for the full scrape + commit + deploy.
+#
+# This does NOT wake a Claude session. evwatch's channels are Pushover, a
+# webhook, and a PR comment; a comment only wakes a session that has explicitly
+# subscribed to that PR, and those subscriptions are per-session and do not
+# persist. See "What actually wakes a Claude session" in CLAUDE.md.
+
+on:
+  workflow_dispatch: {}
+
+# Separate from track.yml's `track-kalshi` group ON PURPOSE: the whole point is
+# that a fast alert poll never sits behind a 5-minute full scrape.
+concurrency:
+  group: ev-alert
+  cancel-in-progress: false
+
+permissions:
+  contents: write        # only to commit data/EV_ALERTS.md when an alert fires
+  issues: write          # evwatch.py posts alerts as PR/issue comments
+  pull-requests: write
+
+jobs:
+  alert:
+    runs-on: ubuntu-latest
+    # A healthy run is well under a minute. If one ever hangs, fail it rather
+    # than let ticks queue behind it on the concurrency group.
+    timeout-minutes: 6
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape gate
+        # Same committed kill-switch track.yml uses, so pausing between race
+        # weekends pauses BOTH workflows from one file.
+        id: gate
+        run: |
+          active="$(tr -d '[:space:]' < .github/scrape_active 2>/dev/null || echo false)"
+          [ "$active" = "true" ] || active=false
+          echo "active=$active" >> "$GITHUB_OUTPUT"
+          echo "Scrape gate: active=$active"
+
+      - name: Restore EV dedup state
+        # evwatch dedups against data/ev_alert_state.json — that persistence IS
+        # the dedup, and without it every poll would re-alert every qualifying
+        # line (at 5 minutes, that is a pager you would mute within the hour).
+        # This job does not commit on a silent run, so the cache carries state
+        # between runs. actions/cache cannot overwrite a key, hence the
+        # unique-key + restore-keys-prefix rolling pattern.
+        # On a cache miss it falls back to the COMMITTED state, which the commit
+        # step below keeps current as of the last fired alert — so a miss
+        # neither bursts nor silently suppresses.
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        uses: actions/cache/restore@v4
+        with:
+          path: data/ev_alert_state.json
+          key: ev-alert-state-${{ github.run_id }}
+          restore-keys: |
+            ev-alert-state-
+
+      - name: Scrape prices only
+        if: ${{ steps.gate.outputs.active == 'true' }}
+        id: scrape
+        env:
+          SNAPSHOT_ONLY: "1"
+        run: python3 scraper.py
+
+      - name: High-EV watch (Kalshi vs SG)
+        # Same clean-scrape gate as track.yml: never alert off a partial scrape.
+        if: ${{ steps.scrape.outcome == 'success' }}
+        env:
+          EV_ALERT_THRESH: "30"
+          EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
+          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
+          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          EV_ALERT_URL: https://jckund.github.io/test/
+          WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
+        run: python3 evwatch.py
+
+      - name: Save EV dedup state
+        # always(): a run that alerted and THEN failed must still record what it
+        # sent, or the next poll re-sends it.
+        if: ${{ always() && steps.scrape.outcome == 'success' }}
+        uses: actions/cache/save@v4
+        with:
+          path: data/ev_alert_state.json
+          key: ev-alert-state-${{ github.run_id }}
+
+      - name: Commit alert log if something fired
+        # Only when evwatch actually appended to EV_ALERTS.md — silent polls (the
+        # overwhelming majority) commit nothing, so this adds no churn and does
+        # not race track.yml in normal operation. Explicit paths: the scrape
+        # rewrote snapshots/history in the working tree and this job is NOT the
+        # one that publishes those, so they must not be swept in.
+        if: ${{ steps.scrape.outcome == 'success' }}
+        run: |
+          if git diff --quiet -- data/EV_ALERTS.md data/ev_alert_state.json; then
+            echo "No new alerts; nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data/EV_ALERTS.md data/ev_alert_state.json
+          git commit -m "data: ev alert $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs --autostash origin "${GITHUB_REF_NAME}" \
+               && git push origin HEAD:"${GITHUB_REF_NAME}"; then
+              echo "Pushed."; exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push failed; retrying in $((2**i))s"; sleep $((2**i))
+          done
+          # Not fatal: the alert already went out. The cache carries the dedup
+          # state forward regardless, so a lost push costs only the log line.
+          echo "::warning::Could not push the alert log; the alert itself was sent."

@@ -45,8 +45,9 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   git commit -m "..." && git push origin _dl:claude/nascar-page-scraper-mwi55a
   git checkout <dev-branch> && git branch -D _dl
   ```
-- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / `evwatch.py` / the workflow**
-  auto-triggers `track.yml`. A **data-only** push does not — trigger it manually
+- A push that changes **`index.html` / `scraper.py` / the workflow**
+  auto-triggers `track.yml` (`evwatch.py` is deliberately not a trigger path any
+  more — `track.yml` no longer runs it). A **data-only** push does not — trigger it manually
   (`actions_run_trigger` → `run_workflow track.yml`, ref = deploy branch) to publish.
 - Confirm a deploy by the deploy branch HEAD advancing / a `data: market update`
   commit landing (that = scrape+commit+Pages deploy completed).
@@ -62,13 +63,19 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   the append-only logs. A failed rebase is always `--abort`ed, because the
   assemble/deploy steps run even when the commit step fails and would otherwise
   publish conflict-markered JSON (that is what blanked the site on 9/2).
-- **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
-  `linewatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
+- **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`),
+  commits `data/` changes, deploys Pages. **No longer alerts** — `evwatch.py`
+  moved to `evalert.yml` (below). Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
   kalshi.com, so always scrape via CI, never inline). The 15-min cadence is driven by
   an **external cron-job.org pinger** hitting `workflow_dispatch` (GitHub's own
   `schedule` cron is unreliable and is left commented out); that pinger runs 24/7 and
-  is set up once — do **not** re-create it per race.
+  is set up once — do **not** re-create it per race. There are **two** pingers:
+  one at ~15 min on `track.yml` (full scrape + commit + deploy) and one at ~5 min
+  on `evalert.yml` (prices + EV alert only). Cadence lives entirely in
+  cron-job.org — nothing in the repo sets it, so Claude cannot change it; ask the
+  user to adjust the job there. Never point a <8 min pinger at `track.yml`: its
+  runs take 4m20s–5m and would queue.
 
 ### Pausing the auto-scraper (kill-switch — IMPORTANT)
 
@@ -87,6 +94,26 @@ push-trigger paths, so flipping it won't itself fire a run — the next pinger t
 min) picks up the new value; fire `track.yml` once if you want it live immediately.
 (Fully stopping even the empty no-op runs requires pausing the cron-job.org job itself,
 which is optional — the no-ops are harmless and free on a public repo.)
+- **`evalert.yml`** — the **fast alert path**, split out of `track.yml` so Pushover
+  doesn't wait on the slow half of a scrape. Runs `scraper.py` with
+  **`SNAPSHOT_ONLY=1`** (tier prices only — skips `build_activity`, the paginated
+  alert scan, `trades_window`, `activity.json` and large-trade alerting, plus the
+  Cup team probe) then `evwatch.py`. No Pages deploy; commits **only**
+  `data/EV_ALERTS.md` + `data/ev_alert_state.json`, and only when an alert
+  actually fires. Own concurrency group (`ev-alert`) so it never queues behind
+  `track.yml`. Driven by a **second cron-job.org pinger at ~5 min** hitting its
+  `workflow_dispatch`; obeys the same `.github/scrape_active` gate.
+  **Why it exists:** measured on CI a `track.yml` run is 4m20s–5m and the "Run
+  scraper" step is ~93% of that (trade pagination); `evwatch` itself takes 0s.
+  A 5-min ping on `track.yml` would overlap, queue on `track-kalshi`
+  (`cancel-in-progress: false`) and grow a backlog all weekend — alerts would get
+  *slower*. Worst-case alert latency ~19.5 min → ~5.7 min.
+  **Dedup state:** GitHub Actions cache (unique key + `restore-keys` prefix, the
+  rolling pattern, since a cache key can't be overwritten). On a cache miss it
+  falls back to the committed `data/ev_alert_state.json`, which the commit-on-fire
+  step keeps current as of the last alert — so a miss neither bursts nor silently
+  suppresses. **Don't also run `evwatch.py` in `track.yml`** — two paths with
+  separate dedup state = double alerts.
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
 - **`evwatch.py`** — high-EV watch: the CI twin of the dashboard's **Kalshi vs SG**
@@ -98,17 +125,20 @@ which is optional — the no-ops are harmless and free on a public repo.)
   already qualifying at the same price last run ⇒ silent; the same driver/market at
   a *different* price ⇒ new line, alerts again; drifted out of the money ⇒ dropped
   from state, so it alerts fresh if it returns. State is `data/ev_alert_state.json`
-  (committed each run — that persistence IS the dedup); history in
+  (now carried by the Actions cache in `evalert.yml`, and committed when an alert
+  fires — that persistence IS the dedup); history in
   `data/EV_ALERTS.md`. Channels are the shared ones and each no-ops when unset:
   `WATCH_PR_NUMBER` + `GITHUB_TOKEN` (PR comment, which GitHub emails to the PR's
   watchers — the zero-setup email path) and `ALERT_WEBHOOK_URL` (Slack/Discord/
   ntfy/Pushover, or a Twilio/IFTTT relay for SMS). **Both unset ⇒ it computes and
   logs to the job summary but pings nobody.**
-- **`linewatch.py`** — line-move watch: diffs each Cup market's YES price vs a
-  committed baseline (`data/cup/watch_baseline.json`); on a move ≥3pp (or the fixed
-  Cindric trip-wire) posts to the watch PR (`WATCH_PR_NUMBER` repo variable) so a
-  subscribed session wakes only on a real move. Unset var ⇒ it just logs to the job
-  summary + `data/cup/WATCH.md`.
+  Dedup keys the price into an `EV_DEDUP_BUCKET_C`-wide band (default 2¢) so a
+  line flipping 7¢/8¢/7¢ doesn't re-ping; set it to `1` for the old
+  alert-on-every-cent behaviour.
+- **`linewatch.py` — REMOVED.** The ≥3pp line-move watch and its
+  `data/cup/watch_baseline.json` / `data/cup/WATCH.md` state are gone. `evwatch.py`
+  is now the only alerting path in `track.yml`. Don't re-add a wake-on-every-move
+  watcher without deciding who consumes it (see Notes).
 
 ## Data layout
 
@@ -149,6 +179,25 @@ gb.write_book("caesars.json", "Caesars",
 gb.write_mfr("mfr_caesars.json", "Caesars", which_make_3way, {"Chevrolet":..,"Ford":..,"Toyota":..})
 gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
+
+**NEVER retype a board — pass the raw paste through `parse_board.py` (IMPORTANT
+— cost).** Hand-transcribing ~40 driver rows into tuples, per tier per book, is
+the most expensive thing in a race weekend and the easiest place to fork a driver
+or fat-finger a price. Paste the board verbatim into a string instead:
+```python
+import parse_board as pb, gen_books as gb
+WIN = """<paste the winner board exactly as it came, no cleanup>"""
+T3  = """<paste the top-3 board>"""
+gb.write_book("caesars.json", "Caesars", {"winner": (pb.rows(WIN), 1), "top3": (pb.rows(T3), 3)})
+```
+`pb.rows()` handles the layouts books actually produce — `Name +650`, `+650 Name`,
+name and odds on alternating lines (what copying a web board gives you), `|`/`,`/tab
+separated, plus decimal (`7.50`) and fractional (`13/2`) odds — skips column headers,
+canonicalizes via `gen_books.canon`, and **raises naming the offending line** if a
+driver is unknown, so a typo fails loudly instead of silently forking a driver. Pass
+`strict=False` to skip bad rows, or `pb.rows_with_errors()` to inspect them. Sanity-
+check a paste from the shell with `python3 parse_board.py board.txt`. Validated by
+round-tripping every committed book × 5 layouts (75/75 exact).
 **HARD RULE — NEVER act on a paste without an explicit go (STANDING, NON-NEGOTIABLE).**
 A book/model paste — including a single `"updated <Book>"` or `"<Book>: <paste>"`, and
 including a re-sent SG/FanDuel/Kalshi drop — is **collect-only**. Acknowledge it with one
@@ -309,7 +358,41 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
 
 ## Notes
 
-- Repo is **public** ⇒ GitHub Actions minutes are free; scrape frequency is not a cost
-  concern. The real cost is waking a large-context Claude session repeatedly — prefer
-  the CI `linewatch.py` event-driven path over a fixed-interval self-wake loop.
+- **Scrape frequency and cost.** Repo is **public** ⇒ Actions minutes and Pages
+  deploys are free, so the cron-job.org cadence costs nothing in dollars no matter
+  how fast it ticks. Two things did scale with it, and both are now bounded:
+  - **Repo growth.** `history.jsonl` and `CHANGES.md` were unbounded (~10MB and
+    ~15MB) and grew purely as a function of poll count. Both are now capped
+    (`MAX_HISTORY_RECORDS` / `MAX_CHANGES_ENTRIES` in `scraper.py`, mirrored in
+    `golf_scraper.py`), so the committed footprint is fixed by record count, not
+    cadence — doubling the poll rate halves the wall-clock span each log covers
+    and leaves the repo size flat. Caveat: this bounds FUTURE growth only; the
+    ~400MB already in the pack stays there short of a history rewrite.
+  - **Alert volume.** `evwatch.py` dedups on a 2¢ price band, so faster polling
+    doesn't turn 1¢ jitter into extra pings.
+  Measured over the full history (2434 commits, Jul 8 – Sep 4; 423MB total):
+  `history.jsonl` 249MB, `activity.json` 69.5MB, `CHANGES.md` 61.8MB,
+  `latest.json` 11.3MB, everything else ~31MB. The driver is **file size ×
+  number of versions** — these are rewritten or grow monotonically, so git
+  re-stores a near-full blob every run. All four are now capped or gitignored.
+  Re-measure with a bare clone + `git rev-list --objects HEAD | git cat-file
+  --batch-check='%(objecttype) %(objectname) %(objectsize:disk) %(rest)'`
+  summed by path — don't guess from working-tree sizes, which understate it
+  enormously.
+- **Token cost, in rough order.** The dollars are Claude sessions, not CI:
+  1. **Board transcription** — always `parse_board.py`, never retype (above).
+     Prefer text/CSV over screenshots; images cost ~1–2k tokens each.
+  2. **Turn count** — every tool call re-sends the whole context, so batching
+     work into one command beats several small ones.
+  3. **Session length** — context re-sends every turn, so one 20-turn session
+     costs far more than four 5-turn ones. Start a fresh session per distinct
+     task (deploy batch vs. analysis ask) rather than one per race weekend.
+  4. **Model** — transcription, deploys and staleness sweeps don't need the
+     largest model.
+- **What actually wakes a Claude session.** Nothing does automatically. `evwatch.py`
+  is a *human* notification path — Pushover push and an @mention comment that GitHub
+  emails. A session only wakes if one is explicitly subscribed to `WATCH_PR_NUMBER`
+  via `subscribe_pr_activity`, in which case ANY comment on that thread (evwatch's
+  included) wakes it. That subscription, not the scrape cadence, is the expensive
+  knob — leave it off unless a session is deliberately babysitting a race.
 - Kalshi is NOT reachable from a Claude session (proxy blocks it) — scrape via CI only.

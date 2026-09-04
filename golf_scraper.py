@@ -95,6 +95,21 @@ TRACKED_FIELDS = [
     "no_bid", "no_ask", "volume", "open_interest",
 ]
 MAX_SERIES = 1000
+
+
+# Retention caps for the append-only per-tier logs — see the matching block in
+# scraper.py. Golf shares the same data/ tree, so an uncapped log here inflates
+# the same clones and commit diffs the NASCAR caps exist to bound.
+def _env_int(name: str, default: int, minimum: int = 1) -> int:
+    try:
+        return max(minimum, int(os.environ.get(name, str(default))))
+    except ValueError:
+        return default
+
+
+MAX_HISTORY = _env_int("MAX_HISTORY_RECORDS", 1000)
+MAX_CHANGES_ENTRIES = _env_int("MAX_CHANGES_ENTRIES", 200)
+
 USER_AGENT = "kalshi-golf-tracker/1.0 (+https://github.com; scheduled scraper)"
 # Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
 # under the limit while scraping several tiers x many players.
@@ -369,25 +384,31 @@ def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
         fh.write("\n")
 
     record = {"scraped_at": curr["scraped_at"], "change_count": len(changes), "changes": changes}
-    with open(os.path.join(base, "history.jsonl"), "a", encoding="utf-8") as fh:
-        fh.write(json.dumps(record, separators=(",", ":")) + "\n")
+    _append_capped(os.path.join(base, "history.jsonl"),
+                   json.dumps(record, separators=(",", ":")), MAX_HISTORY)
 
     _append_series(base, curr)
     _write_changes_md(base, curr, changes)
 
 
-def _append_series(base: str, curr: dict) -> None:
-    point = {"t": curr["scraped_at"],
-             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
-    path = os.path.join(base, "series.jsonl")
+def _append_capped(path: str, line: str, cap: int) -> None:
+    """Append one JSONL row, keeping only the newest `cap` rows. Rewrites the
+    file rather than appending in place, which is what bounds it."""
     lines = []
     if os.path.exists(path):
         with open(path, encoding="utf-8") as fh:
             lines = [ln for ln in fh.read().splitlines() if ln.strip()]
-    lines.append(json.dumps(point, separators=(",", ":")))
-    lines = lines[-MAX_SERIES:]
+    lines.append(line)
+    lines = lines[-cap:]
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
+
+
+def _append_series(base: str, curr: dict) -> None:
+    point = {"t": curr["scraped_at"],
+             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
+    _append_capped(os.path.join(base, "series.jsonl"),
+                   json.dumps(point, separators=(",", ":")), MAX_SERIES)
 
 
 def _write_changes_md(base: str, curr: dict, changes: list) -> None:
@@ -433,9 +454,23 @@ def _write_changes_md(base: str, curr: dict, changes: list) -> None:
             content = fh.read()
         first_entry = content.find("### ")
         if first_entry != -1:
-            existing = content[first_entry:]
+            # Keep MAX_CHANGES_ENTRIES total, counting the block we just built.
+            existing = _trim_changes_entries(content[first_entry:], MAX_CHANGES_ENTRIES - 1)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(header + new_block + existing)
+
+
+def _trim_changes_entries(existing: str, keep: int) -> str:
+    """Keep only the newest `keep` `### <timestamp>` blocks of a CHANGES.md body."""
+    if keep <= 0:
+        return ""
+    idx = 0
+    for _ in range(keep):
+        nxt = existing.find("\n### ", idx)
+        if nxt == -1:
+            return existing
+        idx = nxt + 1
+    return existing[:idx]
 
 
 # ---------------------------------------------------------------------------

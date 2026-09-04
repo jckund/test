@@ -1,5 +1,23 @@
 __pycache__/
 *.pyc
+
+# Scraper output that is written every run but read by nothing, and so was
+# pure repo weight. Measured over the full history (2434 commits, Jul-Sep):
+# activity.json cost 69.5MB of blob storage and latest.json 11.3MB, because
+# both are rewritten wholesale each run and git re-stores a near-full blob
+# every time. The scrapers still WRITE them, so they remain available locally
+# for debugging and still get published to Pages by the "Assemble site" step —
+# they just stop being committed.
+#
+#   activity.json — full-event trade feed. Superseded by trades_window.jsonl
+#                   (rolling 6h, every trade) and alerts.jsonl (>$100). Its
+#                   only reader, notify_large_trades.py, is not wired into any
+#                   workflow.
+#   latest.json   — raw Kalshi API dump, "for reference/debugging". Nothing
+#                   reads it; snapshot.json is the normalized form everything
+#                   actually uses.
 data/activity.json
+data/*/activity.json
+data/*/*/latest.json
 .claude/settings.local.json
 .large_trade_seen.txt

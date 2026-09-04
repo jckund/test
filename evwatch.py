@@ -7,10 +7,12 @@ YES at its ask -- FEE-INCLUSIVE, matching index.html's netCost() and alerts.py's
 net_american_odds() -- against SG's no-vig probability, and flags anything at or
 above ``EV_ALERT_THRESH`` percent.
 
-Only *new* lines alert. Dedup key is (series, tier, driver, yes_price_cents), so
+Only *new* lines alert. Dedup key is (series, tier, driver, yes_price_band), so
 a line that was already qualifying at the same price on the previous run stays
-quiet; the same driver/market at a DIFFERENT price is a new line and alerts
-again (the price moving is the point). State lives in
+quiet; the same driver/market at a MATERIALLY different price is a new line and
+alerts again (the price moving is the point). The band is ``EV_DEDUP_BUCKET_C``
+cents wide so that sub-band jitter does not re-ping — this is what lets the poll
+interval shrink without the ping rate rising with it. State lives in
 ``data/ev_alert_state.json`` and is committed by the workflow like the other
 watch state, so it survives across runs.
 
@@ -19,7 +21,7 @@ Channels (all optional, all no-ops when unset):
   PUSHOVER_USER      only channel here that does not depend on GitHub's email
                      delivery (which notifies the web inbox but was not mailing).
   ALERT_WEBHOOK_URL  Slack/Discord/ntfy/generic incoming webhook
-                     (shared with alerts.py / linewatch.py). This is the hook a
+                     (shared with alerts.py). This is the hook a
                      Twilio/IFTTT/Zapier relay would use to fan out to SMS.
   WATCH_PR_NUMBER    issue/PR to comment on -- GitHub then emails its watchers,
                      which is the zero-setup email path.
@@ -27,6 +29,8 @@ Channels (all optional, all no-ops when unset):
 
 Env:
   EV_ALERT_THRESH    minimum EV percent to alert on (default 30)
+  EV_DEDUP_BUCKET_C  price-band width in cents for dedup (default 2; 1 = alert
+                     on every single-cent tick, the pre-banding behaviour)
   EV_ALERT_SERIES    comma-separated series keys (default: all in data/series.json)
   EV_ALERT_MENTION   GitHub @handle to mention in the PR comment. A mention is a
                      "Participating" notification, which GitHub emails by
@@ -51,6 +55,10 @@ from datetime import datetime, timezone
 KALSHI_FEE_RATE = 0.07
 
 THRESH = float(os.environ.get("EV_ALERT_THRESH", "30"))
+try:
+    DEDUP_BUCKET_C = max(1, int(os.environ.get("EV_DEDUP_BUCKET_C", "2")))
+except ValueError:
+    DEDUP_BUCKET_C = 2
 MENTION = os.environ.get("EV_ALERT_MENTION", "").strip()
 SITE_URL = os.environ.get("EV_ALERT_URL", "").strip()
 # Pushover caps message at 1024 chars and title at 250.
@@ -107,6 +115,12 @@ def norm_name(s: str) -> str:
     return toks[0] if len(toks) == 1 else toks[0] + toks[-1]
 
 
+def _band(cents: float) -> int:
+    """Price band a line falls in, for dedup. Set EV_DEDUP_BUCKET_C=1 to restore
+    the old exact-cent behaviour (every 1c tick is a new alert)."""
+    return int(cents) // DEDUP_BUCKET_C
+
+
 def load_json(path):
     try:
         with open(path) as fh:
@@ -155,8 +169,14 @@ def scan():
                 ev = (p / cost - 1) * 100.0
                 if ev < THRESH:
                     continue
-                # Dedup identity: same driver, same market, same price = same bet.
-                key = f"{skey}|{tier}|{m.get('name')}|{c:.0f}"
+                # Dedup identity: same driver, same market, same price BAND.
+                # Banding is what keeps the poll interval and the ping rate
+                # decoupled. Keying on the exact cent meant a line oscillating
+                # 7c/8c/7c re-alerted on every flip, so polling twice as often
+                # produced roughly twice the pings for the same one bet. Rounding
+                # to DEDUP_BUCKET_C absorbs that jitter while a genuine move
+                # (which crosses a band) still alerts.
+                key = f"{skey}|{tier}|{m.get('name')}|{_band(c)}"
                 hits.append((key, {
                     "series": skey, "race": race, "tier": tier,
                     "driver": m.get("name"), "yes_c": c, "net_c": net_cents(c),
