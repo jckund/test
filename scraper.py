@@ -162,6 +162,19 @@ def _env_int(name: str, default: int, minimum: int = 1) -> int:
 MAX_HISTORY = _env_int("MAX_HISTORY_RECORDS", 1000)
 MAX_CHANGES_ENTRIES = _env_int("MAX_CHANGES_ENTRIES", 200)
 
+# SNAPSHOT_ONLY: scrape prices and nothing else. Skips every trade-derived
+# product — build_activity, the fully-paginated alert scan, trades_window,
+# activity.json and large-trade alerting — plus the Cup team-market probe.
+#
+# WHY: measured on CI, a full run is ~4m20s and the "Run scraper" step is 4m02s
+# of it (93%), essentially all of it trade pagination throttled at THROTTLE_S.
+# The tier fetches that produce snapshot.json are a dozen calls and finish in
+# seconds. evwatch.py reads ONLY snapshot.json (+ the committed manual/sg.json),
+# so the EV alert path does not need any of the expensive half. This flag is
+# what lets evalert.yml poll every 5 minutes while track.yml keeps doing the
+# full scrape + commit + Pages deploy every 15.
+SNAPSHOT_ONLY = os.environ.get("SNAPSHOT_ONLY", "").strip().lower() in ("1", "true", "yes")
+
 USER_AGENT = "kalshi-nascar-tracker/3.0 (+https://github.com; scheduled scraper)"
 # Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
 # under the limit while scraping several races x several tiers.
@@ -848,7 +861,7 @@ def process_series(rs: dict) -> dict | None:
     # into <series>/team/. Best-effort and kept OUT of `events` so it never feeds
     # the driver tiers, index, activity, or alerting: a miss (or unknown ticker)
     # just leaves the Team tab's synthesized driver-sum number in place.
-    if rs.get("full"):
+    if rs.get("full") and not SNAPSHOT_ONLY:
         try:
             tev_ticker, _tev_series = discover_team_event(rs["race_title"], rs["race_code"])
             if tev_ticker:
@@ -856,6 +869,15 @@ def process_series(rs: dict) -> dict | None:
                                "ticker": tev_ticker, "page_url": rs["page_url"]}, series_dir)
         except Exception as e:  # noqa: BLE001 - team market is best-effort
             print(f"team scrape failed for {rs['key']}: {e}", file=sys.stderr)
+
+    if SNAPSHOT_ONLY:
+        # Prices are written; everything below is trade-derived and skipped.
+        print(f"series {rs['key']}: SNAPSHOT_ONLY — skipped activity + alerting.",
+              file=sys.stderr)
+        return {"key": rs["key"], "label": rs["label"], "race_title": rs["race_title"],
+                "full": rs["full"], "source_url": rs["page_url"],
+                "tiers": [s["key"] for s in scraped],
+                "scraped_at": datetime.now(timezone.utc).isoformat()}
 
     try:
         build_activity(events, series_dir, rs["race_code"])

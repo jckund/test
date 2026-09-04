@@ -23,8 +23,10 @@ on:
     paths:
       - index.html
       - scraper.py
-      - evwatch.py
       - .github/workflows/track.yml
+      # evwatch.py is deliberately NOT here any more: this workflow no longer
+      # runs it (see the note below the scraper step), and an alerting change
+      # doesn't need a site redeploy.
 
 # Prevent overlapping runs from racing on the same commit / deployment.
 concurrency:
@@ -93,36 +95,18 @@ jobs:
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python3 scraper.py
 
-      - name: High-EV watch (Kalshi vs SG)
-        # Runs ONLY on a clean scrape: it reads the freshly-written snapshots and
-        # writes data/ev_alert_state.json, which the commit step below picks up so
-        # the dedup baseline persists across runs. A failed/partial scrape must
-        # not reach it or the commit step — otherwise it could commit empty/half
-        # data and publish an "awaiting first scrape" site. The publish steps
-        # further down still run unconditionally, so data/roster/code changes
-        # deploy even when Kalshi 403s (they republish the last-good committed
-        # tree, never a broken scrape).
-        if: ${{ steps.scrape.outcome == 'success' }}
-        # Prices buying Kalshi YES net of fees against SG's no-vig model, for
-        # every series that has both, and alerts on any line >= EV_ALERT_THRESH
-        # that wasn't already qualifying at the same price last run. Silent when
-        # nothing is new, so an unchanged board never re-pings.
-        env:
-          EV_ALERT_THRESH: "30"
-          # @mention so the comment emails a human even when they are not
-          # subscribed to the watch thread (a mention is a "Participating"
-          # notification, emailed by default; a plain comment is not).
-          # Override with the ALERT_MENTION repo variable; defaults to the owner.
-          EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
-          # Phone push. The only channel that doesn't depend on GitHub email
-          # delivery, which notifies the web inbox but wasn't mailing.
-          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
-          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
-          EV_ALERT_URL: https://jckund.github.io/test/
-          WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: python3 evwatch.py
+      # NOTE: the High-EV watch used to run here. It now lives in evalert.yml,
+      # which polls every ~5 min instead of 15. evwatch itself takes 0s, so
+      # making it wait on this workflow's ~4min of trade pagination was pure
+      # alert latency. Running it in BOTH would double-alert (each path holds its
+      # own dedup state), so this workflow no longer alerts at all — it scrapes,
+      # commits and deploys. data/ev_alert_state.json is still committed here as
+      # part of data/, and that is what evalert.yml falls back to on a cache miss.
+      # A failed/partial scrape still must not reach the commit step below,
+      # otherwise it would commit empty/half data and publish an "awaiting first
+      # scrape" site; the publish steps further down run unconditionally, so
+      # data/roster/code changes deploy even when Kalshi 403s (republishing the
+      # last-good committed tree, never a broken scrape).
 
       - name: Commit changes if any
         # Commit only fresh scraper output — never a failed/partial scrape.

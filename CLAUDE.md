@@ -45,8 +45,9 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   git commit -m "..." && git push origin _dl:claude/nascar-page-scraper-mwi55a
   git checkout <dev-branch> && git branch -D _dl
   ```
-- A push that changes **`index.html` / `scraper.py` / `evwatch.py` / the workflow**
-  auto-triggers `track.yml`. A **data-only** push does not — trigger it manually
+- A push that changes **`index.html` / `scraper.py` / the workflow**
+  auto-triggers `track.yml` (`evwatch.py` is deliberately not a trigger path any
+  more — `track.yml` no longer runs it). A **data-only** push does not — trigger it manually
   (`actions_run_trigger` → `run_workflow track.yml`, ref = deploy branch) to publish.
 - Confirm a deploy by the deploy branch HEAD advancing / a `data: market update`
   commit landing (that = scrape+commit+Pages deploy completed).
@@ -62,13 +63,19 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   the append-only logs. A failed rebase is always `--abort`ed, because the
   assemble/deploy steps run even when the commit step fails and would otherwise
   publish conflict-markered JSON (that is what blanked the site on 9/2).
-- **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
-  `evwatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
+- **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`),
+  commits `data/` changes, deploys Pages. **No longer alerts** — `evwatch.py`
+  moved to `evalert.yml` (below). Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
   kalshi.com, so always scrape via CI, never inline). The 15-min cadence is driven by
   an **external cron-job.org pinger** hitting `workflow_dispatch` (GitHub's own
   `schedule` cron is unreliable and is left commented out); that pinger runs 24/7 and
-  is set up once — do **not** re-create it per race.
+  is set up once — do **not** re-create it per race. There are **two** pingers:
+  one at ~15 min on `track.yml` (full scrape + commit + deploy) and one at ~5 min
+  on `evalert.yml` (prices + EV alert only). Cadence lives entirely in
+  cron-job.org — nothing in the repo sets it, so Claude cannot change it; ask the
+  user to adjust the job there. Never point a <8 min pinger at `track.yml`: its
+  runs take 4m20s–5m and would queue.
 
 ### Pausing the auto-scraper (kill-switch — IMPORTANT)
 
@@ -87,6 +94,26 @@ push-trigger paths, so flipping it won't itself fire a run — the next pinger t
 min) picks up the new value; fire `track.yml` once if you want it live immediately.
 (Fully stopping even the empty no-op runs requires pausing the cron-job.org job itself,
 which is optional — the no-ops are harmless and free on a public repo.)
+- **`evalert.yml`** — the **fast alert path**, split out of `track.yml` so Pushover
+  doesn't wait on the slow half of a scrape. Runs `scraper.py` with
+  **`SNAPSHOT_ONLY=1`** (tier prices only — skips `build_activity`, the paginated
+  alert scan, `trades_window`, `activity.json` and large-trade alerting, plus the
+  Cup team probe) then `evwatch.py`. No Pages deploy; commits **only**
+  `data/EV_ALERTS.md` + `data/ev_alert_state.json`, and only when an alert
+  actually fires. Own concurrency group (`ev-alert`) so it never queues behind
+  `track.yml`. Driven by a **second cron-job.org pinger at ~5 min** hitting its
+  `workflow_dispatch`; obeys the same `.github/scrape_active` gate.
+  **Why it exists:** measured on CI a `track.yml` run is 4m20s–5m and the "Run
+  scraper" step is ~93% of that (trade pagination); `evwatch` itself takes 0s.
+  A 5-min ping on `track.yml` would overlap, queue on `track-kalshi`
+  (`cancel-in-progress: false`) and grow a backlog all weekend — alerts would get
+  *slower*. Worst-case alert latency ~19.5 min → ~5.7 min.
+  **Dedup state:** GitHub Actions cache (unique key + `restore-keys` prefix, the
+  rolling pattern, since a cache key can't be overwritten). On a cache miss it
+  falls back to the committed `data/ev_alert_state.json`, which the commit-on-fire
+  step keeps current as of the last alert — so a miss neither bursts nor silently
+  suppresses. **Don't also run `evwatch.py` in `track.yml`** — two paths with
+  separate dedup state = double alerts.
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
 - **`evwatch.py`** — high-EV watch: the CI twin of the dashboard's **Kalshi vs SG**
@@ -98,7 +125,8 @@ which is optional — the no-ops are harmless and free on a public repo.)
   already qualifying at the same price last run ⇒ silent; the same driver/market at
   a *different* price ⇒ new line, alerts again; drifted out of the money ⇒ dropped
   from state, so it alerts fresh if it returns. State is `data/ev_alert_state.json`
-  (committed each run — that persistence IS the dedup); history in
+  (now carried by the Actions cache in `evalert.yml`, and committed when an alert
+  fires — that persistence IS the dedup); history in
   `data/EV_ALERTS.md`. Channels are the shared ones and each no-ops when unset:
   `WATCH_PR_NUMBER` + `GITHUB_TOKEN` (PR comment, which GitHub emails to the PR's
   watchers — the zero-setup email path) and `ALERT_WEBHOOK_URL` (Slack/Discord/
