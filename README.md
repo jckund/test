@@ -132,9 +132,9 @@ Written per tier, e.g. `data/winner/…`, `data/top10/…`:
 | --- | --- |
 | `data/<tier>/snapshot.json` | Normalized current state of every market |
 | `data/<tier>/latest.json` | Full raw API response (for reference/debugging) |
-| `data/<tier>/history.jsonl` | Append-only; one line per run that had changes, with a compact diff |
-| `data/<tier>/series.jsonl` | Append-only aligned price series (last price per driver per run) — powers the dashboard sparklines |
-| `data/<tier>/CHANGES.md` | Human-readable change log, newest first, with a standings table |
+| `data/<tier>/history.jsonl` | One line per run, with a compact diff; newest `MAX_HISTORY_RECORDS` (default 1000) kept |
+| `data/<tier>/series.jsonl` | Aligned price series (last price per driver per run) — powers the dashboard sparklines; newest `MAX_SERIES` (1000) kept |
+| `data/<tier>/CHANGES.md` | Human-readable change log, newest first, with a standings table; newest `MAX_CHANGES_ENTRIES` (default 200) entries kept |
 | `data/index.json` | List of tracked tiers (drives the dashboard tabs) |
 | `data/activity.json` | Recent trades merged across all tiers (live feed; regenerated each run, git-ignored) |
 | `data/cup/alerts.jsonl` | Append-only log of large-trade alerts (one JSON per line; committed — doubles as the dedup source) |

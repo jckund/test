@@ -23,7 +23,6 @@ on:
     paths:
       - index.html
       - scraper.py
-      - linewatch.py
       - evwatch.py
       - .github/workflows/track.yml
 
@@ -36,7 +35,7 @@ permissions:
   contents: write        # commit scraped data back to the repo
   pages: write           # deploy to GitHub Pages
   id-token: write        # required by actions/deploy-pages
-  issues: write          # linewatch.py posts line-move alerts as PR/issue comments
+  issues: write          # evwatch.py posts high-EV alerts as PR/issue comments
   pull-requests: write   # (PR comments are issue comments on the PR)
 
 jobs:
@@ -94,30 +93,15 @@ jobs:
           ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
         run: python3 scraper.py
 
-      - name: Kalshi line-move watch
-        # Runs ONLY on a clean scrape: linewatch and the commit below touch the
-        # freshly-written snapshots, so a failed/partial scrape must not reach
-        # them — otherwise it could commit empty/half data and publish an
-        # "awaiting first scrape" site. The publish steps further down still run
-        # unconditionally, so data/roster/code changes deploy even when Kalshi 403s
-        # (they republish the last-good committed tree, never a broken scrape).
-        if: ${{ steps.scrape.outcome == 'success' }}
-        # Diff each Cup market's YES price vs the committed baseline; on a move
-        # >= WATCH_THRESH_PP (or the Cindric trip-wire) post a comment to the
-        # watch PR so the subscribed Claude session wakes. No move -> no comment.
-        # Runs after the scraper (fresh snapshots) and before the commit step so
-        # the refreshed baseline it writes gets committed with the rest of data/.
-        env:
-          WATCH_THRESH_PP: "3"
-          WATCH_PR_NUMBER: ${{ vars.WATCH_PR_NUMBER }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ALERT_WEBHOOK_URL: ${{ secrets.ALERT_WEBHOOK_URL }}
-        run: python3 linewatch.py
-
       - name: High-EV watch (Kalshi vs SG)
-        # Same clean-scrape gate as linewatch: it reads the freshly-written
-        # snapshots and writes data/ev_alert_state.json, which the commit step
-        # below picks up so the dedup baseline persists across runs.
+        # Runs ONLY on a clean scrape: it reads the freshly-written snapshots and
+        # writes data/ev_alert_state.json, which the commit step below picks up so
+        # the dedup baseline persists across runs. A failed/partial scrape must
+        # not reach it or the commit step — otherwise it could commit empty/half
+        # data and publish an "awaiting first scrape" site. The publish steps
+        # further down still run unconditionally, so data/roster/code changes
+        # deploy even when Kalshi 403s (they republish the last-good committed
+        # tree, never a broken scrape).
         if: ${{ steps.scrape.outcome == 'success' }}
         # Prices buying Kalshi YES net of fees against SG's no-vig model, for
         # every series that has both, and alerts on any line >= EV_ALERT_THRESH

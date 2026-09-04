@@ -45,7 +45,7 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   git commit -m "..." && git push origin _dl:claude/nascar-page-scraper-mwi55a
   git checkout <dev-branch> && git branch -D _dl
   ```
-- A push that changes **`index.html` / `scraper.py` / `linewatch.py` / `evwatch.py` / the workflow**
+- A push that changes **`index.html` / `scraper.py` / `evwatch.py` / the workflow**
   auto-triggers `track.yml`. A **data-only** push does not — trigger it manually
   (`actions_run_trigger` → `run_workflow track.yml`, ref = deploy branch) to publish.
 - Confirm a deploy by the deploy branch HEAD advancing / a `data: market update`
@@ -63,7 +63,7 @@ lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
   assemble/deploy steps run even when the commit step fails and would otherwise
   publish conflict-markered JSON (that is what blanked the site on 9/2).
 - **`track.yml`** — scrapes Kalshi every 15 min (also `workflow_dispatch`), runs
-  `linewatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
+  `evwatch.py`, commits `data/` changes, deploys Pages. Runners have open egress
   (Kalshi is reachable there but NOT from a Claude session — the session proxy blocks
   kalshi.com, so always scrape via CI, never inline). The 15-min cadence is driven by
   an **external cron-job.org pinger** hitting `workflow_dispatch` (GitHub's own
@@ -104,11 +104,13 @@ which is optional — the no-ops are harmless and free on a public repo.)
   watchers — the zero-setup email path) and `ALERT_WEBHOOK_URL` (Slack/Discord/
   ntfy/Pushover, or a Twilio/IFTTT relay for SMS). **Both unset ⇒ it computes and
   logs to the job summary but pings nobody.**
-- **`linewatch.py`** — line-move watch: diffs each Cup market's YES price vs a
-  committed baseline (`data/cup/watch_baseline.json`); on a move ≥3pp (or the fixed
-  Cindric trip-wire) posts to the watch PR (`WATCH_PR_NUMBER` repo variable) so a
-  subscribed session wakes only on a real move. Unset var ⇒ it just logs to the job
-  summary + `data/cup/WATCH.md`.
+  Dedup keys the price into an `EV_DEDUP_BUCKET_C`-wide band (default 2¢) so a
+  line flipping 7¢/8¢/7¢ doesn't re-ping; set it to `1` for the old
+  alert-on-every-cent behaviour.
+- **`linewatch.py` — REMOVED.** The ≥3pp line-move watch and its
+  `data/cup/watch_baseline.json` / `data/cup/WATCH.md` state are gone. `evwatch.py`
+  is now the only alerting path in `track.yml`. Don't re-add a wake-on-every-move
+  watcher without deciding who consumes it (see Notes).
 
 ## Data layout
 
@@ -309,7 +311,22 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
 
 ## Notes
 
-- Repo is **public** ⇒ GitHub Actions minutes are free; scrape frequency is not a cost
-  concern. The real cost is waking a large-context Claude session repeatedly — prefer
-  the CI `linewatch.py` event-driven path over a fixed-interval self-wake loop.
+- **Scrape frequency and cost.** Repo is **public** ⇒ Actions minutes and Pages
+  deploys are free, so the cron-job.org cadence costs nothing in dollars no matter
+  how fast it ticks. Two things did scale with it, and both are now bounded:
+  - **Repo growth.** `history.jsonl` and `CHANGES.md` were unbounded (~10MB and
+    ~15MB) and grew purely as a function of poll count. Both are now capped
+    (`MAX_HISTORY_RECORDS` / `MAX_CHANGES_ENTRIES` in `scraper.py`, mirrored in
+    `golf_scraper.py`), so the committed footprint is fixed by record count, not
+    cadence — doubling the poll rate halves the wall-clock span each log covers
+    and leaves the repo size flat. Caveat: this bounds FUTURE growth only; the
+    ~400MB already in the pack stays there short of a history rewrite.
+  - **Alert volume.** `evwatch.py` dedups on a 2¢ price band, so faster polling
+    doesn't turn 1¢ jitter into extra pings.
+- **What actually wakes a Claude session.** Nothing does automatically. `evwatch.py`
+  is a *human* notification path — Pushover push and an @mention comment that GitHub
+  emails. A session only wakes if one is explicitly subscribed to `WATCH_PR_NUMBER`
+  via `subscribe_pr_activity`, in which case ANY comment on that thread (evwatch's
+  included) wakes it. That subscription, not the scrape cadence, is the expensive
+  knob — leave it off unless a session is deliberately babysitting a race.
 - Kalshi is NOT reachable from a Claude session (proxy blocks it) — scrape via CI only.

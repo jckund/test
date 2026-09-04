@@ -9,9 +9,10 @@ race, and write one namespaced data tree per race:
   data/series.json                      — list of races (drives the series tabs)
   data/<series>/index.json              — that race's tier list (dashboard)
   data/<series>/<tier>/snapshot.json    — normalized current state
-  data/<series>/<tier>/history.jsonl    — append-only change log
+  data/<series>/<tier>/history.jsonl    — change log, newest MAX_HISTORY records
   data/<series>/<tier>/series.jsonl     — aligned price series for sparklines
-  data/<series>/<tier>/CHANGES.md       — human-readable change log
+  data/<series>/<tier>/CHANGES.md       — human-readable change log, newest
+                                          MAX_CHANGES_ENTRIES entries
   data/<series>/activity.json           — recent trades feed for that race
 
 A small SERIES config maps each discovered race to a friendly tab label (via
@@ -137,6 +138,30 @@ TRACKED_FIELDS = [
     "no_bid", "no_ask", "volume", "open_interest",
 ]
 MAX_SERIES = 1000
+
+# Retention caps for the two remaining unbounded per-tier logs.
+#
+# WHY: every poll appends a record to history.jsonl and prepends a full rendered
+# board (~50 lines) to CHANGES.md, forever. Nothing reads more than the newest
+# entries — index.html only uses the LAST history record, and CHANGES.md is a
+# human scrollback — so the tail is pure ballast that every clone, every CI
+# checkout and every commit diff pays for. Uncapped they were the two largest
+# things in data/ (~10MB of history.jsonl, ~15MB of CHANGES.md).
+#
+# This is what makes poll frequency free: with these caps the repo footprint is
+# fixed by RECORD COUNT, not by how often we poll. Doubling the cadence halves
+# the wall-clock span each log covers but leaves the committed size flat. At the
+# 15-min poll the defaults hold ~10 days of history and ~2 days of boards.
+def _env_int(name: str, default: int, minimum: int = 1) -> int:
+    try:
+        return max(minimum, int(os.environ.get(name, str(default))))
+    except ValueError:
+        return default
+
+
+MAX_HISTORY = _env_int("MAX_HISTORY_RECORDS", 1000)
+MAX_CHANGES_ENTRIES = _env_int("MAX_CHANGES_ENTRIES", 200)
+
 USER_AGENT = "kalshi-nascar-tracker/3.0 (+https://github.com; scheduled scraper)"
 # Kalshi rate-limits bursts (HTTP 429); a small pause between calls keeps us
 # under the limit while scraping several races x several tiers.
@@ -422,25 +447,37 @@ def write_outputs(base: str, raw: dict, curr: dict, changes: list) -> None:
         fh.write("\n")
 
     record = {"scraped_at": curr["scraped_at"], "change_count": len(changes), "changes": changes}
-    with open(os.path.join(base, "history.jsonl"), "a", encoding="utf-8") as fh:
-        fh.write(json.dumps(record, separators=(",", ":")) + "\n")
+    _append_capped(os.path.join(base, "history.jsonl"),
+                   json.dumps(record, separators=(",", ":")), MAX_HISTORY)
 
     _append_series(base, curr)
     _write_changes_md(base, curr, changes)
 
 
-def _append_series(base: str, curr: dict) -> None:
-    point = {"t": curr["scraped_at"],
-             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
-    path = os.path.join(base, "series.jsonl")
+def _append_capped(path: str, line: str, cap: int) -> None:
+    """Append one JSONL row, keeping only the newest `cap` rows.
+
+    Rewrites the file rather than appending in place, which is what bounds it.
+    NOTE: data/**/*.jsonl is `merge=union` in .gitattributes, so if two runs race
+    the merge can transiently union past `cap` — the next run re-truncates. Same
+    trade-off series.jsonl has always made; keeping both runs' rows is the more
+    important property.
+    """
     lines = []
     if os.path.exists(path):
         with open(path, encoding="utf-8") as fh:
             lines = [ln for ln in fh.read().splitlines() if ln.strip()]
-    lines.append(json.dumps(point, separators=(",", ":")))
-    lines = lines[-MAX_SERIES:]
+    lines.append(line)
+    lines = lines[-cap:]
     with open(path, "w", encoding="utf-8") as fh:
         fh.write("\n".join(lines) + "\n")
+
+
+def _append_series(base: str, curr: dict) -> None:
+    point = {"t": curr["scraped_at"],
+             "p": {t: implied_yes_cents(m) for t, m in curr["markets"].items()}}
+    _append_capped(os.path.join(base, "series.jsonl"),
+                   json.dumps(point, separators=(",", ":")), MAX_SERIES)
 
 
 def _write_changes_md(base: str, curr: dict, changes: list) -> None:
@@ -486,9 +523,27 @@ def _write_changes_md(base: str, curr: dict, changes: list) -> None:
             content = fh.read()
         first_entry = content.find("### ")
         if first_entry != -1:
-            existing = content[first_entry:]
+            # Keep MAX_CHANGES_ENTRIES total, counting the block we just built.
+            existing = _trim_changes_entries(content[first_entry:], MAX_CHANGES_ENTRIES - 1)
     with open(path, "w", encoding="utf-8") as fh:
         fh.write(header + new_block + existing)
+
+
+def _trim_changes_entries(existing: str, keep: int) -> str:
+    """Keep only the newest `keep` `### <timestamp>` blocks of a CHANGES.md body.
+
+    `existing` starts at the first block, so block boundaries after it are the
+    "\\n### " occurrences; truncating at the `keep`-th one drops everything older.
+    """
+    if keep <= 0:
+        return ""
+    idx = 0
+    for _ in range(keep):
+        nxt = existing.find("\n### ", idx)
+        if nxt == -1:
+            return existing          # fewer blocks than the cap; nothing to drop
+        idx = nxt + 1
+    return existing[:idx]
 
 
 # ---------------------------------------------------------------------------
