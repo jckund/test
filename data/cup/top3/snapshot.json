@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-CHEL",
       "volume": 40,
-      "volume_24h": 0,
+      "volume_24h": 40,
       "yes_ask": 14,
       "yes_bid": 12
     },
@@ -405,7 +405,7 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 91,
       "open_interest": 12,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 12,
       "volume_24h": 0,
       "yes_ask": 9,
-      "yes_bid": 6
+      "yes_bid": 7
     },
     "KXNASCARTOP3-COOOS26-RYBL": {
       "last_price": 24,
@@ -505,11 +505,11 @@
       "name": "Tyler Reddick",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 979,
+      "open_interest": 989,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-TYRE",
-      "volume": 1013,
-      "volume_24h": 434,
+      "volume": 1023,
+      "volume_24h": 447,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-04T05:30:23.701878+00:00",
+  "scraped_at": "2026-09-04T05:45:21.119391+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
