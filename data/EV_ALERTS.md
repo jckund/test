@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-04T01:04:55Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Top 3 | Parker Retzlaff | 6c | 6.39c | +1464 | 9.5% | **+48.1%** |
+| Fleetio 200 | Top 10 | Jake Finch | 30c | 31.47c | +218 | 41.9% | **+33.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-04T00:19:13Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
