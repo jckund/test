@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-CHBE",
       "volume": 254,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 24,
       "yes_bid": 23
     },
@@ -419,15 +419,15 @@
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 81,
-      "no_bid": 76,
+      "no_ask": 80,
+      "no_bid": 75,
       "open_interest": 68,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYBL",
       "volume": 68,
       "volume_24h": 40,
-      "yes_ask": 24,
-      "yes_bid": 19
+      "yes_ask": 25,
+      "yes_bid": 20
     },
     "KXNASCARTOP3-COOOS26-RYPR": {
       "last_price": 5,
@@ -504,13 +504,13 @@
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 72,
-      "no_bid": 71,
+      "no_bid": 70,
       "open_interest": 1307,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-TYRE",
       "volume": 1340,
       "volume_24h": 741,
-      "yes_ask": 29,
+      "yes_ask": 30,
       "yes_bid": 28
     },
     "KXNASCARTOP3-COOOS26-WIBY": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-04T16:00:25.352130+00:00",
+  "scraped_at": "2026-09-04T16:15:22.265373+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
