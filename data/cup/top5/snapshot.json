@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBE",
       "volume": 251,
-      "volume_24h": 5,
+      "volume_24h": 3,
       "yes_ask": 35,
       "yes_bid": 30
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBR",
       "volume": 1555,
-      "volume_24h": 632,
+      "volume_24h": 612,
       "yes_ask": 52,
       "yes_bid": 42
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-RYBL",
       "volume": 323,
-      "volume_24h": 152,
+      "volume_24h": 149,
       "yes_ask": 34,
       "yes_bid": 32
     },
@@ -447,15 +447,15 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
-      "no_ask": 97,
-      "no_bid": 92,
+      "no_ask": 98,
+      "no_bid": 91,
       "open_interest": 52,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-SHVA",
       "volume": 52,
-      "volume_24h": 52,
-      "yes_ask": 8,
-      "yes_bid": 3
+      "volume_24h": 0,
+      "yes_ask": 9,
+      "yes_bid": 2
     },
     "KXNASCARTOP5-COOOS26-TOGI": {
       "last_price": 7,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-04T22:45:21.264804+00:00",
+  "scraped_at": "2026-09-04T23:45:20.397874+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
