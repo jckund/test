@@ -741,14 +741,21 @@ def persist_trades_window(series_dir: str, atrades: list, hours: int = TRADES_WI
 
 
 def update_activity(series_dir: str, new_trades: list, race_id: str) -> list:
-    """Accumulate a FULL-EVENT trade feed at <series>/activity.json.
+    """Accumulate a trade feed at <series>/activity.json.
 
-    Unlike a rolling snapshot, this merges each run's trades (deduped by
-    trade_id) into whatever the file already holds, so the feed spans the whole
-    event — from the first scrape through completion. It resets automatically
-    when the race changes (the stored ``race`` id no longer matches), so a new
-    weekend starts clean. Capped at ACTIVITY_MAX and written compact to keep the
-    committed file manageable."""
+    Merges each run's trades (deduped by trade_id) into whatever the file
+    already holds, resetting when the race changes (the stored ``race`` id no
+    longer matches). Capped at ACTIVITY_MAX and written compact.
+
+    NOTE: activity.json is GITIGNORED (see .gitignore for the measurements) —
+    it was 69.5MB of blob storage because a ~700KB file rewritten wholesale
+    every run cannot be delta-compressed. Because a CI runner checks out a tree
+    without it, the accumulation below only spans a single run there; it still
+    accumulates across runs locally. That is fine: nothing in CI or the
+    dashboard reads this file, and the durable trade record lives in the
+    committed trades_window.jsonl (rolling 6h, every trade) and alerts.jsonl
+    (>$100). Don't re-commit it to restore cross-run accumulation without
+    first shrinking ACTIVITY_MAX by an order of magnitude."""
     path = os.path.join(series_dir, "activity.json")
     keep: dict = {}
     if os.path.exists(path):

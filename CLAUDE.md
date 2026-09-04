@@ -151,6 +151,25 @@ gb.write_book("caesars.json", "Caesars",
 gb.write_mfr("mfr_caesars.json", "Caesars", which_make_3way, {"Chevrolet":..,"Ford":..,"Toyota":..})
 gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
+
+**NEVER retype a board — pass the raw paste through `parse_board.py` (IMPORTANT
+— cost).** Hand-transcribing ~40 driver rows into tuples, per tier per book, is
+the most expensive thing in a race weekend and the easiest place to fork a driver
+or fat-finger a price. Paste the board verbatim into a string instead:
+```python
+import parse_board as pb, gen_books as gb
+WIN = """<paste the winner board exactly as it came, no cleanup>"""
+T3  = """<paste the top-3 board>"""
+gb.write_book("caesars.json", "Caesars", {"winner": (pb.rows(WIN), 1), "top3": (pb.rows(T3), 3)})
+```
+`pb.rows()` handles the layouts books actually produce — `Name +650`, `+650 Name`,
+name and odds on alternating lines (what copying a web board gives you), `|`/`,`/tab
+separated, plus decimal (`7.50`) and fractional (`13/2`) odds — skips column headers,
+canonicalizes via `gen_books.canon`, and **raises naming the offending line** if a
+driver is unknown, so a typo fails loudly instead of silently forking a driver. Pass
+`strict=False` to skip bad rows, or `pb.rows_with_errors()` to inspect them. Sanity-
+check a paste from the shell with `python3 parse_board.py board.txt`. Validated by
+round-tripping every committed book × 5 layouts (75/75 exact).
 **HARD RULE — NEVER act on a paste without an explicit go (STANDING, NON-NEGOTIABLE).**
 A book/model paste — including a single `"updated <Book>"` or `"<Book>: <paste>"`, and
 including a re-sent SG/FanDuel/Kalshi drop — is **collect-only**. Acknowledge it with one
@@ -323,6 +342,25 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
     ~400MB already in the pack stays there short of a history rewrite.
   - **Alert volume.** `evwatch.py` dedups on a 2¢ price band, so faster polling
     doesn't turn 1¢ jitter into extra pings.
+  Measured over the full history (2434 commits, Jul 8 – Sep 4; 423MB total):
+  `history.jsonl` 249MB, `activity.json` 69.5MB, `CHANGES.md` 61.8MB,
+  `latest.json` 11.3MB, everything else ~31MB. The driver is **file size ×
+  number of versions** — these are rewritten or grow monotonically, so git
+  re-stores a near-full blob every run. All four are now capped or gitignored.
+  Re-measure with a bare clone + `git rev-list --objects HEAD | git cat-file
+  --batch-check='%(objecttype) %(objectname) %(objectsize:disk) %(rest)'`
+  summed by path — don't guess from working-tree sizes, which understate it
+  enormously.
+- **Token cost, in rough order.** The dollars are Claude sessions, not CI:
+  1. **Board transcription** — always `parse_board.py`, never retype (above).
+     Prefer text/CSV over screenshots; images cost ~1–2k tokens each.
+  2. **Turn count** — every tool call re-sends the whole context, so batching
+     work into one command beats several small ones.
+  3. **Session length** — context re-sends every turn, so one 20-turn session
+     costs far more than four 5-turn ones. Start a fresh session per distinct
+     task (deploy batch vs. analysis ask) rather than one per race weekend.
+  4. **Model** — transcription, deploys and staleness sweeps don't need the
+     largest model.
 - **What actually wakes a Claude session.** Nothing does automatically. `evwatch.py`
   is a *human* notification path — Pushover push and an @mention comment that GitHub
   emails. A session only wakes if one is explicitly subscribed to `WATCH_PR_NUMBER`
