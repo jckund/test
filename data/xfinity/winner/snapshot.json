@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-BRCR",
       "volume": 7883,
-      "volume_24h": 127,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -304,18 +304,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-JUAL": {
-      "last_price": 21,
+      "last_price": 22,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 80,
-      "no_bid": 78,
-      "open_interest": 11111,
+      "no_ask": 77,
+      "no_bid": 76,
+      "open_interest": 11121,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
-      "volume": 11505,
-      "volume_24h": 4125,
-      "yes_ask": 22,
-      "yes_bid": 20
+      "volume": 11515,
+      "volume_24h": 4135,
+      "yes_ask": 24,
+      "yes_bid": 23
     },
     "KXNASCARRACE-FLE26-KYSI": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-03T23:48:00.998939+00:00",
+  "scraped_at": "2026-09-04T00:33:41.915529+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
