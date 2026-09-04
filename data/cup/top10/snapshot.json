@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 61,
-      "no_bid": 59,
+      "no_bid": 60,
       "open_interest": 2258,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BRKE",
       "volume": 2258,
-      "volume_24h": 1331,
-      "yes_ask": 41,
+      "volume_24h": 1328,
+      "yes_ask": 40,
       "yes_bid": 39
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 53,
       "no_bid": 40,
-      "open_interest": 13,
+      "open_interest": 23,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBE",
-      "volume": 13,
+      "volume": 23,
       "volume_24h": 2,
       "yes_ask": 60,
       "yes_bid": 47
@@ -209,7 +209,7 @@
       "last_price": 31,
       "liquidity": 0.0,
       "name": "Corey Heim",
-      "no_ask": 74,
+      "no_ask": 75,
       "no_bid": 69,
       "open_interest": 774,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 774,
       "volume_24h": 142,
       "yes_ask": 31,
-      "yes_bid": 26
+      "yes_bid": 25
     },
     "KXNASCARTOP10-COOOS26-COWA": {
       "last_price": 3,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-ERJO",
       "volume": 2747,
-      "volume_24h": 805,
+      "volume_24h": 803,
       "yes_ask": 43,
       "yes_bid": 36
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-TOGI",
       "volume": 88,
-      "volume_24h": 0,
+      "volume_24h": 37,
       "yes_ask": 9,
       "yes_bid": 6
     },
@@ -514,15 +514,15 @@
       "yes_bid": 61
     },
     "KXNASCARTOP10-COOOS26-WIBY": {
-      "last_price": 57,
+      "last_price": 55,
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 46,
       "no_bid": 45,
-      "open_interest": 1070,
+      "open_interest": 1080,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-WIBY",
-      "volume": 1075,
+      "volume": 1085,
       "volume_24h": 25,
       "yes_ask": 55,
       "yes_bid": 54
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-ZASM",
       "volume": 91,
-      "volume_24h": 0,
+      "volume_24h": 36,
       "yes_ask": 13,
       "yes_bid": 10
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-04T22:15:19.295649+00:00",
+  "scraped_at": "2026-09-04T22:30:22.279993+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
