@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-05T20:50:53Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Top 10 | Jake Finch | 25c | 26.31c | +280 | 41.9% | **+59.1%** |
+| Fleetio 200 | Win | Austin Hill | 5c | 5.33c | +1775 | 7.5% | **+41.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-05T20:45:53Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
