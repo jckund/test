@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-05T18:20:52Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Win | Austin Hill | 5c | 5.33c | +1775 | 7.5% | **+41.0%** |
+| Fleetio 200 | Win | Sheldon Creed | 7c | 7.46c | +1241 | 10.3% | **+37.6%** |
+| Fleetio 200 | Win | Sam Mayer | 4c | 4.27c | +2243 | 5.7% | **+34.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-05T17:35:50Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
