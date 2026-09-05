@@ -13,15 +13,15 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Anthony Alfredo",
-      "no_ask": 97,
-      "no_bid": 90,
+      "no_ask": 95,
+      "no_bid": 91,
       "open_interest": 361,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-ANAL",
       "volume": 483,
-      "volume_24h": 134,
-      "yes_ask": 10,
-      "yes_bid": 3
+      "volume_24h": 0,
+      "yes_ask": 9,
+      "yes_bid": 5
     },
     "KXNASCARTOP3-FLE26-AUHI": {
       "last_price": 24,
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-BRCR",
       "volume": 6377,
-      "volume_24h": 201,
+      "volume_24h": 450,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-BRJO",
       "volume": 1398,
-      "volume_24h": 950,
+      "volume_24h": 1075,
       "yes_ask": 29,
       "yes_bid": 27
     },
@@ -108,18 +108,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-FLE26-CAKV": {
-      "last_price": 36,
+      "last_price": 31,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 68,
-      "no_bid": 66,
+      "no_ask": 71,
+      "no_bid": 69,
       "open_interest": 1811,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-CAKV",
-      "volume": 1811,
-      "volume_24h": 862,
-      "yes_ask": 34,
-      "yes_bid": 32
+      "volume": 1842,
+      "volume_24h": 892,
+      "yes_ask": 31,
+      "yes_bid": 29
     },
     "KXNASCARTOP3-FLE26-CODA": {
       "last_price": 25,
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 47,
-      "no_bid": 46,
+      "no_bid": 45,
       "open_interest": 1191,
       "status": "active",
       "ticker": "KXNASCARTOP3-FLE26-JUAL",
       "volume": 1209,
-      "volume_24h": 638,
-      "yes_ask": 54,
+      "volume_24h": 666,
+      "yes_ask": 55,
       "yes_bid": 53
     },
     "KXNASCARTOP3-FLE26-KYSI": {
@@ -433,7 +433,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Rajah Caruth",
-      "no_ask": 100,
+      "no_ask": 97,
       "no_bid": 94,
       "open_interest": 0,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 6,
-      "yes_bid": 0
+      "yes_bid": 3
     },
     "KXNASCARTOP3-FLE26-RYEL": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-05T07:03:29.023016+00:00",
+  "scraped_at": "2026-09-05T07:17:53.961614+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "top3"
 }
