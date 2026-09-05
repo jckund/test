@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-05T23:35:50Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Top 3 | Parker Retzlaff | 9c | 9.57c | +945 | 15.5% | **+61.5%** |
+| Fleetio 200 | Win | Rajah Caruth | 2c | 2.14c | +4579 | 3.2% | **+51.1%** |
+| Fleetio 200 | Top 3 | Sheldon Creed | 16c | 16.94c | +490 | 23.3% | **+37.3%** |
+| Fleetio 200 | Win | Taylor Gray | 4c | 4.27c | +2243 | 5.8% | **+36.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-05T23:00:56Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
