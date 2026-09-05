@@ -29,10 +29,10 @@
       "name": "Austin Hill",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 6649,
+      "open_interest": 6712,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-AUHI",
-      "volume": 6649,
+      "volume": 6712,
       "volume_24h": 4850,
       "yes_ask": 6,
       "yes_bid": 5
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 72,
-      "no_bid": 71,
+      "no_bid": 70,
       "open_interest": 18447,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-JUAL",
       "volume": 19629,
       "volume_24h": 5098,
-      "yes_ask": 29,
+      "yes_ask": 30,
       "yes_bid": 28
     },
     "KXNASCARRACE-FLE26-KYSI": {
@@ -360,15 +360,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FLE26-MAMA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Mason Maggio",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 187,
       "status": "active",
       "ticker": "KXNASCARRACE-FLE26-MAMA",
-      "volume": 0,
+      "volume": 187,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-05T08:03:00.404909+00:00",
+  "scraped_at": "2026-09-05T08:18:10.111703+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fle26",
   "tier": "winner"
 }
