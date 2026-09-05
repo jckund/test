@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-05T21:15:51Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Win | Brent Crews | 3c | 3.20c | +3021 | 6.4% | **+98.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-05T20:55:52Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
