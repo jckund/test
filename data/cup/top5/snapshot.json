@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBE",
       "volume": 254,
-      "volume_24h": 5,
+      "volume_24h": 3,
       "yes_ask": 34,
       "yes_bid": 30
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBU",
       "volume": 1082,
-      "volume_24h": 25,
+      "volume_24h": 65,
       "yes_ask": 25,
       "yes_bid": 24
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DASU",
       "volume": 58,
-      "volume_24h": 43,
+      "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 5
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DEHA",
       "volume": 521,
-      "volume_24h": 25,
+      "volume_24h": 23,
       "yes_ask": 49,
       "yes_bid": 45
     },
@@ -290,15 +290,15 @@
       "yes_bid": 14
     },
     "KXNASCARTOP5-COOOS26-JOBE": {
-      "last_price": 13,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 93,
       "no_bid": 89,
-      "open_interest": 231,
+      "open_interest": 307,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-JOBE",
-      "volume": 231,
+      "volume": 307,
       "volume_24h": 36,
       "yes_ask": 11,
       "yes_bid": 7
@@ -433,15 +433,15 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 97,
+      "no_ask": 94,
       "no_bid": 89,
-      "open_interest": 17,
+      "open_interest": 60,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-RYPR",
-      "volume": 17,
-      "volume_24h": 0,
+      "volume": 60,
+      "volume_24h": 43,
       "yes_ask": 11,
-      "yes_bid": 3
+      "yes_bid": 6
     },
     "KXNASCARTOP5-COOOS26-SHVA": {
       "last_price": 9,
@@ -509,23 +509,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-TYRE",
       "volume": 1799,
-      "volume_24h": 125,
+      "volume_24h": 102,
       "yes_ask": 47,
       "yes_bid": 46
     },
     "KXNASCARTOP5-COOOS26-WIBY": {
-      "last_price": 32,
+      "last_price": 33,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 71,
-      "no_bid": 67,
-      "open_interest": 300,
+      "no_ask": 67,
+      "no_bid": 66,
+      "open_interest": 841,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-WIBY",
-      "volume": 300,
+      "volume": 841,
       "volume_24h": 284,
-      "yes_ask": 33,
-      "yes_bid": 29
+      "yes_ask": 34,
+      "yes_bid": 33
     },
     "KXNASCARTOP5-COOOS26-ZASM": {
       "last_price": 7,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-05T16:45:20.428462+00:00",
+  "scraped_at": "2026-09-05T17:30:21.906342+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
