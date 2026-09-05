@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 95,
-      "no_bid": 88,
+      "no_bid": 89,
       "open_interest": 62,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-BRKE",
       "volume": 62,
       "volume_24h": 0,
-      "yes_ask": 12,
+      "yes_ask": 11,
       "yes_bid": 5
     },
     "KXNASCARTOP3-COOOS26-BUWA": {
@@ -99,10 +99,10 @@
       "name": "Bubba Wallace",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 197,
+      "open_interest": 211,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-BUWA",
-      "volume": 197,
+      "volume": 211,
       "volume_24h": 36,
       "yes_ask": 14,
       "yes_bid": 13
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-CHBR",
       "volume": 1177,
-      "volume_24h": 68,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 26
     },
@@ -262,15 +262,15 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-COOOS26-DEHA": {
-      "last_price": 37,
+      "last_price": 36,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 66,
       "no_bid": 64,
-      "open_interest": 331,
+      "open_interest": 345,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-DEHA",
-      "volume": 331,
+      "volume": 345,
       "volume_24h": 99,
       "yes_ask": 36,
       "yes_bid": 34
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 80,
-      "no_bid": 75,
+      "no_bid": 76,
       "open_interest": 75,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYBL",
       "volume": 75,
       "volume_24h": 8,
-      "yes_ask": 25,
+      "yes_ask": 24,
       "yes_bid": 20
     },
     "KXNASCARTOP3-COOOS26-RYPR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-05T15:15:55.379616+00:00",
+  "scraped_at": "2026-09-05T15:30:23.202921+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
