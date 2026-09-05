@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-05T22:40:53Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Fleetio 200 | Win | Rajah Caruth | 2c | 2.14c | +4579 | 3.2% | **+51.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-05T22:35:50Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
