@@ -248,17 +248,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-COOOS26-DASU": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 99,
-      "no_bid": 91,
-      "open_interest": 0,
+      "no_bid": 93,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-DASU",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 9,
+      "volume": 10,
+      "volume_24h": 10,
+      "yes_ask": 7,
       "yes_bid": 1
     },
     "KXNASCARTOP3-COOOS26-DEHA": {
@@ -346,16 +346,16 @@
       "yes_bid": 26
     },
     "KXNASCARTOP3-COOOS26-MIMC": {
-      "last_price": 5,
+      "last_price": 7,
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 99,
       "no_bid": 93,
-      "open_interest": 2,
+      "open_interest": 15,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-MIMC",
-      "volume": 2,
-      "volume_24h": 0,
+      "volume": 15,
+      "volume_24h": 13,
       "yes_ask": 7,
       "yes_bid": 1
     },
@@ -500,16 +500,16 @@
       "yes_bid": 10
     },
     "KXNASCARTOP3-COOOS26-TYRE": {
-      "last_price": 36,
+      "last_price": 41,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 64,
       "no_bid": 59,
-      "open_interest": 2436,
+      "open_interest": 2441,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-TYRE",
-      "volume": 2480,
-      "volume_24h": 496,
+      "volume": 2485,
+      "volume_24h": 510,
       "yes_ask": 41,
       "yes_bid": 36
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-06T04:00:22.715992+00:00",
+  "scraped_at": "2026-09-06T04:15:18.885148+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
