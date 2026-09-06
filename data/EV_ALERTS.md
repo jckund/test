@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-06T23:10:19Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 10 | Ricky Stenhouse | Yes | 1c | 1.07c | +9252 | 13.0% | **+1116.0%** |
+| Cook Out Southern 500 | Top 10 | Connor Zilisch | Yes | 1c | 1.07c | +9252 | 11.5% | **+971.2%** |
+| Cook Out Southern 500 | Win | William Byron | Yes | 3c | 3.20c | +3021 | 5.0% | **+54.9%** |
+| Cook Out Southern 500 | Win | Denny Hamlin | Yes | 13c | 13.79c | +625 | 19.2% | **+39.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 10 (2026-09-06T23:00:25Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
