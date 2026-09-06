@@ -3,11 +3,14 @@
 
 This is the CI-side twin of the dashboard's "Kalshi vs SG" tab: for each series
 that has both a Kalshi snapshot and an SG model book, it prices buying Kalshi
-YES at its ask -- FEE-INCLUSIVE, matching index.html's netCost() and alerts.py's
-net_american_odds() -- against SG's no-vig probability, and flags anything at or
-above ``EV_ALERT_THRESH`` percent.
+YES at its ask AND NO at its ask -- FEE-INCLUSIVE, matching index.html's
+netCost() and alerts.py's net_american_odds() -- against SG's no-vig
+probability (p for Yes, 1-p for No), and flags anything at or above
+``EV_ALERT_THRESH`` percent. Both sides are scanned because when SG rates a
+driver far BELOW Kalshi the tradeable edge is on NO; a YES-only scan showed
+that as a deeply negative line and never alerted on it.
 
-Only *new* lines alert. Dedup key is (series, tier, driver, yes_price_band), so
+Only *new* lines alert. Dedup key is (series, tier, driver, side, price_band), so
 a line that was already qualifying at the same price on the previous run stays
 quiet; the same driver/market at a MATERIALLY different price is a new line and
 alerts again (the price moving is the point). The band is ``EV_DEDUP_BUCKET_C``
@@ -89,6 +92,20 @@ def yes_cents(m: dict):
     return None
 
 
+def no_cents(m: dict):
+    """Cost in cents to buy NO, as the dashboard's priceNo() resolves it:
+    no_ask, then no_bid, then the yes-side complement."""
+    for k in ("no_ask", "no_bid"):
+        v = m.get(k)
+        if isinstance(v, (int, float)) and 0 < v < 100:
+            return float(v)
+    yb = m.get("yes_bid")
+    if isinstance(yb, (int, float)) and 0 < yb < 100:
+        return float(100 - yb)
+    y = yes_cents(m)
+    return None if y is None else float(100 - y)
+
+
 def net_cents(c: float):
     """Fee-inclusive cost in cents of one contract quoted at `c` cents."""
     p = c / 100.0
@@ -157,32 +174,43 @@ def scan():
                 if isinstance(d.get("novig"), (int, float)):
                     model[norm_name(d.get("name", ""))] = float(d["novig"])
             for m in (snap.get("markets") or {}).values():
-                c = yes_cents(m)
-                if c is None:
-                    continue
                 p = model.get(norm_name(m.get("name", "")))
                 if p is None:
                     continue
-                cost = net_cents(c) / 100.0
-                if not 0 < cost < 1:
-                    continue
-                ev = (p / cost - 1) * 100.0
-                if ev < THRESH:
-                    continue
-                # Dedup identity: same driver, same market, same price BAND.
-                # Banding is what keeps the poll interval and the ping rate
-                # decoupled. Keying on the exact cent meant a line oscillating
-                # 7c/8c/7c re-alerted on every flip, so polling twice as often
-                # produced roughly twice the pings for the same one bet. Rounding
-                # to DEDUP_BUCKET_C absorbs that jitter while a genuine move
-                # (which crosses a band) still alerts.
-                key = f"{skey}|{tier}|{m.get('name')}|{_band(c)}"
-                hits.append((key, {
-                    "series": skey, "race": race, "tier": tier,
-                    "driver": m.get("name"), "yes_c": c, "net_c": net_cents(c),
-                    "sg": p * 100, "ev": ev,
-                    "volume": m.get("volume"), "open_interest": m.get("open_interest"),
-                }))
+                # Both sides are tradeable, and they are not redundant: when SG
+                # rates a driver well BELOW Kalshi the edge is on NO, which a
+                # YES-only scan reports as a deeply negative line and never
+                # flags. Fair prob of the side bought is p for Yes, 1-p for No;
+                # the fee formula is symmetric in the price, so net_cents()
+                # applies unchanged to a No quote.
+                for side, c, fair in (("Yes", yes_cents(m), p),
+                                      ("No", no_cents(m), 1.0 - p)):
+                    if c is None:
+                        continue
+                    cost = net_cents(c) / 100.0
+                    if not 0 < cost < 1:
+                        continue
+                    ev = (fair / cost - 1) * 100.0
+                    if ev < THRESH:
+                        continue
+                    # Dedup identity: same driver, same market, same side, same
+                    # price BAND. Banding is what keeps the poll interval and the
+                    # ping rate decoupled. Keying on the exact cent meant a line
+                    # oscillating 7c/8c/7c re-alerted on every flip, so polling
+                    # twice as often produced roughly twice the pings for the
+                    # same one bet. Rounding to DEDUP_BUCKET_C absorbs that
+                    # jitter while a genuine move (which crosses a band) still
+                    # alerts. Yes keys keep their original shape so state
+                    # written before the No side existed still suppresses them.
+                    tag = "" if side == "Yes" else f"{side}|"
+                    key = f"{skey}|{tier}|{m.get('name')}|{tag}{_band(c)}"
+                    hits.append((key, {
+                        "series": skey, "race": race, "tier": tier,
+                        "driver": m.get("name"), "side": side,
+                        "price_c": c, "net_c": net_cents(c),
+                        "sg": fair * 100, "sg_yes": p * 100, "ev": ev,
+                        "volume": m.get("volume"), "open_interest": m.get("open_interest"),
+                    }))
     return hits
 
 
@@ -225,8 +253,8 @@ def post_webhook(body: str) -> str:
 
 def pushover_body(rows) -> str:
     """Compact one-line-per-row body that fits Pushover's 1024-char cap."""
-    lines = [f"{r['driver']} - {TIER_LABEL.get(r['tier'], r['tier'])} - "
-             f"{r['yes_c']:.0f}c {american(r['net_c'])} net - "
+    lines = [f"{r['driver']} - {TIER_LABEL.get(r['tier'], r['tier'])} {r['side']} - "
+             f"{r['price_c']:.0f}c {american(r['net_c'])} net - "
              f"SG {r['sg']:.1f}% - EV +{r['ev']:.0f}%" for r in rows]
     kept, used = [], 0
     for ln in lines:
@@ -291,12 +319,12 @@ def prepend_md(header: str, body: str) -> None:
 
 
 def fmt(rows) -> str:
-    lines = [f"| Race | Market | Driver | Yes | Net | Net odds | SG | EV |",
-             f"|---|---|---|---|---|---|---|---|"]
+    lines = [f"| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |",
+             f"|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         lines.append(
             f"| {r['race']} | {TIER_LABEL.get(r['tier'], r['tier'])} | {r['driver']} "
-            f"| {r['yes_c']:.0f}c | {r['net_c']:.2f}c | {american(r['net_c'])} "
+            f"| {r['side']} | {r['price_c']:.0f}c | {r['net_c']:.2f}c | {american(r['net_c'])} "
             f"| {r['sg']:.1f}% | **+{r['ev']:.1f}%** |")
     return "\n".join(lines)
 
