@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-06T21:50:18Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Win | Ryan Preece | Yes | 1c | 1.07c | +9252 | 2.0% | **+87.1%** |
+| Cook Out Southern 500 | Top 10 | Tyler Reddick | No | 21c | 22.16c | +351 | 36.2% | **+63.5%** |
+| Cook Out Southern 500 | Top 3 | Josh Berry | No | 66c | 67.57c | -208 | 97.1% | **+43.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-06T21:40:19Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
