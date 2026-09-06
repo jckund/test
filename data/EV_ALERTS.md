@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-06T22:35:17Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 20 | Cody Ware | Yes | 1c | 1.07c | +9252 | 4.8% | **+347.1%** |
+| Cook Out Southern 500 | Win | Chase Briscoe | Yes | 5c | 5.33c | +1775 | 12.7% | **+138.3%** |
+| Cook Out Southern 500 | Top 5 | AJ Allmendinger | No | 66c | 67.57c | -208 | 98.0% | **+45.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-06T22:30:23Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
