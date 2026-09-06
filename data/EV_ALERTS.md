@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-06T14:25:18Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 3 | Daniel Suárez | 6c | 6.39c | +1464 | 8.4% | **+31.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-06T13:55:17Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
