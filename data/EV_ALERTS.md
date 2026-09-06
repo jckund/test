@@ -1,3 +1,22 @@
+### New Kalshi vs SG lines >= +30% EV — 10 (2026-09-06T23:00:25Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 20 | Corey Heim | Yes | 4c | 4.27c | +2243 | 60.5% | **+1316.8%** |
+| Cook Out Southern 500 | Top 20 | Noah Gragson | Yes | 4c | 4.27c | +2243 | 29.4% | **+589.0%** |
+| Cook Out Southern 500 | Top 20 | Austin Cindric | Yes | 26c | 27.35c | +266 | 65.4% | **+139.2%** |
+| Cook Out Southern 500 | Top 20 | Daniel Suárez | Yes | 26c | 27.35c | +266 | 59.4% | **+117.0%** |
+| Cook Out Southern 500 | Top 20 | Ross Chastain | Yes | 26c | 27.35c | +266 | 54.8% | **+100.2%** |
+| Cook Out Southern 500 | Top 20 | Alex Bowman | Yes | 26c | 27.35c | +266 | 51.5% | **+88.2%** |
+| Cook Out Southern 500 | Top 20 | Kyle Larson | Yes | 46c | 47.74c | +109 | 74.4% | **+55.8%** |
+| Cook Out Southern 500 | Top 20 | Christopher Bell | Yes | 46c | 47.74c | +109 | 74.0% | **+54.9%** |
+| Cook Out Southern 500 | Top 20 | William Byron | Yes | 46c | 47.74c | +109 | 71.5% | **+49.8%** |
+| Cook Out Southern 500 | Top 20 | Joey Logano | Yes | 46c | 47.74c | +109 | 69.3% | **+45.2%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 6 (2026-09-06T22:55:18Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
