@@ -1,3 +1,18 @@
+### New Kalshi vs SG lines >= +30% EV — 6 (2026-09-06T22:55:18Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 10 | Ty Dillon | Yes | 1c | 1.07c | +9252 | 3.7% | **+249.7%** |
+| Cook Out Southern 500 | Win | Brad Keselowski | Yes | 1c | 1.07c | +9252 | 2.9% | **+167.5%** |
+| Cook Out Southern 500 | Top 5 | Chris Buescher | Yes | 6c | 6.39c | +1464 | 14.5% | **+126.3%** |
+| Cook Out Southern 500 | Win | Ryan Preece | Yes | 1c | 1.07c | +9252 | 2.0% | **+87.1%** |
+| Cook Out Southern 500 | Win | Denny Hamlin | Yes | 10c | 10.63c | +841 | 19.2% | **+80.9%** |
+| Cook Out Southern 500 | Top 10 | Chris Buescher | Yes | 19c | 20.08c | +398 | 32.2% | **+60.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-06T22:50:21Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
