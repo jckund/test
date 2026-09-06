@@ -38,17 +38,17 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-COOOS26-AUCI": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 95,
-      "no_bid": 91,
-      "open_interest": 0,
+      "no_bid": 92,
+      "open_interest": 21,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-AUCI",
-      "volume": 0,
+      "volume": 21,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 8,
       "yes_bid": 5
     },
     "KXNASCARTOP3-COOOS26-AUDI": {
@@ -265,7 +265,7 @@
       "last_price": 41,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 61,
+      "no_ask": 63,
       "no_bid": 58,
       "open_interest": 601,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 651,
       "volume_24h": 358,
       "yes_ask": 42,
-      "yes_bid": 39
+      "yes_bid": 37
     },
     "KXNASCARTOP3-COOOS26-ERJO": {
       "last_price": 16,
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 92,
-      "no_bid": 86,
+      "no_bid": 87,
       "open_interest": 76,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-ROCH",
       "volume": 76,
       "volume_24h": 64,
-      "yes_ask": 14,
+      "yes_ask": 13,
       "yes_bid": 8
     },
     "KXNASCARTOP3-COOOS26-RYBL": {
@@ -435,10 +435,10 @@
       "name": "Ryan Preece",
       "no_ask": 95,
       "no_bid": 91,
-      "open_interest": 44,
+      "open_interest": 65,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYPR",
-      "volume": 44,
+      "volume": 65,
       "volume_24h": 43,
       "yes_ask": 9,
       "yes_bid": 5
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-06T06:15:18.043164+00:00",
+  "scraped_at": "2026-09-06T06:30:20.980510+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
