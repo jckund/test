@@ -297,15 +297,15 @@
 
     <div id="cmp-mfr-panel" style="display:none">
       <div class="cmp-note">
-        <b>Implied</b> odds for the top-finishing driver of each manufacturer, derived from the live
-        <b>Kalshi winner market</b>. Each driver's win probability (yes-price midpoint) is normalized
-        within its make, so <b>P(top of make)</b> = driver win prob ÷ sum of the make's win probs.
-        The <b>Which make wins</b> card normalizes each make's total win prob across the three makes.
-        Book <b>Top&nbsp;[Make]&nbsp;Driver</b> markets and the <b>EV</b> (expected return on a $1 bet
-        at the book's odds) appear alongside. EV is <b>worst-case</b> — it prices against Kalshi's
-        conservative no-side chance, not the displayed midpoint. Cells shaded
-        <span class="edge pos">green</span> are <b>+EV</b>: the book's line is longer than the
-        Kalshi-implied fair line.
+        <b>Fair value on this tab is SG</b> — its <b>no-vig</b> price for the same market, since a
+        book prices "which make wins" and <b>Top&nbsp;[Make]&nbsp;Driver</b> as their own markets.
+        <b>Kalshi implied</b> is kept alongside as a reference: each driver's win probability
+        (yes-price midpoint) normalized within its make, and each make's total normalized across the
+        three makes. It stands in as fair for anything SG doesn't post. <b>EV</b> is the expected
+        return on a $1 bet at the book's odds against that SG fair line; cells shaded
+        <span class="edge pos">green</span> are <b>+EV</b>. For each row the
+        <span class="best-swatch"></span> <b>highlighted</b> cell is the <b>best (longest-payout)
+        price</b> across the books (SG is a model, not a bet, so it's excluded). Book odds include vig.
       </div>
       <div class="cmp-fresh" id="mfr-fresh"></div>
       <section class="card">
@@ -325,12 +325,14 @@
 
     <div id="cmp-team-panel" style="display:none">
       <div class="cmp-note">
-        <b>Implied</b> odds by <b>race team</b>, derived from the live <b>Kalshi winner market</b>.
-        The <b>Which team wins</b> card sums each team's driver win probabilities and normalizes across
-        teams; book <b>winning-team</b> markets and the <b>EV</b> (expected return on a $1 bet at the
-        book's odds, priced against Kalshi's <b>worst-case no-side</b> team chance) appear alongside, with
-        <span class="edge pos">green</span> marking <b>+EV</b> (book line longer than the
-        Kalshi-implied fair line). The per-team cards below normalize win prob <b>within</b> each team to
+        <b>Fair value on this tab is SG</b> — its <b>no-vig</b> winning-team price, since the books
+        post that as its own market. <b>Kalshi implied</b> stays alongside as a reference (each team's
+        driver win probabilities summed and normalized across teams) and stands in as fair for any team
+        SG doesn't list. <b>EV</b> is the expected return on a $1 bet at the book's odds against the SG
+        fair line, with <span class="edge pos">green</span> marking <b>+EV</b>. For each team the
+        <span class="best-swatch"></span> <b>highlighted</b> cell is the <b>best (longest-payout)
+        price</b> across <b>Kalshi (Yes) and the books</b> — SG is a model, not a bet, so it's excluded.
+        The per-team cards below normalize win prob <b>within</b> each team to
         imply its top-finishing driver (Kalshi only — books don't post per-team driver markets).
       </div>
       <div class="cmp-fresh" id="team-fresh"></div>
@@ -1313,7 +1315,7 @@ function renderManufacturers(snap) {
     if (p == null) continue;
     const mfr = MFR_KEY[normName(m.name)];
     if (!mfr) { unmapped.push(m.name); continue; }
-    groups[mfr].push({ name: m.name, p, pw: worstProb(m) ?? p });
+    groups[mfr].push({ name: m.name, p });
   }
   const present = MFR_ORDER.filter((k) => groups[k].length);
   $("mcount").textContent = present.reduce((a, k) => a + groups[k].length, 0) + " drivers · " + present.length + " makes";
@@ -1334,6 +1336,25 @@ function renderManufacturers(snap) {
   // Which books carry a winning-manufacturer line, and any per-make market.
   const winnerBooks = books.filter((bk) => MFRDATA[bk.key].winner && Object.keys(MFRDATA[bk.key].winner).length);
 
+  // SG is the fair anchor on this tab, not the Kalshi driver-sum. A book prices
+  // "which make wins" / "top make driver" as its own market; SG's no-vig number
+  // is the like-for-like fair line, while the driver-sum only imputes one from
+  // the winner market. Kept as a reference column, and used as the fallback fair
+  // whenever SG hasn't posted that make or driver.
+  const sgm = MFRDATA.sg || null;
+  const sgMakeFair = {};                                   // make -> novig
+  for (const [mk, fm] of Object.entries((sgm && sgm.winner) || {})) {
+    if (typeof fm.novig === "number") sgMakeFair[mk] = fm.novig;
+  }
+  const sgDriverFair = {};                                 // make -> driverKey -> novig
+  for (const [mk, obj] of Object.entries((sgm && sgm.makes) || {})) {
+    const map = {};
+    for (const dr of obj.drivers || []) {
+      if (typeof dr.novig === "number") map[normName(dr.name)] = dr.novig;
+    }
+    sgDriverFair[mk] = map;
+  }
+
   // Freshness line per available book.
   $("mfr-fresh").innerHTML = books.map((bk) => {
     const ts = bookTime(MFRDATA[bk.key]);
@@ -1344,78 +1365,89 @@ function renderManufacturers(snap) {
   const dash = `<span class="muted">—</span>`;
   const evCell = (e) => e == null ? dash
     : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
-  // A book's (odds, EV) pair of cells; both tinted when the bet is +EV
-  // (book line longer than the Kalshi-implied fair line, i.e. EV > 0).
-  const bookPair = (american, ev) => {
+  // A book's (odds, EV) pair of cells; both tinted when the bet is +EV (book
+  // line longer than the fair line, i.e. EV > 0). The odds cell also carries the
+  // best-price highlight when this book posts the longest payout in the row.
+  const bookPair = (american, ev, best) => {
     const tint = ev != null && ev > 0 ? " ev" : "";
-    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+    return `<td class="num${tint}${best ? " best" : ""}">${american == null ? dash : usAmerican(american)}</td>` +
       `<td class="num${tint}">${evCell(ev)}</td>`;
+  };
+  // Best (longest-payout) price in a row, same rule as the driver tabs: compare
+  // decimal payouts, skip model sources (SG isn't bettable), and only mark it
+  // when two or more books actually quote the market.
+  const decOf = (a) => (typeof a !== "number" ? null : a > 0 ? 1 + a / 100 : 1 + 100 / -a);
+  const bestPicker = (cells) => {
+    const decs = cells.map((c) => (c.model ? null : decOf(c.american)));
+    const pool = decs.filter((d) => d != null);
+    if (pool.length < 2) return () => false;
+    const max = Math.max(...pool);
+    return (i) => decs[i] != null && Math.abs(decs[i] - max) < 1e-9;
   };
 
   // "Which make wins": each make's summed win prob, normalized across the makes.
-  // Display uses midpoint (sum); EV uses the worst-case no-side prob (sumW).
+  // That driver-sum is now the reference column; SG's no-vig line is the fair
+  // one EV prices against (falling back to the driver-sum when SG lacks a make).
   const totals = present.map((k) => ({
     mfr: k,
     sum: groups[k].reduce((a, d) => a + d.p, 0),
-    sumW: groups[k].reduce((a, d) => a + d.pw, 0),
   }));
   const grand = totals.reduce((a, t) => a + t.sum, 0) || 1;
-  const grandW = totals.reduce((a, t) => a + t.sumW, 0) || 1;
   totals.sort((a, b) => b.sum - a.sum);
   $("mfr-win-head").innerHTML =
-    `<th class="l">Manufacturer</th><th>Win chance</th><th>Implied odds</th>` +
+    `<th class="l">Manufacturer</th><th>Fair chance (SG)</th><th>Fair odds</th><th>Kalshi implied</th>` +
     winnerBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("mfr-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
-    const pnW = t.sumW / grandW;
-    const bookCells = winnerBooks.map((bk) => {
+    const fair = sgMakeFair[t.mfr] != null ? sgMakeFair[t.mfr] : pn;
+    const cells = winnerBooks.map((bk) => {
       const fm = MFRDATA[bk.key].winner[t.mfr];
-      // EV of a $1 bet at the book's posted odds, against the SAME make prob shown
-      // as the fair line (midpoint-normalized). Worst-case normalization is not
-      // monotonic within a make — illiquid longshots collapse to 0 and inflate the
-      // favorite's share — so it must not drive EV. See top-make note below.
-      // Model sources (SG) are reference-only: show odds, no EV.
-      const ev = !bk.model && fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
-      return bookPair(fm ? fm.american : null, ev);
-    }).join("");
+      return { american: fm && typeof fm.american === "number" ? fm.american : null, model: !!bk.model };
+    });
+    const isBest = bestPicker(cells);
+    // EV of a $1 bet at the book's posted odds against SG's no-vig fair prob.
+    // Model sources (SG itself) are reference-only: show odds, no EV.
+    const bookCells = cells.map((c, i) =>
+      bookPair(c.american, c.model ? null : evPct(fair, c.american), isBest(i))).join("");
     return `<tr>
       <td class="l driver">${escapeHtml(t.mfr)}</td>
-      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
-        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
-      <td class="num">${usFromProb(pn)}</td>${bookCells}</tr>`;
+      <td><div class="prob"><div class="meter"><i style="width:${(fair * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(fair * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(fair)}</td>
+      <td class="num muted">${usFromProb(pn)}</td>${bookCells}</tr>`;
   }).join("");
   $("mfr-win-count").textContent = winnerBooks.length ? "" : (books.length ? "books list per-make only" : "");
 
-  // Per-make "top driver" tables: normalize Kalshi win prob within the make.
-  // Each book that carries this make gets an odds + EV column; EV values the
-  // book's posted payout against Kalshi's normalized (no-vig) chance for the make.
+  // Per-make "top driver" tables. Fair is SG's no-vig price for the same market;
+  // the Kalshi driver-sum (win prob normalized within the make) stays alongside
+  // as a reference, and stands in as fair for any driver SG doesn't list.
   const box = $("mfr-groups");
   box.innerHTML = "";
   for (const mfr of present) {
     const drivers = groups[mfr].slice().sort((a, b) => b.p - a.p);
     const sum = drivers.reduce((a, d) => a + d.p, 0) || 1;
-    const sumW = drivers.reduce((a, d) => a + d.pw, 0) || 1;
     const makeBooks = books.filter((bk) => byMake[bk.key][mfr]);
+    const sgFair = sgDriverFair[mfr] || {};
     const rows = drivers.map((d, i) => {
-      const pt = d.p / sum;              // displayed midpoint chance
-      const ptW = d.pw / sumW;           // worst-case chance for EV
-      const bookCells = makeBooks.map((bk) => {
+      const pt = d.p / sum;              // Kalshi-implied chance (reference)
+      const sgp = sgFair[normName(d.name)];
+      const fair = sgp != null ? sgp : pt;
+      const cells = makeBooks.map((bk) => {
         const dd = byMake[bk.key][mfr][normName(d.name)];
-        // EV against the displayed fair (midpoint-normalized within the make), NOT
-        // the worst-case normalization: collapsing illiquid longshots to 0 shrinks
-        // the denominator and falsely inflates the liquid favorite (e.g. Larson),
-        // flagging shorter-than-fair lines as +EV. Match EV to the shown fair line.
-        const ev = !bk.model && dd && typeof dd.american === "number" ? evPct(pt, dd.american) : null;
-        return bookPair(dd ? dd.american : null, ev);
-      }).join("");
+        return { american: dd && typeof dd.american === "number" ? dd.american : null, model: !!bk.model };
+      });
+      const isBest = bestPicker(cells);
+      const bookCells = cells.map((c, j) =>
+        bookPair(c.american, c.model ? null : evPct(fair, c.american), isBest(j))).join("");
       return `<tr>
         <td class="l rank ${i === 0 ? "top" : ""}">${i + 1}</td>
         <td class="l driver">${escapeHtml(d.name)}</td>
-        <td><div class="prob"><div class="meter"><i style="width:${(pt * 100).toFixed(1)}%"></i></div>
-          <span class="pct">${(pt * 100).toFixed(1)}%</span></div></td>
-        <td class="num">${usFromProb(pt)}</td>${bookCells}</tr>`;
+        <td><div class="prob"><div class="meter"><i style="width:${(fair * 100).toFixed(1)}%"></i></div>
+          <span class="pct">${(fair * 100).toFixed(1)}%</span></div></td>
+        <td class="num">${usFromProb(fair)}</td>
+        <td class="num muted">${usFromProb(pt)}</td>${bookCells}</tr>`;
     }).join("");
-    const head = `<th class="l">#</th><th class="l">Driver</th><th>Top-${escapeHtml(mfr)} chance</th><th>Implied odds</th>` +
+    const head = `<th class="l">#</th><th class="l">Driver</th><th>Fair chance (SG)</th><th>Fair odds</th><th>Kalshi implied</th>` +
       makeBooks.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
     const card = document.createElement("section");
     card.className = "card";
@@ -1550,11 +1582,21 @@ function renderTeams(snap, kteam) {
   const dash = `<span class="muted">—</span>`;
   const evCell = (e) => e == null ? dash
     : `<span class="edge ${e >= 0 ? "pos" : "neg"}">${e >= 0 ? "+" : ""}${e.toFixed(1)}%</span>`;
-  const bookPair = (american, ev) => {
+  const bookPair = (american, ev, best) => {
     const tint = ev != null && ev > 0 ? " ev" : "";
-    return `<td class="num${tint}">${american == null ? dash : usAmerican(american)}</td>` +
+    return `<td class="num${tint}${best ? " best" : ""}">${american == null ? dash : usAmerican(american)}</td>` +
       `<td class="num${tint}">${evCell(ev)}</td>`;
   };
+  const decOf = (a) => (typeof a !== "number" ? null : a > 0 ? 1 + a / 100 : 1 + 100 / -a);
+
+  // SG is the fair anchor on this tab: a winning-team market is its own market,
+  // so SG's no-vig price is the like-for-like fair line, while the Kalshi
+  // driver-sum only imputes one. The driver-sum stays as a reference column and
+  // as the fallback fair for any team SG doesn't post.
+  const sgTeamFair = {};
+  for (const [raw, fm] of Object.entries((TEAMDATA.sg && TEAMDATA.sg.winner) || {})) {
+    if (typeof fm.novig === "number") sgTeamFair[teamCanon(raw) || raw] = fm.novig;
+  }
 
   // "Which team wins": summed driver win prob per team, de-vigged across teams.
   // EV prices against this same Kalshi midpoint (the "Win chance" shown). A
@@ -1585,30 +1627,41 @@ function renderTeams(snap, kteam) {
   // the real market carries a wide two-sided spread so it's shown for reference.
   const kHead = haveKteam ? `<th>Kalshi (Yes / No)</th>` : "";
   $("team-win-head").innerHTML =
-    `<th class="l">Team</th><th>Win chance</th><th>Implied</th>${kHead}` +
+    `<th class="l">Team</th><th>Fair chance (SG)</th><th>Fair odds</th><th>Kalshi implied</th>${kHead}` +
     books.map((bk) => `<th>${escapeHtml(bk.label)}</th><th>EV</th>`).join("");
   $("team-win-rows").innerHTML = totals.map((t) => {
     const pn = t.sum / grand;
-    const bookCells = books.map((bk) => {
+    const fair = sgTeamFair[t.team] != null ? sgTeamFair[t.team] : pn;
+    const cells = books.map((bk) => {
       const fm = bookTeamMap[bk.key][t.team];
-      // EV of a $1 bet at the book's posted odds vs Kalshi's summed team prob.
-      // Model sources (SG) are reference-only: show odds, no EV.
-      const ev = !bk.model && fm && typeof fm.american === "number" ? evPct(pn, fm.american) : null;
-      return bookPair(fm ? fm.american : null, ev);
-    }).join("");
+      return { american: fm && typeof fm.american === "number" ? fm.american : null, model: !!bk.model };
+    });
+    // Best price to back the team across the bettable books AND Kalshi's own Yes
+    // buy price, the same rule the driver tabs use — a highlighted book means it
+    // beats Kalshi's number. Model sources (SG) are excluded.
+    const km = haveKteam ? kTeamMkt[t.team] : null;
+    const kYesDec = km && typeof km.yes === "number" && km.yes > 0 ? 100 / km.yes : null;
+    const decs = cells.map((c) => (c.model ? null : decOf(c.american)));
+    const pool = decs.filter((d) => d != null).concat(kYesDec != null ? [kYesDec] : []);
+    const maxDec = pool.length >= 2 ? Math.max(...pool) : null;
+    const isBest = (i) => maxDec != null && decs[i] != null && Math.abs(decs[i] - maxDec) < 1e-9;
+    const kBest = maxDec != null && kYesDec != null && Math.abs(kYesDec - maxDec) < 1e-9;
+    // EV of a $1 bet at the book's posted odds vs SG's no-vig fair prob.
+    const bookCells = cells.map((c, i) =>
+      bookPair(c.american, c.model ? null : evPct(fair, c.american), isBest(i))).join("");
     let kCell = "";
     if (haveKteam) {
-      const km = kTeamMkt[t.team];
       const yes = km && km.yes != null ? usFromProb(km.yes / 100) : null;
       const no = km && km.no != null ? usFromProb(km.no / 100) : null;
-      kCell = `<td class="num">${km && (yes || no)
+      kCell = `<td class="num${kBest ? " best" : ""}">${km && (yes || no)
         ? `${yes || "—"} <span class="muted">/</span> ${no || "—"}` : dash}</td>`;
     }
     return `<tr>
       <td class="l driver">${escapeHtml(t.team)}</td>
-      <td><div class="prob"><div class="meter"><i style="width:${(pn * 100).toFixed(1)}%"></i></div>
-        <span class="pct">${(pn * 100).toFixed(1)}%</span></div></td>
-      <td class="num">${usFromProb(pn)}</td>${kCell}${bookCells}</tr>`;
+      <td><div class="prob"><div class="meter"><i style="width:${(fair * 100).toFixed(1)}%"></i></div>
+        <span class="pct">${(fair * 100).toFixed(1)}%</span></div></td>
+      <td class="num">${usFromProb(fair)}</td>
+      <td class="num muted">${usFromProb(pn)}</td>${kCell}${bookCells}</tr>`;
   }).join("");
   $("team-win-count").textContent = present.length + " teams"
     + (haveKteam ? " · Kalshi team market live" : "");
