@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-06T04:45:54Z)
+
+| Race | Market | Driver | Yes | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 5 | Austin Cindric | 12c | 12.74c | +685 | 17.0% | **+33.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-06T03:05:48Z)
 
 | Race | Market | Driver | Yes | Net | Net odds | SG | EV |
