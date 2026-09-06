@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-06T22:15:20Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Win | Joey Logano | Yes | 2c | 2.14c | +4579 | 3.4% | **+58.6%** |
+| Cook Out Southern 500 | Win | Kyle Larson | Yes | 4c | 4.27c | +2243 | 6.6% | **+54.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-06T22:10:21Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
