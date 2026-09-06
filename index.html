@@ -394,9 +394,11 @@
     <div id="cmp-ksg-panel" style="display:none">
       <div class="cmp-note">
         <b>Kalshi vs the SG model</b>, ranked by edge. For each market this prices buying Kalshi's
-        <b>Yes</b> at its current ask using <b>SG's model probability</b> as truth:
-        <b>EV = p·payout − (1−p)</b>. Positive means SG rates Kalshi's Yes <b>cheap</b> (model prob
-        above what you pay); negative means rich. Spans every finish tier.
+        <b>Yes</b> at its ask <i>and</i> its <b>No</b> at its ask, using <b>SG's model probability</b>
+        as truth: <b>EV = fair ÷ net cost − 1</b>, where fair is <b>p</b> for a Yes and <b>1−p</b>
+        for a No. Positive means SG rates that side <b>cheap</b>. Both sides are listed because a
+        driver SG rates far below Kalshi is an edge on <b>No</b>, not a Yes to skip. Spans every
+        finish tier.
         <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
       </div>
       <div class="cmp-fresh" id="ksg-fresh"></div>
@@ -407,7 +409,7 @@
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th>Yes ¢</th><th>Net ¢</th><th>Net odds</th><th>SG fair</th><th>EV</th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th class="l">Side</th><th>Price ¢</th><th>Net ¢</th><th>Net odds</th><th>SG fair</th><th>EV</th></tr></thead>
             <tbody id="ksg-rows"></tbody>
           </table>
         </div>
@@ -1072,35 +1074,40 @@ async function loadKalshiSG() {
     for (const d of sgT.drivers || []) sgMap[normName(d.name)] = d;
     let snap; try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
     for (const m of Object.values(snap.markets || {})) {
-      const yes = priceYes(m); // cents paid for Yes
-      if (typeof yes !== "number" || yes <= 0 || yes >= 100) continue;
       const sd = sgMap[normName(m.name)];
       if (!sd || typeof sd.novig !== "number") continue;
-      const p = sd.novig;                 // SG fair prob (as truth)
-      // Cost is fee-inclusive: you pay p + 0.07*p*(1-p) per contract, so
-      // EV per $1 risked = model_prob / net_cost - 1.
-      const netC = netCost(yes);          // fee-inclusive cost, cents
-      const cost = netC / 100;
-      if (!(cost > 0) || cost >= 1) continue;
-      const ev = (p / cost - 1) * 100;
-      out.push({ driver: m.name, tier: t.label, yes, netC, sgFair: p, ev });
+      const p = sd.novig;                 // SG fair prob for Yes (as truth)
+      // Price BOTH sides. They are not two views of one bet: the fee is
+      // symmetric in the price, but the fair probs differ (p vs 1-p), so a
+      // driver SG rates well under Kalshi is a cheap No rather than a Yes you
+      // merely decline. Cost is fee-inclusive — you pay q + 0.07*q*(1-q) per
+      // contract — so EV per $1 risked = fair / net_cost - 1.
+      for (const [side, c, fair] of [["Yes", priceYes(m), p], ["No", priceNo(m), 1 - p]]) {
+        if (typeof c !== "number" || c <= 0 || c >= 100) continue;
+        const netC = netCost(c);          // fee-inclusive cost, cents
+        const cost = netC / 100;
+        if (!(cost > 0) || cost >= 1) continue;
+        const ev = (fair / cost - 1) * 100;
+        out.push({ driver: m.name, tier: t.label, side, price: c, netC, sgFair: fair, ev });
+      }
     }
   }
   out.sort((a, b) => b.ev - a.ev);
   fresh.innerHTML = out.length
-    ? `Buying Kalshi <b>Yes</b> at its ask <b>net of fees</b> (0.07·p·(1−p) added to the price), priced against <b>SG</b>'s model fair · ${out.length} markets`
+    ? `Buying Kalshi <b>Yes</b> or <b>No</b> at its ask <b>net of fees</b> (0.07·q·(1−q) added to the price), priced against <b>SG</b>'s model fair · ${out.length} lines across ${out.length / 2 | 0} markets`
     : "No overlap between Kalshi and SG.";
   rows.innerHTML = out.length ? out.map((r, i) =>
     `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
     `<td class="l driver">${escapeHtml(r.driver)}</td>` +
     `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
-    `<td class="num">${r.yes}¢</td>` +
+    `<td class="l"><span class="pill">${r.side}</span></td>` +
+    `<td class="num">${r.price}¢</td>` +
     `<td class="num">${r.netC.toFixed(2)}¢</td>` +
-    `<td class="num">${usOddsNet(r.yes)}</td>` +
+    `<td class="num">${usOddsNet(r.price)}</td>` +
     `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
     `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
-  ).join("") : `<tr><td class="empty" colspan="8">No overlap between Kalshi and SG.</td></tr>`;
-  $("ksg-count").textContent = out.length ? out.length + " markets" : "";
+  ).join("") : `<tr><td class="empty" colspan="9">No overlap between Kalshi and SG.</td></tr>`;
+  $("ksg-count").textContent = out.length ? out.length + " lines" : "";
 }
 
 async function loadCompare() {
