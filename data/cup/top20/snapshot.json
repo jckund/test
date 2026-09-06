@@ -98,27 +98,27 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 54,
-      "no_bid": 11,
+      "no_bid": 9,
       "open_interest": 607,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-BUWA",
       "volume": 609,
       "volume_24h": 9,
-      "yes_ask": 89,
+      "yes_ask": 91,
       "yes_bid": 46
     },
     "KXNASCARTOP20-COOOS26-CAHO": {
-      "last_price": 79,
+      "last_price": 60,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 73,
-      "no_bid": 12,
-      "open_interest": 120,
+      "no_bid": 40,
+      "open_interest": 136,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CAHO",
-      "volume": 120,
-      "volume_24h": 61,
-      "yes_ask": 88,
+      "volume": 136,
+      "volume_24h": 77,
+      "yes_ask": 60,
       "yes_bid": 27
     },
     "KXNASCARTOP20-COOOS26-CHBE": {
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CHFI",
       "volume": 669,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-COHE",
       "volume": 614,
-      "volume_24h": 189,
+      "volume_24h": 208,
       "yes_ask": 99,
       "yes_bid": 4
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-COZI",
       "volume": 870,
-      "volume_24h": 141,
+      "volume_24h": 154,
       "yes_ask": 67,
       "yes_bid": 4
     },
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-NOGR",
       "volume": 1009,
-      "volume_24h": 434,
+      "volume_24h": 445,
       "yes_ask": 99,
       "yes_bid": 4
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-RIST",
       "volume": 1147,
-      "volume_24h": 679,
+      "volume_24h": 1092,
       "yes_ask": 67,
       "yes_bid": 0
     },
@@ -528,22 +528,22 @@
       "yes_bid": 46
     },
     "KXNASCARTOP20-COOOS26-ZASM": {
-      "last_price": 5,
+      "last_price": 67,
       "liquidity": 0.0,
       "name": "Zane Smith",
       "no_ask": 96,
       "no_bid": 33,
-      "open_interest": 1069,
+      "open_interest": 1083,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-ZASM",
-      "volume": 1269,
-      "volume_24h": 809,
+      "volume": 1283,
+      "volume_24h": 824,
       "yes_ask": 67,
       "yes_bid": 4
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-06T22:00:27.506869+00:00",
+  "scraped_at": "2026-09-06T22:15:22.989971+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top20"
 }
