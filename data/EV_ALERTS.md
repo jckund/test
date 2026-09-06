@@ -1,3 +1,24 @@
+### New Kalshi vs SG lines >= +30% EV — 12 (2026-09-06T21:25:16Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Top 20 | Shane Van Gisbergen | Yes | 25c | 26.31c | +280 | 44.4% | **+68.9%** |
+| Cook Out Southern 500 | Top 5 | Ty Dillon | No | 66c | 67.57c | -208 | 99.7% | **+47.6%** |
+| Cook Out Southern 500 | Top 3 | Riley Herbst | No | 66c | 67.57c | -208 | 99.4% | **+47.1%** |
+| Cook Out Southern 500 | Top 5 | Noah Gragson | No | 66c | 67.57c | -208 | 99.3% | **+46.9%** |
+| Cook Out Southern 500 | Top 5 | Cole Custer | No | 66c | 67.57c | -208 | 99.1% | **+46.7%** |
+| Cook Out Southern 500 | Top 5 | Austin Hill | No | 66c | 67.57c | -208 | 99.0% | **+46.5%** |
+| Cook Out Southern 500 | Top 5 | Todd Gilliland | No | 66c | 67.57c | -208 | 98.3% | **+45.5%** |
+| Cook Out Southern 500 | Top 5 | Riley Herbst | No | 66c | 67.57c | -208 | 97.4% | **+44.2%** |
+| Cook Out Southern 500 | Top 5 | Ricky Stenhouse | No | 66c | 67.57c | -208 | 97.0% | **+43.6%** |
+| Cook Out Southern 500 | Top 5 | Shane Van Gisbergen | No | 66c | 67.57c | -208 | 95.6% | **+41.4%** |
+| Cook Out Southern 500 | Top 5 | John H. Nemechek | No | 66c | 67.57c | -208 | 94.5% | **+39.9%** |
+| Cook Out Southern 500 | Top 10 | Denny Hamlin | No | 26c | 27.35c | +266 | 35.8% | **+31.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-06T21:20:20Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
