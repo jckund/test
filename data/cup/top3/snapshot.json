@@ -66,15 +66,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-COOOS26-AUHI": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 100,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 234,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-AUHI",
-      "volume": 0,
+      "volume": 234,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
@@ -111,15 +111,15 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 94,
-      "no_bid": 92,
+      "no_ask": 95,
+      "no_bid": 93,
       "open_interest": 97,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-CAHO",
       "volume": 97,
       "volume_24h": 12,
-      "yes_ask": 8,
-      "yes_bid": 6
+      "yes_ask": 7,
+      "yes_bid": 5
     },
     "KXNASCARTOP3-COOOS26-CHBE": {
       "last_price": 22,
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 74,
       "no_bid": 71,
-      "open_interest": 1305,
+      "open_interest": 1407,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-CHBR",
-      "volume": 1305,
+      "volume": 1407,
       "volume_24h": 129,
       "yes_ask": 29,
       "yes_bid": 26
@@ -209,7 +209,7 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Corey Heim",
-      "no_ask": 93,
+      "no_ask": 92,
       "no_bid": 90,
       "open_interest": 273,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 273,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 7
+      "yes_bid": 8
     },
     "KXNASCARTOP3-COOOS26-COWA": {
       "last_price": 0,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-DEHA",
       "volume": 1380,
-      "volume_24h": 1033,
+      "volume_24h": 1048,
       "yes_ask": 40,
       "yes_bid": 39
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-KYLA",
       "volume": 735,
-      "volume_24h": 202,
+      "volume_24h": 247,
       "yes_ask": 21,
       "yes_bid": 19
     },
@@ -421,10 +421,10 @@
       "name": "Ryan Blaney",
       "no_ask": 85,
       "no_bid": 82,
-      "open_interest": 350,
+      "open_interest": 377,
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-RYBL",
-      "volume": 403,
+      "volume": 429,
       "volume_24h": 328,
       "yes_ask": 18,
       "yes_bid": 15
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-COOOS26-TYRE",
       "volume": 2920,
-      "volume_24h": 724,
+      "volume_24h": 935,
       "yes_ask": 36,
       "yes_bid": 35
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-06T15:21:14.463622+00:00",
+  "scraped_at": "2026-09-06T15:30:23.069493+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top3"
 }
