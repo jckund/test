@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-06T23:25:17Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Win | Denny Hamlin | Yes | 7c | 7.46c | +1241 | 19.2% | **+158.0%** |
+| Cook Out Southern 500 | Win | Chase Briscoe | Yes | 5c | 5.33c | +1775 | 12.7% | **+138.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-06T23:20:19Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
