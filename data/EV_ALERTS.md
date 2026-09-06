@@ -1,3 +1,25 @@
+### New Kalshi vs SG lines >= +30% EV — 13 (2026-09-06T22:00:24Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Cook Out Southern 500 | Win | Austin Cindric | Yes | 1c | 1.07c | +9252 | 1.9% | **+75.9%** |
+| Cook Out Southern 500 | Top 20 | Ricky Stenhouse | No | 33c | 34.55c | +189 | 58.3% | **+68.8%** |
+| Cook Out Southern 500 | Win | William Byron | Yes | 3c | 3.20c | +3021 | 5.0% | **+54.9%** |
+| Cook Out Southern 500 | Win | Chase Briscoe | Yes | 8c | 8.52c | +1074 | 12.7% | **+49.2%** |
+| Cook Out Southern 500 | Top 3 | Cole Custer | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Cook Out Southern 500 | Top 3 | Austin Hill | No | 66c | 67.57c | -208 | 99.8% | **+47.7%** |
+| Cook Out Southern 500 | Top 3 | AJ Allmendinger | No | 66c | 67.57c | -208 | 99.6% | **+47.4%** |
+| Cook Out Southern 500 | Top 3 | Shane Van Gisbergen | No | 66c | 67.57c | -208 | 98.6% | **+45.9%** |
+| Cook Out Southern 500 | Top 3 | Austin Dillon | No | 66c | 67.57c | -208 | 98.6% | **+45.9%** |
+| Cook Out Southern 500 | Top 3 | Alex Bowman | No | 66c | 67.57c | -208 | 97.5% | **+44.2%** |
+| Cook Out Southern 500 | Top 3 | Corey Heim | No | 66c | 67.57c | -208 | 94.1% | **+39.2%** |
+| Cook Out Southern 500 | Top 10 | Ricky Stenhouse | Yes | 9c | 9.57c | +945 | 13.0% | **+35.8%** |
+| Cook Out Southern 500 | Top 10 | Denny Hamlin | No | 26c | 27.35c | +266 | 35.8% | **+31.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-06T21:50:18Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
