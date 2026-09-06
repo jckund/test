@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 92,
-      "no_bid": 54,
+      "no_bid": 36,
       "open_interest": 11204,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-BRKE",
       "volume": 11390,
       "volume_24h": 9095,
-      "yes_ask": 46,
+      "yes_ask": 64,
       "yes_bid": 8
     },
     "KXNASCARTOP10-COOOS26-BUWA": {
@@ -131,23 +131,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBE",
       "volume": 2885,
-      "volume_24h": 2823,
+      "volume_24h": 2854,
       "yes_ask": 89,
       "yes_bid": 26
     },
     "KXNASCARTOP10-COOOS26-CHBR": {
-      "last_price": 95,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 73,
+      "no_ask": 95,
       "no_bid": 4,
-      "open_interest": 8168,
+      "open_interest": 8171,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-CHBR",
-      "volume": 8177,
-      "volume_24h": 6834,
+      "volume": 8208,
+      "volume_24h": 6865,
       "yes_ask": 96,
-      "yes_bid": 27
+      "yes_bid": 5
     },
     "KXNASCARTOP10-COOOS26-CHBU": {
       "last_price": 1,
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-COHE",
       "volume": 2473,
-      "volume_24h": 1651,
+      "volume_24h": 1696,
       "yes_ask": 39,
       "yes_bid": 1
     },
@@ -276,18 +276,18 @@
       "yes_bid": 46
     },
     "KXNASCARTOP10-COOOS26-ERJO": {
-      "last_price": 3,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Erik Jones",
-      "no_ask": 96,
-      "no_bid": 34,
-      "open_interest": 10903,
+      "no_ask": 99,
+      "no_bid": 36,
+      "open_interest": 10887,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-ERJO",
-      "volume": 12097,
+      "volume": 12522,
       "volume_24h": 9008,
-      "yes_ask": 66,
-      "yes_bid": 4
+      "yes_ask": 64,
+      "yes_bid": 1
     },
     "KXNASCARTOP10-COOOS26-JOBE": {
       "last_price": 67,
@@ -295,10 +295,10 @@
       "name": "Josh Berry",
       "no_ask": 82,
       "no_bid": 33,
-      "open_interest": 2503,
+      "open_interest": 2505,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-JOBE",
-      "volume": 2523,
+      "volume": 2524,
       "volume_24h": 1097,
       "yes_ask": 67,
       "yes_bid": 18
@@ -318,7 +318,7 @@
       "yes_bid": 3
     },
     "KXNASCARTOP10-COOOS26-JONE": {
-      "last_price": 3,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
       "no_ask": 96,
@@ -326,7 +326,7 @@
       "open_interest": 9787,
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-JONE",
-      "volume": 9924,
+      "volume": 9933,
       "volume_24h": 7738,
       "yes_ask": 39,
       "yes_bid": 4
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-ROCH",
       "volume": 3074,
-      "volume_24h": 2636,
+      "volume_24h": 2710,
       "yes_ask": 39,
       "yes_bid": 2
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-COOOS26-TYGI",
       "volume": 4139,
-      "volume_24h": 2882,
+      "volume_24h": 2953,
       "yes_ask": 89,
       "yes_bid": 26
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-06T23:15:20.780077+00:00",
+  "scraped_at": "2026-09-06T23:30:23.872591+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top10"
 }
