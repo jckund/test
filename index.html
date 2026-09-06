@@ -419,8 +419,9 @@
     <div id="cmp-bsg-panel" style="display:none">
       <div class="cmp-note">
         <b>The books vs the SG model</b> — the Kalshi vs SG view with the sportsbooks in Kalshi's
-        place. Every book × driver across every finish tier, priced at the book's posted odds using
-        <b>SG's model probability</b> as truth: <b>EV = p·payout − (1−p)</b>. Positive means the book's
+        place. Every book line across every <b>finish tier</b>, plus the <b>which-make</b>,
+        <b>top-make driver</b> and <b>winning-team</b> boards (Cup only), priced at the book's posted
+        odds using <b>SG's model probability</b> as truth: <b>EV = p·payout − (1−p)</b>. Positive means the book's
         line is <b>longer than SG's fair</b>, negative means shorter. No fee adjustment — a book's
         price is what you pay, whereas Kalshi's Yes carries the 0.07·p·(1−p) fee that the
         <b>Kalshi vs SG</b> tab nets out. Book odds include vig, so most of the board sits negative;
@@ -1173,12 +1174,73 @@ async function loadBooksSG() {
       }
     }
   }
+  // Manufacturer and team markets, priced the same way. Cup-only: the books
+  // don't post which-make / top-make / winning-team boards for the support
+  // series. These files aren't loaded by this tab's own fetch, so pull any that
+  // the Manufacturer/Team tabs haven't already cached.
+  if (seriesFull()) {
+    await Promise.all([
+      ...MFR_BOOKS.map(async (bk) => {
+        if (bk.key in MFRDATA) return;
+        try { MFRDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { MFRDATA[bk.key] = null; }
+      }),
+      ...TEAM_BOOKS.map(async (bk) => {
+        if (bk.key in TEAMDATA) return;
+        try { TEAMDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { TEAMDATA[bk.key] = null; }
+      }),
+    ]);
+    const sgm = MFRDATA.sg, sgt = TEAMDATA.sg;
+    const add = (bk, label, name, american, fair, implied) => {
+      if (typeof american !== "number" || typeof fair !== "number") return;
+      const ev = evPct(fair, american);
+      if (ev == null) return;
+      books.add(bk.label);
+      out.push({
+        book: bk.label, driver: name, tier: label, american, sgFair: fair, ev,
+        implied: typeof implied === "number" ? implied
+          : american > 0 ? 100 / (american + 100) : -american / (-american + 100),
+      });
+    };
+    for (const bk of MFR_BOOKS) {
+      if (bk.model || !MFRDATA[bk.key]) continue;
+      const d = MFRDATA[bk.key];
+      // "Which make wins" — a 3-way, so SG's no-vig share is the fair line.
+      for (const [mk, fm] of Object.entries((sgm && sgm.winner && d.winner) || {})) {
+        const bm = d.winner[mk];
+        if (bm) add(bk, "Which make", mk, bm.american, sgm.winner[mk] && sgm.winner[mk].novig, bm.implied);
+      }
+      // "Top [make] driver" — SG's no-vig chance within that make.
+      for (const [mk, obj] of Object.entries(d.makes || {})) {
+        const sgMake = sgm && sgm.makes && sgm.makes[mk];
+        if (!sgMake) continue;
+        const sgMap = {};
+        for (const sd of sgMake.drivers || []) sgMap[normName(sd.name)] = sd;
+        for (const dr of obj.drivers || []) {
+          const sd = sgMap[normName(dr.name)];
+          if (sd) add(bk, "Top " + mk, dr.name, dr.american, sd.novig, dr.implied);
+        }
+      }
+    }
+    // "Winning team" — book team names normalized onto our canonical keys first.
+    const sgTeam = {};
+    for (const [raw, fm] of Object.entries((sgt && sgt.winner) || {})) {
+      if (typeof fm.novig === "number") sgTeam[teamCanon(raw) || raw] = fm.novig;
+    }
+    for (const bk of TEAM_BOOKS) {
+      if (bk.model || !TEAMDATA[bk.key] || !TEAMDATA[bk.key].winner) continue;
+      for (const [raw, fm] of Object.entries(TEAMDATA[bk.key].winner)) {
+        const team = teamCanon(raw) || raw;
+        add(bk, "Team", team, fm.american, sgTeam[team], fm.implied);
+      }
+    }
+  }
+
   out.sort((a, b) => b.ev - a.ev);
   const shown = out.slice(0, 100);
   fresh.innerHTML = out.length
     // .cmp-fresh is a flex row, so keep this one line a single text node — an
     // inline <b> would become its own flex item and pick up the row's gap.
-    ? `<span>Every book line across ${tiers.length} tier${tiers.length === 1 ? "" : "s"}, priced against SG's model fair · ${books.size} books · ${out.length} bets</span>`
+    ? `<span>Every book line — ${tiers.length} finish tier${tiers.length === 1 ? "" : "s"}${seriesFull() ? ", plus which-make, top-make and winning-team" : ""} — priced against SG's model fair · ${books.size} books · ${out.length} bets</span>`
     : "No overlap between the books and SG.";
   rows.innerHTML = shown.length ? shown.map((r, i) =>
     `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
