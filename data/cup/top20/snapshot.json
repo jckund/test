@@ -14,13 +14,13 @@
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 89,
-      "no_bid": 84,
+      "no_bid": 33,
       "open_interest": 862,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-AJAL",
       "volume": 968,
       "volume_24h": 385,
-      "yes_ask": 16,
+      "yes_ask": 67,
       "yes_bid": 11
     },
     "KXNASCARTOP20-COOOS26-ALBO": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CHBR",
       "volume": 256,
-      "volume_24h": 223,
+      "volume_24h": 243,
       "yes_ask": 94,
       "yes_bid": 5
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CHEL",
       "volume": 389,
-      "volume_24h": 185,
+      "volume_24h": 188,
       "yes_ask": 100,
       "yes_bid": 69
     },
@@ -237,15 +237,15 @@
       "last_price": 2,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 33,
-      "open_interest": 927,
+      "open_interest": 1159,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-COZI",
-      "volume": 952,
-      "volume_24h": 232,
+      "volume": 1184,
+      "volume_24h": 468,
       "yes_ask": 67,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP20-COOOS26-DASU": {
       "last_price": 25,
@@ -262,18 +262,18 @@
       "yes_bid": 21
     },
     "KXNASCARTOP20-COOOS26-DEHA": {
-      "last_price": 80,
+      "last_price": 99,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 94,
-      "no_bid": 1,
-      "open_interest": 394,
+      "no_ask": 96,
+      "no_bid": 0,
+      "open_interest": 421,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-DEHA",
-      "volume": 443,
-      "volume_24h": 188,
-      "yes_ask": 99,
-      "yes_bid": 6
+      "volume": 475,
+      "volume_24h": 241,
+      "yes_ask": 100,
+      "yes_bid": 4
     },
     "KXNASCARTOP20-COOOS26-ERJO": {
       "last_price": 61,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-TOGI",
       "volume": 173,
-      "volume_24h": 158,
+      "volume_24h": 173,
       "yes_ask": 82,
       "yes_bid": 21
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-07T00:00:28.032843+00:00",
+  "scraped_at": "2026-09-07T00:15:22.264768+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top20"
 }
