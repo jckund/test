@@ -10,18 +10,18 @@
   "market_count": 38,
   "markets": {
     "KXNASCARTOP20-COOOS26-AJAL": {
-      "last_price": 16,
+      "last_price": 97,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
-      "no_ask": 89,
-      "no_bid": 33,
-      "open_interest": 862,
+      "no_ask": 88,
+      "no_bid": 1,
+      "open_interest": 911,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-AJAL",
-      "volume": 968,
-      "volume_24h": 385,
-      "yes_ask": 67,
-      "yes_bid": 11
+      "volume": 1016,
+      "volume_24h": 433,
+      "yes_ask": 99,
+      "yes_bid": 12
     },
     "KXNASCARTOP20-COOOS26-ALBO": {
       "last_price": 49,
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 73,
-      "no_bid": 40,
-      "open_interest": 139,
+      "no_bid": 12,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CAHO",
       "volume": 141,
       "volume_24h": 82,
-      "yes_ask": 60,
+      "yes_ask": 88,
       "yes_bid": 27
     },
     "KXNASCARTOP20-COOOS26-CHBE": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-CHBR",
       "volume": 293,
-      "volume_24h": 243,
+      "volume_24h": 280,
       "yes_ask": 95,
       "yes_bid": 5
     },
@@ -234,16 +234,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP20-COOOS26-COZI": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 99,
       "no_bid": 33,
-      "open_interest": 1159,
+      "open_interest": 1179,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-COZI",
-      "volume": 1184,
-      "volume_24h": 468,
+      "volume": 1204,
+      "volume_24h": 488,
       "yes_ask": 67,
       "yes_bid": 1
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-MIMC",
       "volume": 66,
-      "volume_24h": 62,
+      "volume_24h": 66,
       "yes_ask": 67,
       "yes_bid": 26
     },
@@ -374,18 +374,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP20-COOOS26-RIHE": {
-      "last_price": 16,
+      "last_price": 3,
       "liquidity": 0.0,
       "name": "Riley Herbst",
-      "no_ask": 84,
+      "no_ask": 97,
       "no_bid": 33,
       "open_interest": 621,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-RIHE",
-      "volume": 628,
-      "volume_24h": 53,
+      "volume": 662,
+      "volume_24h": 55,
       "yes_ask": 67,
-      "yes_bid": 16
+      "yes_bid": 3
     },
     "KXNASCARTOP20-COOOS26-RIST": {
       "last_price": 1,
@@ -523,27 +523,27 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-WIBY",
       "volume": 744,
-      "volume_24h": 20,
+      "volume_24h": 539,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARTOP20-COOOS26-ZASM": {
-      "last_price": 67,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "Zane Smith",
       "no_ask": 96,
       "no_bid": 33,
-      "open_interest": 1083,
+      "open_interest": 1086,
       "status": "active",
       "ticker": "KXNASCARTOP20-COOOS26-ZASM",
-      "volume": 1283,
-      "volume_24h": 824,
+      "volume": 1286,
+      "volume_24h": 827,
       "yes_ask": 67,
       "yes_bid": 4
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-07T00:30:26.776389+00:00",
+  "scraped_at": "2026-09-07T00:45:27.908635+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top20"
 }
