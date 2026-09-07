@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 94,
-      "no_bid": 92,
+      "no_bid": 66,
       "open_interest": 7835,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-BUWA",
       "volume": 7933,
       "volume_24h": 5853,
-      "yes_ask": 8,
+      "yes_ask": 34,
       "yes_bid": 6
     },
     "KXNASCARTOP5-COOOS26-CAHO": {
@@ -122,17 +122,17 @@
       "yes_bid": 8
     },
     "KXNASCARTOP5-COOOS26-CHBE": {
-      "last_price": 39,
+      "last_price": 90,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 61,
-      "no_bid": 25,
-      "open_interest": 3860,
+      "no_bid": 10,
+      "open_interest": 3868,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBE",
-      "volume": 3871,
+      "volume": 3883,
       "volume_24h": 3618,
-      "yes_ask": 75,
+      "yes_ask": 90,
       "yes_bid": 39
     },
     "KXNASCARTOP5-COOOS26-CHBR": {
@@ -144,7 +144,7 @@
       "open_interest": 6169,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-CHBR",
-      "volume": 6626,
+      "volume": 6638,
       "volume_24h": 4739,
       "yes_ask": 75,
       "yes_bid": 6
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-DASU",
       "volume": 1089,
-      "volume_24h": 1005,
+      "volume_24h": 1030,
       "yes_ask": 34,
       "yes_bid": 2
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-JOBE",
       "volume": 1122,
-      "volume_24h": 807,
+      "volume_24h": 812,
       "yes_ask": 67,
       "yes_bid": 54
     },
@@ -416,16 +416,16 @@
       "yes_bid": 1
     },
     "KXNASCARTOP5-COOOS26-RYBL": {
-      "last_price": 5,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 94,
       "no_bid": 33,
-      "open_interest": 5243,
+      "open_interest": 5233,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-RYBL",
-      "volume": 5269,
-      "volume_24h": 4936,
+      "volume": 5280,
+      "volume_24h": 4930,
       "yes_ask": 67,
       "yes_bid": 6
     },
@@ -514,18 +514,18 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-COOOS26-WIBY": {
-      "last_price": 67,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 84,
-      "no_bid": 33,
-      "open_interest": 4980,
+      "no_ask": 100,
+      "no_bid": 99,
+      "open_interest": 5521,
       "status": "active",
       "ticker": "KXNASCARTOP5-COOOS26-WIBY",
-      "volume": 5268,
-      "volume_24h": 4427,
-      "yes_ask": 67,
-      "yes_bid": 16
+      "volume": 5993,
+      "volume_24h": 4738,
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARTOP5-COOOS26-ZASM": {
       "last_price": 7,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-07T00:15:21.233196+00:00",
+  "scraped_at": "2026-09-07T00:30:25.702443+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
   "tier": "top5"
 }
