@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-07T02:03:22.016596+00:00",
+  "updated_at": "2026-09-09T14:06:46.126884+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "Cup - COOOS (Sep 6)",
+      "race_title": "Cup - ENJI (Sep 13)",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-cooos26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
       "tiers": [
         "winner",
         "top3",
@@ -14,7 +14,20 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-09-07T02:03:22.016544+00:00"
+      "scraped_at": "2026-09-09T14:05:29.416792+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
+      "race_title": "Auto Parts - NUW2PBBASBB (Sep 12)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nuw2pbbasbb26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-09-09T14:06:46.126831+00:00"
     }
   ]
 }
