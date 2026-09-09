@@ -168,6 +168,35 @@
     flex-wrap: wrap; gap: 4px 16px; }
   .cmp-fresh b { color: var(--ink); font-weight: 600; }
 
+  /* Books-vs-SG controls: the per-book filter chips plus the bet-slip control.
+     Both are per-viewer view state (localStorage), never committed data. */
+  .bsg-controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin: 0 0 12px; max-width: 900px; }
+  .fchip { appearance: none; font: inherit; font-size: 12px; font-weight: 600;
+    padding: 5px 11px; border-radius: 999px; cursor: pointer;
+    border: 1px solid var(--line); background: var(--surface-2); color: var(--ink-2); }
+  .fchip:hover { color: var(--ink); }
+  .fchip[aria-pressed="true"] { background: var(--accent); color: #fff; border-color: transparent; }
+  .fchip:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .bsg-controls .spacer { flex: 1 1 auto; }
+  .betctl { font-size: 12px; color: var(--ink-2); display: inline-flex; gap: 12px;
+    align-items: center; white-space: nowrap; }
+  .betctl button { appearance: none; font: inherit; font-size: 12px; font-weight: 600;
+    background: none; border: 0; padding: 0; cursor: pointer; color: var(--accent); }
+  .betctl button:hover { text-decoration: underline; }
+  .betctl button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  /* Per-row "I bet this" toggle. */
+  th.betcell, td.betcell { width: 34px;
+    padding-left: 4px !important; padding-right: 4px !important; }
+  .betbtn { appearance: none; border: 1px solid var(--line); background: var(--surface-2);
+    color: var(--ink-2); width: 23px; height: 23px; border-radius: 6px; cursor: pointer;
+    font-size: 12px; line-height: 1; padding: 0; }
+  .betbtn:hover { color: var(--ink); border-color: var(--accent); }
+  .betbtn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  tr.bet-done { opacity: .45; }
+  tr.bet-done .betbtn { color: var(--pos);
+    border-color: color-mix(in srgb, var(--pos) 45%, transparent); }
+
   .empty { padding: 40px 18px; text-align: center; color: var(--ink-2); font-size: 14px; }
   footer { margin-top: 28px; font-size: 12px; color: var(--ink-2); text-align: center; }
 </style>
@@ -428,6 +457,7 @@
         SG itself is the anchor and isn't listed as a bet.
         <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
       </div>
+      <div class="bsg-controls" id="bsg-controls"></div>
       <div class="cmp-fresh" id="bsg-fresh"></div>
       <section class="card">
         <div class="card-head">
@@ -436,7 +466,7 @@
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th>SG fair</th><th>EV</th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th>SG fair</th><th>EV</th><th class="betcell" title="Mark a line as bet"></th></tr></thead>
             <tbody id="bsg-rows"></tbody>
           </table>
         </div>
@@ -1154,7 +1184,7 @@ async function loadBooksSG() {
     return;
   }
   const tiers = cmpTiersAvailable();
-  const books = new Set();
+  const books = new Map();   // book key -> label, in first-seen order
   const out = [];
   for (const t of tiers) {
     const sgT = sg.tiers[t.key]; if (!sgT) continue;
@@ -1167,10 +1197,10 @@ async function loadBooksSG() {
         if (!sd || typeof sd.novig !== "number" || typeof d.american !== "number") continue;
         const ev = evPct(sd.novig, d.american);
         if (ev == null) continue;
-        books.add(bk.label);
+        books.set(bk.key, bk.label);
         const implied = typeof d.implied === "number" ? d.implied
           : d.american > 0 ? 100 / (d.american + 100) : -d.american / (-d.american + 100);
-        out.push({ book: bk.label, driver: d.name, tier: t.label, american: d.american, implied, sgFair: sd.novig, ev });
+        out.push({ book: bk.label, bookKey: bk.key, driver: d.name, tier: t.label, american: d.american, implied, sgFair: sd.novig, ev });
       }
     }
   }
@@ -1194,9 +1224,9 @@ async function loadBooksSG() {
       if (typeof american !== "number" || typeof fair !== "number") return;
       const ev = evPct(fair, american);
       if (ev == null) return;
-      books.add(bk.label);
+      books.set(bk.key, bk.label);
       out.push({
-        book: bk.label, driver: name, tier: label, american, sgFair: fair, ev,
+        book: bk.label, bookKey: bk.key, driver: name, tier: label, american, sgFair: fair, ev,
         implied: typeof implied === "number" ? implied
           : american > 0 ? 100 / (american + 100) : -american / (-american + 100),
       });
@@ -1236,24 +1266,163 @@ async function loadBooksSG() {
   }
 
   out.sort((a, b) => b.ev - a.ev);
-  const shown = out.slice(0, 100);
-  fresh.innerHTML = out.length
+  BSG_ALL = out;
+  BSG_BOOKS = [...books].map(([key, label]) => ({ key, label }));
+  // Drop any remembered filter entry for a book that isn't on the board this
+  // race, so a stale key can't silently filter everything out.
+  const sel = bsgLoadSel();
+  BSG_SEL = sel ? new Set([...sel].filter((k) => books.has(k))) : null;
+  if (BSG_SEL && (!BSG_SEL.size || BSG_SEL.size === BSG_BOOKS.length)) BSG_SEL = null;
+  BSG_TIERINFO = `${tiers.length} finish tier${tiers.length === 1 ? "" : "s"}${seriesFull() ? ", plus which-make, top-make and winning-team" : ""}`;
+  bsgWire();
+  renderBooksSG();
+}
+
+// ---- Books vs SG: per-book filter + "already bet" marking ----
+// Both are per-viewer view state, so they live in localStorage and never touch
+// the repo. Bet marks are scoped to series + race title, so a new race weekend
+// starts clean instead of inheriting last week's marks; the book filter is
+// scoped to the series only, since the book roster carries across races.
+let BSG_ALL = [];        // every computed row, unfiltered, EV-sorted
+let BSG_SHOWN = [];      // rows currently rendered (click target -> row)
+let BSG_BOOKS = [];      // [{key,label}] present on the board this race
+let BSG_SEL = null;      // Set of selected book keys, or null for "all"
+let BSG_SHOWBET = false; // reveal rows marked bet instead of hiding them
+let BSG_TIERINFO = "";
+let bsgWired = false;
+
+const bsgBetKey = () => "bsg.bet." + currentSeries + "|" + ((INDEX && INDEX.race_title) || "");
+const bsgFilterKey = () => "bsg.books." + currentSeries;
+
+// localStorage throws outright in some privacy modes, so every access is
+// guarded and a failure degrades to "no saved state" rather than a dead tab.
+function lsGet(k, fallback) {
+  try {
+    const v = localStorage.getItem(k);
+    return v == null ? fallback : JSON.parse(v);
+  } catch { return fallback; }
+}
+function lsSet(k, v) {
+  try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ }
+}
+
+function bsgLoadSel() {
+  const v = lsGet(bsgFilterKey(), null);
+  return Array.isArray(v) ? new Set(v) : null;   // null / absent = all books
+}
+function bsgLoadBets() {
+  const v = lsGet(bsgBetKey(), []);
+  return new Set(Array.isArray(v) ? v : []);
+}
+
+// A bet's identity deliberately EXCLUDES the price. "I already bet Larson's
+// top 5 at Caesars" stays true when the line ticks a point, and resurfacing
+// the row on every 1c wiggle is exactly the noise this is meant to remove.
+// (Contrast evwatch.py, which keys price INTO its dedup — that is deciding
+// whether something is a NEW alert, not whether you have already acted on it.)
+const betId = (r) => r.bookKey + "|" + r.tier + "|" + normName(r.driver);
+
+function renderBooksSG() {
+  const rows = $("bsg-rows"), fresh = $("bsg-fresh"), ctl = $("bsg-controls");
+  const bets = bsgLoadBets();
+  const filtered = BSG_SEL ? BSG_ALL.filter((r) => BSG_SEL.has(r.bookKey)) : BSG_ALL;
+  const marked = filtered.filter((r) => bets.has(betId(r))).length;
+  const visible = BSG_SHOWBET ? filtered : filtered.filter((r) => !bets.has(betId(r)));
+
+  // Filter chips: "All" plus one per book actually on the board.
+  ctl.innerHTML = BSG_ALL.length ? (
+    `<button class="fchip" data-book="__all" aria-pressed="${!BSG_SEL}">All books</button>` +
+    BSG_BOOKS.map((b) =>
+      `<button class="fchip" data-book="${escapeHtml(b.key)}" aria-pressed="${!BSG_SEL || BSG_SEL.has(b.key)}">${escapeHtml(b.label)}</button>`
+    ).join("") +
+    `<span class="spacer"></span>` +
+    `<span class="betctl">` +
+      (marked
+        ? `<span>${marked} marked bet</span>` +
+          `<button data-bsgact="toggleshow">${BSG_SHOWBET ? "Hide them" : "Show them"}</button>` +
+          `<button data-bsgact="clear">Clear</button>`
+        : `<span>Click ✓ on a line once you've bet it</span>`) +
+    `</span>`
+  ) : "";
+
+  // Filter first, THEN cap at 100, so narrowing to one book reveals deeper
+  // rows instead of just thinning the same global top 100.
+  BSG_SHOWN = visible.slice(0, 100);
+  fresh.innerHTML = BSG_ALL.length
     // .cmp-fresh is a flex row, so keep this one line a single text node — an
     // inline <b> would become its own flex item and pick up the row's gap.
-    ? `<span>Every book line — ${tiers.length} finish tier${tiers.length === 1 ? "" : "s"}${seriesFull() ? ", plus which-make, top-make and winning-team" : ""} — priced against SG's model fair · ${books.size} books · ${out.length} bets</span>`
+    ? `<span>Every book line — ${BSG_TIERINFO} — priced against SG's model fair · ` +
+      `${BSG_SEL ? BSG_SEL.size + " of " + BSG_BOOKS.length : BSG_BOOKS.length} book${(BSG_SEL ? BSG_SEL.size : BSG_BOOKS.length) === 1 ? "" : "s"} · ` +
+      `${visible.length} bets${marked && !BSG_SHOWBET ? " · " + marked + " hidden as bet" : ""}</span>`
     : "No overlap between the books and SG.";
-  rows.innerHTML = shown.length ? shown.map((r, i) =>
-    `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
-    `<td class="l">${escapeHtml(r.book)}</td>` +
-    `<td class="l driver">${escapeHtml(r.driver)}</td>` +
-    `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
-    `<td class="num">${usAmerican(r.american)}</td>` +
-    `<td class="num">${(r.implied * 100).toFixed(1)}%</td>` +
-    `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
-    `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
-  ).join("") : `<tr><td class="empty" colspan="8">No overlap between the books and SG.</td></tr>`;
-  $("bsg-count").textContent = out.length
-    ? out.length + " bets" + (out.length > shown.length ? " (top 100 shown)" : "") : "";
+
+  rows.innerHTML = BSG_SHOWN.length ? BSG_SHOWN.map((r, i) => {
+    const done = bets.has(betId(r));
+    return `<tr class="${done ? "bet-done" : ""}">` +
+      `<td class="l rank ${i === 0 && r.ev > 0 && !done ? "top" : ""}">${i + 1}</td>` +
+      `<td class="l">${escapeHtml(r.book)}</td>` +
+      `<td class="l driver">${escapeHtml(r.driver)}</td>` +
+      `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
+      `<td class="num">${usAmerican(r.american)}</td>` +
+      `<td class="num">${(r.implied * 100).toFixed(1)}%</td>` +
+      `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
+      `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td>` +
+      `<td class="betcell"><button class="betbtn" data-i="${i}" ` +
+        `title="${done ? "Marked bet — click to restore" : "Mark as bet and hide"}" ` +
+        `aria-label="${done ? "Restore this line" : "Mark this line as bet"}">${done ? "↺" : "✓"}</button></td>` +
+    `</tr>`;
+  }).join("") : `<tr><td class="empty" colspan="9">${
+    !BSG_ALL.length ? "No overlap between the books and SG."
+      : !filtered.length ? "No lines for the selected books."
+      : "Every line for the selected books is marked bet."
+  }</td></tr>`;
+
+  $("bsg-count").textContent = visible.length
+    ? visible.length + " bets" + (visible.length > BSG_SHOWN.length ? " (top 100 shown)" : "") : "";
+}
+
+// Rows are re-rendered on every interaction, so both handlers are delegated
+// and attached exactly once.
+function bsgWire() {
+  if (bsgWired) return;
+  bsgWired = true;
+  $("bsg-rows").addEventListener("click", (e) => {
+    const btn = e.target.closest(".betbtn");
+    if (!btn) return;
+    const r = BSG_SHOWN[+btn.dataset.i];
+    if (!r) return;
+    const id = betId(r), s = bsgLoadBets();
+    if (s.has(id)) s.delete(id); else s.add(id);
+    lsSet(bsgBetKey(), [...s]);
+    renderBooksSG();
+  });
+  $("bsg-controls").addEventListener("click", (e) => {
+    const chip = e.target.closest(".fchip");
+    if (chip) {
+      const k = chip.dataset.book;
+      if (k === "__all") {
+        BSG_SEL = null;
+      } else {
+        const s = new Set(BSG_SEL || BSG_BOOKS.map((b) => b.key));
+        if (s.has(k)) s.delete(k); else s.add(k);
+        // Collapse "everything selected" back to null so the All chip lights up.
+        BSG_SEL = s.size === BSG_BOOKS.length ? null : s;
+      }
+      lsSet(bsgFilterKey(), BSG_SEL ? [...BSG_SEL] : null);
+      renderBooksSG();
+      return;
+    }
+    const act = e.target.closest("[data-bsgact]");
+    if (!act) return;
+    if (act.dataset.bsgact === "toggleshow") {
+      BSG_SHOWBET = !BSG_SHOWBET;
+    } else if (act.dataset.bsgact === "clear") {
+      // Marks are hand-entered, so confirm before wiping them.
+      if (!confirm("Clear all lines marked as bet for this race?")) return;
+      lsSet(bsgBetKey(), []);
+    }
+    renderBooksSG();
+  });
 }
 
 async function loadCompare() {
