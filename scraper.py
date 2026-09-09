@@ -65,15 +65,15 @@ WINNER_SERIES = "KXNASCARRACE"
 # names — a race that matches nothing falls to the `xfinity` default. Update the
 # substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    # Cup this weekend: Cook Out Southern 500 at Darlington (playoff opener,
-    # Sun 9/6). Match on "southern 500" only — NOT "darlington" or "cook out",
-    # since the Xfinity race is also at Darlington and "Cook Out" is a recurring
-    # Richmond/Darlington sponsor name that would collide. No Truck race this
-    # weekend (Cup + Xfinity only), so the truck matcher is empty and the
-    # Xfinity race (Fleetio 200, Sat 9/5) falls to the `xfinity` default.
-    {"key": "cup", "label": "NASCAR", "matchers": ["southern 500"],
+    # Cup this weekend: Enjoy Illinois 300 at WWT Raceway (Gateway). Match on
+    # "enjoy illinois" only — NOT "300", which collides with other race names,
+    # nor "gateway"/"world wide technology", since the Truck race is at the same
+    # track. Trucks: Nu Way 225 — match "nu way", not the generic "225".
+    # No Xfinity race this weekend (Cup + Trucks only), so the `xfinity` default
+    # should claim nothing; anything that lands there is an unmatched race.
+    {"key": "cup", "label": "NASCAR", "matchers": ["enjoy illinois"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": [],
+    {"key": "truck", "label": "Trucks", "matchers": ["nu way"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     {"key": "xfinity", "label": "Support race", "matchers": [], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
