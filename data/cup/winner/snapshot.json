@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-BUWA",
       "volume": 6545,
-      "volume_24h": 3071,
+      "volume_24h": 6545,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -111,7 +111,7 @@
       "last_price": 2,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 98,
       "open_interest": 3080,
       "status": "active",
@@ -119,20 +119,20 @@
       "volume": 3080,
       "volume_24h": 3080,
       "yes_ask": 2,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARRACE-ENJI26-CHBE": {
-      "last_price": 18,
+      "last_price": 17,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 84,
-      "no_bid": 82,
-      "open_interest": 10480,
+      "no_bid": 83,
+      "open_interest": 10482,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-CHBE",
-      "volume": 10553,
-      "volume_24h": 8075,
-      "yes_ask": 18,
+      "volume": 10555,
+      "volume_24h": 10555,
+      "yes_ask": 17,
       "yes_bid": 16
     },
     "KXNASCARRACE-ENJI26-CHBR": {
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 1368,
+      "open_interest": 1371,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-CHBR",
-      "volume": 1368,
+      "volume": 1371,
       "volume_24h": 1368,
       "yes_ask": 8,
       "yes_bid": 7
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-DEHA",
       "volume": 7657,
-      "volume_24h": 7652,
+      "volume_24h": 7657,
       "yes_ask": 17,
       "yes_bid": 16
     },
@@ -267,11 +267,11 @@
       "name": "Josh Berry",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 1323,
+      "open_interest": 1329,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-JOBE",
-      "volume": 1335,
-      "volume_24h": 1328,
+      "volume": 1341,
+      "volume_24h": 1335,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 92,
-      "no_bid": 91,
-      "open_interest": 1135,
+      "no_bid": 90,
+      "open_interest": 3759,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-KYLA",
-      "volume": 1194,
-      "volume_24h": 1194,
-      "yes_ask": 9,
+      "volume": 3818,
+      "volume_24h": 3818,
+      "yes_ask": 10,
       "yes_bid": 8
     },
     "KXNASCARRACE-ENJI26-MIMC": {
@@ -388,17 +388,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-ENJI26-RYBL": {
-      "last_price": 16,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 86,
-      "no_bid": 85,
-      "open_interest": 6102,
+      "no_bid": 84,
+      "open_interest": 6588,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-RYBL",
-      "volume": 6102,
-      "volume_24h": 4605,
-      "yes_ask": 15,
+      "volume": 6588,
+      "volume_24h": 6588,
+      "yes_ask": 16,
       "yes_bid": 14
     },
     "KXNASCARRACE-ENJI26-RYPR": {
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-TYRE",
       "volume": 2017,
-      "volume_24h": 1975,
+      "volume_24h": 2017,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-09T18:00:26.213095+00:00",
+  "scraped_at": "2026-09-09T18:15:21.336129+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "winner"
 }
