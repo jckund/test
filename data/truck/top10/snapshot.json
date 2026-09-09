@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-ANAL",
       "volume": 182,
-      "volume_24h": 182,
+      "volume_24h": 6,
       "yes_ask": 39,
       "yes_bid": 22
     },
@@ -69,15 +69,15 @@
       "last_price": 61,
       "liquidity": 0.0,
       "name": "Brent Crews",
-      "no_ask": 54,
-      "no_bid": 39,
+      "no_ask": 53,
+      "no_bid": 41,
       "open_interest": 404,
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-BRCR",
       "volume": 515,
       "volume_24h": 112,
-      "yes_ask": 61,
-      "yes_bid": 46
+      "yes_ask": 59,
+      "yes_bid": 47
     },
     "KXNASCARTOP10-NUW2PBBASBB26-BRJO": {
       "last_price": 0,
@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Brad Perez",
       "no_ask": 100,
-      "no_bid": 97,
-      "open_interest": 90,
+      "no_bid": 86,
+      "open_interest": 280,
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-BRPE",
-      "volume": 90,
-      "volume_24h": 60,
-      "yes_ask": 3,
+      "volume": 280,
+      "volume_24h": 250,
+      "yes_ask": 14,
       "yes_bid": 0
     },
     "KXNASCARTOP10-NUW2PBBASBB26-BRPO": {
@@ -125,7 +125,7 @@
       "last_price": 55,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 46,
+      "no_ask": 45,
       "no_bid": 40,
       "open_interest": 210,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 210,
       "volume_24h": 210,
       "yes_ask": 60,
-      "yes_bid": 54
+      "yes_bid": 55
     },
     "KXNASCARTOP10-NUW2PBBASBB26-CODA": {
       "last_price": 50,
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Ryan Sieg",
       "no_ask": 74,
-      "no_bid": 55,
+      "no_bid": 54,
       "open_interest": 21,
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-RYSI",
       "volume": 21,
       "volume_24h": 21,
-      "yes_ask": 45,
+      "yes_ask": 46,
       "yes_bid": 26
     },
     "KXNASCARTOP10-NUW2PBBASBB26-SAMA": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-09T23:18:19.308113+00:00",
+  "scraped_at": "2026-09-09T23:33:23.691706+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nuw2pbbasbb26",
   "tier": "top10"
 }
