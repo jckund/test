@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-AUCI",
       "volume": 210,
-      "volume_24h": 210,
+      "volume_24h": 10,
       "yes_ask": 73,
       "yes_bid": 56
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-DASU",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 70,
       "yes_bid": 51
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-JOBE",
       "volume": 213,
-      "volume_24h": 213,
+      "volume_24h": 13,
       "yes_ask": 73,
       "yes_bid": 55
     },
@@ -430,32 +430,32 @@
       "yes_bid": 36
     },
     "KXNASCARTOP20-ENJI26-TOGI": {
-      "last_price": 0,
+      "last_price": 52,
       "liquidity": 0.0,
       "name": "Todd Gilliland",
       "no_ask": 67,
-      "no_bid": 48,
-      "open_interest": 0,
+      "no_bid": 47,
+      "open_interest": 9,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TOGI",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 52,
+      "volume": 9,
+      "volume_24h": 9,
+      "yes_ask": 53,
       "yes_bid": 33
     },
     "KXNASCARTOP20-ENJI26-TYDI": {
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 87,
-      "no_bid": 75,
-      "open_interest": 1030,
+      "no_ask": 90,
+      "no_bid": 78,
+      "open_interest": 1574,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TYDI",
-      "volume": 1030,
-      "volume_24h": 800,
-      "yes_ask": 25,
-      "yes_bid": 13
+      "volume": 1574,
+      "volume_24h": 1344,
+      "yes_ask": 22,
+      "yes_bid": 10
     },
     "KXNASCARTOP20-ENJI26-TYGI": {
       "last_price": 75,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-09T22:00:28.030374+00:00",
+  "scraped_at": "2026-09-09T22:15:21.070075+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top20"
 }
