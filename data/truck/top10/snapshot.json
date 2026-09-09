@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-CODA",
       "volume": 393,
-      "volume_24h": 193,
+      "volume_24h": 0,
       "yes_ask": 61,
       "yes_bid": 45
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-RACA",
       "volume": 165,
-      "volume_24h": 165,
+      "volume_24h": 5,
       "yes_ask": 49,
       "yes_bid": 30
     },
@@ -514,22 +514,22 @@
       "yes_bid": 42
     },
     "KXNASCARTOP10-NUW2PBBASBB26-WISA": {
-      "last_price": 0,
+      "last_price": 52,
       "liquidity": 0.0,
       "name": "William Sawalich",
       "no_ask": 61,
-      "no_bid": 48,
-      "open_interest": 0,
+      "no_bid": 45,
+      "open_interest": 47,
       "status": "active",
       "ticker": "KXNASCARTOP10-NUW2PBBASBB26-WISA",
-      "volume": 0,
+      "volume": 47,
       "volume_24h": 0,
-      "yes_ask": 52,
+      "yes_ask": 55,
       "yes_bid": 39
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-09T22:33:48.284190+00:00",
+  "scraped_at": "2026-09-09T23:03:29.442855+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nuw2pbbasbb26",
   "tier": "top10"
 }
