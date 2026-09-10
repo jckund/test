@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-10T13:40:55Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Top 3 | Noah Gragson | No | 56c | 57.72c | -137 | 99.5% | **+72.3%** |
+| Enjoy Illinois 300 | Top 3 | Chase Elliott | No | 51c | 52.75c | -112 | 85.3% | **+61.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 24 (2026-09-10T13:35:51Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
