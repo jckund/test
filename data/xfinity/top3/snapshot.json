@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 80,
-      "no_bid": 64,
+      "no_bid": 65,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-CAKV",
       "volume": 250,
       "volume_24h": 40,
-      "yes_ask": 36,
+      "yes_ask": 35,
       "yes_bid": 20
     },
     "KXNASCARTOP3-NUW2PBBASBB26-CODA": {
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Corey Day",
       "no_ask": 87,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 210,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-CODA",
       "volume": 210,
       "volume_24h": 0,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 13
     },
     "KXNASCARTOP3-NUW2PBBASBB26-DACR": {
@@ -238,13 +238,13 @@
       "liquidity": 0.0,
       "name": "Jesse Love",
       "no_ask": 85,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-JELO",
       "volume": 30,
       "volume_24h": 30,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 15
     },
     "KXNASCARTOP3-NUW2PBBASBB26-JOAN": {
@@ -307,7 +307,7 @@
       "last_price": 42,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
-      "no_ask": 63,
+      "no_ask": 62,
       "no_bid": 51,
       "open_interest": 200,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 49,
-      "yes_bid": 37
+      "yes_bid": 38
     },
     "KXNASCARTOP3-NUW2PBBASBB26-KYSI": {
       "last_price": 0,
@@ -350,13 +350,13 @@
       "liquidity": 0.0,
       "name": "Mason Maggio",
       "no_ask": 100,
-      "no_bid": 89,
+      "no_bid": 90,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-MAMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 11,
+      "yes_ask": 10,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NUW2PBBASBB26-MYSN": {
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Parker Retzlaff",
       "no_ask": 100,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-PARE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NUW2PBBASBB26-PAST": {
@@ -461,7 +461,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Sam Mayer",
-      "no_ask": 87,
+      "no_ask": 86,
       "no_bid": 74,
       "open_interest": 0,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 26,
-      "yes_bid": 13
+      "yes_bid": 14
     },
     "KXNASCARTOP3-NUW2PBBASBB26-SASM": {
       "last_price": 0,
@@ -500,24 +500,24 @@
       "yes_bid": 17
     },
     "KXNASCARTOP3-NUW2PBBASBB26-TAGR": {
-      "last_price": 0,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Taylor Gray",
       "no_ask": 92,
-      "no_bid": 85,
-      "open_interest": 0,
+      "no_bid": 84,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-NUW2PBBASBB26-TAGR",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 15,
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 16,
       "yes_bid": 8
     },
     "KXNASCARTOP3-NUW2PBBASBB26-WISA": {
       "last_price": 0,
       "liquidity": 0.0,
       "name": "William Sawalich",
-      "no_ask": 92,
+      "no_ask": 91,
       "no_bid": 85,
       "open_interest": 0,
       "status": "active",
@@ -525,11 +525,11 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 15,
-      "yes_bid": 8
+      "yes_bid": 9
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-10T15:48:08.175356+00:00",
+  "scraped_at": "2026-09-10T16:02:51.940477+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nuw2pbbasbb26",
   "tier": "top3"
 }
