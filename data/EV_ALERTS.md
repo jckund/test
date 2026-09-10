@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-10T14:30:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Top 10 | Brad Perez | No | 25c | 26.31c | +280 | 94.5% | **+259.3%** |
+| Nu Way Auto Parts 225 | Win | Austin J Hill | Yes | 1c | 1.07c | +9252 | 2.5% | **+131.9%** |
+| Nu Way Auto Parts 225 | Win | Parker Retzlaff | Yes | 1c | 1.07c | +9252 | 1.5% | **+42.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-10T13:40:55Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
