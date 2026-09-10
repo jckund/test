@@ -67,15 +67,25 @@ WINNER_SERIES = "KXNASCARRACE"
 SERIES = [
     # Cup this weekend: Enjoy Illinois 300 at WWT Raceway (Gateway). Match on
     # "enjoy illinois" only — NOT "300", which collides with other race names,
-    # nor "gateway"/"world wide technology", since the Truck race is at the same
-    # track. Trucks: Nu Way 225 — match "nu way", not the generic "225".
-    # No Xfinity race this weekend (Cup + Trucks only), so the `xfinity` default
-    # should claim nothing; anything that lands there is an unmatched race.
+    # nor "gateway"/"world wide technology", since the support race is at the
+    # same track.
+    #
+    # The support race is Nu Way Auto Parts 225, and it is the XFINITY race, not
+    # a Truck race. Gateway has historically been a Cup + Trucks weekend, so
+    # "Nu Way 225" was first filed under `truck`; the Kalshi roster settled it
+    # (Allgaier, Crews, Kvapil, Mayer, Creed, Sammy Smith — an Xfinity field, no
+    # Truck regulars), so it matches on `xfinity` instead. Match "nu way", not
+    # the generic "225". No Truck race this weekend, hence the empty matcher.
+    #
+    # NOTE: `xfinity` is ALSO the catch-all, so an unrecognized race still lands
+    # here and would inherit the "Xfinity" label. That is the pre-existing
+    # tradeoff of naming the default series; re-check the label when the matchers
+    # are re-pointed rather than assuming a race on this tab is Xfinity.
     {"key": "cup", "label": "NASCAR", "matchers": ["enjoy illinois"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": ["nu way"],
+    {"key": "truck", "label": "Trucks", "matchers": [],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    {"key": "xfinity", "label": "Support race", "matchers": [], "default": True,
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["nu way"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
