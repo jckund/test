@@ -121,7 +121,20 @@ def american(c: float):
 
 
 def norm_name(s: str) -> str:
-    """Match index.html's normName(): first+last token, accents/suffixes dropped."""
+    """Match index.html's normName(): first token + middle INITIALS + last
+    token, accents/suffixes dropped.
+
+    Middle tokens are reduced rather than dropped, and both halves of that
+    matter. Reducing them is what lets FanDuel's "John Hunter Nemechek" meet
+    Kalshi's "John H. Nemechek" and "A.J." meet "AJ". Keeping them is what
+    stops "Austin J Hill" (#53) collapsing onto "Austin Hill" (#21) — two real
+    drivers in the same Xfinity field. This function feeds the SG lookup, so a
+    collision there would price one driver's Kalshi Yes against the other's
+    model probability (0.9% vs 47.4% on top 10) and alert on a phantom edge.
+
+    Keep this in lockstep with index.html's normName(); the dashboard and this
+    alert path must agree on what counts as the same driver.
+    """
     import unicodedata
     s = unicodedata.normalize("NFD", s or "")
     s = "".join(ch for ch in s if not unicodedata.combining(ch)).lower()
@@ -129,7 +142,9 @@ def norm_name(s: str) -> str:
             if t not in ("jr", "sr", "ii", "iii", "iv")]
     if not toks:
         return ""
-    return toks[0] if len(toks) == 1 else toks[0] + toks[-1]
+    if len(toks) == 1:
+        return toks[0]
+    return toks[0] + "".join(t[0] for t in toks[1:-1]) + toks[-1]
 
 
 def _band(cents: float) -> int:
