@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-10T08:22:02Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Top 3 | Ty Dillon | No | 51c | 52.75c | -112 | 99.7% | **+89.1%** |
+| Enjoy Illinois 300 | Top 3 | Austin Dillon | No | 51c | 52.75c | -112 | 98.1% | **+86.0%** |
+| Enjoy Illinois 300 | Top 3 | Ty Gibbs | No | 51c | 52.75c | -112 | 81.7% | **+54.9%** |
+| Enjoy Illinois 300 | Top 3 | Joey Logano | No | 51c | 52.75c | -112 | 75.6% | **+43.2%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 29 (2026-09-10T07:20:52Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
