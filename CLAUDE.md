@@ -366,11 +366,20 @@ vars, no setup script); the 15/5-min cadence comes from cron-job.org, not from
 Claude. A session only wakes for a race if someone explicitly calls
 `subscribe_pr_activity`, and that subscription dies with the session.
 
-**Switching Claude accounts** (e.g. enterprise → personal): on the new account,
-Settings → Connectors → connect GitHub → grant access to **`jckund/test`** (a
-public repo owned by the GitHub *user* `jckund`, not an org), then start a Claude
-Code session on it. `CLAUDE.md` loads automatically and the deploy flow works
-unchanged. Nothing to export, nothing to re-create.
+**Switching Claude accounts** (e.g. enterprise → personal): sign in at
+claude.ai/code on the new account and follow the GitHub prompt to authorize.
+`jckund/test` is a **public** repo owned by the GitHub *user* `jckund` (not an
+org), so authorizing alone is enough to *clone* it — but also install the
+**Claude GitHub App** on it (https://github.com/apps/claude/installations/new),
+because that is what grants push and `workflow_dispatch` (firing `track.yml` /
+`fanduel.yml`), plus Auto-fix. The App installs against the *GitHub* account,
+independent of which Claude account authorized it, so an existing install
+survives the switch — expect "Configure" rather than "Install". Terminal
+alternative: `/web-setup` in the CLI sends your `gh` token instead (and
+*replaces* a browser connection) — run `gh auth refresh -s workflow` first or
+pushes touching `.github/workflows/*` are rejected. Then pick the repo in the
+session's repository selector. `CLAUDE.md` loads automatically and the deploy
+flow works unchanged. Nothing to export, nothing to re-create.
 
 **Three dependencies live outside both the repo and Claude.** They belong to the
 GitHub repo and the cron service, so a Claude account switch leaves them
