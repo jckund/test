@@ -111,7 +111,7 @@
       "last_price": 2,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
       "open_interest": 7946,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 7946,
       "volume_24h": 2326,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARRACE-ENJI26-CHBE": {
       "last_price": 17,
@@ -276,15 +276,15 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-ENJI26-JOLO": {
-      "last_price": 10,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 90,
       "no_bid": 89,
-      "open_interest": 14986,
+      "open_interest": 15414,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-JOLO",
-      "volume": 15075,
+      "volume": 15503,
       "volume_24h": 7843,
       "yes_ask": 11,
       "yes_bid": 10
@@ -410,7 +410,7 @@
       "open_interest": 10006,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-RYPR",
-      "volume": 14093,
+      "volume": 15263,
       "volume_24h": 1674,
       "yes_ask": 2,
       "yes_bid": 1
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-11T03:15:22.090386+00:00",
+  "scraped_at": "2026-09-11T03:30:23.349660+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "winner"
 }
