@@ -356,6 +356,45 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
 - "Scan every book vs Kalshi fair (mid) across all tiers and rank +EV spots."
 - "Is <Driver A> <odds> to beat <Driver B> a good bet?"
 
+## Portability / external dependencies (not in this repo)
+
+**Nothing here is tied to a particular Claude account.** Everything needed to run
+the project is committed: `CLAUDE.md`, `.claude/settings.json` (the permission
+allowlist), the workflows, the scripts, `data/`. There are no Routines/scheduled
+triggers and no custom Claude environment (stock cloud default — no extra env
+vars, no setup script); the 15/5-min cadence comes from cron-job.org, not from
+Claude. A session only wakes for a race if someone explicitly calls
+`subscribe_pr_activity`, and that subscription dies with the session.
+
+**Switching Claude accounts** (e.g. enterprise → personal): on the new account,
+Settings → Connectors → connect GitHub → grant access to **`jckund/test`** (a
+public repo owned by the GitHub *user* `jckund`, not an org), then start a Claude
+Code session on it. `CLAUDE.md` loads automatically and the deploy flow works
+unchanged. Nothing to export, nothing to re-create.
+
+**Three dependencies live outside both the repo and Claude.** They belong to the
+GitHub repo and the cron service, so a Claude account switch leaves them
+untouched — but each must be re-created by hand if the project ever moves to a
+**new repo**:
+- **Actions secrets** on the repo: `PUSHOVER_TOKEN`, `PUSHOVER_USER`,
+  `ALERT_WEBHOOK_URL`. Write-only — they can't be read back or copied, so a new
+  repo means re-entering the values from the source (Pushover console, webhook
+  provider). Every alert channel no-ops when unset, so a missing secret fails
+  **silently** rather than loudly — verify by making one alert actually fire.
+- **Two cron-job.org pingers** hitting `workflow_dispatch` (~15 min → `track.yml`,
+  ~5 min → `evalert.yml`), each carrying a GitHub PAT. Set up once, run 24/7, and
+  live entirely in the cron-job.org account — Claude can't see or change them.
+  A new repo means re-pointing both URLs and re-checking the PAT's scope.
+- **GitHub Pages** serving from `claude/nascar-page-scraper-mwi55a`, plus that
+  branch being the repo's **default** branch (so a fresh session checks it out
+  and reads this file).
+
+**Standing it up in a new repo**, if it ever comes to that: push the code, make
+the deploy branch the default, enable Pages on it, add the three secrets,
+re-point both pingers, and commit `.github/scrape_active` = `true` for race week.
+Then run `fanduel.yml`, then `track.yml`, and confirm a `data: market update`
+commit lands.
+
 ## Notes
 
 - **Scrape frequency and cost.** Repo is **public** ⇒ Actions minutes and Pages
