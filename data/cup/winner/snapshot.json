@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-ALBO",
       "volume": 934,
-      "volume_24h": 397,
+      "volume_24h": 116,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 3008,
+      "no_bid": 96,
+      "open_interest": 13585,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-AUCI",
-      "volume": 3125,
-      "volume_24h": 701,
-      "yes_ask": 3,
+      "volume": 13819,
+      "volume_24h": 11395,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARRACE-ENJI26-AUDI": {
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 7946,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-CAHO",
       "volume": 7946,
       "volume_24h": 2326,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-ENJI26-CHBE": {
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-CHBE",
       "volume": 17451,
-      "volume_24h": 6789,
+      "volume_24h": 6595,
       "yes_ask": 17,
       "yes_bid": 16
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-CHEL",
       "volume": 2644,
-      "volume_24h": 1447,
+      "volume_24h": 276,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -234,16 +234,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-ENJI26-DEHA": {
-      "last_price": 16,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 21053,
+      "open_interest": 21095,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-DEHA",
-      "volume": 21157,
-      "volume_24h": 2644,
+      "volume": 21287,
+      "volume_24h": 2535,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -276,18 +276,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-ENJI26-JOLO": {
-      "last_price": 11,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 15414,
+      "no_ask": 91,
+      "no_bid": 90,
+      "open_interest": 15489,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-JOLO",
-      "volume": 15503,
-      "volume_24h": 7843,
-      "yes_ask": 11,
-      "yes_bid": 10
+      "volume": 15595,
+      "volume_24h": 8362,
+      "yes_ask": 10,
+      "yes_bid": 9
     },
     "KXNASCARRACE-ENJI26-JONE": {
       "last_price": 1,
@@ -309,10 +309,10 @@
       "name": "Kyle Larson",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 14895,
+      "open_interest": 14905,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-KYLA",
-      "volume": 14956,
+      "volume": 14966,
       "volume_24h": 9145,
       "yes_ask": 10,
       "yes_bid": 9
@@ -410,8 +410,8 @@
       "open_interest": 10006,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-RYPR",
-      "volume": 15263,
-      "volume_24h": 1674,
+      "volume": 15403,
+      "volume_24h": 2984,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -486,18 +486,18 @@
       "yes_bid": 5
     },
     "KXNASCARRACE-ENJI26-WIBY": {
-      "last_price": 7,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 94,
-      "no_bid": 93,
-      "open_interest": 271,
+      "no_ask": 95,
+      "no_bid": 94,
+      "open_interest": 321,
       "status": "active",
       "ticker": "KXNASCARRACE-ENJI26-WIBY",
-      "volume": 271,
-      "volume_24h": 127,
-      "yes_ask": 7,
-      "yes_bid": 6
+      "volume": 321,
+      "volume_24h": 177,
+      "yes_ask": 6,
+      "yes_bid": 5
     },
     "KXNASCARRACE-ENJI26-ZASM": {
       "last_price": 1,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-11T03:30:23.349660+00:00",
+  "scraped_at": "2026-09-11T03:45:16.185800+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "winner"
 }
