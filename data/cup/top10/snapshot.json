@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-AUCI",
       "volume": 428,
-      "volume_24h": 52,
+      "volume_24h": 0,
       "yes_ask": 46,
       "yes_bid": 34
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-BUWA",
       "volume": 1659,
-      "volume_24h": 205,
+      "volume_24h": 151,
       "yes_ask": 45,
       "yes_bid": 40
     },
@@ -125,7 +125,7 @@
       "last_price": 67,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 38,
+      "no_ask": 39,
       "no_bid": 33,
       "open_interest": 450,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 450,
       "volume_24h": 15,
       "yes_ask": 67,
-      "yes_bid": 62
+      "yes_bid": 61
     },
     "KXNASCARTOP10-ENJI26-CHBR": {
       "last_price": 62,
@@ -279,15 +279,15 @@
       "last_price": 64,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 49,
-      "no_bid": 37,
-      "open_interest": 874,
+      "no_ask": 48,
+      "no_bid": 36,
+      "open_interest": 1289,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-JOLO",
-      "volume": 874,
+      "volume": 1289,
       "volume_24h": 8,
-      "yes_ask": 63,
-      "yes_bid": 51
+      "yes_ask": 64,
+      "yes_bid": 52
     },
     "KXNASCARTOP10-ENJI26-JONE": {
       "last_price": 12,
@@ -307,7 +307,7 @@
       "last_price": 62,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 45,
+      "no_ask": 44,
       "no_bid": 39,
       "open_interest": 181,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 181,
       "volume_24h": 0,
       "yes_ask": 61,
-      "yes_bid": 55
+      "yes_bid": 56
     },
     "KXNASCARTOP10-ENJI26-MIMC": {
       "last_price": 0,
@@ -391,7 +391,7 @@
       "last_price": 66,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 37,
+      "no_ask": 38,
       "no_bid": 32,
       "open_interest": 328,
       "status": "active",
@@ -399,7 +399,7 @@
       "volume": 328,
       "volume_24h": 0,
       "yes_ask": 68,
-      "yes_bid": 63
+      "yes_bid": 62
     },
     "KXNASCARTOP10-ENJI26-RYPR": {
       "last_price": 25,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-12T15:15:20.214500+00:00",
+  "scraped_at": "2026-09-12T15:30:24.270435+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top10"
 }
