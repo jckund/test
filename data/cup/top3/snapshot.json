@@ -136,18 +136,18 @@
       "yes_bid": 27
     },
     "KXNASCARTOP3-ENJI26-CHBR": {
-      "last_price": 21,
+      "last_price": 20,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 83,
-      "no_bid": 80,
-      "open_interest": 33,
+      "no_ask": 80,
+      "no_bid": 72,
+      "open_interest": 267,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CHBR",
-      "volume": 33,
-      "volume_24h": 0,
-      "yes_ask": 20,
-      "yes_bid": 17
+      "volume": 267,
+      "volume_24h": 234,
+      "yes_ask": 28,
+      "yes_bid": 20
     },
     "KXNASCARTOP3-ENJI26-CHBU": {
       "last_price": 0,
@@ -237,15 +237,15 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 59,
-      "no_bid": 53,
+      "no_ask": 60,
+      "no_bid": 54,
       "open_interest": 485,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-DEHA",
       "volume": 495,
       "volume_24h": 198,
-      "yes_ask": 47,
-      "yes_bid": 41
+      "yes_ask": 46,
+      "yes_bid": 40
     },
     "KXNASCARTOP3-ENJI26-ERJO": {
       "last_price": 0,
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 79,
-      "no_bid": 75,
+      "no_bid": 73,
       "open_interest": 311,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-JOLO",
       "volume": 311,
       "volume_24h": 82,
-      "yes_ask": 25,
+      "yes_ask": 27,
       "yes_bid": 21
     },
     "KXNASCARTOP3-ENJI26-JONE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-12T09:30:21.338498+00:00",
+  "scraped_at": "2026-09-12T09:45:19.666427+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top3"
 }
