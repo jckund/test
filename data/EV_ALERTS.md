@@ -1,3 +1,27 @@
+### New Kalshi vs SG lines >= +30% EV — 15 (2026-09-12T20:25:50Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Top 3 | Cole Custer | No | 51c | 52.75c | -112 | 99.8% | **+89.2%** |
+| Enjoy Illinois 300 | Top 3 | Ty Dillon | No | 51c | 52.75c | -112 | 99.7% | **+89.1%** |
+| Enjoy Illinois 300 | Top 3 | Riley Herbst | No | 51c | 52.75c | -112 | 99.7% | **+89.0%** |
+| Enjoy Illinois 300 | Top 3 | Austin Hill | No | 51c | 52.75c | -112 | 99.6% | **+88.8%** |
+| Enjoy Illinois 300 | Top 3 | Ricky Stenhouse | No | 51c | 52.75c | -112 | 99.5% | **+88.6%** |
+| Enjoy Illinois 300 | Top 3 | Noah Gragson | No | 51c | 52.75c | -112 | 99.5% | **+88.6%** |
+| Enjoy Illinois 300 | Top 3 | Todd Gilliland | No | 51c | 52.75c | -112 | 99.3% | **+88.3%** |
+| Enjoy Illinois 300 | Top 3 | Alex Bowman | No | 51c | 52.75c | -112 | 98.7% | **+87.2%** |
+| Enjoy Illinois 300 | Top 3 | John H. Nemechek | No | 51c | 52.75c | -112 | 98.4% | **+86.6%** |
+| Enjoy Illinois 300 | Top 3 | Erik Jones | No | 51c | 52.75c | -112 | 98.2% | **+86.2%** |
+| Enjoy Illinois 300 | Top 3 | Austin Dillon | No | 51c | 52.75c | -112 | 98.1% | **+86.0%** |
+| Enjoy Illinois 300 | Top 3 | AJ Allmendinger | No | 51c | 52.75c | -112 | 98.1% | **+86.0%** |
+| Enjoy Illinois 300 | Top 3 | Connor Zilisch | No | 51c | 52.75c | -112 | 97.9% | **+85.6%** |
+| Nu Way Auto Parts 225 | Win | Brent Crews | Yes | 6c | 6.39c | +1464 | 11.7% | **+83.3%** |
+| Enjoy Illinois 300 | Top 3 | Michael McDowell | No | 71c | 72.44c | -263 | 98.7% | **+36.2%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-12T20:16:04Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
