@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-AUDI",
       "volume": 873,
-      "volume_24h": 846,
+      "volume_24h": 646,
       "yes_ask": 16,
       "yes_bid": 13
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-BRKE",
       "volume": 227,
-      "volume_24h": 227,
+      "volume_24h": 0,
       "yes_ask": 30,
       "yes_bid": 22
     },
@@ -307,7 +307,7 @@
       "last_price": 62,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 44,
+      "no_ask": 45,
       "no_bid": 39,
       "open_interest": 181,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 181,
       "volume_24h": 0,
       "yes_ask": 61,
-      "yes_bid": 56
+      "yes_bid": 55
     },
     "KXNASCARTOP10-ENJI26-MIMC": {
       "last_price": 0,
@@ -378,28 +378,28 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 76,
-      "no_bid": 72,
+      "no_bid": 73,
       "open_interest": 235,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-ROCH",
       "volume": 235,
-      "volume_24h": 235,
-      "yes_ask": 28,
+      "volume_24h": 1,
+      "yes_ask": 27,
       "yes_bid": 24
     },
     "KXNASCARTOP10-ENJI26-RYBL": {
       "last_price": 66,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 38,
+      "no_ask": 37,
       "no_bid": 34,
       "open_interest": 328,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-RYBL",
       "volume": 328,
-      "volume_24h": 222,
+      "volume_24h": 0,
       "yes_ask": 66,
-      "yes_bid": 62
+      "yes_bid": 63
     },
     "KXNASCARTOP10-ENJI26-RYPR": {
       "last_price": 25,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-12T12:15:20.825159+00:00",
+  "scraped_at": "2026-09-12T12:30:22.659409+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top10"
 }
