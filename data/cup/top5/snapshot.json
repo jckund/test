@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-ALBO",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -262,18 +262,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP5-ENJI26-JOBE": {
-      "last_price": 26,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 77,
-      "no_bid": 74,
+      "no_ask": 78,
+      "no_bid": 77,
       "open_interest": 689,
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-JOBE",
-      "volume": 689,
+      "volume": 699,
       "volume_24h": 183,
-      "yes_ask": 26,
-      "yes_bid": 23
+      "yes_ask": 23,
+      "yes_bid": 22
     },
     "KXNASCARTOP5-ENJI26-JOLO": {
       "last_price": 44,
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 57,
-      "no_bid": 48,
+      "no_bid": 47,
       "open_interest": 361,
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-RYBL",
       "volume": 361,
       "volume_24h": 46,
-      "yes_ask": 52,
+      "yes_ask": 53,
       "yes_bid": 43
     },
     "KXNASCARTOP5-ENJI26-RYPR": {
@@ -475,7 +475,7 @@
       "last_price": 29,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 72,
       "open_interest": 226,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 226,
       "volume_24h": 223,
       "yes_ask": 28,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARTOP5-ENJI26-WIBY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-12T08:30:21.227820+00:00",
+  "scraped_at": "2026-09-12T08:45:21.373738+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top5"
 }
