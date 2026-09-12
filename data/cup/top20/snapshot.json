@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 44,
-      "no_bid": 32,
-      "open_interest": 30,
+      "no_bid": 31,
+      "open_interest": 80,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-CHBU",
-      "volume": 30,
+      "volume": 80,
       "volume_24h": 1,
-      "yes_ask": 68,
+      "yes_ask": 69,
       "yes_bid": 56
     },
     "KXNASCARTOP20-ENJI26-CHEL": {
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 65,
-      "no_bid": 60,
+      "no_bid": 59,
       "open_interest": 297,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-COZI",
       "volume": 347,
       "volume_24h": 11,
-      "yes_ask": 40,
+      "yes_ask": 41,
       "yes_bid": 35
     },
     "KXNASCARTOP20-ENJI26-DASU": {
@@ -237,7 +237,7 @@
       "last_price": 98,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 18,
+      "no_ask": 19,
       "no_bid": 7,
       "open_interest": 2,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 2,
       "volume_24h": 0,
       "yes_ask": 93,
-      "yes_bid": 82
+      "yes_bid": 81
     },
     "KXNASCARTOP20-ENJI26-ERJO": {
       "last_price": 57,
@@ -265,7 +265,7 @@
       "last_price": 73,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 45,
+      "no_ask": 46,
       "no_bid": 28,
       "open_interest": 204,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 220,
       "volume_24h": 1,
       "yes_ask": 72,
-      "yes_bid": 55
+      "yes_bid": 54
     },
     "KXNASCARTOP20-ENJI26-JOLO": {
       "last_price": 82,
@@ -307,7 +307,7 @@
       "last_price": 88,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 24,
+      "no_ask": 25,
       "no_bid": 11,
       "open_interest": 225,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 235,
       "volume_24h": 0,
       "yes_ask": 89,
-      "yes_bid": 76
+      "yes_bid": 75
     },
     "KXNASCARTOP20-ENJI26-MIMC": {
       "last_price": 53,
@@ -350,13 +350,13 @@
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 69,
-      "no_bid": 53,
+      "no_bid": 52,
       "open_interest": 45,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-RIHE",
       "volume": 45,
       "volume_24h": 1,
-      "yes_ask": 47,
+      "yes_ask": 48,
       "yes_bid": 31
     },
     "KXNASCARTOP20-ENJI26-RIST": {
@@ -391,7 +391,7 @@
       "last_price": 94,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 20,
+      "no_ask": 25,
       "no_bid": 7,
       "open_interest": 1,
       "status": "active",
@@ -399,7 +399,7 @@
       "volume": 1,
       "volume_24h": 0,
       "yes_ask": 93,
-      "yes_bid": 80
+      "yes_bid": 75
     },
     "KXNASCARTOP20-ENJI26-RYPR": {
       "last_price": 54,
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-RYPR",
       "volume": 240,
-      "volume_24h": 4,
+      "volume_24h": 2,
       "yes_ask": 64,
       "yes_bid": 53
     },
@@ -447,15 +447,15 @@
       "last_price": 13,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 88,
+      "no_ask": 87,
       "no_bid": 79,
       "open_interest": 2200,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TYDI",
       "volume": 2200,
-      "volume_24h": 318,
+      "volume_24h": 625,
       "yes_ask": 21,
-      "yes_bid": 12
+      "yes_bid": 13
     },
     "KXNASCARTOP20-ENJI26-TYGI": {
       "last_price": 78,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-12T15:45:19.961760+00:00",
+  "scraped_at": "2026-09-12T16:00:27.314967+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top20"
 }
