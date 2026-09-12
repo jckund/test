@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-BUWA",
       "volume": 766,
-      "volume_24h": 600,
+      "volume_24h": 0,
       "yes_ask": 24,
       "yes_bid": 15
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-RIHE",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 1
     },
@@ -388,16 +388,16 @@
       "yes_bid": 8
     },
     "KXNASCARTOP5-ENJI26-RYBL": {
-      "last_price": 53,
+      "last_price": 51,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 57,
       "no_bid": 49,
-      "open_interest": 361,
+      "open_interest": 363,
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-RYBL",
-      "volume": 361,
-      "volume_24h": 46,
+      "volume": 363,
+      "volume_24h": 48,
       "yes_ask": 51,
       "yes_bid": 43
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-ENJI26-TYRE",
       "volume": 226,
-      "volume_24h": 223,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 22
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-12T12:30:22.099105+00:00",
+  "scraped_at": "2026-09-12T12:45:18.584961+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top5"
 }
