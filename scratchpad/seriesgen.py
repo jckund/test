@@ -17,7 +17,12 @@ def normName(s):
     toks = [t for t in re.split(r"[^a-z0-9]+", s) if t and t not in ("jr", "sr", "ii", "iii", "iv")]
     if not toks:
         return ""
-    return toks[0] if len(toks) == 1 else toks[0] + toks[-1]
+    if len(toks) == 1:
+        return toks[0]
+    # Middle INITIALS are kept, matching index.html's normName() and
+    # evwatch.py's norm_name(): dropping them collapses "Austin J Hill" (#53)
+    # onto "Austin Hill" (#21), two real drivers in the same Xfinity field.
+    return toks[0] + "".join(t[0] for t in toks[1:-1]) + toks[-1]
 
 def load_canon(series):
     """normName -> Kalshi display name, from the union of that series' tier snapshots."""
