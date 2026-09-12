@@ -1,3 +1,22 @@
+### New Kalshi vs SG lines >= +30% EV — 10 (2026-09-12T18:31:07Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Top 3 | Blaine Perkins | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Mason Maggio | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Josh Williams | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Brennan Poole | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Patrick Staropoli | No | 66c | 67.57c | -208 | 99.7% | **+47.6%** |
+| Nu Way Auto Parts 225 | Top 3 | Jeb Burton | No | 66c | 67.57c | -208 | 99.2% | **+46.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Harrison Burton | No | 66c | 67.57c | -208 | 98.8% | **+46.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Anthony Alfredo | No | 66c | 67.57c | -208 | 97.5% | **+44.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Ryan Sieg | No | 66c | 67.57c | -208 | 96.1% | **+42.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Parker Retzlaff | No | 66c | 67.57c | -208 | 90.9% | **+34.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-12T18:20:52Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
