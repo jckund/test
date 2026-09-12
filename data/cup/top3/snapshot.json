@@ -97,15 +97,15 @@
       "last_price": 18,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 86,
       "open_interest": 53,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-BUWA",
       "volume": 53,
-      "volume_24h": 53,
+      "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP3-ENJI26-CAHO": {
       "last_price": 6,
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CAHO",
       "volume": 94,
-      "volume_24h": 94,
+      "volume_24h": 47,
       "yes_ask": 6,
       "yes_bid": 3
     },
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 74,
-      "no_bid": 59,
+      "no_bid": 58,
       "open_interest": 228,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CHBE",
       "volume": 228,
       "volume_24h": 12,
-      "yes_ask": 41,
+      "yes_ask": 42,
       "yes_bid": 26
     },
     "KXNASCARTOP3-ENJI26-CHBR": {
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 82,
-      "no_bid": 72,
+      "no_bid": 71,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-KYLA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 28,
+      "yes_ask": 29,
       "yes_bid": 18
     },
     "KXNASCARTOP3-ENJI26-MIMC": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-12T00:00:28.406988+00:00",
+  "scraped_at": "2026-09-12T00:15:19.494567+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top3"
 }
