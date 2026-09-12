@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-12T21:40:53Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Win | Bubba Wallace | Yes | 2c | 2.14c | +4579 | 3.0% | **+38.5%** |
+| Enjoy Illinois 300 | Top 10 | Joey Logano | No | 31c | 32.50c | +208 | 42.9% | **+32.1%** |
+| Enjoy Illinois 300 | Win | Chase Elliott | Yes | 3c | 3.20c | +3021 | 4.2% | **+31.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-12T21:35:48Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
