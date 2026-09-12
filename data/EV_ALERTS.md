@@ -1,3 +1,30 @@
+### New Kalshi vs SG lines >= +30% EV — 18 (2026-09-12T18:10:53Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Top 3 | Ryan Ellis | No | 66c | 67.57c | -208 | 100.0% | **+48.0%** |
+| Nu Way Auto Parts 225 | Top 3 | Blaine Perkins | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Mason Maggio | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Myatt Snider | No | 66c | 67.57c | -208 | 99.9% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Josh Williams | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Brennan Poole | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Kyle Sieg | No | 66c | 67.57c | -208 | 99.8% | **+47.7%** |
+| Nu Way Auto Parts 225 | Top 3 | Patrick Staropoli | No | 66c | 67.57c | -208 | 99.7% | **+47.6%** |
+| Nu Way Auto Parts 225 | Top 3 | Dean Thompson | No | 66c | 67.57c | -208 | 99.5% | **+47.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Jeb Burton | No | 66c | 67.57c | -208 | 99.2% | **+46.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Jordan Anderson | No | 66c | 67.57c | -208 | 98.9% | **+46.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Jeremy Clements | No | 66c | 67.57c | -208 | 98.6% | **+45.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Anthony Alfredo | No | 66c | 67.57c | -208 | 97.5% | **+44.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Nicholas Sanchez | No | 66c | 67.57c | -208 | 96.3% | **+42.6%** |
+| Nu Way Auto Parts 225 | Top 3 | Ryan Sieg | No | 66c | 67.57c | -208 | 96.1% | **+42.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Corey Day | Yes | 15c | 15.89c | +529 | 22.2% | **+39.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Parker Retzlaff | No | 66c | 67.57c | -208 | 90.9% | **+34.5%** |
+| Nu Way Auto Parts 225 | Top 3 | Rajah Caruth | No | 66c | 67.57c | -208 | 90.2% | **+33.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-12T17:55:50Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
