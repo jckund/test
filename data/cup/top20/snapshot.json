@@ -83,15 +83,15 @@
       "last_price": 97,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 50,
-      "no_bid": 2,
+      "no_ask": 49,
+      "no_bid": 3,
       "open_interest": 96,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-BRKE",
       "volume": 100,
       "volume_24h": 96,
-      "yes_ask": 98,
-      "yes_bid": 50
+      "yes_ask": 97,
+      "yes_bid": 51
     },
     "KXNASCARTOP20-ENJI26-BUWA": {
       "last_price": 50,
@@ -108,17 +108,17 @@
       "yes_bid": 46
     },
     "KXNASCARTOP20-ENJI26-CAHO": {
-      "last_price": 75,
+      "last_price": 82,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 74,
-      "no_bid": 25,
-      "open_interest": 146,
+      "no_bid": 1,
+      "open_interest": 147,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-CAHO",
-      "volume": 237,
-      "volume_24h": 52,
-      "yes_ask": 75,
+      "volume": 264,
+      "volume_24h": 79,
+      "yes_ask": 99,
       "yes_bid": 26
     },
     "KXNASCARTOP20-ENJI26-CHBE": {
@@ -332,18 +332,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP20-ENJI26-NOGR": {
-      "last_price": 16,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Noah Gragson",
-      "no_ask": 88,
-      "no_bid": 1,
-      "open_interest": 208,
+      "no_ask": 100,
+      "no_bid": 99,
+      "open_interest": 722,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-NOGR",
-      "volume": 219,
-      "volume_24h": 217,
-      "yes_ask": 99,
-      "yes_bid": 12
+      "volume": 734,
+      "volume_24h": 565,
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARTOP20-ENJI26-RIHE": {
       "last_price": 1,
@@ -354,8 +354,8 @@
       "open_interest": 857,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-RIHE",
-      "volume": 919,
-      "volume_24h": 261,
+      "volume": 922,
+      "volume_24h": 875,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -416,32 +416,32 @@
       "yes_bid": 26
     },
     "KXNASCARTOP20-ENJI26-SHVA": {
-      "last_price": 37,
+      "last_price": 67,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 78,
       "no_bid": 33,
-      "open_interest": 459,
+      "open_interest": 465,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-SHVA",
-      "volume": 491,
+      "volume": 496,
       "volume_24h": 484,
       "yes_ask": 67,
       "yes_bid": 22
     },
     "KXNASCARTOP20-ENJI26-TOGI": {
-      "last_price": 29,
+      "last_price": 21,
       "liquidity": 0.0,
       "name": "Todd Gilliland",
-      "no_ask": 79,
+      "no_ask": 82,
       "no_bid": 33,
-      "open_interest": 896,
+      "open_interest": 897,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TOGI",
-      "volume": 901,
-      "volume_24h": 846,
+      "volume": 902,
+      "volume_24h": 847,
       "yes_ask": 67,
-      "yes_bid": 21
+      "yes_bid": 18
     },
     "KXNASCARTOP20-ENJI26-TYDI": {
       "last_price": 5,
@@ -508,14 +508,14 @@
       "open_interest": 739,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-ZASM",
-      "volume": 1106,
+      "volume": 1113,
       "volume_24h": 894,
       "yes_ask": 1,
       "yes_bid": 0
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-13T22:00:29.122174+00:00",
+  "scraped_at": "2026-09-13T22:15:22.454655+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top20"
 }
