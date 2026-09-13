@@ -1,3 +1,28 @@
+### New Kalshi vs SG lines >= +30% EV — 16 (2026-09-13T02:20:52Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Win | Jesse Love | No | 1c | 1.07c | +9252 | 82.8% | **+7639.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Sheldon Creed | No | 1c | 1.07c | +9252 | 73.3% | **+6757.1%** |
+| Nu Way Auto Parts 225 | Top 10 | Justin Allgaier | Yes | 1c | 1.07c | +9252 | 67.1% | **+6175.1%** |
+| Nu Way Auto Parts 225 | Top 3 | Taylor Gray | Yes | 1c | 1.07c | +9252 | 19.7% | **+1738.0%** |
+| Nu Way Auto Parts 225 | Top 3 | Sam Mayer | No | 5c | 5.33c | +1775 | 89.0% | **+1569.6%** |
+| Nu Way Auto Parts 225 | Win | Sheldon Creed | Yes | 1c | 1.07c | +9252 | 10.3% | **+867.3%** |
+| Nu Way Auto Parts 225 | Top 10 | Ryan Sieg | No | 36c | 37.61c | +166 | 77.2% | **+105.3%** |
+| Enjoy Illinois 300 | Top 20 | Ty Dillon | Yes | 16c | 16.94c | +490 | 32.0% | **+88.6%** |
+| Nu Way Auto Parts 225 | Top 10 | Brent Crews | Yes | 34c | 35.57c | +181 | 56.3% | **+58.4%** |
+| Nu Way Auto Parts 225 | Top 10 | Rajah Caruth | No | 36c | 37.61c | +166 | 58.2% | **+54.6%** |
+| Nu Way Auto Parts 225 | Top 3 | Brent Crews | No | 51c | 52.75c | -112 | 79.7% | **+51.1%** |
+| Nu Way Auto Parts 225 | Top 10 | Jesse Love | Yes | 46c | 47.74c | +109 | 68.8% | **+44.2%** |
+| Nu Way Auto Parts 225 | Top 3 | Sammy Smith | No | 66c | 67.57c | -208 | 90.5% | **+33.9%** |
+| Nu Way Auto Parts 225 | Top 10 | Kyle Sieg | No | 65c | 66.59c | -199 | 88.7% | **+33.1%** |
+| Nu Way Auto Parts 225 | Top 10 | Brandon Jones | No | 36c | 37.61c | +166 | 49.5% | **+31.6%** |
+| Nu Way Auto Parts 225 | Top 10 | Sheldon Creed | Yes | 46c | 47.74c | +109 | 62.8% | **+31.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-13T02:15:51Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
