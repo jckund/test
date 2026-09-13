@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-DEHA",
       "volume": 18,
-      "volume_24h": 13,
+      "volume_24h": 16,
       "yes_ask": 99,
       "yes_bid": 46
     },
@@ -341,23 +341,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-NOGR",
       "volume": 219,
-      "volume_24h": 216,
+      "volume_24h": 217,
       "yes_ask": 99,
       "yes_bid": 12
     },
     "KXNASCARTOP20-ENJI26-RIHE": {
-      "last_price": 16,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Riley Herbst",
-      "no_ask": 88,
-      "no_bid": 45,
-      "open_interest": 247,
+      "no_ask": 100,
+      "no_bid": 99,
+      "open_interest": 857,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-RIHE",
-      "volume": 305,
+      "volume": 919,
       "volume_24h": 261,
-      "yes_ask": 55,
-      "yes_bid": 12
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARTOP20-ENJI26-RIST": {
       "last_price": 39,
@@ -444,18 +444,18 @@
       "yes_bid": 21
     },
     "KXNASCARTOP20-ENJI26-TYDI": {
-      "last_price": 11,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 91,
+      "no_ask": 95,
       "no_bid": 34,
-      "open_interest": 2214,
+      "open_interest": 2221,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TYDI",
-      "volume": 2224,
-      "volume_24h": 24,
+      "volume": 2236,
+      "volume_24h": 36,
       "yes_ask": 66,
-      "yes_bid": 9
+      "yes_bid": 5
     },
     "KXNASCARTOP20-ENJI26-TYGI": {
       "last_price": 99,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-13T21:45:19.800819+00:00",
+  "scraped_at": "2026-09-13T22:00:29.122174+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top20"
 }
