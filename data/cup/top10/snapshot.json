@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-ALBO",
       "volume": 2318,
-      "volume_24h": 2118,
+      "volume_24h": 1070,
       "yes_ask": 28,
       "yes_bid": 19
     },
@@ -66,16 +66,16 @@
       "yes_bid": 8
     },
     "KXNASCARTOP10-ENJI26-AUHI": {
-      "last_price": 16,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Austin Hill",
       "no_ask": 97,
       "no_bid": 90,
-      "open_interest": 135,
+      "open_interest": 225,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-AUHI",
-      "volume": 135,
-      "volume_24h": 50,
+      "volume": 225,
+      "volume_24h": 140,
       "yes_ask": 10,
       "yes_bid": 3
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-CAHO",
       "volume": 2047,
-      "volume_24h": 1676,
+      "volume_24h": 1717,
       "yes_ask": 48,
       "yes_bid": 35
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-CHEL",
       "volume": 894,
-      "volume_24h": 745,
+      "volume_24h": 770,
       "yes_ask": 50,
       "yes_bid": 39
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-JOBE",
       "volume": 3756,
-      "volume_24h": 582,
+      "volume_24h": 590,
       "yes_ask": 56,
       "yes_bid": 44
     },
@@ -332,17 +332,17 @@
       "yes_bid": 8
     },
     "KXNASCARTOP10-ENJI26-NOGR": {
-      "last_price": 5,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Noah Gragson",
       "no_ask": 95,
-      "no_bid": 93,
-      "open_interest": 266,
+      "no_bid": 89,
+      "open_interest": 605,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-NOGR",
-      "volume": 266,
+      "volume": 633,
       "volume_24h": 266,
-      "yes_ask": 7,
+      "yes_ask": 11,
       "yes_bid": 5
     },
     "KXNASCARTOP10-ENJI26-RIHE": {
@@ -379,11 +379,11 @@
       "name": "Ross Chastain",
       "no_ask": 77,
       "no_bid": 72,
-      "open_interest": 327,
+      "open_interest": 334,
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-ROCH",
-      "volume": 327,
-      "volume_24h": 92,
+      "volume": 334,
+      "volume_24h": 99,
       "yes_ask": 28,
       "yes_bid": 23
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ENJI26-TYGI",
       "volume": 1185,
-      "volume_24h": 485,
+      "volume_24h": 487,
       "yes_ask": 58,
       "yes_bid": 40
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-13T14:30:24.339128+00:00",
+  "scraped_at": "2026-09-13T14:45:20.774037+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top10"
 }
