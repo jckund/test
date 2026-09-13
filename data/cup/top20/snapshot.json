@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-CHBE",
       "volume": 13,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 97,
       "yes_bid": 78
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-COZI",
       "volume": 477,
-      "volume_24h": 106,
+      "volume_24h": 131,
       "yes_ask": 50,
       "yes_bid": 30
     },
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 20,
-      "no_bid": 1,
+      "no_bid": 2,
       "open_interest": 209,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-JOLO",
       "volume": 209,
       "volume_24h": 207,
-      "yes_ask": 99,
+      "yes_ask": 98,
       "yes_bid": 80
     },
     "KXNASCARTOP20-ENJI26-JONE": {
@@ -323,11 +323,11 @@
       "name": "Michael McDowell",
       "no_ask": 65,
       "no_bid": 47,
-      "open_interest": 22,
+      "open_interest": 27,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-MIMC",
-      "volume": 22,
-      "volume_24h": 9,
+      "volume": 27,
+      "volume_24h": 15,
       "yes_ask": 53,
       "yes_bid": 35
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-RIHE",
       "volume": 156,
-      "volume_24h": 112,
+      "volume_24h": 111,
       "yes_ask": 49,
       "yes_bid": 30
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-SHVA",
       "volume": 420,
-      "volume_24h": 417,
+      "volume_24h": 414,
       "yes_ask": 51,
       "yes_bid": 36
     },
@@ -447,15 +447,15 @@
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 92,
-      "no_bid": 78,
+      "no_ask": 88,
+      "no_bid": 81,
       "open_interest": 2213,
       "status": "active",
       "ticker": "KXNASCARTOP20-ENJI26-TYDI",
       "volume": 2223,
-      "volume_24h": 638,
-      "yes_ask": 22,
-      "yes_bid": 8
+      "volume_24h": 637,
+      "yes_ask": 19,
+      "yes_bid": 12
     },
     "KXNASCARTOP20-ENJI26-TYGI": {
       "last_price": 78,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-13T14:01:00.021309+00:00",
+  "scraped_at": "2026-09-13T14:15:21.930920+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top20"
 }
