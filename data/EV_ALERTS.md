@@ -1,3 +1,20 @@
+### New Kalshi vs SG lines >= +30% EV — 8 (2026-09-13T00:00:58Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Top 10 | Brad Perez | No | 51c | 52.75c | -112 | 98.3% | **+86.4%** |
+| Nu Way Auto Parts 225 | Win | William Sawalich | Yes | 5c | 5.33c | +1775 | 9.1% | **+71.1%** |
+| Nu Way Auto Parts 225 | Win | Jesse Love | Yes | 10c | 10.63c | +841 | 17.2% | **+62.2%** |
+| Nu Way Auto Parts 225 | Top 10 | Joey Gase | No | 66c | 67.57c | -208 | 99.8% | **+47.7%** |
+| Nu Way Auto Parts 225 | Top 10 | Mason Maggio | No | 66c | 67.57c | -208 | 99.4% | **+47.1%** |
+| Nu Way Auto Parts 225 | Top 10 | Josh Bilicki | No | 66c | 67.57c | -208 | 99.4% | **+47.1%** |
+| Nu Way Auto Parts 225 | Top 10 | Ryan Ellis | No | 66c | 67.57c | -208 | 99.4% | **+47.1%** |
+| Enjoy Illinois 300 | Top 20 | Ty Dillon | Yes | 22c | 23.20c | +331 | 32.0% | **+37.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-12T23:55:49Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
