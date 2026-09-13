@@ -135,8 +135,15 @@ def write_book(filename: str, source: str, tiers: dict) -> dict:
 
 
 def write_mfr(filename: str, source: str, which_make: dict, makes: dict) -> dict:
-    """which_make: {make: american} (3-way). makes: {make: [(name, american)]}."""
-    s = sum(imp(a) for a in which_make.values())
+    """which_make: {make: american} (3-way). makes: {make: [(name, american)]}.
+
+    ``which_make`` may be empty: books often post "Top Ford / Top Chevrolet"
+    driver markets without pricing the which-make 3-way. The dashboard already
+    skips a book whose ``winner`` is empty when building the which-make column,
+    so write the per-make groups and leave ``winner`` blank rather than
+    inventing a 3-way or carrying a stale one forward.
+    """
+    s = sum(imp(a) for a in which_make.values()) or 1.0
     win = {mk: {"american": a, "implied": imp(a), "novig": imp(a) / s} for mk, a in which_make.items()}
     mk_out = {}
     for mk, rows in makes.items():
