@@ -1,3 +1,33 @@
+### New Kalshi vs SG lines >= +30% EV — 21 (2026-09-13T19:20:18Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Top 3 | Cole Custer | No | 66c | 67.57c | -208 | 100.0% | **+48.0%** |
+| Enjoy Illinois 300 | Top 3 | Ty Dillon | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Enjoy Illinois 300 | Top 3 | Riley Herbst | No | 66c | 67.57c | -208 | 99.9% | **+47.9%** |
+| Enjoy Illinois 300 | Top 3 | Noah Gragson | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Enjoy Illinois 300 | Top 3 | Austin Hill | No | 66c | 67.57c | -208 | 99.8% | **+47.8%** |
+| Enjoy Illinois 300 | Top 3 | Todd Gilliland | No | 66c | 67.57c | -208 | 99.8% | **+47.7%** |
+| Enjoy Illinois 300 | Top 3 | Ricky Stenhouse | No | 66c | 67.57c | -208 | 99.7% | **+47.5%** |
+| Enjoy Illinois 300 | Top 3 | Michael McDowell | No | 66c | 67.57c | -208 | 99.7% | **+47.5%** |
+| Enjoy Illinois 300 | Top 3 | John H. Nemechek | No | 66c | 67.57c | -208 | 99.6% | **+47.4%** |
+| Enjoy Illinois 300 | Top 3 | Erik Jones | No | 66c | 67.57c | -208 | 99.6% | **+47.4%** |
+| Enjoy Illinois 300 | Top 3 | Austin Dillon | No | 66c | 67.57c | -208 | 99.4% | **+47.1%** |
+| Enjoy Illinois 300 | Top 3 | Shane Van Gisbergen | No | 66c | 67.57c | -208 | 99.4% | **+47.0%** |
+| Enjoy Illinois 300 | Top 3 | AJ Allmendinger | No | 66c | 67.57c | -208 | 99.3% | **+46.9%** |
+| Enjoy Illinois 300 | Top 3 | Daniel Suárez | No | 66c | 67.57c | -208 | 99.2% | **+46.8%** |
+| Enjoy Illinois 300 | Top 3 | Zane Smith | No | 66c | 67.57c | -208 | 99.0% | **+46.5%** |
+| Enjoy Illinois 300 | Top 3 | Connor Zilisch | No | 66c | 67.57c | -208 | 98.7% | **+46.0%** |
+| Enjoy Illinois 300 | Top 3 | Chris Buescher | No | 66c | 67.57c | -208 | 98.4% | **+45.6%** |
+| Enjoy Illinois 300 | Top 3 | Alex Bowman | No | 66c | 67.57c | -208 | 98.4% | **+45.6%** |
+| Enjoy Illinois 300 | Top 3 | Ross Chastain | No | 66c | 67.57c | -208 | 97.3% | **+44.1%** |
+| Enjoy Illinois 300 | Top 3 | Brad Keselowski | No | 66c | 67.57c | -208 | 96.7% | **+43.1%** |
+| Enjoy Illinois 300 | Top 3 | Ryan Preece | No | 66c | 67.57c | -208 | 96.2% | **+42.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-13T19:15:19Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
