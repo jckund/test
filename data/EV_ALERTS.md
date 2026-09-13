@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-13T03:25:19Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Enjoy Illinois 300 | Top 20 | Ty Dillon | Yes | 14c | 14.84c | +574 | 29.7% | **+99.9%** |
+| Enjoy Illinois 300 | Top 20 | Cody Ware | Yes | 16c | 16.94c | +490 | 23.5% | **+38.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-13T03:15:19Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
