@@ -1,3 +1,28 @@
+### New Kalshi vs SG lines >= +30% EV — 16 (2026-09-13T00:50:53Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Nu Way Auto Parts 225 | Top 3 | Anthony Alfredo | Yes | 1c | 1.07c | +9252 | 2.6% | **+140.4%** |
+| Enjoy Illinois 300 | Top 20 | Ty Dillon | Yes | 18c | 19.03c | +425 | 32.0% | **+67.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Brandon Jones | No | 56c | 57.72c | -137 | 86.3% | **+49.4%** |
+| Nu Way Auto Parts 225 | Top 3 | Lavar Scott | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Jordan Anderson | No | 66c | 67.57c | -208 | 99.9% | **+47.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Patrick Staropoli | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Nu Way Auto Parts 225 | Top 3 | Kyle Sieg | No | 66c | 67.57c | -208 | 99.5% | **+47.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Brennan Poole | No | 66c | 67.57c | -208 | 99.4% | **+47.0%** |
+| Nu Way Auto Parts 225 | Top 3 | Jeb Burton | No | 66c | 67.57c | -208 | 98.7% | **+46.1%** |
+| Nu Way Auto Parts 225 | Top 3 | Dean Thompson | No | 66c | 67.57c | -208 | 98.6% | **+45.9%** |
+| Nu Way Auto Parts 225 | Top 3 | Ryan Sieg | No | 66c | 67.57c | -208 | 98.1% | **+45.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Austin Hill | No | 61c | 62.67c | -168 | 87.3% | **+39.2%** |
+| Enjoy Illinois 300 | Win | Denny Hamlin | Yes | 10c | 10.63c | +841 | 14.5% | **+36.3%** |
+| Nu Way Auto Parts 225 | Top 3 | Parker Retzlaff | No | 66c | 67.57c | -208 | 91.7% | **+35.7%** |
+| Nu Way Auto Parts 225 | Top 3 | Rajah Caruth | No | 66c | 67.57c | -208 | 89.7% | **+32.7%** |
+| Nu Way Auto Parts 225 | Win | Austin Hill | Yes | 2c | 2.14c | +4579 | 2.8% | **+32.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-13T00:45:55Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
