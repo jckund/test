@@ -27,7 +27,7 @@
       "last_price": 99,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 70,
+      "no_ask": 1,
       "no_bid": 0,
       "open_interest": 398,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 419,
       "volume_24h": 419,
       "yes_ask": 100,
-      "yes_bid": 30
+      "yes_bid": 99
     },
     "KXNASCARTOP3-ENJI26-AUCI": {
       "last_price": 1,
@@ -304,18 +304,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-KYLA": {
-      "last_price": 30,
+      "last_price": 99,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 69,
-      "no_bid": 1,
-      "open_interest": 1765,
+      "no_ask": 1,
+      "no_bid": 0,
+      "open_interest": 1984,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-KYLA",
-      "volume": 1982,
+      "volume": 2230,
       "volume_24h": 1963,
-      "yes_ask": 99,
-      "yes_bid": 31
+      "yes_ask": 100,
+      "yes_bid": 99
     },
     "KXNASCARTOP3-ENJI26-MIMC": {
       "last_price": 39,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-14T00:15:20.148084+00:00",
+  "scraped_at": "2026-09-14T00:30:26.114667+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top3"
 }
