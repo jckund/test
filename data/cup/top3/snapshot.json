@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 313,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-BRKE",
       "volume": 340,
       "volume_24h": 340,
-      "yes_ask": 2,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-BUWA": {
@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 609,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-BUWA",
       "volume": 691,
       "volume_24h": 623,
-      "yes_ask": 2,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-CAHO": {
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 996,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CAHO",
       "volume": 1097,
-      "volume_24h": 1002,
-      "yes_ask": 2,
+      "volume_24h": 992,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-CHBE": {
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 1529,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CHBE",
       "volume": 1560,
       "volume_24h": 1328,
-      "yes_ask": 2,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-CHBR": {
@@ -150,17 +150,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-CHBU": {
-      "last_price": 0,
+      "last_price": 34,
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 100,
-      "no_bid": 66,
-      "open_interest": 0,
+      "no_bid": 61,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-CHBU",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 34,
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 39,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-CHEL": {
@@ -238,13 +238,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 1391,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-DEHA",
       "volume": 1723,
       "volume_24h": 944,
-      "yes_ask": 2,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-ERJO": {
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-JOLO",
       "volume": 5736,
-      "volume_24h": 4777,
+      "volume_24h": 4783,
       "yes_ask": 100,
       "yes_bid": 99
     },
@@ -416,16 +416,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-SHVA": {
-      "last_price": 14,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 211,
+      "open_interest": 1456,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-SHVA",
-      "volume": 211,
-      "volume_24h": 0,
+      "volume": 1456,
+      "volume_24h": 1245,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Ty Gibbs",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 75,
       "open_interest": 952,
       "status": "active",
       "ticker": "KXNASCARTOP3-ENJI26-TYGI",
       "volume": 962,
       "volume_24h": 783,
-      "yes_ask": 2,
+      "yes_ask": 25,
       "yes_bid": 0
     },
     "KXNASCARTOP3-ENJI26-TYRE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-14T00:00:26.928958+00:00",
+  "scraped_at": "2026-09-14T00:15:20.148084+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
   "tier": "top3"
 }
