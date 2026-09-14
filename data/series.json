@@ -1,20 +1,16 @@
 {
-  "updated_at": "2026-09-14T03:02:52.862565+00:00",
+  "updated_at": "2026-09-14T21:17:40.802014+00:00",
   "series": [
     {
-      "key": "cup",
-      "label": "NASCAR",
-      "race_title": "Cup - ENJI (Sep 13)",
-      "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-enji26",
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Truck - UNO2PBO (Sep 17)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
       "tiers": [
-        "winner",
-        "top3",
-        "top5",
-        "top10",
-        "top20"
+        "winner"
       ],
-      "scraped_at": "2026-09-14T03:02:52.862529+00:00"
+      "scraped_at": "2026-09-14T21:17:40.801954+00:00"
     }
   ]
 }
