@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-FRMU",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 97,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-JAMA",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 97,
       "yes_bid": 0
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-JUCA",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 86,
       "yes_bid": 0
     },
@@ -346,32 +346,32 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-UNO2PBO26-MITY": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Mini Tyrrell",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 3,
-      "open_interest": 0,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-MITY",
-      "volume": 0,
+      "volume": 10,
       "volume_24h": 0,
       "yes_ask": 97,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-UNO2PBO26-NILE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Nick Leitz",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 14,
-      "open_interest": 0,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-NILE",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 10,
+      "volume_24h": 10,
       "yes_ask": 86,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-UNO2PBO26-PAEA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-14T22:45:20.646798+00:00",
+  "scraped_at": "2026-09-14T23:00:26.077588+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
   "tier": "top3"
 }
