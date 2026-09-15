@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-AUHI",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JELO",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -318,17 +318,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-JUAL": {
-      "last_price": 21,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 80,
-      "no_bid": 79,
-      "open_interest": 408,
+      "no_bid": 77,
+      "open_interest": 492,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
-      "volume": 408,
+      "volume": 492,
       "volume_24h": 408,
-      "yes_ask": 21,
+      "yes_ask": 23,
       "yes_bid": 20
     },
     "KXNASCARRACE-FOOC91826-KYSI": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-15T14:34:35.575337+00:00",
+  "scraped_at": "2026-09-15T14:49:08.781673+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
