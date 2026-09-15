@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CAHO",
       "volume": 1705,
-      "volume_24h": 1587,
+      "volume_24h": 1705,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -131,20 +131,20 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBE",
       "volume": 1470,
-      "volume_24h": 1438,
+      "volume_24h": 1470,
       "yes_ask": 12,
       "yes_bid": 11
     },
     "KXNASCARRACE-BASPSN26-CHBR": {
-      "last_price": 7,
+      "last_price": 8,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 94,
       "no_bid": 92,
-      "open_interest": 2442,
+      "open_interest": 2560,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBR",
-      "volume": 2442,
+      "volume": 2560,
       "volume_24h": 2442,
       "yes_ask": 8,
       "yes_bid": 6
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 4004,
+      "open_interest": 4104,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-KYLA",
-      "volume": 4024,
-      "volume_24h": 4024,
+      "volume": 4124,
+      "volume_24h": 4074,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -477,11 +477,11 @@
       "name": "Ty Gibbs",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 2935,
+      "open_interest": 2966,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-TYGI",
-      "volume": 2948,
-      "volume_24h": 2948,
+      "volume": 2979,
+      "volume_24h": 2979,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-15T13:25:41.728967+00:00",
+  "scraped_at": "2026-09-15T13:45:23.331456+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "winner"
 }
