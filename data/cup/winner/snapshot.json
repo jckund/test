@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 99,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 16018,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-ALBO",
       "volume": 16025,
       "volume_24h": 16025,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARRACE-BASPSN26-AUCI": {
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-BUWA",
       "volume": 44,
-      "volume_24h": 13,
+      "volume_24h": 44,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBE",
       "volume": 1495,
-      "volume_24h": 1470,
+      "volume_24h": 1495,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBR",
       "volume": 2689,
-      "volume_24h": 2654,
+      "volume_24h": 2689,
       "yes_ask": 8,
       "yes_bid": 6
     },
@@ -164,17 +164,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-BASPSN26-CHEL": {
-      "last_price": 4,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 97,
-      "no_bid": 95,
-      "open_interest": 5177,
+      "no_bid": 96,
+      "open_interest": 5193,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHEL",
-      "volume": 5177,
+      "volume": 5193,
       "volume_24h": 5177,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARRACE-BASPSN26-COCU": {
@@ -239,11 +239,11 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 475,
+      "open_interest": 649,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-DEHA",
-      "volume": 586,
-      "volume_24h": 579,
+      "volume": 760,
+      "volume_24h": 754,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-JOLO",
       "volume": 1129,
-      "volume_24h": 1089,
+      "volume_24h": 1129,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 4164,
+      "open_interest": 4288,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-KYLA",
-      "volume": 4184,
-      "volume_24h": 4184,
+      "volume": 4308,
+      "volume_24h": 4308,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 87,
-      "no_bid": 85,
+      "no_bid": 86,
       "open_interest": 7531,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-RYBL",
       "volume": 7570,
       "volume_24h": 7570,
-      "yes_ask": 15,
+      "yes_ask": 14,
       "yes_bid": 13
     },
     "KXNASCARRACE-BASPSN26-RYPR": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-TYRE",
       "volume": 672,
-      "volume_24h": 581,
+      "volume_24h": 672,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-15T14:15:17.964328+00:00",
+  "scraped_at": "2026-09-15T14:30:23.095585+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "winner"
 }
