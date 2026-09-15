@@ -1,9 +1,24 @@
 {
-  "updated_at": "2026-09-15T13:01:42.916683+00:00",
+  "updated_at": "2026-09-15T13:19:31.959794+00:00",
   "series": [
     {
-      "key": "xfinity",
-      "label": "Xfinity",
+      "key": "cup",
+      "label": "NASCAR",
+      "race_title": "Cup - BASPSN (Sep 19)",
+      "full": true,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-09-15T13:16:43.931881+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Trucks",
       "race_title": "Truck - UNO2PBO (Sep 17)",
       "full": false,
       "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
@@ -12,7 +27,20 @@
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-09-15T13:01:42.916642+00:00"
+      "scraped_at": "2026-09-15T13:18:05.388584+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Auto Parts - FOOC918 (Sep 18)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-09-15T13:19:31.959751+00:00"
     }
   ]
 }
