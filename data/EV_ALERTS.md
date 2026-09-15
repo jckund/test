@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-15T21:36:23Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 3 | Chase Briscoe | Yes | 15c | 15.89c | +529 | 22.0% | **+38.2%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-15T16:36:25Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
