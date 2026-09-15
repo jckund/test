@@ -65,27 +65,29 @@ WINNER_SERIES = "KXNASCARRACE"
 # names — a race that matches nothing falls to the `xfinity` default. Update the
 # substrings below each race weekend (or when Kalshi posts a new race).
 SERIES = [
-    # Cup this weekend: Enjoy Illinois 300 at WWT Raceway (Gateway). Match on
-    # "enjoy illinois" only — NOT "300", which collides with other race names,
-    # nor "gateway"/"world wide technology", since the support race is at the
-    # same track.
+    # Bristol night race weekend — all three national series run, so every tab
+    # has a real matcher and nothing should be left for the catch-all.
     #
-    # The support race is Nu Way Auto Parts 225, and it is the XFINITY race, not
-    # a Truck race. Gateway has historically been a Cup + Trucks weekend, so
-    # "Nu Way 225" was first filed under `truck`; the Kalshi roster settled it
-    # (Allgaier, Crews, Kvapil, Mayer, Creed, Sammy Smith — an Xfinity field, no
-    # Truck regulars), so it matches on `xfinity` instead. Match "nu way", not
-    # the generic "225". No Truck race this weekend, hence the empty matcher.
+    # Cup: Bass Pro Shops Night Race. Match "bass pro" only — NOT "night race",
+    # which is generic, and NOT "bristol", since all three races share the
+    # track and would collide.
+    #
+    # Xfinity: Food City 300. Match the full "food city 300", NOT bare "food
+    # city" — Bristol's spring CUP race is the Food City 500, so the bare
+    # substring collides across weekends.
+    #
+    # Trucks: UNOH 250. Match "unoh" (event code UNO2PBO); "250" alone is far
+    # too generic.
     #
     # NOTE: `xfinity` is ALSO the catch-all, so an unrecognized race still lands
     # here and would inherit the "Xfinity" label. That is the pre-existing
     # tradeoff of naming the default series; re-check the label when the matchers
     # are re-pointed rather than assuming a race on this tab is Xfinity.
-    {"key": "cup", "label": "NASCAR", "matchers": ["enjoy illinois"],
+    {"key": "cup", "label": "NASCAR", "matchers": ["bass pro"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": [],
+    {"key": "truck", "label": "Trucks", "matchers": ["unoh"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["nu way"], "default": True,
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["food city 300"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
@@ -265,10 +267,18 @@ def resolve_series(races: list) -> list:
             hay = f"{r['title']} {r['sub_title']}".lower()
             if any(m in hay for m in cfg["matchers"]):
                 resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
+    # The default series still claims a leftover race, but prefers one its own
+    # matchers name. Without this its matchers are decorative (it took whatever
+    # was first in API order), so an unrelated race open early — a following
+    # week's event — could be claimed ahead of this weekend's actual support
+    # race and inherit its label.
     for cfg in [s for s in SERIES if s.get("default")]:
-        for r in races:
-            if r["race_code"] not in used:
-                resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
+        free = [r for r in races if r["race_code"] not in used]
+        named = [r for r in free
+                 if any(m in f"{r['title']} {r['sub_title']}".lower()
+                        for m in cfg["matchers"])]
+        for r in named or free:
+            resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
     return resolved
 
 
