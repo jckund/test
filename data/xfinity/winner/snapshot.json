@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BRCR",
       "volume": 469,
-      "volume_24h": 291,
+      "volume_24h": 469,
       "yes_ask": 11,
       "yes_bid": 7
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
       "volume": 747,
-      "volume_24h": 507,
+      "volume_24h": 747,
       "yes_ask": 22,
       "yes_bid": 20
     },
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Natalie Decker",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 77,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-NADE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 23,
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-NISA": {
@@ -519,11 +519,11 @@
       "name": "Sheldon Creed",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 55,
+      "open_interest": 337,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-SHCR",
-      "volume": 55,
-      "volume_24h": 55,
+      "volume": 337,
+      "volume_24h": 337,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-15T22:04:32.664133+00:00",
+  "scraped_at": "2026-09-15T22:19:57.386475+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
