@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-FOOC91826",
   "label": "Top 3",
-  "market_count": 39,
+  "market_count": 40,
   "markets": {
     "KXNASCARTOP3-FOOC91826-ANAL": {
       "last_price": 0,
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOOC91826-JUAL",
       "volume": 10,
-      "volume_24h": 10,
+      "volume_24h": 0,
       "yes_ask": 41,
       "yes_bid": 25
     },
@@ -385,6 +385,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
+      "yes_bid": 0
+    },
+    "KXNASCARTOP3-FOOC91826-NADE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Natalie Decker",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-FOOC91826-NADE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARTOP3-FOOC91826-NISA": {
@@ -557,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-15T21:34:26.918039+00:00",
+  "scraped_at": "2026-09-15T22:04:33.144204+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "top3"
 }

@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-FOOC91826",
   "label": "Top 10",
-  "market_count": 39,
+  "market_count": 40,
   "markets": {
     "KXNASCARTOP10-FOOC91826-ANAL": {
       "last_price": 0,
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-BLPE",
       "volume": 30,
-      "volume_24h": 30,
+      "volume_24h": 0,
       "yes_ask": 21,
       "yes_bid": 5
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-CAWA",
       "volume": 90,
-      "volume_24h": 90,
+      "volume_24h": 0,
       "yes_ask": 17,
       "yes_bid": 0
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-DACR",
       "volume": 114,
-      "volume_24h": 114,
+      "volume_24h": 0,
       "yes_ask": 17,
       "yes_bid": 0
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-DAST",
       "volume": 114,
-      "volume_24h": 114,
+      "volume_24h": 0,
       "yes_ask": 17,
       "yes_bid": 0
     },
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-GASM",
       "volume": 114,
-      "volume_24h": 114,
+      "volume_24h": 0,
       "yes_ask": 18,
       "yes_bid": 0
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-JJYE",
       "volume": 90,
-      "volume_24h": 90,
+      "volume_24h": 0,
       "yes_ask": 19,
       "yes_bid": 0
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-JOBI",
       "volume": 76,
-      "volume_24h": 76,
+      "volume_24h": 38,
       "yes_ask": 17,
       "yes_bid": 0
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-JOWI",
       "volume": 38,
-      "volume_24h": 38,
+      "volume_24h": 0,
       "yes_ask": 21,
       "yes_bid": 5
     },
@@ -383,8 +383,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-LOBE",
       "volume": 60,
-      "volume_24h": 60,
+      "volume_24h": 0,
       "yes_ask": 17,
+      "yes_bid": 0
+    },
+    "KXNASCARTOP10-FOOC91826-NADE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Natalie Decker",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-FOOC91826-NADE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARTOP10-FOOC91826-NISA": {
@@ -402,18 +416,18 @@
       "yes_bid": 26
     },
     "KXNASCARTOP10-FOOC91826-PARE": {
-      "last_price": 0,
+      "last_price": 42,
       "liquidity": 0.0,
       "name": "Parker Retzlaff",
-      "no_ask": 85,
-      "no_bid": 67,
-      "open_interest": 0,
+      "no_ask": 71,
+      "no_bid": 58,
+      "open_interest": 382,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-PARE",
-      "volume": 0,
+      "volume": 382,
       "volume_24h": 0,
-      "yes_ask": 33,
-      "yes_bid": 15
+      "yes_ask": 42,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-FOOC91826-PAST": {
       "last_price": 8,
@@ -425,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-PAST",
       "volume": 38,
-      "volume_24h": 38,
+      "volume_24h": 0,
       "yes_ask": 18,
       "yes_bid": 5
     },
@@ -453,23 +467,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-RYEL",
       "volume": 230,
-      "volume_24h": 230,
+      "volume_24h": 200,
       "yes_ask": 12,
       "yes_bid": 5
     },
     "KXNASCARTOP10-FOOC91826-RYSI": {
-      "last_price": 0,
+      "last_price": 51,
       "liquidity": 0.0,
       "name": "Ryan Sieg",
-      "no_ask": 76,
-      "no_bid": 58,
-      "open_interest": 0,
+      "no_ask": 62,
+      "no_bid": 49,
+      "open_interest": 316,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-RYSI",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 42,
-      "yes_bid": 24
+      "volume": 316,
+      "volume_24h": 316,
+      "yes_ask": 51,
+      "yes_bid": 38
     },
     "KXNASCARTOP10-FOOC91826-SAMA": {
       "last_price": 0,
@@ -503,15 +517,15 @@
       "last_price": 56,
       "liquidity": 0.0,
       "name": "Sheldon Creed",
-      "no_ask": 40,
-      "no_bid": 33,
+      "no_ask": 42,
+      "no_bid": 32,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOOC91826-SHCR",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 67,
-      "yes_bid": 60
+      "yes_ask": 68,
+      "yes_bid": 58
     },
     "KXNASCARTOP10-FOOC91826-STPA": {
       "last_price": 5,
@@ -557,7 +571,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-15T21:34:59.491295+00:00",
+  "scraped_at": "2026-09-15T22:05:05.804602+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "top10"
 }

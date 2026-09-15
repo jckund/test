@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHBR",
       "volume": 747,
-      "volume_24h": 747,
+      "volume_24h": 647,
       "yes_ask": 57,
       "yes_bid": 47
     },
@@ -164,16 +164,16 @@
       "yes_bid": 20
     },
     "KXNASCARTOP10-BASPSN26-CHEL": {
-      "last_price": 0,
+      "last_price": 45,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 63,
       "no_bid": 55,
-      "open_interest": 0,
+      "open_interest": 50,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHEL",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 50,
+      "volume_24h": 50,
       "yes_ask": 45,
       "yes_bid": 37
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-JOBI",
       "volume": 114,
-      "volume_24h": 114,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-KYLA",
       "volume": 887,
-      "volume_24h": 887,
+      "volume_24h": 787,
       "yes_ask": 67,
       "yes_bid": 61
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-15T21:30:23.295732+00:00",
+  "scraped_at": "2026-09-15T22:00:27.899123+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }

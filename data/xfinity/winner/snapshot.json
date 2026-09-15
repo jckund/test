@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-FOOC91826",
   "label": "Winner",
-  "market_count": 39,
+  "market_count": 40,
   "markets": {
     "KXNASCARRACE-FOOC91826-ANAL": {
       "last_price": 2,
@@ -71,10 +71,10 @@
       "name": "Brent Crews",
       "no_ask": 93,
       "no_bid": 89,
-      "open_interest": 291,
+      "open_interest": 469,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BRCR",
-      "volume": 291,
+      "volume": 469,
       "volume_24h": 291,
       "yes_ask": 11,
       "yes_bid": 7
@@ -108,17 +108,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-CAKV": {
-      "last_price": 12,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 90,
-      "no_bid": 88,
-      "open_interest": 806,
+      "no_bid": 87,
+      "open_interest": 1118,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CAKV",
-      "volume": 806,
-      "volume_24h": 806,
-      "yes_ask": 12,
+      "volume": 1118,
+      "volume_24h": 1118,
+      "yes_ask": 13,
       "yes_bid": 10
     },
     "KXNASCARRACE-FOOC91826-CAWA": {
@@ -318,17 +318,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-JUAL": {
-      "last_price": 21,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 80,
-      "no_bid": 79,
-      "open_interest": 502,
+      "no_bid": 78,
+      "open_interest": 742,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
-      "volume": 507,
-      "volume_24h": 502,
-      "yes_ask": 21,
+      "volume": 747,
+      "volume_24h": 507,
+      "yes_ask": 22,
       "yes_bid": 20
     },
     "KXNASCARRACE-FOOC91826-KYSI": {
@@ -385,6 +385,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-FOOC91826-NADE": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Natalie Decker",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-FOOC91826-NADE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-NISA": {
@@ -557,7 +571,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-15T21:49:26.391112+00:00",
+  "scraped_at": "2026-09-15T22:04:32.664133+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
