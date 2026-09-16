@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-BUWA",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 40,
       "yes_bid": 33
     },
@@ -111,15 +111,15 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 70,
-      "no_bid": 62,
+      "no_ask": 67,
+      "no_bid": 65,
       "open_interest": 2727,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CAHO",
       "volume": 2727,
       "volume_24h": 2727,
-      "yes_ask": 38,
-      "yes_bid": 30
+      "yes_ask": 35,
+      "yes_bid": 33
     },
     "KXNASCARTOP10-BASPSN26-CHBE": {
       "last_price": 0,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHBR",
       "volume": 747,
-      "volume_24h": 647,
+      "volume_24h": 447,
       "yes_ask": 57,
       "yes_bid": 48
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-COZI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 15,
       "yes_bid": 9
     },
@@ -321,15 +321,15 @@
       "last_price": 67,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 38,
+      "no_ask": 39,
       "no_bid": 33,
       "open_interest": 889,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-KYLA",
       "volume": 889,
-      "volume_24h": 789,
+      "volume_24h": 589,
       "yes_ask": 67,
-      "yes_bid": 62
+      "yes_bid": 61
     },
     "KXNASCARTOP10-BASPSN26-MIMC": {
       "last_price": 0,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-TYGI",
       "volume": 2645,
-      "volume_24h": 2645,
+      "volume_24h": 2445,
       "yes_ask": 75,
       "yes_bid": 67
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-16T00:15:16.408390+00:00",
+  "scraped_at": "2026-09-16T00:45:20.400838+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }
