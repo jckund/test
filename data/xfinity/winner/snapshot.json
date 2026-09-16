@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-AUHI",
       "volume": 10,
-      "volume_24h": 10,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -80,17 +80,17 @@
       "yes_bid": 9
     },
     "KXNASCARRACE-FOOC91826-BRJO": {
-      "last_price": 5,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Brandon Jones",
       "no_ask": 96,
-      "no_bid": 94,
-      "open_interest": 1332,
+      "no_bid": 93,
+      "open_interest": 1367,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BRJO",
-      "volume": 1332,
+      "volume": 1367,
       "volume_24h": 1232,
-      "yes_ask": 6,
+      "yes_ask": 7,
       "yes_bid": 4
     },
     "KXNASCARRACE-FOOC91826-BRPO": {
@@ -108,17 +108,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-CAKV": {
-      "last_price": 12,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 90,
-      "no_bid": 87,
-      "open_interest": 2986,
+      "no_bid": 86,
+      "open_interest": 3279,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CAKV",
-      "volume": 2986,
+      "volume": 3279,
       "volume_24h": 2986,
-      "yes_ask": 13,
+      "yes_ask": 14,
       "yes_bid": 10
     },
     "KXNASCARRACE-FOOC91826-CAWA": {
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JELO",
       "volume": 120,
-      "volume_24h": 120,
+      "volume_24h": 109,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -323,10 +323,10 @@
       "name": "Justin Allgaier",
       "no_ask": 80,
       "no_bid": 79,
-      "open_interest": 854,
+      "open_interest": 955,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
-      "volume": 859,
+      "volume": 960,
       "volume_24h": 451,
       "yes_ask": 21,
       "yes_bid": 20
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-16T14:34:11.992832+00:00",
+  "scraped_at": "2026-09-16T14:49:39.778122+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
