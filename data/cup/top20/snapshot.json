@@ -111,15 +111,15 @@
       "last_price": 67,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 45,
+      "no_ask": 44,
       "no_bid": 33,
       "open_interest": 551,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-CAHO",
       "volume": 551,
-      "volume_24h": 551,
+      "volume_24h": 15,
       "yes_ask": 67,
-      "yes_bid": 55
+      "yes_bid": 56
     },
     "KXNASCARTOP20-BASPSN26-CHBE": {
       "last_price": 0,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-CHBR",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 91,
       "yes_bid": 73
     },
@@ -248,7 +248,7 @@
       "yes_bid": 85
     },
     "KXNASCARTOP20-BASPSN26-ERJO": {
-      "last_price": 0,
+      "last_price": 38,
       "liquidity": 0.0,
       "name": "Erik Jones",
       "no_ask": 62,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-16T13:45:20.715856+00:00",
+  "scraped_at": "2026-09-16T14:00:25.300453+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top20"
 }
