@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-16T21:56:21Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Parker Kligerman | Yes | 12c | 12.74c | +685 | 26.8% | **+110.4%** |
+| UNOH 250 | Top 10 | Landen Lewis | Yes | 39c | 40.67c | +146 | 55.7% | **+37.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-16T21:11:23Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
