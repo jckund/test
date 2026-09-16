@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-AUCI",
       "volume": 366,
-      "volume_24h": 366,
+      "volume_24h": 216,
       "yes_ask": 30,
       "yes_bid": 25
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CAHO",
       "volume": 3366,
-      "volume_24h": 3325,
+      "volume_24h": 2811,
       "yes_ask": 41,
       "yes_bid": 40
     },
@@ -141,11 +141,11 @@
       "name": "Chase Briscoe",
       "no_ask": 51,
       "no_bid": 43,
-      "open_interest": 547,
+      "open_interest": 573,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHBR",
-      "volume": 747,
-      "volume_24h": 447,
+      "volume": 773,
+      "volume_24h": 473,
       "yes_ask": 57,
       "yes_bid": 49
     },
@@ -472,18 +472,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-BASPSN26-TYGI": {
-      "last_price": 70,
+      "last_price": 81,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 33,
-      "no_bid": 25,
-      "open_interest": 2445,
+      "no_ask": 31,
+      "no_bid": 20,
+      "open_interest": 2457,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-TYGI",
-      "volume": 2645,
-      "volume_24h": 944,
-      "yes_ask": 75,
-      "yes_bid": 67
+      "volume": 2657,
+      "volume_24h": 487,
+      "yes_ask": 80,
+      "yes_bid": 69
     },
     "KXNASCARTOP10-BASPSN26-TYRE": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-16T04:30:22.466919+00:00",
+  "scraped_at": "2026-09-16T04:45:20.378615+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }

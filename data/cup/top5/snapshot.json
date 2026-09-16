@@ -125,15 +125,15 @@
       "last_price": 45,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 67,
-      "no_bid": 54,
+      "no_ask": 68,
+      "no_bid": 53,
       "open_interest": 748,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-CHBE",
       "volume": 748,
       "volume_24h": 499,
-      "yes_ask": 46,
-      "yes_bid": 33
+      "yes_ask": 47,
+      "yes_bid": 32
     },
     "KXNASCARTOP5-BASPSN26-CHBR": {
       "last_price": 36,
@@ -402,16 +402,16 @@
       "yes_bid": 7
     },
     "KXNASCARTOP5-BASPSN26-RYBL": {
-      "last_price": 48,
+      "last_price": 49,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 67,
       "no_bid": 51,
-      "open_interest": 232,
+      "open_interest": 252,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-RYBL",
-      "volume": 232,
-      "volume_24h": 22,
+      "volume": 252,
+      "volume_24h": 42,
       "yes_ask": 49,
       "yes_bid": 33
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-WIBY",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 22,
       "yes_bid": 10
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-16T04:30:21.979507+00:00",
+  "scraped_at": "2026-09-16T04:45:19.818879+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top5"
 }
