@@ -27,7 +27,7 @@
       "last_price": 3,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 97,
       "open_interest": 16345,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 16352,
       "volume_24h": 4165,
       "yes_ask": 3,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARRACE-BASPSN26-AUCI": {
       "last_price": 2,
@@ -141,11 +141,11 @@
       "name": "Chase Briscoe",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 8118,
+      "open_interest": 8999,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBR",
-      "volume": 8118,
-      "volume_24h": 8082,
+      "volume": 8999,
+      "volume_24h": 8960,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -295,11 +295,11 @@
       "name": "Joey Logano",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 4307,
+      "open_interest": 4448,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-JOLO",
-      "volume": 4307,
-      "volume_24h": 3560,
+      "volume": 4448,
+      "volume_24h": 3660,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-KYLA",
       "volume": 10148,
-      "volume_24h": 6427,
+      "volume_24h": 6425,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-RYBL",
       "volume": 16854,
-      "volume_24h": 11925,
+      "volume_24h": 11922,
       "yes_ask": 13,
       "yes_bid": 11
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-16T06:30:19.042801+00:00",
+  "scraped_at": "2026-09-16T07:00:24.377347+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "winner"
 }
