@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-BACU",
       "volume": 84,
-      "volume_24h": 6,
+      "volume_24h": 0,
       "yes_ask": 30,
       "yes_bid": 12
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-DAHE",
       "volume": 257,
-      "volume_24h": 60,
+      "volume_24h": 10,
       "yes_ask": 49,
       "yes_bid": 44
     },
@@ -220,16 +220,16 @@
       "yes_bid": 34
     },
     "KXNASCARTOP10-UNO2PBO26-JAGA": {
-      "last_price": 44,
+      "last_price": 48,
       "liquidity": 0.0,
       "name": "Jake Garcia",
       "no_ask": 68,
       "no_bid": 52,
-      "open_interest": 482,
+      "open_interest": 542,
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-JAGA",
-      "volume": 692,
-      "volume_24h": 538,
+      "volume": 752,
+      "volume_24h": 598,
       "yes_ask": 48,
       "yes_bid": 32
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-TYAN",
       "volume": 118,
-      "volume_24h": 118,
+      "volume_24h": 69,
       "yes_ask": 47,
       "yes_bid": 33
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-16T18:33:25.355432+00:00",
+  "scraped_at": "2026-09-16T18:49:03.235809+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
   "tier": "top10"
 }
