@@ -69,15 +69,15 @@
       "last_price": 25,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 77,
-      "no_bid": 62,
+      "no_ask": 78,
+      "no_bid": 60,
       "open_interest": 716,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-AUHI",
       "volume": 716,
       "volume_24h": 716,
-      "yes_ask": 38,
-      "yes_bid": 23
+      "yes_ask": 40,
+      "yes_bid": 22
     },
     "KXNASCARTOP20-BASPSN26-BRKE": {
       "last_price": 0,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-TYDI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 8
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-TYGI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 88,
       "yes_bid": 71
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-16T00:45:20.807051+00:00",
+  "scraped_at": "2026-09-16T01:00:25.323358+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top20"
 }
