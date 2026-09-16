@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CODA",
       "volume": 198,
-      "volume_24h": 120,
+      "volume_24h": 0,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
       "volume": 1192,
-      "volume_24h": 695,
+      "volume_24h": 690,
       "yes_ask": 21,
       "yes_bid": 20
     },
@@ -378,13 +378,13 @@
       "liquidity": 0.0,
       "name": "Landon Huffman",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 90,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-LHUF",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 10,
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-LOBE": {
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-SAMA",
       "volume": 379,
-      "volume_24h": 379,
+      "volume_24h": 355,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -537,7 +537,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-SHCR",
       "volume": 442,
-      "volume_24h": 430,
+      "volume_24h": 387,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-16T19:04:42.783460+00:00",
+  "scraped_at": "2026-09-16T19:19:56.896393+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
