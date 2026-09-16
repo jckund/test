@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-FOOC91826",
   "label": "Winner",
-  "market_count": 40,
+  "market_count": 41,
   "markets": {
     "KXNASCARRACE-FOOC91826-ANAL": {
       "last_price": 2,
@@ -373,6 +373,20 @@
       "yes_ask": 1,
       "yes_bid": 0
     },
+    "KXNASCARRACE-FOOC91826-LHUF": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Landon Huffman",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-FOOC91826-LHUF",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARRACE-FOOC91826-LOBE": {
       "last_price": 0,
       "liquidity": 0.0,
@@ -571,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-16T18:34:07.853982+00:00",
+  "scraped_at": "2026-09-16T19:04:42.783460+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }

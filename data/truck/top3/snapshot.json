@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-UNO2PBO26",
   "label": "Top 3",
-  "market_count": 36,
+  "market_count": 37,
   "markets": {
     "KXNASCARTOP3-UNO2PBO26-ANPE": {
       "last_price": 0,
@@ -63,6 +63,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 12,
+      "yes_bid": 0
+    },
+    "KXNASCARTOP3-UNO2PBO26-CAKV": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Caden Kvapil",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-UNO2PBO26-CAKV",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARTOP3-UNO2PBO26-CHEC": {
@@ -285,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-UNO2PBO26-KAHO",
       "volume": 91,
-      "volume_24h": 91,
+      "volume_24h": 14,
       "yes_ask": 36,
       "yes_bid": 23
     },
@@ -515,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-16T18:32:52.978293+00:00",
+  "scraped_at": "2026-09-16T19:03:20.269561+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
   "tier": "top3"
 }

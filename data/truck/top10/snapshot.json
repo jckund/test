@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-UNO2PBO26",
   "label": "Top 10",
-  "market_count": 36,
+  "market_count": 37,
   "markets": {
     "KXNASCARTOP10-UNO2PBO26-ANPE": {
       "last_price": 0,
@@ -64,6 +64,20 @@
       "volume_24h": 0,
       "yes_ask": 29,
       "yes_bid": 12
+    },
+    "KXNASCARTOP10-UNO2PBO26-CAKV": {
+      "last_price": 0,
+      "liquidity": 0.0,
+      "name": "Caden Kvapil",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-UNO2PBO26-CAKV",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-UNO2PBO26-CHEC": {
       "last_price": 68,
@@ -140,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Connor Mosack",
       "no_ask": 57,
-      "no_bid": 51,
+      "no_bid": 53,
       "open_interest": 712,
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-COMO",
       "volume": 712,
       "volume_24h": 540,
-      "yes_ask": 49,
+      "yes_ask": 47,
       "yes_bid": 43
     },
     "KXNASCARTOP10-UNO2PBO26-DAHE": {
@@ -515,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-16T18:49:03.235809+00:00",
+  "scraped_at": "2026-09-16T19:03:53.013515+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
   "tier": "top10"
 }
