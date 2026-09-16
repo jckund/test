@@ -139,7 +139,7 @@
       "last_price": 15,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 88,
+      "no_ask": 86,
       "no_bid": 82,
       "open_interest": 12,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 12,
       "volume_24h": 12,
       "yes_ask": 18,
-      "yes_bid": 12
+      "yes_bid": 14
     },
     "KXNASCARTOP3-BASPSN26-CHBU": {
       "last_price": 0,
@@ -323,10 +323,10 @@
       "name": "Kyle Larson",
       "no_ask": 67,
       "no_bid": 63,
-      "open_interest": 1917,
+      "open_interest": 1930,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-KYLA",
-      "volume": 1917,
+      "volume": 1930,
       "volume_24h": 1812,
       "yes_ask": 37,
       "yes_bid": 33
@@ -402,18 +402,18 @@
       "yes_bid": 3
     },
     "KXNASCARTOP3-BASPSN26-RYBL": {
-      "last_price": 32,
+      "last_price": 33,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 71,
-      "no_bid": 68,
-      "open_interest": 479,
+      "no_ask": 68,
+      "no_bid": 67,
+      "open_interest": 2876,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
-      "volume": 479,
+      "volume": 2876,
       "volume_24h": 273,
-      "yes_ask": 32,
-      "yes_bid": 29
+      "yes_ask": 33,
+      "yes_bid": 32
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-16T20:45:16.667178+00:00",
+  "scraped_at": "2026-09-16T21:00:22.785559+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
