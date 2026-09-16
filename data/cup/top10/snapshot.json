@@ -10,16 +10,16 @@
   "market_count": 37,
   "markets": {
     "KXNASCARTOP10-BASPSN26-AJAL": {
-      "last_price": 0,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 92,
       "no_bid": 86,
-      "open_interest": 0,
+      "open_interest": 33,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-AJAL",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 33,
+      "volume_24h": 33,
       "yes_ask": 14,
       "yes_bid": 8
     },
@@ -29,11 +29,11 @@
       "name": "Alex Bowman",
       "no_ask": 68,
       "no_bid": 67,
-      "open_interest": 276,
+      "open_interest": 291,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-ALBO",
-      "volume": 286,
-      "volume_24h": 76,
+      "volume": 301,
+      "volume_24h": 91,
       "yes_ask": 33,
       "yes_bid": 32
     },
@@ -111,15 +111,15 @@
       "last_price": 47,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 59,
-      "no_bid": 54,
+      "no_ask": 60,
+      "no_bid": 56,
       "open_interest": 3991,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CAHO",
       "volume": 3991,
       "volume_24h": 2005,
-      "yes_ask": 46,
-      "yes_bid": 41
+      "yes_ask": 44,
+      "yes_bid": 40
     },
     "KXNASCARTOP10-BASPSN26-CHBE": {
       "last_price": 0,
@@ -266,13 +266,13 @@
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 70,
-      "no_bid": 65,
+      "no_bid": 64,
       "open_interest": 1265,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-JOBE",
       "volume": 1294,
       "volume_24h": 537,
-      "yes_ask": 35,
+      "yes_ask": 36,
       "yes_bid": 30
     },
     "KXNASCARTOP10-BASPSN26-JOBI": {
@@ -419,7 +419,7 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 79,
+      "no_ask": 80,
       "no_bid": 72,
       "open_interest": 421,
       "status": "active",
@@ -427,7 +427,7 @@
       "volume": 421,
       "volume_24h": 268,
       "yes_ask": 28,
-      "yes_bid": 21
+      "yes_bid": 20
     },
     "KXNASCARTOP10-BASPSN26-SHVA": {
       "last_price": 0,
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Todd Gilliland",
       "no_ask": 94,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 9,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-TOGI",
       "volume": 9,
       "volume_24h": 9,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARTOP10-BASPSN26-TYDI": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-16T20:30:20.139400+00:00",
+  "scraped_at": "2026-09-16T20:45:17.463140+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }
