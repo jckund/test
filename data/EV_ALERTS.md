@@ -1,3 +1,17 @@
+### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-16T14:11:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Brandon Jones | Yes | 5c | 5.33c | +1775 | 8.3% | **+55.5%** |
+| UNOH 250 | Win | Christian Eckes | Yes | 10c | 10.63c | +841 | 16.2% | **+52.3%** |
+| Food City 300 | Win | Rajah Caruth | Yes | 3c | 3.20c | +3021 | 4.6% | **+42.4%** |
+| Food City 300 | Top 10 | Rajah Caruth | Yes | 35c | 36.59c | +173 | 51.0% | **+39.3%** |
+| Food City 300 | Top 10 | Jake Finch | Yes | 28c | 29.41c | +240 | 39.4% | **+33.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-16T09:56:24Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
