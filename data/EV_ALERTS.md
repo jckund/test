@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-16T22:11:24Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Jake Finch | Yes | 27c | 28.38c | +252 | 39.4% | **+38.7%** |
+| UNOH 250 | Top 10 | Nick Leitz | Yes | 27c | 28.38c | +252 | 38.2% | **+34.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-16T21:56:21Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
