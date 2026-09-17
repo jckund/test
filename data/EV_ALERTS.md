@@ -1,3 +1,26 @@
+### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-17T19:16:26Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Tyler Ankrum | No | 52c | 53.75c | -116 | 99.2% | **+84.6%** |
+| UNOH 250 | Top 3 | Daniel Hemric | No | 53c | 54.74c | -121 | 98.0% | **+79.0%** |
+| UNOH 250 | Top 3 | Connor Mosack | No | 50c | 51.75c | -107 | 87.5% | **+69.1%** |
+| UNOH 250 | Top 3 | William Sawalich | No | 50c | 51.75c | -107 | 84.9% | **+64.1%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 60c | 61.68c | -161 | 99.8% | **+61.7%** |
+| UNOH 250 | Top 3 | Landen Lewis | No | 54c | 55.74c | -126 | 89.2% | **+60.0%** |
+| UNOH 250 | Top 3 | Tanner Gray | No | 61c | 62.67c | -168 | 100.0% | **+59.6%** |
+| UNOH 250 | Top 3 | Andres Perez De Lara | No | 62c | 63.65c | -175 | 100.0% | **+57.1%** |
+| UNOH 250 | Top 3 | Parker Eatmon | No | 62c | 63.65c | -175 | 100.0% | **+57.0%** |
+| UNOH 250 | Top 3 | Justin Haley | No | 62c | 63.65c | -175 | 99.9% | **+57.0%** |
+| UNOH 250 | Top 3 | Corey LaJoie | No | 62c | 63.65c | -175 | 99.8% | **+56.7%** |
+| UNOH 250 | Top 3 | Bayley Currey | No | 63c | 64.63c | -183 | 99.3% | **+53.6%** |
+| UNOH 250 | Top 3 | Stewart Friesen | No | 65c | 66.59c | -199 | 99.9% | **+50.0%** |
+| UNOH 250 | Win | Giovanni Ruggiero | Yes | 3c | 3.20c | +3021 | 4.8% | **+49.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 6 (2026-09-17T19:01:31Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
