@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-17T00:51:26Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Nick Leitz | Yes | 27c | 28.38c | +252 | 38.2% | **+34.5%** |
+| Bass Pro Shops Night Race | Top 3 | Ty Gibbs | Yes | 30c | 31.47c | +218 | 41.3% | **+31.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-17T00:11:24Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
