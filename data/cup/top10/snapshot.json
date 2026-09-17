@@ -84,27 +84,27 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 72,
-      "no_bid": 62,
+      "no_bid": 61,
       "open_interest": 164,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-BRKE",
       "volume": 164,
       "volume_24h": 164,
-      "yes_ask": 38,
+      "yes_ask": 39,
       "yes_bid": 28
     },
     "KXNASCARTOP10-BASPSN26-BUWA": {
-      "last_price": 40,
+      "last_price": 44,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 62,
-      "no_bid": 60,
-      "open_interest": 1564,
+      "no_bid": 56,
+      "open_interest": 1584,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-BUWA",
-      "volume": 1564,
-      "volume_24h": 1364,
-      "yes_ask": 40,
+      "volume": 1584,
+      "volume_24h": 1384,
+      "yes_ask": 44,
       "yes_bid": 38
     },
     "KXNASCARTOP10-BASPSN26-CAHO": {
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CAHO",
       "volume": 4970,
-      "volume_24h": 1604,
+      "volume_24h": 1557,
       "yes_ask": 49,
       "yes_bid": 48
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHBR",
       "volume": 917,
-      "volume_24h": 145,
+      "volume_24h": 17,
       "yes_ask": 57,
       "yes_bid": 50
     },
@@ -360,17 +360,17 @@
       "yes_bid": 8
     },
     "KXNASCARTOP10-BASPSN26-RIHE": {
-      "last_price": 8,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 38,
+      "no_bid": 91,
+      "open_interest": 388,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-RIHE",
-      "volume": 38,
-      "volume_24h": 0,
-      "yes_ask": 6,
+      "volume": 388,
+      "volume_24h": 350,
+      "yes_ask": 9,
       "yes_bid": 5
     },
     "KXNASCARTOP10-BASPSN26-RIST": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-17T05:15:19.131253+00:00",
+  "scraped_at": "2026-09-17T05:45:20.481783+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }
