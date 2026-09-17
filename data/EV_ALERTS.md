@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-17T19:26:21Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Dawson Sutton | No | 40c | 41.68c | +140 | 99.7% | **+139.3%** |
+| UNOH 250 | Top 3 | Giovanni Ruggiero | Yes | 13c | 13.79c | +625 | 20.8% | **+50.5%** |
+| UNOH 250 | Top 10 | Justin Haley | No | 66c | 67.57c | -208 | 88.3% | **+30.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-17T19:16:26Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
