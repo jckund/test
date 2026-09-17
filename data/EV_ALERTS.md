@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-17T19:36:22Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Grant Enfinger | No | 51c | 52.75c | -112 | 96.5% | **+83.0%** |
+| UNOH 250 | Win | Landen Lewis | Yes | 1c | 1.07c | +9252 | 1.6% | **+45.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 7 (2026-09-17T19:31:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
