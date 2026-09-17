@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-17T22:36:22Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Win | Ben Rhodes | Yes | 3c | 3.20c | +3021 | 5.2% | **+61.9%** |
+| UNOH 250 | Win | Ty Majeski | Yes | 7c | 7.46c | +1241 | 10.6% | **+41.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-17T22:32:03Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
