@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-CHBE",
       "volume": 51,
-      "volume_24h": 51,
+      "volume_24h": 35,
       "yes_ask": 30,
       "yes_bid": 25
     },
@@ -321,15 +321,15 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 65,
-      "no_bid": 62,
-      "open_interest": 4193,
+      "no_ask": 69,
+      "no_bid": 61,
+      "open_interest": 4548,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-KYLA",
-      "volume": 4193,
-      "volume_24h": 2276,
-      "yes_ask": 38,
-      "yes_bid": 35
+      "volume": 4548,
+      "volume_24h": 2263,
+      "yes_ask": 39,
+      "yes_bid": 31
     },
     "KXNASCARTOP3-BASPSN26-MIMC": {
       "last_price": 0,
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 68,
-      "no_bid": 64,
+      "no_bid": 66,
       "open_interest": 3165,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
       "volume": 3165,
-      "volume_24h": 2685,
-      "yes_ask": 36,
+      "volume_24h": 289,
+      "yes_ask": 34,
       "yes_bid": 32
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-TYGI",
       "volume": 4815,
-      "volume_24h": 1718,
+      "volume_24h": 1702,
       "yes_ask": 38,
       "yes_bid": 35
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-17T21:00:26.477121+00:00",
+  "scraped_at": "2026-09-17T21:15:17.816996+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
