@@ -27,7 +27,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 92,
+      "no_ask": 99,
       "no_bid": 91,
       "open_interest": 0,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 9,
-      "yes_bid": 8
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BASPSN26-AUCI": {
       "last_price": 0,
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 86,
-      "no_bid": 82,
+      "no_bid": 79,
       "open_interest": 12,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-CHBR",
       "volume": 12,
       "volume_24h": 0,
-      "yes_ask": 18,
+      "yes_ask": 21,
       "yes_bid": 14
     },
     "KXNASCARTOP3-BASPSN26-CHBU": {
@@ -321,15 +321,15 @@
       "last_price": 41,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 62,
+      "no_ask": 61,
       "no_bid": 59,
-      "open_interest": 4553,
+      "open_interest": 4555,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-KYLA",
-      "volume": 4553,
-      "volume_24h": 2623,
+      "volume": 4555,
+      "volume_24h": 2625,
       "yes_ask": 41,
-      "yes_bid": 38
+      "yes_bid": 39
     },
     "KXNASCARTOP3-BASPSN26-MIMC": {
       "last_price": 0,
@@ -405,15 +405,15 @@
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 68,
-      "no_bid": 64,
+      "no_ask": 67,
+      "no_bid": 65,
       "open_interest": 3170,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
       "volume": 3170,
       "volume_24h": 119,
-      "yes_ask": 36,
-      "yes_bid": 32
+      "yes_ask": 35,
+      "yes_bid": 33
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-17T23:00:25.018601+00:00",
+  "scraped_at": "2026-09-17T23:15:20.585687+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
