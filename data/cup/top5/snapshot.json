@@ -83,15 +83,15 @@
       "last_price": 18,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 85,
-      "no_bid": 83,
+      "no_ask": 86,
+      "no_bid": 80,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-BRKE",
       "volume": 100,
       "volume_24h": 100,
-      "yes_ask": 17,
-      "yes_bid": 15
+      "yes_ask": 20,
+      "yes_bid": 14
     },
     "KXNASCARTOP5-BASPSN26-BUWA": {
       "last_price": 0,
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-COZI",
       "volume": 444,
-      "volume_24h": 244,
+      "volume_24h": 94,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -237,15 +237,15 @@
       "last_price": 51,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 53,
-      "no_bid": 49,
+      "no_ask": 57,
+      "no_bid": 48,
       "open_interest": 476,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-DEHA",
       "volume": 476,
       "volume_24h": 245,
-      "yes_ask": 51,
-      "yes_bid": 47
+      "yes_ask": 52,
+      "yes_bid": 43
     },
     "KXNASCARTOP5-BASPSN26-ERJO": {
       "last_price": 0,
@@ -405,7 +405,7 @@
       "last_price": 48,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 54,
+      "no_ask": 61,
       "no_bid": 51,
       "open_interest": 1197,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 1197,
       "volume_24h": 945,
       "yes_ask": 49,
-      "yes_bid": 46
+      "yes_bid": 39
     },
     "KXNASCARTOP5-BASPSN26-RYPR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-17T07:00:27.169739+00:00",
+  "scraped_at": "2026-09-17T07:15:18.684715+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top5"
 }
