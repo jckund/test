@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-17T17:46:23Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Landen Lewis | Yes | 6c | 6.39c | +1464 | 10.8% | **+69.5%** |
+| Bass Pro Shops Night Race | Top 10 | AJ Allmendinger | Yes | 12c | 12.74c | +685 | 17.2% | **+35.3%** |
+| UNOH 250 | Top 10 | Landen Lewis | Yes | 41c | 42.69c | +134 | 55.7% | **+30.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-17T17:21:29Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
