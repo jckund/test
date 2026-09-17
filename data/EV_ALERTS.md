@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-17T20:26:23Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Giovanni Ruggiero | Yes | 14c | 14.84c | +574 | 20.8% | **+39.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-17T20:21:23Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
