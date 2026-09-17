@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-BRKE",
       "volume": 14,
-      "volume_24h": 14,
+      "volume_24h": 0,
       "yes_ask": 71,
       "yes_bid": 52
     },
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 46,
-      "no_bid": 32,
+      "no_bid": 31,
       "open_interest": 569,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-CAHO",
       "volume": 569,
-      "volume_24h": 32,
-      "yes_ask": 68,
+      "volume_24h": 17,
+      "yes_ask": 69,
       "yes_bid": 54
     },
     "KXNASCARTOP20-BASPSN26-CHBE": {
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 20,
-      "no_bid": 3,
+      "no_bid": 2,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-CHBE",
       "volume": 1,
       "volume_24h": 1,
-      "yes_ask": 97,
+      "yes_ask": 98,
       "yes_bid": 80
     },
     "KXNASCARTOP20-BASPSN26-CHBR": {
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 67,
-      "no_bid": 58,
+      "no_bid": 59,
       "open_interest": 1120,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-COZI",
       "volume": 1366,
       "volume_24h": 8,
-      "yes_ask": 42,
+      "yes_ask": 41,
       "yes_bid": 33
     },
     "KXNASCARTOP20-BASPSN26-DASU": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-17T04:30:20.264878+00:00",
+  "scraped_at": "2026-09-17T04:45:17.676809+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top20"
 }
