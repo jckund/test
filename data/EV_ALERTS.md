@@ -1,3 +1,17 @@
+### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-18T01:31:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Landen Lewis | No | 45c | 46.73c | +114 | 99.2% | **+112.3%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 9c | 9.57c | +945 | 19.3% | **+101.6%** |
+| UNOH 250 | Win | Kaden Honeycutt | No | 54c | 55.74c | -126 | 82.0% | **+47.1%** |
+| UNOH 250 | Win | Giovanni Ruggiero | Yes | 2c | 2.14c | +4579 | 3.0% | **+40.8%** |
+| UNOH 250 | Win | Jake Garcia | No | 73c | 74.38c | -290 | 99.6% | **+33.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-18T01:26:25Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
