@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T00:06:24Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Win | Kaden Honeycutt | Yes | 13c | 13.79c | +625 | 18.0% | **+30.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-18T00:01:29Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
