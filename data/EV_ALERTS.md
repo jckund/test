@@ -1,3 +1,19 @@
+### New Kalshi vs SG lines >= +30% EV — 7 (2026-09-18T01:21:25Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Win | Layne Riggs | Yes | 2c | 2.14c | +4579 | 34.7% | **+1524.3%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 3c | 3.20c | +3021 | 19.3% | **+502.5%** |
+| UNOH 250 | Win | Ty Majeski | Yes | 2c | 2.14c | +4579 | 9.2% | **+328.8%** |
+| UNOH 250 | Top 10 | Connor Hall | No | 26c | 27.35c | +266 | 99.4% | **+263.4%** |
+| UNOH 250 | Top 10 | Nick Leitz | No | 25c | 26.31c | +280 | 69.5% | **+164.2%** |
+| UNOH 250 | Top 3 | Layne Riggs | No | 26c | 27.35c | +266 | 36.6% | **+33.9%** |
+| UNOH 250 | Win | Jake Garcia | No | 75c | 76.31c | -322 | 99.6% | **+30.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T01:16:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
