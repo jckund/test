@@ -46,7 +46,7 @@
       "open_interest": 11127,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-AUCI",
-      "volume": 13812,
+      "volume": 13999,
       "volume_24h": 1032,
       "yes_ask": 2,
       "yes_bid": 1
@@ -85,10 +85,10 @@
       "name": "Brad Keselowski",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 49179,
+      "open_interest": 49658,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-BRKE",
-      "volume": 49332,
+      "volume": 49811,
       "volume_24h": 16736,
       "yes_ask": 3,
       "yes_bid": 2
@@ -99,10 +99,10 @@
       "name": "Bubba Wallace",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 20155,
+      "open_interest": 20177,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-BUWA",
-      "volume": 20162,
+      "volume": 20184,
       "volume_24h": 953,
       "yes_ask": 3,
       "yes_bid": 2
@@ -144,7 +144,7 @@
       "open_interest": 16391,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBR",
-      "volume": 16391,
+      "volume": 16508,
       "volume_24h": 6873,
       "yes_ask": 8,
       "yes_bid": 7
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHEL",
       "volume": 43956,
-      "volume_24h": 6887,
+      "volume_24h": 6913,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -239,11 +239,11 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 35093,
+      "open_interest": 35201,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-DEHA",
-      "volume": 35358,
-      "volume_24h": 5231,
+      "volume": 35466,
+      "volume_24h": 5067,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BASPSN26-JOLO": {
-      "last_price": 6,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 10287,
+      "no_ask": 96,
+      "no_bid": 95,
+      "open_interest": 11102,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-JOLO",
-      "volume": 10287,
-      "volume_24h": 3116,
-      "yes_ask": 6,
-      "yes_bid": 5
+      "volume": 11302,
+      "volume_24h": 3330,
+      "yes_ask": 5,
+      "yes_bid": 4
     },
     "KXNASCARRACE-BASPSN26-JONE": {
       "last_price": 1,
@@ -318,16 +318,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BASPSN26-KYLA": {
-      "last_price": 18,
+      "last_price": 19,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 39064,
+      "open_interest": 39087,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-KYLA",
-      "volume": 39286,
-      "volume_24h": 16407,
+      "volume": 39309,
+      "volume_24h": 16408,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -407,10 +407,10 @@
       "name": "Ryan Blaney",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 41297,
+      "open_interest": 41499,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-RYBL",
-      "volume": 41336,
+      "volume": 41538,
       "volume_24h": 4473,
       "yes_ask": 14,
       "yes_bid": 13
@@ -491,10 +491,10 @@
       "name": "Tyler Reddick",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 25920,
+      "open_interest": 25938,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-TYRE",
-      "volume": 25927,
+      "volume": 25945,
       "volume_24h": 5115,
       "yes_ask": 4,
       "yes_bid": 3
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-WIBY",
       "volume": 28783,
-      "volume_24h": 25282,
+      "volume_24h": 26318,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-18T14:15:17.633361+00:00",
+  "scraped_at": "2026-09-18T14:30:22.759364+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "winner"
 }
