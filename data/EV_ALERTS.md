@@ -1,3 +1,31 @@
+### New Kalshi vs SG lines >= +30% EV — 19 (2026-09-18T01:56:24Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Nicholas Sanchez | No | 25c | 26.31c | +280 | 95.6% | **+263.4%** |
+| UNOH 250 | Top 3 | Layne Riggs | Yes | 25c | 26.31c | +280 | 63.4% | **+140.9%** |
+| UNOH 250 | Top 3 | Bayley Currey | No | 50c | 51.75c | -107 | 96.9% | **+87.3%** |
+| UNOH 250 | Win | Jake Garcia | No | 60c | 61.68c | -161 | 99.6% | **+61.5%** |
+| UNOH 250 | Top 3 | Dawson Sutton | No | 65c | 66.59c | -199 | 100.0% | **+50.2%** |
+| UNOH 250 | Top 3 | Parker Eatmon | No | 65c | 66.59c | -199 | 100.0% | **+50.1%** |
+| UNOH 250 | Top 3 | Cole Butcher | No | 65c | 66.59c | -199 | 99.8% | **+49.9%** |
+| UNOH 250 | Top 3 | Tanner Gray | No | 65c | 66.59c | -199 | 99.8% | **+49.9%** |
+| UNOH 250 | Top 3 | Landen Lewis | No | 65c | 66.59c | -199 | 99.2% | **+49.0%** |
+| UNOH 250 | Top 3 | Justin Haley | No | 65c | 66.59c | -199 | 98.7% | **+48.2%** |
+| UNOH 250 | Top 3 | Corey LaJoie | No | 65c | 66.59c | -199 | 98.7% | **+48.2%** |
+| UNOH 250 | Top 3 | Tyler Ankrum | No | 65c | 66.59c | -199 | 98.2% | **+47.4%** |
+| UNOH 250 | Top 3 | Grant Enfinger | No | 65c | 66.59c | -199 | 98.2% | **+47.4%** |
+| UNOH 250 | Top 3 | Daniel Hemric | No | 65c | 66.59c | -199 | 97.5% | **+46.5%** |
+| UNOH 250 | Top 3 | Nick Leitz | No | 65c | 66.59c | -199 | 97.4% | **+46.2%** |
+| UNOH 250 | Top 3 | Nicholas Sanchez | No | 67c | 68.55c | -218 | 100.0% | **+45.9%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 66c | 67.57c | -208 | 95.6% | **+41.5%** |
+| UNOH 250 | Top 3 | Tristan McKee | No | 65c | 66.59c | -199 | 93.8% | **+40.9%** |
+| UNOH 250 | Top 3 | William Sawalich | No | 65c | 66.59c | -199 | 88.9% | **+33.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-18T01:51:24Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
