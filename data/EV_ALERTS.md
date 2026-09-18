@@ -1,3 +1,24 @@
+### New Kalshi vs SG lines >= +30% EV — 12 (2026-09-18T23:30:54Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 3 | John H. Nemechek | No | 65c | 66.59c | -199 | 99.9% | **+50.1%** |
+| Bass Pro Shops Night Race | Top 3 | Todd Gilliland | No | 66c | 67.57c | -208 | 100.0% | **+48.0%** |
+| Bass Pro Shops Night Race | Top 3 | Noah Gragson | No | 66c | 67.57c | -208 | 100.0% | **+47.9%** |
+| Bass Pro Shops Night Race | Top 3 | Michael McDowell | No | 66c | 67.57c | -208 | 99.9% | **+47.9%** |
+| Bass Pro Shops Night Race | Top 3 | Shane Van Gisbergen | No | 66c | 67.57c | -208 | 99.9% | **+47.9%** |
+| Bass Pro Shops Night Race | Top 3 | Zane Smith | No | 66c | 67.57c | -208 | 99.9% | **+47.8%** |
+| Bass Pro Shops Night Race | Top 3 | Daniel Suárez | No | 66c | 67.57c | -208 | 99.8% | **+47.7%** |
+| Bass Pro Shops Night Race | Top 3 | Erik Jones | No | 66c | 67.57c | -208 | 99.6% | **+47.4%** |
+| Bass Pro Shops Night Race | Top 3 | AJ Allmendinger | No | 66c | 67.57c | -208 | 99.3% | **+47.0%** |
+| Food City 300 | Top 3 | Lavar Scott | No | 71c | 72.44c | -263 | 100.0% | **+38.0%** |
+| Food City 300 | Top 3 | Kyle Sieg | No | 71c | 72.44c | -263 | 99.9% | **+37.9%** |
+| Food City 300 | Top 3 | Jeb Burton | No | 71c | 72.44c | -263 | 99.0% | **+36.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T23:25:50Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
