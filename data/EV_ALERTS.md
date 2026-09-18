@@ -1,3 +1,24 @@
+### New Kalshi vs SG lines >= +30% EV — 12 (2026-09-18T02:21:25Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Christian Eckes | Yes | 1c | 1.07c | +9252 | 69.2% | **+6373.1%** |
+| UNOH 250 | Top 10 | Connor Mosack | Yes | 1c | 1.07c | +9252 | 40.6% | **+3700.8%** |
+| UNOH 250 | Top 10 | Tyler Ankrum | Yes | 1c | 1.07c | +9252 | 31.7% | **+2868.3%** |
+| UNOH 250 | Top 10 | Tanner Gray | Yes | 1c | 1.07c | +9252 | 12.8% | **+1095.7%** |
+| UNOH 250 | Top 10 | Cole Butcher | Yes | 1c | 1.07c | +9252 | 12.5% | **+1071.7%** |
+| UNOH 250 | Top 10 | Brenden Queen | Yes | 1c | 1.07c | +9252 | 6.9% | **+546.2%** |
+| UNOH 250 | Top 10 | Nicholas Sanchez | Yes | 1c | 1.07c | +9252 | 4.4% | **+310.4%** |
+| UNOH 250 | Top 10 | Parker Eatmon | Yes | 1c | 1.07c | +9252 | 4.2% | **+296.5%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 25c | 26.31c | +280 | 95.6% | **+263.4%** |
+| UNOH 250 | Top 10 | Dawson Sutton | Yes | 1c | 1.07c | +9252 | 2.5% | **+136.5%** |
+| UNOH 250 | Top 10 | Andres Perez De Lara | Yes | 1c | 1.07c | +9252 | 1.6% | **+51.5%** |
+| Bass Pro Shops Night Race | Top 10 | AJ Allmendinger | Yes | 11c | 11.69c | +756 | 17.2% | **+47.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-18T02:16:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
