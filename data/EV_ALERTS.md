@@ -1,3 +1,34 @@
+### New Kalshi vs SG lines >= +30% EV — 22 (2026-09-18T00:26:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Parker Eatmon | No | 1c | 1.07c | +9252 | 100.0% | **+9250.0%** |
+| UNOH 250 | Top 3 | Brenden Queen | No | 1c | 1.07c | +9252 | 99.9% | **+9247.2%** |
+| UNOH 250 | Top 3 | Cole Butcher | No | 1c | 1.07c | +9252 | 99.8% | **+9234.1%** |
+| UNOH 250 | Top 10 | Kris Wright | No | 1c | 1.07c | +9252 | 99.7% | **+9227.6%** |
+| UNOH 250 | Top 10 | Luke Baldwin | No | 1c | 1.07c | +9252 | 99.6% | **+9213.6%** |
+| UNOH 250 | Top 10 | Mini Tyrrell | No | 1c | 1.07c | +9252 | 99.3% | **+9189.3%** |
+| UNOH 250 | Top 3 | Corey LaJoie | No | 1c | 1.07c | +9252 | 98.7% | **+9129.4%** |
+| UNOH 250 | Top 3 | Bayley Currey | No | 1c | 1.07c | +9252 | 96.9% | **+8962.9%** |
+| UNOH 250 | Top 3 | Ty Majeski | No | 1c | 1.07c | +9252 | 67.8% | **+6244.7%** |
+| UNOH 250 | Top 10 | Connor Mosack | No | 6c | 6.39c | +1464 | 59.4% | **+828.2%** |
+| UNOH 250 | Top 3 | Dawson Sutton | No | 12c | 12.74c | +685 | 100.0% | **+684.9%** |
+| UNOH 250 | Top 3 | Tanner Gray | No | 12c | 12.74c | +685 | 99.8% | **+683.5%** |
+| UNOH 250 | Top 3 | Landen Lewis | No | 12c | 12.74c | +685 | 99.2% | **+678.9%** |
+| UNOH 250 | Top 3 | Justin Haley | No | 12c | 12.74c | +685 | 98.7% | **+674.9%** |
+| UNOH 250 | Top 3 | Tyler Ankrum | No | 12c | 12.74c | +685 | 98.2% | **+670.6%** |
+| UNOH 250 | Top 3 | Daniel Hemric | No | 12c | 12.74c | +685 | 97.5% | **+665.7%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 12c | 12.74c | +685 | 95.6% | **+650.7%** |
+| UNOH 250 | Top 3 | Connor Mosack | No | 12c | 12.74c | +685 | 94.8% | **+644.2%** |
+| UNOH 250 | Top 3 | Giovanni Ruggiero | No | 12c | 12.74c | +685 | 83.7% | **+556.9%** |
+| UNOH 250 | Top 3 | William Sawalich | No | 13c | 13.79c | +625 | 88.9% | **+544.9%** |
+| UNOH 250 | Top 3 | Grant Enfinger | No | 41c | 42.69c | +134 | 98.2% | **+129.9%** |
+| UNOH 250 | Top 10 | Brenden Queen | No | 39c | 40.67c | +146 | 93.1% | **+128.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:21:24Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
