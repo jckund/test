@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-AUDI",
       "volume": 2225,
-      "volume_24h": 2129,
+      "volume_24h": 2225,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-BRKE",
       "volume": 214,
-      "volume_24h": 50,
+      "volume_24h": 0,
       "yes_ask": 36,
       "yes_bid": 30
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHBE",
       "volume": 73,
-      "volume_24h": 73,
+      "volume_24h": 59,
       "yes_ask": 67,
       "yes_bid": 60
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 62,
-      "no_bid": 57,
+      "no_bid": 56,
       "open_interest": 165,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-CHEL",
       "volume": 165,
       "volume_24h": 112,
-      "yes_ask": 43,
+      "yes_ask": 44,
       "yes_bid": 38
     },
     "KXNASCARTOP10-BASPSN26-COCU": {
@@ -238,13 +238,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 41,
-      "no_bid": 31,
+      "no_bid": 30,
       "open_interest": 14,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-DEHA",
       "volume": 14,
       "volume_24h": 14,
-      "yes_ask": 69,
+      "yes_ask": 70,
       "yes_bid": 59
     },
     "KXNASCARTOP10-BASPSN26-ERJO": {
@@ -321,15 +321,15 @@
       "last_price": 70,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 36,
-      "no_bid": 29,
+      "no_ask": 35,
+      "no_bid": 30,
       "open_interest": 893,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-KYLA",
       "volume": 893,
       "volume_24h": 4,
-      "yes_ask": 71,
-      "yes_bid": 64
+      "yes_ask": 70,
+      "yes_bid": 65
     },
     "KXNASCARTOP10-BASPSN26-MIMC": {
       "last_price": 15,
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 76,
-      "no_bid": 74,
+      "no_bid": 73,
       "open_interest": 493,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-RYPR",
       "volume": 493,
       "volume_24h": 54,
-      "yes_ask": 26,
+      "yes_ask": 27,
       "yes_bid": 24
     },
     "KXNASCARTOP10-BASPSN26-SHVA": {
@@ -475,7 +475,7 @@
       "last_price": 72,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 38,
+      "no_ask": 39,
       "no_bid": 36,
       "open_interest": 2501,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 2711,
       "volume_24h": 39,
       "yes_ask": 64,
-      "yes_bid": 62
+      "yes_bid": 61
     },
     "KXNASCARTOP10-BASPSN26-TYRE": {
       "last_price": 44,
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-WIBY",
       "volume": 56,
-      "volume_24h": 56,
+      "volume_24h": 35,
       "yes_ask": 47,
       "yes_bid": 42
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-18T18:15:23.740095+00:00",
+  "scraped_at": "2026-09-18T18:30:22.124984+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }
