@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:21:24Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Nicholas Sanchez | No | 1c | 1.07c | +9252 | 100.0% | **+9250.0%** |
+| UNOH 250 | Top 3 | Christian Eckes | No | 3c | 3.20c | +3021 | 73.9% | **+2206.4%** |
+| UNOH 250 | Top 10 | Justin Haley | No | 15c | 15.89c | +529 | 71.4% | **+349.0%** |
+| UNOH 250 | Top 10 | Corey LaJoie | Yes | 17c | 17.99c | +456 | 28.0% | **+55.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T00:16:26Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
