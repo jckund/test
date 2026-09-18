@@ -1,3 +1,40 @@
+### New Kalshi vs SG lines >= +30% EV — 28 (2026-09-18T02:06:22Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Layne Riggs | Yes | 1c | 1.07c | +9252 | 83.5% | **+7709.7%** |
+| UNOH 250 | Top 3 | Layne Riggs | Yes | 1c | 1.07c | +9252 | 63.4% | **+5826.7%** |
+| UNOH 250 | Win | Ty Majeski | Yes | 1c | 1.07c | +9252 | 9.2% | **+757.0%** |
+| UNOH 250 | Win | Jake Garcia | No | 11c | 11.69c | +756 | 99.6% | **+752.6%** |
+| UNOH 250 | Win | Kaden Honeycutt | Yes | 2c | 2.14c | +4579 | 18.0% | **+742.9%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 3c | 3.20c | +3021 | 19.3% | **+502.5%** |
+| UNOH 250 | Win | Ben Rhodes | Yes | 1c | 1.07c | +9252 | 5.7% | **+434.9%** |
+| UNOH 250 | Top 10 | Tanner Gray | No | 25c | 26.31c | +280 | 87.2% | **+231.5%** |
+| UNOH 250 | Win | Giovanni Ruggiero | Yes | 1c | 1.07c | +9252 | 3.0% | **+181.5%** |
+| UNOH 250 | Top 10 | Corey LaJoie | No | 25c | 26.31c | +280 | 72.0% | **+173.6%** |
+| UNOH 250 | Top 3 | Dawson Sutton | No | 45c | 46.73c | +114 | 100.0% | **+114.0%** |
+| UNOH 250 | Top 3 | Tanner Gray | No | 45c | 46.73c | +114 | 99.8% | **+113.6%** |
+| UNOH 250 | Top 3 | Landen Lewis | No | 45c | 46.73c | +114 | 99.2% | **+112.3%** |
+| UNOH 250 | Top 3 | Justin Haley | No | 45c | 46.73c | +114 | 98.7% | **+111.2%** |
+| UNOH 250 | Top 3 | Corey LaJoie | No | 45c | 46.73c | +114 | 98.7% | **+111.2%** |
+| UNOH 250 | Top 3 | Tyler Ankrum | No | 45c | 46.73c | +114 | 98.2% | **+110.1%** |
+| UNOH 250 | Top 3 | Grant Enfinger | No | 45c | 46.73c | +114 | 98.2% | **+110.0%** |
+| UNOH 250 | Top 3 | Parker Eatmon | No | 46c | 47.74c | +109 | 100.0% | **+109.4%** |
+| UNOH 250 | Top 3 | Daniel Hemric | No | 45c | 46.73c | +114 | 97.5% | **+108.7%** |
+| UNOH 250 | Top 3 | Tristan McKee | No | 45c | 46.73c | +114 | 93.8% | **+100.8%** |
+| UNOH 250 | Top 3 | Cole Butcher | No | 50c | 51.75c | -107 | 99.8% | **+92.9%** |
+| UNOH 250 | Top 3 | William Sawalich | No | 45c | 46.73c | +114 | 88.9% | **+90.3%** |
+| UNOH 250 | Top 3 | Nick Leitz | No | 50c | 51.75c | -107 | 97.4% | **+88.2%** |
+| UNOH 250 | Top 3 | Giovanni Ruggiero | No | 45c | 46.73c | +114 | 83.7% | **+79.1%** |
+| UNOH 250 | Top 3 | Ty Majeski | No | 45c | 46.73c | +114 | 67.8% | **+45.2%** |
+| UNOH 250 | Win | William Sawalich | Yes | 1c | 1.07c | +9252 | 1.5% | **+43.1%** |
+| UNOH 250 | Top 3 | Bayley Currey | No | 67c | 68.55c | -218 | 96.9% | **+41.4%** |
+| UNOH 250 | Top 3 | Christian Eckes | No | 51c | 52.75c | -112 | 73.9% | **+40.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T02:01:31Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
