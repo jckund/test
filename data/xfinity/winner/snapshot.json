@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BLPE",
       "volume": 55,
-      "volume_24h": 48,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -71,11 +71,11 @@
       "name": "Brent Crews",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 5580,
+      "open_interest": 5590,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BRCR",
-      "volume": 5585,
-      "volume_24h": 2228,
+      "volume": 5595,
+      "volume_24h": 2238,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -108,17 +108,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-CAKV": {
-      "last_price": 13,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 88,
-      "no_bid": 87,
-      "open_interest": 7153,
+      "no_bid": 85,
+      "open_interest": 7413,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CAKV",
-      "volume": 7174,
-      "volume_24h": 2873,
-      "yes_ask": 13,
+      "volume": 7434,
+      "volume_24h": 3139,
+      "yes_ask": 15,
       "yes_bid": 12
     },
     "KXNASCARRACE-FOOC91826-CAWA": {
@@ -141,11 +141,11 @@
       "name": "Corey Day",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 3489,
+      "open_interest": 3502,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CODA",
-      "volume": 3489,
-      "volume_24h": 3204,
+      "volume": 3502,
+      "volume_24h": 3217,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -318,16 +318,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-JUAL": {
-      "last_price": 25,
+      "last_price": 23,
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 78,
       "no_bid": 77,
-      "open_interest": 6685,
+      "open_interest": 6690,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
-      "volume": 6690,
-      "volume_24h": 3198,
+      "volume": 6695,
+      "volume_24h": 3203,
       "yes_ask": 23,
       "yes_bid": 22
     },
@@ -486,16 +486,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-RYSI": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Ryan Sieg",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 220,
+      "open_interest": 936,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-RYSI",
-      "volume": 220,
-      "volume_24h": 0,
+      "volume": 1156,
+      "volume_24h": 936,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-18T02:19:12.051555+00:00",
+  "scraped_at": "2026-09-18T02:34:34.627324+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
