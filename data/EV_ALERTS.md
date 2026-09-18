@@ -1,3 +1,24 @@
+### New Kalshi vs SG lines >= +30% EV — 12 (2026-09-18T19:50:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Brandon Jones | Yes | 5c | 5.33c | +1775 | 8.3% | **+55.5%** |
+| Food City 300 | Top 3 | Stefan Parsons | No | 71c | 72.44c | -263 | 100.0% | **+38.0%** |
+| Food City 300 | Top 3 | Garrett Smithley | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Logan Bearden | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Lavar Scott | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Patrick Staropoli | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Josh Williams | No | 72c | 73.41c | -276 | 99.9% | **+36.1%** |
+| Food City 300 | Top 3 | Andrew Patterson | No | 72c | 73.41c | -276 | 99.8% | **+36.0%** |
+| Food City 300 | Top 3 | Brennan Poole | No | 72c | 73.41c | -276 | 99.8% | **+36.0%** |
+| Food City 300 | Top 3 | Dean Thompson | No | 72c | 73.41c | -276 | 99.4% | **+35.4%** |
+| Food City 300 | Top 3 | Jeremy Clements | No | 72c | 73.41c | -276 | 98.0% | **+33.4%** |
+| Food City 300 | Top 3 | Anthony Alfredo | No | 72c | 73.41c | -276 | 96.9% | **+32.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T19:36:10Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
