@@ -1,3 +1,20 @@
+### New Kalshi vs SG lines >= +30% EV — 8 (2026-09-18T18:35:48Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Logan Bearden | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Brennan Poole | No | 72c | 73.41c | -276 | 99.8% | **+36.0%** |
+| Food City 300 | Top 3 | Josh Williams | No | 73c | 74.38c | -290 | 99.9% | **+34.4%** |
+| Food City 300 | Top 3 | Garrett Smithley | No | 75c | 76.31c | -322 | 100.0% | **+31.0%** |
+| Food City 300 | Top 3 | Stefan Parsons | No | 75c | 76.31c | -322 | 100.0% | **+31.0%** |
+| Food City 300 | Top 3 | Andrew Patterson | No | 75c | 76.31c | -322 | 99.8% | **+30.8%** |
+| Food City 300 | Top 3 | Anthony Alfredo | No | 73c | 74.38c | -290 | 96.9% | **+30.3%** |
+| Food City 300 | Top 3 | Jeremy Clements | No | 74c | 75.35c | -306 | 98.0% | **+30.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-18T18:30:54Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
