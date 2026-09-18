@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-09-16T14:08:33.531Z",
+  "scraped_at": "2026-09-18T16:25:32.386Z",
   "source": "FanDuel",
   "source_url": "https://nj.sportsbook.fanduel.com/motorsport",
   "race": "Cup - BASPSN (Sep 19)",
@@ -8,17 +8,17 @@
     "Toyota": {
       "american": -130,
       "implied": 0.5652173913043478,
-      "novig": 0.4653649465364947
+      "novig": 0.4588235294117647
     },
     "Chevrolet": {
       "american": 175,
       "implied": 0.36363636363636365,
-      "novig": 0.29939562993956303
+      "novig": 0.2951871657754011
     },
     "Ford": {
-      "american": 250,
-      "implied": 0.2857142857142857,
-      "novig": 0.23523942352394236
+      "american": 230,
+      "implied": 0.30303030303030304,
+      "novig": 0.24598930481283424
     }
   },
   "makes": {
@@ -175,63 +175,63 @@
       "drivers": [
         {
           "name": "Ryan Blaney",
-          "american": 100,
-          "implied": 0.5,
-          "novig": 0.4239466886789029
+          "american": -110,
+          "implied": 0.5238095238095238,
+          "novig": 0.43164663192068614
         },
         {
           "name": "Joey Logano",
-          "american": 350,
-          "implied": 0.2222222222222222,
-          "novig": 0.18842075052395682
+          "american": 360,
+          "implied": 0.21739130434782608,
+          "novig": 0.17914188281293297
         },
         {
           "name": "Josh Berry",
-          "american": 700,
-          "implied": 0.125,
-          "novig": 0.10598667216972572
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.09694737187523432
         },
         {
           "name": "Brad Keselowski",
-          "american": 900,
-          "implied": 0.1,
-          "novig": 0.08478933773578058
+          "american": 800,
+          "implied": 0.1111111111111111,
+          "novig": 0.09156140677105463
+        },
+        {
+          "name": "Austin Cindric",
+          "american": 1300,
+          "implied": 0.07142857142857142,
+          "novig": 0.058860904352820834
         },
         {
           "name": "Chris Buescher",
           "american": 1400,
           "implied": 0.06666666666666667,
-          "novig": 0.056526225157187054
-        },
-        {
-          "name": "Austin Cindric",
-          "american": 1500,
-          "implied": 0.0625,
-          "novig": 0.05299333608486286
+          "novig": 0.05493684406263278
         },
         {
           "name": "Ryan Preece",
-          "american": 1700,
-          "implied": 0.05555555555555555,
-          "novig": 0.047105187630989205
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04847368593761716
         },
         {
           "name": "Noah Gragson",
           "american": 4000,
           "implied": 0.024390243902439025,
-          "novig": 0.020680326277019653
+          "novig": 0.02009884538876809
         },
         {
           "name": "Zane Smith",
-          "american": 7500,
-          "implied": 0.013157894736842105,
-          "novig": 0.011156491807339549
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.010173489641228292
         },
         {
           "name": "Todd Gilliland",
           "american": 10000,
           "implied": 0.009900990099009901,
-          "novig": 0.008394983934235701
+          "novig": 0.00815893723702467
         }
       ]
     }
