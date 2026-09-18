@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T00:31:29Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Tristan McKee | No | 12c | 12.74c | +685 | 93.8% | **+636.6%** |
+| UNOH 250 | Top 10 | Regan Smith | No | 25c | 26.31c | +280 | 99.3% | **+277.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 22 (2026-09-18T00:26:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
