@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-18T03:06:25Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Daniel Hemric | No | 25c | 26.31c | +280 | 63.4% | **+140.9%** |
+| UNOH 250 | Top 3 | Stewart Friesen | No | 40c | 41.68c | +140 | 99.2% | **+138.0%** |
+| UNOH 250 | Top 10 | Grant Enfinger | No | 40c | 41.68c | +140 | 70.2% | **+68.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T02:46:25Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
