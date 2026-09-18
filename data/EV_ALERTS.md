@@ -1,3 +1,19 @@
+### New Kalshi vs SG lines >= +30% EV — 7 (2026-09-18T00:51:23Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Connor Mosack | No | 1c | 1.07c | +9252 | 59.4% | **+5451.1%** |
+| UNOH 250 | Top 10 | Dawson Sutton | No | 25c | 26.31c | +280 | 97.5% | **+270.4%** |
+| UNOH 250 | Top 10 | Parker Eatmon | No | 25c | 26.31c | +280 | 95.8% | **+263.9%** |
+| UNOH 250 | Top 10 | Cole Butcher | No | 25c | 26.31c | +280 | 87.5% | **+232.4%** |
+| UNOH 250 | Top 10 | Brenden Queen | No | 39c | 40.67c | +146 | 93.1% | **+128.9%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 10c | 10.63c | +841 | 19.3% | **+81.6%** |
+| UNOH 250 | Win | Kaden Honeycutt | Yes | 13c | 13.79c | +625 | 18.0% | **+30.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:46:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
