@@ -192,16 +192,16 @@
       "yes_bid": 16
     },
     "KXNASCARTOP20-BASPSN26-COWA": {
-      "last_price": 2,
+      "last_price": 10,
       "liquidity": 0.0,
       "name": "Cody Ware",
       "no_ask": 98,
       "no_bid": 90,
-      "open_interest": 149,
+      "open_interest": 159,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-COWA",
-      "volume": 149,
-      "volume_24h": 0,
+      "volume": 159,
+      "volume_24h": 10,
       "yes_ask": 10,
       "yes_bid": 2
     },
@@ -276,16 +276,16 @@
       "yes_bid": 54
     },
     "KXNASCARTOP20-BASPSN26-JOBI": {
-      "last_price": 2,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Josh Bilicki",
       "no_ask": 99,
       "no_bid": 95,
-      "open_interest": 1,
+      "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-JOBI",
-      "volume": 1,
-      "volume_24h": 0,
+      "volume": 20,
+      "volume_24h": 19,
       "yes_ask": 5,
       "yes_bid": 1
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-18T04:30:25.599327+00:00",
+  "scraped_at": "2026-09-18T04:45:19.145649+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top20"
 }
