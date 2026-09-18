@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:46:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Caden Kvapil | No | 50c | 51.75c | -107 | 99.9% | **+93.1%** |
+| UNOH 250 | Top 10 | Kris Wright | No | 50c | 51.75c | -107 | 99.7% | **+92.7%** |
+| UNOH 250 | Top 10 | Regan Smith | No | 55c | 56.73c | -131 | 99.3% | **+75.0%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 14c | 14.84c | +574 | 19.3% | **+30.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:41:23Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
