@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T22:00:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Patrick Staropoli | No | 74c | 75.35c | -306 | 100.0% | **+32.7%** |
+| Bass Pro Shops Night Race | Top 5 | Ty Gibbs | Yes | 40c | 41.68c | +140 | 55.1% | **+32.3%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T21:55:51Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
