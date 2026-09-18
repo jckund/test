@@ -1,3 +1,26 @@
+### New Kalshi vs SG lines >= +30% EV — 14 (2026-09-18T02:16:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 3 | Bayley Currey | No | 1c | 1.07c | +9252 | 96.9% | **+8962.9%** |
+| UNOH 250 | Top 10 | Jake Garcia | No | 1c | 1.07c | +9252 | 59.0% | **+5419.9%** |
+| UNOH 250 | Top 3 | Kaden Honeycutt | Yes | 1c | 1.07c | +9252 | 45.7% | **+4170.5%** |
+| UNOH 250 | Top 3 | Ty Majeski | Yes | 1c | 1.07c | +9252 | 32.2% | **+2907.2%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 3c | 3.20c | +3021 | 95.6% | **+2885.0%** |
+| UNOH 250 | Top 10 | Nick Leitz | Yes | 1c | 1.07c | +9252 | 30.5% | **+2750.6%** |
+| UNOH 250 | Top 10 | Corey LaJoie | Yes | 1c | 1.07c | +9252 | 28.0% | **+2519.1%** |
+| UNOH 250 | Top 3 | Christian Eckes | Yes | 1c | 1.07c | +9252 | 26.1% | **+2341.9%** |
+| UNOH 250 | Top 3 | Ben Rhodes | Yes | 1c | 1.07c | +9252 | 25.7% | **+2304.2%** |
+| UNOH 250 | Top 10 | Landen Lewis | Yes | 1c | 1.07c | +9252 | 22.2% | **+1977.8%** |
+| UNOH 250 | Top 3 | Connor Mosack | Yes | 1c | 1.07c | +9252 | 5.2% | **+386.3%** |
+| UNOH 250 | Top 3 | Nick Leitz | Yes | 1c | 1.07c | +9252 | 2.6% | **+144.1%** |
+| UNOH 250 | Top 3 | Daniel Hemric | Yes | 1c | 1.07c | +9252 | 2.5% | **+130.1%** |
+| UNOH 250 | Top 3 | Grant Enfinger | Yes | 1c | 1.07c | +9252 | 1.8% | **+72.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 24 (2026-09-18T02:11:27Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
