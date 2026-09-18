@@ -87,6 +87,39 @@ else:
 
 _BYKEY = {_key(c): c for c in CANON}
 
+# Nickname/spelling aliases mapped KEY -> KEY rather than key -> display name, so
+# they resolve against whatever roster is loaded. The Cup list above is hardcoded,
+# but the support series take their roster from CANON_SNAPSHOT, where the display
+# spelling is whatever Kalshi posted this week — a key->display alias would hard-code
+# one series' spelling and break the other.
+_ALIAS_KEY = {
+    "nick sanchez": "nicholas sanchez",   # Caesars; Kalshi's Xfinity field says Nicholas
+    "chase elliot": "chase elliott",      # VIP365 drops a 't'
+}
+
+
+def _midless(k: str) -> str:
+    """Match key with single-letter middle initials dropped ("landon s huffman" ->
+    "landon huffman"), so a book that prints the initial still lands on a roster
+    that doesn't (or vice versa)."""
+    toks = k.split()
+    if len(toks) < 3:
+        return k
+    return " ".join([toks[0]] + [t for t in toks[1:-1] if len(t) > 1] + [toks[-1]])
+
+
+# Initial-stripped index, built with a collision guard: if two canonical drivers
+# collapse to the same midless key they are genuinely different people (the Xfinity
+# field has run both "Austin J Hill" and "Austin Hill"), so that key is dropped
+# rather than allowed to match either one.
+_MIDLESS = {}
+for _c in CANON:
+    _mk = _midless(_key(_c))
+    if _mk == _key(_c):
+        continue
+    _MIDLESS[_mk] = None if _mk in _MIDLESS else _c
+_MIDLESS = {k: v for k, v in _MIDLESS.items() if v is not None and k not in _BYKEY}
+
 
 def canon(name: str) -> str:
     """Canonical Kalshi spelling for a book's driver name. Raises on unknown."""
@@ -95,7 +128,55 @@ def canon(name: str) -> str:
         return _ALIAS[k]
     if k in _BYKEY:
         return _BYKEY[k]
+    ak = _ALIAS_KEY.get(k)
+    if ak and ak in _BYKEY:
+        return _BYKEY[ak]
+    mk = _midless(k)
+    if mk in _BYKEY:
+        return _BYKEY[mk]
+    if mk in _MIDLESS:
+        return _MIDLESS[mk]
     raise KeyError(f"gen_books: no canonical driver for {name!r} (key {k!r})")
+
+
+# Canonical team/org spellings for the "which team wins" board. Kalshi's team market
+# is best-effort and often absent (it was this week), so unlike the driver roster
+# there is no upstream anchor — these are the real-world org names. Books disagree
+# ("Trackhouse Racing Team", the "Hass"/"Haas" typo) and team_canon() is what keeps
+# one org from splitting into two rows across books in the Team tab.
+TEAM_CANON = [
+    "Joe Gibbs Racing", "Hendrick Motorsports", "Team Penske", "RFK Racing",
+    "23XI Racing", "Spire Motorsports", "Trackhouse Racing", "Wood Brothers Racing",
+    "Legacy Motor Club", "Front Row Motorsports", "Kaulig Racing",
+    "Richard Childress Racing", "Hyak Motorsports", "Haas Factory Team",
+    "Garage 66", "Rick Ware Racing",
+]
+
+# Variant spellings seen on real boards. Keyed through _key(), so case, periods and
+# extra whitespace are already handled and only genuine wording differences go here.
+_TEAM_ALIAS = {
+    "trackhouse racing team": "Trackhouse Racing",
+    "hass factory team": "Haas Factory Team",      # Caesars typo
+    "haas factory racing": "Haas Factory Team",
+    "legacy motorclub": "Legacy Motor Club",
+    "richard childress": "Richard Childress Racing",
+    "wood brothers": "Wood Brothers Racing",
+    "front row": "Front Row Motorsports",
+}
+
+_TEAM_BYKEY = {_key(t): t for t in TEAM_CANON}
+
+
+def team_canon(name: str) -> str:
+    """Canonical org spelling for a book's team name. Raises on unknown, matching
+    canon()'s fail-loudly rule: a team we've never seen is either a typo or a new
+    entrant, and both are worth a look rather than a silently forked row."""
+    k = _key(name)
+    if k in _TEAM_ALIAS:
+        return _TEAM_ALIAS[k]
+    if k in _TEAM_BYKEY:
+        return _TEAM_BYKEY[k]
+    raise KeyError(f"gen_books: no canonical team for {name!r} (key {k!r})")
 
 
 def imp(american: int) -> float:
@@ -157,9 +238,17 @@ def write_mfr(filename: str, source: str, which_make: dict, makes: dict) -> dict
 
 
 def write_team(filename: str, source: str, teams) -> dict:
-    """teams: list of (team_name, american). Team names are used as-is."""
-    s = sum(imp(a) for _, a in teams)
-    win = {nm: {"american": a, "implied": imp(a), "novig": imp(a) / s} for nm, a in teams}
+    """teams: list of (team_name, american). Names go through team_canon() so the
+    same org lines up across books; first occurrence of a canonical team wins."""
+    rows, seen = [], set()
+    for nm, a in teams:
+        cn = team_canon(nm)
+        if cn in seen:
+            continue
+        seen.add(cn)
+        rows.append((cn, a))
+    s = sum(imp(a) for _, a in rows)
+    win = {nm: {"american": a, "implied": imp(a), "novig": imp(a) / s} for nm, a in rows}
     obj = {"captured_at": _ts(), "source": source, "race": RACE, "winner": win}
     with open(f"{BASE}/{filename}", "w") as fh:
         json.dump(obj, fh, indent=2, ensure_ascii=False)
@@ -173,6 +262,17 @@ if __name__ == "__main__":
     assert canon("Shane van Gisbergen") == "Shane Van Gisbergen"
     assert canon("John Hunter Nemechek") == "John H. Nemechek"
     assert canon("Daniel Suarez") == "Daniel Suárez"
+    assert canon("Chase Elliot") == "Chase Elliott"          # VIP365 misspelling
+    assert canon("Ricky Stenhouse Jr.") == "Ricky Stenhouse"  # trailing-period suffix
+    assert team_canon("Trackhouse Racing Team") == "Trackhouse Racing"
+    assert team_canon("Hass Factory Team") == "Haas Factory Team"
+    assert team_canon("JOE GIBBS RACING") == "Joe Gibbs Racing"
+    try:
+        team_canon("Some New Team")
+    except KeyError:
+        pass
+    else:
+        raise AssertionError("team_canon should raise on an unknown org")
     t = build_tier([("Ryan Blaney", 650), ("Joey Logano", 1000), ("Kyle Larson", 1200)], 1)
     assert abs(sum(d["novig"] for d in t["drivers"]) - 1.0) < 1e-9
     print("gen_books self-test OK — canonicalization and no-vig normalization pass")

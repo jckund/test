@@ -14,7 +14,7 @@ misclassified. Kickoff sequence:
 
 1. **Re-point matchers + clear stale data.** Update the `SERIES` matchers in
    `scraper.py` (case-insensitive substring on the race name) for this week's
-   Cup / Xfinity / Truck races; `xfinity` is the default catch-all. Clear stale
+   Cup / Xfinity races; `xfinity` is the default catch-all. Clear stale
    lines from every book/tier across Cup + support series (don't carry last
    week's boards forward).
 2. **Turn the scraper ON.** Set the auto-scrape gate to live: commit
@@ -27,9 +27,13 @@ misclassified. Kickoff sequence:
 5. **After the race settles,** turn the scraper OFF: set `.github/scrape_active`
    = `false` (stops scraping a resolved market; pinger ticks become no-ops).
 
-Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`,
-Trucks is `<RACE>`. Update the SERIES matchers in `scraper.py`, clear all stale
-lines, grab fresh Kalshi + FanDuel, deploy, and confirm."*
+Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`.
+Update the SERIES matchers in `scraper.py`, clear all stale lines, grab fresh
+Kalshi + FanDuel, deploy, and confirm."*
+
+**The Truck series is no longer tracked** (removed 2026-09-18): its `SERIES` entry
+and `data/truck/` are gone, and a Truck race now falls to the `xfinity` catch-all.
+Don't re-add it without being asked.
 
 ## Branches & deploy flow (IMPORTANT)
 
@@ -192,12 +196,25 @@ gb.write_book("caesars.json", "Caesars", {"winner": (pb.rows(WIN), 1), "top3": (
 ```
 `pb.rows()` handles the layouts books actually produce — `Name +650`, `+650 Name`,
 name and odds on alternating lines (what copying a web board gives you), `|`/`,`/tab
-separated, plus decimal (`7.50`) and fractional (`13/2`) odds — skips column headers,
+separated, a leading Rot/ID column (`1451  Kyle Larson  +165`, which BetUS prints on
+every row), `Ev`/`Even` for +100, plus decimal (`7.50`) and fractional (`13/2`) odds
+— skips column headers,
 canonicalizes via `gen_books.canon`, and **raises naming the offending line** if a
 driver is unknown, so a typo fails loudly instead of silently forking a driver. Pass
 `strict=False` to skip bad rows, or `pb.rows_with_errors()` to inspect them. Sanity-
 check a paste from the shell with `python3 parse_board.py board.txt`. Validated by
-round-tripping every committed book × 5 layouts (75/75 exact).
+round-tripping every committed book × 7 layouts (259/259 exact).
+
+**Team boards paste too** — pass the team roster as the canonicalizer:
+`pb.rows(TEAM_TXT, canon=gb.team_canon)`. `gen_books.TEAM_CANON` / `team_canon()`
+hold the canonical org spellings and fold the variants books actually post
+(`Trackhouse Racing Team` → `Trackhouse Racing`, Caesars' `Hass` → `Haas Factory
+Team`) so one org can't split into two rows in the Team tab; `write_team()` applies
+it automatically. Kalshi has no team market most weeks, so there's no upstream
+anchor — an unknown org raises, same as an unknown driver. **Support-series boards**
+need the series' own roster: run with `CANON_SNAPSHOT=<a data/<series>/*/snapshot.json>`
+and `MANUAL_DIR=data/<series>/manual` so names come from that week's actual field
+(the `CANON` list in `gen_books` is Cup-only).
 **HARD RULE — NEVER act on a paste without an explicit go (STANDING, NON-NEGOTIABLE).**
 A book/model paste — including a single `"updated <Book>"` or `"<Book>: <paste>"`, and
 including a re-sent SG/FanDuel/Kalshi drop — is **collect-only**. Acknowledge it with one
@@ -273,7 +290,7 @@ wait to be asked. Stale = not from the current capture cycle. This covers:
   `teams.json` whose `scraped_at` lags `odds.json` by many hours means FanDuel pulled
   that market (common on race day); delete the stale file (the scraper recreates it if
   the market returns). Compare each auto file's timestamp to the freshest one.
-- **Concluded/settled support races** — once a support race (e.g. the Truck race) has
+- **Concluded/settled support races** — once a support race (e.g. the Xfinity race) has
   run, drop its hand books; its Kalshi data settles on its own.
 Sanity-check timestamps (`captured_at` / `scraped_at`) against the current race day and
 against the freshest sibling file before publishing; flag or drop anything that lags.
@@ -339,9 +356,9 @@ and skip the re-entry. Never apply this favorites-only shortcut to any other boo
 
 ## Standard task prompts
 
-- "New race week. Cup is <RACE>, Xfinity is <RACE>, Trucks is <RACE>. Update the
-  SERIES matchers in `scraper.py`, clear all stale lines, grab fresh Kalshi +
-  FanDuel, deploy, and confirm." (start-of-week kickoff — see top of file)
+- "New race week. Cup is <RACE>, Xfinity is <RACE>. Update the SERIES matchers in
+  `scraper.py`, clear all stale lines, grab fresh Kalshi + FanDuel, deploy, and
+  confirm." (start-of-week kickoff — see top of file)
 - "<Book> <tier(s)>: <paste / screenshots / screen-recording>." (stage to dev;
   hold deploy for the batch — see 'Entering a hand-entered book')
 - "Deploy" / "go live" / "that's all" — land the staged batch + refresh FanDuel + Kalshi.

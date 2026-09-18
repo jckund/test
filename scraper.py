@@ -59,25 +59,25 @@ WINNER_SERIES = "KXNASCARRACE"
 # (those are Cup-only and handled in the dashboard).
 #
 # NOTE: Kalshi files every national-series race under the single KXNASCARRACE
-# series and its event payload carries no Cup/Xfinity/Truck marker (just the
-# race name), so the only signal we have is the race name itself. That means
-# the `cup`/`truck` matchers must be refreshed to the current weekend's race
-# names — a race that matches nothing falls to the `xfinity` default. Update the
-# substrings below each race weekend (or when Kalshi posts a new race).
+# series and its event payload carries no Cup/Xfinity marker (just the race
+# name), so the only signal we have is the race name itself. That means the
+# `cup` matcher must be refreshed to the current weekend's race name — a race
+# that matches nothing falls to the `xfinity` default. Update the substrings
+# below each race weekend (or when Kalshi posts a new race).
+#
+# The Truck series is no longer tracked: its entry (and data/truck/) were
+# removed, so a Truck race now falls to the `xfinity` catch-all like any other
+# unrecognized race. Re-add an entry here if it ever comes back.
 SERIES = [
-    # Bristol night race weekend — all three national series run, so every tab
-    # has a real matcher and nothing should be left for the catch-all.
+    # Bristol night race weekend.
     #
     # Cup: Bass Pro Shops Night Race. Match "bass pro" only — NOT "night race",
-    # which is generic, and NOT "bristol", since all three races share the
+    # which is generic, and NOT "bristol", since the weekend's races share the
     # track and would collide.
     #
     # Xfinity: Food City 300. Match the full "food city 300", NOT bare "food
     # city" — Bristol's spring CUP race is the Food City 500, so the bare
     # substring collides across weekends.
-    #
-    # Trucks: UNOH 250. Match "unoh" (event code UNO2PBO); "250" alone is far
-    # too generic.
     #
     # NOTE: `xfinity` is ALSO the catch-all, so an unrecognized race still lands
     # here and would inherit the "Xfinity" label. That is the pre-existing
@@ -85,8 +85,6 @@ SERIES = [
     # are re-pointed rather than assuming a race on this tab is Xfinity.
     {"key": "cup", "label": "NASCAR", "matchers": ["bass pro"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "truck", "label": "Trucks", "matchers": ["unoh"],
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     {"key": "xfinity", "label": "Xfinity", "matchers": ["food city 300"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
