@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:41:23Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Connor Hall | No | 25c | 26.31c | +280 | 99.4% | **+277.7%** |
+| UNOH 250 | Top 10 | Christian Eckes | Yes | 35c | 36.59c | +173 | 69.2% | **+89.2%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 11c | 11.69c | +756 | 19.3% | **+65.2%** |
+| UNOH 250 | Top 3 | Christian Eckes | No | 50c | 51.75c | -107 | 73.9% | **+42.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T00:36:24Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
