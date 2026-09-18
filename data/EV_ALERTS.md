@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T01:01:30Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Top 10 | Justin Haley | No | 15c | 15.89c | +529 | 71.4% | **+349.0%** |
+| UNOH 250 | Top 10 | Brenden Queen | No | 40c | 41.68c | +140 | 93.1% | **+123.3%** |
+| UNOH 250 | Top 10 | Mini Tyrrell | No | 50c | 51.75c | -107 | 99.3% | **+91.9%** |
+| UNOH 250 | Win | Ty Majeski | Yes | 5c | 5.33c | +1775 | 9.2% | **+71.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-18T00:56:21Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
