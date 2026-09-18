@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-18T23:35:48Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | William Sawalich | Yes | 3c | 3.20c | +3021 | 4.6% | **+42.0%** |
+| Food City 300 | Win | Brandon Jones | Yes | 4c | 4.27c | +2243 | 6.0% | **+40.6%** |
+| Bass Pro Shops Night Race | Top 3 | Ty Gibbs | Yes | 29c | 30.44c | +229 | 41.3% | **+35.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 12 (2026-09-18T23:30:54Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
