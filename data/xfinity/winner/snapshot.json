@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CAKV",
       "volume": 7465,
-      "volume_24h": 3039,
+      "volume_24h": 3026,
       "yes_ask": 15,
       "yes_bid": 12
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
       "volume": 8891,
-      "volume_24h": 5365,
+      "volume_24h": 4464,
       "yes_ask": 24,
       "yes_bid": 23
     },
@@ -360,16 +360,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-LASC": {
-      "last_price": 3,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Lavar Scott",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 7,
+      "open_interest": 101,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-LASC",
-      "volume": 7,
-      "volume_24h": 0,
+      "volume": 101,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -533,11 +533,11 @@
       "name": "Sheldon Creed",
       "no_ask": 92,
       "no_bid": 90,
-      "open_interest": 2865,
+      "open_interest": 2875,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-SHCR",
-      "volume": 2865,
-      "volume_24h": 1153,
+      "volume": 2875,
+      "volume_24h": 1164,
       "yes_ask": 10,
       "yes_bid": 8
     },
@@ -575,17 +575,17 @@
       "name": "William Sawalich",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 125,
+      "open_interest": 148,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-WISA",
-      "volume": 125,
-      "volume_24h": 80,
+      "volume": 148,
+      "volume_24h": 104,
       "yes_ask": 4,
       "yes_bid": 3
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-18T03:32:51.519730+00:00",
+  "scraped_at": "2026-09-18T04:02:53.463484+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
