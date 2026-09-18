@@ -95,7 +95,7 @@ line):
 | Env var | Default | Meaning |
 | --- | --- | --- |
 | `ALERT_MIN_USD` | `100` | Alert threshold in dollars |
-| `ALERT_SERIES` | `cup` | Comma-separated series keys to watch (e.g. `cup,truck`) |
+| `ALERT_SERIES` | `cup` | Comma-separated series keys to watch (e.g. `cup,xfinity`) |
 | `ALERT_WEBHOOK_URL` | — | Slack/Discord/generic incoming webhook |
 | `ALERT_LOOKBACK_MIN` | `20` | How far back the alert fetch paginates each run. Keep it ≥ the schedule interval plus a safety margin; per-trade dedup absorbs the overlap |
 | `KALSHI_TRADES_PER_MARKET` | `10` (workflow sets `50`) | Recent trades pulled per market **for the dashboard `activity.json` feed only** — does not affect alert coverage |

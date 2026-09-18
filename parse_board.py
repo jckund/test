@@ -58,10 +58,13 @@ _AMERICAN = re.compile(r"^[+−-]\s?\d{3,6}$")
 _BARE_AMERICAN = re.compile(r"^\d{3,6}$")
 _DECIMAL = re.compile(r"^\d{1,3}\.\d{1,3}$")
 _FRACTIONAL = re.compile(r"^(\d{1,5})\s*/\s*(\d{1,5})$")
+# "Ev"/"Even" is how some books (BetUS) print +100. It is a price, not a name,
+# and no driver or team name is spelled either way, so matching it is safe.
+_EVEN = re.compile(r"^(?:ev|even)$", re.I)
 # Shape of a price token, for anchoring a split at either end of a line. This
 # only has to be permissive enough to find the candidate; _american() is what
 # actually decides whether it is a real price.
-_PRICE_TOK = r"[+−-]?\d{1,6}(?:\.\d{1,3})?(?:\s*/\s*\d{1,5})?"
+_PRICE_TOK = r"(?:[+−-]?\d{1,6}(?:\.\d{1,3})?(?:\s*/\s*\d{1,5})?|(?i:even|ev))"
 
 # Column headers and page chrome. A line is junk only when EVERY word in it is
 # a chrome word (plus, optionally, short bare numbers like the "10" in "Top
@@ -98,6 +101,8 @@ def _is_junk(line: str) -> bool:
 def _american(tok: str):
     """American odds for a price token, or None if it isn't a price."""
     t = tok.strip().replace("−", "-").replace(" ", "")
+    if _EVEN.match(t):
+        return 100                          # "Ev"/"Even" == +100
     if _AMERICAN.match(t):
         return int(t.replace("+", ""))
     if _BARE_AMERICAN.match(t):
@@ -118,6 +123,22 @@ def _american(tok: str):
     return None
 
 
+# A leading rotation/ID number, which several books print as the first column
+# ("1451  Kyle Larson  +165"). It has to be stripped explicitly because an
+# unsigned 3-6 digit run is also a valid '+' price, so the number is otherwise
+# read as part of the driver name. No driver or team name begins with a bare
+# 3-5 digit token ("23XI" has letters; the "66" in "Garage 66" is 2 digits and
+# trailing), so this cannot eat a real name.
+_ROT = re.compile(r"^\d{3,5}$")
+
+
+def _strip_rot(name: str) -> str:
+    toks = name.split()
+    if len(toks) > 1 and _ROT.match(toks[0]):
+        return " ".join(toks[1:])
+    return name
+
+
 def _split(line: str):
     """Split a line into (name_part, price_token) in either order, or None."""
     s = line.strip().strip("|").strip()
@@ -133,19 +154,26 @@ def _split(line: str):
     if len(parts) > 1:
         # An explicit separator already told us where the columns are.
         if _american(parts[-1]) is not None:
-            return " ".join(parts[:-1]).strip(), parts[-1]
+            return _strip_rot(" ".join(parts[:-1]).strip()), parts[-1]
         if _american(parts[0]) is not None:
             return " ".join(parts[1:]).strip(), parts[0]
         return None
     # Single field: anchor on a price at either end. Anchoring explicitly (rather
     # than splitting on the last space) is what makes "+650 Ryan Blaney" work —
     # a trailing-space split would cut it as ("+650 Ryan", "Blaney").
+    #
+    # Try the TRAILING price first. A leading bare integer is ambiguous — it may
+    # be an unsigned price ("650 Ryan Blaney") or a rotation number
+    # ("1451 Kyle Larson +165") — and preferring the trailing anchor resolves it
+    # the right way round: a row with prices at both ends is rot-then-price, so
+    # the leading number is the column and gets stripped. A genuinely
+    # odds-first row has no trailing price, so it still falls through below.
+    m = re.match(rf"^(.+?)\s+({_PRICE_TOK})$", s)
+    if m and _american(m.group(2)) is not None:
+        return _strip_rot(m.group(1).strip()), m.group(2)
     m = re.match(rf"^({_PRICE_TOK})\s+(.+)$", s)
     if m and _american(m.group(1)) is not None:
         return m.group(2).strip(), m.group(1)
-    m = re.match(rf"^(.+?)\s+({_PRICE_TOK})$", s)
-    if m and _american(m.group(2)) is not None:
-        return m.group(1).strip(), m.group(2)
     return None
 
 
@@ -153,8 +181,15 @@ def _is_price_line(line: str) -> bool:
     return _american(line.strip()) is not None
 
 
-def rows_with_errors(text: str):
-    """Parse a board. Returns (rows, errors) — errors are (line, reason)."""
+def rows_with_errors(text: str, canon=None):
+    """Parse a board. Returns (rows, errors) — errors are (line, reason).
+
+    ``canon`` is the name canonicalizer, defaulting to the driver roster. Pass
+    ``gen_books.team_canon`` to run a pasted TEAM board ("Joe Gibbs Racing  Ev")
+    through the same parser instead of retyping it as tuples — the layouts and
+    odds formats are identical, only the roster differs.
+    """
+    canon = canon or gb.canon
     rows, errors = [], []
     lines = [ln.strip() for ln in (text or "").splitlines()]
     i = 0
@@ -185,20 +220,21 @@ def rows_with_errors(text: str):
             errors.append((line, "price with no driver name"))
         else:
             try:
-                rows.append((gb.canon(name), american))
+                rows.append((canon(name), american))
             except KeyError:
                 errors.append((line, f"unknown driver {name!r}"))
         i += 1
     return rows, errors
 
 
-def rows(text: str, strict: bool = True):
+def rows(text: str, strict: bool = True, canon=None):
     """Parse a board into [(canonical_name, american), ...].
 
     Raises on any unparsed/unknown row so a bad paste fails loudly (same
-    contract as gen_books.canon). Pass strict=False to skip bad rows.
+    contract as gen_books.canon). Pass strict=False to skip bad rows, or
+    ``canon=gen_books.team_canon`` to parse a team board.
     """
-    parsed, errors = rows_with_errors(text)
+    parsed, errors = rows_with_errors(text, canon=canon)
     if errors and strict:
         detail = "\n".join(f"  {ln!r}: {why}" for ln, why in errors[:12])
         more = f"\n  (+{len(errors) - 12} more)" if len(errors) > 12 else ""
@@ -238,6 +274,29 @@ def _selftest() -> None:
     assert rows("Ryan Blaney 7.50") == [("Ryan Blaney", 650)]
     assert rows("Kyle Larson 1.91") == [("Kyle Larson", -110)]
     assert rows("Ryan Blaney 13/2") == [("Ryan Blaney", 650)]
+
+    # "Ev"/"Even" is +100 (BetUS prints even money that way), in both column orders.
+    assert rows("Christopher Bell    Ev") == [("Christopher Bell", 100)]
+    assert rows("Kyle Larson Even") == [("Kyle Larson", 100)]
+    assert rows("Ev Christopher Bell") == [("Christopher Bell", 100)]
+
+    # A leading Rot/ID column is dropped (BetUS prints one on every row), with
+    # tab, whitespace and pipe separators alike.
+    assert rows("1451\tKyle Larson    \t +165 ") == [("Kyle Larson", 165)]
+    assert rows("1451  Kyle Larson  +165") == [("Kyle Larson", 165)]
+    assert rows("1204 | Christopher Bell | Ev") == [("Christopher Bell", 100)]
+    # ...but a 2-digit number that is part of the name survives.
+    assert rows("Garage 66  +70320", canon=gb.team_canon) == [("Garage 66", 70320)]
+
+    # A team board parses with the same layouts once pointed at the team roster.
+    team_board = """
+    Joe Gibbs Racing          Ev
+    Trackhouse Racing Team    +2500
+    Hass Factory Team         +100000
+    """
+    assert rows(team_board, canon=gb.team_canon) == [
+        ("Joe Gibbs Racing", 100), ("Trackhouse Racing", 2500),
+        ("Haas Factory Team", 100000)]
 
     # Unsigned longshot, and accented/aliased canonicalization.
     assert rows("Cody Ware 25000") == [("Cody Ware", 25000)]
