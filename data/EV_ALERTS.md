@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T21:25:48Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Parker Retzlaff | Yes | 8c | 8.52c | +1074 | 15.0% | **+76.3%** |
+| Food City 300 | Top 3 | William Sawalich | Yes | 10c | 10.63c | +841 | 16.7% | **+56.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-18T21:20:58Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
