@@ -167,15 +167,15 @@
       "last_price": 1,
       "liquidity": 0.0,
       "name": "Daniel Hemric",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 25,
       "open_interest": 691,
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-DAHE",
-      "volume": 707,
+      "volume": 710,
       "volume_24h": 361,
       "yes_ask": 75,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-UNO2PBO26-DASU": {
       "last_price": 3,
@@ -223,15 +223,15 @@
       "last_price": 99,
       "liquidity": 0.0,
       "name": "Grant Enfinger",
-      "no_ask": 75,
-      "no_bid": 1,
-      "open_interest": 2029,
+      "no_ask": 40,
+      "no_bid": 0,
+      "open_interest": 2034,
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-GREN",
-      "volume": 2029,
+      "volume": 2034,
       "volume_24h": 2029,
-      "yes_ask": 99,
-      "yes_bid": 25
+      "yes_ask": 100,
+      "yes_bid": 60
     },
     "KXNASCARTOP10-UNO2PBO26-JAGA": {
       "last_price": 99,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-JAGA",
       "volume": 2561,
-      "volume_24h": 1689,
+      "volume_24h": 1775,
       "yes_ask": 100,
       "yes_bid": 99
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-TRMC",
       "volume": 3126,
-      "volume_24h": 2631,
+      "volume_24h": 2730,
       "yes_ask": 100,
       "yes_bid": 99
     },
@@ -531,19 +531,19 @@
       "last_price": 99,
       "liquidity": 0.0,
       "name": "William Sawalich",
-      "no_ask": 75,
-      "no_bid": 1,
+      "no_ask": 40,
+      "no_bid": 0,
       "open_interest": 2013,
       "status": "active",
       "ticker": "KXNASCARTOP10-UNO2PBO26-WISA",
-      "volume": 2025,
+      "volume": 2030,
       "volume_24h": 1961,
-      "yes_ask": 99,
-      "yes_bid": 25
+      "yes_ask": 100,
+      "yes_bid": 60
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-18T02:48:26.551065+00:00",
+  "scraped_at": "2026-09-18T03:03:49.000743+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-uno2pbo26",
   "tier": "top10"
 }
