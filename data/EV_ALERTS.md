@@ -1,3 +1,17 @@
+### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-18T21:05:54Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Parker Retzlaff | Yes | 7c | 7.46c | +1241 | 15.0% | **+101.3%** |
+| Food City 300 | Top 3 | Ryan Sieg | Yes | 8c | 8.52c | +1074 | 12.0% | **+40.8%** |
+| Food City 300 | Win | Taylor Gray | Yes | 4c | 4.27c | +2243 | 5.9% | **+38.7%** |
+| Food City 300 | Top 3 | Josh Williams | No | 74c | 75.35c | -306 | 100.0% | **+32.7%** |
+| Food City 300 | Top 3 | Patrick Staropoli | No | 74c | 75.35c | -306 | 100.0% | **+32.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-18T21:01:03Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
