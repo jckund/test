@@ -1,3 +1,36 @@
+### New Kalshi vs SG lines >= +30% EV — 24 (2026-09-18T02:11:27Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| UNOH 250 | Win | Jake Garcia | No | 1c | 1.07c | +9252 | 99.6% | **+9217.3%** |
+| UNOH 250 | Top 10 | Chandler Smith | Yes | 1c | 1.07c | +9252 | 79.9% | **+7376.3%** |
+| UNOH 250 | Top 10 | Stewart Friesen | No | 1c | 1.07c | +9252 | 77.0% | **+7102.5%** |
+| UNOH 250 | Top 10 | Justin Haley | No | 1c | 1.07c | +9252 | 71.4% | **+6572.8%** |
+| UNOH 250 | Top 10 | Bayley Currey | No | 1c | 1.07c | +9252 | 65.8% | **+6049.8%** |
+| UNOH 250 | Top 10 | Tristan McKee | No | 1c | 1.07c | +9252 | 55.4% | **+5077.8%** |
+| UNOH 250 | Top 3 | Chandler Smith | Yes | 1c | 1.07c | +9252 | 47.4% | **+4332.5%** |
+| UNOH 250 | Top 10 | Giovanni Ruggiero | No | 1c | 1.07c | +9252 | 43.3% | **+3949.5%** |
+| UNOH 250 | Top 10 | Ty Majeski | No | 1c | 1.07c | +9252 | 28.3% | **+2550.6%** |
+| UNOH 250 | Top 3 | Kaden Honeycutt | No | 2c | 2.14c | +4579 | 54.3% | **+2442.4%** |
+| UNOH 250 | Top 10 | Kaden Honeycutt | No | 1c | 1.07c | +9252 | 21.3% | **+1891.3%** |
+| UNOH 250 | Top 3 | Bayley Currey | No | 5c | 5.33c | +1775 | 96.9% | **+1717.3%** |
+| UNOH 250 | Win | Chandler Smith | Yes | 1c | 1.07c | +9252 | 19.3% | **+1705.0%** |
+| UNOH 250 | Win | Kaden Honeycutt | Yes | 1c | 1.07c | +9252 | 18.0% | **+1584.7%** |
+| UNOH 250 | Top 3 | Giovanni Ruggiero | Yes | 1c | 1.07c | +9252 | 16.3% | **+1425.7%** |
+| UNOH 250 | Top 10 | Tyler Ankrum | Yes | 3c | 3.20c | +3021 | 31.7% | **+890.7%** |
+| UNOH 250 | Top 10 | Andres Perez De Lara | No | 25c | 26.31c | +280 | 98.4% | **+273.9%** |
+| UNOH 250 | Top 3 | Jake Garcia | No | 25c | 26.31c | +280 | 95.6% | **+263.4%** |
+| UNOH 250 | Top 10 | Jake Garcia | Yes | 11c | 11.69c | +756 | 41.0% | **+250.7%** |
+| UNOH 250 | Top 10 | Landen Lewis | No | 25c | 26.31c | +280 | 77.8% | **+195.6%** |
+| UNOH 250 | Top 10 | Daniel Hemric | No | 25c | 26.31c | +280 | 63.4% | **+140.9%** |
+| UNOH 250 | Top 10 | William Sawalich | Yes | 25c | 26.31c | +280 | 52.4% | **+99.0%** |
+| UNOH 250 | Top 3 | Ben Rhodes | No | 45c | 46.73c | +114 | 74.3% | **+59.0%** |
+| UNOH 250 | Top 3 | Stewart Friesen | No | 66c | 67.57c | -208 | 99.2% | **+46.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 28 (2026-09-18T02:06:22Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
