@@ -1,3 +1,37 @@
+### New Kalshi vs SG lines >= +30% EV — 25 (2026-09-19T01:45:50Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Sheldon Creed | No | 1c | 1.07c | +9252 | 81.2% | **+7494.6%** |
+| Food City 300 | Top 3 | Brent Crews | No | 1c | 1.07c | +9252 | 76.9% | **+7087.8%** |
+| Food City 300 | Top 10 | Jesse Love | Yes | 1c | 1.07c | +9252 | 63.7% | **+5853.4%** |
+| Food City 300 | Top 10 | Brandon Jones | Yes | 1c | 1.07c | +9252 | 56.5% | **+5187.8%** |
+| Food City 300 | Top 10 | Corey Day | No | 1c | 1.07c | +9252 | 53.5% | **+4900.6%** |
+| Food City 300 | Top 10 | William Sawalich | No | 1c | 1.07c | +9252 | 48.1% | **+4394.3%** |
+| Food City 300 | Top 10 | Parker Retzlaff | No | 1c | 1.07c | +9252 | 47.4% | **+4330.4%** |
+| Food City 300 | Top 10 | Sheldon Creed | No | 1c | 1.07c | +9252 | 44.8% | **+4091.8%** |
+| Food City 300 | Top 10 | Taylor Gray | No | 1c | 1.07c | +9252 | 43.8% | **+3999.8%** |
+| Food City 300 | Top 10 | Brent Crews | No | 1c | 1.07c | +9252 | 39.5% | **+3594.3%** |
+| Food City 300 | Top 10 | Sam Mayer | No | 1c | 1.07c | +9252 | 33.4% | **+3025.4%** |
+| Food City 300 | Top 3 | Sam Mayer | Yes | 1c | 1.07c | +9252 | 31.3% | **+2830.7%** |
+| Food City 300 | Top 10 | Justin Allgaier | No | 1c | 1.07c | +9252 | 29.6% | **+2672.6%** |
+| Food City 300 | Top 3 | Jesse Love | Yes | 1c | 1.07c | +9252 | 25.3% | **+2266.8%** |
+| Food City 300 | Top 3 | Taylor Gray | Yes | 1c | 1.07c | +9252 | 19.2% | **+1694.4%** |
+| Food City 300 | Top 10 | Jeremy Clements | Yes | 1c | 1.07c | +9252 | 18.4% | **+1622.9%** |
+| Food City 300 | Top 10 | Brennan Poole | Yes | 1c | 1.07c | +9252 | 17.3% | **+1515.8%** |
+| Food City 300 | Top 10 | Nicholas Sanchez | Yes | 1c | 1.07c | +9252 | 14.7% | **+1277.8%** |
+| Food City 300 | Top 3 | Parker Retzlaff | Yes | 1c | 1.07c | +9252 | 14.6% | **+1260.8%** |
+| Food City 300 | Win | Sheldon Creed | No | 10c | 10.63c | +841 | 94.2% | **+786.3%** |
+| Food City 300 | Top 3 | Justin Allgaier | No | 10c | 10.63c | +841 | 65.9% | **+519.8%** |
+| Food City 300 | Top 10 | Kyle Sieg | Yes | 1c | 1.07c | +9252 | 6.4% | **+499.7%** |
+| Food City 300 | Top 10 | Stefan Parsons | Yes | 1c | 1.07c | +9252 | 5.8% | **+438.0%** |
+| Food City 300 | Top 10 | Andrew Patterson | Yes | 1c | 1.07c | +9252 | 4.8% | **+350.0%** |
+| Food City 300 | Top 10 | Logan Bearden | Yes | 1c | 1.07c | +9252 | 1.8% | **+63.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 23 (2026-09-19T01:40:52Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
