@@ -265,7 +265,7 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 93,
       "open_interest": 27,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 27,
       "volume_24h": 27,
       "yes_ask": 7,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BASPSN26-JOBI": {
       "last_price": 1,
@@ -402,15 +402,15 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-BASPSN26-RYBL": {
-      "last_price": 23,
+      "last_price": 25,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 79,
       "no_bid": 75,
-      "open_interest": 8837,
+      "open_interest": 8856,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
-      "volume": 8885,
+      "volume": 8904,
       "volume_24h": 5713,
       "yes_ask": 25,
       "yes_bid": 21
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T20:15:19.578398+00:00",
+  "scraped_at": "2026-09-19T20:20:18.681573+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
