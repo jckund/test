@@ -1,3 +1,23 @@
+### New Kalshi vs SG lines >= +30% EV — 11 (2026-09-19T00:05:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Jeb Burton | Yes | 1c | 1.07c | +9252 | 17.8% | **+1561.7%** |
+| Food City 300 | Win | Austin Hill | Yes | 1c | 1.07c | +9252 | 4.1% | **+281.6%** |
+| Food City 300 | Top 3 | Rajah Caruth | Yes | 3c | 3.20c | +3021 | 11.6% | **+262.4%** |
+| Food City 300 | Top 10 | Rajah Caruth | Yes | 16c | 16.94c | +490 | 45.3% | **+167.2%** |
+| Food City 300 | Win | Rajah Caruth | Yes | 1c | 1.07c | +9252 | 2.5% | **+129.2%** |
+| Food City 300 | Win | Sam Mayer | Yes | 8c | 8.52c | +1074 | 14.3% | **+67.6%** |
+| Bass Pro Shops Night Race | Top 3 | Ty Gibbs | Yes | 25c | 26.31c | +280 | 41.3% | **+57.0%** |
+| Food City 300 | Win | Brandon Jones | Yes | 4c | 4.27c | +2243 | 6.0% | **+40.6%** |
+| Food City 300 | Top 10 | JJ Yeley | No | 71c | 72.44c | -263 | 99.6% | **+37.6%** |
+| Food City 300 | Top 3 | Josh Williams | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 10 | Logan Bearden | No | 71c | 72.44c | -263 | 98.2% | **+35.6%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 11 (2026-09-19T00:00:57Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
