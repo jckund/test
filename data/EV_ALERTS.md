@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-19T01:10:51Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Sheldon Creed | Yes | 1c | 1.07c | +9252 | 5.8% | **+440.7%** |
+| Food City 300 | Win | Sam Mayer | Yes | 3c | 3.20c | +3021 | 14.3% | **+345.4%** |
+| Food City 300 | Win | Jesse Love | Yes | 4c | 4.27c | +2243 | 9.1% | **+114.2%** |
+| Food City 300 | Win | Carson Kvapil | No | 52c | 53.75c | -116 | 85.7% | **+59.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-19T01:05:52Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
