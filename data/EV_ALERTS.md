@@ -1,3 +1,13 @@
+### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T22:56:17Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 3 | Alex Bowman | Yes | 10c | 10.63c | +841 | 14.5% | **+36.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T22:30:20Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
