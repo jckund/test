@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T02:55:52Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 3 | Carson Hocevar | Yes | 10c | 10.63c | +841 | 17.1% | **+61.3%** |
+| Bass Pro Shops Night Race | Top 5 | Carson Hocevar | Yes | 19c | 20.08c | +398 | 28.7% | **+43.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T02:50:52Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
