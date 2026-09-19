@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T02:35:50Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Sheldon Creed | No | 14c | 14.84c | +574 | 94.2% | **+534.8%** |
+| Bass Pro Shops Night Race | Top 3 | Ryan Blaney | Yes | 20c | 21.12c | +373 | 33.8% | **+59.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T02:30:56Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
