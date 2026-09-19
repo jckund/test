@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-BRCR",
       "volume": 54838,
-      "volume_24h": 49253,
+      "volume_24h": 49244,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CAKV",
       "volume": 62410,
-      "volume_24h": 55243,
+      "volume_24h": 54976,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-CODA",
       "volume": 54568,
-      "volume_24h": 51079,
+      "volume_24h": 51066,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-JUAL",
       "volume": 110957,
-      "volume_24h": 104266,
+      "volume_24h": 104262,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-RYSI",
       "volume": 15750,
-      "volume_24h": 15530,
+      "volume_24h": 14594,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -528,18 +528,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOOC91826-SHCR": {
-      "last_price": 96,
+      "last_price": 83,
       "liquidity": 0.0,
       "name": "Sheldon Creed",
-      "no_ask": 3,
-      "no_bid": 0,
-      "open_interest": 48670,
+      "no_ask": 9,
+      "no_bid": 1,
+      "open_interest": 48584,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-SHCR",
-      "volume": 65306,
-      "volume_24h": 62469,
-      "yes_ask": 100,
-      "yes_bid": 97
+      "volume": 65441,
+      "volume_24h": 62640,
+      "yes_ask": 99,
+      "yes_bid": 91
     },
     "KXNASCARRACE-FOOC91826-STPA": {
       "last_price": 1,
@@ -574,18 +574,18 @@
       "liquidity": 0.0,
       "name": "William Sawalich",
       "no_ask": 100,
-      "no_bid": 81,
+      "no_bid": 83,
       "open_interest": 44903,
       "status": "active",
       "ticker": "KXNASCARRACE-FOOC91826-WISA",
       "volume": 60267,
       "volume_24h": 60142,
-      "yes_ask": 19,
+      "yes_ask": 17,
       "yes_bid": 0
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-19T02:18:07.916106+00:00",
+  "scraped_at": "2026-09-19T02:33:12.828478+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-fooc91826",
   "tier": "winner"
 }
