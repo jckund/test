@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-19T00:30:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Rajah Caruth | Yes | 15c | 15.89c | +529 | 45.3% | **+184.8%** |
+| Food City 300 | Win | Sam Mayer | Yes | 7c | 7.46c | +1241 | 14.3% | **+91.4%** |
+| Food City 300 | Win | William Sawalich | Yes | 3c | 3.20c | +3021 | 4.6% | **+42.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-19T00:20:53Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
