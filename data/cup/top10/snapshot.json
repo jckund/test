@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-ALBO",
       "volume": 9061,
-      "volume_24h": 7856,
+      "volume_24h": 7736,
       "yes_ask": 42,
       "yes_bid": 41
     },
@@ -83,7 +83,7 @@
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 69,
+      "no_ask": 70,
       "no_bid": 65,
       "open_interest": 1810,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 2008,
       "volume_24h": 1794,
       "yes_ask": 35,
-      "yes_bid": 31
+      "yes_bid": 30
     },
     "KXNASCARTOP10-BASPSN26-BUWA": {
       "last_price": 41,
@@ -252,13 +252,13 @@
       "liquidity": 0.0,
       "name": "Erik Jones",
       "no_ask": 91,
-      "no_bid": 82,
+      "no_bid": 83,
       "open_interest": 553,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-ERJO",
       "volume": 553,
-      "volume_24h": 482,
-      "yes_ask": 18,
+      "volume_24h": 282,
+      "yes_ask": 17,
       "yes_bid": 9
     },
     "KXNASCARTOP10-BASPSN26-JOBE": {
@@ -290,15 +290,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-BASPSN26-JOLO": {
-      "last_price": 50,
+      "last_price": 49,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 52,
       "no_bid": 51,
-      "open_interest": 2036,
+      "open_interest": 2038,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-JOLO",
-      "volume": 2146,
+      "volume": 2148,
       "volume_24h": 1522,
       "yes_ask": 49,
       "yes_bid": 48
@@ -349,15 +349,15 @@
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Noah Gragson",
-      "no_ask": 94,
+      "no_ask": 96,
       "no_bid": 88,
       "open_interest": 446,
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-NOGR",
       "volume": 455,
-      "volume_24h": 182,
+      "volume_24h": 181,
       "yes_ask": 12,
-      "yes_bid": 6
+      "yes_bid": 4
     },
     "KXNASCARTOP10-BASPSN26-RIHE": {
       "last_price": 4,
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BASPSN26-RYPR",
       "volume": 1621,
-      "volume_24h": 1112,
+      "volume_24h": 1129,
       "yes_ask": 30,
       "yes_bid": 19
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-19T19:40:18.955882+00:00",
+  "scraped_at": "2026-09-19T19:45:23.328246+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top10"
 }
