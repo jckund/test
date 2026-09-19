@@ -1,3 +1,16 @@
+### New Kalshi vs SG lines >= +30% EV — 4 (2026-09-19T01:05:52Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Josh Williams | Yes | 1c | 1.07c | +9252 | 2.1% | **+92.7%** |
+| Food City 300 | Win | Carson Kvapil | No | 45c | 46.73c | +114 | 85.7% | **+83.4%** |
+| Food City 300 | Win | Jesse Love | Yes | 6c | 6.39c | +1464 | 9.1% | **+43.0%** |
+| Bass Pro Shops Night Race | Top 3 | Denny Hamlin | Yes | 27c | 28.38c | +252 | 39.2% | **+38.1%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 8 (2026-09-19T01:00:57Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
