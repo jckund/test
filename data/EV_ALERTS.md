@@ -1,3 +1,20 @@
+### New Kalshi vs SG lines >= +30% EV — 8 (2026-09-19T01:00:57Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Brandon Jones | Yes | 1c | 1.07c | +9252 | 6.0% | **+461.1%** |
+| Food City 300 | Win | Parker Retzlaff | Yes | 1c | 1.07c | +9252 | 3.5% | **+224.6%** |
+| Food City 300 | Win | Sam Mayer | Yes | 5c | 5.33c | +1775 | 14.3% | **+167.6%** |
+| Food City 300 | Win | Brent Crews | Yes | 3c | 3.20c | +3021 | 8.2% | **+155.7%** |
+| Food City 300 | Win | Ryan Sieg | Yes | 1c | 1.07c | +9252 | 2.3% | **+114.2%** |
+| Food City 300 | Top 10 | Blaine Perkins | Yes | 1c | 1.07c | +9252 | 2.2% | **+101.1%** |
+| Food City 300 | Win | Carson Kvapil | No | 50c | 51.75c | -107 | 85.7% | **+65.6%** |
+| Food City 300 | Top 3 | Kyle Sieg | No | 74c | 75.35c | -306 | 99.9% | **+32.5%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T00:55:47Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
