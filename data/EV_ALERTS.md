@@ -1,3 +1,23 @@
+### New Kalshi vs SG lines >= +30% EV — 11 (2026-09-19T00:00:57Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Sam Mayer | Yes | 5c | 5.33c | +1775 | 14.3% | **+167.6%** |
+| Food City 300 | Win | Ryan Sieg | Yes | 1c | 1.07c | +9252 | 2.3% | **+114.2%** |
+| Food City 300 | Win | Taylor Gray | Yes | 3c | 3.20c | +3021 | 6.0% | **+85.7%** |
+| Food City 300 | Top 10 | Lavar Scott | Yes | 1c | 1.07c | +9252 | 1.7% | **+62.8%** |
+| Food City 300 | Top 3 | Blaine Perkins | No | 71c | 72.44c | -263 | 100.0% | **+38.0%** |
+| Food City 300 | Top 3 | Josh Williams | No | 71c | 72.44c | -263 | 100.0% | **+38.0%** |
+| Food City 300 | Top 3 | Andrew Patterson | No | 71c | 72.44c | -263 | 99.9% | **+38.0%** |
+| Food City 300 | Top 3 | Stefan Parsons | No | 71c | 72.44c | -263 | 99.9% | **+37.9%** |
+| Food City 300 | Top 3 | Jeb Burton | No | 71c | 72.44c | -263 | 99.0% | **+36.6%** |
+| Food City 300 | Top 3 | Logan Bearden | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Food City 300 | Top 3 | Kyle Sieg | No | 72c | 73.41c | -276 | 99.9% | **+36.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 7 (2026-09-18T23:55:50Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
