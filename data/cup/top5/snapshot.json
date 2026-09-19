@@ -13,7 +13,7 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
-      "no_ask": 98,
+      "no_ask": 100,
       "no_bid": 94,
       "open_interest": 71,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 71,
       "volume_24h": 71,
       "yes_ask": 6,
-      "yes_bid": 2
+      "yes_bid": 0
     },
     "KXNASCARTOP5-BASPSN26-ALBO": {
       "last_price": 19,
@@ -41,7 +41,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 94,
+      "no_ask": 96,
       "no_bid": 88,
       "open_interest": 0,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 12,
-      "yes_bid": 6
+      "yes_bid": 4
     },
     "KXNASCARTOP5-BASPSN26-AUDI": {
       "last_price": 7,
@@ -293,15 +293,15 @@
       "last_price": 31,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 70,
-      "no_bid": 69,
+      "no_ask": 82,
+      "no_bid": 71,
       "open_interest": 507,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-JOLO",
       "volume": 517,
       "volume_24h": 415,
-      "yes_ask": 31,
-      "yes_bid": 30
+      "yes_ask": 29,
+      "yes_bid": 18
     },
     "KXNASCARTOP5-BASPSN26-JONE": {
       "last_price": 7,
@@ -402,15 +402,15 @@
       "yes_bid": 7
     },
     "KXNASCARTOP5-BASPSN26-RYBL": {
-      "last_price": 40,
+      "last_price": 41,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 61,
       "no_bid": 59,
-      "open_interest": 2491,
+      "open_interest": 2550,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-RYBL",
-      "volume": 2762,
+      "volume": 2822,
       "volume_24h": 1541,
       "yes_ask": 41,
       "yes_bid": 39
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-19T19:15:16.973831+00:00",
+  "scraped_at": "2026-09-19T19:20:20.718014+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top5"
 }
