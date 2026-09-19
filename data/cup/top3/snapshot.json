@@ -55,7 +55,7 @@
       "last_price": 4,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 97,
       "open_interest": 16,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 16,
       "volume_24h": 16,
       "yes_ask": 3,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BASPSN26-AUHI": {
       "last_price": 0,
@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 93,
-      "no_bid": 88,
+      "no_bid": 90,
       "open_interest": 619,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-BRKE",
       "volume": 857,
       "volume_24h": 857,
-      "yes_ask": 12,
+      "yes_ask": 10,
       "yes_bid": 7
     },
     "KXNASCARTOP3-BASPSN26-BUWA": {
@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 95,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 284,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-BUWA",
       "volume": 284,
       "volume_24h": 0,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 5
     },
     "KXNASCARTOP3-BASPSN26-CAHO": {
@@ -125,7 +125,7 @@
       "last_price": 28,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 86,
+      "no_ask": 81,
       "no_bid": 72,
       "open_interest": 524,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 524,
       "volume_24h": 452,
       "yes_ask": 28,
-      "yes_bid": 14
+      "yes_bid": 19
     },
     "KXNASCARTOP3-BASPSN26-CHBR": {
       "last_price": 19,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DEHA",
       "volume": 5198,
-      "volume_24h": 5043,
+      "volume_24h": 5066,
       "yes_ask": 42,
       "yes_bid": 41
     },
@@ -405,7 +405,7 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 82,
+      "no_ask": 84,
       "no_bid": 74,
       "open_interest": 8834,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 8882,
       "volume_24h": 5710,
       "yes_ask": 26,
-      "yes_bid": 18
+      "yes_bid": 16
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
       "last_price": 0,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-TYGI",
       "volume": 8950,
-      "volume_24h": 2657,
+      "volume_24h": 2757,
       "yes_ask": 36,
       "yes_bid": 34
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T19:30:19.686699+00:00",
+  "scraped_at": "2026-09-19T19:35:18.357908+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
