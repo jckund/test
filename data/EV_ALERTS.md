@@ -1,3 +1,17 @@
+### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-19T00:45:54Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Kyle Sieg | Yes | 2c | 2.14c | +4579 | 6.4% | **+200.0%** |
+| Food City 300 | Win | Sam Mayer | Yes | 7c | 7.46c | +1241 | 14.3% | **+91.4%** |
+| Food City 300 | Win | Sheldon Creed | Yes | 3c | 3.20c | +3021 | 5.8% | **+80.5%** |
+| Food City 300 | Top 10 | Stefan Parsons | Yes | 4c | 4.27c | +2243 | 5.8% | **+34.8%** |
+| Food City 300 | Top 10 | Logan Bearden | No | 72c | 73.41c | -276 | 98.2% | **+33.8%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-19T00:40:53Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
