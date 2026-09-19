@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T23:56:14Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 5 | Todd Gilliland | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+| Bass Pro Shops Night Race | Top 5 | Noah Gragson | No | 72c | 73.41c | -276 | 100.0% | **+36.2%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T23:54:15Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
