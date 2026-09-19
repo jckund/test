@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-19T00:40:53Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 10 | Anthony Alfredo | Yes | 1c | 1.07c | +9252 | 21.7% | **+1933.8%** |
+| Food City 300 | Top 3 | Anthony Alfredo | Yes | 1c | 1.07c | +9252 | 1.8% | **+67.3%** |
+| Food City 300 | Top 3 | Stefan Parsons | No | 75c | 76.31c | -322 | 99.9% | **+30.9%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T00:35:48Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
