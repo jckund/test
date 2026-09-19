@@ -1,3 +1,17 @@
+### New Kalshi vs SG lines >= +30% EV — 5 (2026-09-19T01:20:54Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Top 3 | Carson Kvapil | Yes | 1c | 1.07c | +9252 | 32.8% | **+2965.2%** |
+| Food City 300 | Top 10 | Patrick Staropoli | Yes | 1c | 1.07c | +9252 | 4.1% | **+286.4%** |
+| Food City 300 | Win | Corey Day | Yes | 2c | 2.14c | +4579 | 3.0% | **+38.5%** |
+| Food City 300 | Top 10 | Andrew Patterson | No | 71c | 72.44c | -263 | 95.2% | **+31.4%** |
+| Food City 300 | Top 3 | Andrew Patterson | No | 75c | 76.31c | -322 | 99.9% | **+31.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 6 (2026-09-19T01:15:54Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
