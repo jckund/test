@@ -55,7 +55,7 @@
       "last_price": 3,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 97,
       "open_interest": 22,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 22,
       "volume_24h": 22,
       "yes_ask": 3,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BASPSN26-AUHI": {
       "last_price": 0,
@@ -83,15 +83,15 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 93,
-      "no_bid": 90,
+      "no_ask": 98,
+      "no_bid": 91,
       "open_interest": 619,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-BRKE",
       "volume": 857,
       "volume_24h": 857,
-      "yes_ask": 10,
-      "yes_bid": 7
+      "yes_ask": 9,
+      "yes_bid": 2
     },
     "KXNASCARTOP3-BASPSN26-BUWA": {
       "last_price": 10,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-CHBR",
       "volume": 386,
-      "volume_24h": 338,
+      "volume_24h": 344,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 93,
-      "no_bid": 90,
+      "no_bid": 89,
       "open_interest": 266,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-CHEL",
       "volume": 266,
-      "volume_24h": 257,
-      "yes_ask": 10,
+      "volume_24h": 266,
+      "yes_ask": 11,
       "yes_bid": 7
     },
     "KXNASCARTOP3-BASPSN26-COCU": {
@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 100,
-      "no_bid": 92,
+      "no_bid": 91,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DASU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 9,
       "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-DEHA": {
@@ -262,18 +262,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-JOBE": {
-      "last_price": 0,
+      "last_price": 7,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 99,
+      "no_ask": 97,
       "no_bid": 93,
-      "open_interest": 0,
+      "open_interest": 27,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-JOBE",
-      "volume": 0,
+      "volume": 27,
       "volume_24h": 0,
       "yes_ask": 7,
-      "yes_bid": 1
+      "yes_bid": 3
     },
     "KXNASCARTOP3-BASPSN26-JOBI": {
       "last_price": 1,
@@ -405,15 +405,15 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 82,
+      "no_ask": 79,
       "no_bid": 76,
       "open_interest": 8837,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
       "volume": 8885,
-      "volume_24h": 5712,
+      "volume_24h": 5713,
       "yes_ask": 24,
-      "yes_bid": 18
+      "yes_bid": 21
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T20:00:22.400643+00:00",
+  "scraped_at": "2026-09-19T20:05:16.096158+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
