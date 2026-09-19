@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T02:00:56Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Food City 300 | Win | Sheldon Creed | No | 7c | 7.46c | +1241 | 94.2% | **+1163.7%** |
+| Food City 300 | Top 3 | Justin Allgaier | No | 8c | 8.52c | +1074 | 65.9% | **+673.7%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 1 (2026-09-19T01:50:49Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
