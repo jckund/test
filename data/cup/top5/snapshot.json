@@ -13,7 +13,7 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 94,
       "open_interest": 71,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 71,
       "volume_24h": 71,
       "yes_ask": 6,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP5-BASPSN26-ALBO": {
       "last_price": 20,
@@ -41,7 +41,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 95,
+      "no_ask": 96,
       "no_bid": 88,
       "open_interest": 0,
       "status": "active",
@@ -49,13 +49,13 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 12,
-      "yes_bid": 5
+      "yes_bid": 4
     },
     "KXNASCARTOP5-BASPSN26-AUDI": {
       "last_price": 6,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 98,
+      "no_ask": 97,
       "no_bid": 94,
       "open_interest": 359,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 359,
       "volume_24h": 248,
       "yes_ask": 6,
-      "yes_bid": 2
+      "yes_bid": 3
     },
     "KXNASCARTOP5-BASPSN26-AUHI": {
       "last_price": 0,
@@ -125,15 +125,15 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 66,
-      "no_bid": 60,
+      "no_ask": 68,
+      "no_bid": 59,
       "open_interest": 2621,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-CHBE",
       "volume": 2623,
       "volume_24h": 1629,
-      "yes_ask": 40,
-      "yes_bid": 34
+      "yes_ask": 41,
+      "yes_bid": 32
     },
     "KXNASCARTOP5-BASPSN26-CHBR": {
       "last_price": 30,
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 71,
       "no_bid": 70,
-      "open_interest": 7816,
+      "open_interest": 10462,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-CHBR",
-      "volume": 8067,
+      "volume": 10713,
       "volume_24h": 5338,
       "yes_ask": 30,
       "yes_bid": 29
@@ -223,7 +223,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 93,
       "open_interest": 0,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 7,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP5-BASPSN26-DEHA": {
       "last_price": 52,
@@ -294,13 +294,13 @@
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 83,
-      "no_bid": 69,
+      "no_bid": 70,
       "open_interest": 598,
       "status": "active",
       "ticker": "KXNASCARTOP5-BASPSN26-JOLO",
       "volume": 608,
       "volume_24h": 498,
-      "yes_ask": 31,
+      "yes_ask": 30,
       "yes_bid": 17
     },
     "KXNASCARTOP5-BASPSN26-JONE": {
@@ -405,7 +405,7 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 63,
+      "no_ask": 62,
       "no_bid": 59,
       "open_interest": 2758,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 3030,
       "volume_24h": 1537,
       "yes_ask": 41,
-      "yes_bid": 37
+      "yes_bid": 38
     },
     "KXNASCARTOP5-BASPSN26-RYPR": {
       "last_price": 14,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-19T20:55:17.862321+00:00",
+  "scraped_at": "2026-09-19T21:00:22.742078+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top5"
 }
