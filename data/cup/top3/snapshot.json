@@ -153,7 +153,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 100,
+      "no_ask": 98,
       "no_bid": 87,
       "open_interest": 0,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 13,
-      "yes_bid": 0
+      "yes_bid": 2
     },
     "KXNASCARTOP3-BASPSN26-CHEL": {
       "last_price": 17,
@@ -234,15 +234,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-DEHA": {
-      "last_price": 39,
+      "last_price": 41,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 60,
       "no_bid": 59,
-      "open_interest": 731,
+      "open_interest": 761,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DEHA",
-      "volume": 731,
+      "volume": 766,
       "volume_24h": 602,
       "yes_ask": 41,
       "yes_bid": 40
@@ -402,15 +402,15 @@
       "yes_bid": 3
     },
     "KXNASCARTOP3-BASPSN26-RYBL": {
-      "last_price": 28,
+      "last_price": 29,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 73,
       "no_bid": 71,
-      "open_interest": 6187,
+      "open_interest": 6236,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
-      "volume": 6207,
+      "volume": 6256,
       "volume_24h": 3035,
       "yes_ask": 29,
       "yes_bid": 27
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T12:55:17.039063+00:00",
+  "scraped_at": "2026-09-19T13:00:25.295142+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
