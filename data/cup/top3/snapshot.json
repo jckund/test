@@ -84,28 +84,28 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 96,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 619,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-BRKE",
       "volume": 857,
       "volume_24h": 857,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 4
     },
     "KXNASCARTOP3-BASPSN26-BUWA": {
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 98,
-      "no_bid": 90,
+      "no_ask": 96,
+      "no_bid": 91,
       "open_interest": 284,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-BUWA",
       "volume": 284,
       "volume_24h": 0,
-      "yes_ask": 10,
-      "yes_bid": 2
+      "yes_ask": 9,
+      "yes_bid": 4
     },
     "KXNASCARTOP3-BASPSN26-CAHO": {
       "last_price": 13,
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 81,
       "no_bid": 72,
-      "open_interest": 531,
+      "open_interest": 565,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-CHBE",
-      "volume": 531,
+      "volume": 565,
       "volume_24h": 458,
       "yes_ask": 28,
       "yes_bid": 19
@@ -239,10 +239,10 @@
       "name": "Denny Hamlin",
       "no_ask": 59,
       "no_bid": 58,
-      "open_interest": 5224,
+      "open_interest": 5315,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DEHA",
-      "volume": 5231,
+      "volume": 5322,
       "volume_24h": 5097,
       "yes_ask": 42,
       "yes_bid": 41
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T20:35:17.278193+00:00",
+  "scraped_at": "2026-09-19T20:40:53.093960+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
