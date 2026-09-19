@@ -83,15 +83,15 @@
       "last_price": 4,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 97,
-      "no_bid": 96,
+      "no_ask": 98,
+      "no_bid": 97,
       "open_interest": 81536,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-BRKE",
       "volume": 83356,
       "volume_24h": 33393,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-BASPSN26-BUWA": {
       "last_price": 3,
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 90,
       "no_bid": 89,
-      "open_interest": 39237,
+      "open_interest": 39254,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBE",
-      "volume": 43857,
+      "volume": 43874,
       "volume_24h": 33474,
       "yes_ask": 11,
       "yes_bid": 10
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 56719,
+      "open_interest": 56734,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHBR",
-      "volume": 60662,
+      "volume": 60677,
       "volume_24h": 43887,
       "yes_ask": 6,
       "yes_bid": 5
@@ -169,10 +169,10 @@
       "name": "Chase Elliott",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 50432,
+      "open_interest": 50588,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-CHEL",
-      "volume": 50511,
+      "volume": 50667,
       "volume_24h": 6227,
       "yes_ask": 3,
       "yes_bid": 2
@@ -405,7 +405,7 @@
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 91,
+      "no_ask": 90,
       "no_bid": 89,
       "open_interest": 72734,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 86982,
       "volume_24h": 39277,
       "yes_ask": 11,
-      "yes_bid": 9
+      "yes_bid": 10
     },
     "KXNASCARRACE-BASPSN26-RYPR": {
       "last_price": 1,
@@ -477,10 +477,10 @@
       "name": "Ty Gibbs",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 47039,
+      "open_interest": 47069,
       "status": "active",
       "ticker": "KXNASCARRACE-BASPSN26-TYGI",
-      "volume": 47120,
+      "volume": 47150,
       "volume_24h": 13775,
       "yes_ask": 14,
       "yes_bid": 13
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-19T15:45:16.751874+00:00",
+  "scraped_at": "2026-09-19T15:50:20.275619+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "winner"
 }
