@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 100,
-      "no_bid": 92,
+      "no_bid": 94,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DASU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 6,
       "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-DEHA": {
@@ -239,10 +239,10 @@
       "name": "Denny Hamlin",
       "no_ask": 59,
       "no_bid": 58,
-      "open_interest": 5352,
+      "open_interest": 5397,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-DEHA",
-      "volume": 5359,
+      "volume": 5404,
       "volume_24h": 5226,
       "yes_ask": 42,
       "yes_bid": 41
@@ -265,7 +265,7 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 98,
+      "no_ask": 100,
       "no_bid": 94,
       "open_interest": 27,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 27,
       "volume_24h": 27,
       "yes_ask": 6,
-      "yes_bid": 2
+      "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-JOBI": {
       "last_price": 1,
@@ -405,15 +405,15 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
-      "no_ask": 77,
-      "no_bid": 74,
+      "no_ask": 75,
+      "no_bid": 73,
       "open_interest": 10019,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-RYBL",
       "volume": 10067,
       "volume_24h": 6565,
-      "yes_ask": 26,
-      "yes_bid": 23
+      "yes_ask": 27,
+      "yes_bid": 25
     },
     "KXNASCARTOP3-BASPSN26-RYPR": {
       "last_price": 0,
@@ -472,15 +472,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-BASPSN26-TYGI": {
-      "last_price": 36,
+      "last_price": 35,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
       "no_ask": 66,
       "no_bid": 65,
-      "open_interest": 8387,
+      "open_interest": 8390,
       "status": "active",
       "ticker": "KXNASCARTOP3-BASPSN26-TYGI",
-      "volume": 8955,
+      "volume": 8957,
       "volume_24h": 2742,
       "yes_ask": 35,
       "yes_bid": 34
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-19T21:15:18.381036+00:00",
+  "scraped_at": "2026-09-19T21:20:18.550874+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top3"
 }
