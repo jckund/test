@@ -1,3 +1,14 @@
+### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-20T00:04:14Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 20 | Cody Ware | No | 50c | 51.75c | -107 | 93.9% | **+81.4%** |
+| Bass Pro Shops Night Race | Win | Ty Gibbs | Yes | 9c | 9.57c | +945 | 15.2% | **+59.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-19T23:58:13Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
