@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-BUWA",
       "volume": 11,
-      "volume_24h": 1,
+      "volume_24h": 2,
       "yes_ask": 88,
       "yes_bid": 41
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-CHBR",
       "volume": 207,
-      "volume_24h": 6,
+      "volume_24h": 0,
       "yes_ask": 99,
       "yes_bid": 16
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-COCU",
       "volume": 236,
-      "volume_24h": 17,
+      "volume_24h": 3,
       "yes_ask": 74,
       "yes_bid": 9
     },
@@ -196,13 +196,13 @@
       "liquidity": 0.0,
       "name": "Cody Ware",
       "no_ask": 100,
-      "no_bid": 43,
+      "no_bid": 50,
       "open_interest": 159,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-COWA",
       "volume": 159,
       "volume_24h": 0,
-      "yes_ask": 57,
+      "yes_ask": 50,
       "yes_bid": 0
     },
     "KXNASCARTOP20-BASPSN26-COZI": {
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-JOBE",
       "volume": 222,
-      "volume_24h": 21,
+      "volume_24h": 12,
       "yes_ask": 75,
       "yes_bid": 48
     },
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Josh Bilicki",
       "no_ask": 100,
-      "no_bid": 85,
+      "no_bid": 86,
       "open_interest": 335,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-JOBI",
       "volume": 335,
       "volume_24h": 315,
-      "yes_ask": 15,
+      "yes_ask": 14,
       "yes_bid": 0
     },
     "KXNASCARTOP20-BASPSN26-JOLO": {
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-RYPR",
       "volume": 396,
-      "volume_24h": 160,
+      "volume_24h": 153,
       "yes_ask": 99,
       "yes_bid": 21
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-SHVA",
       "volume": 44,
-      "volume_24h": 1,
+      "volume_24h": 16,
       "yes_ask": 99,
       "yes_bid": 12
     },
@@ -453,23 +453,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-TOGI",
       "volume": 495,
-      "volume_24h": 487,
+      "volume_24h": 493,
       "yes_ask": 99,
       "yes_bid": 11
     },
     "KXNASCARTOP20-BASPSN26-TYDI": {
-      "last_price": 15,
+      "last_price": 7,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 92,
-      "no_bid": 25,
-      "open_interest": 1907,
+      "no_ask": 94,
+      "no_bid": 35,
+      "open_interest": 2009,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-TYDI",
-      "volume": 1931,
+      "volume": 2033,
       "volume_24h": 1019,
-      "yes_ask": 75,
-      "yes_bid": 8
+      "yes_ask": 65,
+      "yes_bid": 6
     },
     "KXNASCARTOP20-BASPSN26-TYGI": {
       "last_price": 97,
@@ -514,22 +514,22 @@
       "yes_bid": 56
     },
     "KXNASCARTOP20-BASPSN26-ZASM": {
-      "last_price": 11,
+      "last_price": 3,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 89,
-      "no_bid": 1,
-      "open_interest": 24,
+      "no_ask": 98,
+      "no_bid": 25,
+      "open_interest": 247,
       "status": "active",
       "ticker": "KXNASCARTOP20-BASPSN26-ZASM",
-      "volume": 26,
-      "volume_24h": 0,
-      "yes_ask": 99,
-      "yes_bid": 11
+      "volume": 249,
+      "volume_24h": 4,
+      "yes_ask": 75,
+      "yes_bid": 2
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-19T23:50:21.652015+00:00",
+  "scraped_at": "2026-09-20T00:05:19.620395+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
   "tier": "top20"
 }
