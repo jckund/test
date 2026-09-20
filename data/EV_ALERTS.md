@@ -1,3 +1,15 @@
+### New Kalshi vs SG lines >= +30% EV — 3 (2026-09-20T00:20:19Z)
+
+| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
+|---|---|---|---|---|---|---|---|---|
+| Bass Pro Shops Night Race | Top 10 | Erik Jones | Yes | 1c | 1.07c | +9252 | 14.6% | **+1269.3%** |
+| Bass Pro Shops Night Race | Top 20 | Erik Jones | Yes | 25c | 26.31c | +280 | 53.1% | **+101.6%** |
+| Bass Pro Shops Night Race | Top 5 | Erik Jones | Yes | 1c | 1.07c | +9252 | 2.1% | **+101.0%** |
+
+_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the no-vig model probability. A line stays quiet until its price changes._
+
+---
+
 ### New Kalshi vs SG lines >= +30% EV — 2 (2026-09-20T00:16:16Z)
 
 | Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |
