@@ -38,15 +38,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-AUCI": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 28,
+      "open_interest": 74,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-AUCI",
-      "volume": 28,
+      "volume": 74,
       "volume_24h": 28,
       "yes_ask": 2,
       "yes_bid": 1
@@ -71,10 +71,10 @@
       "name": "Austin Hill",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 69,
+      "open_interest": 138,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-AUHI",
-      "volume": 69,
+      "volume": 138,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BRKE",
       "volume": 12372,
-      "volume_24h": 11971,
+      "volume_24h": 2337,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -239,11 +239,11 @@
       "name": "Denny Hamlin",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 2212,
+      "open_interest": 2370,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
-      "volume": 2268,
-      "volume_24h": 1885,
+      "volume": 2426,
+      "volume_24h": 2096,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
       "volume": 3078,
-      "volume_24h": 2646,
+      "volume_24h": 2852,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
       "volume": 3431,
-      "volume_24h": 3429,
+      "volume_24h": 3386,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 8341,
-      "volume_24h": 4822,
+      "volume_24h": 8230,
       "yes_ask": 13,
       "yes_bid": 11
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T23:20:17.552624+00:00",
+  "scraped_at": "2026-09-22T23:30:59.217330+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
