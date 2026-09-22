@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBU",
       "volume": 149,
-      "volume_24h": 87,
+      "volume_24h": 149,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
       "volume": 1358,
-      "volume_24h": 1308,
+      "volume_24h": 1358,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -374,15 +374,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-ROCH": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 77,
+      "open_interest": 405,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-ROCH",
-      "volume": 77,
+      "volume": 405,
       "volume_24h": 77,
       "yes_ask": 2,
       "yes_bid": 1
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T16:40:25.472353+00:00",
+  "scraped_at": "2026-09-22T16:45:24.368633+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
