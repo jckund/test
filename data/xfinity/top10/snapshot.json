@@ -195,7 +195,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Daniel Dye",
-      "no_ask": 95,
+      "no_ask": 91,
       "no_bid": 76,
       "open_interest": 0,
       "status": "active",
@@ -203,7 +203,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 24,
-      "yes_bid": 5
+      "yes_bid": 9
     },
     "KXNASCARTOP10-RACTSS26-DAHE": {
       "last_price": 0,
@@ -248,17 +248,17 @@
       "yes_bid": 39
     },
     "KXNASCARTOP10-RACTSS26-JAGA": {
-      "last_price": 0,
+      "last_price": 28,
       "liquidity": 0.0,
       "name": "Jake Garcia",
       "no_ask": 87,
-      "no_bid": 72,
-      "open_interest": 0,
+      "no_bid": 70,
+      "open_interest": 170,
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-JAGA",
-      "volume": 0,
+      "volume": 170,
       "volume_24h": 0,
-      "yes_ask": 28,
+      "yes_ask": 30,
       "yes_bid": 13
     },
     "KXNASCARTOP10-RACTSS26-JORE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-22T15:18:41.827297+00:00",
+  "scraped_at": "2026-09-22T15:31:02.817451+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "top10"
 }
