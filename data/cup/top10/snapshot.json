@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 47,
-      "no_bid": 40,
+      "no_bid": 41,
       "open_interest": 1291,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-BUWA",
       "volume": 1291,
-      "volume_24h": 1277,
-      "yes_ask": 60,
+      "volume_24h": 1291,
+      "yes_ask": 59,
       "yes_bid": 53
     },
     "KXNASCARTOP10-HOLC26-CAHO": {
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHEL",
       "volume": 567,
-      "volume_24h": 526,
+      "volume_24h": 567,
       "yes_ask": 54,
       "yes_bid": 46
     },
@@ -279,15 +279,15 @@
       "last_price": 48,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 65,
-      "no_bid": 53,
+      "no_ask": 68,
+      "no_bid": 54,
       "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOLO",
       "volume": 20,
       "volume_24h": 20,
-      "yes_ask": 47,
-      "yes_bid": 35
+      "yes_ask": 46,
+      "yes_bid": 32
     },
     "KXNASCARTOP10-HOLC26-JONE": {
       "last_price": 8,
@@ -374,18 +374,18 @@
       "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-ROCH": {
-      "last_price": 29,
+      "last_price": 35,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 85,
-      "no_bid": 78,
-      "open_interest": 225,
+      "no_ask": 80,
+      "no_bid": 67,
+      "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ROCH",
-      "volume": 225,
+      "volume": 275,
       "volume_24h": 225,
-      "yes_ask": 22,
-      "yes_bid": 15
+      "yes_ask": 33,
+      "yes_bid": 20
     },
     "KXNASCARTOP10-HOLC26-RYBL": {
       "last_price": 57,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-22T20:30:26.181568+00:00",
+  "scraped_at": "2026-09-22T20:35:16.897403+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
