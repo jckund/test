@@ -27,15 +27,15 @@
       "last_price": 1,
       "liquidity": 0.0,
       "name": "Ben Rhodes",
-      "no_ask": 100,
-      "no_bid": 99,
+      "no_ask": 99,
+      "no_bid": 98,
       "open_interest": 220,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-BERH",
       "volume": 220,
       "volume_24h": 220,
-      "yes_ask": 1,
-      "yes_bid": 0
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-RACTSS26-BRCR": {
       "last_price": 8,
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-CHEC",
       "volume": 579,
-      "volume_24h": 300,
+      "volume_24h": 579,
       "yes_ask": 6,
       "yes_bid": 3
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-GREN",
       "volume": 422,
-      "volume_24h": 382,
+      "volume_24h": 422,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -293,7 +293,7 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Kaden Honeycutt",
-      "no_ask": 82,
+      "no_ask": 81,
       "no_bid": 78,
       "open_interest": 1465,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 1465,
       "volume_24h": 1465,
       "yes_ask": 22,
-      "yes_bid": 18
+      "yes_bid": 19
     },
     "KXNASCARRACE-RACTSS26-KRWR": {
       "last_price": 0,
@@ -374,18 +374,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-RACTSS26-NILE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Nick Leitz",
-      "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_ask": 99,
+      "no_bid": 98,
+      "open_interest": 240,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-NILE",
-      "volume": 0,
+      "volume": 240,
       "volume_24h": 0,
-      "yes_ask": 1,
-      "yes_bid": 0
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-RACTSS26-NISA": {
       "last_price": 5,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T20:08:02.465429+00:00",
+  "scraped_at": "2026-09-22T20:18:09.530386+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "winner"
 }

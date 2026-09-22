@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CAHO",
       "volume": 486,
-      "volume_24h": 468,
+      "volume_24h": 486,
       "yes_ask": 40,
       "yes_bid": 32
     },
@@ -153,15 +153,15 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 66,
+      "no_ask": 67,
       "no_bid": 59,
       "open_interest": 237,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBU",
       "volume": 237,
-      "volume_24h": 1,
+      "volume_24h": 237,
       "yes_ask": 41,
-      "yes_bid": 34
+      "yes_bid": 33
     },
     "KXNASCARTOP10-HOLC26-CHEL": {
       "last_price": 54,
@@ -238,13 +238,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 35,
-      "no_bid": 23,
+      "no_bid": 24,
       "open_interest": 206,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-DEHA",
       "volume": 206,
       "volume_24h": 206,
-      "yes_ask": 77,
+      "yes_ask": 76,
       "yes_bid": 65
     },
     "KXNASCARTOP10-HOLC26-ERJO": {
@@ -262,18 +262,18 @@
       "yes_bid": 19
     },
     "KXNASCARTOP10-HOLC26-JOBE": {
-      "last_price": 28,
+      "last_price": 26,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 87,
-      "no_bid": 75,
-      "open_interest": 8,
+      "no_ask": 85,
+      "no_bid": 74,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOBE",
-      "volume": 8,
+      "volume": 100,
       "volume_24h": 8,
-      "yes_ask": 25,
-      "yes_bid": 13
+      "yes_ask": 26,
+      "yes_bid": 15
     },
     "KXNASCARTOP10-HOLC26-JOLO": {
       "last_price": 48,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-22T20:10:21.048022+00:00",
+  "scraped_at": "2026-09-22T20:15:22.207464+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
