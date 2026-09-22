@@ -69,23 +69,23 @@ WINNER_SERIES = "KXNASCARRACE"
 # removed, so a Truck race now falls to the `xfinity` catch-all like any other
 # unrecognized race. Re-add an entry here if it ever comes back.
 SERIES = [
-    # Bristol night race weekend.
+    # Kansas playoff weekend.
     #
-    # Cup: Bass Pro Shops Night Race. Match "bass pro" only — NOT "night race",
-    # which is generic, and NOT "bristol", since the weekend's races share the
-    # track and would collide.
+    # Cup: Hollywood Casino 400. Match "hollywood casino" only — NOT "kansas",
+    # which the weekend's races share, and NOT "400", which is generic (Kansas'
+    # spring Cup race is the AdventHealth 400).
     #
-    # Xfinity: Food City 300. Match the full "food city 300", NOT bare "food
-    # city" — Bristol's spring CUP race is the Food City 500, so the bare
-    # substring collides across weekends.
+    # Support race: Trucks — Race to Stop Suicide 200. There is no Xfinity race
+    # this weekend, so the support slot is the Truck race. Match "race to stop
+    # suicide"; "200" alone is generic.
     #
-    # NOTE: `xfinity` is ALSO the catch-all, so an unrecognized race still lands
-    # here and would inherit the "Xfinity" label. That is the pre-existing
-    # tradeoff of naming the default series; re-check the label when the matchers
-    # are re-pointed rather than assuming a race on this tab is Xfinity.
-    {"key": "cup", "label": "NASCAR", "matchers": ["bass pro"],
+    # NOTE: the second entry is ALSO the catch-all, so an unrecognized race
+    # still lands here and inherits its label. Its key stays `xfinity` because
+    # that is the on-disk series dir (data/xfinity/), but the label follows
+    # whatever race actually occupies the slot — this week, Trucks.
+    {"key": "cup", "label": "NASCAR", "matchers": ["hollywood casino"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["food city 300"], "default": True,
+    {"key": "xfinity", "label": "Trucks", "matchers": ["race to stop suicide"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
