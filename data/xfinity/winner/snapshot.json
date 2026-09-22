@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-DAHE",
       "volume": 220,
-      "volume_24h": 0,
+      "volume_24h": 220,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -229,23 +229,23 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-GIRU",
       "volume": 539,
-      "volume_24h": 432,
+      "volume_24h": 539,
       "yes_ask": 5,
       "yes_bid": 4
     },
     "KXNASCARRACE-RACTSS26-GREN": {
-      "last_price": 3,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Grant Enfinger",
-      "no_ask": 100,
-      "no_bid": 98,
-      "open_interest": 422,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 457,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-GREN",
-      "volume": 422,
+      "volume": 457,
       "volume_24h": 422,
-      "yes_ask": 2,
-      "yes_bid": 0
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-RACTSS26-JAGA": {
       "last_price": 2,
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-KAHO",
       "volume": 1610,
-      "volume_24h": 1610,
+      "volume_24h": 1590,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T21:49:10.742204+00:00",
+  "scraped_at": "2026-09-22T21:53:52.217939+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "winner"
 }
