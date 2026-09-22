@@ -181,6 +181,9 @@ import gen_books as gb
 gb.write_book("caesars.json", "Caesars",
               {"winner": (win_rows, 1), "top3": (t3, 3), "top5": (t5, 5), "top10": (t10, 10)})
 gb.write_mfr("mfr_caesars.json", "Caesars", which_make_3way, {"Chevrolet":..,"Ford":..,"Toyota":..})
+# ^ 4th arg = the per-make "Top Chevrolet / Top Ford / Top Toyota" driver boards,
+#   {make: [(driver, american)]}. ALWAYS capture these when a book posts them —
+#   the Manufacturer tab renders them as the per-make groups under the 3-way.
 gb.write_team("team_caesars.json", "Caesars", team_rows)
 ```
 
