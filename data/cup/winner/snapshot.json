@@ -24,15 +24,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-ALBO": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 28,
+      "open_interest": 124,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-ALBO",
-      "volume": 28,
+      "volume": 124,
       "volume_24h": 28,
       "yes_ask": 2,
       "yes_bid": 1
@@ -80,15 +80,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-BRKE": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 12130,
+      "open_interest": 12226,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BRKE",
-      "volume": 12130,
+      "volume": 12226,
       "volume_24h": 12130,
       "yes_ask": 2,
       "yes_bid": 1
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 2722,
+      "open_interest": 2842,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 2836,
+      "volume": 2956,
       "volume_24h": 2836,
       "yes_ask": 3,
       "yes_bid": 2
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T19:42:23.509157+00:00",
+  "scraped_at": "2026-09-22T19:47:49.855708+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
