@@ -69,15 +69,15 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 71,
-      "no_bid": 54,
+      "no_ask": 72,
+      "no_bid": 53,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-AUHI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 46,
-      "yes_bid": 29
+      "yes_ask": 47,
+      "yes_bid": 28
     },
     "KXNASCARTOP20-HOLC26-BRKE": {
       "last_price": 0,
@@ -94,18 +94,18 @@
       "yes_bid": 49
     },
     "KXNASCARTOP20-HOLC26-BUWA": {
-      "last_price": 0,
+      "last_price": 72,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 46,
-      "no_bid": 29,
-      "open_interest": 0,
+      "no_ask": 33,
+      "no_bid": 13,
+      "open_interest": 205,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-BUWA",
-      "volume": 0,
+      "volume": 205,
       "volume_24h": 0,
-      "yes_ask": 71,
-      "yes_bid": 54
+      "yes_ask": 87,
+      "yes_bid": 67
     },
     "KXNASCARTOP20-HOLC26-CAHO": {
       "last_price": 0,
@@ -461,15 +461,15 @@
       "last_price": 75,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 43,
-      "no_bid": 25,
-      "open_interest": 5,
+      "no_ask": 31,
+      "no_bid": 12,
+      "open_interest": 311,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-TYGI",
-      "volume": 5,
+      "volume": 311,
       "volume_24h": 5,
-      "yes_ask": 75,
-      "yes_bid": 57
+      "yes_ask": 88,
+      "yes_bid": 69
     },
     "KXNASCARTOP20-HOLC26-TYRE": {
       "last_price": 84,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-22T16:30:21.234785+00:00",
+  "scraped_at": "2026-09-22T16:35:17.824935+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
