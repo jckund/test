@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-20T00:48:04.095152+00:00",
+  "updated_at": "2026-09-22T14:48:14.255805+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "Cup - BASPSN (Sep 19)",
+      "race_title": "Hollywood Casino 400  ('26)",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-baspsn26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
       "tiers": [
         "winner",
         "top3",
@@ -14,7 +14,20 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-09-20T00:48:04.094882+00:00"
+      "scraped_at": "2026-09-22T14:46:52.246343+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Trucks",
+      "race_title": "Race to Stop Suicide 200 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-09-22T14:48:14.255762+00:00"
     }
   ]
 }
