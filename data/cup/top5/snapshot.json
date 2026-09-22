@@ -56,13 +56,13 @@
       "liquidity": 0.0,
       "name": "Austin Dillon",
       "no_ask": 99,
-      "no_bid": 84,
+      "no_bid": 89,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-AUDI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 16,
+      "yes_ask": 11,
       "yes_bid": 1
     },
     "KXNASCARTOP5-HOLC26-AUHI": {
@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 92,
-      "no_bid": 82,
+      "no_bid": 77,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BRKE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 18,
+      "yes_ask": 23,
       "yes_bid": 8
     },
     "KXNASCARTOP5-HOLC26-BUWA": {
@@ -131,22 +131,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBE",
       "volume": 336,
-      "volume_24h": 333,
+      "volume_24h": 336,
       "yes_ask": 46,
       "yes_bid": 44
     },
     "KXNASCARTOP5-HOLC26-CHBR": {
-      "last_price": 0,
+      "last_price": 31,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 70,
-      "no_bid": 69,
-      "open_interest": 0,
+      "no_bid": 66,
+      "open_interest": 50,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
-      "volume": 0,
+      "volume": 50,
       "volume_24h": 0,
-      "yes_ask": 31,
+      "yes_ask": 34,
       "yes_bid": 30
     },
     "KXNASCARTOP5-HOLC26-CHBU": {
@@ -279,7 +279,7 @@
       "last_price": 27,
       "liquidity": 0.0,
       "name": "Joey Logano",
-      "no_ask": 89,
+      "no_ask": 88,
       "no_bid": 77,
       "open_interest": 7,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 7,
       "volume_24h": 7,
       "yes_ask": 23,
-      "yes_bid": 11
+      "yes_bid": 12
     },
     "KXNASCARTOP5-HOLC26-JONE": {
       "last_price": 0,
@@ -307,7 +307,7 @@
       "last_price": 55,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 48,
+      "no_ask": 47,
       "no_bid": 43,
       "open_interest": 700,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 700,
       "volume_24h": 700,
       "yes_ask": 57,
-      "yes_bid": 52
+      "yes_bid": 53
     },
     "KXNASCARTOP5-HOLC26-MIMC": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-22T20:10:20.640497+00:00",
+  "scraped_at": "2026-09-22T20:20:20.707855+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
