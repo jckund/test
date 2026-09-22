@@ -206,32 +206,32 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-RACTSS26-DAHE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Daniel Hemric",
-      "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_ask": 99,
+      "no_bid": 98,
+      "open_interest": 220,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-DAHE",
-      "volume": 0,
+      "volume": 220,
       "volume_24h": 0,
-      "yes_ask": 1,
-      "yes_bid": 0
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-RACTSS26-GIRU": {
-      "last_price": 10,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "Giovanni Ruggiero",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 432,
+      "no_ask": 96,
+      "no_bid": 95,
+      "open_interest": 539,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-GIRU",
-      "volume": 432,
+      "volume": 539,
       "volume_24h": 432,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "yes_ask": 5,
+      "yes_bid": 4
     },
     "KXNASCARRACE-RACTSS26-GREN": {
       "last_price": 3,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-22T21:33:10.440916+00:00",
+  "scraped_at": "2026-09-22T21:49:10.742204+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "winner"
 }
