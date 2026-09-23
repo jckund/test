@@ -27,7 +27,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 80,
+      "no_ask": 82,
       "no_bid": 64,
       "open_interest": 10,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 10,
       "volume_24h": 10,
       "yes_ask": 36,
-      "yes_bid": 20
+      "yes_bid": 18
     },
     "KXNASCARTOP10-HOLC26-AUCI": {
       "last_price": 0,
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHEL",
       "volume": 645,
-      "volume_24h": 49,
+      "volume_24h": 13,
       "yes_ask": 54,
       "yes_bid": 46
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-DEHA",
       "volume": 422,
-      "volume_24h": 209,
+      "volume_24h": 216,
       "yes_ask": 75,
       "yes_bid": 67
     },
@@ -307,7 +307,7 @@
       "last_price": 75,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 30,
+      "no_ask": 31,
       "no_bid": 23,
       "open_interest": 600,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 725,
       "volume_24h": 557,
       "yes_ask": 77,
-      "yes_bid": 70
+      "yes_bid": 69
     },
     "KXNASCARTOP10-HOLC26-MIMC": {
       "last_price": 9,
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 82,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 10,
       "yes_ask": 18,
-      "yes_bid": 6
+      "yes_bid": 7
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-23T21:10:21.195508+00:00",
+  "scraped_at": "2026-09-23T21:15:20.376605+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
