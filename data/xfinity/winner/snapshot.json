@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-CHEC",
       "volume": 3509,
-      "volume_24h": 2774,
+      "volume_24h": 2668,
       "yes_ask": 8,
       "yes_bid": 6
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-DAHE",
       "volume": 220,
-      "volume_24h": 220,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Giovanni Ruggiero",
       "no_ask": 96,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 2823,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-GIRU",
       "volume": 2981,
-      "volume_24h": 2549,
-      "yes_ask": 7,
+      "volume_24h": 2442,
+      "yes_ask": 8,
       "yes_bid": 4
     },
     "KXNASCARRACE-RACTSS26-GREN": {
@@ -332,15 +332,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-RACTSS26-LARI": {
-      "last_price": 25,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "Layne Riggs",
       "no_ask": 78,
       "no_bid": 76,
-      "open_interest": 3050,
+      "open_interest": 3054,
       "status": "active",
       "ticker": "KXNASCARRACE-RACTSS26-LARI",
-      "volume": 3142,
+      "volume": 3146,
       "volume_24h": 2290,
       "yes_ask": 24,
       "yes_bid": 22
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-23T21:28:15.750537+00:00",
+  "scraped_at": "2026-09-23T21:53:04.504461+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "winner"
 }
