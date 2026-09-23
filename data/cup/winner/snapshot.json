@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
       "volume": 2686,
-      "volume_24h": 1267,
+      "volume_24h": 1200,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -155,10 +155,10 @@
       "name": "Chris Buescher",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 234,
+      "open_interest": 379,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBU",
-      "volume": 234,
+      "volume": 379,
       "volume_24h": 160,
       "yes_ask": 3,
       "yes_bid": 2
@@ -169,10 +169,10 @@
       "name": "Chase Elliott",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 3165,
+      "open_interest": 3232,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHEL",
-      "volume": 3170,
+      "volume": 3237,
       "volume_24h": 1085,
       "yes_ask": 7,
       "yes_bid": 6
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
       "volume": 12870,
-      "volume_24h": 11923,
+      "volume_24h": 11870,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
       "volume": 4283,
-      "volume_24h": 2645,
+      "volume_24h": 2626,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RYBL",
       "volume": 2404,
-      "volume_24h": 2139,
+      "volume_24h": 2022,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
       "volume": 3609,
-      "volume_24h": 579,
+      "volume_24h": 512,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -481,12 +481,12 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 11584,
-      "volume_24h": 9758,
+      "volume_24h": 9715,
       "yes_ask": 12,
       "yes_bid": 11
     },
     "KXNASCARRACE-HOLC26-WIBY": {
-      "last_price": 5,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 96,
@@ -494,7 +494,7 @@
       "open_interest": 6486,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-WIBY",
-      "volume": 6492,
+      "volume": 6493,
       "volume_24h": 5157,
       "yes_ask": 5,
       "yes_bid": 4
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-23T13:40:23.741398+00:00",
+  "scraped_at": "2026-09-23T13:45:20.099439+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
