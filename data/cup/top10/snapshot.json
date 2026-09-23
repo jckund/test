@@ -27,7 +27,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 77,
+      "no_ask": 78,
       "no_bid": 64,
       "open_interest": 10,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 10,
       "volume_24h": 10,
       "yes_ask": 36,
-      "yes_bid": 23
+      "yes_bid": 22
     },
     "KXNASCARTOP10-HOLC26-AUCI": {
       "last_price": 0,
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CAHO",
       "volume": 738,
-      "volume_24h": 253,
+      "volume_24h": 244,
       "yes_ask": 43,
       "yes_bid": 36
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBR",
       "volume": 450,
-      "volume_24h": 3,
+      "volume_24h": 234,
       "yes_ask": 59,
       "yes_bid": 48
     },
@@ -154,13 +154,13 @@
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 61,
-      "no_bid": 58,
+      "no_bid": 57,
       "open_interest": 2454,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBU",
       "volume": 2454,
       "volume_24h": 2217,
-      "yes_ask": 42,
+      "yes_ask": 43,
       "yes_bid": 39
     },
     "KXNASCARTOP10-HOLC26-CHEL": {
@@ -475,15 +475,15 @@
       "last_price": 63,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 47,
-      "no_bid": 37,
+      "no_ask": 46,
+      "no_bid": 45,
       "open_interest": 211,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-TYRE",
       "volume": 211,
       "volume_24h": 3,
-      "yes_ask": 63,
-      "yes_bid": 53
+      "yes_ask": 55,
+      "yes_bid": 54
     },
     "KXNASCARTOP10-HOLC26-WIBY": {
       "last_price": 52,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-23T22:40:17.946470+00:00",
+  "scraped_at": "2026-09-23T22:45:21.815677+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
