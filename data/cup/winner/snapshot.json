@@ -99,11 +99,11 @@
       "name": "Bubba Wallace",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 10480,
+      "open_interest": 10481,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
-      "volume": 10654,
-      "volume_24h": 9135,
+      "volume": 10655,
+      "volume_24h": 8802,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
       "volume": 5436,
-      "volume_24h": 714,
+      "volume_24h": 699,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 4813,
+      "open_interest": 4884,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 4813,
+      "volume": 4884,
       "volume_24h": 2201,
       "yes_ask": 4,
       "yes_bid": 3
@@ -309,11 +309,11 @@
       "name": "Kyle Larson",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 7648,
+      "open_interest": 7649,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
-      "volume": 7654,
-      "volume_24h": 6179,
+      "volume": 7655,
+      "volume_24h": 6037,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -402,18 +402,18 @@
       "yes_bid": 7
     },
     "KXNASCARRACE-HOLC26-RYPR": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 304,
+      "no_ask": 100,
+      "no_bid": 99,
+      "open_interest": 1248,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RYPR",
-      "volume": 304,
+      "volume": 1248,
       "volume_24h": 190,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-SHVA": {
       "last_price": 1,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 12361,
-      "volume_24h": 7683,
+      "volume_24h": 7501,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-23T18:30:21.148277+00:00",
+  "scraped_at": "2026-09-23T18:35:19.253184+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
