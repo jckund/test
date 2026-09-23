@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
       "volume": 2642,
-      "volume_24h": 1281,
+      "volume_24h": 1322,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 12898,
+      "open_interest": 12945,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 13011,
+      "volume": 13058,
       "volume_24h": 11701,
       "yes_ask": 3,
       "yes_bid": 2
@@ -155,10 +155,10 @@
       "name": "Chris Buescher",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 171,
+      "open_interest": 233,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBU",
-      "volume": 171,
+      "volume": 233,
       "volume_24h": 155,
       "yes_ask": 3,
       "yes_bid": 2
@@ -211,10 +211,10 @@
       "name": "Connor Zilisch",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 187,
+      "open_interest": 234,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-COZI",
-      "volume": 187,
+      "volume": 234,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -416,15 +416,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-SHVA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-SHVA",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TOGI",
       "volume": 993,
-      "volume_24h": 58,
+      "volume_24h": 993,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -463,11 +463,11 @@
       "name": "Ty Gibbs",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 3542,
+      "open_interest": 3582,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
-      "volume": 3569,
-      "volume_24h": 2543,
+      "volume": 3609,
+      "volume_24h": 2583,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-23T03:50:19.810099+00:00",
+  "scraped_at": "2026-09-23T03:55:15.393450+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
