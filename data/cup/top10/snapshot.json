@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ALBO",
       "volume": 6,
-      "volume_24h": 0,
+      "volume_24h": 6,
       "yes_ask": 35,
       "yes_bid": 22
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBU",
       "volume": 666,
-      "volume_24h": 244,
+      "volume_24h": 666,
       "yes_ask": 42,
       "yes_bid": 36
     },
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 67,
       "no_bid": 52,
-      "open_interest": 20,
+      "open_interest": 26,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOLO",
-      "volume": 20,
+      "volume": 26,
       "volume_24h": 20,
       "yes_ask": 48,
       "yes_bid": 33
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-RYPR",
       "volume": 211,
-      "volume_24h": 200,
+      "volume_24h": 211,
       "yes_ask": 25,
       "yes_bid": 14
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-23T03:00:26.112365+00:00",
+  "scraped_at": "2026-09-23T03:05:18.212677+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
