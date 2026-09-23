@@ -95,6 +95,7 @@ _BYKEY = {_key(c): c for c in CANON}
 _ALIAS_KEY = {
     "nick sanchez": "nicholas sanchez",   # Caesars; Kalshi's Xfinity field says Nicholas
     "chase elliot": "chase elliott",      # VIP365 drops a 't'
+    "stephan mallozzi": "stephen mallozzi",  # Caesars; Kalshi's Truck field says Stephen
 }
 
 
