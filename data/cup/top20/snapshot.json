@@ -139,7 +139,7 @@
       "last_price": 76,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 36,
+      "no_ask": 37,
       "no_bid": 24,
       "open_interest": 39,
       "status": "active",
@@ -147,21 +147,21 @@
       "volume": 39,
       "volume_24h": 13,
       "yes_ask": 76,
-      "yes_bid": 64
+      "yes_bid": 63
     },
     "KXNASCARTOP20-HOLC26-CHBU": {
       "last_price": 67,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 49,
-      "no_bid": 34,
-      "open_interest": 0,
+      "no_ask": 46,
+      "no_bid": 28,
+      "open_interest": 73,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-CHBU",
-      "volume": 0,
+      "volume": 73,
       "volume_24h": 0,
-      "yes_ask": 66,
-      "yes_bid": 51
+      "yes_ask": 72,
+      "yes_bid": 54
     },
     "KXNASCARTOP20-HOLC26-CHEL": {
       "last_price": 88,
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 61,
-      "no_bid": 49,
+      "no_bid": 48,
       "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-COZI",
       "volume": 192,
       "volume_24h": 65,
-      "yes_ask": 51,
+      "yes_ask": 52,
       "yes_bid": 39
     },
     "KXNASCARTOP20-HOLC26-DASU": {
@@ -335,15 +335,15 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Noah Gragson",
-      "no_ask": 66,
-      "no_bid": 55,
+      "no_ask": 64,
+      "no_bid": 53,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-NOGR",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 45,
-      "yes_bid": 34
+      "yes_ask": 47,
+      "yes_bid": 36
     },
     "KXNASCARTOP20-HOLC26-RIHE": {
       "last_price": 48,
@@ -475,7 +475,7 @@
       "last_price": 84,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 29,
+      "no_ask": 28,
       "no_bid": 16,
       "open_interest": 20,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 20,
       "volume_24h": 1,
       "yes_ask": 84,
-      "yes_bid": 71
+      "yes_bid": 72
     },
     "KXNASCARTOP20-HOLC26-WIBY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-24T14:15:24.940964+00:00",
+  "scraped_at": "2026-09-24T14:20:19.175671+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
