@@ -38,17 +38,17 @@
       "yes_bid": 21
     },
     "KXNASCARTOP10-HOLC26-AUCI": {
-      "last_price": 0,
+      "last_price": 30,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 85,
-      "no_bid": 73,
-      "open_interest": 0,
+      "no_bid": 67,
+      "open_interest": 131,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUCI",
-      "volume": 0,
+      "volume": 131,
       "volume_24h": 0,
-      "yes_ask": 27,
+      "yes_ask": 33,
       "yes_bid": 15
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 94,
-      "no_bid": 85,
+      "no_bid": 87,
       "open_interest": 909,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-COZI",
       "volume": 909,
       "volume_24h": 259,
-      "yes_ask": 15,
+      "yes_ask": 13,
       "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-DASU": {
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 92,
+      "no_ask": 94,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 8
+      "yes_bid": 6
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-24T15:50:20.006432+00:00",
+  "scraped_at": "2026-09-24T15:55:20.205507+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
