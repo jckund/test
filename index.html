@@ -535,18 +535,22 @@ function usOddsNet(c) {
 }
 
 // Yes price (cents) as shown on Kalshi's "Yes" buy button = the yes ask.
-// Fall back to yes bid, the no-side complement, then last trade.
+// Falls back only to the no-side complement (100 - no_bid IS the yes ask),
+// then last trade. NEVER to yes_bid: a bid is what you could SELL at, so
+// pricing a BUY there invents a trade that does not exist.
 function priceYes(m) {
   if (typeof m.yes_ask === "number") return m.yes_ask;
-  if (typeof m.yes_bid === "number") return m.yes_bid;
   if (typeof m.no_bid === "number") return 100 - m.no_bid;   // = yes ask
   if (typeof m.last_price === "number" && m.last_price > 0) return m.last_price;
   return null;
 }
 // No price (cents) as shown on Kalshi's "No" buy button = the no ask.
+// Same rule: never no_bid. An untradeable side surfaces as 100 and every
+// caller drops it via the cents >= 100 guard — deep longshots quote
+// yes_bid=0 / yes_ask=12 / no_bid=88 / no_ask=100, meaning no No is offered
+// at all, and reading 88 there would show a big EV you cannot take.
 function priceNo(m) {
   if (typeof m.no_ask === "number") return m.no_ask;
-  if (typeof m.no_bid === "number") return m.no_bid;
   if (typeof m.yes_bid === "number") return 100 - m.yes_bid; // = no ask
   const y = priceYes(m);
   return (y == null) ? null : 100 - y;
