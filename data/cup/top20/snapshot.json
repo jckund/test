@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 52,
-      "no_bid": 36,
+      "no_bid": 37,
       "open_interest": 25,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-ALBO",
       "volume": 25,
       "volume_24h": 15,
-      "yes_ask": 64,
+      "yes_ask": 63,
       "yes_bid": 48
     },
     "KXNASCARTOP20-HOLC26-AUCI": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-CHBR",
       "volume": 39,
-      "volume_24h": 39,
+      "volume_24h": 13,
       "yes_ask": 76,
       "yes_bid": 64
     },
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 61,
-      "no_bid": 48,
+      "no_bid": 50,
       "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-COZI",
       "volume": 192,
-      "volume_24h": 84,
-      "yes_ask": 52,
+      "volume_24h": 65,
+      "yes_ask": 50,
       "yes_bid": 39
     },
     "KXNASCARTOP20-HOLC26-DASU": {
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-DASU",
       "volume": 260,
-      "volume_24h": 236,
+      "volume_24h": 0,
       "yes_ask": 62,
       "yes_bid": 47
     },
@@ -447,7 +447,7 @@
       "last_price": 14,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 84,
+      "no_ask": 87,
       "no_bid": 74,
       "open_interest": 702,
       "status": "active",
@@ -455,7 +455,7 @@
       "volume": 702,
       "volume_24h": 1,
       "yes_ask": 26,
-      "yes_bid": 16
+      "yes_bid": 13
     },
     "KXNASCARTOP20-HOLC26-TYGI": {
       "last_price": 75,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-TYRE",
       "volume": 20,
-      "volume_24h": 19,
+      "volume_24h": 1,
       "yes_ask": 84,
       "yes_bid": 70
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-24T13:50:21.950835+00:00",
+  "scraped_at": "2026-09-24T13:55:20.565569+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
