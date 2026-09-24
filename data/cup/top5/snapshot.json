@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BUWA",
       "volume": 657,
-      "volume_24h": 545,
+      "volume_24h": 561,
       "yes_ask": 31,
       "yes_bid": 22
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 78,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 36,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHEL",
       "volume": 36,
       "volume_24h": 36,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 22
     },
     "KXNASCARTOP5-HOLC26-COCU": {
@@ -206,18 +206,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP5-HOLC26-COZI": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
-      "no_ask": 91,
-      "no_bid": 87,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 88,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-COZI",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 13,
-      "yes_bid": 9
+      "yes_ask": 12,
+      "yes_bid": 2
     },
     "KXNASCARTOP5-HOLC26-DASU": {
       "last_price": 0,
@@ -476,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 57,
-      "no_bid": 47,
+      "no_bid": 51,
       "open_interest": 588,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-TYRE",
       "volume": 588,
       "volume_24h": 383,
-      "yes_ask": 53,
+      "yes_ask": 49,
       "yes_bid": 43
     },
     "KXNASCARTOP5-HOLC26-WIBY": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-24T19:10:21.272026+00:00",
+  "scraped_at": "2026-09-24T19:15:21.875371+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
