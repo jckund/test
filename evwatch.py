@@ -78,13 +78,21 @@ TIER_LABEL = {"winner": "Win", "top3": "Top 3", "top5": "Top 5",
 
 def yes_cents(m: dict):
     """Cost in cents to buy YES, as the dashboard's priceYes() resolves it:
-    yes_ask, then yes_bid, then the no-side complement, then last trade."""
-    for k in ("yes_ask", "yes_bid"):
-        v = m.get(k)
-        if isinstance(v, (int, float)) and 0 < v < 100:
-            return float(v)
+    yes_ask, then the no-side complement (100 - no_bid IS the yes ask), then
+    last trade.
+
+    NEVER falls back to yes_bid. A bid is the price you could SELL at; pricing
+    a BUY there invents a trade that does not exist, and on a one-sided book
+    (nothing offered, only a bid resting) it manufactures enormous phantom EV.
+    A price of 100 is returned as-is rather than skipped here — the caller's
+    0 < cost < 1 guard drops it — so that "no offer" stays visible as an
+    untradeable 100 instead of silently resolving to the other side.
+    """
+    v = m.get("yes_ask")
+    if isinstance(v, (int, float)):
+        return float(v)
     nb = m.get("no_bid")
-    if isinstance(nb, (int, float)) and 0 < nb < 100:
+    if isinstance(nb, (int, float)):
         return float(100 - nb)
     lp = m.get("last_price")
     if isinstance(lp, (int, float)) and 0 < lp < 100:
@@ -94,13 +102,19 @@ def yes_cents(m: dict):
 
 def no_cents(m: dict):
     """Cost in cents to buy NO, as the dashboard's priceNo() resolves it:
-    no_ask, then no_bid, then the yes-side complement."""
-    for k in ("no_ask", "no_bid"):
-        v = m.get(k)
-        if isinstance(v, (int, float)) and 0 < v < 100:
-            return float(v)
+    no_ask, then the yes-side complement (100 - yes_bid IS the no ask).
+
+    NEVER falls back to no_bid — see yes_cents(). This is the exact shape the
+    deep longshots take: yes_bid=0 / yes_ask=12 / no_bid=88 / no_ask=100, i.e.
+    nobody is offering NO at all. Reading no_bid=88 there priced a No buy at a
+    price only a seller could get, and against an SG fair of ~99.9% that shows
+    up as a +80% "line" that cannot be taken.
+    """
+    v = m.get("no_ask")
+    if isinstance(v, (int, float)):
+        return float(v)
     yb = m.get("yes_bid")
-    if isinstance(yb, (int, float)) and 0 < yb < 100:
+    if isinstance(yb, (int, float)):
         return float(100 - yb)
     y = yes_cents(m)
     return None if y is None else float(100 - y)
