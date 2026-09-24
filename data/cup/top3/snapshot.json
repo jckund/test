@@ -97,7 +97,7 @@
       "last_price": 18,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 92,
+      "no_ask": 88,
       "no_bid": 84,
       "open_interest": 64,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 64,
       "volume_24h": 64,
       "yes_ask": 16,
-      "yes_bid": 8
+      "yes_bid": 12
     },
     "KXNASCARTOP3-HOLC26-CAHO": {
       "last_price": 0,
@@ -139,15 +139,15 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 85,
-      "no_bid": 79,
+      "no_ask": 83,
+      "no_bid": 80,
       "open_interest": 303,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBR",
       "volume": 303,
-      "volume_24h": 248,
-      "yes_ask": 21,
-      "yes_bid": 15
+      "volume_24h": 239,
+      "yes_ask": 20,
+      "yes_bid": 17
     },
     "KXNASCARTOP3-HOLC26-CHBU": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-24T23:30:22.640695+00:00",
+  "scraped_at": "2026-09-24T23:35:17.802172+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
