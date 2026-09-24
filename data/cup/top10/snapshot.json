@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CAHO",
       "volume": 838,
-      "volume_24h": 77,
+      "volume_24h": 100,
       "yes_ask": 44,
       "yes_bid": 36
     },
@@ -139,15 +139,15 @@
       "last_price": 60,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 48,
-      "no_bid": 38,
+      "no_ask": 46,
+      "no_bid": 40,
       "open_interest": 403,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBR",
       "volume": 450,
       "volume_24h": 231,
-      "yes_ask": 62,
-      "yes_bid": 52
+      "yes_ask": 60,
+      "yes_bid": 54
     },
     "KXNASCARTOP10-HOLC26-CHBU": {
       "last_price": 41,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-DEHA",
       "volume": 422,
-      "volume_24h": 7,
+      "volume_24h": 0,
       "yes_ask": 76,
       "yes_bid": 67
     },
@@ -378,13 +378,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 87,
-      "no_bid": 72,
+      "no_bid": 73,
       "open_interest": 308,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ROCH",
       "volume": 333,
       "volume_24h": 58,
-      "yes_ask": 28,
+      "yes_ask": 27,
       "yes_bid": 13
     },
     "KXNASCARTOP10-HOLC26-RYBL": {
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 6
+      "yes_bid": 7
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-24T21:10:20.292280+00:00",
+  "scraped_at": "2026-09-24T21:15:20.644587+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
