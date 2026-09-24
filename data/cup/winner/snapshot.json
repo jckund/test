@@ -38,18 +38,18 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-AUCI": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 120,
+      "no_ask": 100,
+      "no_bid": 99,
+      "open_interest": 1231,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-AUCI",
-      "volume": 120,
+      "volume": 1231,
       "volume_24h": 47,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-AUDI": {
       "last_price": 0,
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
       "volume": 24757,
-      "volume_24h": 22071,
+      "volume_24h": 22072,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
       "volume": 18487,
-      "volume_24h": 1880,
+      "volume_24h": 1893,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
       "volume": 6642,
-      "volume_24h": 1394,
+      "volume_24h": 1395,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBR",
       "volume": 65241,
-      "volume_24h": 57967,
+      "volume_24h": 57968,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHEL",
       "volume": 6504,
-      "volume_24h": 2066,
+      "volume_24h": 2067,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
       "volume": 19150,
-      "volume_24h": 6165,
+      "volume_24h": 6170,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
       "volume": 9704,
-      "volume_24h": 2378,
+      "volume_24h": 2379,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -374,15 +374,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-ROCH": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 1189,
+      "open_interest": 3189,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-ROCH",
-      "volume": 1189,
+      "volume": 3189,
       "volume_24h": 468,
       "yes_ask": 2,
       "yes_bid": 1
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
       "volume": 5012,
-      "volume_24h": 1200,
+      "volume_24h": 1201,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 13296,
-      "volume_24h": 1711,
+      "volume_24h": 1712,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-24T15:10:19.847210+00:00",
+  "scraped_at": "2026-09-24T15:15:20.699367+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
