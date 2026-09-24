@@ -41,15 +41,15 @@
       "last_price": 34,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 78,
+      "no_ask": 83,
       "no_bid": 66,
       "open_interest": 160,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUCI",
       "volume": 160,
-      "volume_24h": 131,
+      "volume_24h": 160,
       "yes_ask": 34,
-      "yes_bid": 22
+      "yes_bid": 17
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
       "last_price": 8,
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-RIHE",
       "volume": 272,
-      "volume_24h": 0,
+      "volume_24h": 22,
       "yes_ask": 19,
       "yes_bid": 10
     },
@@ -377,15 +377,15 @@
       "last_price": 33,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 90,
-      "no_bid": 70,
+      "no_ask": 89,
+      "no_bid": 72,
       "open_interest": 308,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ROCH",
       "volume": 333,
       "volume_24h": 58,
-      "yes_ask": 30,
-      "yes_bid": 10
+      "yes_ask": 28,
+      "yes_bid": 11
     },
     "KXNASCARTOP10-HOLC26-RYBL": {
       "last_price": 57,
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 6
+      "yes_bid": 7
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-24T21:20:19.099366+00:00",
+  "scraped_at": "2026-09-24T21:25:20.040358+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
