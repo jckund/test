@@ -55,15 +55,15 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 92,
-      "no_bid": 91,
+      "no_ask": 95,
+      "no_bid": 92,
       "open_interest": 600,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUDI",
       "volume": 600,
       "volume_24h": 400,
-      "yes_ask": 9,
-      "yes_bid": 8
+      "yes_ask": 8,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-HOLC26-AUHI": {
       "last_price": 0,
@@ -153,7 +153,7 @@
       "last_price": 41,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 62,
+      "no_ask": 61,
       "no_bid": 60,
       "open_interest": 2506,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 2506,
       "volume_24h": 231,
       "yes_ask": 40,
-      "yes_bid": 38
+      "yes_bid": 39
     },
     "KXNASCARTOP10-HOLC26-CHEL": {
       "last_price": 54,
@@ -321,7 +321,7 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Michael McDowell",
-      "no_ask": 92,
+      "no_ask": 94,
       "no_bid": 91,
       "open_interest": 404,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 404,
       "volume_24h": 171,
       "yes_ask": 9,
-      "yes_bid": 8
+      "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-NOGR": {
       "last_price": 6,
@@ -420,13 +420,13 @@
       "liquidity": 0.0,
       "name": "Shane Van Gisbergen",
       "no_ask": 93,
-      "no_bid": 83,
+      "no_bid": 84,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-SHVA",
       "volume": 250,
       "volume_24h": 0,
-      "yes_ask": 17,
+      "yes_ask": 16,
       "yes_bid": 7
     },
     "KXNASCARTOP10-HOLC26-TOGI": {
@@ -489,7 +489,7 @@
       "last_price": 54,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 52,
+      "no_ask": 51,
       "no_bid": 46,
       "open_interest": 300,
       "status": "active",
@@ -497,13 +497,13 @@
       "volume": 300,
       "volume_24h": 36,
       "yes_ask": 54,
-      "yes_bid": 48
+      "yes_bid": 49
     },
     "KXNASCARTOP10-HOLC26-ZASM": {
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 93,
+      "no_ask": 92,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 7
+      "yes_bid": 8
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-24T18:35:19.844740+00:00",
+  "scraped_at": "2026-09-24T18:40:29.728128+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
