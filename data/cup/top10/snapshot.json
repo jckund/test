@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 78,
-      "no_bid": 65,
+      "no_bid": 64,
       "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ALBO",
       "volume": 10,
       "volume_24h": 10,
-      "yes_ask": 35,
+      "yes_ask": 36,
       "yes_bid": 22
     },
     "KXNASCARTOP10-HOLC26-AUCI": {
@@ -139,15 +139,15 @@
       "last_price": 60,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 49,
-      "no_bid": 43,
+      "no_ask": 50,
+      "no_bid": 42,
       "open_interest": 403,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBR",
       "volume": 450,
       "volume_24h": 234,
-      "yes_ask": 57,
-      "yes_bid": 51
+      "yes_ask": 58,
+      "yes_bid": 50
     },
     "KXNASCARTOP10-HOLC26-CHBU": {
       "last_price": 40,
@@ -322,13 +322,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 94,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 233,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-MIMC",
       "volume": 233,
       "volume_24h": 233,
-      "yes_ask": 7,
+      "yes_ask": 8,
       "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-NOGR": {
@@ -349,7 +349,7 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Riley Herbst",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 82,
       "open_interest": 250,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 250,
       "volume_24h": 0,
       "yes_ask": 18,
-      "yes_bid": 6
+      "yes_bid": 5
     },
     "KXNASCARTOP10-HOLC26-RIST": {
       "last_price": 0,
@@ -472,17 +472,17 @@
       "yes_bid": 45
     },
     "KXNASCARTOP10-HOLC26-TYRE": {
-      "last_price": 63,
+      "last_price": 55,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 46,
-      "no_bid": 45,
-      "open_interest": 211,
+      "no_bid": 37,
+      "open_interest": 411,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-TYRE",
-      "volume": 211,
+      "volume": 411,
       "volume_24h": 3,
-      "yes_ask": 55,
+      "yes_ask": 63,
       "yes_bid": 54
     },
     "KXNASCARTOP10-HOLC26-WIBY": {
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 93,
+      "no_ask": 95,
       "no_bid": 82,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 10,
       "yes_ask": 18,
-      "yes_bid": 7
+      "yes_bid": 5
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-24T00:50:22.563758+00:00",
+  "scraped_at": "2026-09-24T00:55:17.520313+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
