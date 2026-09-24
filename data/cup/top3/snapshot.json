@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-COZI",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 6,
       "yes_bid": 0
     },
@@ -237,7 +237,7 @@
       "last_price": 31,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 66,
+      "no_ask": 64,
       "no_bid": 59,
       "open_interest": 789,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 789,
       "volume_24h": 476,
       "yes_ask": 41,
-      "yes_bid": 34
+      "yes_bid": 36
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-24T19:20:20.218595+00:00",
+  "scraped_at": "2026-09-24T19:25:18.353259+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
