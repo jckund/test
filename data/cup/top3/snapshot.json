@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 89,
-      "no_bid": 86,
+      "no_bid": 85,
       "open_interest": 64,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-BUWA",
       "volume": 64,
-      "volume_24h": 64,
-      "yes_ask": 14,
+      "volume_24h": 42,
+      "yes_ask": 15,
       "yes_bid": 11
     },
     "KXNASCARTOP3-HOLC26-CAHO": {
@@ -139,7 +139,7 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 84,
+      "no_ask": 83,
       "no_bid": 80,
       "open_interest": 303,
       "status": "active",
@@ -147,13 +147,13 @@
       "volume": 303,
       "volume_24h": 239,
       "yes_ask": 20,
-      "yes_bid": 16
+      "yes_bid": 17
     },
     "KXNASCARTOP3-HOLC26-CHBU": {
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Chris Buescher",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 84,
       "open_interest": 0,
       "status": "active",
@@ -161,20 +161,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 16,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP3-HOLC26-CHEL": {
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 88,
-      "no_bid": 76,
+      "no_bid": 77,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHEL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 24,
+      "yes_ask": 23,
       "yes_bid": 12
     },
     "KXNASCARTOP3-HOLC26-COCU": {
@@ -237,15 +237,15 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 65,
-      "no_bid": 60,
+      "no_ask": 67,
+      "no_bid": 61,
       "open_interest": 837,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-DEHA",
       "volume": 837,
       "volume_24h": 511,
-      "yes_ask": 40,
-      "yes_bid": 35
+      "yes_ask": 39,
+      "yes_bid": 33
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -476,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 70,
-      "no_bid": 66,
+      "no_bid": 65,
       "open_interest": 1153,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYRE",
       "volume": 1153,
       "volume_24h": 387,
-      "yes_ask": 34,
+      "yes_ask": 35,
       "yes_bid": 30
     },
     "KXNASCARTOP3-HOLC26-WIBY": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-25T01:10:19.695128+00:00",
+  "scraped_at": "2026-09-25T01:17:04.315610+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
