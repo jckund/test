@@ -83,7 +83,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 76,
+      "no_ask": 75,
       "no_bid": 65,
       "open_interest": 55,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 55,
       "volume_24h": 0,
       "yes_ask": 35,
-      "yes_bid": 24
+      "yes_bid": 25
     },
     "KXNASCARTOP10-HOLC26-BUWA": {
       "last_price": 53,
@@ -322,13 +322,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 94,
-      "no_bid": 93,
+      "no_bid": 90,
       "open_interest": 1004,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-MIMC",
       "volume": 1004,
       "volume_24h": 734,
-      "yes_ask": 7,
+      "yes_ask": 10,
       "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-NOGR": {
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 93,
+      "no_ask": 91,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 7
+      "yes_bid": 9
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T10:10:18.711641+00:00",
+  "scraped_at": "2026-09-25T10:20:19.556435+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
