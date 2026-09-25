@@ -14,13 +14,13 @@
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 100,
-      "no_bid": 80,
+      "no_bid": 81,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-AJAL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 20,
+      "yes_ask": 19,
       "yes_bid": 0
     },
     "KXNASCARTOP3-HOLC26-ALBO": {
@@ -237,7 +237,7 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 67,
+      "no_ask": 65,
       "no_bid": 62,
       "open_interest": 1345,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 1345,
       "volume_24h": 1002,
       "yes_ask": 38,
-      "yes_bid": 33
+      "yes_bid": 35
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
       "volume": 81,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 5
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-25T13:06:12.499068+00:00",
+  "scraped_at": "2026-09-25T13:15:18.997408+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
