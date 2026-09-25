@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-BUWA",
       "volume": 128,
-      "volume_24h": 95,
+      "volume_24h": 107,
       "yes_ask": 16,
       "yes_bid": 8
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBR",
       "volume": 472,
-      "volume_24h": 237,
+      "volume_24h": 170,
       "yes_ask": 18,
       "yes_bid": 15
     },
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 86,
-      "no_bid": 80,
+      "no_bid": 81,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHEL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 20,
+      "yes_ask": 19,
       "yes_bid": 14
     },
     "KXNASCARTOP3-HOLC26-COCU": {
@@ -237,7 +237,7 @@
       "last_price": 38,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 62,
+      "no_ask": 66,
       "no_bid": 61,
       "open_interest": 1645,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 1645,
       "volume_24h": 856,
       "yes_ask": 39,
-      "yes_bid": 38
+      "yes_bid": 34
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -276,15 +276,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-HOLC26-JOLO": {
-      "last_price": 9,
+      "last_price": 12,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 93,
       "no_bid": 88,
-      "open_interest": 98,
+      "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
-      "volume": 103,
+      "volume": 119,
       "volume_24h": 22,
       "yes_ask": 12,
       "yes_bid": 7
@@ -307,7 +307,7 @@
       "last_price": 37,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 69,
+      "no_ask": 68,
       "no_bid": 62,
       "open_interest": 181,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 181,
       "volume_24h": 104,
       "yes_ask": 38,
-      "yes_bid": 31
+      "yes_bid": 32
     },
     "KXNASCARTOP3-HOLC26-MIMC": {
       "last_price": 0,
@@ -461,15 +461,15 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 87,
-      "no_bid": 80,
+      "no_ask": 84,
+      "no_bid": 82,
       "open_interest": 648,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYGI",
       "volume": 648,
       "volume_24h": 418,
-      "yes_ask": 20,
-      "yes_bid": 13
+      "yes_ask": 18,
+      "yes_bid": 16
     },
     "KXNASCARTOP3-HOLC26-TYRE": {
       "last_price": 37,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-25T16:10:21.508673+00:00",
+  "scraped_at": "2026-09-25T16:15:19.222959+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }

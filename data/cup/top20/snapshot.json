@@ -52,17 +52,17 @@
       "yes_bid": 50
     },
     "KXNASCARTOP20-HOLC26-AUDI": {
-      "last_price": 0,
+      "last_price": 48,
       "liquidity": 0.0,
       "name": "Austin Dillon",
       "no_ask": 61,
-      "no_bid": 52,
-      "open_interest": 0,
+      "no_bid": 51,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-AUDI",
-      "volume": 0,
+      "volume": 10,
       "volume_24h": 0,
-      "yes_ask": 48,
+      "yes_ask": 49,
       "yes_bid": 39
     },
     "KXNASCARTOP20-HOLC26-AUHI": {
@@ -377,7 +377,7 @@
       "last_price": 42,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 52,
+      "no_ask": 58,
       "no_bid": 41,
       "open_interest": 202,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 202,
       "volume_24h": 2,
       "yes_ask": 59,
-      "yes_bid": 48
+      "yes_bid": 42
     },
     "KXNASCARTOP20-HOLC26-RYBL": {
       "last_price": 87,
@@ -448,13 +448,13 @@
       "liquidity": 0.0,
       "name": "Ty Dillon",
       "no_ask": 72,
-      "no_bid": 65,
+      "no_bid": 67,
       "open_interest": 702,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-TYDI",
       "volume": 702,
       "volume_24h": 0,
-      "yes_ask": 35,
+      "yes_ask": 33,
       "yes_bid": 28
     },
     "KXNASCARTOP20-HOLC26-TYGI": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-25T16:10:22.909254+00:00",
+  "scraped_at": "2026-09-25T16:15:20.565583+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
