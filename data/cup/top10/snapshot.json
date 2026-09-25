@@ -41,7 +41,7 @@
       "last_price": 23,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 77,
+      "no_ask": 76,
       "no_bid": 73,
       "open_interest": 175,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 175,
       "volume_24h": 44,
       "yes_ask": 27,
-      "yes_bid": 23
+      "yes_bid": 24
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
       "last_price": 8,
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUDI",
       "volume": 2081,
-      "volume_24h": 1681,
+      "volume_24h": 1481,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 66,
-      "no_bid": 61,
+      "no_bid": 62,
       "open_interest": 834,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CAHO",
       "volume": 847,
       "volume_24h": 32,
-      "yes_ask": 39,
+      "yes_ask": 38,
       "yes_bid": 34
     },
     "KXNASCARTOP10-HOLC26-CHBE": {
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 48,
-      "no_bid": 42,
+      "no_bid": 45,
       "open_interest": 403,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-CHBR",
       "volume": 450,
       "volume_24h": 0,
-      "yes_ask": 58,
+      "yes_ask": 55,
       "yes_bid": 52
     },
     "KXNASCARTOP10-HOLC26-CHBU": {
@@ -209,15 +209,15 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 89,
       "open_interest": 938,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-COZI",
       "volume": 938,
-      "volume_24h": 21,
+      "volume_24h": 29,
       "yes_ask": 11,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-DASU": {
       "last_price": 22,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOBE",
       "volume": 796,
-      "volume_24h": 616,
+      "volume_24h": 577,
       "yes_ask": 23,
       "yes_bid": 17
     },
@@ -293,7 +293,7 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "John H. Nemechek",
-      "no_ask": 89,
+      "no_ask": 90,
       "no_bid": 86,
       "open_interest": 451,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 451,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 11
+      "yes_bid": 10
     },
     "KXNASCARTOP10-HOLC26-KYLA": {
       "last_price": 73,
@@ -322,13 +322,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 88,
-      "no_bid": 85,
+      "no_bid": 86,
       "open_interest": 1739,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-MIMC",
       "volume": 1739,
-      "volume_24h": 1417,
-      "yes_ask": 15,
+      "volume_24h": 1335,
+      "yes_ask": 14,
       "yes_bid": 12
     },
     "KXNASCARTOP10-HOLC26-NOGR": {
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 47,
-      "no_bid": 41,
+      "no_bid": 38,
       "open_interest": 223,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-RYBL",
       "volume": 223,
       "volume_24h": 169,
-      "yes_ask": 59,
+      "yes_ask": 62,
       "yes_bid": 53
     },
     "KXNASCARTOP10-HOLC26-RYPR": {
@@ -476,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 44,
-      "no_bid": 37,
+      "no_bid": 38,
       "open_interest": 422,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-TYRE",
       "volume": 422,
       "volume_24h": 11,
-      "yes_ask": 63,
+      "yes_ask": 62,
       "yes_bid": 56
     },
     "KXNASCARTOP10-HOLC26-WIBY": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T17:40:20.122586+00:00",
+  "scraped_at": "2026-09-25T17:45:21.252532+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
