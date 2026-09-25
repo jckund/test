@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 23594,
+      "open_interest": 23690,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 24057,
+      "volume": 24153,
       "volume_24h": 5558,
       "yes_ask": 4,
       "yes_bid": 3
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 26571,
+      "open_interest": 26713,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 26571,
+      "volume": 26713,
       "volume_24h": 18272,
       "yes_ask": 4,
       "yes_bid": 3
@@ -309,10 +309,10 @@
       "name": "Kyle Larson",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 32103,
+      "open_interest": 32148,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
-      "volume": 32367,
+      "volume": 32412,
       "volume_24h": 21690,
       "yes_ask": 19,
       "yes_bid": 18
@@ -346,15 +346,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-RIHE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RIHE",
-      "volume": 0,
+      "volume": 56,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-25T16:15:18.751210+00:00",
+  "scraped_at": "2026-09-25T16:20:19.925609+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
