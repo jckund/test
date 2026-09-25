@@ -27,7 +27,7 @@
       "last_price": 33,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 67,
       "open_interest": 122,
       "status": "active",
@@ -35,13 +35,13 @@
       "volume": 122,
       "volume_24h": 58,
       "yes_ask": 33,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARTOP10-HOLC26-AUCI": {
       "last_price": 34,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 81,
+      "no_ask": 80,
       "no_bid": 70,
       "open_interest": 160,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 160,
       "volume_24h": 160,
       "yes_ask": 30,
-      "yes_bid": 19
+      "yes_bid": 20
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
       "last_price": 8,
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUDI",
       "volume": 1081,
-      "volume_24h": 400,
+      "volume_24h": 681,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -265,15 +265,15 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 88,
-      "no_bid": 77,
+      "no_ask": 86,
+      "no_bid": 78,
       "open_interest": 796,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOBE",
       "volume": 796,
       "volume_24h": 616,
-      "yes_ask": 23,
-      "yes_bid": 12
+      "yes_ask": 22,
+      "yes_bid": 14
     },
     "KXNASCARTOP10-HOLC26-JOLO": {
       "last_price": 39,
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-MIMC",
       "volume": 804,
-      "volume_24h": 334,
+      "volume_24h": 534,
       "yes_ask": 9,
       "yes_bid": 7
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T06:10:19.798898+00:00",
+  "scraped_at": "2026-09-25T06:15:20.742583+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
