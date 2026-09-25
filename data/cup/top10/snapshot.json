@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 58,
-      "no_bid": 49,
+      "no_bid": 50,
       "open_interest": 1806,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-BUWA",
       "volume": 1811,
       "volume_24h": 475,
-      "yes_ask": 51,
+      "yes_ask": 50,
       "yes_bid": 42
     },
     "KXNASCARTOP10-HOLC26-CAHO": {
@@ -265,15 +265,15 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 83,
-      "no_bid": 77,
+      "no_ask": 84,
+      "no_bid": 74,
       "open_interest": 796,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOBE",
       "volume": 796,
       "volume_24h": 616,
-      "yes_ask": 23,
-      "yes_bid": 17
+      "yes_ask": 26,
+      "yes_bid": 16
     },
     "KXNASCARTOP10-HOLC26-JOLO": {
       "last_price": 41,
@@ -321,7 +321,7 @@
       "last_price": 10,
       "liquidity": 0.0,
       "name": "Michael McDowell",
-      "no_ask": 90,
+      "no_ask": 94,
       "no_bid": 85,
       "open_interest": 1739,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 1739,
       "volume_24h": 1470,
       "yes_ask": 15,
-      "yes_bid": 10
+      "yes_bid": 6
     },
     "KXNASCARTOP10-HOLC26-NOGR": {
       "last_price": 5,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T13:25:18.177554+00:00",
+  "scraped_at": "2026-09-25T13:30:21.065781+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
