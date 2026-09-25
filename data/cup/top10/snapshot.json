@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 78,
-      "no_bid": 67,
+      "no_bid": 68,
       "open_interest": 160,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUCI",
       "volume": 160,
       "volume_24h": 160,
-      "yes_ask": 33,
+      "yes_ask": 32,
       "yes_bid": 22
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
@@ -83,7 +83,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 78,
+      "no_ask": 75,
       "no_bid": 65,
       "open_interest": 55,
       "status": "active",
@@ -91,21 +91,21 @@
       "volume": 55,
       "volume_24h": 0,
       "yes_ask": 35,
-      "yes_bid": 22
+      "yes_bid": 25
     },
     "KXNASCARTOP10-HOLC26-BUWA": {
       "last_price": 51,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 60,
-      "no_bid": 48,
+      "no_ask": 58,
+      "no_bid": 50,
       "open_interest": 1806,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-BUWA",
       "volume": 1811,
       "volume_24h": 475,
-      "yes_ask": 52,
-      "yes_bid": 40
+      "yes_ask": 50,
+      "yes_bid": 42
     },
     "KXNASCARTOP10-HOLC26-CAHO": {
       "last_price": 43,
@@ -209,15 +209,15 @@
       "last_price": 11,
       "liquidity": 0.0,
       "name": "Connor Zilisch",
-      "no_ask": 94,
-      "no_bid": 89,
+      "no_ask": 95,
+      "no_bid": 88,
       "open_interest": 929,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-COZI",
       "volume": 929,
       "volume_24h": 50,
-      "yes_ask": 11,
-      "yes_bid": 6
+      "yes_ask": 12,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-HOLC26-DASU": {
       "last_price": 22,
@@ -265,7 +265,7 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Josh Berry",
-      "no_ask": 86,
+      "no_ask": 85,
       "no_bid": 75,
       "open_interest": 796,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 796,
       "volume_24h": 616,
       "yes_ask": 25,
-      "yes_bid": 14
+      "yes_bid": 15
     },
     "KXNASCARTOP10-HOLC26-JOLO": {
       "last_price": 41,
@@ -304,18 +304,18 @@
       "yes_bid": 7
     },
     "KXNASCARTOP10-HOLC26-KYLA": {
-      "last_price": 75,
+      "last_price": 69,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 31,
+      "no_ask": 39,
       "no_bid": 25,
-      "open_interest": 600,
+      "open_interest": 610,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-KYLA",
-      "volume": 725,
+      "volume": 735,
       "volume_24h": 0,
       "yes_ask": 75,
-      "yes_bid": 69
+      "yes_bid": 61
     },
     "KXNASCARTOP10-HOLC26-MIMC": {
       "last_price": 10,
@@ -377,15 +377,15 @@
       "last_price": 32,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 84,
-      "no_bid": 68,
+      "no_ask": 82,
+      "no_bid": 69,
       "open_interest": 311,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ROCH",
       "volume": 336,
       "volume_24h": 3,
-      "yes_ask": 32,
-      "yes_bid": 16
+      "yes_ask": 31,
+      "yes_bid": 18
     },
     "KXNASCARTOP10-HOLC26-RYBL": {
       "last_price": 57,
@@ -461,7 +461,7 @@
       "last_price": 57,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 54,
+      "no_ask": 55,
       "no_bid": 44,
       "open_interest": 443,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 443,
       "volume_24h": 25,
       "yes_ask": 56,
-      "yes_bid": 46
+      "yes_bid": 45
     },
     "KXNASCARTOP10-HOLC26-TYRE": {
       "last_price": 63,
@@ -503,7 +503,7 @@
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Zane Smith",
-      "no_ask": 94,
+      "no_ask": 91,
       "no_bid": 80,
       "open_interest": 10,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 10,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 6
+      "yes_bid": 9
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T13:01:45.883640+00:00",
+  "scraped_at": "2026-09-25T13:06:13.402196+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
