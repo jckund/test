@@ -237,7 +237,7 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 66,
+      "no_ask": 63,
       "no_bid": 60,
       "open_interest": 1768,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 1768,
       "volume_24h": 978,
       "yes_ask": 40,
-      "yes_bid": 34
+      "yes_bid": 37
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ROCH",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 8,
       "yes_bid": 1
     },
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 84,
-      "no_bid": 77,
+      "no_bid": 73,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-RYBL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 23,
+      "yes_ask": 27,
       "yes_bid": 16
     },
     "KXNASCARTOP3-HOLC26-RYPR": {
@@ -475,15 +475,15 @@
       "last_price": 37,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 73,
-      "no_bid": 64,
+      "no_ask": 75,
+      "no_bid": 67,
       "open_interest": 1153,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYRE",
       "volume": 1153,
       "volume_24h": 277,
-      "yes_ask": 36,
-      "yes_bid": 27
+      "yes_ask": 33,
+      "yes_bid": 25
     },
     "KXNASCARTOP3-HOLC26-WIBY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-25T18:10:18.126147+00:00",
+  "scraped_at": "2026-09-25T18:15:20.906123+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
