@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-CHBU",
       "volume": 73,
-      "volume_24h": 73,
+      "volume_24h": 0,
       "yes_ask": 62,
       "yes_bid": 57
     },
@@ -322,13 +322,13 @@
       "liquidity": 0.0,
       "name": "Michael McDowell",
       "no_ask": 59,
-      "no_bid": 51,
+      "no_bid": 52,
       "open_interest": 503,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-MIMC",
       "volume": 521,
       "volume_24h": 502,
-      "yes_ask": 49,
+      "yes_ask": 48,
       "yes_bid": 41
     },
     "KXNASCARTOP20-HOLC26-NOGR": {
@@ -346,17 +346,17 @@
       "yes_bid": 37
     },
     "KXNASCARTOP20-HOLC26-RIHE": {
-      "last_price": 48,
+      "last_price": 39,
       "liquidity": 0.0,
       "name": "Riley Herbst",
       "no_ask": 65,
-      "no_bid": 61,
-      "open_interest": 61,
+      "no_bid": 58,
+      "open_interest": 130,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-RIHE",
-      "volume": 64,
+      "volume": 133,
       "volume_24h": 0,
-      "yes_ask": 39,
+      "yes_ask": 42,
       "yes_bid": 35
     },
     "KXNASCARTOP20-HOLC26-RIST": {
@@ -364,20 +364,20 @@
       "liquidity": 0.0,
       "name": "Ricky Stenhouse",
       "no_ask": 63,
-      "no_bid": 53,
+      "no_bid": 54,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-RIST",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 47,
+      "yes_ask": 46,
       "yes_bid": 37
     },
     "KXNASCARTOP20-HOLC26-ROCH": {
       "last_price": 42,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 52,
+      "no_ask": 57,
       "no_bid": 41,
       "open_interest": 202,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 202,
       "volume_24h": 2,
       "yes_ask": 59,
-      "yes_bid": 48
+      "yes_bid": 43
     },
     "KXNASCARTOP20-HOLC26-RYBL": {
       "last_price": 87,
@@ -447,15 +447,15 @@
       "last_price": 14,
       "liquidity": 0.0,
       "name": "Ty Dillon",
-      "no_ask": 73,
-      "no_bid": 69,
+      "no_ask": 71,
+      "no_bid": 65,
       "open_interest": 702,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-TYDI",
       "volume": 702,
       "volume_24h": 0,
-      "yes_ask": 31,
-      "yes_bid": 27
+      "yes_ask": 35,
+      "yes_bid": 29
     },
     "KXNASCARTOP20-HOLC26-TYGI": {
       "last_price": 75,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-25T14:20:23.208153+00:00",
+  "scraped_at": "2026-09-25T14:25:19.137922+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
