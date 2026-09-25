@@ -97,15 +97,15 @@
       "last_price": 30,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 78,
+      "no_ask": 77,
       "no_bid": 70,
       "open_interest": 692,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BUWA",
       "volume": 692,
-      "volume_24h": 76,
+      "volume_24h": 51,
       "yes_ask": 30,
-      "yes_bid": 22
+      "yes_bid": 23
     },
     "KXNASCARTOP5-HOLC26-CAHO": {
       "last_price": 22,
@@ -139,15 +139,15 @@
       "last_price": 40,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 62,
-      "no_bid": 59,
+      "no_ask": 63,
+      "no_bid": 60,
       "open_interest": 1444,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
       "volume": 1444,
       "volume_24h": 224,
-      "yes_ask": 41,
-      "yes_bid": 38
+      "yes_ask": 40,
+      "yes_bid": 37
     },
     "KXNASCARTOP5-HOLC26-CHBU": {
       "last_price": 24,
@@ -210,13 +210,13 @@
       "liquidity": 0.0,
       "name": "Connor Zilisch",
       "no_ask": 97,
-      "no_bid": 89,
+      "no_bid": 90,
       "open_interest": 405,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-COZI",
       "volume": 405,
-      "volume_24h": 200,
-      "yes_ask": 11,
+      "volume_24h": 405,
+      "yes_ask": 10,
       "yes_bid": 3
     },
     "KXNASCARTOP5-HOLC26-DASU": {
@@ -224,13 +224,13 @@
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 95,
-      "no_bid": 86,
+      "no_bid": 87,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-DASU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 14,
+      "yes_ask": 13,
       "yes_bid": 5
     },
     "KXNASCARTOP5-HOLC26-DEHA": {
@@ -392,13 +392,13 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 67,
-      "no_bid": 62,
+      "no_bid": 63,
       "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-RYBL",
       "volume": 56,
       "volume_24h": 56,
-      "yes_ask": 38,
+      "yes_ask": 37,
       "yes_bid": 33
     },
     "KXNASCARTOP5-HOLC26-RYPR": {
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-TYGI",
       "volume": 1204,
-      "volume_24h": 54,
+      "volume_24h": 23,
       "yes_ask": 37,
       "yes_bid": 36
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-WIBY",
       "volume": 34,
-      "volume_24h": 33,
+      "volume_24h": 0,
       "yes_ask": 30,
       "yes_bid": 24
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-25T18:00:25.246419+00:00",
+  "scraped_at": "2026-09-25T18:05:17.868275+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
