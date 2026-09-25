@@ -117,21 +117,21 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
       "volume": 22367,
-      "volume_24h": 4020,
+      "volume_24h": 4010,
       "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARRACE-HOLC26-CHBE": {
-      "last_price": 13,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 7896,
+      "open_interest": 7963,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
-      "volume": 8915,
-      "volume_24h": 2410,
+      "volume": 8982,
+      "volume_24h": 2274,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 66864,
+      "open_interest": 66981,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBR",
-      "volume": 67264,
+      "volume": 67382,
       "volume_24h": 2024,
       "yes_ask": 8,
       "yes_bid": 7
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
       "volume": 25386,
-      "volume_24h": 11765,
+      "volume_24h": 17189,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
       "volume": 31364,
-      "volume_24h": 21792,
+      "volume_24h": 21661,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RYBL",
       "volume": 5601,
-      "volume_24h": 1074,
+      "volume_24h": 1068,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 24315,
-      "volume_24h": 11096,
+      "volume_24h": 11055,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-25T14:50:18.106170+00:00",
+  "scraped_at": "2026-09-25T15:00:24.943838+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
