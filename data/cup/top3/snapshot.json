@@ -83,7 +83,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 97,
+      "no_ask": 98,
       "no_bid": 92,
       "open_interest": 0,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 8,
-      "yes_bid": 3
+      "yes_bid": 2
     },
     "KXNASCARTOP3-HOLC26-BUWA": {
       "last_price": 18,
@@ -406,13 +406,13 @@
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 99,
-      "no_bid": 92,
+      "no_bid": 94,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-RYPR",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 6,
       "yes_bid": 1
     },
     "KXNASCARTOP3-HOLC26-SHVA": {
@@ -475,15 +475,15 @@
       "last_price": 37,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
-      "no_ask": 71,
-      "no_bid": 69,
+      "no_ask": 73,
+      "no_bid": 68,
       "open_interest": 1153,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYRE",
       "volume": 1153,
       "volume_24h": 384,
-      "yes_ask": 31,
-      "yes_bid": 29
+      "yes_ask": 32,
+      "yes_bid": 27
     },
     "KXNASCARTOP3-HOLC26-WIBY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-25T04:35:17.604537+00:00",
+  "scraped_at": "2026-09-25T04:40:17.949051+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
