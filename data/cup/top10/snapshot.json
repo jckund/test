@@ -42,13 +42,13 @@
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 79,
-      "no_bid": 72,
+      "no_bid": 70,
       "open_interest": 160,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUCI",
       "volume": 160,
       "volume_24h": 160,
-      "yes_ask": 28,
+      "yes_ask": 30,
       "yes_bid": 21
     },
     "KXNASCARTOP10-HOLC26-AUDI": {
@@ -94,18 +94,18 @@
       "yes_bid": 25
     },
     "KXNASCARTOP10-HOLC26-BUWA": {
-      "last_price": 54,
+      "last_price": 53,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 47,
-      "no_bid": 46,
-      "open_interest": 1524,
+      "no_ask": 60,
+      "no_bid": 47,
+      "open_interest": 1593,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-BUWA",
-      "volume": 1529,
+      "volume": 1598,
       "volume_24h": 201,
-      "yes_ask": 54,
-      "yes_bid": 53
+      "yes_ask": 53,
+      "yes_bid": 40
     },
     "KXNASCARTOP10-HOLC26-CAHO": {
       "last_price": 43,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-25T09:55:15.997240+00:00",
+  "scraped_at": "2026-09-25T10:00:25.588163+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
