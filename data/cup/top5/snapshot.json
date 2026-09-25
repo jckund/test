@@ -112,26 +112,26 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 88,
-      "no_bid": 75,
+      "no_bid": 76,
       "open_interest": 51,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CAHO",
       "volume": 51,
       "volume_24h": 30,
-      "yes_ask": 25,
+      "yes_ask": 24,
       "yes_bid": 12
     },
     "KXNASCARTOP5-HOLC26-CHBE": {
-      "last_price": 51,
+      "last_price": 50,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 53,
       "no_bid": 50,
-      "open_interest": 880,
+      "open_interest": 1091,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBE",
-      "volume": 880,
-      "volume_24h": 2,
+      "volume": 1091,
+      "volume_24h": 213,
       "yes_ask": 50,
       "yes_bid": 47
     },
@@ -490,13 +490,13 @@
       "liquidity": 0.0,
       "name": "William Byron",
       "no_ask": 78,
-      "no_bid": 68,
+      "no_bid": 69,
       "open_interest": 34,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-WIBY",
       "volume": 34,
       "volume_24h": 34,
-      "yes_ask": 32,
+      "yes_ask": 31,
       "yes_bid": 22
     },
     "KXNASCARTOP5-HOLC26-ZASM": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-25T04:30:22.115854+00:00",
+  "scraped_at": "2026-09-25T04:35:18.035451+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
