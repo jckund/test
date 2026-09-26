@@ -170,10 +170,14 @@ async function main() {
   // FanDuel names a single race's markets bare ("Race Winner", "Top 3 Finish"),
   // with the race identity carried by the EVENT (e.g. "NASCAR - Cup Series -
   // Race"), not the market name. So we match by event, not by parsing the name.
+  for (const e of Object.values(events)) console.log(`  event: "${e.name}"`);
+
+  const claimed = new Set();
   for (const series of seriesList) {
-    const ev = eventForSeries(events, series);
+    const ev = eventForSeries(events, series, claimed);
     if (!ev) { console.log(`[${series.key}] no FanDuel race event; skipping.`); continue; }
     const evId = ev.eventId ?? ev.id;
+    claimed.add(evId);
     const evMarkets = Object.values(markets).filter((m) => (m.eventId ?? null) === evId);
     console.log(`[${series.key}] -> FanDuel event "${ev.name}" (${evMarkets.length} markets)`);
     emitSeries(series, ev, evMarkets);
@@ -183,9 +187,15 @@ async function main() {
 // The FanDuel event that carries a Kalshi series' single-race markets. Cup (the
 // "full" series) maps to the per-race Cup event ("NASCAR - Cup Series - Race"),
 // excluding the season futures ("... Futures" / "... 2026 Outright Winner").
-// FanDuel's motorsport page only lists futures for the support series (Xfinity/
-// Truck), so those return null and are skipped — FanDuel scraping is Cup-only.
-function eventForSeries(events, series) {
+//
+// Support series (Xfinity/Truck) used to be futures-only on FanDuel's motorsport
+// page, so they were hardcoded to null and skipped. FanDuel now posts a per-race
+// board for them on race day, so instead take the first NASCAR per-race event
+// that isn't Cup and hasn't already been claimed by another series. Matching by
+// "not Cup" rather than by series name is deliberate: the Kalshi side only knows
+// the race title ("Race to Stop Suicide 200"), which carries no series word to
+// match FanDuel's event name against.
+function eventForSeries(events, series, claimed) {
   const evs = Object.values(events);
   if (series.key === "cup" || series.full) {
     return evs.find((e) => {
@@ -193,7 +203,12 @@ function eventForSeries(events, series) {
       return n.includes("cup series") && n.includes("race") && !n.includes("futures");
     }) || null;
   }
-  return null;
+  return evs.find((e) => {
+    const n = (e.name || "").toLowerCase();
+    return n.includes("nascar") && n.includes("race") && !n.includes("futures")
+      && !n.includes("outright") && !n.includes("cup series")
+      && !claimed.has(e.eventId ?? e.id);
+  }) || null;
 }
 
 // Bare FanDuel market name -> our finish-tier key (race identity comes from the

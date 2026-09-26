@@ -96,6 +96,9 @@ _ALIAS_KEY = {
     "nick sanchez": "nicholas sanchez",   # Caesars; Kalshi's Xfinity field says Nicholas
     "chase elliot": "chase elliott",      # VIP365 drops a 't'
     "stephan mallozzi": "stephen mallozzi",  # Caesars; Kalshi's Truck field says Stephen
+    "gio ruggiero": "giovanni ruggiero",  # BetOnline/BetUS shorten it; Kalshi says Giovanni
+    "mini tyrell": "mini tyrrell",        # BetOnline drops an 'r'
+    "andres perez de lara gonzalez": "andres perez de lara",  # Prime/BetOnline add the 2nd surname
 }
 
 
