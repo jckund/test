@@ -55,15 +55,15 @@
       "last_price": 9,
       "liquidity": 0.0,
       "name": "Austin Dillon",
-      "no_ask": 92,
-      "no_bid": 91,
-      "open_interest": 2785,
+      "no_ask": 91,
+      "no_bid": 87,
+      "open_interest": 3204,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-AUDI",
-      "volume": 2785,
+      "volume": 3204,
       "volume_24h": 1985,
-      "yes_ask": 9,
-      "yes_bid": 8
+      "yes_ask": 13,
+      "yes_bid": 9
     },
     "KXNASCARTOP10-HOLC26-AUHI": {
       "last_price": 0,
@@ -111,7 +111,7 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 63,
+      "no_ask": 66,
       "no_bid": 61,
       "open_interest": 897,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 912,
       "volume_24h": 74,
       "yes_ask": 39,
-      "yes_bid": 37
+      "yes_bid": 34
     },
     "KXNASCARTOP10-HOLC26-CHBE": {
       "last_price": 59,
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 66,
-      "no_bid": 62,
+      "no_bid": 63,
       "open_interest": 1473,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-JOLO",
       "volume": 1523,
       "volume_24h": 584,
-      "yes_ask": 38,
+      "yes_ask": 37,
       "yes_bid": 34
     },
     "KXNASCARTOP10-HOLC26-JONE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-26T00:55:17.350203+00:00",
+  "scraped_at": "2026-09-26T01:00:23.704422+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
