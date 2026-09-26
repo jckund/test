@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-BRCR",
       "volume": 1062,
-      "volume_24h": 416,
+      "volume_24h": 424,
       "yes_ask": 64,
       "yes_bid": 26
     },
@@ -108,18 +108,18 @@
       "yes_bid": 27
     },
     "KXNASCARTOP10-RACTSS26-CHSM": {
-      "last_price": 85,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Chandler Smith",
-      "no_ask": 94,
-      "no_bid": 11,
-      "open_interest": 813,
+      "no_ask": 95,
+      "no_bid": 80,
+      "open_interest": 818,
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-CHSM",
-      "volume": 870,
+      "volume": 875,
       "volume_24h": 862,
-      "yes_ask": 89,
-      "yes_bid": 6
+      "yes_ask": 20,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-RACTSS26-CLGR": {
       "last_price": 0,
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-DAHE",
       "volume": 200,
-      "volume_24h": 87,
+      "volume_24h": 89,
       "yes_ask": 62,
       "yes_bid": 18
     },
@@ -276,18 +276,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-RACTSS26-JUHA": {
-      "last_price": 36,
+      "last_price": 21,
       "liquidity": 0.0,
       "name": "Justin Haley",
-      "no_ask": 78,
+      "no_ask": 82,
       "no_bid": 38,
-      "open_interest": 559,
+      "open_interest": 560,
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-JUHA",
-      "volume": 648,
+      "volume": 654,
       "volume_24h": 161,
       "yes_ask": 62,
-      "yes_bid": 22
+      "yes_bid": 18
     },
     "KXNASCARTOP10-RACTSS26-KAHO": {
       "last_price": 32,
@@ -402,7 +402,7 @@
       "yes_bid": 27
     },
     "KXNASCARTOP10-RACTSS26-PAEA": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Parker Eatmon",
       "no_ask": 99,
@@ -410,8 +410,8 @@
       "open_interest": 623,
       "status": "active",
       "ticker": "KXNASCARTOP10-RACTSS26-PAEA",
-      "volume": 628,
-      "volume_24h": 423,
+      "volume": 673,
+      "volume_24h": 468,
       "yes_ask": 49,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-26T20:28:20.499961+00:00",
+  "scraped_at": "2026-09-26T20:33:40.558930+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-ractss26",
   "tier": "top10"
 }
