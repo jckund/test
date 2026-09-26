@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-ALBO",
       "volume": 2284,
-      "volume_24h": 924,
+      "volume_24h": 1158,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -122,18 +122,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-HOLC26-CHBE": {
-      "last_price": 13,
+      "last_price": 8,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 89,
+      "no_ask": 91,
       "no_bid": 88,
-      "open_interest": 22726,
+      "open_interest": 22702,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
-      "volume": 23767,
-      "volume_24h": 14570,
+      "volume": 23841,
+      "volume_24h": 14507,
       "yes_ask": 12,
-      "yes_bid": 11
+      "yes_bid": 9
     },
     "KXNASCARRACE-HOLC26-CHBR": {
       "last_price": 8,
@@ -225,27 +225,27 @@
       "name": "Daniel Su\u00e1rez",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 4543,
+      "open_interest": 5010,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DASU",
-      "volume": 4543,
+      "volume": 5010,
       "volume_24h": 845,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-DEHA": {
-      "last_price": 16,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 87,
-      "no_bid": 85,
-      "open_interest": 45844,
+      "no_ask": 86,
+      "no_bid": 82,
+      "open_interest": 51244,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
-      "volume": 46896,
-      "volume_24h": 18178,
-      "yes_ask": 15,
-      "yes_bid": 13
+      "volume": 52319,
+      "volume_24h": 18634,
+      "yes_ask": 18,
+      "yes_bid": 14
     },
     "KXNASCARRACE-HOLC26-ERJO": {
       "last_price": 1,
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 50891,
+      "open_interest": 51008,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 50992,
+      "volume": 51109,
       "volume_24h": 23637,
       "yes_ask": 4,
       "yes_bid": 3
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
       "volume": 40603,
-      "volume_24h": 7491,
+      "volume_24h": 7540,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
       "volume": 22413,
-      "volume_24h": 16459,
+      "volume_24h": 16628,
       "yes_ask": 5,
       "yes_bid": 3
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
       "volume": 30719,
-      "volume_24h": 4992,
+      "volume_24h": 4941,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-26T18:50:19.762291+00:00",
+  "scraped_at": "2026-09-26T18:55:16.876547+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
