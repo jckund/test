@@ -99,10 +99,10 @@
       "name": "Bubba Wallace",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 36834,
+      "open_interest": 36837,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
-      "volume": 38160,
+      "volume": 38163,
       "volume_24h": 8615,
       "yes_ask": 5,
       "yes_bid": 4
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 98,
       "no_bid": 96,
-      "open_interest": 37488,
+      "open_interest": 37794,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 39200,
+      "volume": 39506,
       "volume_24h": 17185,
       "yes_ask": 4,
       "yes_bid": 2
@@ -239,10 +239,10 @@
       "name": "Denny Hamlin",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 32732,
+      "open_interest": 32782,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
-      "volume": 32820,
+      "volume": 32870,
       "volume_24h": 5363,
       "yes_ask": 18,
       "yes_bid": 17
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 35969,
+      "open_interest": 35970,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 35969,
+      "volume": 35970,
       "volume_24h": 15996,
       "yes_ask": 4,
       "yes_bid": 3
@@ -304,7 +304,7 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-KYLA": {
-      "last_price": 19,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 82,
@@ -312,7 +312,7 @@
       "open_interest": 36664,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
-      "volume": 37063,
+      "volume": 37074,
       "volume_24h": 5739,
       "yes_ask": 19,
       "yes_bid": 18
@@ -332,15 +332,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-NOGR": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "Noah Gragson",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 935,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-NOGR",
-      "volume": 0,
+      "volume": 935,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-26T14:05:20.886347+00:00",
+  "scraped_at": "2026-09-26T14:10:19.109623+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
