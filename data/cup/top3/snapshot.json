@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CAHO",
       "volume": 79,
-      "volume_24h": 79,
+      "volume_24h": 6,
       "yes_ask": 16,
       "yes_bid": 7
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
       "volume": 879,
-      "volume_24h": 346,
+      "volume_24h": 318,
       "yes_ask": 34,
       "yes_bid": 18
     },
@@ -237,15 +237,15 @@
       "last_price": 39,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 59,
-      "no_bid": 50,
+      "no_ask": 60,
+      "no_bid": 45,
       "open_interest": 2302,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-DEHA",
       "volume": 2302,
-      "volume_24h": 534,
-      "yes_ask": 50,
-      "yes_bid": 41
+      "volume_24h": 482,
+      "yes_ask": 55,
+      "yes_bid": 40
     },
     "KXNASCARTOP3-HOLC26-ERJO": {
       "last_price": 0,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
       "volume": 131,
-      "volume_24h": 0,
+      "volume_24h": 12,
       "yes_ask": 17,
       "yes_bid": 8
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-RYBL",
       "volume": 35,
-      "volume_24h": 35,
+      "volume_24h": 0,
       "yes_ask": 24,
       "yes_bid": 14
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYGI",
       "volume": 899,
-      "volume_24h": 247,
+      "volume_24h": 200,
       "yes_ask": 20,
       "yes_bid": 14
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-26T18:40:16.762998+00:00",
+  "scraped_at": "2026-09-26T18:45:18.457019+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
