@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-BUWA",
       "volume": 533,
-      "volume_24h": 240,
+      "volume_24h": 405,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHEL",
       "volume": 16,
-      "volume_24h": 10,
+      "volume_24h": 16,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -280,13 +280,13 @@
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 88,
-      "no_bid": 82,
+      "no_bid": 81,
       "open_interest": 413,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
       "volume": 419,
-      "volume_24h": 67,
-      "yes_ask": 18,
+      "volume_24h": 300,
+      "yes_ask": 19,
       "yes_bid": 12
     },
     "KXNASCARTOP3-HOLC26-JONE": {
@@ -307,15 +307,15 @@
       "last_price": 38,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 63,
+      "no_ask": 64,
       "no_bid": 62,
       "open_interest": 592,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-KYLA",
       "volume": 861,
-      "volume_24h": 648,
+      "volume_24h": 673,
       "yes_ask": 38,
-      "yes_bid": 37
+      "yes_bid": 36
     },
     "KXNASCARTOP3-HOLC26-MIMC": {
       "last_price": 0,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYGI",
       "volume": 1918,
-      "volume_24h": 1023,
+      "volume_24h": 1219,
       "yes_ask": 21,
       "yes_bid": 20
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T14:00:25.719812+00:00",
+  "scraped_at": "2026-09-27T14:05:18.106422+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
