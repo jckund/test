@@ -28,13 +28,13 @@
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 97,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ALBO",
       "volume": 188,
       "volume_24h": 188,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARTOP3-HOLC26-AUCI": {
@@ -125,7 +125,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 73,
+      "no_ask": 71,
       "no_bid": 68,
       "open_interest": 1071,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 1088,
       "volume_24h": 307,
       "yes_ask": 32,
-      "yes_bid": 27
+      "yes_bid": 29
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
       "last_price": 18,
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBU",
       "volume": 27,
-      "volume_24h": 0,
+      "volume_24h": 27,
       "yes_ask": 9,
       "yes_bid": 5
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
       "volume": 186,
-      "volume_24h": 49,
+      "volume_24h": 67,
       "yes_ask": 15,
       "yes_bid": 10
     },
@@ -489,7 +489,7 @@
       "last_price": 13,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 87,
+      "no_ask": 88,
       "no_bid": 85,
       "open_interest": 1252,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 1252,
       "volume_24h": 1252,
       "yes_ask": 15,
-      "yes_bid": 13
+      "yes_bid": 12
     },
     "KXNASCARTOP3-HOLC26-ZASM": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T12:40:17.326758+00:00",
+  "scraped_at": "2026-09-27T12:45:17.807405+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
