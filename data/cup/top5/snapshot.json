@@ -27,7 +27,7 @@
       "last_price": 12,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 91,
+      "no_ask": 93,
       "no_bid": 88,
       "open_interest": 40,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 40,
       "volume_24h": 40,
       "yes_ask": 12,
-      "yes_bid": 9
+      "yes_bid": 7
     },
     "KXNASCARTOP5-HOLC26-AUCI": {
       "last_price": 13,
@@ -97,7 +97,7 @@
       "last_price": 30,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 81,
+      "no_ask": 83,
       "no_bid": 70,
       "open_interest": 1437,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 1437,
       "volume_24h": 727,
       "yes_ask": 30,
-      "yes_bid": 19
+      "yes_bid": 17
     },
     "KXNASCARTOP5-HOLC26-CAHO": {
       "last_price": 21,
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 74,
       "no_bid": 65,
-      "open_interest": 3481,
+      "open_interest": 3495,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
-      "volume": 4251,
+      "volume": 4264,
       "volume_24h": 2308,
       "yes_ask": 35,
       "yes_bid": 26
@@ -461,7 +461,7 @@
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 75,
+      "no_ask": 74,
       "no_bid": 64,
       "open_interest": 1747,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 1858,
       "volume_24h": 604,
       "yes_ask": 36,
-      "yes_bid": 25
+      "yes_bid": 26
     },
     "KXNASCARTOP5-HOLC26-TYRE": {
       "last_price": 46,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T16:55:15.999077+00:00",
+  "scraped_at": "2026-09-27T17:00:24.056175+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
