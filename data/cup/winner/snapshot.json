@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-AUCI",
       "volume": 15821,
-      "volume_24h": 11930,
+      "volume_24h": 12023,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -85,10 +85,10 @@
       "name": "Brad Keselowski",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 19943,
+      "open_interest": 20043,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BRKE",
-      "volume": 21035,
+      "volume": 21136,
       "volume_24h": 2617,
       "yes_ask": 2,
       "yes_bid": 1
@@ -108,16 +108,16 @@
       "yes_bid": 4
     },
     "KXNASCARRACE-HOLC26-CAHO": {
-      "last_price": 4,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 53997,
+      "open_interest": 54057,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 63290,
-      "volume_24h": 34922,
+      "volume": 63350,
+      "volume_24h": 35578,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -127,11 +127,11 @@
       "name": "Christopher Bell",
       "no_ask": 88,
       "no_bid": 87,
-      "open_interest": 24892,
+      "open_interest": 24893,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
-      "volume": 26479,
-      "volume_24h": 16617,
+      "volume": 26480,
+      "volume_24h": 16618,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-COZI",
       "volume": 2658,
-      "volume_24h": 1357,
+      "volume_24h": 1451,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -234,18 +234,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-DEHA": {
-      "last_price": 17,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 84,
-      "no_bid": 83,
-      "open_interest": 55790,
+      "no_ask": 83,
+      "no_bid": 82,
+      "open_interest": 58633,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
-      "volume": 57003,
-      "volume_24h": 27930,
-      "yes_ask": 17,
-      "yes_bid": 16
+      "volume": 59846,
+      "volume_24h": 27904,
+      "yes_ask": 18,
+      "yes_bid": 17
     },
     "KXNASCARRACE-HOLC26-ERJO": {
       "last_price": 1,
@@ -281,10 +281,10 @@
       "name": "Joey Logano",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 59149,
+      "open_interest": 59950,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 60027,
+      "volume": 60828,
       "volume_24h": 29133,
       "yes_ask": 5,
       "yes_bid": 4
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
       "volume": 45352,
-      "volume_24h": 11220,
+      "volume_24h": 11210,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -388,16 +388,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-RYBL": {
-      "last_price": 7,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 21329,
+      "open_interest": 20840,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RYBL",
-      "volume": 21613,
-      "volume_24h": 13739,
+      "volume": 22113,
+      "volume_24h": 13794,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-RYPR",
       "volume": 19968,
-      "volume_24h": 17438,
+      "volume_24h": 17579,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYGI",
       "volume": 28538,
-      "volume_24h": 22254,
+      "volume_24h": 22566,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-27T00:00:25.580105+00:00",
+  "scraped_at": "2026-09-27T00:05:18.244392+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
