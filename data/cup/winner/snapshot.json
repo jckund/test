@@ -84,13 +84,13 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 21284,
+      "no_bid": 98,
+      "open_interest": 33715,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BRKE",
-      "volume": 22377,
+      "volume": 34807,
       "volume_24h": 3072,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-BUWA": {
@@ -113,11 +113,11 @@
       "name": "Carson Hocevar",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 73321,
+      "open_interest": 73531,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 83014,
-      "volume_24h": 46624,
+      "volume": 83224,
+      "volume_24h": 44698,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 44379,
+      "open_interest": 44413,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBE",
-      "volume": 46172,
+      "volume": 46205,
       "volume_24h": 35989,
       "yes_ask": 14,
       "yes_bid": 13
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHBR",
       "volume": 79225,
-      "volume_24h": 8429,
+      "volume_24h": 8535,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -164,18 +164,18 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-CHEL": {
-      "last_price": 5,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Chase Elliott",
-      "no_ask": 96,
-      "no_bid": 95,
-      "open_interest": 31676,
+      "no_ask": 95,
+      "no_bid": 94,
+      "open_interest": 73588,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CHEL",
-      "volume": 33770,
+      "volume": 75682,
       "volume_24h": 19818,
-      "yes_ask": 5,
-      "yes_bid": 4
+      "yes_ask": 6,
+      "yes_bid": 5
     },
     "KXNASCARRACE-HOLC26-COCU": {
       "last_price": 1,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
       "volume": 72904,
-      "volume_24h": 39863,
+      "volume_24h": 39910,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JONE",
       "volume": 2552,
-      "volume_24h": 140,
+      "volume_24h": 2477,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -309,11 +309,11 @@
       "name": "Kyle Larson",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 52594,
+      "open_interest": 52618,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-KYLA",
-      "volume": 58520,
-      "volume_24h": 21415,
+      "volume": 58545,
+      "volume_24h": 21699,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -472,15 +472,15 @@
       "yes_bid": 6
     },
     "KXNASCARRACE-HOLC26-TYRE": {
-      "last_price": 12,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 89,
       "no_bid": 88,
-      "open_interest": 34039,
+      "open_interest": 34024,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-TYRE",
-      "volume": 36386,
+      "volume": 36402,
       "volume_24h": 8279,
       "yes_ask": 12,
       "yes_bid": 11
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-27T12:30:22.930139+00:00",
+  "scraped_at": "2026-09-27T12:35:14.906971+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
