@@ -27,7 +27,7 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 94,
+      "no_ask": 90,
       "no_bid": 88,
       "open_interest": 282,
       "status": "active",
@@ -35,20 +35,20 @@
       "volume": 482,
       "volume_24h": 482,
       "yes_ask": 12,
-      "yes_bid": 6
+      "yes_bid": 10
     },
     "KXNASCARTOP5-HOLC26-AUCI": {
-      "last_price": 48,
+      "last_price": 59,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 92,
-      "no_bid": 52,
-      "open_interest": 434,
+      "no_bid": 40,
+      "open_interest": 483,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-AUCI",
-      "volume": 494,
+      "volume": 660,
       "volume_24h": 494,
-      "yes_ask": 48,
+      "yes_ask": 60,
       "yes_bid": 8
     },
     "KXNASCARTOP5-HOLC26-AUDI": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T19:45:17.848851+00:00",
+  "scraped_at": "2026-09-27T19:50:20.014051+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
