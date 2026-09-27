@@ -29,10 +29,10 @@
       "name": "Alex Bowman",
       "no_ask": 71,
       "no_bid": 70,
-      "open_interest": 2097,
+      "open_interest": 2124,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-ALBO",
-      "volume": 2157,
+      "volume": 2184,
       "volume_24h": 303,
       "yes_ask": 30,
       "yes_bid": 29
@@ -84,20 +84,20 @@
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 69,
-      "no_bid": 65,
+      "no_bid": 64,
       "open_interest": 344,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-BRKE",
       "volume": 345,
       "volume_24h": 80,
-      "yes_ask": 35,
+      "yes_ask": 36,
       "yes_bid": 31
     },
     "KXNASCARTOP10-HOLC26-BUWA": {
       "last_price": 54,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 72,
+      "no_ask": 69,
       "no_bid": 52,
       "open_interest": 2482,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 2701,
       "volume_24h": 519,
       "yes_ask": 48,
-      "yes_bid": 28
+      "yes_bid": 31
     },
     "KXNASCARTOP10-HOLC26-CAHO": {
       "last_price": 40,
@@ -392,25 +392,25 @@
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 54,
-      "no_bid": 47,
+      "no_bid": 46,
       "open_interest": 470,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-RYBL",
       "volume": 654,
-      "volume_24h": 359,
-      "yes_ask": 53,
+      "volume_24h": 396,
+      "yes_ask": 54,
       "yes_bid": 46
     },
     "KXNASCARTOP10-HOLC26-RYPR": {
-      "last_price": 29,
+      "last_price": 30,
       "liquidity": 0.0,
       "name": "Ryan Preece",
       "no_ask": 76,
       "no_bid": 70,
-      "open_interest": 697,
+      "open_interest": 713,
       "status": "active",
       "ticker": "KXNASCARTOP10-HOLC26-RYPR",
-      "volume": 703,
+      "volume": 719,
       "volume_24h": 66,
       "yes_ask": 30,
       "yes_bid": 24
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-27T12:50:21.119644+00:00",
+  "scraped_at": "2026-09-27T12:55:18.486555+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top10"
 }
