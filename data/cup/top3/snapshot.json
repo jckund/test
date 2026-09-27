@@ -24,15 +24,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-HOLC26-ALBO": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Alex Bowman",
       "no_ask": 97,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ALBO",
-      "volume": 0,
+      "volume": 188,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 3
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 68,
-      "no_bid": 64,
-      "open_interest": 1034,
+      "no_bid": 63,
+      "open_interest": 1059,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
-      "volume": 1034,
+      "volume": 1060,
       "volume_24h": 253,
-      "yes_ask": 36,
+      "yes_ask": 37,
       "yes_bid": 32
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
@@ -462,13 +462,13 @@
       "liquidity": 0.0,
       "name": "Ty Gibbs",
       "no_ask": 81,
-      "no_bid": 79,
+      "no_bid": 80,
       "open_interest": 1707,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYGI",
       "volume": 1707,
       "volume_24h": 1008,
-      "yes_ask": 21,
+      "yes_ask": 20,
       "yes_bid": 19
     },
     "KXNASCARTOP3-HOLC26-TYRE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T05:15:20.946356+00:00",
+  "scraped_at": "2026-09-27T05:20:19.085866+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
