@@ -97,15 +97,15 @@
       "last_price": 15,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 89,
-      "no_bid": 85,
+      "no_ask": 87,
+      "no_bid": 86,
       "open_interest": 243,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-BUWA",
       "volume": 255,
       "volume_24h": 127,
-      "yes_ask": 15,
-      "yes_bid": 11
+      "yes_ask": 14,
+      "yes_bid": 13
     },
     "KXNASCARTOP3-HOLC26-CAHO": {
       "last_price": 14,
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 68,
-      "no_bid": 62,
+      "no_bid": 65,
       "open_interest": 1059,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
       "volume": 1060,
       "volume_24h": 279,
-      "yes_ask": 38,
+      "yes_ask": 35,
       "yes_bid": 32
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHEL",
       "volume": 10,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 17,
       "yes_bid": 12
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ROCH",
       "volume": 393,
-      "volume_24h": 193,
+      "volume_24h": 170,
       "yes_ask": 10,
       "yes_bid": 2
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T06:00:23.934015+00:00",
+  "scraped_at": "2026-09-27T06:05:18.013386+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
