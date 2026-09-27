@@ -112,13 +112,13 @@
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 92,
-      "no_bid": 86,
+      "no_bid": 87,
       "open_interest": 112,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CAHO",
       "volume": 112,
       "volume_24h": 40,
-      "yes_ask": 14,
+      "yes_ask": 13,
       "yes_bid": 8
     },
     "KXNASCARTOP3-HOLC26-CHBE": {
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 68,
-      "no_bid": 63,
+      "no_bid": 64,
       "open_interest": 1034,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
       "volume": 1034,
       "volume_24h": 253,
-      "yes_ask": 37,
+      "yes_ask": 36,
       "yes_bid": 32
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
@@ -168,13 +168,13 @@
       "liquidity": 0.0,
       "name": "Chase Elliott",
       "no_ask": 88,
-      "no_bid": 83,
+      "no_bid": 82,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHEL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 17,
+      "yes_ask": 18,
       "yes_bid": 12
     },
     "KXNASCARTOP3-HOLC26-COCU": {
@@ -262,16 +262,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-HOLC26-JOBE": {
-      "last_price": 0,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 99,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 299,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOBE",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 299,
+      "volume_24h": 299,
       "yes_ask": 5,
       "yes_bid": 1
     },
@@ -377,15 +377,15 @@
       "last_price": 8,
       "liquidity": 0.0,
       "name": "Ross Chastain",
-      "no_ask": 95,
-      "no_bid": 92,
+      "no_ask": 98,
+      "no_bid": 91,
       "open_interest": 393,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ROCH",
       "volume": 393,
       "volume_24h": 193,
-      "yes_ask": 8,
-      "yes_bid": 5
+      "yes_ask": 9,
+      "yes_bid": 2
     },
     "KXNASCARTOP3-HOLC26-RYBL": {
       "last_price": 19,
@@ -477,11 +477,11 @@
       "name": "Tyler Reddick",
       "no_ask": 77,
       "no_bid": 72,
-      "open_interest": 1158,
+      "open_interest": 1209,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYRE",
-      "volume": 1363,
-      "volume_24h": 210,
+      "volume": 1414,
+      "volume_24h": 261,
       "yes_ask": 28,
       "yes_bid": 23
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T03:10:25.632645+00:00",
+  "scraped_at": "2026-09-27T03:21:43.603069+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
