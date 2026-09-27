@@ -83,29 +83,29 @@
       "last_price": 16,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 90,
+      "no_ask": 91,
       "no_bid": 84,
       "open_interest": 59,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BRKE",
       "volume": 59,
-      "volume_24h": 0,
+      "volume_24h": 59,
       "yes_ask": 16,
-      "yes_bid": 10
+      "yes_bid": 9
     },
     "KXNASCARTOP5-HOLC26-BUWA": {
-      "last_price": 26,
+      "last_price": 28,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 81,
-      "no_bid": 74,
-      "open_interest": 1044,
+      "no_ask": 80,
+      "no_bid": 71,
+      "open_interest": 1079,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BUWA",
-      "volume": 1044,
+      "volume": 1079,
       "volume_24h": 352,
-      "yes_ask": 26,
-      "yes_bid": 19
+      "yes_ask": 29,
+      "yes_bid": 20
     },
     "KXNASCARTOP5-HOLC26-CAHO": {
       "last_price": 24,
@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 75,
-      "no_bid": 72,
+      "no_bid": 71,
       "open_interest": 2940,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
       "volume": 3190,
       "volume_24h": 1685,
-      "yes_ask": 28,
+      "yes_ask": 29,
       "yes_bid": 25
     },
     "KXNASCARTOP5-HOLC26-CHBU": {
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-TYGI",
       "volume": 1689,
-      "volume_24h": 420,
+      "volume_24h": 435,
       "yes_ask": 32,
       "yes_bid": 25
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T05:20:19.521127+00:00",
+  "scraped_at": "2026-09-27T05:25:17.306834+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }

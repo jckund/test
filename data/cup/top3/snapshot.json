@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ALBO",
       "volume": 188,
-      "volume_24h": 0,
+      "volume_24h": 188,
       "yes_ask": 5,
       "yes_bid": 3
     },
@@ -126,13 +126,13 @@
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 68,
-      "no_bid": 63,
+      "no_bid": 65,
       "open_interest": 1059,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
       "volume": 1060,
-      "volume_24h": 253,
-      "yes_ask": 37,
+      "volume_24h": 279,
+      "yes_ask": 35,
       "yes_bid": 32
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T05:20:19.085866+00:00",
+  "scraped_at": "2026-09-27T05:25:16.719481+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
