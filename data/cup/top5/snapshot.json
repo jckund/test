@@ -111,15 +111,15 @@
       "last_price": 21,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 83,
+      "no_ask": 82,
       "no_bid": 79,
       "open_interest": 443,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CAHO",
       "volume": 443,
-      "volume_24h": 292,
+      "volume_24h": 296,
       "yes_ask": 21,
-      "yes_bid": 17
+      "yes_bid": 18
     },
     "KXNASCARTOP5-HOLC26-CHBE": {
       "last_price": 53,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
       "volume": 3190,
-      "volume_24h": 1635,
+      "volume_24h": 1463,
       "yes_ask": 29,
       "yes_bid": 25
     },
@@ -220,15 +220,15 @@
       "yes_bid": 4
     },
     "KXNASCARTOP5-HOLC26-DASU": {
-      "last_price": 0,
+      "last_price": 11,
       "liquidity": 0.0,
       "name": "Daniel Su\u00e1rez",
       "no_ask": 95,
       "no_bid": 89,
-      "open_interest": 0,
+      "open_interest": 9,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-DASU",
-      "volume": 0,
+      "volume": 9,
       "volume_24h": 0,
       "yes_ask": 11,
       "yes_bid": 5
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-ROCH",
       "volume": 244,
-      "volume_24h": 36,
+      "volume_24h": 44,
       "yes_ask": 13,
       "yes_bid": 9
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-TYRE",
       "volume": 902,
-      "volume_24h": 291,
+      "volume_24h": 261,
       "yes_ask": 42,
       "yes_bid": 36
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T12:20:18.690323+00:00",
+  "scraped_at": "2026-09-27T12:25:16.576213+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
