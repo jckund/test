@@ -103,50 +103,50 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-BUWA",
       "volume": 598,
-      "volume_24h": 369,
+      "volume_24h": 375,
       "yes_ask": 16,
       "yes_bid": 14
     },
     "KXNASCARTOP3-HOLC26-CAHO": {
-      "last_price": 16,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 92,
-      "no_bid": 82,
-      "open_interest": 323,
+      "no_bid": 85,
+      "open_interest": 349,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CAHO",
-      "volume": 323,
-      "volume_24h": 167,
-      "yes_ask": 18,
+      "volume": 349,
+      "volume_24h": 244,
+      "yes_ask": 15,
       "yes_bid": 8
     },
     "KXNASCARTOP3-HOLC26-CHBE": {
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 73,
-      "no_bid": 66,
+      "no_ask": 79,
+      "no_bid": 63,
       "open_interest": 2085,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
       "volume": 2192,
-      "volume_24h": 1307,
-      "yes_ask": 34,
-      "yes_bid": 27
+      "volume_24h": 1315,
+      "yes_ask": 37,
+      "yes_bid": 21
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
       "last_price": 20,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 81,
-      "no_bid": 79,
+      "no_bid": 78,
       "open_interest": 964,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBR",
       "volume": 981,
-      "volume_24h": 202,
-      "yes_ask": 21,
+      "volume_24h": 500,
+      "yes_ask": 22,
       "yes_bid": 19
     },
     "KXNASCARTOP3-HOLC26-CHBU": {
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-DEHA",
       "volume": 3647,
-      "volume_24h": 1343,
+      "volume_24h": 1345,
       "yes_ask": 48,
       "yes_bid": 44
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
       "volume": 501,
-      "volume_24h": 352,
+      "volume_24h": 382,
       "yes_ask": 18,
       "yes_bid": 11
     },
@@ -309,11 +309,11 @@
       "name": "Kyle Larson",
       "no_ask": 65,
       "no_bid": 63,
-      "open_interest": 1065,
+      "open_interest": 1066,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-KYLA",
-      "volume": 1334,
-      "volume_24h": 1047,
+      "volume": 1335,
+      "volume_24h": 1065,
       "yes_ask": 37,
       "yes_bid": 35
     },
@@ -378,13 +378,13 @@
       "liquidity": 0.0,
       "name": "Ross Chastain",
       "no_ask": 98,
-      "no_bid": 90,
+      "no_bid": 92,
       "open_interest": 472,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-ROCH",
       "volume": 487,
       "volume_24h": 264,
-      "yes_ask": 10,
+      "yes_ask": 8,
       "yes_bid": 2
     },
     "KXNASCARTOP3-HOLC26-RYBL": {
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-RYBL",
       "volume": 160,
-      "volume_24h": 80,
+      "volume_24h": 125,
       "yes_ask": 17,
       "yes_bid": 14
     },
@@ -458,18 +458,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-HOLC26-TYGI": {
-      "last_price": 20,
+      "last_price": 22,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 80,
-      "no_bid": 78,
-      "open_interest": 2096,
+      "no_ask": 78,
+      "no_bid": 77,
+      "open_interest": 2213,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYGI",
-      "volume": 2096,
-      "volume_24h": 1194,
-      "yes_ask": 22,
-      "yes_bid": 20
+      "volume": 2213,
+      "volume_24h": 1197,
+      "yes_ask": 23,
+      "yes_bid": 22
     },
     "KXNASCARTOP3-HOLC26-TYRE": {
       "last_price": 31,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-TYRE",
       "volume": 2728,
-      "volume_24h": 1572,
+      "volume_24h": 1575,
       "yes_ask": 31,
       "yes_bid": 27
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T18:20:57.819732+00:00",
+  "scraped_at": "2026-09-27T18:25:18.867444+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
