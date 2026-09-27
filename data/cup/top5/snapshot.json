@@ -98,13 +98,13 @@
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 79,
-      "no_bid": 70,
+      "no_bid": 71,
       "open_interest": 1271,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BUWA",
       "volume": 1271,
       "volume_24h": 579,
-      "yes_ask": 30,
+      "yes_ask": 29,
       "yes_bid": 21
     },
     "KXNASCARTOP5-HOLC26-CAHO": {
@@ -116,7 +116,7 @@
       "open_interest": 473,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CAHO",
-      "volume": 478,
+      "volume": 481,
       "volume_24h": 322,
       "yes_ask": 21,
       "yes_bid": 20
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 50,
       "no_bid": 47,
-      "open_interest": 2378,
+      "open_interest": 2424,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBE",
-      "volume": 2378,
+      "volume": 2424,
       "volume_24h": 1259,
       "yes_ask": 53,
       "yes_bid": 50
@@ -141,10 +141,10 @@
       "name": "Chase Briscoe",
       "no_ask": 75,
       "no_bid": 65,
-      "open_interest": 3385,
+      "open_interest": 3413,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
-      "volume": 3969,
+      "volume": 4183,
       "volume_24h": 2031,
       "yes_ask": 35,
       "yes_bid": 25
@@ -388,15 +388,15 @@
       "yes_bid": 9
     },
     "KXNASCARTOP5-HOLC26-RYBL": {
-      "last_price": 32,
+      "last_price": 33,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 77,
       "no_bid": 68,
-      "open_interest": 282,
+      "open_interest": 292,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-RYBL",
-      "volume": 417,
+      "volume": 432,
       "volume_24h": 272,
       "yes_ask": 32,
       "yes_bid": 23
@@ -461,7 +461,7 @@
       "last_price": 38,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 69,
+      "no_ask": 64,
       "no_bid": 62,
       "open_interest": 1697,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 1803,
       "volume_24h": 548,
       "yes_ask": 38,
-      "yes_bid": 31
+      "yes_bid": 36
     },
     "KXNASCARTOP5-HOLC26-TYRE": {
       "last_price": 46,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T16:15:20.517681+00:00",
+  "scraped_at": "2026-09-27T16:20:20.166819+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
