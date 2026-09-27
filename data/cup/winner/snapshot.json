@@ -94,15 +94,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-HOLC26-BUWA": {
-      "last_price": 5,
+      "last_price": 4,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 46385,
+      "open_interest": 46478,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-BUWA",
-      "volume": 50939,
+      "volume": 51034,
       "volume_24h": 15760,
       "yes_ask": 5,
       "yes_bid": 4
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 64951,
+      "open_interest": 64970,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-CAHO",
-      "volume": 74248,
+      "volume": 74267,
       "volume_24h": 43389,
       "yes_ask": 5,
       "yes_bid": 4
@@ -239,10 +239,10 @@
       "name": "Denny Hamlin",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 64203,
+      "open_interest": 64267,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-DEHA",
-      "volume": 65473,
+      "volume": 65537,
       "volume_24h": 35354,
       "yes_ask": 18,
       "yes_bid": 17
@@ -276,17 +276,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-HOLC26-JOLO": {
-      "last_price": 5,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 96,
-      "no_bid": 95,
-      "open_interest": 63463,
+      "no_bid": 94,
+      "open_interest": 63546,
       "status": "active",
       "ticker": "KXNASCARRACE-HOLC26-JOLO",
-      "volume": 64414,
+      "volume": 64497,
       "volume_24h": 32126,
-      "yes_ask": 5,
+      "yes_ask": 6,
       "yes_bid": 4
     },
     "KXNASCARRACE-HOLC26-JONE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-27T03:35:18.407324+00:00",
+  "scraped_at": "2026-09-27T03:40:20.011598+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "winner"
 }
