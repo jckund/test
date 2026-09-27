@@ -38,18 +38,18 @@
       "yes_bid": 9
     },
     "KXNASCARTOP5-HOLC26-AUCI": {
-      "last_price": 0,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Austin Cindric",
-      "no_ask": 95,
-      "no_bid": 87,
-      "open_interest": 0,
+      "no_ask": 87,
+      "no_bid": 86,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-AUCI",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 13,
-      "yes_bid": 5
+      "yes_ask": 14,
+      "yes_bid": 13
     },
     "KXNASCARTOP5-HOLC26-AUDI": {
       "last_price": 0,
@@ -94,31 +94,31 @@
       "yes_bid": 9
     },
     "KXNASCARTOP5-HOLC26-BUWA": {
-      "last_price": 29,
+      "last_price": 28,
       "liquidity": 0.0,
       "name": "Bubba Wallace",
-      "no_ask": 80,
-      "no_bid": 72,
-      "open_interest": 1111,
+      "no_ask": 78,
+      "no_bid": 73,
+      "open_interest": 1196,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-BUWA",
-      "volume": 1111,
+      "volume": 1196,
       "volume_24h": 419,
-      "yes_ask": 28,
-      "yes_bid": 20
+      "yes_ask": 27,
+      "yes_bid": 22
     },
     "KXNASCARTOP5-HOLC26-CAHO": {
       "last_price": 24,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
       "no_ask": 80,
-      "no_bid": 75,
+      "no_bid": 79,
       "open_interest": 464,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CAHO",
       "volume": 464,
       "volume_24h": 317,
-      "yes_ask": 25,
+      "yes_ask": 21,
       "yes_bid": 20
     },
     "KXNASCARTOP5-HOLC26-CHBE": {
@@ -136,7 +136,7 @@
       "yes_bid": 50
     },
     "KXNASCARTOP5-HOLC26-CHBR": {
-      "last_price": 36,
+      "last_price": 35,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 73,
@@ -144,7 +144,7 @@
       "open_interest": 3099,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
-      "volume": 3681,
+      "volume": 3683,
       "volume_24h": 1903,
       "yes_ask": 34,
       "yes_bid": 27
@@ -405,7 +405,7 @@
       "last_price": 0,
       "liquidity": 0.0,
       "name": "Ryan Preece",
-      "no_ask": 92,
+      "no_ask": 89,
       "no_bid": 88,
       "open_interest": 0,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 12,
-      "yes_bid": 8
+      "yes_bid": 11
     },
     "KXNASCARTOP5-HOLC26-SHVA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T14:05:18.572598+00:00",
+  "scraped_at": "2026-09-27T14:10:20.069111+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
