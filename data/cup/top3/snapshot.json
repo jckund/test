@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-AUCI",
       "volume": 540,
-      "volume_24h": 465,
+      "volume_24h": 540,
       "yes_ask": 34,
       "yes_bid": 2
     },
@@ -111,15 +111,15 @@
       "last_price": 22,
       "liquidity": 0.0,
       "name": "Carson Hocevar",
-      "no_ask": 87,
-      "no_bid": 78,
-      "open_interest": 494,
+      "no_ask": 92,
+      "no_bid": 61,
+      "open_interest": 602,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CAHO",
-      "volume": 494,
-      "volume_24h": 404,
-      "yes_ask": 22,
-      "yes_bid": 13
+      "volume": 602,
+      "volume_24h": 523,
+      "yes_ask": 39,
+      "yes_bid": 8
     },
     "KXNASCARTOP3-HOLC26-CHBE": {
       "last_price": 49,
@@ -127,26 +127,26 @@
       "name": "Christopher Bell",
       "no_ask": 79,
       "no_bid": 51,
-      "open_interest": 2541,
+      "open_interest": 2550,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBE",
-      "volume": 2747,
+      "volume": 2757,
       "volume_24h": 1868,
       "yes_ask": 49,
       "yes_bid": 21
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
-      "last_price": 22,
+      "last_price": 24,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 84,
-      "no_bid": 77,
-      "open_interest": 1153,
+      "no_bid": 75,
+      "open_interest": 1202,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBR",
-      "volume": 1183,
-      "volume_24h": 702,
-      "yes_ask": 23,
+      "volume": 1232,
+      "volume_24h": 751,
+      "yes_ask": 25,
       "yes_bid": 16
     },
     "KXNASCARTOP3-HOLC26-CHBU": {
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-DEHA",
       "volume": 4234,
-      "volume_24h": 1741,
+      "volume_24h": 1932,
       "yes_ask": 60,
       "yes_bid": 27
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-KYLA",
       "volume": 1611,
-      "volume_24h": 1290,
+      "volume_24h": 1342,
       "yes_ask": 50,
       "yes_bid": 39
     },
@@ -489,15 +489,15 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "William Byron",
-      "no_ask": 82,
+      "no_ask": 83,
       "no_bid": 74,
       "open_interest": 1729,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-WIBY",
       "volume": 1729,
-      "volume_24h": 1721,
+      "volume_24h": 1729,
       "yes_ask": 26,
-      "yes_bid": 18
+      "yes_bid": 17
     },
     "KXNASCARTOP3-HOLC26-ZASM": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T20:20:18.812175+00:00",
+  "scraped_at": "2026-09-27T20:25:18.434330+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
