@@ -140,13 +140,13 @@
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 75,
-      "no_bid": 71,
+      "no_bid": 72,
       "open_interest": 2940,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHBR",
       "volume": 3190,
       "volume_24h": 1685,
-      "yes_ask": 29,
+      "yes_ask": 28,
       "yes_bid": 25
     },
     "KXNASCARTOP5-HOLC26-CHBU": {
@@ -169,10 +169,10 @@
       "name": "Chase Elliott",
       "no_ask": 72,
       "no_bid": 70,
-      "open_interest": 833,
+      "open_interest": 836,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-CHEL",
-      "volume": 901,
+      "volume": 904,
       "volume_24h": 865,
       "yes_ask": 30,
       "yes_bid": 28
@@ -461,15 +461,15 @@
       "last_price": 26,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 77,
-      "no_bid": 74,
-      "open_interest": 1374,
+      "no_ask": 75,
+      "no_bid": 68,
+      "open_interest": 1574,
       "status": "active",
       "ticker": "KXNASCARTOP5-HOLC26-TYGI",
-      "volume": 1474,
+      "volume": 1674,
       "volume_24h": 220,
-      "yes_ask": 26,
-      "yes_bid": 23
+      "yes_ask": 32,
+      "yes_bid": 25
     },
     "KXNASCARTOP5-HOLC26-TYRE": {
       "last_price": 40,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-27T04:50:17.801891+00:00",
+  "scraped_at": "2026-09-27T04:55:16.643982+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top5"
 }
