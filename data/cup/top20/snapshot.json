@@ -10,7 +10,7 @@
   "market_count": 36,
   "markets": {
     "KXNASCARTOP20-HOLC26-AJAL": {
-      "last_price": 41,
+      "last_price": 42,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 82,
@@ -18,7 +18,7 @@
       "open_interest": 66,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-AJAL",
-      "volume": 96,
+      "volume": 103,
       "volume_24h": 65,
       "yes_ask": 81,
       "yes_bid": 18
@@ -182,13 +182,13 @@
       "liquidity": 0.0,
       "name": "Cole Custer",
       "no_ask": 82,
-      "no_bid": 3,
+      "no_bid": 1,
       "open_interest": 12,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-COCU",
       "volume": 18,
       "volume_24h": 17,
-      "yes_ask": 97,
+      "yes_ask": 99,
       "yes_bid": 18
     },
     "KXNASCARTOP20-HOLC26-COWA": {
@@ -234,15 +234,15 @@
       "yes_bid": 27
     },
     "KXNASCARTOP20-HOLC26-DEHA": {
-      "last_price": 92,
+      "last_price": 93,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 43,
       "no_bid": 1,
-      "open_interest": 7,
+      "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-DEHA",
-      "volume": 7,
+      "volume": 10,
       "volume_24h": 2,
       "yes_ask": 99,
       "yes_bid": 57
@@ -262,7 +262,7 @@
       "yes_bid": 26
     },
     "KXNASCARTOP20-HOLC26-JOBE": {
-      "last_price": 16,
+      "last_price": 49,
       "liquidity": 0.0,
       "name": "Josh Berry",
       "no_ask": 84,
@@ -270,21 +270,21 @@
       "open_interest": 294,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-JOBE",
-      "volume": 307,
+      "volume": 466,
       "volume_24h": 237,
       "yes_ask": 98,
       "yes_bid": 16
     },
     "KXNASCARTOP20-HOLC26-JOLO": {
-      "last_price": 69,
+      "last_price": 74,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 44,
       "no_bid": 10,
-      "open_interest": 51,
+      "open_interest": 52,
       "status": "active",
       "ticker": "KXNASCARTOP20-HOLC26-JOLO",
-      "volume": 346,
+      "volume": 347,
       "volume_24h": 339,
       "yes_ask": 90,
       "yes_bid": 56
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-09-27T20:35:17.696977+00:00",
+  "scraped_at": "2026-09-27T20:40:19.836425+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top20"
 }
