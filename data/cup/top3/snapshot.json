@@ -125,7 +125,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 71,
+      "no_ask": 73,
       "no_bid": 68,
       "open_interest": 1071,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 1088,
       "volume_24h": 307,
       "yes_ask": 32,
-      "yes_bid": 29
+      "yes_bid": 27
     },
     "KXNASCARTOP3-HOLC26-CHBR": {
       "last_price": 18,
@@ -150,15 +150,15 @@
       "yes_bid": 14
     },
     "KXNASCARTOP3-HOLC26-CHBU": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Chris Buescher",
       "no_ask": 95,
       "no_bid": 91,
-      "open_interest": 0,
+      "open_interest": 27,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-CHBU",
-      "volume": 0,
+      "volume": 27,
       "volume_24h": 0,
       "yes_ask": 9,
       "yes_bid": 5
@@ -276,15 +276,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-HOLC26-JOLO": {
-      "last_price": 16,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 90,
       "no_bid": 85,
-      "open_interest": 163,
+      "open_interest": 180,
       "status": "active",
       "ticker": "KXNASCARTOP3-HOLC26-JOLO",
-      "volume": 168,
+      "volume": 186,
       "volume_24h": 49,
       "yes_ask": 15,
       "yes_bid": 10
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-09-27T12:35:15.389826+00:00",
+  "scraped_at": "2026-09-27T12:40:17.326758+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-holc26",
   "tier": "top3"
 }
