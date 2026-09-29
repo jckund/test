@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-AUCI",
       "volume": 13792,
-      "volume_24h": 13792,
+      "volume_24h": 13721,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -122,7 +122,7 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-SOUP26-CHBE": {
-      "last_price": 14,
+      "last_price": 9,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 91,
@@ -130,7 +130,7 @@
       "open_interest": 3976,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CHBE",
-      "volume": 4009,
+      "volume": 4012,
       "volume_24h": 4009,
       "yes_ask": 13,
       "yes_bid": 9
@@ -238,13 +238,13 @@
       "liquidity": 0.0,
       "name": "Denny Hamlin",
       "no_ask": 84,
-      "no_bid": 82,
+      "no_bid": 83,
       "open_interest": 4486,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DEHA",
       "volume": 4492,
       "volume_24h": 4397,
-      "yes_ask": 18,
+      "yes_ask": 17,
       "yes_bid": 16
     },
     "KXNASCARRACE-SOUP26-ERJO": {
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-ERJO",
       "volume": 469,
-      "volume_24h": 469,
+      "volume_24h": 1,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -271,12 +271,12 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-JOBE",
       "volume": 8396,
-      "volume_24h": 8396,
+      "volume_24h": 7087,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-SOUP26-JOLO": {
-      "last_price": 6,
+      "last_price": 5,
       "liquidity": 0.0,
       "name": "Joey Logano",
       "no_ask": 95,
@@ -284,7 +284,7 @@
       "open_interest": 1696,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-JOLO",
-      "volume": 1696,
+      "volume": 1699,
       "volume_24h": 1696,
       "yes_ask": 6,
       "yes_bid": 5
@@ -304,7 +304,7 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-SOUP26-KYLA": {
-      "last_price": 19,
+      "last_price": 18,
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 82,
@@ -312,8 +312,8 @@
       "open_interest": 5951,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-KYLA",
-      "volume": 5957,
-      "volume_24h": 5832,
+      "volume": 5960,
+      "volume_24h": 5957,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -388,15 +388,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-SOUP26-RYBL": {
-      "last_price": 5,
+      "last_price": 6,
       "liquidity": 0.0,
       "name": "Ryan Blaney",
       "no_ask": 96,
       "no_bid": 94,
-      "open_interest": 1375,
+      "open_interest": 1570,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-RYBL",
-      "volume": 1375,
+      "volume": 1570,
       "volume_24h": 1375,
       "yes_ask": 6,
       "yes_bid": 4
@@ -472,15 +472,15 @@
       "yes_bid": 5
     },
     "KXNASCARRACE-SOUP26-TYRE": {
-      "last_price": 9,
+      "last_price": 8,
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 3295,
+      "open_interest": 3298,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-TYRE",
-      "volume": 3296,
+      "volume": 3299,
       "volume_24h": 3296,
       "yes_ask": 9,
       "yes_bid": 8
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-29T21:50:19.186815+00:00",
+  "scraped_at": "2026-09-29T22:10:21.356639+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
