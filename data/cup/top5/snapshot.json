@@ -307,15 +307,15 @@
       "last_price": 49,
       "liquidity": 0.0,
       "name": "Kyle Larson",
-      "no_ask": 62,
+      "no_ask": 63,
       "no_bid": 45,
       "open_interest": 142,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-KYLA",
       "volume": 142,
-      "volume_24h": 142,
+      "volume_24h": 0,
       "yes_ask": 55,
-      "yes_bid": 38
+      "yes_bid": 37
     },
     "KXNASCARTOP5-SOUP26-MIMC": {
       "last_price": 0,
@@ -476,13 +476,13 @@
       "liquidity": 0.0,
       "name": "Tyler Reddick",
       "no_ask": 73,
-      "no_bid": 54,
+      "no_bid": 55,
       "open_interest": 116,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-TYRE",
       "volume": 116,
       "volume_24h": 116,
-      "yes_ask": 46,
+      "yes_ask": 45,
       "yes_bid": 27
     },
     "KXNASCARTOP5-SOUP26-WIBY": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-09-29T22:00:24.178332+00:00",
+  "scraped_at": "2026-09-29T22:05:18.501612+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top5"
 }

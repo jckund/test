@@ -139,15 +139,15 @@
       "last_price": 57,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
-      "no_ask": 49,
-      "no_bid": 37,
+      "no_ask": 47,
+      "no_bid": 39,
       "open_interest": 456,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBR",
       "volume": 456,
       "volume_24h": 456,
-      "yes_ask": 63,
-      "yes_bid": 51
+      "yes_ask": 61,
+      "yes_bid": 53
     },
     "KXNASCARTOP10-SOUP26-CHBU": {
       "last_price": 0,
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHEL",
       "volume": 126,
-      "volume_24h": 126,
+      "volume_24h": 0,
       "yes_ask": 55,
       "yes_bid": 44
     },
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 99,
-      "no_bid": 40,
+      "no_bid": 39,
       "open_interest": 124,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-KYLA",
       "volume": 124,
-      "volume_24h": 124,
-      "yes_ask": 60,
+      "volume_24h": 0,
+      "yes_ask": 61,
       "yes_bid": 1
     },
     "KXNASCARTOP10-SOUP26-MIMC": {
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-RYBL",
       "volume": 126,
-      "volume_24h": 126,
+      "volume_24h": 0,
       "yes_ask": 58,
       "yes_bid": 50
     },
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-TYDI",
       "volume": 30,
-      "volume_24h": 30,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-29T21:40:20.017355+00:00",
+  "scraped_at": "2026-09-29T22:05:19.016456+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
