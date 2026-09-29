@@ -41,15 +41,15 @@
       "last_price": 3,
       "liquidity": 0.0,
       "name": "Austin Hill",
-      "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 16,
+      "no_ask": 97,
+      "no_bid": 91,
+      "open_interest": 337,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-AUHI",
-      "volume": 16,
+      "volume": 337,
       "volume_24h": 16,
-      "yes_ask": 3,
-      "yes_bid": 2
+      "yes_ask": 9,
+      "yes_bid": 3
     },
     "KXNASCARRACE-FOCH100326-BLLO": {
       "last_price": 0,
@@ -125,15 +125,15 @@
       "last_price": 7,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
-      "no_ask": 96,
-      "no_bid": 90,
+      "no_ask": 95,
+      "no_bid": 91,
       "open_interest": 545,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CAKV",
       "volume": 545,
       "volume_24h": 545,
-      "yes_ask": 10,
-      "yes_bid": 4
+      "yes_ask": 9,
+      "yes_bid": 5
     },
     "KXNASCARRACE-FOCH100326-CODA": {
       "last_price": 3,
@@ -294,13 +294,13 @@
       "liquidity": 0.0,
       "name": "Justin Allgaier",
       "no_ask": 79,
-      "no_bid": 73,
+      "no_bid": 74,
       "open_interest": 636,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JUAL",
       "volume": 639,
       "volume_24h": 639,
-      "yes_ask": 27,
+      "yes_ask": 26,
       "yes_bid": 21
     },
     "KXNASCARRACE-FOCH100326-KYSI": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-29T21:42:55.336851+00:00",
+  "scraped_at": "2026-09-29T21:48:05.145884+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
