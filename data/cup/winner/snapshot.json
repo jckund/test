@@ -38,7 +38,7 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-SOUP26-AUCI": {
-      "last_price": 3,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Austin Cindric",
       "no_ask": 98,
@@ -46,7 +46,7 @@
       "open_interest": 13792,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-AUCI",
-      "volume": 13792,
+      "volume": 13863,
       "volume_24h": 13721,
       "yes_ask": 3,
       "yes_bid": 2
@@ -80,15 +80,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-SOUP26-BRKE": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 1000,
+      "open_interest": 1012,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-BRKE",
-      "volume": 1000,
+      "volume": 1012,
       "volume_24h": 1000,
       "yes_ask": 2,
       "yes_bid": 1
@@ -122,17 +122,17 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-SOUP26-CHBE": {
-      "last_price": 13,
+      "last_price": 14,
       "liquidity": 0.0,
       "name": "Christopher Bell",
       "no_ask": 91,
-      "no_bid": 90,
-      "open_interest": 4281,
+      "no_bid": 86,
+      "open_interest": 4340,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CHBE",
-      "volume": 4317,
+      "volume": 4375,
       "volume_24h": 4303,
-      "yes_ask": 10,
+      "yes_ask": 14,
       "yes_bid": 9
     },
     "KXNASCARRACE-SOUP26-CHBR": {
@@ -239,10 +239,10 @@
       "name": "Denny Hamlin",
       "no_ask": 84,
       "no_bid": 83,
-      "open_interest": 4750,
+      "open_interest": 4803,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DEHA",
-      "volume": 4756,
+      "volume": 4809,
       "volume_24h": 4490,
       "yes_ask": 17,
       "yes_bid": 16
@@ -308,13 +308,13 @@
       "liquidity": 0.0,
       "name": "Kyle Larson",
       "no_ask": 82,
-      "no_bid": 81,
-      "open_interest": 6055,
+      "no_bid": 80,
+      "open_interest": 6128,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-KYLA",
-      "volume": 6064,
+      "volume": 6137,
       "volume_24h": 5981,
-      "yes_ask": 19,
+      "yes_ask": 20,
       "yes_bid": 18
     },
     "KXNASCARRACE-SOUP26-MIMC": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-29T23:25:18.165838+00:00",
+  "scraped_at": "2026-09-29T23:30:22.081927+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
