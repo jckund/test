@@ -1,0 +1,33 @@
+{
+  "updated_at": "2026-09-29T15:36:56.069110+00:00",
+  "series": [
+    {
+      "key": "cup",
+      "label": "NASCAR",
+      "race_title": "South Point 400 ('26)",
+      "full": true,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-09-29T15:35:36.497969+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Focused Health 302 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-09-29T15:36:56.069090+00:00"
+    }
+  ]
+}
