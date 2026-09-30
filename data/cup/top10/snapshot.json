@@ -27,15 +27,15 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 69,
-      "no_bid": 63,
+      "no_ask": 71,
+      "no_bid": 62,
       "open_interest": 770,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ALBO",
       "volume": 770,
       "volume_24h": 770,
-      "yes_ask": 37,
-      "yes_bid": 31
+      "yes_ask": 38,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-SOUP26-AUCI": {
       "last_price": 32,
@@ -83,7 +83,7 @@
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 75,
+      "no_ask": 76,
       "no_bid": 67,
       "open_interest": 285,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 285,
       "volume_24h": 285,
       "yes_ask": 33,
-      "yes_bid": 25
+      "yes_bid": 24
     },
     "KXNASCARTOP10-SOUP26-BUWA": {
       "last_price": 51,
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-BUWA",
       "volume": 656,
-      "volume_24h": 598,
+      "volume_24h": 384,
       "yes_ask": 48,
       "yes_bid": 42
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-TYGI",
       "volume": 211,
-      "volume_24h": 211,
+      "volume_24h": 0,
       "yes_ask": 56,
       "yes_bid": 48
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-30T01:30:39.709503+00:00",
+  "scraped_at": "2026-09-30T01:35:32.072130+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
