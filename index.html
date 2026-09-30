@@ -447,6 +447,35 @@
       </section>
     </div>
 
+    <div id="cmp-kcon-panel" style="display:none">
+      <div class="cmp-note">
+        <b>Kalshi vs the sportsbook consensus</b> — the Kalshi vs SG view with the books' own
+        average in SG's place. Consensus is the plain <b>mean of every book's de-vigged
+        probability</b> for that driver (SG excluded — it's a model, and it has its own tab),
+        rescaled so the tier sums to its winner count. Each market is then priced buying Kalshi's
+        <b>Yes or No</b> at its ask <b>net of fees</b> against that consensus:
+        <b>EV = p·payout − (1−p)</b>. Positive means the book market as a whole rates that side
+        <b>cheap</b> on Kalshi; negative means rich. De-vigged, not raw, so the consensus is a fair
+        price rather than a shaded one. <b>Books</b> is how many books priced that driver — a 2-book
+        consensus is a much weaker read than a 5-book one, and drivers only one book lists are
+        dropped entirely.
+        <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
+      </div>
+      <div class="cmp-fresh" id="kcon-fresh"></div>
+      <section class="card">
+        <div class="card-head">
+          <h2>Kalshi vs Consensus — EV</h2>
+          <span class="count" id="kcon-count"></span>
+        </div>
+        <div class="scroll">
+          <table>
+            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th class="l">Side</th><th>Price ¢</th><th>Net ¢</th><th>Net odds</th><th>Consensus</th><th>Books</th><th>EV</th></tr></thead>
+            <tbody id="kcon-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
     <div id="cmp-bsg-panel" style="display:none">
       <div class="cmp-note">
         <b>The books vs the SG model</b> — the Kalshi vs SG view with the sportsbooks in Kalshi's
@@ -1004,6 +1033,12 @@ function cmpSubItems() {
   if (anyBookTier) items.push({ key: "ev", label: "Best EV" });
   const haveSG = BOOKDATA.sg && BOOKDATA.sg.tiers;
   if (anyBookTier && haveSG) items.push({ key: "ksg", label: "Kalshi vs SG" });
+  // Same view against the books' own average instead of the model. Needs at
+  // least CONSENSUS_MIN_BOOKS sportsbooks sharing one tier, so it hides itself
+  // early in a race week when only one board has been entered.
+  if (cmpTiersAvailable().some((t) => consensusFair(t.key))) {
+    items.push({ key: "kcon", label: "Kalshi vs Consensus" });
+  }
   // Same view with the sportsbooks in Kalshi's place: every book line vs SG fair.
   if (haveSG && cmpTiersAvailable().some((t) => booksForTier(t.key).some((bk) => !bk.model))) {
     items.push({ key: "bsg", label: "Books vs SG" });
@@ -1040,6 +1075,7 @@ function showCmpPanel(which) {
   $("cmp-move-panel").style.display = which === "move" ? "" : "none";
   $("cmp-ev-panel").style.display = which === "ev" ? "" : "none";
   $("cmp-ksg-panel").style.display = which === "ksg" ? "" : "none";
+  $("cmp-kcon-panel").style.display = which === "kcon" ? "" : "none";
   $("cmp-bsg-panel").style.display = which === "bsg" ? "" : "none";
 }
 
@@ -1049,6 +1085,7 @@ async function renderCmpSub() {
   if (cmpSub === "move") { showCmpPanel("move"); return loadMovement(); }
   if (cmpSub === "ev") { showCmpPanel("ev"); return loadBestEV(); }
   if (cmpSub === "ksg") { showCmpPanel("ksg"); return loadKalshiSG(); }
+  if (cmpSub === "kcon") { showCmpPanel("kcon"); return loadKalshiConsensus(); }
   if (cmpSub === "bsg") { showCmpPanel("bsg"); return loadBooksSG(); }
   showCmpPanel("driver");
   compareTier = cmpSub;
@@ -1199,6 +1236,126 @@ async function loadKalshiSG() {
     `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
   ).join("") : `<tr><td class="empty" colspan="9">No overlap between Kalshi and SG.</td></tr>`;
   $("ksg-count").textContent = out.length ? out.length + " lines" : "";
+}
+
+// --------------------------------------------------------------------------
+// Sportsbook consensus: the books' own average, used the way SG's model is
+// used in the Kalshi vs SG view.
+//
+// A driver needs at least this many books before his average counts as a
+// "consensus" at all. One book is not a consensus, it is that book.
+const CONSENSUS_MIN_BOOKS = 2;
+
+// Mean de-vigged probability per driver across the sportsbooks carrying a tier,
+// rescaled so the tier sums to its winner count. Returns null when fewer than
+// CONSENSUS_MIN_BOOKS books carry the tier.
+//
+// Three decisions worth stating, because each one silently ruins the EV column
+// if made the other way:
+//
+//   novig, not implied. A book's `implied` still carries its vig, so a winner
+//   tier of raw implieds sums to ~1.15 winners rather than 1. Averaging those
+//   would make every consensus number systematically rich and push the entire
+//   EV column negative — the view would look like Kalshi is never worth buying,
+//   which is an artifact of the vig, not a read on the market. `novig` is each
+//   book's own fair price, which is what "consensus fair" has to mean.
+//
+//   Sportsbooks only. SG is a model, not a book, and it already anchors two
+//   tabs of its own. Folding it in would make this a blend of two different
+//   kinds of estimate and double-count SG's opinion in a view whose entire
+//   point is "what do the books, collectively, think".
+//
+//   Renormalize after averaging, not before. Books cover different subsets of
+//   the field: a book that skips the longshots has to put that probability
+//   somewhere, so the drivers it DOES price carry slightly more than their
+//   share. Averaging per driver therefore does not land on n_winners. Rescaling
+//   at the end puts consensus on the same footing as Kalshi and SG, so the EV
+//   numbers are comparable across the three tabs.
+function consensusFair(tierKey) {
+  const books = booksForTier(tierKey).filter((bk) => !bk.model);
+  if (books.length < CONSENSUS_MIN_BOOKS) return null;
+  const acc = {};   // normName -> { name, sum, books: [label] }
+  let winners = 0;
+  for (const bk of books) {
+    const t = BOOKDATA[bk.key].tiers[tierKey];
+    if (typeof t.number_of_winners === "number") winners = Math.max(winners, t.number_of_winners);
+    for (const d of t.drivers || []) {
+      if (typeof d.novig !== "number" || !(d.novig > 0)) continue;
+      const k = normName(d.name);
+      if (!k) continue;
+      if (!acc[k]) acc[k] = { name: d.name, sum: 0, books: [] };
+      acc[k].sum += d.novig;
+      acc[k].books.push(bk.label);
+    }
+  }
+  const keys = Object.keys(acc);
+  if (!keys.length) return null;
+  // Mean over the books that priced HIM, not over every book in the tier: a
+  // book that never listed a driver has no opinion on him, and treating that
+  // silence as a zero would bury every part-time entry.
+  let total = 0;
+  for (const k of keys) { acc[k].p = acc[k].sum / acc[k].books.length; total += acc[k].p; }
+  const scale = (winners > 0 && total > 0) ? winners / total : 1;
+  const out = {};
+  for (const k of keys) {
+    if (acc[k].books.length < CONSENSUS_MIN_BOOKS) continue;   // not a consensus
+    out[k] = { name: acc[k].name, p: acc[k].p * scale, n: acc[k].books.length, books: acc[k].books };
+  }
+  return Object.keys(out).length ? out : null;
+}
+
+// Kalshi vs the sportsbook consensus, ranked by edge. Identical pricing to
+// loadKalshiSG — buy Kalshi's Yes or No at its ask, fee-inclusive — with the
+// books' average standing in for SG's model probability.
+async function loadKalshiConsensus() {
+  const rows = $("kcon-rows"), fresh = $("kcon-fresh");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  $("updated").textContent = "Kalshi vs Consensus";
+  const tiers = cmpTiersAvailable();
+  const out = [];
+  const bookSet = new Set();
+  for (const t of tiers) {
+    const cons = consensusFair(t.key);
+    if (!cons) continue;
+    let snap; try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
+    for (const m of Object.values(snap.markets || {})) {
+      const cd = cons[normName(m.name)];
+      if (!cd || !(cd.p > 0) || cd.p >= 1) continue;
+      for (const l of cd.books) bookSet.add(l);
+      const p = cd.p;                     // consensus fair prob for Yes
+      // Both sides, same reasoning as the SG view: when the books rate a driver
+      // well below Kalshi the edge is on laying him, which a Yes-only view
+      // structurally cannot show.
+      for (const [side, cents, fair] of [["Yes", priceYes(m), p],
+                                         ["No", priceNo(m), 1 - p]]) {
+        if (typeof cents !== "number" || cents <= 0 || cents >= 100) continue;
+        const netC = netCost(cents);      // fee-inclusive cost, cents
+        const cost = netC / 100;
+        if (!(cost > 0) || cost >= 1) continue;
+        const ev = (fair / cost - 1) * 100;
+        out.push({ driver: m.name, tier: t.label, side, yes: cents, netC,
+                   fair, n: cd.n, books: cd.books, ev });
+      }
+    }
+  }
+  out.sort((a, b) => b.ev - a.ev);
+  const bookList = [...bookSet].sort().join(", ");
+  fresh.innerHTML = out.length
+    ? `Buying Kalshi <b>Yes or No</b> at its ask <b>net of fees</b>, priced against the de-vigged average of <b>${escapeHtml(bookList)}</b> · ${out.length} lines`
+    : "No tier has two sportsbooks overlapping Kalshi yet.";
+  rows.innerHTML = out.length ? out.map((r, i) =>
+    `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
+    `<td class="l driver">${escapeHtml(r.driver)}</td>` +
+    `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
+    `<td class="l"><span class="pill">${escapeHtml(r.side)}</span></td>` +
+    `<td class="num">${r.yes}¢</td>` +
+    `<td class="num">${r.netC.toFixed(2)}¢</td>` +
+    `<td class="num">${usOddsNet(r.yes)}</td>` +
+    `<td class="num">${(r.fair * 100).toFixed(1)}%</td>` +
+    `<td class="num" title="${escapeHtml(r.books.join(", "))}">${r.n}</td>` +
+    `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
+  ).join("") : `<tr><td class="empty" colspan="10">No tier has two sportsbooks overlapping Kalshi yet.</td></tr>`;
+  $("kcon-count").textContent = out.length ? out.length + " lines" : "";
 }
 
 // The same view with the sportsbooks in Kalshi's place: every book × driver
