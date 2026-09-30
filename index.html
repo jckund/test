@@ -410,7 +410,7 @@
       <div class="cmp-fresh" id="ev-fresh"></div>
       <section class="card">
         <div class="card-head">
-          <h2>Highest EV bets</h2>
+          <h2>Books vs Kalshi — EV</h2>
           <span class="count" id="ev-count"></span>
         </div>
         <div class="scroll">
@@ -1037,7 +1037,7 @@ function cmpSubItems() {
   const items = cmpTiersAvailable().map((t) => ({ key: t.key, label: t.label }));
   // Aggregate EV views spanning every available finish tier.
   const anyBookTier = cmpTiersAvailable().length > 0;
-  if (anyBookTier) items.push({ key: "ev", label: "Best EV" });
+  if (anyBookTier) items.push({ key: "ev", label: "Books vs Kalshi" });
   const haveSG = BOOKDATA.sg && BOOKDATA.sg.tiers;
   if (anyBookTier && haveSG) items.push({ key: "ksg", label: "Kalshi vs SG" });
   // Same view against the books' own average instead of the model. Needs at
@@ -1146,13 +1146,17 @@ async function loadMovement() {
   }).join("") : `<tr><td class="empty" colspan="4">No line moves since the previous refresh.</td></tr>`;
 }
 
-// Highest-EV book bets across every available finish tier, ranked. Same EV
-// convention as the per-tier compare (Kalshi worst-case no-side prob as truth);
-// model books (SG) are excluded because they aren't bettable.
+// "Books vs Kalshi": every book bet across every available finish tier, ranked
+// by EV. Same EV convention as the per-tier compare (Kalshi worst-case no-side
+// prob as truth); model books (SG) are excluded because they aren't bettable.
+//
+// The subtab key and the element ids stay "ev" from when this was labelled
+// "Best EV" — they are internal, and renaming them would churn the markup
+// without changing anything a user sees.
 async function loadBestEV() {
   const rows = $("ev-rows"), fresh = $("ev-fresh");
   rows.innerHTML = ""; fresh.textContent = "Loading…";
-  $("updated").textContent = "Highest EV bets";
+  $("updated").textContent = "Books vs Kalshi";
   const tiers = cmpTiersAvailable();
   const out = [];
   for (const t of tiers) {
