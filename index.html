@@ -450,15 +450,22 @@
     <div id="cmp-kcon-panel" style="display:none">
       <div class="cmp-note">
         <b>Kalshi vs the sportsbook consensus</b> — the Kalshi vs SG view with the books' own
-        average in SG's place. Consensus is the plain <b>mean of every book's de-vigged
-        probability</b> for that driver (SG excluded — it's a model, and it has its own tab),
-        rescaled so the tier sums to its winner count. Each market is then priced buying Kalshi's
-        <b>Yes or No</b> at its ask <b>net of fees</b> against that consensus:
-        <b>EV = p·payout − (1−p)</b>. Positive means the book market as a whole rates that side
-        <b>cheap</b> on Kalshi; negative means rich. De-vigged, not raw, so the consensus is a fair
-        price rather than a shaded one. <b>Books</b> is how many books priced that driver — a 2-book
-        consensus is a much weaker read than a 5-book one, and drivers only one book lists are
-        dropped entirely.
+        average in SG's place. Consensus is the plain <b>mean of every book's raw implied
+        probability</b> for that driver (SG excluded — it's a model, and it has its own tab).
+        Each market is then priced buying Kalshi's <b>Yes or No</b> at its ask <b>net of fees</b>
+        against that consensus: <b>EV = p·payout − (1−p)</b>.
+        <b>The vig is left in</b>, so this is what the books are <i>charging</i>, not what they
+        believe — the question it answers is "is Kalshi cheaper than actually betting the books",
+        not "is Kalshi mispriced versus the market's opinion".
+        <b>Read the two sides differently.</b> These tiers run <b>40–50% overround</b> (shown above
+        the table), which inflates every driver's probability by that margin. <b>Yes</b> is priced
+        against the inflated number so its EV is biased <b>high</b>; <b>No</b> is priced against
+        1−p, which the same inflation makes too small, so its EV is biased <b>low</b>. On the
+        current board that is 24% of Yes lines showing +EV versus 0% of No lines — an artifact of
+        the margin, not a read on the market. A +EV Yes here means Kalshi beats the books' shaded
+        price; for a mispricing call against fair value, use the <b>Kalshi vs SG</b> tab.
+        <b>Books</b> is how many books priced that driver — a 2-book consensus is a much weaker
+        read than a 5-book one, and drivers only one book lists are dropped entirely.
         <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
       </div>
       <div class="cmp-fresh" id="kcon-fresh"></div>
@@ -1246,31 +1253,48 @@ async function loadKalshiSG() {
 // "consensus" at all. One book is not a consensus, it is that book.
 const CONSENSUS_MIN_BOOKS = 2;
 
-// Mean de-vigged probability per driver across the sportsbooks carrying a tier,
-// rescaled so the tier sums to its winner count. Returns null when fewer than
-// CONSENSUS_MIN_BOOKS books carry the tier.
+// Mean RAW (with-vig) implied probability per driver across the sportsbooks
+// carrying a tier. Returns null when fewer than CONSENSUS_MIN_BOOKS books
+// carry the tier.
 //
-// Three decisions worth stating, because each one silently ruins the EV column
-// if made the other way:
+// Three decisions worth stating, because each one changes what the EV column
+// means:
 //
-//   novig, not implied. A book's `implied` still carries its vig, so a winner
-//   tier of raw implieds sums to ~1.15 winners rather than 1. Averaging those
-//   would make every consensus number systematically rich and push the entire
-//   EV column negative — the view would look like Kalshi is never worth buying,
-//   which is an artifact of the vig, not a read on the market. `novig` is each
-//   book's own fair price, which is what "consensus fair" has to mean.
+//   implied, not novig — the vig stays IN. A book's `implied` is the raw price
+//   you would actually pay at the counter; `novig` is that price with the
+//   book's margin stripped out. Keeping the vig makes this column "what the
+//   books are charging", not "what the books believe", so the EV against it
+//   answers a different question: not "is Kalshi mispriced vs the market's
+//   opinion" but "is Kalshi cheaper than actually walking up to the books".
+//
+//   This has a SIDE-ASYMMETRY that anyone reading the EV column needs to know,
+//   because it is easy to misread as signal. The overround inflates every
+//   driver's probability by the book margin (~45% on these boards). The Yes
+//   side is priced against that inflated p, so Yes EV is biased UP; the No side
+//   is priced against 1-p, which the same inflation makes too SMALL, so No EV
+//   is biased DOWN. Measured on the live South Point 400 winner + top-3 boards:
+//   de-vigged gives 1% of Yes lines +EV and 10% of No lines; with the vig in it
+//   is 24% of Yes and 0% of No. So a +EV Yes here does NOT mean the same thing
+//   it means on the Kalshi vs SG tab — it means Kalshi beats the books' shaded
+//   price, which for Yes is a LOWER bar than beating their fair, not a higher
+//   one. Read this tab as "where is Kalshi cheaper than the counter", and use
+//   the de-vigged SG tab for "where is Kalshi actually mispriced".
+//
+//   No renormalization, for the same reason. Rescaling the tier so it sums to
+//   its winner count IS proportional de-vigging — doing it here would silently
+//   undo the choice above and make this identical to the novig version. So the
+//   tier is left summing to whatever the books' margin makes it, and that
+//   overround is reported to the UI so it is never invisible.
 //
 //   Sportsbooks only. SG is a model, not a book, and it already anchors two
-//   tabs of its own. Folding it in would make this a blend of two different
-//   kinds of estimate and double-count SG's opinion in a view whose entire
-//   point is "what do the books, collectively, think".
+//   tabs of its own. Folding it in would blend two different kinds of estimate
+//   and double-count SG's opinion in a view whose entire point is "what do the
+//   books, collectively, charge". SG also posts at ~0% vig, so averaging it in
+//   would dilute exactly the margin this view is trying to show.
 //
-//   Renormalize after averaging, not before. Books cover different subsets of
-//   the field: a book that skips the longshots has to put that probability
-//   somewhere, so the drivers it DOES price carry slightly more than their
-//   share. Averaging per driver therefore does not land on n_winners. Rescaling
-//   at the end puts consensus on the same footing as Kalshi and SG, so the EV
-//   numbers are comparable across the three tabs.
+// Flip CONSENSUS_WITH_VIG to false to go back to de-vigged consensus fair.
+const CONSENSUS_WITH_VIG = true;
+
 function consensusFair(tierKey) {
   const books = booksForTier(tierKey).filter((bk) => !bk.model);
   if (books.length < CONSENSUS_MIN_BOOKS) return null;
@@ -1280,11 +1304,12 @@ function consensusFair(tierKey) {
     const t = BOOKDATA[bk.key].tiers[tierKey];
     if (typeof t.number_of_winners === "number") winners = Math.max(winners, t.number_of_winners);
     for (const d of t.drivers || []) {
-      if (typeof d.novig !== "number" || !(d.novig > 0)) continue;
+      const v = CONSENSUS_WITH_VIG ? d.implied : d.novig;
+      if (typeof v !== "number" || !(v > 0)) continue;
       const k = normName(d.name);
       if (!k) continue;
       if (!acc[k]) acc[k] = { name: d.name, sum: 0, books: [] };
-      acc[k].sum += d.novig;
+      acc[k].sum += v;
       acc[k].books.push(bk.label);
     }
   }
@@ -1295,13 +1320,20 @@ function consensusFair(tierKey) {
   // silence as a zero would bury every part-time entry.
   let total = 0;
   for (const k of keys) { acc[k].p = acc[k].sum / acc[k].books.length; total += acc[k].p; }
-  const scale = (winners > 0 && total > 0) ? winners / total : 1;
+  // With the vig kept in, scale is 1 and the tier keeps its overround.
+  const scale = (!CONSENSUS_WITH_VIG && winners > 0 && total > 0) ? winners / total : 1;
   const out = {};
   for (const k of keys) {
     if (acc[k].books.length < CONSENSUS_MIN_BOOKS) continue;   // not a consensus
     out[k] = { name: acc[k].name, p: acc[k].p * scale, n: acc[k].books.length, books: acc[k].books };
   }
-  return Object.keys(out).length ? out : null;
+  if (!Object.keys(out).length) return null;
+  // Overround of the whole averaged board, e.g. 1.42 = the books are charging
+  // 142 cents for 100 cents of outcome. Surfaced in the header so the negative
+  // skew of the EV column is attributable rather than mysterious.
+  Object.defineProperty(out, "_overround",
+    { value: (winners > 0 && total > 0) ? (total * scale) / winners : null, enumerable: false });
+  return out;
 }
 
 // Kalshi vs the sportsbook consensus, ranked by edge. Identical pricing to
@@ -1314,9 +1346,11 @@ async function loadKalshiConsensus() {
   const tiers = cmpTiersAvailable();
   const out = [];
   const bookSet = new Set();
+  const rounds = [];
   for (const t of tiers) {
     const cons = consensusFair(t.key);
     if (!cons) continue;
+    if (cons._overround) rounds.push(`${t.label} ${(cons._overround * 100).toFixed(0)}%`);
     let snap; try { snap = await loadJSON(dbase() + t.key + "/snapshot.json"); } catch { continue; }
     for (const m of Object.values(snap.markets || {})) {
       const cd = cons[normName(m.name)];
@@ -1341,7 +1375,8 @@ async function loadKalshiConsensus() {
   out.sort((a, b) => b.ev - a.ev);
   const bookList = [...bookSet].sort().join(", ");
   fresh.innerHTML = out.length
-    ? `Buying Kalshi <b>Yes or No</b> at its ask <b>net of fees</b>, priced against the de-vigged average of <b>${escapeHtml(bookList)}</b> · ${out.length} lines`
+    ? `Buying Kalshi <b>Yes or No</b> at its ask <b>net of fees</b>, priced against the ${CONSENSUS_WITH_VIG ? "raw <b>with-vig</b>" : "de-vigged"} average of <b>${escapeHtml(bookList)}</b> · ${out.length} lines`
+      + (rounds.length ? ` · books' overround: ${escapeHtml(rounds.join(", "))}` : "")
     : "No tier has two sportsbooks overlapping Kalshi yet.";
   rows.innerHTML = out.length ? out.map((r, i) =>
     `<tr><td class="l rank ${i === 0 && r.ev > 0 ? "top" : ""}">${i + 1}</td>` +
