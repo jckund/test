@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-AUHI",
       "volume": 497,
-      "volume_24h": 481,
+      "volume_24h": 160,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-BRJO",
       "volume": 768,
-      "volume_24h": 290,
+      "volume_24h": 280,
       "yes_ask": 6,
       "yes_bid": 4
     },
@@ -122,16 +122,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-CAKV": {
-      "last_price": 14,
+      "last_price": 15,
       "liquidity": 0.0,
       "name": "Carson Kvapil",
       "no_ask": 90,
       "no_bid": 86,
-      "open_interest": 854,
+      "open_interest": 1018,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CAKV",
-      "volume": 859,
-      "volume_24h": 314,
+      "volume": 1023,
+      "volume_24h": 473,
       "yes_ask": 14,
       "yes_bid": 10
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CODA",
       "volume": 1737,
-      "volume_24h": 1384,
+      "volume_24h": 1364,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -234,18 +234,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-JELO": {
-      "last_price": 11,
+      "last_price": 13,
       "liquidity": 0.0,
       "name": "Jesse Love",
-      "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 1372,
+      "no_ask": 91,
+      "no_bid": 88,
+      "open_interest": 1524,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JELO",
-      "volume": 1392,
-      "volume_24h": 1060,
-      "yes_ask": 11,
-      "yes_bid": 10
+      "volume": 1543,
+      "volume_24h": 1196,
+      "yes_ask": 12,
+      "yes_bid": 9
     },
     "KXNASCARRACE-FOCH100326-JOBI": {
       "last_price": 0,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-SHCR",
       "volume": 1003,
-      "volume_24h": 283,
+      "volume_24h": 230,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-TAGR",
       "volume": 528,
-      "volume_24h": 182,
+      "volume_24h": 177,
       "yes_ask": 6,
       "yes_bid": 4
     },
@@ -509,13 +509,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-WISA",
       "volume": 444,
-      "volume_24h": 444,
+      "volume_24h": 107,
       "yes_ask": 3,
       "yes_bid": 2
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-30T21:32:48.745534+00:00",
+  "scraped_at": "2026-09-30T22:22:45.502213+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
