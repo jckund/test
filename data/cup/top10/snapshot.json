@@ -27,7 +27,7 @@
       "last_price": 35,
       "liquidity": 0.0,
       "name": "Alex Bowman",
-      "no_ask": 71,
+      "no_ask": 72,
       "no_bid": 61,
       "open_interest": 770,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 770,
       "volume_24h": 770,
       "yes_ask": 39,
-      "yes_bid": 29
+      "yes_bid": 28
     },
     "KXNASCARTOP10-SOUP26-AUCI": {
       "last_price": 32,
@@ -83,15 +83,15 @@
       "last_price": 36,
       "liquidity": 0.0,
       "name": "Brad Keselowski",
-      "no_ask": 74,
-      "no_bid": 69,
+      "no_ask": 78,
+      "no_bid": 68,
       "open_interest": 285,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-BRKE",
       "volume": 285,
-      "volume_24h": 178,
-      "yes_ask": 31,
-      "yes_bid": 26
+      "volume_24h": 285,
+      "yes_ask": 32,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-SOUP26-BUWA": {
       "last_price": 51,
@@ -125,7 +125,7 @@
       "last_price": 70,
       "liquidity": 0.0,
       "name": "Christopher Bell",
-      "no_ask": 41,
+      "no_ask": 38,
       "no_bid": 30,
       "open_interest": 201,
       "status": "active",
@@ -133,20 +133,20 @@
       "volume": 201,
       "volume_24h": 1,
       "yes_ask": 70,
-      "yes_bid": 59
+      "yes_bid": 62
     },
     "KXNASCARTOP10-SOUP26-CHBR": {
       "last_price": 57,
       "liquidity": 0.0,
       "name": "Chase Briscoe",
       "no_ask": 45,
-      "no_bid": 41,
+      "no_bid": 39,
       "open_interest": 456,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBR",
       "volume": 456,
       "volume_24h": 256,
-      "yes_ask": 59,
+      "yes_ask": 61,
       "yes_bid": 55
     },
     "KXNASCARTOP10-SOUP26-CHBU": {
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-COWA",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -237,7 +237,7 @@
       "last_price": 63,
       "liquidity": 0.0,
       "name": "Denny Hamlin",
-      "no_ask": 36,
+      "no_ask": 33,
       "no_bid": 26,
       "open_interest": 215,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 252,
       "volume_24h": 52,
       "yes_ask": 74,
-      "yes_bid": 64
+      "yes_bid": 67
     },
     "KXNASCARTOP10-SOUP26-ERJO": {
       "last_price": 0,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-JOLO",
       "volume": 93,
-      "volume_24h": 30,
+      "volume_24h": 93,
       "yes_ask": 50,
       "yes_bid": 46
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ROCH",
       "volume": 330,
-      "volume_24h": 0,
+      "volume_24h": 130,
       "yes_ask": 20,
       "yes_bid": 18
     },
@@ -461,15 +461,15 @@
       "last_price": 59,
       "liquidity": 0.0,
       "name": "Ty Gibbs",
-      "no_ask": 50,
-      "no_bid": 46,
+      "no_ask": 54,
+      "no_bid": 42,
       "open_interest": 211,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-TYGI",
       "volume": 211,
       "volume_24h": 211,
-      "yes_ask": 54,
-      "yes_bid": 50
+      "yes_ask": 58,
+      "yes_bid": 46
     },
     "KXNASCARTOP10-SOUP26-TYRE": {
       "last_price": 63,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-09-30T00:40:18.786172+00:00",
+  "scraped_at": "2026-09-30T00:45:20.014227+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
