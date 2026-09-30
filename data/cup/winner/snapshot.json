@@ -10,16 +10,16 @@
   "market_count": 36,
   "markets": {
     "KXNASCARRACE-SOUP26-AJAL": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": 0.0,
       "name": "AJ Allmendinger",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 243,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-AJAL",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 243,
+      "volume_24h": 243,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -225,11 +225,11 @@
       "name": "Daniel Suarez",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 2602,
+      "open_interest": 2845,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DASU",
-      "volume": 2602,
-      "volume_24h": 1310,
+      "volume": 2845,
+      "volume_24h": 1553,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -267,11 +267,11 @@
       "name": "Josh Berry",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 10182,
+      "open_interest": 10425,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-JOBE",
-      "volume": 10182,
-      "volume_24h": 2043,
+      "volume": 10425,
+      "volume_24h": 2529,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-RYBL",
       "volume": 6284,
-      "volume_24h": 5421,
+      "volume_24h": 5157,
       "yes_ask": 6,
       "yes_bid": 4
     },
@@ -509,13 +509,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-ZASM",
       "volume": 4,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-09-30T15:10:24.241997+00:00",
+  "scraped_at": "2026-09-30T15:15:17.918064+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
