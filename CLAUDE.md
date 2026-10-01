@@ -117,15 +117,34 @@ which is optional — the no-ops are harmless and free on a public repo.)
   falls back to the committed `data/ev_alert_state.json`, which the commit-on-fire
   step keeps current as of the last alert — so a miss neither bursts nor silently
   suppresses. **Don't also run `evwatch.py` in `track.yml`** — two paths with
-  separate dedup state = double alerts.
+  separate dedup state = double alerts. (Adding a *scan* inside `evwatch.py`, as the
+  consensus scan does, is fine and is not that: same process, same state file,
+  namespaced keys.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
-- **`evwatch.py`** — high-EV watch: the CI twin of the dashboard's **Kalshi vs SG**
-  tab. For every series with both a Kalshi snapshot and an SG book, prices buying
-  Kalshi YES at its ask **net of fees** (`p + 0.07·p·(1−p)`, same as
-  `index.html`'s `netCost()` / `alerts.net_american_odds()`) against SG's no-vig
-  probability, and alerts on anything ≥ `EV_ALERT_THRESH` (default **30%**).
-  **Only NEW lines alert.** Dedup identity is `(series, tier, driver, yes_cents)`:
+- **`evwatch.py`** — high-EV watch. Runs **two scans per poll**, each the CI twin of a
+  dashboard tab, sharing one process / one state file / one Pushover call (so no second
+  cron-job.org pinger is needed — the existing ~5-min ping at `evalert.yml` drives both):
+  - **Kalshi vs SG** — for every series with both a Kalshi snapshot and an SG book,
+    prices buying Kalshi YES/NO at its ask **net of fees** (`p + 0.07·p·(1−p)`, same as
+    `index.html`'s `netCost()` / `alerts.net_american_odds()`) against SG's no-vig
+    probability. Threshold `EV_ALERT_THRESH` (default **30%**).
+  - **Kalshi vs Consensus** — same pricing against the **sportsbooks' average**
+    (`consensus_fair()`, mirroring `index.html`'s `consensusFair()`: mean of each book's
+    raw `implied` across ≥2 non-model books, SG excluded, no renormalization).
+    Threshold `EV_CONSENSUS_THRESH` (default = `EV_ALERT_THRESH`).
+    **The two 30%s are NOT the same claim.** Consensus keeps the books' vig in (matching
+    the tab), which inflates every probability by the ~40–50% margin — that biases
+    consensus **Yes EV up** and **No EV down**, so a consensus Yes means Kalshi beats the
+    books' *shaded* price, not their fair value. SG is the fair-value read.
+    `EV_CONSENSUS_WITH_VIG=0` prices it de-vigged (and restores the tier
+    renormalization). `CONSENSUS_BOOKS` in `evwatch.py` is hardcoded to mirror
+    `index.html`'s `BOOKS` — **keep the two in lockstep** when adding a book, or the
+    pager and the tab will disagree about what "consensus" means.
+  **Only NEW lines alert.** Dedup identity is `(source, series, tier, driver, side,
+  price_band)`, the **source** included so an SG alert never suppresses the consensus
+  alert for the same driver or vice versa (consensus keys are prefixed `cons|`; SG keys
+  stay unprefixed, so state written before the consensus scan still suppresses them):
   already qualifying at the same price last run ⇒ silent; the same driver/market at
   a *different* price ⇒ new line, alerts again; drifted out of the money ⇒ dropped
   from state, so it alerts fresh if it returns. State is `data/ev_alert_state.json`
