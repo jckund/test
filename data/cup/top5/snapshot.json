@@ -112,42 +112,42 @@
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 90,
-      "no_bid": 74,
+      "no_bid": 75,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CAHO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 26,
+      "yes_ask": 25,
       "yes_bid": 10
     },
     "KXNASCARTOP5-SOUP26-CHBE": {
       "last_price": 51,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 60,
+      "no_ask": 54,
       "no_bid": 49,
       "open_interest": 652,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CHBE",
       "volume": 652,
-      "volume_24h": 0,
+      "volume_24h": 4,
       "yes_ask": 51,
-      "yes_bid": 40
+      "yes_bid": 46
     },
     "KXNASCARTOP5-SOUP26-CHBR": {
       "last_price": 44,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 60,
+      "no_ask": 59,
       "no_bid": 57,
       "open_interest": 841,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CHBR",
       "volume": 841,
-      "volume_24h": 541,
+      "volume_24h": 544,
       "yes_ask": 43,
-      "yes_bid": 40
+      "yes_bid": 41
     },
     "KXNASCARTOP5-SOUP26-CHBU": {
       "last_price": 0,
@@ -237,15 +237,15 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 53,
-      "no_bid": 39,
+      "no_ask": 48,
+      "no_bid": 42,
       "open_interest": 1007,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-DEHA",
       "volume": 1007,
       "volume_24h": 13,
-      "yes_ask": 61,
-      "yes_bid": 47
+      "yes_ask": 58,
+      "yes_bid": 52
     },
     "KXNASCARTOP5-SOUP26-ERJO": {
       "last_price": 0,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-JOLO",
       "volume": 104,
-      "volume_24h": 19,
+      "volume_24h": 26,
       "yes_ask": 32,
       "yes_bid": 18
     },
@@ -307,15 +307,15 @@
       "last_price": 57,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 48,
-      "no_bid": 43,
+      "no_ask": 54,
+      "no_bid": 42,
       "open_interest": 497,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-KYLA",
       "volume": 497,
-      "volume_24h": 26,
-      "yes_ask": 57,
-      "yes_bid": 52
+      "volume_24h": 29,
+      "yes_ask": 58,
+      "yes_bid": 46
     },
     "KXNASCARTOP5-SOUP26-MIMC": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-01T17:30:23.642824+00:00",
+  "scraped_at": "2026-10-01T17:35:24.364574+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top5"
 }
