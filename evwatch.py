@@ -1,7 +1,29 @@
 #!/usr/bin/env python3
-"""Alert on NEW high-EV Kalshi-vs-SG lines, across every scraped race.
+"""Alert on NEW high-EV Kalshi lines, across every scraped race.
 
-This is the CI-side twin of the dashboard's "Kalshi vs SG" tab: for each series
+Two independent scans run per poll, each the CI-side twin of a dashboard tab:
+
+  SG         -- Kalshi priced against SG's no-vig model probability.
+                Tab: "Kalshi vs SG". Threshold EV_ALERT_THRESH.
+  Consensus  -- Kalshi priced against the sportsbooks' average.
+                Tab: "Kalshi vs Consensus". Threshold EV_CONSENSUS_THRESH.
+
+They share this process, this state file and this Pushover call ON PURPOSE.
+CLAUDE.md's warning is about two SEPARATE alert PATHS with separate dedup
+state, which double-alerts; one process with one state file and namespaced keys
+is the opposite of that. It also means the consensus scan needs no new
+cron-job.org pinger — the existing ~5-minute ping at evalert.yml drives both.
+
+READ THIS BEFORE TRUSTING A CONSENSUS ALERT. The consensus mirrors the
+dashboard, which keeps the books' VIG IN (see index.html's CONSENSUS_WITH_VIG).
+That inflates every driver's probability by the book margin, ~40-50% on these
+boards, which biases the YES side UP and the NO side DOWN. So a consensus Yes
+alert means "Kalshi is cheaper than the books' shaded price" — a LOWER bar than
+beating their fair value, not a higher one. The SG scan is the fair-value read.
+Set EV_CONSENSUS_WITH_VIG=0 to price consensus de-vigged instead, which also
+restores the tier renormalization so it matches the de-vigged dashboard exactly.
+
+For each series
 that has both a Kalshi snapshot and an SG model book, it prices buying Kalshi
 YES at its ask AND NO at its ask -- FEE-INCLUSIVE, matching index.html's
 netCost() and alerts.py's net_american_odds() -- against SG's no-vig
@@ -10,7 +32,11 @@ probability (p for Yes, 1-p for No), and flags anything at or above
 driver far BELOW Kalshi the tradeable edge is on NO; a YES-only scan showed
 that as a deeply negative line and never alerted on it.
 
-Only *new* lines alert. Dedup key is (series, tier, driver, side, price_band), so
+Only *new* lines alert. Dedup key is (source, series, tier, driver, side,
+price_band) -- the source is part of the identity, so an SG alert never
+suppresses the consensus alert for the same driver, or vice versa. SG keys keep
+their original unprefixed shape so state written before the consensus scan
+existed still suppresses them. Otherwise, so
 a line that was already qualifying at the same price on the previous run stays
 quiet; the same driver/market at a MATERIALLY different price is a new line and
 alerts again (the price moving is the point). The band is ``EV_DEDUP_BUCKET_C``
@@ -31,7 +57,13 @@ Channels (all optional, all no-ops when unset):
   GITHUB_TOKEN       token used to post that comment (provided by Actions).
 
 Env:
-  EV_ALERT_THRESH    minimum EV percent to alert on (default 30)
+  EV_ALERT_THRESH    minimum EV percent to alert on, SG scan (default 30)
+  EV_CONSENSUS_THRESH      minimum EV percent, consensus scan (default: the
+                           same as EV_ALERT_THRESH)
+  EV_CONSENSUS_WITH_VIG    1 (default) = consensus keeps the books' vig in,
+                           matching the dashboard. 0 = de-vigged + renormalized.
+  EV_CONSENSUS_MIN_BOOKS   books required before a driver's average counts as a
+                           consensus at all (default 2)
   EV_DEDUP_BUCKET_C  price-band width in cents for dedup (default 2; 1 = alert
                      on every single-cent tick, the pre-banding behaviour)
   EV_ALERT_SERIES    comma-separated series keys (default: all in data/series.json)
@@ -62,6 +94,35 @@ try:
     DEDUP_BUCKET_C = max(1, int(os.environ.get("EV_DEDUP_BUCKET_C", "2")))
 except ValueError:
     DEDUP_BUCKET_C = 2
+# Consensus scan. Thresholds are separate so the two reads can be tuned
+# independently -- they do NOT mean the same thing (see the module docstring).
+CONSENSUS_THRESH = float(os.environ.get("EV_CONSENSUS_THRESH", str(THRESH)))
+CONSENSUS_WITH_VIG = os.environ.get("EV_CONSENSUS_WITH_VIG", "1").strip() != "0"
+try:
+    CONSENSUS_MIN_BOOKS = max(1, int(os.environ.get("EV_CONSENSUS_MIN_BOOKS", "2")))
+except ValueError:
+    CONSENSUS_MIN_BOOKS = 2
+
+# Sportsbooks feeding the consensus, mirroring index.html's BOOKS array minus
+# its `model: true` entries. SG is excluded by construction: it is a model, not
+# a book, it anchors the other scan, and it posts at ~0% vig so averaging it in
+# would dilute exactly the margin the consensus view exists to show.
+#
+# Hardcoded rather than globbed data/<series>/manual/*.json deliberately. A
+# glob would silently pull in a board the dashboard does not list, so the
+# pager and the tab would disagree about what "consensus" means. Keep this in
+# lockstep with index.html's BOOKS (and with its model flags).
+CONSENSUS_BOOKS = (
+    ("FanDuel", "fanduel/odds.json"),
+    ("BetUS", "manual/betus.json"),
+    ("Caesars", "manual/caesars.json"),
+    ("Prime", "manual/prime.json"),
+    ("BetBoss", "manual/betboss.json"),
+    ("BetOnline", "manual/betonline.json"),
+    ("BetRivers", "manual/betrivers.json"),
+    ("VIP365", "manual/vip365.json"),
+)
+
 MENTION = os.environ.get("EV_ALERT_MENTION", "").strip()
 SITE_URL = os.environ.get("EV_ALERT_URL", "").strip()
 # Pushover caps message at 1024 chars and title at 250.
@@ -185,61 +246,131 @@ def series_keys():
     return [s.get("key") for s in idx.get("series", []) if s.get("key")]
 
 
+def consensus_fair(skey: str, tier: str):
+    """Mirror of index.html's consensusFair(): per-driver mean of the
+    sportsbooks' probability for one series/tier.
+
+    Returns {norm_name: (prob, n_books, [labels])}, dropping any driver fewer
+    than CONSENSUS_MIN_BOOKS priced -- one book is not a consensus, it is that
+    book.
+
+    Two things must stay true of this function or the pager and the dashboard
+    will disagree:
+
+      The mean is over the books that priced HIM, not every book carrying the
+      tier. A book that never listed a driver has no opinion on him, and
+      treating that silence as a zero would bury every part-time entry.
+
+      Renormalization is tied to the vig choice, not independent of it.
+      Rescaling a tier so it sums to its winner count IS proportional
+      de-vigging, so it must happen when (and only when) we are using novig.
+      Doing it in the with-vig path would silently strip the margin back out
+      and make EV_CONSENSUS_WITH_VIG a no-op.
+    """
+    acc, winners = {}, 0
+    for label, rel in CONSENSUS_BOOKS:
+        book = load_json(f"data/{skey}/{rel}")
+        t = ((book or {}).get("tiers") or {}).get(tier)
+        if not t:
+            continue
+        nw = t.get("number_of_winners")
+        if isinstance(nw, (int, float)):
+            winners = max(winners, int(nw))
+        for d in t.get("drivers") or []:
+            v = d.get("implied") if CONSENSUS_WITH_VIG else d.get("novig")
+            if not isinstance(v, (int, float)) or not v > 0:
+                continue
+            k = norm_name(d.get("name", ""))
+            if not k:
+                continue
+            e = acc.setdefault(k, {"sum": 0.0, "books": []})
+            e["sum"] += float(v)
+            e["books"].append(label)
+    if not acc:
+        return {}
+    means = {k: e["sum"] / len(e["books"]) for k, e in acc.items()}
+    total = sum(means.values())
+    scale = (winners / total) if (not CONSENSUS_WITH_VIG and winners > 0 and total > 0) else 1.0
+    return {k: (means[k] * scale, len(e["books"]), e["books"])
+            for k, e in acc.items() if len(e["books"]) >= CONSENSUS_MIN_BOOKS}
+
+
+def _lines(skey, race, tier, snap, fair_map, source, thresh, key_prefix):
+    """Qualifying lines for one (series, tier) against one fair source.
+
+    Shared by both scans so the pricing can never drift between them: the fee
+    model, the side handling and the dedup shape are defined once here.
+    """
+    hits = []
+    for m in (snap.get("markets") or {}).values():
+        info = fair_map.get(norm_name(m.get("name", "")))
+        if info is None:
+            continue
+        p, n_books, books = info
+        if not 0 < p < 1:
+            continue
+        # Both sides are tradeable, and they are not redundant: when the fair
+        # source rates a driver well BELOW Kalshi the edge is on NO, which a
+        # YES-only scan reports as a deeply negative line and never flags.
+        # Fair prob of the side bought is p for Yes, 1-p for No; the fee
+        # formula is symmetric in the price, so net_cents() applies unchanged
+        # to a No quote.
+        for side, c, fair in (("Yes", yes_cents(m), p),
+                              ("No", no_cents(m), 1.0 - p)):
+            if c is None:
+                continue
+            cost = net_cents(c) / 100.0
+            if not 0 < cost < 1:
+                continue
+            ev = (fair / cost - 1) * 100.0
+            if ev < thresh:
+                continue
+            # Dedup identity: source, driver, market, side, price BAND. Banding
+            # is what keeps the poll interval and the ping rate decoupled.
+            # Keying on the exact cent meant a line oscillating 7c/8c/7c
+            # re-alerted on every flip, so polling twice as often produced
+            # roughly twice the pings for the same one bet. The source prefix
+            # keeps the two scans from suppressing each other; it is empty for
+            # SG so state written before the consensus scan existed still
+            # suppresses those lines.
+            tag = "" if side == "Yes" else f"{side}|"
+            key = f"{key_prefix}{skey}|{tier}|{m.get('name')}|{tag}{_band(c)}"
+            hits.append((key, {
+                "series": skey, "race": race, "tier": tier,
+                "driver": m.get("name"), "side": side, "source": source,
+                "price_c": c, "net_c": net_cents(c),
+                "fair": fair * 100, "books": n_books, "book_list": books,
+                "ev": ev,
+                "volume": m.get("volume"), "open_interest": m.get("open_interest"),
+            }))
+    return hits
+
+
 def scan():
-    """Every qualifying line right now, as (key, row) pairs."""
+    """Every qualifying line right now, as (key, row) pairs, across both scans."""
     hits = []
     for skey in series_keys():
         sg = load_json(f"data/{skey}/manual/sg.json")
-        if not sg or not sg.get("tiers"):
-            continue
-        race = sg.get("race") or skey
+        race = (sg or {}).get("race") or skey
         for tier in TIERS:
-            sg_tier = (sg["tiers"] or {}).get(tier)
             snap = load_json(f"data/{skey}/{tier}/snapshot.json")
-            if not sg_tier or not snap:
+            if not snap:
                 continue
-            model = {}
-            for d in sg_tier.get("drivers") or []:
-                if isinstance(d.get("novig"), (int, float)):
-                    model[norm_name(d.get("name", ""))] = float(d["novig"])
-            for m in (snap.get("markets") or {}).values():
-                p = model.get(norm_name(m.get("name", "")))
-                if p is None:
-                    continue
-                # Both sides are tradeable, and they are not redundant: when SG
-                # rates a driver well BELOW Kalshi the edge is on NO, which a
-                # YES-only scan reports as a deeply negative line and never
-                # flags. Fair prob of the side bought is p for Yes, 1-p for No;
-                # the fee formula is symmetric in the price, so net_cents()
-                # applies unchanged to a No quote.
-                for side, c, fair in (("Yes", yes_cents(m), p),
-                                      ("No", no_cents(m), 1.0 - p)):
-                    if c is None:
-                        continue
-                    cost = net_cents(c) / 100.0
-                    if not 0 < cost < 1:
-                        continue
-                    ev = (fair / cost - 1) * 100.0
-                    if ev < THRESH:
-                        continue
-                    # Dedup identity: same driver, same market, same side, same
-                    # price BAND. Banding is what keeps the poll interval and the
-                    # ping rate decoupled. Keying on the exact cent meant a line
-                    # oscillating 7c/8c/7c re-alerted on every flip, so polling
-                    # twice as often produced roughly twice the pings for the
-                    # same one bet. Rounding to DEDUP_BUCKET_C absorbs that
-                    # jitter while a genuine move (which crosses a band) still
-                    # alerts. Yes keys keep their original shape so state
-                    # written before the No side existed still suppresses them.
-                    tag = "" if side == "Yes" else f"{side}|"
-                    key = f"{skey}|{tier}|{m.get('name')}|{tag}{_band(c)}"
-                    hits.append((key, {
-                        "series": skey, "race": race, "tier": tier,
-                        "driver": m.get("name"), "side": side,
-                        "price_c": c, "net_c": net_cents(c),
-                        "sg": fair * 100, "sg_yes": p * 100, "ev": ev,
-                        "volume": m.get("volume"), "open_interest": m.get("open_interest"),
-                    }))
+
+            # --- scan 1: Kalshi vs SG's no-vig model fair -------------------
+            sg_tier = ((sg or {}).get("tiers") or {}).get(tier)
+            if sg_tier:
+                model = {}
+                for d in sg_tier.get("drivers") or []:
+                    if isinstance(d.get("novig"), (int, float)):
+                        model[norm_name(d.get("name", ""))] = (float(d["novig"]), None, [])
+                hits += _lines(skey, race, tier, snap, model, "SG", THRESH, "")
+
+            # --- scan 2: Kalshi vs the sportsbook consensus -----------------
+            cons = consensus_fair(skey, tier)
+            if cons:
+                hits += _lines(skey, race, tier, snap, cons, "Consensus",
+                               CONSENSUS_THRESH, "cons|")
     return hits
 
 
@@ -282,9 +413,9 @@ def post_webhook(body: str) -> str:
 
 def pushover_body(rows) -> str:
     """Compact one-line-per-row body that fits Pushover's 1024-char cap."""
-    lines = [f"{r['driver']} - {TIER_LABEL.get(r['tier'], r['tier'])} {r['side']} - "
-             f"{r['price_c']:.0f}c {american(r['net_c'])} net - "
-             f"SG {r['sg']:.1f}% - EV +{r['ev']:.0f}%" for r in rows]
+    lines = [f"[{r['source'][:4]}] {r['driver']} - {TIER_LABEL.get(r['tier'], r['tier'])} "
+             f"{r['side']} - {r['price_c']:.0f}c {american(r['net_c'])} net - "
+             f"fair {american(r['fair'])} - EV +{r['ev']:.0f}%" for r in rows]
     kept, used = [], 0
     for ln in lines:
         # +24 leaves room for a trailing "+N more" line.
@@ -303,10 +434,14 @@ def post_pushover(rows) -> str:
         return "pushover skipped (PUSHOVER_TOKEN / PUSHOVER_USER unset)"
     import urllib.parse
     n = len(rows)
+    # Name the source(s) in the title: an SG line and a consensus line are not
+    # the same claim, and the title is all you see on a locked phone.
+    srcs = sorted({r["source"] for r in rows})
+    what = "/".join(srcs) if srcs else "EV"
     fields = {
         "token": token,
         "user": user,
-        "title": f"{n} new {THRESH:.0f}%+ EV line{'' if n == 1 else 's'}"[:PUSHOVER_TITLE_LIMIT],
+        "title": f"{n} new {what} EV line{'' if n == 1 else 's'}"[:PUSHOVER_TITLE_LIMIT],
         "message": pushover_body(rows)[:PUSHOVER_MSG_LIMIT],
     }
     if SITE_URL:
@@ -348,13 +483,14 @@ def prepend_md(header: str, body: str) -> None:
 
 
 def fmt(rows) -> str:
-    lines = [f"| Race | Market | Driver | Side | Price | Net | Net odds | SG | EV |",
-             f"|---|---|---|---|---|---|---|---|---|"]
+    lines = ["| Race | Market | Driver | Side | Vs | Price | Net | Net odds | Fair | Books | EV |",
+             "|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
         lines.append(
             f"| {r['race']} | {TIER_LABEL.get(r['tier'], r['tier'])} | {r['driver']} "
-            f"| {r['side']} | {r['price_c']:.0f}c | {r['net_c']:.2f}c | {american(r['net_c'])} "
-            f"| {r['sg']:.1f}% | **+{r['ev']:.1f}%** |")
+            f"| {r['side']} | {r['source']} | {r['price_c']:.0f}c | {r['net_c']:.2f}c "
+            f"| {american(r['net_c'])} | {american(r['fair'])} ({r['fair']:.1f}%) "
+            f"| {r['books'] if r['books'] else '-'} | **+{r['ev']:.1f}%** |")
     return "\n".join(lines)
 
 
@@ -370,7 +506,12 @@ def main() -> int:
     new.sort(key=lambda kr: -kr[1]["ev"])
 
     now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    print(f"evwatch: thresh={THRESH:.0f}% qualifying={len(hits)} "
+    by_src = {}
+    for _, r in hits:
+        by_src[r["source"]] = by_src.get(r["source"], 0) + 1
+    print(f"evwatch: sg_thresh={THRESH:.0f}% cons_thresh={CONSENSUS_THRESH:.0f}% "
+          f"cons_vig={'in' if CONSENSUS_WITH_VIG else 'out'} "
+          f"qualifying={len(hits)} ({by_src}) "
           f"new={len(new)} carried={len(hits) - len(new)}")
 
     # Persist AFTER computing new, so this run's set is next run's baseline.
@@ -379,16 +520,24 @@ def main() -> int:
                    "keys": sorted(cur_keys)}, fh, indent=2)
 
     if not new:
-        write_summary(f"**EV watch** — no new lines >= +{THRESH:.0f}% "
-                      f"({len(hits)} still qualifying).")
+        write_summary(f"**EV watch** — no new lines (SG >= +{THRESH:.0f}%, "
+                      f"consensus >= +{CONSENSUS_THRESH:.0f}%); "
+                      f"{len(hits)} still qualifying.")
         return 0
 
     rows = [r for _, r in new]
     table = fmt(rows)
-    head = (f"### New Kalshi vs SG lines >= +{THRESH:.0f}% EV — {len(rows)} "
-            f"({now})")
-    note = ("_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)); SG fair is the "
-            "no-vig model probability. A line stays quiet until its price changes._")
+    counts = ", ".join(f"{k} {v}" for k, v in sorted(
+        {r["source"]: sum(1 for x in rows if x["source"] == r["source"]) for r in rows}.items()))
+    head = f"### New high-EV Kalshi lines — {len(rows)} ({counts}) ({now})"
+    vig = "WITH the books' vig in" if CONSENSUS_WITH_VIG else "de-vigged"
+    note = ("_EV is net of Kalshi fees (cost = p + 0.07·p·(1−p)). "
+            f"**SG** rows price against SG's no-vig model fair (>= +{THRESH:.0f}%). "
+            f"**Consensus** rows price against the sportsbooks' average, {vig} "
+            f"(>= +{CONSENSUS_THRESH:.0f}%) — that margin biases consensus Yes EV "
+            "UP and No EV DOWN, so a consensus Yes means Kalshi beats the books' "
+            "shaded price, not their fair value. A line stays quiet until its "
+            "price changes._")
     # Lead with the mention: it is what turns this comment into an emailed
     # notification for someone who is not subscribed to the thread.
     lead = f"{MENTION} " if MENTION else ""

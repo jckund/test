@@ -90,11 +90,29 @@ jobs:
           SNAPSHOT_ONLY: "1"
         run: python3 scraper.py
 
-      - name: High-EV watch (Kalshi vs SG)
+      - name: High-EV watch (Kalshi vs SG + Kalshi vs Consensus)
         # Same clean-scrape gate as track.yml: never alert off a partial scrape.
+        #
+        # One step runs BOTH scans: Kalshi vs SG's model fair, and Kalshi vs the
+        # sportsbook consensus. They share this process, the dedup state file and
+        # the Pushover call on purpose. CLAUDE.md's "don't run two alert paths"
+        # warning is about two paths with SEPARATE dedup state double-alerting;
+        # one process with namespaced keys is the opposite, and it means the
+        # consensus scan needs no second cron-job.org pinger — the existing
+        # ~5-minute ping at this workflow drives both.
+        #
+        # The consensus books are committed data (manual/*.json, fanduel/odds.json),
+        # so SNAPSHOT_ONLY=1 above is enough: nothing extra needs scraping.
         if: ${{ steps.scrape.outcome == 'success' }}
         env:
           EV_ALERT_THRESH: "30"
+          # Consensus mirrors the dashboard tab, which keeps the books' vig in.
+          # That biases consensus Yes EV UP and No EV DOWN, so this 30% is NOT
+          # the same claim as the SG 30% above — see evwatch.py's docstring.
+          # Measured on the live South Point 400 boards, worst case (empty dedup
+          # state) this fires 2 lines, so 30% is a usable pager rather than a
+          # flood. Set EV_CONSENSUS_WITH_VIG: "0" to price it de-vigged instead.
+          EV_CONSENSUS_THRESH: "30"
           EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
