@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CODA",
       "volume": 1753,
-      "volume_24h": 1379,
+      "volume_24h": 1366,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JELO",
       "volume": 1543,
-      "volume_24h": 1046,
+      "volume_24h": 1041,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JUAL",
       "volume": 1164,
-      "volume_24h": 449,
+      "volume_24h": 408,
       "yes_ask": 25,
       "yes_bid": 21
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-RACA",
       "volume": 944,
-      "volume_24h": 887,
+      "volume_24h": 840,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -430,15 +430,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-RYSI": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": 0.0,
       "name": "Ryan Sieg",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 156,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-RYSI",
-      "volume": 0,
+      "volume": 156,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -472,17 +472,17 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-FOCH100326-SHCR": {
-      "last_price": 8,
+      "last_price": 7,
       "liquidity": 0.0,
       "name": "Sheldon Creed",
       "no_ask": 94,
-      "no_bid": 93,
-      "open_interest": 1028,
+      "no_bid": 91,
+      "open_interest": 1038,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-SHCR",
-      "volume": 1038,
-      "volume_24h": 167,
-      "yes_ask": 7,
+      "volume": 1048,
+      "volume_24h": 156,
+      "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARRACE-FOCH100326-TAGR": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-01T03:02:57.016390+00:00",
+  "scraped_at": "2026-10-01T03:53:07.435464+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
