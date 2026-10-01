@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-AUHI",
       "volume": 1244,
-      "volume_24h": 738,
+      "volume_24h": 0,
       "yes_ask": 41,
       "yes_bid": 22
     },
@@ -111,15 +111,15 @@
       "last_price": 57,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 46,
-      "no_bid": 26,
+      "no_ask": 45,
+      "no_bid": 27,
       "open_interest": 11,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-CAHO",
       "volume": 11,
       "volume_24h": 11,
-      "yes_ask": 74,
-      "yes_bid": 54
+      "yes_ask": 73,
+      "yes_bid": 55
     },
     "KXNASCARTOP20-SOUP26-CHBE": {
       "last_price": 0,
@@ -209,7 +209,7 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 73,
+      "no_ask": 72,
       "no_bid": 56,
       "open_interest": 962,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 1373,
       "volume_24h": 1001,
       "yes_ask": 44,
-      "yes_bid": 27
+      "yes_bid": 28
     },
     "KXNASCARTOP20-SOUP26-DASU": {
       "last_price": 57,
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 23,
-      "no_bid": 9,
+      "no_bid": 8,
       "open_interest": 208,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-KYLA",
       "volume": 208,
       "volume_24h": 208,
-      "yes_ask": 91,
+      "yes_ask": 92,
       "yes_bid": 77
     },
     "KXNASCARTOP20-SOUP26-MIMC": {
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-NOGR",
       "volume": 1216,
-      "volume_24h": 716,
+      "volume_24h": 6,
       "yes_ask": 51,
       "yes_bid": 33
     },
@@ -377,15 +377,15 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 68,
-      "no_bid": 49,
+      "no_ask": 67,
+      "no_bid": 51,
       "open_interest": 410,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-ROCH",
       "volume": 416,
       "volume_24h": 216,
-      "yes_ask": 51,
-      "yes_bid": 32
+      "yes_ask": 49,
+      "yes_bid": 33
     },
     "KXNASCARTOP20-SOUP26-RYBL": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-01T12:50:21.382514+00:00",
+  "scraped_at": "2026-10-01T12:55:19.154542+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top20"
 }
