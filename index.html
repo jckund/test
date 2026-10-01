@@ -476,7 +476,7 @@
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th class="l">Side</th><th>Price ¢</th><th>Net ¢</th><th>Net odds</th><th>Consensus</th><th>Books</th><th>EV</th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Driver</th><th class="l">Market</th><th class="l">Side</th><th>Price ¢</th><th>Net ¢</th><th>Net odds</th><th>Consensus odds</th><th>Books</th><th>EV</th></tr></thead>
             <tbody id="kcon-rows"></tbody>
           </table>
         </div>
@@ -1390,7 +1390,7 @@ async function loadKalshiConsensus() {
     `<td class="num">${r.yes}¢</td>` +
     `<td class="num">${r.netC.toFixed(2)}¢</td>` +
     `<td class="num">${usOddsNet(r.yes)}</td>` +
-    `<td class="num">${(r.fair * 100).toFixed(1)}%</td>` +
+    `<td class="num" title="${(r.fair * 100).toFixed(1)}%">${usOdds(r.fair * 100)}</td>` +
     `<td class="num" title="${escapeHtml(r.books.join(", "))}">${r.n}</td>` +
     `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td></tr>`
   ).join("") : `<tr><td class="empty" colspan="10">No tier has two sportsbooks overlapping Kalshi yet.</td></tr>`;
