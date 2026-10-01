@@ -11,7 +11,7 @@
   "markets": {
     "KXNASCARRACE-SOUP26-AJAL": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 100,
       "no_bid": 99,
@@ -25,7 +25,7 @@
     },
     "KXNASCARRACE-SOUP26-ALBO": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 99,
       "no_bid": 98,
@@ -39,7 +39,7 @@
     },
     "KXNASCARRACE-SOUP26-AUCI": {
       "last_price": 3,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Austin Cindric",
       "no_ask": 98,
       "no_bid": 97,
@@ -53,7 +53,7 @@
     },
     "KXNASCARRACE-SOUP26-AUDI": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 100,
       "no_bid": 99,
@@ -67,7 +67,7 @@
     },
     "KXNASCARRACE-SOUP26-AUHI": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 100,
       "no_bid": 99,
@@ -81,7 +81,7 @@
     },
     "KXNASCARRACE-SOUP26-BRKE": {
       "last_price": 2,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 99,
       "no_bid": 98,
@@ -95,7 +95,7 @@
     },
     "KXNASCARRACE-SOUP26-BUWA": {
       "last_price": 4,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 97,
       "no_bid": 96,
@@ -109,7 +109,7 @@
     },
     "KXNASCARRACE-SOUP26-CAHO": {
       "last_price": 4,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 97,
       "no_bid": 96,
@@ -123,9 +123,9 @@
     },
     "KXNASCARRACE-SOUP26-CHBE": {
       "last_price": 13,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 91,
+      "no_ask": 90,
       "no_bid": 87,
       "open_interest": 6205,
       "status": "active",
@@ -133,11 +133,11 @@
       "volume": 6302,
       "volume_24h": 1727,
       "yes_ask": 13,
-      "yes_bid": 9
+      "yes_bid": 10
     },
     "KXNASCARRACE-SOUP26-CHBR": {
       "last_price": 10,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 92,
       "no_bid": 91,
@@ -151,7 +151,7 @@
     },
     "KXNASCARRACE-SOUP26-CHBU": {
       "last_price": 2,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 99,
       "no_bid": 98,
@@ -165,7 +165,7 @@
     },
     "KXNASCARRACE-SOUP26-CHEL": {
       "last_price": 4,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Chase Elliott",
       "no_ask": 97,
       "no_bid": 96,
@@ -179,7 +179,7 @@
     },
     "KXNASCARRACE-SOUP26-COCU": {
       "last_price": 0,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Cole Custer",
       "no_ask": 100,
       "no_bid": 99,
@@ -193,7 +193,7 @@
     },
     "KXNASCARRACE-SOUP26-COWA": {
       "last_price": 0,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Cody Ware",
       "no_ask": 100,
       "no_bid": 99,
@@ -207,7 +207,7 @@
     },
     "KXNASCARRACE-SOUP26-COZI": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Connor Zilisch",
       "no_ask": 100,
       "no_bid": 99,
@@ -221,7 +221,7 @@
     },
     "KXNASCARRACE-SOUP26-DASU": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 100,
       "no_bid": 99,
@@ -235,7 +235,7 @@
     },
     "KXNASCARRACE-SOUP26-DEHA": {
       "last_price": 18,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 84,
       "no_bid": 81,
@@ -249,7 +249,7 @@
     },
     "KXNASCARRACE-SOUP26-ERJO": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Erik Jones",
       "no_ask": 100,
       "no_bid": 99,
@@ -263,7 +263,7 @@
     },
     "KXNASCARRACE-SOUP26-JOBE": {
       "last_price": 3,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 99,
       "no_bid": 97,
@@ -277,7 +277,7 @@
     },
     "KXNASCARRACE-SOUP26-JOLO": {
       "last_price": 5,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 96,
       "no_bid": 95,
@@ -285,13 +285,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-JOLO",
       "volume": 5568,
-      "volume_24h": 2243,
+      "volume_24h": 2227,
       "yes_ask": 5,
       "yes_bid": 4
     },
     "KXNASCARRACE-SOUP26-JONE": {
       "last_price": 0,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "John Hunter Nemechek",
       "no_ask": 100,
       "no_bid": 99,
@@ -305,7 +305,7 @@
     },
     "KXNASCARRACE-SOUP26-KYLA": {
       "last_price": 20,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 81,
       "no_bid": 80,
@@ -319,7 +319,7 @@
     },
     "KXNASCARRACE-SOUP26-MIMC": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Michael McDowell",
       "no_ask": 100,
       "no_bid": 99,
@@ -333,7 +333,7 @@
     },
     "KXNASCARRACE-SOUP26-NOGR": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Noah Gragson",
       "no_ask": 100,
       "no_bid": 99,
@@ -347,7 +347,7 @@
     },
     "KXNASCARRACE-SOUP26-RIHE": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Riley Herbst",
       "no_ask": 100,
       "no_bid": 99,
@@ -361,7 +361,7 @@
     },
     "KXNASCARRACE-SOUP26-RIST": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ricky Stenhouse Jr.",
       "no_ask": 100,
       "no_bid": 99,
@@ -375,7 +375,7 @@
     },
     "KXNASCARRACE-SOUP26-ROCH": {
       "last_price": 2,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ross Chastain",
       "no_ask": 100,
       "no_bid": 98,
@@ -389,7 +389,7 @@
     },
     "KXNASCARRACE-SOUP26-RYBL": {
       "last_price": 7,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 95,
       "no_bid": 93,
@@ -403,7 +403,7 @@
     },
     "KXNASCARRACE-SOUP26-RYPR": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ryan Preece",
       "no_ask": 99,
       "no_bid": 98,
@@ -411,13 +411,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-RYPR",
       "volume": 2423,
-      "volume_24h": 1423,
+      "volume_24h": 1421,
       "yes_ask": 2,
       "yes_bid": 1
     },
     "KXNASCARRACE-SOUP26-SHVA": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 100,
       "no_bid": 99,
@@ -431,7 +431,7 @@
     },
     "KXNASCARRACE-SOUP26-TOGI": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 100,
       "no_bid": 99,
@@ -445,7 +445,7 @@
     },
     "KXNASCARRACE-SOUP26-TYDI": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ty Dillon",
       "no_ask": 100,
       "no_bid": 99,
@@ -459,7 +459,7 @@
     },
     "KXNASCARRACE-SOUP26-TYGI": {
       "last_price": 6,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 95,
       "no_bid": 94,
@@ -473,7 +473,7 @@
     },
     "KXNASCARRACE-SOUP26-TYRE": {
       "last_price": 9,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 92,
       "no_bid": 91,
@@ -487,7 +487,7 @@
     },
     "KXNASCARRACE-SOUP26-WIBY": {
       "last_price": 7,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "William Byron",
       "no_ask": 93,
       "no_bid": 92,
@@ -501,7 +501,7 @@
     },
     "KXNASCARRACE-SOUP26-ZASM": {
       "last_price": 1,
-      "liquidity": 0.0,
+      "liquidity": null,
       "name": "Zane Smith",
       "no_ask": 100,
       "no_bid": 99,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-01T07:00:24.490306+00:00",
+  "scraped_at": "2026-10-01T09:05:19.925510+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
