@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-AUDI",
       "volume": 187,
-      "volume_24h": 187,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-AUHI",
       "volume": 656,
-      "volume_24h": 655,
+      "volume_24h": 468,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-COZI",
       "volume": 1262,
-      "volume_24h": 795,
+      "volume_24h": 608,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DASU",
       "volume": 5158,
-      "volume_24h": 2743,
+      "volume_24h": 2556,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -237,15 +237,15 @@
       "last_price": 19,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 83,
+      "no_ask": 84,
       "no_bid": 82,
       "open_interest": 9518,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DEHA",
       "volume": 9691,
-      "volume_24h": 3847,
+      "volume_24h": 3820,
       "yes_ask": 18,
-      "yes_bid": 17
+      "yes_bid": 16
     },
     "KXNASCARRACE-SOUP26-ERJO": {
       "last_price": 1,
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-KYLA",
       "volume": 10057,
-      "volume_24h": 3003,
+      "volume_24h": 2890,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-ROCH",
       "volume": 5943,
-      "volume_24h": 4891,
+      "volume_24h": 4657,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-RYBL",
       "volume": 7407,
-      "volume_24h": 2920,
+      "volume_24h": 2919,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-01T14:43:41.043252+00:00",
+  "scraped_at": "2026-10-01T14:52:09.584422+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
