@@ -108,15 +108,15 @@
       "yes_bid": 44
     },
     "KXNASCARTOP10-FOCH100326-BRPO": {
-      "last_price": 0,
+      "last_price": 8,
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 98,
       "no_bid": 92,
-      "open_interest": 0,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-BRPO",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 2
@@ -164,7 +164,7 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FOCH100326-DETH": {
-      "last_price": 0,
+      "last_price": 19,
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 95,
@@ -220,7 +220,7 @@
       "yes_bid": 9
     },
     "KXNASCARTOP10-FOCH100326-JECL": {
-      "last_price": 0,
+      "last_price": 19,
       "liquidity": null,
       "name": "Jeremy Clements",
       "no_ask": 97,
@@ -346,18 +346,18 @@
       "yes_bid": 13
     },
     "KXNASCARTOP10-FOCH100326-MADI": {
-      "last_price": 13,
+      "last_price": 5,
       "liquidity": null,
       "name": "Matt DiBenedetto",
-      "no_ask": 99,
-      "no_bid": 95,
-      "open_interest": 200,
+      "no_ask": 97,
+      "no_bid": 94,
+      "open_interest": 202,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-MADI",
-      "volume": 200,
-      "volume_24h": 0,
-      "yes_ask": 5,
-      "yes_bid": 1
+      "volume": 202,
+      "volume_24h": 2,
+      "yes_ask": 6,
+      "yes_bid": 3
     },
     "KXNASCARTOP10-FOCH100326-MAMA": {
       "last_price": 0,
@@ -433,7 +433,7 @@
       "last_price": 42,
       "liquidity": null,
       "name": "Ryan Sieg",
-      "no_ask": 73,
+      "no_ask": 69,
       "no_bid": 58,
       "open_interest": 184,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 184,
       "volume_24h": 103,
       "yes_ask": 42,
-      "yes_bid": 27
+      "yes_bid": 31
     },
     "KXNASCARTOP10-FOCH100326-SAMA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-01T11:08:15.760308+00:00",
+  "scraped_at": "2026-10-01T11:13:15.738805+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
