@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CHBE",
       "volume": 648,
-      "volume_24h": 20,
+      "volume_24h": 0,
       "yes_ask": 51,
       "yes_bid": 42
     },
@@ -237,15 +237,15 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 54,
-      "no_bid": 35,
+      "no_ask": 49,
+      "no_bid": 42,
       "open_interest": 1007,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-DEHA",
       "volume": 1007,
       "volume_24h": 20,
-      "yes_ask": 65,
-      "yes_bid": 46
+      "yes_ask": 58,
+      "yes_bid": 51
     },
     "KXNASCARTOP5-SOUP26-ERJO": {
       "last_price": 0,
@@ -279,7 +279,7 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 83,
+      "no_ask": 80,
       "no_bid": 64,
       "open_interest": 97,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 97,
       "volume_24h": 19,
       "yes_ask": 36,
-      "yes_bid": 17
+      "yes_bid": 20
     },
     "KXNASCARTOP5-SOUP26-JONE": {
       "last_price": 5,
@@ -307,7 +307,7 @@
       "last_price": 57,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 52,
+      "no_ask": 47,
       "no_bid": 40,
       "open_interest": 485,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 485,
       "volume_24h": 26,
       "yes_ask": 60,
-      "yes_bid": 48
+      "yes_bid": 53
     },
     "KXNASCARTOP5-SOUP26-MIMC": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-01T11:50:23.024345+00:00",
+  "scraped_at": "2026-10-01T11:55:17.755163+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top5"
 }
