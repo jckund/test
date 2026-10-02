@@ -99,6 +99,8 @@ _ALIAS_KEY = {
     "gio ruggiero": "giovanni ruggiero",  # BetOnline/BetUS shorten it; Kalshi says Giovanni
     "mini tyrell": "mini tyrrell",        # BetOnline drops an 'r'
     "andres perez de lara gonzalez": "andres perez de lara",  # Prime/BetOnline add the 2nd surname
+    "lee puliam": "lee pulliam",          # Caesars drops an 'l'
+    "andrew petterson": "andrew patterson",  # VIP365 swaps the vowel
 }
 
 
