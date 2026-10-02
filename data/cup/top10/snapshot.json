@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 71,
-      "no_bid": 67,
+      "no_bid": 66,
       "open_interest": 795,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ALBO",
       "volume": 795,
       "volume_24h": 0,
-      "yes_ask": 33,
+      "yes_ask": 34,
       "yes_bid": 29
     },
     "KXNASCARTOP10-SOUP26-AUCI": {
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBE",
       "volume": 203,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 70,
       "yes_bid": 66
     },
@@ -139,15 +139,15 @@
       "last_price": 62,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 45,
-      "no_bid": 38,
+      "no_ask": 44,
+      "no_bid": 39,
       "open_interest": 456,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBR",
       "volume": 456,
       "volume_24h": 1,
-      "yes_ask": 62,
-      "yes_bid": 55
+      "yes_ask": 61,
+      "yes_bid": 56
     },
     "KXNASCARTOP10-SOUP26-CHBU": {
       "last_price": 0,
@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 82,
-      "no_bid": 71,
+      "no_bid": 73,
       "open_interest": 58,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-DASU",
       "volume": 58,
       "volume_24h": 0,
-      "yes_ask": 29,
+      "yes_ask": 27,
       "yes_bid": 18
     },
     "KXNASCARTOP10-SOUP26-DEHA": {
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 32,
-      "no_bid": 24,
+      "no_bid": 23,
       "open_interest": 255,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-DEHA",
       "volume": 307,
-      "volume_24h": 3,
-      "yes_ask": 76,
+      "volume_24h": 2,
+      "yes_ask": 77,
       "yes_bid": 68
     },
     "KXNASCARTOP10-SOUP26-ERJO": {
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-KYLA",
       "volume": 148,
-      "volume_24h": 10,
+      "volume_24h": 9,
       "yes_ask": 78,
       "yes_bid": 76
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T02:10:18.588307+00:00",
+  "scraped_at": "2026-10-02T02:15:23.506740+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
