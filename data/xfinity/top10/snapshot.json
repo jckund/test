@@ -27,7 +27,7 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Andrew Patterson",
-      "no_ask": 96,
+      "no_ask": 98,
       "no_bid": 83,
       "open_interest": 250,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 250,
       "volume_24h": 250,
       "yes_ask": 17,
-      "yes_bid": 4
+      "yes_bid": 2
     },
     "KXNASCARTOP10-FOCH100326-AUHI": {
       "last_price": 0,
@@ -126,13 +126,13 @@
       "liquidity": null,
       "name": "Carson Kvapil",
       "no_ask": 44,
-      "no_bid": 35,
+      "no_bid": 34,
       "open_interest": 434,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-CAKV",
       "volume": 434,
       "volume_24h": 401,
-      "yes_ask": 65,
+      "yes_ask": 66,
       "yes_bid": 56
     },
     "KXNASCARTOP10-FOCH100326-CODA": {
@@ -210,13 +210,13 @@
       "liquidity": null,
       "name": "Jeb Burton",
       "no_ask": 89,
-      "no_bid": 82,
+      "no_bid": 81,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-JEBU",
       "volume": 250,
-      "volume_24h": 250,
-      "yes_ask": 18,
+      "volume_24h": 0,
+      "yes_ask": 19,
       "yes_bid": 11
     },
     "KXNASCARTOP10-FOCH100326-JECL": {
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-JOGA",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 0
     },
@@ -335,7 +335,7 @@
       "last_price": 18,
       "liquidity": null,
       "name": "Lee Pulliam",
-      "no_ask": 82,
+      "no_ask": 81,
       "no_bid": 74,
       "open_interest": 498,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 498,
       "volume_24h": 250,
       "yes_ask": 26,
-      "yes_bid": 18
+      "yes_bid": 19
     },
     "KXNASCARTOP10-FOCH100326-MADI": {
       "last_price": 5,
@@ -377,7 +377,7 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 66,
+      "no_ask": 67,
       "no_bid": 59,
       "open_interest": 661,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 661,
       "volume_24h": 634,
       "yes_ask": 41,
-      "yes_bid": 34
+      "yes_bid": 33
     },
     "KXNASCARTOP10-FOCH100326-PAST": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T16:18:45.277230+00:00",
+  "scraped_at": "2026-10-02T16:23:47.568901+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
