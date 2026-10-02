@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JELO",
       "volume": 4047,
-      "volume_24h": 2496,
+      "volume_24h": 2504,
       "yes_ask": 12,
       "yes_bid": 10
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JUAL",
       "volume": 4378,
-      "volume_24h": 2263,
+      "volume_24h": 2270,
       "yes_ask": 25,
       "yes_bid": 24
     },
@@ -332,16 +332,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-LEPU": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": null,
       "name": "Lee Pulliam",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 211,
+      "open_interest": 1127,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-LEPU",
-      "volume": 211,
-      "volume_24h": 156,
+      "volume": 1127,
+      "volume_24h": 1072,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-02T17:27:44.787340+00:00",
+  "scraped_at": "2026-10-02T17:43:04.781994+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
