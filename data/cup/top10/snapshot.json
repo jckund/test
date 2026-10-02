@@ -52,18 +52,18 @@
       "yes_bid": 41
     },
     "KXNASCARTOP10-SOUP26-AUDI": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": null,
       "name": "Austin Dillon",
-      "no_ask": 95,
-      "no_bid": 90,
-      "open_interest": 0,
+      "no_ask": 96,
+      "no_bid": 89,
+      "open_interest": 470,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-AUDI",
-      "volume": 0,
+      "volume": 470,
       "volume_24h": 0,
-      "yes_ask": 10,
-      "yes_bid": 5
+      "yes_ask": 11,
+      "yes_bid": 4
     },
     "KXNASCARTOP10-SOUP26-AUHI": {
       "last_price": 7,
@@ -108,15 +108,15 @@
       "yes_bid": 48
     },
     "KXNASCARTOP10-SOUP26-CAHO": {
-      "last_price": 38,
+      "last_price": 39,
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 65,
       "no_bid": 61,
-      "open_interest": 100,
+      "open_interest": 125,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CAHO",
-      "volume": 100,
+      "volume": 125,
       "volume_24h": 22,
       "yes_ask": 39,
       "yes_bid": 35
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-KYLA",
       "volume": 179,
-      "volume_24h": 32,
+      "volume_24h": 31,
       "yes_ask": 77,
       "yes_bid": 76
     },
@@ -489,15 +489,15 @@
       "last_price": 64,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 39,
-      "no_bid": 37,
+      "no_ask": 41,
+      "no_bid": 36,
       "open_interest": 1785,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-WIBY",
       "volume": 1814,
       "volume_24h": 243,
-      "yes_ask": 63,
-      "yes_bid": 61
+      "yes_ask": 64,
+      "yes_bid": 59
     },
     "KXNASCARTOP10-SOUP26-ZASM": {
       "last_price": 11,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T17:20:19.910731+00:00",
+  "scraped_at": "2026-10-02T17:25:17.509696+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
