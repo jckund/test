@@ -10,15 +10,15 @@
   "market_count": 36,
   "markets": {
     "KXNASCARTOP20-SOUP26-AJAL": {
-      "last_price": 0,
+      "last_price": 47,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 66,
       "no_bid": 53,
-      "open_interest": 0,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-AJAL",
-      "volume": 0,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 47,
       "yes_bid": 34
@@ -223,15 +223,15 @@
       "last_price": 56,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 61,
-      "no_bid": 44,
-      "open_interest": 28,
+      "no_ask": 56,
+      "no_bid": 45,
+      "open_interest": 36,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-DASU",
-      "volume": 28,
+      "volume": 36,
       "volume_24h": 13,
-      "yes_ask": 56,
-      "yes_bid": 39
+      "yes_ask": 55,
+      "yes_bid": 44
     },
     "KXNASCARTOP20-SOUP26-DEHA": {
       "last_price": 0,
@@ -346,15 +346,15 @@
       "yes_bid": 33
     },
     "KXNASCARTOP20-SOUP26-RIHE": {
-      "last_price": 38,
+      "last_price": 48,
       "liquidity": null,
       "name": "Riley Herbst",
       "no_ask": 62,
       "no_bid": 52,
-      "open_interest": 88,
+      "open_interest": 91,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-RIHE",
-      "volume": 91,
+      "volume": 95,
       "volume_24h": 3,
       "yes_ask": 48,
       "yes_bid": 38
@@ -377,15 +377,15 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 62,
-      "no_bid": 49,
-      "open_interest": 410,
+      "no_ask": 61,
+      "no_bid": 48,
+      "open_interest": 411,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-ROCH",
-      "volume": 416,
+      "volume": 421,
       "volume_24h": 0,
-      "yes_ask": 51,
-      "yes_bid": 38
+      "yes_ask": 52,
+      "yes_bid": 39
     },
     "KXNASCARTOP20-SOUP26-RYBL": {
       "last_price": 0,
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Ty Dillon",
       "no_ask": 86,
-      "no_bid": 75,
+      "no_bid": 73,
       "open_interest": 201,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-TYDI",
       "volume": 208,
       "volume_24h": 8,
-      "yes_ask": 25,
+      "yes_ask": 27,
       "yes_bid": 14
     },
     "KXNASCARTOP20-SOUP26-TYGI": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-02T15:33:13.129477+00:00",
+  "scraped_at": "2026-10-02T15:37:53.553053+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top20"
 }
