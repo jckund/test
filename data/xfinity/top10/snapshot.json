@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-BRPO",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 2
     },
@@ -210,13 +210,13 @@
       "liquidity": null,
       "name": "Jeb Burton",
       "no_ask": 89,
-      "no_bid": 82,
+      "no_bid": 81,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-JEBU",
       "volume": 250,
       "volume_24h": 250,
-      "yes_ask": 18,
+      "yes_ask": 19,
       "yes_bid": 11
     },
     "KXNASCARTOP10-FOCH100326-JECL": {
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-MADI",
       "volume": 202,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 2
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T11:18:41.306355+00:00",
+  "scraped_at": "2026-10-02T11:23:28.328785+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
