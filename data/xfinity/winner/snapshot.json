@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-AUHI",
       "volume": 668,
-      "volume_24h": 0,
+      "volume_24h": 80,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -293,15 +293,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 77,
-      "no_bid": 76,
-      "open_interest": 2838,
+      "no_ask": 76,
+      "no_bid": 75,
+      "open_interest": 4182,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JUAL",
-      "volume": 2922,
+      "volume": 4266,
       "volume_24h": 1213,
-      "yes_ask": 24,
-      "yes_bid": 23
+      "yes_ask": 25,
+      "yes_bid": 24
     },
     "KXNASCARRACE-FOCH100326-KYSI": {
       "last_price": 0,
@@ -475,15 +475,15 @@
       "last_price": 8,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 3510,
+      "no_ask": 92,
+      "no_bid": 91,
+      "open_interest": 3934,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-SHCR",
-      "volume": 3520,
+      "volume": 3944,
       "volume_24h": 1424,
-      "yes_ask": 8,
-      "yes_bid": 7
+      "yes_ask": 9,
+      "yes_bid": 8
     },
     "KXNASCARRACE-FOCH100326-TAGR": {
       "last_price": 6,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-02T16:00:11.462540+00:00",
+  "scraped_at": "2026-10-02T16:08:43.070250+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
