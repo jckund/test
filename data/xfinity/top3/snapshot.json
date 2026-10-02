@@ -125,7 +125,7 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 74,
+      "no_ask": 76,
       "no_bid": 71,
       "open_interest": 456,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 678,
       "volume_24h": 216,
       "yes_ask": 29,
-      "yes_bid": 26
+      "yes_bid": 24
     },
     "KXNASCARTOP3-FOCH100326-CODA": {
       "last_price": 17,
@@ -416,18 +416,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-FOCH100326-RYEL": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Ryan Ellis",
-      "no_ask": 99,
-      "no_bid": 94,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 95,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-RYEL",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 6,
-      "yes_bid": 1
+      "yes_ask": 5,
+      "yes_bid": 0
     },
     "KXNASCARTOP3-FOCH100326-RYSI": {
       "last_price": 0,
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 94,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 205,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-SASM",
       "volume": 205,
       "volume_24h": 5,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARTOP3-FOCH100326-SHCR": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-02T19:23:53.488882+00:00",
+  "scraped_at": "2026-10-02T19:28:24.927489+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top3"
 }
