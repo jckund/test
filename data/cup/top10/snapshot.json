@@ -112,13 +112,13 @@
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 65,
-      "no_bid": 61,
+      "no_bid": 62,
       "open_interest": 99,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CAHO",
       "volume": 99,
-      "volume_24h": 9,
-      "yes_ask": 39,
+      "volume_24h": 21,
+      "yes_ask": 38,
       "yes_bid": 35
     },
     "KXNASCARTOP10-SOUP26-CHBE": {
@@ -164,17 +164,17 @@
       "yes_bid": 26
     },
     "KXNASCARTOP10-SOUP26-CHEL": {
-      "last_price": 53,
+      "last_price": 54,
       "liquidity": null,
       "name": "Chase Elliott",
       "no_ask": 51,
-      "no_bid": 46,
-      "open_interest": 170,
+      "no_bid": 48,
+      "open_interest": 173,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHEL",
-      "volume": 171,
+      "volume": 173,
       "volume_24h": 0,
-      "yes_ask": 54,
+      "yes_ask": 52,
       "yes_bid": 49
     },
     "KXNASCARTOP10-SOUP26-COCU": {
@@ -262,15 +262,15 @@
       "yes_bid": 13
     },
     "KXNASCARTOP10-SOUP26-JOBE": {
-      "last_price": 30,
+      "last_price": 29,
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 462,
+      "open_interest": 466,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-JOBE",
-      "volume": 462,
+      "volume": 466,
       "volume_24h": 32,
       "yes_ask": 29,
       "yes_bid": 28
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T13:40:21.021697+00:00",
+  "scraped_at": "2026-10-02T13:45:23.377970+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
