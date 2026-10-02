@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 74,
-      "no_bid": 61,
+      "no_bid": 67,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 39,
+      "yes_ask": 33,
       "yes_bid": 26
     },
     "KXNASCARTOP10-SOUP26-CHEL": {
@@ -321,15 +321,15 @@
       "last_price": 9,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 94,
-      "no_bid": 91,
-      "open_interest": 200,
+      "no_ask": 91,
+      "no_bid": 90,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-MIMC",
-      "volume": 200,
+      "volume": 400,
       "volume_24h": 200,
-      "yes_ask": 9,
-      "yes_bid": 6
+      "yes_ask": 10,
+      "yes_bid": 9
     },
     "KXNASCARTOP10-SOUP26-NOGR": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T05:55:18.601187+00:00",
+  "scraped_at": "2026-10-02T08:30:23.353383+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
