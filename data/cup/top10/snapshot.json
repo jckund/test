@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ALBO",
       "volume": 948,
-      "volume_24h": 3,
+      "volume_24h": 153,
       "yes_ask": 34,
       "yes_bid": 29
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-BUWA",
       "volume": 1366,
-      "volume_24h": 159,
+      "volume_24h": 459,
       "yes_ask": 49,
       "yes_bid": 48
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHBR",
       "volume": 676,
-      "volume_24h": 1,
+      "volume_24h": 221,
       "yes_ask": 64,
       "yes_bid": 63
     },
@@ -164,17 +164,17 @@
       "yes_bid": 26
     },
     "KXNASCARTOP10-SOUP26-CHEL": {
-      "last_price": 52,
+      "last_price": 51,
       "liquidity": null,
       "name": "Chase Elliott",
       "no_ask": 51,
-      "no_bid": 48,
-      "open_interest": 373,
+      "no_bid": 47,
+      "open_interest": 819,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHEL",
-      "volume": 373,
-      "volume_24h": 3,
-      "yes_ask": 52,
+      "volume": 819,
+      "volume_24h": 203,
+      "yes_ask": 53,
       "yes_bid": 49
     },
     "KXNASCARTOP10-SOUP26-COCU": {
@@ -209,7 +209,7 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 87,
       "open_interest": 200,
       "status": "active",
@@ -217,20 +217,20 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 13,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARTOP10-SOUP26-DASU": {
       "last_price": 31,
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 82,
-      "no_bid": 74,
+      "no_bid": 75,
       "open_interest": 58,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-DASU",
       "volume": 58,
       "volume_24h": 0,
-      "yes_ask": 26,
+      "yes_ask": 25,
       "yes_bid": 18
     },
     "KXNASCARTOP10-SOUP26-DEHA": {
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Ryan Preece",
       "no_ask": 73,
-      "no_bid": 68,
+      "no_bid": 70,
       "open_interest": 217,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-RYPR",
       "volume": 217,
       "volume_24h": 15,
-      "yes_ask": 32,
+      "yes_ask": 30,
       "yes_bid": 27
     },
     "KXNASCARTOP10-SOUP26-SHVA": {
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 47,
-      "no_bid": 40,
+      "no_bid": 41,
       "open_interest": 886,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-TYGI",
       "volume": 886,
-      "volume_24h": 0,
-      "yes_ask": 60,
+      "volume_24h": 500,
+      "yes_ask": 59,
       "yes_bid": 53
     },
     "KXNASCARTOP10-SOUP26-TYRE": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-WIBY",
       "volume": 1814,
-      "volume_24h": 14,
+      "volume_24h": 243,
       "yes_ask": 64,
       "yes_bid": 59
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T16:25:21.828702+00:00",
+  "scraped_at": "2026-10-02T16:40:20.268417+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
