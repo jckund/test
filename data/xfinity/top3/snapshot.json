@@ -125,7 +125,7 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 76,
+      "no_ask": 74,
       "no_bid": 71,
       "open_interest": 456,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 678,
       "volume_24h": 216,
       "yes_ask": 29,
-      "yes_bid": 24
+      "yes_bid": 26
     },
     "KXNASCARTOP3-FOCH100326-CODA": {
       "last_price": 17,
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-RYEL",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 5,
       "yes_bid": 0
     },
@@ -472,17 +472,17 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-FOCH100326-SHCR": {
-      "last_price": 22,
+      "last_price": 21,
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 83,
-      "no_bid": 78,
-      "open_interest": 216,
+      "no_bid": 79,
+      "open_interest": 228,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-SHCR",
-      "volume": 216,
-      "volume_24h": 108,
-      "yes_ask": 22,
+      "volume": 228,
+      "volume_24h": 119,
+      "yes_ask": 21,
       "yes_bid": 17
     },
     "KXNASCARTOP3-FOCH100326-TAGR": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-02T19:28:24.927489+00:00",
+  "scraped_at": "2026-10-02T19:32:47.920526+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top3"
 }
