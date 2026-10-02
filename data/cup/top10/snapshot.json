@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 71,
-      "no_bid": 66,
+      "no_bid": 67,
       "open_interest": 798,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ALBO",
       "volume": 798,
-      "volume_24h": 0,
-      "yes_ask": 34,
+      "volume_24h": 3,
+      "yes_ask": 33,
       "yes_bid": 29
     },
     "KXNASCARTOP10-SOUP26-AUCI": {
@@ -108,17 +108,17 @@
       "yes_bid": 48
     },
     "KXNASCARTOP10-SOUP26-CAHO": {
-      "last_price": 39,
+      "last_price": 38,
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 65,
-      "no_bid": 62,
-      "open_interest": 99,
+      "no_bid": 61,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CAHO",
-      "volume": 99,
+      "volume": 100,
       "volume_24h": 21,
-      "yes_ask": 38,
+      "yes_ask": 39,
       "yes_bid": 35
     },
     "KXNASCARTOP10-SOUP26-CHBE": {
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-CHEL",
       "volume": 173,
-      "volume_24h": 0,
+      "volume_24h": 3,
       "yes_ask": 52,
       "yes_bid": 49
     },
@@ -234,15 +234,15 @@
       "yes_bid": 18
     },
     "KXNASCARTOP10-SOUP26-DEHA": {
-      "last_price": 77,
+      "last_price": 74,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 32,
       "no_bid": 26,
-      "open_interest": 255,
+      "open_interest": 256,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-DEHA",
-      "volume": 307,
+      "volume": 308,
       "volume_24h": 2,
       "yes_ask": 74,
       "yes_bid": 68
@@ -271,20 +271,20 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-JOBE",
       "volume": 466,
-      "volume_24h": 32,
+      "volume_24h": 35,
       "yes_ask": 29,
       "yes_bid": 28
     },
     "KXNASCARTOP10-SOUP26-JOLO": {
-      "last_price": 59,
+      "last_price": 52,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 49,
       "no_bid": 48,
-      "open_interest": 1043,
+      "open_interest": 1044,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-JOLO",
-      "volume": 1052,
+      "volume": 1053,
       "volume_24h": 943,
       "yes_ask": 52,
       "yes_bid": 51
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-TOGI",
       "volume": 144,
-      "volume_24h": 0,
+      "volume_24h": 7,
       "yes_ask": 7,
       "yes_bid": 4
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-02T13:50:21.284032+00:00",
+  "scraped_at": "2026-10-02T14:05:20.827322+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
