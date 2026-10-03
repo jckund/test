@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-BRPO",
       "volume": 13,
-      "volume_24h": 12,
+      "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 2
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-LEPU",
       "volume": 649,
-      "volume_24h": 216,
+      "volume_24h": 211,
       "yes_ask": 34,
       "yes_bid": 25
     },
@@ -475,7 +475,7 @@
       "last_price": 58,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 49,
+      "no_ask": 48,
       "no_bid": 41,
       "open_interest": 231,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 231,
       "volume_24h": 52,
       "yes_ask": 59,
-      "yes_bid": 51
+      "yes_bid": 52
     },
     "KXNASCARTOP10-FOCH100326-TAGR": {
       "last_price": 60,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-03T12:33:37.136411+00:00",
+  "scraped_at": "2026-10-03T12:53:32.300245+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
