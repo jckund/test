@@ -42,13 +42,13 @@
       "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 92,
-      "no_bid": 79,
+      "no_bid": 82,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-AUHI",
       "volume": 5,
-      "volume_24h": 0,
-      "yes_ask": 21,
+      "volume_24h": 5,
+      "yes_ask": 18,
       "yes_bid": 8
     },
     "KXNASCARTOP3-FOCH100326-BLLO": {
@@ -83,15 +83,15 @@
       "last_price": 30,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 81,
-      "no_bid": 71,
+      "no_ask": 78,
+      "no_bid": 75,
       "open_interest": 1600,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-BRCR",
       "volume": 1600,
       "volume_24h": 1187,
-      "yes_ask": 29,
-      "yes_bid": 19
+      "yes_ask": 25,
+      "yes_bid": 22
     },
     "KXNASCARTOP3-FOCH100326-BRJO": {
       "last_price": 15,
@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 81,
-      "no_bid": 78,
+      "no_bid": 80,
       "open_interest": 249,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-CODA",
       "volume": 249,
-      "volume_24h": 164,
-      "yes_ask": 22,
+      "volume_24h": 165,
+      "yes_ask": 20,
       "yes_bid": 19
     },
     "KXNASCARTOP3-FOCH100326-DACR": {
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-JELO",
       "volume": 476,
-      "volume_24h": 476,
+      "volume_24h": 444,
       "yes_ask": 29,
       "yes_bid": 18
     },
@@ -293,15 +293,15 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 56,
-      "no_bid": 47,
+      "no_ask": 55,
+      "no_bid": 48,
       "open_interest": 1072,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-JUAL",
       "volume": 1095,
       "volume_24h": 170,
-      "yes_ask": 53,
-      "yes_bid": 44
+      "yes_ask": 52,
+      "yes_bid": 45
     },
     "KXNASCARTOP3-FOCH100326-KYSI": {
       "last_price": 0,
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 94,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 310,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-SASM",
       "volume": 310,
       "volume_24h": 110,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARTOP3-FOCH100326-SHCR": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-TAGR",
       "volume": 329,
-      "volume_24h": 323,
+      "volume_24h": 324,
       "yes_ask": 15,
       "yes_bid": 7
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-03T16:58:04.353733+00:00",
+  "scraped_at": "2026-10-03T17:02:53.770903+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top3"
 }
