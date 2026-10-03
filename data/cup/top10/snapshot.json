@@ -56,13 +56,13 @@
       "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 95,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 677,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-AUDI",
       "volume": 677,
       "volume_24h": 677,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 5
     },
     "KXNASCARTOP10-SOUP26-AUHI": {
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-AUHI",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 8,
       "yes_bid": 1
     },
@@ -209,7 +209,7 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 86,
       "open_interest": 200,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARTOP10-SOUP26-DASU": {
       "last_price": 25,
@@ -335,15 +335,15 @@
       "last_price": 11,
       "liquidity": null,
       "name": "Noah Gragson",
-      "no_ask": 95,
-      "no_bid": 88,
+      "no_ask": 94,
+      "no_bid": 89,
       "open_interest": 128,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-NOGR",
       "volume": 128,
       "volume_24h": 128,
-      "yes_ask": 12,
-      "yes_bid": 5
+      "yes_ask": 11,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-SOUP26-RIHE": {
       "last_price": 0,
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ROCH",
       "volume": 455,
-      "volume_24h": 39,
+      "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 19
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-RYPR",
       "volume": 263,
-      "volume_24h": 30,
+      "volume_24h": 46,
       "yes_ask": 30,
       "yes_bid": 29
     },
@@ -504,18 +504,18 @@
       "liquidity": null,
       "name": "Zane Smith",
       "no_ask": 89,
-      "no_bid": 81,
+      "no_bid": 82,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-SOUP26-ZASM",
       "volume": 250,
       "volume_24h": 0,
-      "yes_ask": 19,
+      "yes_ask": 18,
       "yes_bid": 11
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-03T15:20:19.512321+00:00",
+  "scraped_at": "2026-10-03T15:25:18.125506+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top10"
 }
