@@ -27,7 +27,7 @@
       "last_price": 2,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
       "open_interest": 8447,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 8447,
       "volume_24h": 4883,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARRACE-SOUP26-AUCI": {
       "last_price": 3,
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CAHO",
       "volume": 10437,
-      "volume_24h": 4356,
+      "volume_24h": 4548,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CHBE",
       "volume": 34814,
-      "volume_24h": 22480,
+      "volume_24h": 22553,
       "yes_ask": 13,
       "yes_bid": 11
     },
@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 93,
-      "no_bid": 91,
-      "open_interest": 33634,
+      "no_bid": 90,
+      "open_interest": 36743,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CHBR",
-      "volume": 33635,
-      "volume_24h": 20246,
-      "yes_ask": 9,
+      "volume": 36744,
+      "volume_24h": 22779,
+      "yes_ask": 10,
       "yes_bid": 7
     },
     "KXNASCARRACE-SOUP26-CHBU": {
@@ -169,10 +169,10 @@
       "name": "Chase Elliott",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 15575,
+      "open_interest": 15590,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-CHEL",
-      "volume": 16036,
+      "volume": 16051,
       "volume_24h": 1315,
       "yes_ask": 5,
       "yes_bid": 4
@@ -239,11 +239,11 @@
       "name": "Denny Hamlin",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 25918,
+      "open_interest": 27866,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-DEHA",
-      "volume": 26318,
-      "volume_24h": 9821,
+      "volume": 28267,
+      "volume_24h": 8577,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-JOLO",
       "volume": 23900,
-      "volume_24h": 5455,
+      "volume_24h": 5317,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-KYLA",
       "volume": 31566,
-      "volume_24h": 13584,
+      "volume_24h": 13634,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-RYBL",
       "volume": 25950,
-      "volume_24h": 13020,
+      "volume_24h": 13044,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -477,10 +477,10 @@
       "name": "Tyler Reddick",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 22601,
+      "open_interest": 22717,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-TYRE",
-      "volume": 22777,
+      "volume": 22894,
       "volume_24h": 14142,
       "yes_ask": 9,
       "yes_bid": 8
@@ -491,11 +491,11 @@
       "name": "William Byron",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 24567,
+      "open_interest": 27683,
       "status": "active",
       "ticker": "KXNASCARRACE-SOUP26-WIBY",
-      "volume": 24583,
-      "volume_24h": 10879,
+      "volume": 27699,
+      "volume_24h": 10504,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-03T16:10:19.665519+00:00",
+  "scraped_at": "2026-10-03T16:15:19.216744+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "winner"
 }
