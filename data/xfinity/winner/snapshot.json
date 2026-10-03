@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-ANAL",
       "volume": 31,
-      "volume_24h": 0,
+      "volume_24h": 31,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CAKV",
       "volume": 3188,
-      "volume_24h": 949,
+      "volume_24h": 1687,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 90,
-      "no_bid": 88,
+      "no_bid": 89,
       "open_interest": 4987,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JELO",
       "volume": 5006,
-      "volume_24h": 2391,
-      "yes_ask": 12,
+      "volume_24h": 2440,
+      "yes_ask": 11,
       "yes_bid": 10
     },
     "KXNASCARRACE-FOCH100326-JOBI": {
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-JUAL": {
-      "last_price": 26,
+      "last_price": 24,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 77,
-      "no_bid": 76,
+      "no_ask": 76,
+      "no_bid": 75,
       "open_interest": 6169,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-JUAL",
-      "volume": 6305,
-      "volume_24h": 3502,
-      "yes_ask": 24,
-      "yes_bid": 23
+      "volume": 6340,
+      "volume_24h": 3537,
+      "yes_ask": 25,
+      "yes_bid": 24
     },
     "KXNASCARRACE-FOCH100326-KYSI": {
       "last_price": 0,
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-RACA",
       "volume": 2949,
-      "volume_24h": 0,
+      "volume_24h": 23,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-SHCR",
       "volume": 5797,
-      "volume_24h": 2257,
+      "volume_24h": 2277,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-TAGR",
       "volume": 4270,
-      "volume_24h": 2295,
+      "volume_24h": 2313,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-03T13:18:03.963608+00:00",
+  "scraped_at": "2026-10-03T13:22:46.589451+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
