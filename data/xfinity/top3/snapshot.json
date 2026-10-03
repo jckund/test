@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-BRCR",
       "volume": 1600,
-      "volume_24h": 1187,
+      "volume_24h": 1087,
       "yes_ask": 25,
       "yes_bid": 22
     },
@@ -168,13 +168,13 @@
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 100,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-DETH",
       "volume": 4,
       "volume_24h": 0,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 0
     },
     "KXNASCARTOP3-FOCH100326-GASM": {
@@ -430,16 +430,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-FOCH100326-RYSI": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": null,
       "name": "Ryan Sieg",
       "no_ask": 100,
       "no_bid": 91,
-      "open_interest": 0,
+      "open_interest": 157,
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-RYSI",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 157,
+      "volume_24h": 157,
       "yes_ask": 9,
       "yes_bid": 0
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FOCH100326-SASM",
       "volume": 310,
-      "volume_24h": 110,
+      "volume_24h": 105,
       "yes_ask": 9,
       "yes_bid": 6
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-03T17:08:03.759281+00:00",
+  "scraped_at": "2026-10-03T17:12:45.972259+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top3"
 }
