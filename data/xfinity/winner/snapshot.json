@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-BRJO",
       "volume": 2842,
-      "volume_24h": 1648,
+      "volume_24h": 491,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-CODA",
       "volume": 3533,
-      "volume_24h": 1641,
+      "volume_24h": 1038,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -416,30 +416,30 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-FOCH100326-RYEL": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Ryan Ellis",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 66,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-RYEL",
-      "volume": 0,
+      "volume": 66,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-FOCH100326-RYSI": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": null,
       "name": "Ryan Sieg",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 649,
+      "open_interest": 693,
       "status": "active",
       "ticker": "KXNASCARRACE-FOCH100326-RYSI",
-      "volume": 649,
-      "volume_24h": 328,
+      "volume": 693,
+      "volume_24h": 332,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-03T00:03:02.692039+00:00",
+  "scraped_at": "2026-10-03T00:28:03.802312+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "winner"
 }
