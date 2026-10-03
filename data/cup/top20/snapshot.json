@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 42,
-      "no_bid": 34,
+      "no_bid": 35,
       "open_interest": 746,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-ALBO",
       "volume": 750,
       "volume_24h": 3,
-      "yes_ask": 66,
+      "yes_ask": 65,
       "yes_bid": 58
     },
     "KXNASCARTOP20-SOUP26-AUCI": {
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-CAHO",
       "volume": 12,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 74,
       "yes_bid": 61
     },
@@ -153,15 +153,15 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Chris Buescher",
-      "no_ask": 41,
-      "no_bid": 34,
+      "no_ask": 42,
+      "no_bid": 33,
       "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-CHBU",
       "volume": 3,
       "volume_24h": 3,
-      "yes_ask": 66,
-      "yes_bid": 59
+      "yes_ask": 67,
+      "yes_bid": 58
     },
     "KXNASCARTOP20-SOUP26-CHEL": {
       "last_price": 0,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-JOBE",
       "volume": 1447,
-      "volume_24h": 1036,
+      "volume_24h": 1096,
       "yes_ask": 63,
       "yes_bid": 59
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-03T05:25:20.727879+00:00",
+  "scraped_at": "2026-10-03T05:40:20.816889+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top20"
 }
