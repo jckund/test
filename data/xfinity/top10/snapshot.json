@@ -10,32 +10,32 @@
   "market_count": 36,
   "markets": {
     "KXNASCARTOP10-FOCH100326-ANAL": {
-      "last_price": 29,
+      "last_price": 25,
       "liquidity": null,
       "name": "Anthony Alfredo",
-      "no_ask": 75,
-      "no_bid": 71,
-      "open_interest": 62,
+      "no_ask": 84,
+      "no_bid": 73,
+      "open_interest": 72,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-ANAL",
-      "volume": 62,
+      "volume": 72,
       "volume_24h": 0,
-      "yes_ask": 29,
-      "yes_bid": 25
+      "yes_ask": 27,
+      "yes_bid": 16
     },
     "KXNASCARTOP10-FOCH100326-ANPA": {
       "last_price": 6,
       "liquidity": null,
       "name": "Andrew Patterson",
-      "no_ask": 99,
-      "no_bid": 85,
+      "no_ask": 98,
+      "no_bid": 83,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-ANPA",
       "volume": 250,
       "volume_24h": 250,
-      "yes_ask": 15,
-      "yes_bid": 1
+      "yes_ask": 17,
+      "yes_bid": 2
     },
     "KXNASCARTOP10-FOCH100326-AUHI": {
       "last_price": 65,
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Parker Retzlaff",
       "no_ask": 68,
-      "no_bid": 58,
+      "no_bid": 59,
       "open_interest": 744,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-PARE",
       "volume": 744,
       "volume_24h": 83,
-      "yes_ask": 42,
+      "yes_ask": 41,
       "yes_bid": 32
     },
     "KXNASCARTOP10-FOCH100326-PAST": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-03T14:53:16.256386+00:00",
+  "scraped_at": "2026-10-03T14:58:32.631685+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
