@@ -69,7 +69,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Blaine Perkins",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 94,
       "open_interest": 0,
       "status": "active",
@@ -77,7 +77,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 6,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP10-FOCH100326-BRCR": {
       "last_price": 68,
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-BRJO",
       "volume": 235,
-      "volume_24h": 1,
+      "volume_24h": 227,
       "yes_ask": 65,
       "yes_bid": 64
     },
@@ -237,7 +237,7 @@
       "last_price": 70,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 38,
+      "no_ask": 39,
       "no_bid": 25,
       "open_interest": 23,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 23,
       "volume_24h": 10,
       "yes_ask": 75,
-      "yes_bid": 62
+      "yes_bid": 61
     },
     "KXNASCARTOP10-FOCH100326-JOBI": {
       "last_price": 0,
@@ -388,32 +388,32 @@
       "yes_bid": 32
     },
     "KXNASCARTOP10-FOCH100326-PAST": {
-      "last_price": 0,
+      "last_price": 15,
       "liquidity": null,
       "name": "Patrick Staropoli",
-      "no_ask": 99,
-      "no_bid": 86,
-      "open_interest": 0,
+      "no_ask": 94,
+      "no_bid": 74,
+      "open_interest": 450,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-PAST",
-      "volume": 0,
+      "volume": 450,
       "volume_24h": 0,
-      "yes_ask": 14,
-      "yes_bid": 1
+      "yes_ask": 26,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-FOCH100326-RACA": {
       "last_price": 54,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 47,
-      "no_bid": 46,
-      "open_interest": 1635,
+      "no_ask": 46,
+      "no_bid": 45,
+      "open_interest": 1724,
       "status": "active",
       "ticker": "KXNASCARTOP10-FOCH100326-RACA",
-      "volume": 1635,
+      "volume": 1724,
       "volume_24h": 687,
-      "yes_ask": 54,
-      "yes_bid": 53
+      "yes_ask": 55,
+      "yes_bid": 54
     },
     "KXNASCARTOP10-FOCH100326-RYEL": {
       "last_price": 8,
@@ -489,7 +489,7 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Taylor Gray",
-      "no_ask": 52,
+      "no_ask": 55,
       "no_bid": 38,
       "open_interest": 56,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 56,
       "volume_24h": 0,
       "yes_ask": 62,
-      "yes_bid": 48
+      "yes_bid": 45
     },
     "KXNASCARTOP10-FOCH100326-WISA": {
       "last_price": 51,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-03T21:18:20.731165+00:00",
+  "scraped_at": "2026-10-03T21:23:09.509200+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-foch100326",
   "tier": "top10"
 }
