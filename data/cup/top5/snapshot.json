@@ -83,7 +83,7 @@
       "last_price": 19,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 96,
+      "no_ask": 94,
       "no_bid": 91,
       "open_interest": 14,
       "status": "active",
@@ -91,13 +91,13 @@
       "volume": 14,
       "volume_24h": 14,
       "yes_ask": 9,
-      "yes_bid": 4
+      "yes_bid": 6
     },
     "KXNASCARTOP5-SOUP26-BUWA": {
       "last_price": 23,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 86,
+      "no_ask": 85,
       "no_bid": 79,
       "open_interest": 94,
       "status": "active",
@@ -105,20 +105,20 @@
       "volume": 95,
       "volume_24h": 94,
       "yes_ask": 21,
-      "yes_bid": 14
+      "yes_bid": 15
     },
     "KXNASCARTOP5-SOUP26-CAHO": {
-      "last_price": 23,
+      "last_price": 21,
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 80,
-      "no_bid": 77,
+      "no_bid": 79,
       "open_interest": 452,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CAHO",
-      "volume": 453,
+      "volume": 468,
       "volume_24h": 407,
-      "yes_ask": 23,
+      "yes_ask": 21,
       "yes_bid": 20
     },
     "KXNASCARTOP5-SOUP26-CHBE": {
@@ -153,15 +153,15 @@
       "last_price": 16,
       "liquidity": null,
       "name": "Chris Buescher",
-      "no_ask": 94,
-      "no_bid": 85,
+      "no_ask": 91,
+      "no_bid": 86,
       "open_interest": 89,
       "status": "active",
       "ticker": "KXNASCARTOP5-SOUP26-CHBU",
       "volume": 89,
       "volume_24h": 89,
-      "yes_ask": 15,
-      "yes_bid": 6
+      "yes_ask": 14,
+      "yes_bid": 9
     },
     "KXNASCARTOP5-SOUP26-CHEL": {
       "last_price": 24,
@@ -475,7 +475,7 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 61,
+      "no_ask": 59,
       "no_bid": 55,
       "open_interest": 968,
       "status": "active",
@@ -483,13 +483,13 @@
       "volume": 1015,
       "volume_24h": 641,
       "yes_ask": 45,
-      "yes_bid": 39
+      "yes_bid": 41
     },
     "KXNASCARTOP5-SOUP26-WIBY": {
       "last_price": 41,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 63,
+      "no_ask": 66,
       "no_bid": 58,
       "open_interest": 1367,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 1631,
       "volume_24h": 667,
       "yes_ask": 42,
-      "yes_bid": 37
+      "yes_bid": 34
     },
     "KXNASCARTOP5-SOUP26-ZASM": {
       "last_price": 6,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-04T18:55:19.209480+00:00",
+  "scraped_at": "2026-10-04T18:59:57.784884+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top5"
 }
