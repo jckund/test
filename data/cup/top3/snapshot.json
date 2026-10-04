@@ -97,15 +97,15 @@
       "last_price": 13,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 92,
-      "no_bid": 88,
+      "no_ask": 93,
+      "no_bid": 90,
       "open_interest": 227,
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-BUWA",
       "volume": 227,
-      "volume_24h": 16,
-      "yes_ask": 12,
-      "yes_bid": 8
+      "volume_24h": 88,
+      "yes_ask": 10,
+      "yes_bid": 7
     },
     "KXNASCARTOP3-SOUP26-CAHO": {
       "last_price": 16,
@@ -125,15 +125,15 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 65,
+      "no_ask": 63,
       "no_bid": 62,
       "open_interest": 803,
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-CHBE",
       "volume": 911,
-      "volume_24h": 595,
+      "volume_24h": 581,
       "yes_ask": 38,
-      "yes_bid": 35
+      "yes_bid": 37
     },
     "KXNASCARTOP3-SOUP26-CHBR": {
       "last_price": 24,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-CHBR",
       "volume": 547,
-      "volume_24h": 339,
+      "volume_24h": 340,
       "yes_ask": 24,
       "yes_bid": 21
     },
@@ -154,20 +154,20 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 97,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 134,
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-CHBU",
       "volume": 134,
-      "volume_24h": 0,
-      "yes_ask": 7,
+      "volume_24h": 134,
+      "yes_ask": 6,
       "yes_bid": 3
     },
     "KXNASCARTOP3-SOUP26-CHEL": {
       "last_price": 14,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 90,
+      "no_ask": 94,
       "no_bid": 86,
       "open_interest": 67,
       "status": "active",
@@ -175,7 +175,7 @@
       "volume": 67,
       "volume_24h": 67,
       "yes_ask": 14,
-      "yes_bid": 10
+      "yes_bid": 6
     },
     "KXNASCARTOP3-SOUP26-COCU": {
       "last_price": 0,
@@ -279,7 +279,7 @@
       "last_price": 14,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 94,
+      "no_ask": 93,
       "no_bid": 86,
       "open_interest": 55,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 55,
       "volume_24h": 42,
       "yes_ask": 14,
-      "yes_bid": 6
+      "yes_bid": 7
     },
     "KXNASCARTOP3-SOUP26-JONE": {
       "last_price": 0,
@@ -383,22 +383,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-ROCH",
       "volume": 134,
-      "volume_24h": 0,
+      "volume_24h": 134,
       "yes_ask": 6,
       "yes_bid": 2
     },
     "KXNASCARTOP3-SOUP26-RYBL": {
-      "last_price": 15,
+      "last_price": 18,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 86,
-      "no_bid": 85,
-      "open_interest": 305,
+      "no_bid": 83,
+      "open_interest": 333,
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-RYBL",
-      "volume": 309,
-      "volume_24h": 187,
-      "yes_ask": 15,
+      "volume": 337,
+      "volume_24h": 215,
+      "yes_ask": 17,
       "yes_bid": 14
     },
     "KXNASCARTOP3-SOUP26-RYPR": {
@@ -461,7 +461,7 @@
       "last_price": 22,
       "liquidity": null,
       "name": "Ty Gibbs",
-      "no_ask": 84,
+      "no_ask": 87,
       "no_bid": 79,
       "open_interest": 67,
       "status": "active",
@@ -469,18 +469,18 @@
       "volume": 67,
       "volume_24h": 67,
       "yes_ask": 21,
-      "yes_bid": 16
+      "yes_bid": 13
     },
     "KXNASCARTOP3-SOUP26-TYRE": {
-      "last_price": 28,
+      "last_price": 26,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 75,
       "no_bid": 74,
-      "open_interest": 2016,
+      "open_interest": 2045,
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-TYRE",
-      "volume": 2016,
+      "volume": 2045,
       "volume_24h": 2016,
       "yes_ask": 26,
       "yes_bid": 25
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-SOUP26-WIBY",
       "volume": 326,
-      "volume_24h": 291,
+      "volume_24h": 292,
       "yes_ask": 21,
       "yes_bid": 19
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-04T18:30:22.331339+00:00",
+  "scraped_at": "2026-10-04T18:35:16.943168+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top3"
 }
