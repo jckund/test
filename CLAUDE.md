@@ -14,7 +14,9 @@ misclassified. Kickoff sequence:
 
 1. **Re-point matchers + clear stale data.** Update the `SERIES` matchers in
    `scraper.py` (case-insensitive substring on the race name) for this week's
-   Cup / Xfinity races; `xfinity` is the default catch-all. Clear stale
+   Cup / Xfinity races; `xfinity` is the default catch-all — and it may be
+   **commented out** from a prior support-race clear-down, so uncomment it (see
+   "Clearing a support race mid-weekend" below). Clear stale
    lines from every book/tier across Cup + support series (don't carry last
    week's boards forward).
 2. **Turn the scraper ON.** Set the auto-scrape gate to live: commit
@@ -34,6 +36,21 @@ Kalshi + FanDuel, deploy, and confirm."*
 **The Truck series is no longer tracked** (removed 2026-09-18): its `SERIES` entry
 and `data/truck/` are gone, and a Truck race now falls to the `xfinity` catch-all.
 Don't re-add it without being asked.
+
+**Clearing a support race mid-weekend (and why the catch-all must go with it).**
+Once the support race has run, dropping its hand books is not enough — `git rm`ing
+`data/xfinity/` while the `xfinity` entry is still `default: True` is undone on the
+next 15-min poll, because the catch-all re-claims whatever race Kalshi still lists
+as open (the settled one, or next week's) and rebuilds the directory. So to clear a
+support race from the site, **comment out the `xfinity` SERIES entry** (catch-all
+included) in the same change that deletes `data/xfinity/` and drops the entry from
+`data/series.json`. With no `default` entry, an unmatched race is simply not
+tracked. Nothing else needs touching: `index.html`, `fanduel_scraper.js` and
+`evwatch.py` all read `data/series.json`, so the tab strip hides itself at one
+series and both scrapers skip the series on their own. **The next kickoff must
+uncomment that entry** or the new support race won't be picked up at all (it will
+no longer fall anywhere) — the scraper carries a RESTORE note saying so.
+*Current state (2026-10-03): commented out, Cup-only.*
 
 ## Branches & deploy flow (IMPORTANT)
 
