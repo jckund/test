@@ -181,15 +181,15 @@
       "last_price": 99,
       "liquidity": null,
       "name": "Cole Custer",
-      "no_ask": 98,
-      "no_bid": 2,
+      "no_ask": 100,
+      "no_bid": 1,
       "open_interest": 217,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-COCU",
       "volume": 228,
       "volume_24h": 20,
-      "yes_ask": 98,
-      "yes_bid": 2
+      "yes_ask": 99,
+      "yes_bid": 0
     },
     "KXNASCARTOP20-SOUP26-COWA": {
       "last_price": 2,
@@ -265,15 +265,15 @@
       "last_price": 59,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 65,
-      "no_bid": 58,
+      "no_ask": 62,
+      "no_bid": 45,
       "open_interest": 1552,
       "status": "active",
       "ticker": "KXNASCARTOP20-SOUP26-JOBE",
       "volume": 1700,
       "volume_24h": 253,
-      "yes_ask": 42,
-      "yes_bid": 35
+      "yes_ask": 55,
+      "yes_bid": 38
     },
     "KXNASCARTOP20-SOUP26-JOLO": {
       "last_price": 72,
@@ -377,7 +377,7 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 43,
+      "no_ask": 35,
       "no_bid": 9,
       "open_interest": 732,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 1063,
       "volume_24h": 521,
       "yes_ask": 91,
-      "yes_bid": 57
+      "yes_bid": 65
     },
     "KXNASCARTOP20-SOUP26-RYBL": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-04T12:05:18.393143+00:00",
+  "scraped_at": "2026-10-04T12:10:19.128925+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
   "tier": "top20"
 }
