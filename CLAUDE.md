@@ -149,8 +149,13 @@ which is optional — the no-ops are harmless and free on a public repo.)
   - **Kalshi vs Consensus** — same pricing against the **sportsbooks' average**
     (`consensus_fair()`, mirroring `index.html`'s `consensusFair()`: mean of each book's
     raw `implied` across ≥2 non-model books, SG excluded, no renormalization).
-    Threshold `EV_CONSENSUS_THRESH` (default = `EV_ALERT_THRESH`).
-    **The two 30%s are NOT the same claim.** Consensus keeps the books' vig in (matching
+    Threshold `EV_CONSENSUS_THRESH` (code default = `EV_ALERT_THRESH`, but
+    `evalert.yml` sets it to **50%** — deliberately higher than SG's 30%, and
+    **re-measure it whenever the book count changes materially**, since consensus
+    coverage scales with the number of books feeding `consensusFair()`. Measured
+    10/4 on six books from an empty dedup state: 30% ⇒ 18 lines, 40% ⇒ 11,
+    50% ⇒ 3; the original 30% was calibrated against only two non-model books.)
+    **The SG 30% and the consensus 50% are NOT the same claim.** Consensus keeps the books' vig in (matching
     the tab), which inflates every probability by the ~40–50% margin — that biases
     consensus **Yes EV up** and **No EV down**, so a consensus Yes means Kalshi beats the
     books' *shaded* price, not their fair value. SG is the fair-value read.
