@@ -107,12 +107,21 @@ jobs:
         env:
           EV_ALERT_THRESH: "30"
           # Consensus mirrors the dashboard tab, which keeps the books' vig in.
-          # That biases consensus Yes EV UP and No EV DOWN, so this 30% is NOT
+          # That biases consensus Yes EV UP and No EV DOWN, so this 50% is NOT
           # the same claim as the SG 30% above — see evwatch.py's docstring.
-          # Measured on the live South Point 400 boards, worst case (empty dedup
-          # state) this fires 2 lines, so 30% is a usable pager rather than a
-          # flood. Set EV_CONSENSUS_WITH_VIG: "0" to price it de-vigged instead.
-          EV_CONSENSUS_THRESH: "30"
+          #
+          # Deliberately HIGHER than the SG threshold, and raised from 30% on
+          # 2026-10-04. The original 30% was calibrated when Cup had only two
+          # non-model books; consensus coverage scales with the book count, and
+          # at six books 30% is a flood. Measured on the live South Point 400
+          # boards from an empty dedup state: 30% => 18 lines, 40% => 11,
+          # 50% => 3. 50% keeps it a pager rather than a feed.
+          #
+          # Re-measure when the book count changes materially — this number is
+          # a function of how many books feed consensusFair(), not just of how
+          # mispriced Kalshi is. Set EV_CONSENSUS_WITH_VIG: "0" to price it
+          # de-vigged instead.
+          EV_CONSENSUS_THRESH: "50"
           EV_ALERT_MENTION: ${{ vars.ALERT_MENTION || format('@{0}', github.repository_owner) }}
           PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
           PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
