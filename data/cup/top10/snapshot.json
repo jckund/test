@@ -13,7 +13,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 93,
+      "no_ask": 82,
       "no_bid": 80,
       "open_interest": 0,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 7
+      "yes_bid": 18
     },
     "KXNASCARTOP10-BANOA26-ALBO": {
       "last_price": 0,
@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Corey Heim",
       "no_ask": 71,
-      "no_bid": 53,
+      "no_bid": 55,
       "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-COHE",
       "volume": 30,
       "volume_24h": 30,
-      "yes_ask": 47,
+      "yes_ask": 45,
       "yes_bid": 29
     },
     "KXNASCARTOP10-BANOA26-COWA": {
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 35,
-      "no_bid": 18,
+      "no_bid": 21,
       "open_interest": 150,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-KYLA",
       "volume": 150,
       "volume_24h": 150,
-      "yes_ask": 82,
+      "yes_ask": 79,
       "yes_bid": 65
     },
     "KXNASCARTOP10-BANOA26-MIMC": {
@@ -514,17 +514,17 @@
       "yes_bid": 56
     },
     "KXNASCARTOP10-BANOA26-WIBY": {
-      "last_price": 0,
+      "last_price": 41,
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 67,
-      "no_bid": 59,
-      "open_interest": 0,
+      "no_bid": 55,
+      "open_interest": 59,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-WIBY",
-      "volume": 0,
+      "volume": 59,
       "volume_24h": 0,
-      "yes_ask": 41,
+      "yes_ask": 45,
       "yes_bid": 33
     },
     "KXNASCARTOP10-BANOA26-ZASM": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-06T16:50:21.504955+00:00",
+  "scraped_at": "2026-10-06T16:55:17.809580+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
