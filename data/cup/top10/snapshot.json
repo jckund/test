@@ -83,7 +83,7 @@
       "last_price": 23,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 76,
+      "no_ask": 80,
       "no_bid": 62,
       "open_interest": 200,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 38,
-      "yes_bid": 24
+      "yes_bid": 20
     },
     "KXNASCARTOP10-BANOA26-BUWA": {
       "last_price": 0,
@@ -335,15 +335,15 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 36,
-      "no_bid": 16,
+      "no_ask": 35,
+      "no_bid": 18,
       "open_interest": 150,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-KYLA",
       "volume": 150,
       "volume_24h": 150,
-      "yes_ask": 84,
-      "yes_bid": 64
+      "yes_ask": 82,
+      "yes_bid": 65
     },
     "KXNASCARTOP10-BANOA26-MIMC": {
       "last_price": 0,
@@ -433,15 +433,15 @@
       "last_price": 21,
       "liquidity": null,
       "name": "Ryan Preece",
-      "no_ask": 84,
-      "no_bid": 65,
+      "no_ask": 82,
+      "no_bid": 69,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-RYPR",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 35,
-      "yes_bid": 16
+      "yes_ask": 31,
+      "yes_bid": 18
     },
     "KXNASCARTOP10-BANOA26-SHVA": {
       "last_price": 0,
@@ -517,15 +517,15 @@
       "last_price": 45,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 60,
-      "no_bid": 40,
+      "no_ask": 59,
+      "no_bid": 42,
       "open_interest": 260,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-WIBY",
       "volume": 260,
       "volume_24h": 260,
-      "yes_ask": 60,
-      "yes_bid": 40
+      "yes_ask": 58,
+      "yes_bid": 41
     },
     "KXNASCARTOP10-BANOA26-ZASM": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-06T17:45:21.749369+00:00",
+  "scraped_at": "2026-10-06T17:50:21.842769+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
