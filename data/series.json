@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-04T21:53:14.601475+00:00",
+  "updated_at": "2026-10-06T15:43:00.989377+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "South Point 400 ('26)",
+      "race_title": "Bank of America 400 ('26)",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-soup26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
       "tiers": [
         "winner",
         "top3",
@@ -14,7 +14,20 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-10-04T21:53:14.601228+00:00"
+      "scraped_at": "2026-10-06T15:41:42.607077+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Blue Cross NC 250 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-06T15:43:00.989337+00:00"
     }
   ]
 }
