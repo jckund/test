@@ -71,29 +71,21 @@ WINNER_SERIES = "KXNASCARRACE"
 # removed, so a Truck race now falls to the `xfinity` catch-all like any other
 # unrecognized race. Re-add an entry here if it ever comes back.
 SERIES = [
-    # Las Vegas playoff weekend (Round of 8 opener).
+    # Charlotte Roval playoff weekend.
     #
-    # Cup: South Point 400. Match "south point" only — NOT "las vegas", which
-    # the weekend's races share, and NOT "400", which is generic (Vegas' spring
-    # Cup race is the Pennzoil 400, and Kansas' fall race is the Hollywood
-    # Casino 400).
+    # Cup: Bank of America ROVAL 400. Match "bank of america" only — NOT
+    # "charlotte"/"roval", which the weekend's races share, and NOT "400",
+    # which is generic.
     #
-    # Support race: NONE THIS WEEKEND ANY MORE. The Xfinity race (Focused Health
-    # 302) ran on 10/3 and was cleared from the site, so the `xfinity` entry —
-    # which was also the catch-all — is commented out below and data/xfinity/ is
-    # deleted. With no default entry, a race matching nothing is simply not
-    # tracked, which is what we want while only Cup is live: otherwise the
-    # catch-all would re-claim the settled Xfinity race (or next week's event,
-    # whichever Kalshi still lists as open) on the very next 15-min poll and
-    # rebuild data/xfinity/ behind us.
-    #
-    # RESTORE AT THE NEXT KICKOFF: uncomment the entry, point `matchers` at the
-    # new support race, and it is the catch-all again. See CLAUDE.md "Start of
-    # week".
-    {"key": "cup", "label": "NASCAR", "matchers": ["south point"],
+    # Xfinity: Blue Cross NC 250. Match "blue cross". This entry is also the
+    # catch-all (`default`), so any unmatched open race (e.g. the Truck race,
+    # which we don't track) falls here. When clearing the support race
+    # mid-weekend, comment this entry out again — see CLAUDE.md "Clearing a
+    # support race mid-weekend".
+    {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # {"key": "xfinity", "label": "Xfinity", "matchers": ["<support race>"], "default": True,
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["blue cross"], "default": True,
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"

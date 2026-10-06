@@ -50,7 +50,7 @@ tracked. Nothing else needs touching: `index.html`, `fanduel_scraper.js` and
 series and both scrapers skip the series on their own. **The next kickoff must
 uncomment that entry** or the new support race won't be picked up at all (it will
 no longer fall anywhere) — the scraper carries a RESTORE note saying so.
-*Current state (2026-10-03): commented out, Cup-only.*
+*Current state (2026-10-06): restored — Cup `bank of america`, Xfinity `blue cross` (catch-all). Comment it out again once the Xfinity race has run.*
 
 ## Branches & deploy flow (IMPORTANT)
 
