@@ -67,9 +67,9 @@ WINNER_SERIES = "KXNASCARRACE"
 # that matches nothing falls to the `xfinity` default. Update the substrings
 # below each race weekend (or when Kalshi posts a new race).
 #
-# The Truck series is no longer tracked: its entry (and data/truck/) were
-# removed, so a Truck race now falls to the `xfinity` catch-all like any other
-# unrecognized race. Re-add an entry here if it ever comes back.
+# The Truck series is tracked again (re-added 2026-10-07). Its matcher must be
+# repointed each kickoff like the others; when it isn't running a race, drop
+# or comment out the entry so a stale matcher can't grab the wrong event.
 SERIES = [
     # Charlotte Roval playoff weekend.
     #
@@ -78,12 +78,14 @@ SERIES = [
     # which is generic.
     #
     # Xfinity: Blue Cross NC 250. Match "blue cross". This entry is also the
-    # catch-all (`default`), so any unmatched open race (e.g. the Truck race,
-    # which we don't track) falls here. When clearing the support race
+    # catch-all (`default`), so any unmatched open race falls here. When clearing the support race
     # mid-weekend, comment this entry out again — see CLAUDE.md "Clearing a
     # support race mid-weekend".
     {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
+    # Truck: Ecosave 200. Match "ecosave".
+    {"key": "truck", "label": "Truck", "matchers": ["ecosave"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     {"key": "xfinity", "label": "Xfinity", "matchers": ["blue cross"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
