@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T18:09:53.048506+00:00",
+  "updated_at": "2026-10-07T23:49:43.032563+00:00",
   "series": [
     {
       "key": "cup",
@@ -14,7 +14,20 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-10-06T18:08:29.440787+00:00"
+      "scraped_at": "2026-10-07T23:47:09.603041+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Truck",
+      "race_title": "Ecosave 200 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-07T23:48:26.349685+00:00"
     },
     {
       "key": "xfinity",
@@ -27,7 +40,7 @@
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-10-06T18:09:53.048461+00:00"
+      "scraped_at": "2026-10-07T23:49:43.032519+00:00"
     }
   ]
 }
