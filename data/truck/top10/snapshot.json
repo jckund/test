@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-COMO",
       "volume": 329,
-      "volume_24h": 179,
+      "volume_24h": 0,
       "yes_ask": 39,
       "yes_bid": 36
     },
@@ -248,18 +248,18 @@
       "yes_bid": 43
     },
     "KXNASCARTOP10-ECO100926-JAGA": {
-      "last_price": 28,
+      "last_price": 37,
       "liquidity": null,
       "name": "Jake Garcia",
-      "no_ask": 72,
-      "no_bid": 64,
-      "open_interest": 200,
+      "no_ask": 71,
+      "no_bid": 63,
+      "open_interest": 265,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-JAGA",
-      "volume": 200,
+      "volume": 265,
       "volume_24h": 0,
-      "yes_ask": 36,
-      "yes_bid": 28
+      "yes_ask": 37,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-ECO100926-JORE": {
       "last_price": 0,
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Justin Haley",
       "no_ask": 87,
-      "no_bid": 79,
+      "no_bid": 80,
       "open_interest": 450,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-JUHA",
       "volume": 450,
       "volume_24h": 250,
-      "yes_ask": 21,
+      "yes_ask": 20,
       "yes_bid": 13
     },
     "KXNASCARTOP10-ECO100926-KAHO": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T21:20:12.216647+00:00",
+  "scraped_at": "2026-10-08T21:31:55.207719+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top10"
 }
