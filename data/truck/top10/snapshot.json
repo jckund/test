@@ -41,15 +41,15 @@
       "last_price": 48,
       "liquidity": null,
       "name": "Ben Rhodes",
-      "no_ask": 66,
-      "no_bid": 52,
-      "open_interest": 2,
+      "no_ask": 65,
+      "no_bid": 51,
+      "open_interest": 12,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-BERH",
-      "volume": 2,
-      "volume_24h": 0,
-      "yes_ask": 48,
-      "yes_bid": 34
+      "volume": 12,
+      "volume_24h": 2,
+      "yes_ask": 49,
+      "yes_bid": 35
     },
     "KXNASCARTOP10-ECO100926-BRCR": {
       "last_price": 0,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-DAHE",
       "volume": 7,
-      "volume_24h": 0,
+      "volume_24h": 7,
       "yes_ask": 50,
       "yes_bid": 33
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-GIRU",
       "volume": 2,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 60,
       "yes_bid": 47
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-TAGR",
       "volume": 12,
-      "volume_24h": 0,
+      "volume_24h": 12,
       "yes_ask": 34,
       "yes_bid": 20
     },
@@ -503,7 +503,7 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 47,
+      "no_ask": 48,
       "no_bid": 40,
       "open_interest": 200,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 60,
-      "yes_bid": 53
+      "yes_bid": 52
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T01:49:05.402005+00:00",
+  "scraped_at": "2026-10-08T01:54:47.615100+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top10"
 }
