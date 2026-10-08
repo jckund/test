@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BANOA26-ALBO",
       "volume": 1003,
-      "volume_24h": 794,
+      "volume_24h": 282,
       "yes_ask": 66,
       "yes_bid": 58
     },
@@ -195,15 +195,15 @@
       "last_price": 26,
       "liquidity": null,
       "name": "Cole Custer",
-      "no_ask": 76,
-      "no_bid": 65,
+      "no_ask": 75,
+      "no_bid": 66,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-BANOA26-COCU",
       "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 35,
-      "yes_bid": 24
+      "volume_24h": 0,
+      "yes_ask": 34,
+      "yes_bid": 25
     },
     "KXNASCARTOP20-BANOA26-COHE": {
       "last_price": 0,
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Connor Zilisch",
       "no_ask": 75,
-      "no_bid": 71,
+      "no_bid": 72,
       "open_interest": 888,
       "status": "active",
       "ticker": "KXNASCARTOP20-BANOA26-COZI",
       "volume": 888,
-      "volume_24h": 719,
-      "yes_ask": 29,
+      "volume_24h": 375,
+      "yes_ask": 28,
       "yes_bid": 25
     },
     "KXNASCARTOP20-BANOA26-DASU": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BANOA26-RIST",
       "volume": 753,
-      "volume_24h": 651,
+      "volume_24h": 446,
       "yes_ask": 41,
       "yes_bid": 32
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-BANOA26-TOGI",
       "volume": 733,
-      "volume_24h": 733,
+      "volume_24h": 32,
       "yes_ask": 42,
       "yes_bid": 30
     },
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-08T13:05:46.865504+00:00",
+  "scraped_at": "2026-10-08T13:11:56.698527+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top20"
 }
