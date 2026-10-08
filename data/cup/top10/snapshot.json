@@ -234,18 +234,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-BANOA26-COZI": {
-      "last_price": 0,
+      "last_price": 11,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 97,
-      "no_bid": 89,
-      "open_interest": 0,
+      "no_ask": 95,
+      "no_bid": 86,
+      "open_interest": 550,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-COZI",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 11,
-      "yes_bid": 3
+      "volume": 550,
+      "volume_24h": 550,
+      "yes_ask": 14,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-BANOA26-DASU": {
       "last_price": 29,
@@ -323,11 +323,11 @@
       "name": "Joey Logano",
       "no_ask": 55,
       "no_bid": 51,
-      "open_interest": 219,
+      "open_interest": 224,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-JOLO",
-      "volume": 219,
-      "volume_24h": 20,
+      "volume": 224,
+      "volume_24h": 26,
       "yes_ask": 49,
       "yes_bid": 45
     },
@@ -346,7 +346,7 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-BANOA26-KYLA": {
-      "last_price": 68,
+      "last_price": 69,
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 40,
@@ -354,8 +354,8 @@
       "open_interest": 357,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-KYLA",
-      "volume": 357,
-      "volume_24h": 0,
+      "volume": 362,
+      "volume_24h": 4,
       "yes_ask": 69,
       "yes_bid": 60
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-RIST",
       "volume": 644,
-      "volume_24h": 240,
+      "volume_24h": 325,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -514,16 +514,16 @@
       "yes_bid": 46
     },
     "KXNASCARTOP10-BANOA26-TYRE": {
-      "last_price": 66,
+      "last_price": 67,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 37,
       "no_bid": 33,
-      "open_interest": 204,
+      "open_interest": 208,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-TYRE",
-      "volume": 204,
-      "volume_24h": 77,
+      "volume": 208,
+      "volume_24h": 81,
       "yes_ask": 67,
       "yes_bid": 63
     },
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T22:47:39.225949+00:00",
+  "scraped_at": "2026-10-08T22:53:37.014139+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
