@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-COLA",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 30,
       "yes_bid": 12
     },
@@ -195,15 +195,15 @@
       "last_price": 47,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 67,
+      "no_ask": 65,
       "no_bid": 53,
       "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-DAHE",
       "volume": 8,
-      "volume_24h": 7,
+      "volume_24h": 8,
       "yes_ask": 47,
-      "yes_bid": 33
+      "yes_bid": 35
     },
     "KXNASCARTOP10-ECO100926-DASU": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T03:30:54.129285+00:00",
+  "scraped_at": "2026-10-08T03:42:57.986011+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top10"
 }
