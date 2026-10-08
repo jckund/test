@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-BLUCN26",
   "label": "Winner",
-  "market_count": 37,
+  "market_count": 38,
   "markets": {
     "KXNASCARRACE-BLUCN26-ANAL": {
       "last_price": 2,
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-BRCR",
       "volume": 3726,
-      "volume_24h": 2748,
+      "volume_24h": 1577,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-BRJO",
       "volume": 3072,
-      "volume_24h": 2337,
+      "volume_24h": 2234,
       "yes_ask": 5,
       "yes_bid": 3
     },
@@ -122,7 +122,7 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-CAKV": {
-      "last_price": 12,
+      "last_price": 11,
       "liquidity": null,
       "name": "Carson Kvapil",
       "no_ask": 89,
@@ -130,8 +130,8 @@
       "open_interest": 4196,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CAKV",
-      "volume": 4196,
-      "volume_24h": 2776,
+      "volume": 4199,
+      "volume_24h": 1677,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CODA",
       "volume": 2002,
-      "volume_24h": 399,
+      "volume_24h": 307,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -161,6 +161,20 @@
       "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-BLUCN26-DELE": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Derek Lemke",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-BLUCN26-DELE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-DETH": {
@@ -467,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SAMA",
       "volume": 1412,
-      "volume_24h": 797,
+      "volume_24h": 677,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -529,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-08T03:49:50.485159+00:00",
+  "scraped_at": "2026-10-08T04:01:26.302018+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "winner"
 }

@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-BLUCN26",
   "label": "Top 10",
-  "market_count": 37,
+  "market_count": 38,
   "markets": {
     "KXNASCARTOP10-BLUCN26-ANAL": {
       "last_price": 0,
@@ -163,6 +163,20 @@
       "yes_ask": 3,
       "yes_bid": 0
     },
+    "KXNASCARTOP10-BLUCN26-DELE": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Derek Lemke",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-BLUCN26-DELE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-BLUCN26-DETH": {
       "last_price": 21,
       "liquidity": null,
@@ -252,13 +266,13 @@
       "liquidity": null,
       "name": "Jeremy Clements",
       "no_ask": 82,
-      "no_bid": 71,
+      "no_bid": 70,
       "open_interest": 35,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-JECL",
       "volume": 35,
       "volume_24h": 35,
-      "yes_ask": 29,
+      "yes_ask": 30,
       "yes_bid": 18
     },
     "KXNASCARTOP10-BLUCN26-JELO": {
@@ -517,7 +531,7 @@
       "last_price": 43,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 59,
+      "no_ask": 60,
       "no_bid": 57,
       "open_interest": 277,
       "status": "active",
@@ -525,11 +539,11 @@
       "volume": 277,
       "volume_24h": 130,
       "yes_ask": 43,
-      "yes_bid": 41
+      "yes_bid": 40
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T03:55:59.304013+00:00",
+  "scraped_at": "2026-10-08T04:01:59.397960+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top10"
 }
