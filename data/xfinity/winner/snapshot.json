@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brandon Jones",
       "no_ask": 97,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 3186,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-BRJO",
       "volume": 3186,
       "volume_24h": 292,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARRACE-BLUCN26-BRPO": {
@@ -164,18 +164,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-DELE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Derek Lemke",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 500,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-DELE",
-      "volume": 0,
+      "volume": 500,
       "volume_24h": 0,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-DETH": {
       "last_price": 0,
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-WISA",
       "volume": 2570,
-      "volume_24h": 618,
+      "volume_24h": 729,
       "yes_ask": 3,
       "yes_bid": 1
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-08T15:39:51.137316+00:00",
+  "scraped_at": "2026-10-08T15:50:31.827746+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "winner"
 }
