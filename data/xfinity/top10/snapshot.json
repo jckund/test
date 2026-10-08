@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-AUGR",
       "volume": 463,
-      "volume_24h": 263,
+      "volume_24h": 13,
       "yes_ask": 16,
       "yes_bid": 8
     },
@@ -66,18 +66,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP10-BLUCN26-BRCR": {
-      "last_price": 66,
+      "last_price": 65,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 42,
-      "no_bid": 36,
-      "open_interest": 407,
+      "no_ask": 39,
+      "no_bid": 35,
+      "open_interest": 422,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-BRCR",
-      "volume": 407,
-      "volume_24h": 7,
-      "yes_ask": 64,
-      "yes_bid": 58
+      "volume": 422,
+      "volume_24h": 22,
+      "yes_ask": 65,
+      "yes_bid": 61
     },
     "KXNASCARTOP10-BLUCN26-BRJO": {
       "last_price": 62,
@@ -122,31 +122,31 @@
       "yes_bid": 15
     },
     "KXNASCARTOP10-BLUCN26-CAKV": {
-      "last_price": 54,
+      "last_price": 64,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 44,
-      "no_bid": 37,
-      "open_interest": 200,
+      "no_ask": 43,
+      "no_bid": 36,
+      "open_interest": 215,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-CAKV",
-      "volume": 200,
-      "volume_24h": 0,
-      "yes_ask": 63,
-      "yes_bid": 56
+      "volume": 215,
+      "volume_24h": 15,
+      "yes_ask": 64,
+      "yes_bid": 57
     },
     "KXNASCARTOP10-BLUCN26-CODA": {
       "last_price": 60,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 44,
-      "no_bid": 40,
-      "open_interest": 241,
+      "no_bid": 41,
+      "open_interest": 257,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-CODA",
-      "volume": 241,
-      "volume_24h": 0,
-      "yes_ask": 60,
+      "volume": 257,
+      "volume_24h": 16,
+      "yes_ask": 59,
       "yes_bid": 56
     },
     "KXNASCARTOP10-BLUCN26-DACR": {
@@ -237,7 +237,7 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Jake Finch",
-      "no_ask": 69,
+      "no_ask": 70,
       "no_bid": 65,
       "open_interest": 337,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 337,
       "volume_24h": 206,
       "yes_ask": 35,
-      "yes_bid": 31
+      "yes_bid": 30
     },
     "KXNASCARTOP10-BLUCN26-JEBU": {
       "last_price": 0,
@@ -335,7 +335,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Kyle Sieg",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 90,
       "open_interest": 0,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 6
+      "yes_bid": 5
     },
     "KXNASCARTOP10-BLUCN26-LASC": {
       "last_price": 2,
@@ -363,7 +363,7 @@
       "last_price": 17,
       "liquidity": null,
       "name": "Matt DiBenedetto",
-      "no_ask": 97,
+      "no_ask": 98,
       "no_bid": 94,
       "open_interest": 200,
       "status": "active",
@@ -371,7 +371,7 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 6,
-      "yes_bid": 3
+      "yes_bid": 2
     },
     "KXNASCARTOP10-BLUCN26-MAMA": {
       "last_price": 0,
@@ -500,16 +500,16 @@
       "yes_bid": 41
     },
     "KXNASCARTOP10-BLUCN26-SHCR": {
-      "last_price": 0,
+      "last_price": 63,
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 46,
       "no_bid": 37,
-      "open_interest": 0,
+      "open_interest": 15,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-SHCR",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 15,
+      "volume_24h": 15,
       "yes_ask": 63,
       "yes_bid": 54
     },
@@ -531,7 +531,7 @@
       "last_price": 43,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 58,
+      "no_ask": 59,
       "no_bid": 57,
       "open_interest": 281,
       "status": "active",
@@ -539,11 +539,11 @@
       "volume": 281,
       "volume_24h": 133,
       "yes_ask": 43,
-      "yes_bid": 42
+      "yes_bid": 41
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T18:34:30.138088+00:00",
+  "scraped_at": "2026-10-08T18:42:59.371058+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top10"
 }
