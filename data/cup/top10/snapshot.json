@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-AUCI",
       "volume": 156,
-      "volume_24h": 131,
+      "volume_24h": 121,
       "yes_ask": 48,
       "yes_bid": 44
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-CHBE",
       "volume": 7,
-      "volume_24h": 7,
+      "volume_24h": 0,
       "yes_ask": 69,
       "yes_bid": 65
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-CHBR",
       "volume": 11,
-      "volume_24h": 7,
+      "volume_24h": 0,
       "yes_ask": 65,
       "yes_bid": 64
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-JOLO",
       "volume": 199,
-      "volume_24h": 197,
+      "volume_24h": 117,
       "yes_ask": 48,
       "yes_bid": 44
     },
@@ -349,15 +349,15 @@
       "last_price": 68,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 39,
-      "no_bid": 27,
+      "no_ask": 37,
+      "no_bid": 28,
       "open_interest": 357,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-KYLA",
       "volume": 357,
       "volume_24h": 205,
-      "yes_ask": 73,
-      "yes_bid": 61
+      "yes_ask": 72,
+      "yes_bid": 63
     },
     "KXNASCARTOP10-BANOA26-MIMC": {
       "last_price": 0,
@@ -447,15 +447,15 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Ryan Preece",
-      "no_ask": 84,
-      "no_bid": 73,
+      "no_ask": 83,
+      "no_bid": 75,
       "open_interest": 285,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-RYPR",
       "volume": 285,
       "volume_24h": 85,
-      "yes_ask": 27,
-      "yes_bid": 16
+      "yes_ask": 25,
+      "yes_bid": 17
     },
     "KXNASCARTOP10-BANOA26-SHVA": {
       "last_price": 14,
@@ -532,13 +532,13 @@
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 45,
-      "no_bid": 40,
+      "no_bid": 41,
       "open_interest": 786,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-WIBY",
       "volume": 786,
       "volume_24h": 522,
-      "yes_ask": 60,
+      "yes_ask": 59,
       "yes_bid": 55
     },
     "KXNASCARTOP10-BANOA26-ZASM": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T01:19:16.199634+00:00",
+  "scraped_at": "2026-10-08T01:28:09.841697+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
