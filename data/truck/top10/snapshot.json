@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-JUHA",
       "volume": 450,
-      "volume_24h": 450,
+      "volume_24h": 250,
       "yes_ask": 20,
       "yes_bid": 13
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-RACA",
       "volume": 528,
-      "volume_24h": 328,
+      "volume_24h": 305,
       "yes_ask": 52,
       "yes_bid": 48
     },
@@ -489,15 +489,15 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 72,
-      "no_bid": 62,
+      "no_ask": 71,
+      "no_bid": 63,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-TYAN",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 38,
-      "yes_bid": 28
+      "yes_ask": 37,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-ECO100926-TYMA": {
       "last_price": 59,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T16:37:51.356872+00:00",
+  "scraped_at": "2026-10-08T16:44:47.071661+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top10"
 }
