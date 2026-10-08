@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-BRKE",
       "volume": 400,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 22
     },
@@ -112,13 +112,13 @@
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 55,
-      "no_bid": 51,
+      "no_bid": 50,
       "open_interest": 883,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-BUWA",
       "volume": 1093,
       "volume_24h": 650,
-      "yes_ask": 49,
+      "yes_ask": 50,
       "yes_bid": 45
     },
     "KXNASCARTOP10-BANOA26-CAHO": {
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-CHEL",
       "volume": 599,
-      "volume_24h": 385,
+      "volume_24h": 378,
       "yes_ask": 55,
       "yes_bid": 52
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-DASU",
       "volume": 1894,
-      "volume_24h": 1713,
+      "volume_24h": 1763,
       "yes_ask": 29,
       "yes_bid": 24
     },
@@ -463,11 +463,11 @@
       "name": "Shane van Gisbergen",
       "no_ask": 90,
       "no_bid": 86,
-      "open_interest": 689,
+      "open_interest": 719,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-SHVA",
-      "volume": 689,
-      "volume_24h": 681,
+      "volume": 719,
+      "volume_24h": 711,
       "yes_ask": 14,
       "yes_bid": 10
     },
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 55,
-      "no_bid": 46,
+      "no_bid": 47,
       "open_interest": 491,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-TYGI",
       "volume": 701,
-      "volume_24h": 207,
-      "yes_ask": 54,
+      "volume_24h": 216,
+      "yes_ask": 53,
       "yes_bid": 45
     },
     "KXNASCARTOP10-BANOA26-TYRE": {
@@ -551,13 +551,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-ZASM",
       "volume": 1214,
-      "volume_24h": 1204,
+      "volume_24h": 1004,
       "yes_ask": 10,
       "yes_bid": 8
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T17:17:59.114741+00:00",
+  "scraped_at": "2026-10-08T17:23:35.739594+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }

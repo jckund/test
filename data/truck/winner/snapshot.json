@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-GREN",
       "volume": 2560,
-      "volume_24h": 2459,
+      "volume_24h": 2560,
       "yes_ask": 4,
       "yes_bid": 2
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-LALE",
       "volume": 3533,
-      "volume_24h": 3456,
+      "volume_24h": 3533,
       "yes_ask": 3,
       "yes_bid": 1
     },
@@ -458,15 +458,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-ECO100926-TAGR": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Tanner Gray",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 1120,
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-TAGR",
-      "volume": 0,
+      "volume": 1120,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-08T17:08:43.517632+00:00",
+  "scraped_at": "2026-10-08T17:26:11.242599+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "winner"
 }
