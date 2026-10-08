@@ -321,15 +321,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 63,
-      "no_bid": 52,
+      "no_ask": 64,
+      "no_bid": 62,
       "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-JUAL",
       "volume": 3,
       "volume_24h": 3,
-      "yes_ask": 48,
-      "yes_bid": 37
+      "yes_ask": 38,
+      "yes_bid": 36
     },
     "KXNASCARTOP3-BLUCN26-KYSI": {
       "last_price": 0,
@@ -472,18 +472,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-BLUCN26-SAMA": {
-      "last_price": 0,
+      "last_price": 32,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 77,
-      "no_bid": 70,
-      "open_interest": 0,
+      "no_ask": 75,
+      "no_bid": 68,
+      "open_interest": 449,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-SAMA",
-      "volume": 0,
+      "volume": 449,
       "volume_24h": 0,
-      "yes_ask": 30,
-      "yes_bid": 23
+      "yes_ask": 32,
+      "yes_bid": 25
     },
     "KXNASCARTOP3-BLUCN26-SASM": {
       "last_price": 13,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-08T15:50:32.312562+00:00",
+  "scraped_at": "2026-10-08T16:14:20.791509+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top3"
 }
