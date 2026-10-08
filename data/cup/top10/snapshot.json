@@ -112,13 +112,13 @@
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 55,
-      "no_bid": 50,
+      "no_bid": 51,
       "open_interest": 883,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-BUWA",
       "volume": 1093,
       "volume_24h": 650,
-      "yes_ask": 50,
+      "yes_ask": 49,
       "yes_bid": 45
     },
     "KXNASCARTOP10-BANOA26-CAHO": {
@@ -458,18 +458,18 @@
       "yes_bid": 17
     },
     "KXNASCARTOP10-BANOA26-SHVA": {
-      "last_price": 14,
+      "last_price": 15,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 90,
-      "no_bid": 86,
-      "open_interest": 719,
+      "no_ask": 87,
+      "no_bid": 81,
+      "open_interest": 1058,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-SHVA",
-      "volume": 719,
+      "volume": 1058,
       "volume_24h": 711,
-      "yes_ask": 14,
-      "yes_bid": 10
+      "yes_ask": 19,
+      "yes_bid": 13
     },
     "KXNASCARTOP10-BANOA26-TOGI": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T17:23:35.739594+00:00",
+  "scraped_at": "2026-10-08T17:29:08.954649+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
