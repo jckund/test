@@ -461,15 +461,15 @@
       "last_price": 63,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 48,
-      "no_bid": 36,
+      "no_ask": 51,
+      "no_bid": 34,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-SAMA",
       "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 64,
-      "yes_bid": 52
+      "volume_24h": 0,
+      "yes_ask": 66,
+      "yes_bid": 49
     },
     "KXNASCARTOP10-BLUCN26-SASM": {
       "last_price": 0,
@@ -518,18 +518,18 @@
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 62,
-      "no_bid": 57,
+      "no_bid": 58,
       "open_interest": 260,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-WISA",
       "volume": 260,
-      "volume_24h": 0,
-      "yes_ask": 43,
+      "volume_24h": 112,
+      "yes_ask": 42,
       "yes_bid": 38
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-08T00:48:16.040807+00:00",
+  "scraped_at": "2026-10-08T01:00:13.352755+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top10"
 }
