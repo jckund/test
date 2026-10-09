@@ -97,7 +97,7 @@
       "last_price": 66,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 41,
+      "no_ask": 42,
       "no_bid": 34,
       "open_interest": 203,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 203,
       "volume_24h": 3,
       "yes_ask": 66,
-      "yes_bid": 59
+      "yes_bid": 58
     },
     "KXNASCARTOP10-ECO100926-CLGR": {
       "last_price": 0,
@@ -155,11 +155,11 @@
       "name": "Corey LaJoie",
       "no_ask": 86,
       "no_bid": 82,
-      "open_interest": 262,
+      "open_interest": 305,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-COLA",
-      "volume": 268,
-      "volume_24h": 256,
+      "volume": 310,
+      "volume_24h": 310,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -276,18 +276,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-ECO100926-JUHA": {
-      "last_price": 12,
+      "last_price": 35,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 88,
-      "no_bid": 80,
-      "open_interest": 450,
+      "no_ask": 81,
+      "no_bid": 72,
+      "open_interest": 678,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-JUHA",
-      "volume": 450,
-      "volume_24h": 0,
-      "yes_ask": 20,
-      "yes_bid": 12
+      "volume": 878,
+      "volume_24h": 428,
+      "yes_ask": 28,
+      "yes_bid": 19
     },
     "KXNASCARTOP10-ECO100926-KAHO": {
       "last_price": 76,
@@ -350,13 +350,13 @@
       "liquidity": null,
       "name": "Leland Honeyman Jr",
       "no_ask": 92,
-      "no_bid": 85,
+      "no_bid": 84,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-LEHO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 15,
+      "yes_ask": 16,
       "yes_bid": 8
     },
     "KXNASCARTOP10-ECO100926-LUBA": {
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Mini Tyrrell",
       "no_ask": 99,
-      "no_bid": 92,
+      "no_bid": 90,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-MITY",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 10,
       "yes_bid": 1
     },
     "KXNASCARTOP10-ECO100926-RACA": {
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 46,
-      "no_bid": 37,
+      "no_bid": 38,
       "open_interest": 1839,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-RACA",
       "volume": 1839,
       "volume_24h": 1311,
-      "yes_ask": 63,
+      "yes_ask": 62,
       "yes_bid": 54
     },
     "KXNASCARTOP10-ECO100926-RESM": {
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Stewart Friesen",
       "no_ask": 71,
-      "no_bid": 62,
+      "no_bid": 64,
       "open_interest": 149,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-STFR",
       "volume": 149,
       "volume_24h": 0,
-      "yes_ask": 38,
+      "yes_ask": 36,
       "yes_bid": 29
     },
     "KXNASCARTOP10-ECO100926-TAGR": {
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Timmy Hill",
       "no_ask": 99,
-      "no_bid": 92,
+      "no_bid": 90,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ECO100926-TIHI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 10,
       "yes_bid": 1
     },
     "KXNASCARTOP10-ECO100926-TYAN": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-09T17:26:55.557536+00:00",
+  "scraped_at": "2026-10-09T17:33:06.352015+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top10"
 }
