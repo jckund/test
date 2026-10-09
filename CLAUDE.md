@@ -33,9 +33,12 @@ Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`.
 Update the SERIES matchers in `scraper.py`, clear all stale lines, grab fresh
 Kalshi + FanDuel, deploy, and confirm."*
 
-**The Truck series is tracked again** (re-added 2026-10-07 on request): it has
-its own `SERIES` entry (`truck`, matcher repointed each kickoff like Cup/Xfinity).
-Hand Truck boards go to `data/truck/manual/` via `CANON_SNAPSHOT`/`MANUAL_DIR`.
+**The Truck series is currently OFF** (dropped 2026-10-09 once the Ecosave 200
+started, on request): its `SERIES` entry in `scraper.py` is commented out and
+`data/truck/` is gone. To track a Truck race again, un-comment that entry and
+re-point its matcher; hand Truck boards go to `data/truck/manual/` via
+`CANON_SNAPSHOT`/`MANUAL_DIR`. Caveat while it's off: the `xfinity` catch-all
+prefers its own matcher, but if no Xfinity race is open it will claim a Truck race.
 
 **Clearing a support race mid-weekend (and why the catch-all must go with it).**
 Once the support race has run, dropping its hand books is not enough — `git rm`ing

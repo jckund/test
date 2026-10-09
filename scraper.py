@@ -83,9 +83,12 @@ SERIES = [
     # support race mid-weekend".
     {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: Ecosave 200. Match "ecosave".
-    {"key": "truck", "label": "Truck", "matchers": ["ecosave"],
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: dropped 2026-10-09 once the Ecosave 200 started (on request).
+    # Un-comment and re-point the matcher to track a Truck race again; while
+    # it's commented out the xfinity default still prefers its own matcher, so
+    # an unmatched Truck race is only claimed if no Xfinity race is open.
+    # {"key": "truck", "label": "Truck", "matchers": ["ecosave"],
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     {"key": "xfinity", "label": "Xfinity", "matchers": ["blue cross"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
