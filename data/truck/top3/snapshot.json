@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ECO100926-BERH",
       "volume": 300,
-      "volume_24h": 300,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -83,7 +83,7 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 76,
+      "no_ask": 75,
       "no_bid": 72,
       "open_interest": 493,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 493,
       "volume_24h": 1,
       "yes_ask": 28,
-      "yes_bid": 24
+      "yes_bid": 25
     },
     "KXNASCARTOP3-ECO100926-CHSM": {
       "last_price": 25,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ECO100926-DAHE",
       "volume": 300,
-      "volume_24h": 300,
+      "volume_24h": 0,
       "yes_ask": 9,
       "yes_bid": 5
     },
@@ -294,13 +294,13 @@
       "liquidity": null,
       "name": "Kaden Honeycutt",
       "no_ask": 51,
-      "no_bid": 48,
+      "no_bid": 47,
       "open_interest": 1404,
       "status": "active",
       "ticker": "KXNASCARTOP3-ECO100926-KAHO",
       "volume": 1404,
       "volume_24h": 1075,
-      "yes_ask": 52,
+      "yes_ask": 53,
       "yes_bid": 49
     },
     "KXNASCARTOP3-ECO100926-KRWR": {
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ECO100926-LALE",
       "volume": 1726,
-      "volume_24h": 1726,
+      "volume_24h": 1213,
       "yes_ask": 12,
       "yes_bid": 9
     },
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 82,
-      "no_bid": 79,
+      "no_bid": 80,
       "open_interest": 1085,
       "status": "active",
       "ticker": "KXNASCARTOP3-ECO100926-RACA",
       "volume": 1196,
       "volume_24h": 994,
-      "yes_ask": 21,
+      "yes_ask": 20,
       "yes_bid": 18
     },
     "KXNASCARTOP3-ECO100926-RESM": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-09T14:45:27.808323+00:00",
+  "scraped_at": "2026-10-09T14:51:13.284959+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "top3"
 }
