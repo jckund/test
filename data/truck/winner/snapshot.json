@@ -56,13 +56,13 @@
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 94,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 1575,
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-BRCR",
       "volume": 1696,
       "volume_24h": 1554,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 6
     },
     "KXNASCARRACE-ECO100926-BRQU": {
@@ -150,15 +150,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-ECO100926-COLA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Corey LaJoie",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-COLA",
-      "volume": 0,
+      "volume": 24,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -178,15 +178,15 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-ECO100926-DADY": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Daniel Dye",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-DADY",
-      "volume": 0,
+      "volume": 24,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 79,
-      "no_bid": 76,
-      "open_interest": 2087,
+      "no_bid": 75,
+      "open_interest": 2240,
       "status": "active",
       "ticker": "KXNASCARRACE-ECO100926-LARI",
-      "volume": 2342,
+      "volume": 2495,
       "volume_24h": 1612,
-      "yes_ask": 24,
+      "yes_ask": 25,
       "yes_bid": 21
     },
     "KXNASCARRACE-ECO100926-LEHO": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-09T01:02:22.360631+00:00",
+  "scraped_at": "2026-10-09T01:08:20.125743+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-eco100926",
   "tier": "winner"
 }
