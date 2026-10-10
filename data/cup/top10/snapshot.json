@@ -13,7 +13,7 @@
       "last_price": 15,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 90,
+      "no_ask": 95,
       "no_bid": 85,
       "open_interest": 387,
       "status": "active",
@@ -21,20 +21,20 @@
       "volume": 387,
       "volume_24h": 0,
       "yes_ask": 15,
-      "yes_bid": 10
+      "yes_bid": 5
     },
     "KXNASCARTOP10-BANOA26-ALBO": {
       "last_price": 30,
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 71,
-      "no_bid": 69,
+      "no_bid": 70,
       "open_interest": 1482,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-ALBO",
       "volume": 1488,
       "volume_24h": 273,
-      "yes_ask": 31,
+      "yes_ask": 30,
       "yes_bid": 29
     },
     "KXNASCARTOP10-BANOA26-AUCI": {
@@ -206,18 +206,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-BANOA26-COHE": {
-      "last_price": 31,
+      "last_price": 30,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 70,
-      "no_bid": 69,
-      "open_interest": 435,
+      "no_ask": 71,
+      "no_bid": 70,
+      "open_interest": 457,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-COHE",
-      "volume": 446,
+      "volume": 469,
       "volume_24h": 155,
-      "yes_ask": 31,
-      "yes_bid": 30
+      "yes_ask": 30,
+      "yes_bid": 29
     },
     "KXNASCARTOP10-BANOA26-COWA": {
       "last_price": 3,
@@ -461,7 +461,7 @@
       "last_price": 21,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 88,
+      "no_ask": 86,
       "no_bid": 83,
       "open_interest": 1078,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 1078,
       "volume_24h": 19,
       "yes_ask": 17,
-      "yes_bid": 12
+      "yes_bid": 14
     },
     "KXNASCARTOP10-BANOA26-TOGI": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-10T08:35:18.415203+00:00",
+  "scraped_at": "2026-10-10T08:40:18.225297+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
