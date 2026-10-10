@@ -27,7 +27,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 95,
+      "no_ask": 91,
       "no_bid": 80,
       "open_interest": 0,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 5
+      "yes_bid": 9
     },
     "KXNASCARTOP5-BANOA26-AUCI": {
       "last_price": 27,
@@ -126,13 +126,13 @@
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 91,
-      "no_bid": 81,
+      "no_bid": 79,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-BANOA26-CAHO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 19,
+      "yes_ask": 21,
       "yes_bid": 9
     },
     "KXNASCARTOP5-BANOA26-CHBE": {
@@ -251,7 +251,7 @@
       "last_price": 17,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 96,
+      "no_ask": 93,
       "no_bid": 85,
       "open_interest": 28,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 28,
       "volume_24h": 28,
       "yes_ask": 15,
-      "yes_bid": 4
+      "yes_bid": 7
     },
     "KXNASCARTOP5-BANOA26-DEHA": {
       "last_price": 53,
@@ -349,15 +349,15 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 55,
-      "no_bid": 42,
+      "no_ask": 54,
+      "no_bid": 45,
       "open_interest": 981,
       "status": "active",
       "ticker": "KXNASCARTOP5-BANOA26-KYLA",
       "volume": 981,
-      "volume_24h": 1,
-      "yes_ask": 58,
-      "yes_bid": 45
+      "volume_24h": 96,
+      "yes_ask": 55,
+      "yes_bid": 46
     },
     "KXNASCARTOP5-BANOA26-MIMC": {
       "last_price": 0,
@@ -433,15 +433,15 @@
       "last_price": 35,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 68,
-      "no_bid": 58,
+      "no_ask": 70,
+      "no_bid": 57,
       "open_interest": 346,
       "status": "active",
       "ticker": "KXNASCARTOP5-BANOA26-RYBL",
       "volume": 346,
       "volume_24h": 3,
-      "yes_ask": 42,
-      "yes_bid": 32
+      "yes_ask": 43,
+      "yes_bid": 30
     },
     "KXNASCARTOP5-BANOA26-RYPR": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-10T14:40:18.344522+00:00",
+  "scraped_at": "2026-10-10T14:45:18.815993+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top5"
 }
