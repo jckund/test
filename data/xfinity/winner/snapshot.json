@@ -15,11 +15,11 @@
       "name": "Anthony Alfredo",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 47,
+      "open_interest": 63,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-ANAL",
-      "volume": 47,
-      "volume_24h": 0,
+      "volume": 63,
+      "volume_24h": 16,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -52,16 +52,16 @@
       "yes_bid": 5
     },
     "KXNASCARRACE-BLUCN26-BLPE": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Blaine Perkins",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-BLPE",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 24,
+      "volume_24h": 24,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -125,15 +125,15 @@
       "last_price": 11,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 91,
-      "no_bid": 89,
-      "open_interest": 6263,
+      "no_ask": 89,
+      "no_bid": 88,
+      "open_interest": 6318,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CAKV",
-      "volume": 6320,
-      "volume_24h": 1802,
-      "yes_ask": 11,
-      "yes_bid": 9
+      "volume": 6375,
+      "volume_24h": 1809,
+      "yes_ask": 12,
+      "yes_bid": 11
     },
     "KXNASCARRACE-BLUCN26-CODA": {
       "last_price": 11,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CODA",
       "volume": 15312,
-      "volume_24h": 10888,
+      "volume_24h": 10904,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-JAFI",
       "volume": 80,
-      "volume_24h": 0,
+      "volume_24h": 32,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-JELO",
       "volume": 4455,
-      "volume_24h": 1184,
+      "volume_24h": 1206,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-RACA",
       "volume": 4021,
-      "volume_24h": 1489,
+      "volume_24h": 1504,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-RYSI",
       "volume": 470,
-      "volume_24h": 234,
+      "volume_24h": 266,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 93,
-      "no_bid": 92,
+      "no_bid": 91,
       "open_interest": 7025,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SAMA",
       "volume": 7030,
       "volume_24h": 1861,
-      "yes_ask": 8,
+      "yes_ask": 9,
       "yes_bid": 7
     },
     "KXNASCARRACE-BLUCN26-SASM": {
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SHCR",
       "volume": 3203,
-      "volume_24h": 1856,
+      "volume_24h": 1890,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-10T04:37:59.390796+00:00",
+  "scraped_at": "2026-10-10T04:42:55.664306+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "winner"
 }
