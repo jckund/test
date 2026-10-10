@@ -13,7 +13,7 @@
       "last_price": 15,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 92,
+      "no_ask": 90,
       "no_bid": 85,
       "open_interest": 387,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 387,
       "volume_24h": 0,
       "yes_ask": 15,
-      "yes_bid": 8
+      "yes_bid": 10
     },
     "KXNASCARTOP10-BANOA26-ALBO": {
       "last_price": 30,
@@ -251,7 +251,7 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 74,
+      "no_ask": 75,
       "no_bid": 72,
       "open_interest": 1945,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 1945,
       "volume_24h": 48,
       "yes_ask": 28,
-      "yes_bid": 26
+      "yes_bid": 25
     },
     "KXNASCARTOP10-BANOA26-DEHA": {
       "last_price": 73,
@@ -461,15 +461,15 @@
       "last_price": 21,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 84,
-      "no_bid": 80,
+      "no_ask": 88,
+      "no_bid": 81,
       "open_interest": 1078,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-SHVA",
       "volume": 1078,
       "volume_24h": 19,
-      "yes_ask": 20,
-      "yes_bid": 16
+      "yes_ask": 19,
+      "yes_bid": 12
     },
     "KXNASCARTOP10-BANOA26-TOGI": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-10T05:45:19.525909+00:00",
+  "scraped_at": "2026-10-10T05:50:20.830723+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
