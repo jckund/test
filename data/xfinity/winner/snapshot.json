@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brandon Jones",
       "no_ask": 96,
-      "no_bid": 95,
+      "no_bid": 94,
       "open_interest": 6233,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-BRJO",
       "volume": 6233,
       "volume_24h": 2422,
-      "yes_ask": 5,
+      "yes_ask": 6,
       "yes_bid": 4
     },
     "KXNASCARRACE-BLUCN26-BRPO": {
@@ -122,18 +122,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-CAKV": {
-      "last_price": 25,
+      "last_price": 26,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 87,
-      "no_bid": 86,
-      "open_interest": 8918,
+      "no_ask": 86,
+      "no_bid": 74,
+      "open_interest": 8966,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CAKV",
-      "volume": 8975,
+      "volume": 9023,
       "volume_24h": 3950,
-      "yes_ask": 14,
-      "yes_bid": 13
+      "yes_ask": 26,
+      "yes_bid": 14
     },
     "KXNASCARRACE-BLUCN26-CODA": {
       "last_price": 15,
@@ -318,16 +318,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-JUAL": {
-      "last_price": 17,
+      "last_price": 18,
       "liquidity": null,
       "name": "Justin Allgaier",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 6240,
+      "open_interest": 6293,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-JUAL",
-      "volume": 6673,
-      "volume_24h": 1797,
+      "volume": 6726,
+      "volume_24h": 1818,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-RACA",
       "volume": 6686,
-      "volume_24h": 4169,
+      "volume_24h": 4008,
       "yes_ask": 7,
       "yes_bid": 4
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SASM",
       "volume": 1138,
-      "volume_24h": 722,
+      "volume_24h": 561,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -505,10 +505,10 @@
       "name": "Sheldon Creed",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 4525,
+      "open_interest": 4627,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SHCR",
-      "volume": 4673,
+      "volume": 4774,
       "volume_24h": 2585,
       "yes_ask": 7,
       "yes_bid": 6
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-10T13:18:07.108646+00:00",
+  "scraped_at": "2026-10-10T13:23:53.172422+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "winner"
 }
