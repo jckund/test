@@ -111,7 +111,7 @@
       "last_price": 13,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 88,
+      "no_ask": 89,
       "no_bid": 87,
       "open_interest": 309,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 309,
       "volume_24h": 308,
       "yes_ask": 13,
-      "yes_bid": 12
+      "yes_bid": 11
     },
     "KXNASCARTOP3-BANOA26-CAHO": {
       "last_price": 8,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-CHBE",
       "volume": 3342,
-      "volume_24h": 2352,
+      "volume_24h": 2380,
       "yes_ask": 28,
       "yes_bid": 25
     },
@@ -155,11 +155,11 @@
       "name": "Chase Briscoe",
       "no_ask": 70,
       "no_bid": 67,
-      "open_interest": 1639,
+      "open_interest": 1642,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-CHBR",
-      "volume": 1839,
-      "volume_24h": 672,
+      "volume": 1842,
+      "volume_24h": 766,
       "yes_ask": 33,
       "yes_bid": 30
     },
@@ -349,15 +349,15 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 66,
+      "no_ask": 65,
       "no_bid": 62,
-      "open_interest": 1785,
+      "open_interest": 1787,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-KYLA",
-      "volume": 2058,
-      "volume_24h": 664,
+      "volume": 2060,
+      "volume_24h": 875,
       "yes_ask": 38,
-      "yes_bid": 34
+      "yes_bid": 35
     },
     "KXNASCARTOP3-BANOA26-MIMC": {
       "last_price": 0,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-RYBL",
       "volume": 1076,
-      "volume_24h": 1065,
+      "volume_24h": 1076,
       "yes_ask": 26,
       "yes_bid": 24
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-TYRE",
       "volume": 952,
-      "volume_24h": 757,
+      "volume_24h": 772,
       "yes_ask": 31,
       "yes_bid": 29
     },
@@ -537,7 +537,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-WIBY",
       "volume": 925,
-      "volume_24h": 869,
+      "volume_24h": 925,
       "yes_ask": 17,
       "yes_bid": 14
     },
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-11T17:50:19.586770+00:00",
+  "scraped_at": "2026-10-11T17:55:17.271758+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top3"
 }
