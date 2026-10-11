@@ -10,18 +10,18 @@
   "market_count": 39,
   "markets": {
     "KXNASCARTOP10-BANOA26-AJAL": {
-      "last_price": 11,
+      "last_price": 12,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 92,
-      "no_bid": 89,
-      "open_interest": 787,
+      "no_ask": 91,
+      "no_bid": 87,
+      "open_interest": 826,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-AJAL",
-      "volume": 787,
+      "volume": 826,
       "volume_24h": 400,
-      "yes_ask": 11,
-      "yes_bid": 8
+      "yes_ask": 13,
+      "yes_bid": 9
     },
     "KXNASCARTOP10-BANOA26-ALBO": {
       "last_price": 32,
@@ -209,15 +209,15 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 78,
-      "no_bid": 75,
+      "no_ask": 79,
+      "no_bid": 77,
       "open_interest": 2586,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-COHE",
       "volume": 2662,
       "volume_24h": 2183,
-      "yes_ask": 25,
-      "yes_bid": 22
+      "yes_ask": 23,
+      "yes_bid": 21
     },
     "KXNASCARTOP10-BANOA26-COWA": {
       "last_price": 3,
@@ -251,7 +251,7 @@
       "last_price": 34,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 79,
+      "no_ask": 76,
       "no_bid": 71,
       "open_interest": 2039,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 2039,
       "volume_24h": 51,
       "yes_ask": 29,
-      "yes_bid": 21
+      "yes_bid": 24
     },
     "KXNASCARTOP10-BANOA26-DEHA": {
       "last_price": 70,
@@ -321,7 +321,7 @@
       "last_price": 47,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 60,
+      "no_ask": 57,
       "no_bid": 54,
       "open_interest": 404,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 660,
       "volume_24h": 349,
       "yes_ask": 46,
-      "yes_bid": 40
+      "yes_bid": 43
     },
     "KXNASCARTOP10-BANOA26-JONE": {
       "last_price": 3,
@@ -349,15 +349,15 @@
       "last_price": 65,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 43,
-      "no_bid": 35,
+      "no_ask": 40,
+      "no_bid": 37,
       "open_interest": 1031,
       "status": "active",
       "ticker": "KXNASCARTOP10-BANOA26-KYLA",
       "volume": 1248,
       "volume_24h": 845,
-      "yes_ask": 65,
-      "yes_bid": 57
+      "yes_ask": 63,
+      "yes_bid": 60
     },
     "KXNASCARTOP10-BANOA26-MIMC": {
       "last_price": 12,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-11T11:55:18.837203+00:00",
+  "scraped_at": "2026-10-11T12:00:25.606527+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top10"
 }
