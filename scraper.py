@@ -81,8 +81,12 @@ SERIES = [
     # catch-all (`default`), so any unmatched open race falls here. When clearing the support race
     # mid-weekend, comment this entry out again — see CLAUDE.md "Clearing a
     # support race mid-weekend".
-    {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
-     "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
+    # Cup: OFF (stopped 2026-10-11 on request once the Bank of America 400 was
+    # underway; Xfinity continues). Un-comment and re-point the matcher at the
+    # next kickoff. While it is commented out the Cup tab drops from
+    # data/series.json and neither scraper nor evwatch touches Cup.
+    # {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
+    #  "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
     # Truck: dropped 2026-10-09 once the Ecosave 200 started (on request).
     # Un-comment and re-point the matcher to track a Truck race again; while
     # it's commented out the xfinity default still prefers its own matcher, so
