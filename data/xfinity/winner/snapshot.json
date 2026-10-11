@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-AUGR",
       "volume": 243,
-      "volume_24h": 0,
+      "volume_24h": 243,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -122,30 +122,30 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLUCN26-CAKV": {
-      "last_price": 17,
+      "last_price": 23,
       "liquidity": null,
       "name": "Carson Kvapil",
       "no_ask": 83,
-      "no_bid": 78,
-      "open_interest": 13790,
+      "no_bid": 80,
+      "open_interest": 13799,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CAKV",
-      "volume": 17234,
-      "volume_24h": 6036,
-      "yes_ask": 22,
+      "volume": 17242,
+      "volume_24h": 6045,
+      "yes_ask": 20,
       "yes_bid": 17
     },
     "KXNASCARRACE-BLUCN26-CODA": {
-      "last_price": 17,
+      "last_price": 16,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 22140,
+      "open_interest": 22152,
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-CODA",
-      "volume": 23183,
-      "volume_24h": 2552,
+      "volume": 23195,
+      "volume_24h": 2539,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-JUAL",
       "volume": 10975,
-      "volume_24h": 2481,
+      "volume_24h": 2437,
       "yes_ask": 22,
       "yes_bid": 20
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SASM",
       "volume": 2164,
-      "volume_24h": 747,
+      "volume_24h": 651,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-SHCR",
       "volume": 11321,
-      "volume_24h": 2962,
+      "volume_24h": 2847,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLUCN26-TAGR",
       "volume": 8091,
-      "volume_24h": 3201,
+      "volume_24h": 3095,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-11T18:23:15.858504+00:00",
+  "scraped_at": "2026-10-11T18:32:57.885399+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "winner"
 }
