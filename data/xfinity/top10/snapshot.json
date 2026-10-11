@@ -10,15 +10,15 @@
   "market_count": 38,
   "markets": {
     "KXNASCARTOP10-BLUCN26-ANAL": {
-      "last_price": 38,
+      "last_price": 36,
       "liquidity": null,
       "name": "Anthony Alfredo",
       "no_ask": 78,
       "no_bid": 64,
-      "open_interest": 44,
+      "open_interest": 57,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-ANAL",
-      "volume": 44,
+      "volume": 57,
       "volume_24h": 12,
       "yes_ask": 36,
       "yes_bid": 22
@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-AUGR",
       "volume": 1208,
-      "volume_24h": 0,
+      "volume_24h": 378,
       "yes_ask": 22,
       "yes_bid": 7
     },
@@ -69,7 +69,7 @@
       "last_price": 67,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 43,
+      "no_ask": 44,
       "no_bid": 33,
       "open_interest": 575,
       "status": "active",
@@ -77,18 +77,18 @@
       "volume": 583,
       "volume_24h": 73,
       "yes_ask": 67,
-      "yes_bid": 57
+      "yes_bid": 56
     },
     "KXNASCARTOP10-BLUCN26-BRJO": {
-      "last_price": 51,
+      "last_price": 50,
       "liquidity": null,
       "name": "Brandon Jones",
       "no_ask": 59,
       "no_bid": 50,
-      "open_interest": 604,
+      "open_interest": 782,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-BRJO",
-      "volume": 615,
+      "volume": 793,
       "volume_24h": 212,
       "yes_ask": 50,
       "yes_bid": 41
@@ -211,11 +211,11 @@
       "name": "Harrison Burton",
       "no_ask": 84,
       "no_bid": 77,
-      "open_interest": 276,
+      "open_interest": 316,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-HABU",
-      "volume": 276,
-      "volume_24h": 62,
+      "volume": 316,
+      "volume_24h": 102,
       "yes_ask": 23,
       "yes_bid": 16
     },
@@ -430,17 +430,17 @@
       "yes_bid": 2
     },
     "KXNASCARTOP10-BLUCN26-RACA": {
-      "last_price": 53,
+      "last_price": 49,
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 71,
-      "no_bid": 53,
-      "open_interest": 2306,
+      "no_bid": 52,
+      "open_interest": 2507,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-RACA",
-      "volume": 2634,
+      "volume": 2835,
       "volume_24h": 0,
-      "yes_ask": 47,
+      "yes_ask": 48,
       "yes_bid": 29
     },
     "KXNASCARTOP10-BLUCN26-RYEL": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLUCN26-SASM",
       "volume": 1843,
-      "volume_24h": 1577,
+      "volume_24h": 1630,
       "yes_ask": 41,
       "yes_bid": 21
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-11T23:30:54.873243+00:00",
+  "scraped_at": "2026-10-11T23:35:49.140311+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top10"
 }
