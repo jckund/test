@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-AUHI",
       "volume": 65,
-      "volume_24h": 45,
+      "volume_24h": 60,
       "yes_ask": 18,
       "yes_bid": 9
     },
@@ -71,10 +71,10 @@
       "name": "Brent Crews",
       "no_ask": 84,
       "no_bid": 71,
-      "open_interest": 1092,
+      "open_interest": 1197,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-BRCR",
-      "volume": 1182,
+      "volume": 1287,
       "volume_24h": 335,
       "yes_ask": 29,
       "yes_bid": 16
@@ -472,15 +472,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-BLUCN26-SAMA": {
-      "last_price": 20,
+      "last_price": 25,
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 80,
       "no_bid": 75,
-      "open_interest": 883,
+      "open_interest": 899,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-SAMA",
-      "volume": 894,
+      "volume": 910,
       "volume_24h": 375,
       "yes_ask": 25,
       "yes_bid": 20
@@ -500,15 +500,15 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-BLUCN26-SHCR": {
-      "last_price": 25,
+      "last_price": 24,
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 84,
       "no_bid": 76,
-      "open_interest": 221,
+      "open_interest": 281,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-SHCR",
-      "volume": 221,
+      "volume": 281,
       "volume_24h": 129,
       "yes_ask": 24,
       "yes_bid": 16
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-11T23:10:18.714113+00:00",
+  "scraped_at": "2026-10-11T23:15:16.755452+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top3"
 }
