@@ -98,20 +98,20 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 99,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 86,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-BRKE",
       "volume": 86,
       "volume_24h": 86,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARTOP3-BANOA26-BUWA": {
       "last_price": 15,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 97,
+      "no_ask": 95,
       "no_bid": 86,
       "open_interest": 1,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 1,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 3
+      "yes_bid": 5
     },
     "KXNASCARTOP3-BANOA26-CAHO": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-11T06:25:17.499371+00:00",
+  "scraped_at": "2026-10-11T06:30:20.374306+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top3"
 }
