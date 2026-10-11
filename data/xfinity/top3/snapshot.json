@@ -13,7 +13,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Anthony Alfredo",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 96,
       "open_interest": 0,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-BLUCN26-AUGR": {
       "last_price": 0,
@@ -168,13 +168,13 @@
       "liquidity": null,
       "name": "Derek Lemke",
       "no_ask": 100,
-      "no_bid": 80,
+      "no_bid": 76,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-DELE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 20,
+      "yes_ask": 24,
       "yes_bid": 0
     },
     "KXNASCARTOP3-BLUCN26-DETH": {
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 79,
-      "no_bid": 59,
+      "no_bid": 58,
       "open_interest": 205,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-JELO",
       "volume": 205,
       "volume_24h": 14,
-      "yes_ask": 41,
+      "yes_ask": 42,
       "yes_bid": 21
     },
     "KXNASCARTOP3-BLUCN26-JOBI": {
@@ -405,7 +405,7 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 95,
       "open_interest": 28,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 28,
       "volume_24h": 0,
       "yes_ask": 5,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BLUCN26-PAST": {
       "last_price": 0,
@@ -475,21 +475,21 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 80,
+      "no_ask": 83,
       "no_bid": 66,
       "open_interest": 858,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLUCN26-SAMA",
       "volume": 869,
-      "volume_24h": 0,
+      "volume_24h": 350,
       "yes_ask": 34,
-      "yes_bid": 20
+      "yes_bid": 17
     },
     "KXNASCARTOP3-BLUCN26-SASM": {
       "last_price": 13,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 90,
       "open_interest": 207,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 207,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 6
+      "yes_bid": 5
     },
     "KXNASCARTOP3-BLUCN26-SHCR": {
       "last_price": 34,
@@ -531,7 +531,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 88,
       "open_interest": 0,
       "status": "active",
@@ -539,11 +539,11 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 12,
-      "yes_bid": 6
+      "yes_bid": 5
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-11T15:53:32.593528+00:00",
+  "scraped_at": "2026-10-11T16:08:00.549052+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
   "tier": "top3"
 }
