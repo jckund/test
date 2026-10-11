@@ -97,7 +97,7 @@
       "last_price": 11,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 96,
       "open_interest": 86,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 86,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BANOA26-BUWA": {
       "last_price": 11,
@@ -127,26 +127,26 @@
       "name": "Carson Hocevar",
       "no_ask": 96,
       "no_bid": 92,
-      "open_interest": 229,
+      "open_interest": 252,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-CAHO",
-      "volume": 229,
+      "volume": 252,
       "volume_24h": 229,
       "yes_ask": 8,
       "yes_bid": 4
     },
     "KXNASCARTOP3-BANOA26-CHBE": {
-      "last_price": 29,
+      "last_price": 28,
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 75,
-      "no_bid": 72,
-      "open_interest": 3070,
+      "no_bid": 73,
+      "open_interest": 3073,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-CHBE",
-      "volume": 3070,
-      "volume_24h": 2107,
-      "yes_ask": 28,
+      "volume": 3073,
+      "volume_24h": 2110,
+      "yes_ask": 27,
       "yes_bid": 25
     },
     "KXNASCARTOP3-BANOA26-CHBR": {
@@ -167,7 +167,7 @@
       "last_price": 5,
       "liquidity": null,
       "name": "Chris Buescher",
-      "no_ask": 97,
+      "no_ask": 99,
       "no_bid": 95,
       "open_interest": 50,
       "status": "active",
@@ -175,13 +175,13 @@
       "volume": 50,
       "volume_24h": 50,
       "yes_ask": 5,
-      "yes_bid": 3
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BANOA26-CHEL": {
       "last_price": 13,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 92,
+      "no_ask": 91,
       "no_bid": 88,
       "open_interest": 774,
       "status": "active",
@@ -189,7 +189,7 @@
       "volume": 774,
       "volume_24h": 774,
       "yes_ask": 12,
-      "yes_bid": 8
+      "yes_bid": 9
     },
     "KXNASCARTOP3-BANOA26-COCU": {
       "last_price": 0,
@@ -251,7 +251,7 @@
       "last_price": 8,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 96,
       "open_interest": 150,
       "status": "active",
@@ -259,21 +259,21 @@
       "volume": 212,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP3-BANOA26-DEHA": {
       "last_price": 34,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 70,
-      "no_bid": 66,
+      "no_ask": 74,
+      "no_bid": 67,
       "open_interest": 1357,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-DEHA",
       "volume": 1372,
-      "volume_24h": 993,
-      "yes_ask": 34,
-      "yes_bid": 30
+      "volume_24h": 998,
+      "yes_ask": 33,
+      "yes_bid": 26
     },
     "KXNASCARTOP3-BANOA26-ERJO": {
       "last_price": 0,
@@ -318,15 +318,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-BANOA26-JOLO": {
-      "last_price": 11,
+      "last_price": 13,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 91,
       "no_bid": 87,
-      "open_interest": 370,
+      "open_interest": 384,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-JOLO",
-      "volume": 376,
+      "volume": 390,
       "volume_24h": 303,
       "yes_ask": 13,
       "yes_bid": 9
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 89,
-      "no_bid": 85,
+      "no_bid": 84,
       "open_interest": 1091,
       "status": "active",
       "ticker": "KXNASCARTOP3-BANOA26-TYGI",
       "volume": 1091,
-      "volume_24h": 1018,
-      "yes_ask": 15,
+      "volume_24h": 1031,
+      "yes_ask": 16,
       "yes_bid": 11
     },
     "KXNASCARTOP3-BANOA26-TYRE": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-11T16:40:19.662656+00:00",
+  "scraped_at": "2026-10-11T16:45:20.424012+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-banoa26",
   "tier": "top3"
 }
