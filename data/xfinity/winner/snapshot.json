@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-AUHI",
       "volume": 1084,
-      "volume_24h": 0,
+      "volume_24h": 1084,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -164,15 +164,15 @@
       "yes_bid": 6
     },
     "KXNASCARRACE-TIMP26-COMO": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 297,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-COMO",
-      "volume": 0,
+      "volume": 297,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 88,
-      "no_bid": 85,
+      "no_bid": 87,
       "open_interest": 341,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JELO",
       "volume": 341,
       "volume_24h": 341,
-      "yes_ask": 15,
+      "yes_ask": 13,
       "yes_bid": 12
     },
     "KXNASCARRACE-TIMP26-JOBI": {
@@ -402,16 +402,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-TIMP26-RACA": {
-      "last_price": 3,
+      "last_price": 2,
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 35,
+      "open_interest": 454,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-RACA",
-      "volume": 35,
-      "volume_24h": 35,
+      "volume": 454,
+      "volume_24h": 454,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-SAMA",
       "volume": 301,
-      "volume_24h": 289,
+      "volume_24h": 301,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-SHCR",
       "volume": 299,
-      "volume_24h": 294,
+      "volume_24h": 299,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -514,22 +514,22 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-TIMP26-WISA": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 703,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-WISA",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 703,
+      "volume_24h": 703,
       "yes_ask": 2,
       "yes_bid": 1
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-13T22:28:07.148920+00:00",
+  "scraped_at": "2026-10-13T22:33:40.681295+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "winner"
 }
