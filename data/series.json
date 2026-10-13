@@ -1,18 +1,46 @@
 {
-  "updated_at": "2026-10-12T00:51:40.605409+00:00",
+  "updated_at": "2026-10-13T15:10:42.640472+00:00",
   "series": [
     {
-      "key": "xfinity",
-      "label": "Xfinity",
-      "race_title": "Blue Cross NC 250 ('26)",
+      "key": "cup",
+      "label": "NASCAR",
+      "race_title": "Freeway Insurance 500 ('26)",
+      "full": true,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top5",
+        "top10",
+        "top20"
+      ],
+      "scraped_at": "2026-10-13T15:08:03.203074+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Truck",
+      "race_title": "Zero Carbon Bioethanol 150 ('26)",
       "full": false,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blucn26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
       "tiers": [
         "winner",
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-10-12T00:51:40.605357+00:00"
+      "scraped_at": "2026-10-13T15:09:22.534528+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Timberland PRO 200 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-13T15:10:42.640446+00:00"
     }
   ]
 }
