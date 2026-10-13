@@ -125,7 +125,7 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 33,
+      "no_ask": 34,
       "no_bid": 31,
       "open_interest": 150,
       "status": "active",
@@ -133,13 +133,13 @@
       "volume": 150,
       "volume_24h": 150,
       "yes_ask": 69,
-      "yes_bid": 67
+      "yes_bid": 66
     },
     "KXNASCARTOP10-FREI26-CHBR": {
       "last_price": 0,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 49,
+      "no_ask": 50,
       "no_bid": 41,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 59,
-      "yes_bid": 51
+      "yes_bid": 50
     },
     "KXNASCARTOP10-FREI26-CHBU": {
       "last_price": 0,
@@ -223,7 +223,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 94,
+      "no_ask": 95,
       "no_bid": 86,
       "open_interest": 0,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 6
+      "yes_bid": 5
     },
     "KXNASCARTOP10-FREI26-DASU": {
       "last_price": 15,
@@ -276,18 +276,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP10-FREI26-JOBE": {
-      "last_price": 48,
+      "last_price": 53,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 60,
-      "no_bid": 56,
-      "open_interest": 13,
+      "no_ask": 59,
+      "no_bid": 48,
+      "open_interest": 999,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
-      "volume": 13,
+      "volume": 999,
       "volume_24h": 13,
-      "yes_ask": 44,
-      "yes_bid": 40
+      "yes_ask": 52,
+      "yes_bid": 41
     },
     "KXNASCARTOP10-FREI26-JOLO": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-13T23:04:47.847881+00:00",
+  "scraped_at": "2026-10-13T23:16:01.280534+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
