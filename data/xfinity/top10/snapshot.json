@@ -178,18 +178,18 @@
       "yes_bid": 5
     },
     "KXNASCARTOP10-TIMP26-DACR": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Dawson Cram",
-      "no_ask": 99,
-      "no_bid": 72,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 80,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-DACR",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 28,
-      "yes_bid": 1
+      "yes_ask": 20,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-TIMP26-DETH": {
       "last_price": 0,
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 39,
-      "no_bid": 19,
+      "no_bid": 13,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-JELO",
       "volume": 5,
       "volume_24h": 5,
-      "yes_ask": 81,
+      "yes_ask": 87,
       "yes_bid": 61
     },
     "KXNASCARTOP10-TIMP26-JOBI": {
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Parker Retzlaff",
       "no_ask": 67,
-      "no_bid": 53,
+      "no_bid": 52,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-PARE",
       "volume": 10,
       "volume_24h": 10,
-      "yes_ask": 47,
+      "yes_ask": 48,
       "yes_bid": 33
     },
     "KXNASCARTOP10-TIMP26-PAST": {
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 67,
-      "no_bid": 52,
+      "no_bid": 51,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-RACA",
       "volume": 10,
       "volume_24h": 10,
-      "yes_ask": 48,
+      "yes_ask": 49,
       "yes_bid": 33
     },
     "KXNASCARTOP10-TIMP26-RYEL": {
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 40,
-      "no_bid": 37,
+      "no_bid": 36,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-SHCR",
       "volume": 5,
       "volume_24h": 5,
-      "yes_ask": 63,
+      "yes_ask": 64,
       "yes_bid": 60
     },
     "KXNASCARTOP10-TIMP26-TAGR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-13T16:09:37.522478+00:00",
+  "scraped_at": "2026-10-13T16:15:07.489151+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
