@@ -125,7 +125,7 @@
       "last_price": 71,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 35,
+      "no_ask": 36,
       "no_bid": 31,
       "open_interest": 7,
       "status": "active",
@@ -133,13 +133,13 @@
       "volume": 7,
       "volume_24h": 7,
       "yes_ask": 69,
-      "yes_bid": 65
+      "yes_bid": 64
     },
     "KXNASCARTOP10-FREI26-CHBR": {
       "last_price": 0,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 47,
+      "no_ask": 48,
       "no_bid": 41,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 59,
-      "yes_bid": 53
+      "yes_bid": 52
     },
     "KXNASCARTOP10-FREI26-CHBU": {
       "last_price": 0,
@@ -234,18 +234,18 @@
       "yes_bid": 11
     },
     "KXNASCARTOP10-FREI26-DASU": {
-      "last_price": 0,
+      "last_price": 17,
       "liquidity": null,
       "name": "Daniel Suarez",
-      "no_ask": 95,
-      "no_bid": 84,
-      "open_interest": 0,
+      "no_ask": 92,
+      "no_bid": 83,
+      "open_interest": 207,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-DASU",
-      "volume": 0,
+      "volume": 207,
       "volume_24h": 0,
-      "yes_ask": 16,
-      "yes_bid": 5
+      "yes_ask": 17,
+      "yes_bid": 8
     },
     "KXNASCARTOP10-FREI26-DEHA": {
       "last_price": 85,
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Michael McDowell",
       "no_ask": 94,
-      "no_bid": 86,
+      "no_bid": 85,
       "open_interest": 264,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-MIMC",
       "volume": 264,
       "volume_24h": 264,
-      "yes_ask": 14,
+      "yes_ask": 15,
       "yes_bid": 6
     },
     "KXNASCARTOP10-FREI26-NOGR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-13T19:41:41.297882+00:00",
+  "scraped_at": "2026-10-13T20:28:14.389282+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
