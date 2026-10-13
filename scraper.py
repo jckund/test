@@ -71,29 +71,22 @@ WINNER_SERIES = "KXNASCARRACE"
 # repointed each kickoff like the others; when it isn't running a race, drop
 # or comment out the entry so a stale matcher can't grab the wrong event.
 SERIES = [
-    # Charlotte Roval playoff weekend.
+    # Freeway Insurance 500 weekend (kickoff 2026-10-13).
     #
-    # Cup: Bank of America ROVAL 400. Match "bank of america" only — NOT
-    # "charlotte"/"roval", which the weekend's races share, and NOT "400",
-    # which is generic.
-    #
-    # Xfinity: Blue Cross NC 250. Match "blue cross". This entry is also the
-    # catch-all (`default`), so any unmatched open race falls here. When clearing the support race
-    # mid-weekend, comment this entry out again — see CLAUDE.md "Clearing a
-    # support race mid-weekend".
-    # Cup: OFF (stopped 2026-10-11 on request once the Bank of America 400 was
-    # underway; Xfinity continues). Un-comment and re-point the matcher at the
-    # next kickoff. While it is commented out the Cup tab drops from
-    # data/series.json and neither scraper nor evwatch touches Cup.
-    # {"key": "cup", "label": "NASCAR", "matchers": ["bank of america"],
-    #  "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: dropped 2026-10-09 once the Ecosave 200 started (on request).
-    # Un-comment and re-point the matcher to track a Truck race again; while
-    # it's commented out the xfinity default still prefers its own matcher, so
-    # an unmatched Truck race is only claimed if no Xfinity race is open.
-    # {"key": "truck", "label": "Truck", "matchers": ["ecosave"],
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["blue cross"], "default": True,
+    # Cup: Freeway Insurance 500. Match "freeway" only — not the track name,
+    # which the weekend's races share, and not "500", which is generic.
+    {"key": "cup", "label": "NASCAR", "matchers": ["freeway"],
+     "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
+    # Truck: Zero Carbon Bioethanol 150. Match "bioethanol". Comment out again
+    # once the Truck race has run so a stale matcher can't grab the wrong event.
+    {"key": "truck", "label": "Truck", "matchers": ["bioethanol"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Xfinity: Timberland Pro 200. Match "timberland". This entry is also the
+    # catch-all (`default`), so any unmatched open race falls here. When
+    # clearing the support race mid-weekend, comment this entry out again (and
+    # RESTORE it at the next kickoff) — see CLAUDE.md "Clearing a support race
+    # mid-weekend".
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["timberland"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
