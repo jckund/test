@@ -43,11 +43,11 @@
       "name": "Austin Cindric",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 130,
+      "open_interest": 245,
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-AUCI",
-      "volume": 130,
-      "volume_24h": 130,
+      "volume": 245,
+      "volume_24h": 245,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -113,11 +113,11 @@
       "name": "Carson Hocevar",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 2102,
+      "open_interest": 2231,
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-CAHO",
-      "volume": 2102,
-      "volume_24h": 2102,
+      "volume": 2231,
+      "volume_24h": 2231,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-CHBE",
       "volume": 8553,
-      "volume_24h": 8489,
+      "volume_24h": 8553,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-JOLO",
       "volume": 8226,
-      "volume_24h": 8126,
+      "volume_24h": 8226,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 1020,
+      "open_interest": 1151,
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-KYLA",
-      "volume": 1020,
-      "volume_24h": 1020,
+      "volume": 1151,
+      "volume_24h": 1151,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -402,17 +402,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-FREI26-RYBL": {
-      "last_price": 20,
+      "last_price": 19,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 82,
-      "no_bid": 81,
-      "open_interest": 5098,
+      "no_bid": 80,
+      "open_interest": 5103,
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-RYBL",
-      "volume": 5104,
-      "volume_24h": 5104,
-      "yes_ask": 19,
+      "volume": 5109,
+      "volume_24h": 5109,
+      "yes_ask": 20,
       "yes_bid": 18
     },
     "KXNASCARRACE-FREI26-RYPR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-13T19:06:13.491371+00:00",
+  "scraped_at": "2026-10-13T19:11:53.093990+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "winner"
 }
