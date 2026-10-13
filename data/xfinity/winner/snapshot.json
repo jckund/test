@@ -52,18 +52,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-TIMP26-AUHI": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Austin Hill",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 1084,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-AUHI",
-      "volume": 0,
+      "volume": 1084,
       "volume_24h": 0,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-TIMP26-BLPE": {
       "last_price": 0,
@@ -83,7 +83,7 @@
       "last_price": 7,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 97,
+      "no_ask": 95,
       "no_bid": 93,
       "open_interest": 310,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 310,
       "volume_24h": 310,
       "yes_ask": 7,
-      "yes_bid": 3
+      "yes_bid": 5
     },
     "KXNASCARRACE-TIMP26-BRJO": {
       "last_price": 4,
@@ -153,7 +153,7 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 93,
       "open_interest": 312,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 312,
       "volume_24h": 312,
       "yes_ask": 7,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARRACE-TIMP26-COMO": {
       "last_price": 0,
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JUAL",
       "volume": 755,
-      "volume_24h": 723,
+      "volume_24h": 755,
       "yes_ask": 23,
       "yes_bid": 18
     },
@@ -447,15 +447,15 @@
       "last_price": 4,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 99,
-      "no_bid": 97,
-      "open_interest": 289,
+      "no_ask": 96,
+      "no_bid": 95,
+      "open_interest": 301,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-SAMA",
-      "volume": 289,
+      "volume": 301,
       "volume_24h": 289,
-      "yes_ask": 3,
-      "yes_bid": 1
+      "yes_ask": 5,
+      "yes_bid": 4
     },
     "KXNASCARRACE-TIMP26-SASM": {
       "last_price": 4,
@@ -475,21 +475,21 @@
       "last_price": 7,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 96,
-      "no_bid": 93,
-      "open_interest": 294,
+      "no_ask": 93,
+      "no_bid": 92,
+      "open_interest": 299,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-SHCR",
-      "volume": 294,
+      "volume": 299,
       "volume_24h": 294,
-      "yes_ask": 7,
-      "yes_bid": 4
+      "yes_ask": 8,
+      "yes_bid": 7
     },
     "KXNASCARRACE-TIMP26-TAGR": {
       "last_price": 7,
       "liquidity": null,
       "name": "Taylor Gray",
-      "no_ask": 99,
+      "no_ask": 96,
       "no_bid": 94,
       "open_interest": 1049,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 1049,
       "volume_24h": 1049,
       "yes_ask": 6,
-      "yes_bid": 1
+      "yes_bid": 4
     },
     "KXNASCARRACE-TIMP26-WIRO": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-13T22:16:42.996404+00:00",
+  "scraped_at": "2026-10-13T22:28:07.148920+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "winner"
 }
