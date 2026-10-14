@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 48,
+      "no_ask": 49,
       "no_bid": 41,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 59,
-      "yes_bid": 52
+      "yes_bid": 51
     },
     "KXNASCARTOP10-FREI26-CHBU": {
       "last_price": 29,
@@ -223,7 +223,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 91,
+      "no_ask": 93,
       "no_bid": 86,
       "open_interest": 0,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 9
+      "yes_bid": 7
     },
     "KXNASCARTOP10-FREI26-DASU": {
       "last_price": 17,
@@ -318,15 +318,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FREI26-KYLA": {
-      "last_price": 0,
+      "last_price": 67,
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 38,
       "no_bid": 33,
-      "open_interest": 0,
+      "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-KYLA",
-      "volume": 0,
+      "volume": 7,
       "volume_24h": 0,
       "yes_ask": 67,
       "yes_bid": 62
@@ -402,15 +402,15 @@
       "yes_bid": 25
     },
     "KXNASCARTOP10-FREI26-RYBL": {
-      "last_price": 72,
+      "last_price": 73,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 31,
       "no_bid": 27,
-      "open_interest": 7,
+      "open_interest": 13,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-RYBL",
-      "volume": 7,
+      "volume": 13,
       "volume_24h": 7,
       "yes_ask": 73,
       "yes_bid": 69
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T02:21:14.018770+00:00",
+  "scraped_at": "2026-10-14T02:26:35.214103+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
