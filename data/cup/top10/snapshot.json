@@ -27,15 +27,15 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 83,
-      "no_bid": 75,
+      "no_ask": 82,
+      "no_bid": 70,
       "open_interest": 6,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-ALBO",
       "volume": 6,
       "volume_24h": 6,
-      "yes_ask": 25,
-      "yes_bid": 17
+      "yes_ask": 30,
+      "yes_bid": 18
     },
     "KXNASCARTOP10-FREI26-AUCI": {
       "last_price": 45,
@@ -94,18 +94,18 @@
       "yes_bid": 14
     },
     "KXNASCARTOP10-FREI26-BUWA": {
-      "last_price": 42,
+      "last_price": 40,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 66,
-      "no_bid": 60,
-      "open_interest": 295,
+      "no_ask": 63,
+      "no_bid": 53,
+      "open_interest": 520,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-BUWA",
-      "volume": 295,
+      "volume": 520,
       "volume_24h": 292,
-      "yes_ask": 40,
-      "yes_bid": 34
+      "yes_ask": 47,
+      "yes_bid": 37
     },
     "KXNASCARTOP10-FREI26-CAHO": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T13:54:15.632366+00:00",
+  "scraped_at": "2026-10-14T13:59:58.516536+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
