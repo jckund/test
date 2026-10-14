@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-TIMP26",
   "label": "Top 10",
-  "market_count": 37,
+  "market_count": 39,
   "markets": {
     "KXNASCARTOP10-TIMP26-ANAL": {
       "last_price": 0,
@@ -317,6 +317,20 @@
       "yes_ask": 1,
       "yes_bid": 0
     },
+    "KXNASCARTOP10-TIMP26-JOWI": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Josh Williams",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-TIMP26-JOWI",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-TIMP26-JUAL": {
       "last_price": 99,
       "liquidity": null,
@@ -373,11 +387,25 @@
       "yes_ask": 99,
       "yes_bid": 0
     },
+    "KXNASCARTOP10-TIMP26-NISA": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Nick Sanchez",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-TIMP26-NISA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-TIMP26-PARE": {
       "last_price": 41,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 74,
+      "no_ask": 75,
       "no_bid": 59,
       "open_interest": 10,
       "status": "active",
@@ -385,7 +413,7 @@
       "volume": 15,
       "volume_24h": 5,
       "yes_ask": 41,
-      "yes_bid": 26
+      "yes_bid": 25
     },
     "KXNASCARTOP10-TIMP26-PAST": {
       "last_price": 6,
@@ -462,13 +490,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 60,
-      "no_bid": 41,
+      "no_bid": 39,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-SASM",
       "volume": 10,
       "volume_24h": 5,
-      "yes_ask": 59,
+      "yes_ask": 61,
       "yes_bid": 40
     },
     "KXNASCARTOP10-TIMP26-SHCR": {
@@ -529,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T18:50:34.075596+00:00",
+  "scraped_at": "2026-10-14T19:02:25.428841+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }

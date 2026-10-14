@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARRACE-TIMP26",
   "label": "Winner",
-  "market_count": 37,
+  "market_count": 39,
   "markets": {
     "KXNASCARRACE-TIMP26-ANAL": {
       "last_price": 0,
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 94,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 674,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-CODA",
       "volume": 674,
       "volume_24h": 362,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 6
     },
     "KXNASCARRACE-TIMP26-COMO": {
@@ -279,7 +279,7 @@
       "last_price": 17,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 86,
+      "no_ask": 87,
       "no_bid": 84,
       "open_interest": 3668,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 3668,
       "volume_24h": 3327,
       "yes_ask": 16,
-      "yes_bid": 14
+      "yes_bid": 13
     },
     "KXNASCARRACE-TIMP26-JOBI": {
       "last_price": 0,
@@ -317,6 +317,20 @@
       "yes_ask": 1,
       "yes_bid": 0
     },
+    "KXNASCARRACE-TIMP26-JOWI": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Josh Williams",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-TIMP26-JOWI",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARRACE-TIMP26-JUAL": {
       "last_price": 23,
       "liquidity": null,
@@ -327,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JUAL",
       "volume": 3475,
-      "volume_24h": 2934,
+      "volume_24h": 2948,
       "yes_ask": 23,
       "yes_bid": 22
     },
@@ -371,6 +385,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 1,
+      "yes_bid": 0
+    },
+    "KXNASCARRACE-TIMP26-NISA": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Nick Sanchez",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARRACE-TIMP26-NISA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARRACE-TIMP26-PARE": {
@@ -529,7 +557,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-14T18:55:55.945668+00:00",
+  "scraped_at": "2026-10-14T19:01:52.302412+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "winner"
 }

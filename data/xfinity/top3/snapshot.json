@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-TIMP26",
   "label": "Top 3",
-  "market_count": 37,
+  "market_count": 39,
   "markets": {
     "KXNASCARTOP3-TIMP26-ANAL": {
       "last_price": 0,
@@ -153,7 +153,7 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 71,
       "open_interest": 19,
       "status": "active",
@@ -161,7 +161,7 @@
       "volume": 19,
       "volume_24h": 19,
       "yes_ask": 29,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARTOP3-TIMP26-COMO": {
       "last_price": 0,
@@ -317,6 +317,20 @@
       "yes_ask": 9,
       "yes_bid": 0
     },
+    "KXNASCARTOP3-TIMP26-JOWI": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Josh Williams",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-TIMP26-JOWI",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP3-TIMP26-JUAL": {
       "last_price": 45,
       "liquidity": null,
@@ -371,6 +385,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
+      "yes_bid": 0
+    },
+    "KXNASCARTOP3-TIMP26-NISA": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Nick Sanchez",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-TIMP26-NISA",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
       "yes_bid": 0
     },
     "KXNASCARTOP3-TIMP26-PARE": {
@@ -448,13 +476,13 @@
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 86,
-      "no_bid": 74,
+      "no_bid": 75,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-TIMP26-SAMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 26,
+      "yes_ask": 25,
       "yes_bid": 14
     },
     "KXNASCARTOP3-TIMP26-SASM": {
@@ -529,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-14T18:50:01.513366+00:00",
+  "scraped_at": "2026-10-14T19:01:52.787561+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top3"
 }
