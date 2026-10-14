@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBE",
       "volume": 488,
-      "volume_24h": 486,
+      "volume_24h": 488,
       "yes_ask": 41,
       "yes_bid": 40
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-JOLO",
       "volume": 3,
-      "volume_24h": 0,
+      "volume_24h": 3,
       "yes_ask": 31,
       "yes_bid": 24
     },
@@ -402,17 +402,17 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-FREI26-RYBL": {
-      "last_price": 43,
+      "last_price": 44,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 60,
-      "no_bid": 56,
-      "open_interest": 140,
+      "no_bid": 55,
+      "open_interest": 217,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-RYBL",
-      "volume": 140,
-      "volume_24h": 138,
-      "yes_ask": 44,
+      "volume": 217,
+      "volume_24h": 140,
+      "yes_ask": 45,
       "yes_bid": 40
     },
     "KXNASCARTOP3-FREI26-RYPR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-14T00:20:03.945384+00:00",
+  "scraped_at": "2026-10-14T00:26:00.725617+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
