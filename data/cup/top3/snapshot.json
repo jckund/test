@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 60,
       "no_bid": 59,
-      "open_interest": 486,
+      "open_interest": 488,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBE",
-      "volume": 486,
+      "volume": 488,
       "volume_24h": 486,
       "yes_ask": 41,
       "yes_bid": 40
@@ -290,15 +290,15 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-FREI26-JOLO": {
-      "last_price": 0,
+      "last_price": 31,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 76,
       "no_bid": 69,
-      "open_interest": 0,
+      "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-JOLO",
-      "volume": 0,
+      "volume": 3,
       "volume_24h": 0,
       "yes_ask": 31,
       "yes_bid": 24
@@ -402,17 +402,17 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-FREI26-RYBL": {
-      "last_price": 44,
+      "last_price": 43,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 60,
-      "no_bid": 57,
-      "open_interest": 138,
+      "no_bid": 56,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-RYBL",
-      "volume": 138,
+      "volume": 140,
       "volume_24h": 138,
-      "yes_ask": 43,
+      "yes_ask": 44,
       "yes_bid": 40
     },
     "KXNASCARTOP3-FREI26-RYPR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-13T23:39:01.854248+00:00",
+  "scraped_at": "2026-10-14T00:20:03.945384+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
