@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 92,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 1068,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AJAL",
       "volume": 1068,
       "volume_24h": 618,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 8
     },
     "KXNASCARTOP10-FREI26-ALBO": {
@@ -248,16 +248,16 @@
       "yes_bid": 12
     },
     "KXNASCARTOP10-FREI26-DEHA": {
-      "last_price": 68,
+      "last_price": 69,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 32,
       "no_bid": 31,
-      "open_interest": 18,
+      "open_interest": 32,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-DEHA",
-      "volume": 18,
-      "volume_24h": 12,
+      "volume": 32,
+      "volume_24h": 26,
       "yes_ask": 69,
       "yes_bid": 68
     },
@@ -279,15 +279,15 @@
       "last_price": 95,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 36,
-      "no_bid": 20,
+      "no_ask": 44,
+      "no_bid": 27,
       "open_interest": 3118,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
       "volume": 3119,
       "volume_24h": 3105,
-      "yes_ask": 80,
-      "yes_bid": 64
+      "yes_ask": 73,
+      "yes_bid": 56
     },
     "KXNASCARTOP10-FREI26-JOLO": {
       "last_price": 63,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T22:07:15.482685+00:00",
+  "scraped_at": "2026-10-14T22:13:11.611431+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
