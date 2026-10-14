@@ -322,13 +322,13 @@
       "liquidity": null,
       "name": "Josh Williams",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 1,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-JOWI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 99,
       "yes_bid": 0
     },
     "KXNASCARTOP10-TIMP26-JUAL": {
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Nick Sanchez",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 1,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-NISA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 99,
       "yes_bid": 0
     },
     "KXNASCARTOP10-TIMP26-PARE": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T19:02:25.428841+00:00",
+  "scraped_at": "2026-10-14T19:08:53.029535+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }

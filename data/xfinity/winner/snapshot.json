@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 94,
-      "no_bid": 93,
-      "open_interest": 674,
+      "no_bid": 91,
+      "open_interest": 724,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-CODA",
-      "volume": 674,
+      "volume": 724,
       "volume_24h": 362,
-      "yes_ask": 7,
+      "yes_ask": 9,
       "yes_bid": 6
     },
     "KXNASCARRACE-TIMP26-COMO": {
@@ -321,15 +321,15 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Josh Williams",
-      "no_ask": 100,
-      "no_bid": 100,
+      "no_ask": 99,
+      "no_bid": 65,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JOWI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
-      "yes_bid": 0
+      "yes_ask": 35,
+      "yes_bid": 1
     },
     "KXNASCARRACE-TIMP26-JUAL": {
       "last_price": 23,
@@ -391,15 +391,15 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Nick Sanchez",
-      "no_ask": 100,
-      "no_bid": 100,
+      "no_ask": 99,
+      "no_bid": 65,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-NISA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
-      "yes_bid": 0
+      "yes_ask": 35,
+      "yes_bid": 1
     },
     "KXNASCARRACE-TIMP26-PARE": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-14T19:01:52.302412+00:00",
+  "scraped_at": "2026-10-14T19:08:19.848652+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "winner"
 }

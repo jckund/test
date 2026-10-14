@@ -153,15 +153,15 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 78,
-      "no_bid": 71,
+      "no_ask": 77,
+      "no_bid": 70,
       "open_interest": 19,
       "status": "active",
       "ticker": "KXNASCARTOP3-TIMP26-CODA",
       "volume": 19,
       "volume_24h": 19,
-      "yes_ask": 29,
-      "yes_bid": 22
+      "yes_ask": 30,
+      "yes_bid": 23
     },
     "KXNASCARTOP3-TIMP26-COMO": {
       "last_price": 0,
@@ -322,13 +322,13 @@
       "liquidity": null,
       "name": "Josh Williams",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 1,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARTOP3-TIMP26-JOWI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 99,
       "yes_bid": 0
     },
     "KXNASCARTOP3-TIMP26-JUAL": {
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Nick Sanchez",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 8,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARTOP3-TIMP26-NISA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 92,
       "yes_bid": 0
     },
     "KXNASCARTOP3-TIMP26-PARE": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-14T19:01:52.787561+00:00",
+  "scraped_at": "2026-10-14T19:08:20.301491+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top3"
 }
