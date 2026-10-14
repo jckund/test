@@ -27,7 +27,7 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 83,
+      "no_ask": 84,
       "no_bid": 70,
       "open_interest": 6,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 6,
       "volume_24h": 6,
       "yes_ask": 30,
-      "yes_bid": 17
+      "yes_bid": 16
     },
     "KXNASCARTOP10-FREI26-AUCI": {
       "last_price": 45,
@@ -127,11 +127,11 @@
       "name": "Christopher Bell",
       "no_ask": 35,
       "no_bid": 31,
-      "open_interest": 150,
+      "open_interest": 157,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBE",
-      "volume": 150,
-      "volume_24h": 150,
+      "volume": 157,
+      "volume_24h": 157,
       "yes_ask": 69,
       "yes_bid": 65
     },
@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 49,
+      "no_ask": 50,
       "no_bid": 41,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 59,
-      "yes_bid": 51
+      "yes_bid": 50
     },
     "KXNASCARTOP10-FREI26-CHBU": {
       "last_price": 29,
@@ -223,7 +223,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 86,
       "open_interest": 0,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 14,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP10-FREI26-DASU": {
       "last_price": 17,
@@ -281,11 +281,11 @@
       "name": "Josh Berry",
       "no_ask": 55,
       "no_bid": 47,
-      "open_interest": 1259,
+      "open_interest": 1268,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
-      "volume": 1259,
-      "volume_24h": 1259,
+      "volume": 1268,
+      "volume_24h": 1268,
       "yes_ask": 53,
       "yes_bid": 45
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-KYLA",
       "volume": 7,
-      "volume_24h": 0,
+      "volume_24h": 7,
       "yes_ask": 67,
       "yes_bid": 62
     },
@@ -407,11 +407,11 @@
       "name": "Ryan Blaney",
       "no_ask": 31,
       "no_bid": 27,
-      "open_interest": 13,
+      "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-RYBL",
-      "volume": 13,
-      "volume_24h": 7,
+      "volume": 20,
+      "volume_24h": 20,
       "yes_ask": 73,
       "yes_bid": 69
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T02:26:35.214103+00:00",
+  "scraped_at": "2026-10-14T02:32:00.738240+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
