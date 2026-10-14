@@ -24,15 +24,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-ZERCB26-BEMA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Ben Maier",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 50,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-BEMA",
-      "volume": 0,
+      "volume": 50,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-CHEC",
       "volume": 2120,
-      "volume_24h": 1965,
+      "volume_24h": 2020,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -169,10 +169,10 @@
       "name": "Connor Mosack",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 1308,
+      "open_interest": 1341,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-COMO",
-      "volume": 1308,
+      "volume": 1341,
       "volume_24h": 1308,
       "yes_ask": 2,
       "yes_bid": 1
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-14T19:29:40.834112+00:00",
+  "scraped_at": "2026-10-14T19:35:57.951464+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "winner"
 }
