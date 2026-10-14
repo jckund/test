@@ -27,15 +27,15 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 100,
-      "no_bid": 90,
+      "no_ask": 99,
+      "no_bid": 94,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-ALBO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 10,
-      "yes_bid": 0
+      "yes_ask": 6,
+      "yes_bid": 1
     },
     "KXNASCARTOP3-FREI26-AUCI": {
       "last_price": 0,
@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 99,
-      "no_bid": 89,
+      "no_bid": 95,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-BRKE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 11,
+      "yes_ask": 5,
       "yes_bid": 1
     },
     "KXNASCARTOP3-FREI26-BUWA": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-14T16:42:05.387889+00:00",
+  "scraped_at": "2026-10-14T16:47:55.643331+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
