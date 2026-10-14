@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 92,
-      "no_bid": 88,
+      "no_bid": 87,
       "open_interest": 1068,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AJAL",
       "volume": 1068,
-      "volume_24h": 818,
-      "yes_ask": 12,
+      "volume_24h": 618,
+      "yes_ask": 13,
       "yes_bid": 8
     },
     "KXNASCARTOP10-FREI26-ALBO": {
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBE",
       "volume": 172,
-      "volume_24h": 163,
+      "volume_24h": 22,
       "yes_ask": 70,
       "yes_bid": 68
     },
@@ -279,7 +279,7 @@
       "last_price": 95,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 50,
+      "no_ask": 49,
       "no_bid": 5,
       "open_interest": 3118,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 3119,
       "volume_24h": 3105,
       "yes_ask": 95,
-      "yes_bid": 50
+      "yes_bid": 51
     },
     "KXNASCARTOP10-FREI26-JOLO": {
       "last_price": 63,
@@ -335,7 +335,7 @@
       "last_price": 16,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 88,
+      "no_ask": 87,
       "no_bid": 83,
       "open_interest": 1315,
       "status": "active",
@@ -343,13 +343,13 @@
       "volume": 1315,
       "volume_24h": 1051,
       "yes_ask": 17,
-      "yes_bid": 12
+      "yes_bid": 13
     },
     "KXNASCARTOP10-FREI26-NOGR": {
       "last_price": 18,
       "liquidity": null,
       "name": "Noah Gragson",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 83,
       "open_interest": 465,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 467,
       "volume_24h": 467,
       "yes_ask": 17,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP10-FREI26-RIHE": {
       "last_price": 0,
@@ -388,18 +388,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-FREI26-ROCH": {
-      "last_price": 49,
+      "last_price": 94,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 65,
-      "no_bid": 49,
-      "open_interest": 1638,
+      "no_ask": 63,
+      "no_bid": 5,
+      "open_interest": 2007,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-ROCH",
-      "volume": 1638,
-      "volume_24h": 1063,
-      "yes_ask": 51,
-      "yes_bid": 35
+      "volume": 2007,
+      "volume_24h": 2007,
+      "yes_ask": 95,
+      "yes_bid": 37
     },
     "KXNASCARTOP10-FREI26-RYBL": {
       "last_price": 75,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T21:37:01.327008+00:00",
+  "scraped_at": "2026-10-14T21:42:56.858163+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
