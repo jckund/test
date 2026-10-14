@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-CODA",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 61,
       "yes_bid": 55
     },
@@ -248,17 +248,17 @@
       "yes_bid": 20
     },
     "KXNASCARTOP10-TIMP26-JEBU": {
-      "last_price": 9,
+      "last_price": 20,
       "liquidity": null,
       "name": "Jeb Burton",
       "no_ask": 96,
-      "no_bid": 80,
-      "open_interest": 6,
+      "no_bid": 78,
+      "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-JEBU",
-      "volume": 11,
+      "volume": 35,
       "volume_24h": 0,
-      "yes_ask": 20,
+      "yes_ask": 22,
       "yes_bid": 4
     },
     "KXNASCARTOP10-TIMP26-JECL": {
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Jeremy Clements",
       "no_ask": 88,
-      "no_bid": 82,
+      "no_bid": 81,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-JECL",
       "volume": 10,
       "volume_24h": 0,
-      "yes_ask": 18,
+      "yes_ask": 19,
       "yes_bid": 12
     },
     "KXNASCARTOP10-TIMP26-JELO": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T03:40:12.958245+00:00",
+  "scraped_at": "2026-10-14T03:45:57.209215+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
