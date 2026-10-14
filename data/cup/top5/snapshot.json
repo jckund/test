@@ -139,15 +139,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 73,
+      "no_ask": 72,
       "no_bid": 61,
       "open_interest": 104,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-CHBR",
       "volume": 104,
-      "volume_24h": 104,
+      "volume_24h": 80,
       "yes_ask": 39,
-      "yes_bid": 27
+      "yes_bid": 28
     },
     "KXNASCARTOP5-FREI26-CHBU": {
       "last_price": 0,
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 83,
-      "no_bid": 68,
+      "no_bid": 70,
       "open_interest": 19,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-JOBE",
       "volume": 19,
       "volume_24h": 19,
-      "yes_ask": 32,
+      "yes_ask": 30,
       "yes_bid": 17
     },
     "KXNASCARTOP5-FREI26-JOLO": {
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-JOLO",
       "volume": 36,
-      "volume_24h": 36,
+      "volume_24h": 15,
       "yes_ask": 45,
       "yes_bid": 43
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-14T14:06:27.401471+00:00",
+  "scraped_at": "2026-10-14T14:23:36.282108+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top5"
 }
