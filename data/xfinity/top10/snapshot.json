@@ -405,15 +405,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 75,
+      "no_ask": 76,
       "no_bid": 63,
       "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-PARE",
       "volume": 15,
-      "volume_24h": 5,
+      "volume_24h": 0,
       "yes_ask": 37,
-      "yes_bid": 25
+      "yes_bid": 24
     },
     "KXNASCARTOP10-TIMP26-PAST": {
       "last_price": 6,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-RACA",
       "volume": 86,
-      "volume_24h": 16,
+      "volume_24h": 11,
       "yes_ask": 41,
       "yes_bid": 34
     },
@@ -545,19 +545,19 @@
       "last_price": 56,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 52,
-      "no_bid": 38,
+      "no_ask": 51,
+      "no_bid": 39,
       "open_interest": 705,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-WISA",
       "volume": 710,
       "volume_24h": 700,
-      "yes_ask": 62,
-      "yes_bid": 48
+      "yes_ask": 61,
+      "yes_bid": 49
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T23:34:29.537499+00:00",
+  "scraped_at": "2026-10-14T23:58:17.764919+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
