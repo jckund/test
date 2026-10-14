@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBR",
       "volume": 8,
-      "volume_24h": 0,
+      "volume_24h": 8,
       "yes_ask": 59,
       "yes_bid": 50
     },
@@ -335,15 +335,15 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 91,
-      "no_bid": 83,
+      "no_ask": 92,
+      "no_bid": 86,
       "open_interest": 264,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-MIMC",
       "volume": 264,
       "volume_24h": 264,
-      "yes_ask": 17,
-      "yes_bid": 9
+      "yes_ask": 14,
+      "yes_bid": 8
     },
     "KXNASCARTOP10-FREI26-NOGR": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-14T03:06:52.252346+00:00",
+  "scraped_at": "2026-10-14T03:12:52.516006+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }

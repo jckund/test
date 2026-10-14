@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-DETH",
       "volume": 58,
-      "volume_24h": 0,
+      "volume_24h": 58,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JAFI",
       "volume": 96,
-      "volume_24h": 0,
+      "volume_24h": 96,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -321,15 +321,15 @@
       "last_price": 23,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 86,
+      "no_ask": 81,
       "no_bid": 77,
       "open_interest": 892,
       "status": "active",
       "ticker": "KXNASCARRACE-TIMP26-JUAL",
       "volume": 897,
-      "volume_24h": 788,
+      "volume_24h": 872,
       "yes_ask": 23,
-      "yes_bid": 14
+      "yes_bid": 19
     },
     "KXNASCARRACE-TIMP26-KYSI": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-14T03:05:05.872793+00:00",
+  "scraped_at": "2026-10-14T03:16:48.487940+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "winner"
 }
