@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-ANPA",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 8,
       "yes_bid": 2
     },
@@ -433,7 +433,7 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 64,
+      "no_ask": 63,
       "no_bid": 53,
       "open_interest": 281,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 286,
       "volume_24h": 200,
       "yes_ask": 47,
-      "yes_bid": 36
+      "yes_bid": 37
     },
     "KXNASCARTOP10-TIMP26-RYEL": {
       "last_price": 1,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T18:40:52.552083+00:00",
+  "scraped_at": "2026-10-15T18:46:43.119519+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
