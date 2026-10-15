@@ -13,7 +13,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Andres Perez de Lara",
-      "no_ask": 90,
+      "no_ask": 91,
       "no_bid": 79,
       "open_interest": 0,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 21,
-      "yes_bid": 10
+      "yes_bid": 9
     },
     "KXNASCARTOP10-ZERCB26-BEMA": {
       "last_price": 1,
@@ -38,18 +38,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-ZERCB26-BERH": {
-      "last_price": 0,
+      "last_price": 35,
       "liquidity": null,
       "name": "Ben Rhodes",
-      "no_ask": 71,
-      "no_bid": 65,
-      "open_interest": 0,
+      "no_ask": 68,
+      "no_bid": 55,
+      "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-BERH",
-      "volume": 0,
+      "volume": 250,
       "volume_24h": 0,
-      "yes_ask": 35,
-      "yes_bid": 29
+      "yes_ask": 45,
+      "yes_bid": 32
     },
     "KXNASCARTOP10-ZERCB26-BRCR": {
       "last_price": 65,
@@ -125,15 +125,15 @@
       "last_price": 13,
       "liquidity": null,
       "name": "Cole Butcher",
-      "no_ask": 90,
-      "no_bid": 78,
+      "no_ask": 92,
+      "no_bid": 80,
       "open_interest": 450,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-COBU",
       "volume": 450,
       "volume_24h": 250,
-      "yes_ask": 22,
-      "yes_bid": 10
+      "yes_ask": 20,
+      "yes_bid": 8
     },
     "KXNASCARTOP10-ZERCB26-CODA": {
       "last_price": 6,
@@ -307,7 +307,7 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 30,
+      "no_ask": 32,
       "no_bid": 19,
       "open_interest": 791,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 791,
       "volume_24h": 259,
       "yes_ask": 81,
-      "yes_bid": 70
+      "yes_bid": 68
     },
     "KXNASCARTOP10-ZERCB26-KRWR": {
       "last_price": 0,
@@ -335,15 +335,15 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Landen Lewis",
-      "no_ask": 74,
-      "no_bid": 72,
+      "no_ask": 73,
+      "no_bid": 71,
       "open_interest": 151,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-LALE",
       "volume": 151,
       "volume_24h": 151,
-      "yes_ask": 28,
-      "yes_bid": 26
+      "yes_ask": 29,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-ZERCB26-LARI": {
       "last_price": 0,
@@ -503,7 +503,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 69,
+      "no_ask": 67,
       "no_bid": 53,
       "open_interest": 0,
       "status": "active",
@@ -511,11 +511,11 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 47,
-      "yes_bid": 31
+      "yes_bid": 33
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T17:23:12.677244+00:00",
+  "scraped_at": "2026-10-15T17:34:57.306133+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top10"
 }
