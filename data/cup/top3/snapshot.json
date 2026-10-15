@@ -131,23 +131,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBE",
       "volume": 593,
-      "volume_24h": 223,
+      "volume_24h": 3,
       "yes_ask": 41,
       "yes_bid": 40
     },
     "KXNASCARTOP3-FREI26-CHBR": {
-      "last_price": 0,
+      "last_price": 24,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 76,
+      "no_ask": 82,
       "no_bid": 75,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBR",
-      "volume": 0,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 25,
-      "yes_bid": 24
+      "yes_bid": 18
     },
     "KXNASCARTOP3-FREI26-CHBU": {
       "last_price": 0,
@@ -276,18 +276,18 @@
       "yes_bid": 2
     },
     "KXNASCARTOP3-FREI26-JOBE": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 0,
+      "no_ask": 92,
+      "no_bid": 81,
+      "open_interest": 1322,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-JOBE",
-      "volume": 0,
+      "volume": 1322,
       "volume_24h": 0,
-      "yes_ask": 8,
-      "yes_bid": 7
+      "yes_ask": 19,
+      "yes_bid": 8
     },
     "KXNASCARTOP3-FREI26-JOLO": {
       "last_price": 31,
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-JOLO",
       "volume": 3,
-      "volume_24h": 3,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 27
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-RYBL",
       "volume": 228,
-      "volume_24h": 199,
+      "volume_24h": 11,
       "yes_ask": 43,
       "yes_bid": 42
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-14T21:30:16.196335+00:00",
+  "scraped_at": "2026-10-15T02:47:36.709940+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
