@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Connor Zilisch",
       "no_ask": 63,
-      "no_bid": 46,
+      "no_bid": 47,
       "open_interest": 493,
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-COZI",
       "volume": 698,
-      "volume_24h": 339,
-      "yes_ask": 54,
+      "volume_24h": 119,
+      "yes_ask": 53,
       "yes_bid": 37
     },
     "KXNASCARTOP20-FREI26-DASU": {
@@ -335,15 +335,15 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 72,
-      "no_bid": 52,
+      "no_ask": 65,
+      "no_bid": 53,
       "open_interest": 543,
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-MIMC",
       "volume": 986,
-      "volume_24h": 592,
-      "yes_ask": 48,
-      "yes_bid": 28
+      "volume_24h": 349,
+      "yes_ask": 47,
+      "yes_bid": 35
     },
     "KXNASCARTOP20-FREI26-NOGR": {
       "last_price": 0,
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-RIHE",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 47,
       "yes_bid": 29
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-RIST",
       "volume": 500,
-      "volume_24h": 500,
+      "volume_24h": 0,
       "yes_ask": 32,
       "yes_bid": 14
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-15T14:57:35.631281+00:00",
+  "scraped_at": "2026-10-15T15:03:45.913774+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top20"
 }
