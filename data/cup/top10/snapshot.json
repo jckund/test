@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AUCI",
       "volume": 408,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 53,
       "yes_bid": 51
     },
@@ -153,15 +153,15 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Chris Buescher",
-      "no_ask": 74,
+      "no_ask": 75,
       "no_bid": 72,
       "open_interest": 533,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBU",
       "volume": 533,
-      "volume_24h": 419,
+      "volume_24h": 402,
       "yes_ask": 28,
-      "yes_bid": 26
+      "yes_bid": 25
     },
     "KXNASCARTOP10-FREI26-CHEL": {
       "last_price": 45,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-ERJO",
       "volume": 240,
-      "volume_24h": 240,
+      "volume_24h": 208,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -279,15 +279,15 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 56,
-      "no_bid": 27,
+      "no_ask": 57,
+      "no_bid": 31,
       "open_interest": 4140,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
       "volume": 4390,
       "volume_24h": 3030,
-      "yes_ask": 73,
-      "yes_bid": 44
+      "yes_ask": 69,
+      "yes_bid": 43
     },
     "KXNASCARTOP10-FREI26-JOLO": {
       "last_price": 63,
@@ -435,11 +435,11 @@
       "name": "Shane van Gisbergen",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 247,
+      "open_interest": 274,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-SHVA",
-      "volume": 247,
-      "volume_24h": 90,
+      "volume": 274,
+      "volume_24h": 116,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T03:49:01.950048+00:00",
+  "scraped_at": "2026-10-15T03:55:08.704643+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
