@@ -153,15 +153,15 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Chris Buescher",
-      "no_ask": 75,
-      "no_bid": 73,
+      "no_ask": 76,
+      "no_bid": 71,
       "open_interest": 501,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBU",
       "volume": 501,
-      "volume_24h": 501,
-      "yes_ask": 27,
-      "yes_bid": 25
+      "volume_24h": 386,
+      "yes_ask": 29,
+      "yes_bid": 24
     },
     "KXNASCARTOP10-FREI26-CHEL": {
       "last_price": 45,
@@ -293,7 +293,7 @@
       "last_price": 63,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 38,
+      "no_ask": 37,
       "no_bid": 33,
       "open_interest": 512,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 512,
       "volume_24h": 512,
       "yes_ask": 67,
-      "yes_bid": 62
+      "yes_bid": 63
     },
     "KXNASCARTOP10-FREI26-JONE": {
       "last_price": 8,
@@ -391,15 +391,15 @@
       "last_price": 94,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 61,
-      "no_bid": 53,
+      "no_ask": 60,
+      "no_bid": 54,
       "open_interest": 2007,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-ROCH",
       "volume": 2007,
       "volume_24h": 2007,
-      "yes_ask": 47,
-      "yes_bid": 39
+      "yes_ask": 46,
+      "yes_bid": 40
     },
     "KXNASCARTOP10-FREI26-RYBL": {
       "last_price": 75,
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-RYPR",
       "volume": 575,
-      "volume_24h": 376,
+      "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 24
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-SHVA",
       "volume": 245,
-      "volume_24h": 245,
+      "volume_24h": 87,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T00:59:30.379036+00:00",
+  "scraped_at": "2026-10-15T01:05:26.838428+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
