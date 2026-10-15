@@ -101,6 +101,7 @@ _ALIAS_KEY = {
     "andres perez de lara gonzalez": "andres perez de lara",  # Prime/BetOnline add the 2nd surname
     "lee puliam": "lee pulliam",          # Caesars drops an 'l'
     "andrew petterson": "andrew patterson",  # VIP365 swaps the vowel
+    "will rogers": "will rodgers",        # Caesars drops the d
 }
 
 
