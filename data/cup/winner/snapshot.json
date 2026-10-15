@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-BUWA",
       "volume": 1004,
-      "volume_24h": 438,
+      "volume_24h": 250,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -136,17 +136,17 @@
       "yes_bid": 18
     },
     "KXNASCARRACE-FREI26-CHBR": {
-      "last_price": 10,
+      "last_price": 9,
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 92,
-      "no_bid": 91,
-      "open_interest": 13522,
+      "no_bid": 90,
+      "open_interest": 23868,
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-CHBR",
-      "volume": 13522,
-      "volume_24h": 521,
-      "yes_ask": 9,
+      "volume": 23868,
+      "volume_24h": 10867,
+      "yes_ask": 10,
       "yes_bid": 8
     },
     "KXNASCARRACE-FREI26-CHBU": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-RYBL",
       "volume": 39154,
-      "volume_24h": 21677,
+      "volume_24h": 21764,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-TYGI",
       "volume": 3785,
-      "volume_24h": 672,
+      "volume_24h": 560,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-FREI26-TYRE",
       "volume": 2773,
-      "volume_24h": 1814,
+      "volume_24h": 1739,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-15T11:12:04.486294+00:00",
+  "scraped_at": "2026-10-15T11:43:32.460479+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "winner"
 }
