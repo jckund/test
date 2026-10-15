@@ -209,7 +209,7 @@
       "last_price": 3,
       "liquidity": null,
       "name": "Cody Ware",
-      "no_ask": 98,
+      "no_ask": 97,
       "no_bid": 96,
       "open_interest": 2277,
       "status": "active",
@@ -217,7 +217,7 @@
       "volume": 3735,
       "volume_24h": 9,
       "yes_ask": 4,
-      "yes_bid": 2
+      "yes_bid": 3
     },
     "KXNASCARTOP20-FREI26-COZI": {
       "last_price": 42,
@@ -335,15 +335,15 @@
       "last_price": 47,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 64,
-      "no_bid": 54,
+      "no_ask": 66,
+      "no_bid": 56,
       "open_interest": 458,
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-MIMC",
       "volume": 881,
-      "volume_24h": 477,
-      "yes_ask": 46,
-      "yes_bid": 36
+      "volume_24h": 488,
+      "yes_ask": 44,
+      "yes_bid": 34
     },
     "KXNASCARTOP20-FREI26-NOGR": {
       "last_price": 0,
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 79,
-      "no_bid": 70,
-      "open_interest": 150,
+      "no_bid": 68,
+      "open_interest": 175,
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-TOGI",
-      "volume": 150,
+      "volume": 175,
       "volume_24h": 150,
-      "yes_ask": 30,
+      "yes_ask": 32,
       "yes_bid": 21
     },
     "KXNASCARTOP20-FREI26-TYDI": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-15T01:30:08.118864+00:00",
+  "scraped_at": "2026-10-15T01:36:03.799969+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top20"
 }
