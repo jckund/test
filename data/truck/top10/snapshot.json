@@ -55,7 +55,7 @@
       "last_price": 48,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 47,
+      "no_ask": 48,
       "no_bid": 34,
       "open_interest": 200,
       "status": "active",
@@ -63,21 +63,21 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 66,
-      "yes_bid": 53
+      "yes_bid": 52
     },
     "KXNASCARTOP10-ZERCB26-BRQU": {
       "last_price": 10,
       "liquidity": null,
       "name": "Brenden Queen",
-      "no_ask": 95,
-      "no_bid": 91,
-      "open_interest": 1,
+      "no_ask": 94,
+      "no_bid": 90,
+      "open_interest": 96,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-BRQU",
-      "volume": 1,
-      "volume_24h": 1,
-      "yes_ask": 9,
-      "yes_bid": 5
+      "volume": 96,
+      "volume_24h": 96,
+      "yes_ask": 10,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-ZERCB26-CHEC": {
       "last_price": 0,
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-COLA",
       "volume": 84,
-      "volume_24h": 1,
+      "volume_24h": 84,
       "yes_ask": 17,
       "yes_bid": 11
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-DAHE",
       "volume": 61,
-      "volume_24h": 0,
+      "volume_24h": 61,
       "yes_ask": 40,
       "yes_bid": 32
     },
@@ -237,7 +237,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 61,
+      "no_ask": 59,
       "no_bid": 47,
       "open_interest": 0,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 53,
-      "yes_bid": 39
+      "yes_bid": 41
     },
     "KXNASCARTOP10-ZERCB26-GREN": {
       "last_price": 55,
@@ -307,7 +307,7 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 31,
+      "no_ask": 30,
       "no_bid": 20,
       "open_interest": 791,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 791,
       "volume_24h": 259,
       "yes_ask": 80,
-      "yes_bid": 69
+      "yes_bid": 70
     },
     "KXNASCARTOP10-ZERCB26-KRWR": {
       "last_price": 0,
@@ -332,18 +332,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-ZERCB26-LALE": {
-      "last_price": 33,
+      "last_price": 30,
       "liquidity": null,
       "name": "Landen Lewis",
-      "no_ask": 82,
-      "no_bid": 71,
-      "open_interest": 9,
+      "no_ask": 81,
+      "no_bid": 68,
+      "open_interest": 73,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-LALE",
-      "volume": 9,
+      "volume": 73,
       "volume_24h": 9,
-      "yes_ask": 29,
-      "yes_bid": 18
+      "yes_ask": 32,
+      "yes_bid": 19
     },
     "KXNASCARTOP10-ZERCB26-LARI": {
       "last_price": 0,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-TYRE",
       "volume": 236,
-      "volume_24h": 0,
+      "volume_24h": 40,
       "yes_ask": 24,
       "yes_bid": 7
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T02:09:17.021490+00:00",
+  "scraped_at": "2026-10-15T02:14:56.214616+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top10"
 }
