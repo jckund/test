@@ -111,15 +111,15 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 74,
-      "no_bid": 68,
+      "no_ask": 73,
+      "no_bid": 65,
       "open_interest": 16,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CAHO",
       "volume": 16,
       "volume_24h": 16,
-      "yes_ask": 32,
-      "yes_bid": 26
+      "yes_ask": 35,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-FREI26-CHBE": {
       "last_price": 72,
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-COZI",
       "volume": 21,
-      "volume_24h": 21,
+      "volume_24h": 0,
       "yes_ask": 9,
       "yes_bid": 6
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-NOGR",
       "volume": 468,
-      "volume_24h": 466,
+      "volume_24h": 423,
       "yes_ask": 6,
       "yes_bid": 2
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T19:46:28.051978+00:00",
+  "scraped_at": "2026-10-15T19:57:25.382461+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
