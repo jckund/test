@@ -56,13 +56,13 @@
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 51,
-      "no_bid": 33,
+      "no_bid": 35,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-BRCR",
       "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 67,
+      "yes_ask": 65,
       "yes_bid": 49
     },
     "KXNASCARTOP10-ZERCB26-BRQU": {
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-COBU",
       "volume": 450,
-      "volume_24h": 450,
+      "volume_24h": 250,
       "yes_ask": 23,
       "yes_bid": 3
     },
@@ -335,15 +335,15 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Landen Lewis",
-      "no_ask": 90,
+      "no_ask": 89,
       "no_bid": 71,
       "open_interest": 151,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-LALE",
       "volume": 151,
-      "volume_24h": 77,
+      "volume_24h": 151,
       "yes_ask": 29,
-      "yes_bid": 10
+      "yes_bid": 11
     },
     "KXNASCARTOP10-ZERCB26-LARI": {
       "last_price": 0,
@@ -475,21 +475,21 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 48,
-      "no_bid": 31,
+      "no_ask": 47,
+      "no_bid": 32,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-TYMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 69,
-      "yes_bid": 52
+      "yes_ask": 68,
+      "yes_bid": 53
     },
     "KXNASCARTOP10-ZERCB26-TYRE": {
       "last_price": 24,
       "liquidity": null,
       "name": "Tyler Reif",
-      "no_ask": 92,
+      "no_ask": 93,
       "no_bid": 76,
       "open_interest": 236,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 236,
       "volume_24h": 40,
       "yes_ask": 24,
-      "yes_bid": 8
+      "yes_bid": 7
     },
     "KXNASCARTOP10-ZERCB26-WISA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T13:51:08.127962+00:00",
+  "scraped_at": "2026-10-15T13:57:07.441721+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top10"
 }
