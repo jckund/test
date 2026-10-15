@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBE",
       "volume": 182,
-      "volume_24h": 0,
+      "volume_24h": 10,
       "yes_ask": 73,
       "yes_bid": 72
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBR",
       "volume": 491,
-      "volume_24h": 445,
+      "volume_24h": 403,
       "yes_ask": 59,
       "yes_bid": 58
     },
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 76,
-      "no_bid": 72,
+      "no_bid": 71,
       "open_interest": 533,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBU",
       "volume": 533,
       "volume_24h": 50,
-      "yes_ask": 28,
+      "yes_ask": 29,
       "yes_bid": 24
     },
     "KXNASCARTOP10-FREI26-CHEL": {
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
       "volume": 4406,
-      "volume_24h": 3011,
+      "volume_24h": 3021,
       "yes_ask": 41,
       "yes_bid": 40
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-ROCH",
       "volume": 2117,
-      "volume_24h": 1477,
+      "volume_24h": 1587,
       "yes_ask": 40,
       "yes_bid": 39
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-TYGI",
       "volume": 217,
-      "volume_24h": 17,
+      "volume_24h": 3,
       "yes_ask": 51,
       "yes_bid": 46
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T18:30:41.168536+00:00",
+  "scraped_at": "2026-10-15T18:36:36.326458+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }

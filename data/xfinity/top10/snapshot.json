@@ -24,18 +24,18 @@
       "yes_bid": 17
     },
     "KXNASCARTOP10-TIMP26-ANPA": {
-      "last_price": 0,
+      "last_price": 7,
       "liquidity": null,
       "name": "Andrew Patterson",
-      "no_ask": 99,
-      "no_bid": 93,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 92,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-ANPA",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 7,
-      "yes_bid": 1
+      "yes_ask": 8,
+      "yes_bid": 2
     },
     "KXNASCARTOP10-TIMP26-AUGR": {
       "last_price": 0,
@@ -126,13 +126,13 @@
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 99,
-      "no_bid": 91,
+      "no_bid": 90,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-BRPO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 1
     },
     "KXNASCARTOP10-TIMP26-CAKV": {
@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 93,
-      "no_bid": 86,
+      "no_bid": 85,
       "open_interest": 70,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-DETH",
       "volume": 70,
       "volume_24h": 70,
-      "yes_ask": 14,
+      "yes_ask": 15,
       "yes_bid": 7
     },
     "KXNASCARTOP10-TIMP26-GASM": {
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 34,
-      "no_bid": 23,
+      "no_bid": 22,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-JELO",
       "volume": 5,
       "volume_24h": 0,
-      "yes_ask": 77,
+      "yes_ask": 78,
       "yes_bid": 66
     },
     "KXNASCARTOP10-TIMP26-JOBI": {
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-LEHO",
       "volume": 460,
-      "volume_24h": 0,
+      "volume_24h": 250,
       "yes_ask": 13,
       "yes_bid": 0
     },
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Nick Sanchez",
       "no_ask": 99,
-      "no_bid": 86,
+      "no_bid": 81,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-NISA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 14,
+      "yes_ask": 19,
       "yes_bid": 1
     },
     "KXNASCARTOP10-TIMP26-PARE": {
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 40,
-      "no_bid": 27,
+      "no_bid": 26,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-SHCR",
       "volume": 5,
       "volume_24h": 0,
-      "yes_ask": 73,
+      "yes_ask": 74,
       "yes_bid": 60
     },
     "KXNASCARTOP10-TIMP26-TAGR": {
@@ -545,7 +545,7 @@
       "last_price": 48,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 53,
+      "no_ask": 54,
       "no_bid": 49,
       "open_interest": 712,
       "status": "active",
@@ -553,11 +553,11 @@
       "volume": 717,
       "volume_24h": 7,
       "yes_ask": 51,
-      "yes_bid": 47
+      "yes_bid": 46
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T18:28:55.687187+00:00",
+  "scraped_at": "2026-10-15T18:40:52.552083+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
