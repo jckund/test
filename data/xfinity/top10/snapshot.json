@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Carson Kvapil",
       "no_ask": 39,
-      "no_bid": 25,
+      "no_bid": 26,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-CAKV",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 75,
+      "yes_ask": 74,
       "yes_bid": 61
     },
     "KXNASCARTOP10-TIMP26-CODA": {
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-HABU",
       "volume": 250,
-      "volume_24h": 0,
+      "volume_24h": 250,
       "yes_ask": 31,
       "yes_bid": 18
     },
@@ -265,7 +265,7 @@
       "last_price": 14,
       "liquidity": null,
       "name": "Jeremy Clements",
-      "no_ask": 81,
+      "no_ask": 85,
       "no_bid": 74,
       "open_interest": 1226,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 1241,
       "volume_24h": 470,
       "yes_ask": 26,
-      "yes_bid": 19
+      "yes_bid": 15
     },
     "KXNASCARTOP10-TIMP26-JELO": {
       "last_price": 99,
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 40,
-      "no_bid": 36,
+      "no_bid": 37,
       "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-SAMA",
       "volume": 5,
       "volume_24h": 0,
-      "yes_ask": 64,
+      "yes_ask": 63,
       "yes_bid": 60
     },
     "KXNASCARTOP10-TIMP26-SASM": {
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 49,
-      "no_bid": 41,
+      "no_bid": 33,
       "open_interest": 528,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-SASM",
       "volume": 533,
       "volume_24h": 523,
-      "yes_ask": 59,
+      "yes_ask": 67,
       "yes_bid": 51
     },
     "KXNASCARTOP10-TIMP26-SHCR": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T23:27:07.897786+00:00",
+  "scraped_at": "2026-10-15T23:32:54.820101+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
