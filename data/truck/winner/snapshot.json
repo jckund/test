@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-ANPE",
       "volume": 1600,
-      "volume_24h": 852,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-CHSM",
       "volume": 6702,
-      "volume_24h": 2738,
+      "volume_24h": 2733,
       "yes_ask": 15,
       "yes_bid": 12
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-COLA",
       "volume": 1529,
-      "volume_24h": 1000,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-KAHO",
       "volume": 1494,
-      "volume_24h": 542,
+      "volume_24h": 516,
       "yes_ask": 14,
       "yes_bid": 12
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-LARI",
       "volume": 4954,
-      "volume_24h": 1615,
+      "volume_24h": 1584,
       "yes_ask": 26,
       "yes_bid": 24
     },
@@ -444,17 +444,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-ZERCB26-TRMC": {
-      "last_price": 2,
+      "last_price": 3,
       "liquidity": null,
       "name": "Tristan McKee",
       "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 2992,
+      "no_bid": 97,
+      "open_interest": 3449,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-TRMC",
-      "volume": 2992,
-      "volume_24h": 498,
-      "yes_ask": 2,
+      "volume": 3456,
+      "volume_24h": 1430,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARRACE-ZERCB26-TYAN": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-15T21:39:45.044199+00:00",
+  "scraped_at": "2026-10-15T22:15:33.020768+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "winner"
 }
