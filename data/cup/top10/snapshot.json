@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 97,
-      "no_bid": 91,
+      "no_bid": 90,
       "open_interest": 1068,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AJAL",
       "volume": 1068,
-      "volume_24h": 413,
-      "yes_ask": 9,
+      "volume_24h": 0,
+      "yes_ask": 10,
       "yes_bid": 3
     },
     "KXNASCARTOP10-FREI26-ALBO": {
@@ -43,11 +43,11 @@
       "name": "Austin Cindric",
       "no_ask": 49,
       "no_bid": 48,
-      "open_interest": 408,
+      "open_interest": 423,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AUCI",
-      "volume": 408,
-      "volume_24h": 2,
+      "volume": 423,
+      "volume_24h": 17,
       "yes_ask": 52,
       "yes_bid": 51
     },
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 76,
-      "no_bid": 71,
+      "no_bid": 72,
       "open_interest": 533,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CHBU",
       "volume": 533,
       "volume_24h": 33,
-      "yes_ask": 29,
+      "yes_ask": 28,
       "yes_bid": 24
     },
     "KXNASCARTOP10-FREI26-CHEL": {
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Michael McDowell",
       "no_ask": 91,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 1366,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-MIMC",
       "volume": 1366,
       "volume_24h": 1016,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 9
     },
     "KXNASCARTOP10-FREI26-NOGR": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T19:05:07.624920+00:00",
+  "scraped_at": "2026-10-15T19:11:03.839226+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }

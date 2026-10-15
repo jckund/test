@@ -41,7 +41,7 @@
       "last_price": 35,
       "liquidity": null,
       "name": "Ben Rhodes",
-      "no_ask": 71,
+      "no_ask": 70,
       "no_bid": 53,
       "open_interest": 250,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 250,
       "volume_24h": 250,
       "yes_ask": 47,
-      "yes_bid": 29
+      "yes_bid": 30
     },
     "KXNASCARTOP10-ZERCB26-BRCR": {
       "last_price": 65,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-COBU",
       "volume": 450,
-      "volume_24h": 250,
+      "volume_24h": 0,
       "yes_ask": 21,
       "yes_bid": 9
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-CODA",
       "volume": 250,
-      "volume_24h": 250,
+      "volume_24h": 0,
       "yes_ask": 13,
       "yes_bid": 0
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-15T19:08:28.320882+00:00",
+  "scraped_at": "2026-10-15T19:14:07.040138+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top10"
 }
