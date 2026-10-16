@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-BERH",
       "volume": 930,
-      "volume_24h": 837,
+      "volume_24h": 930,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-CHSM",
       "volume": 10978,
-      "volume_24h": 5651,
+      "volume_24h": 5588,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-COLA",
       "volume": 1720,
-      "volume_24h": 97,
+      "volume_24h": 191,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -169,10 +169,10 @@
       "name": "Connor Mosack",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 2319,
+      "open_interest": 2918,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-COMO",
-      "volume": 2319,
+      "volume": 2918,
       "volume_24h": 767,
       "yes_ask": 3,
       "yes_bid": 2
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-GREN",
       "volume": 955,
-      "volume_24h": 720,
+      "volume_24h": 814,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-JUHA",
       "volume": 429,
-      "volume_24h": 174,
+      "volume_24h": 268,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-KAHO",
       "volume": 6862,
-      "volume_24h": 5411,
+      "volume_24h": 5404,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -346,17 +346,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-ZERCB26-LARI": {
-      "last_price": 30,
+      "last_price": 28,
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 73,
-      "no_bid": 72,
-      "open_interest": 9912,
+      "no_bid": 71,
+      "open_interest": 9929,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-LARI",
-      "volume": 10670,
+      "volume": 10687,
       "volume_24h": 6090,
-      "yes_ask": 28,
+      "yes_ask": 29,
       "yes_bid": 27
     },
     "KXNASCARRACE-ZERCB26-LEHO": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-STFR",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -449,10 +449,10 @@
       "name": "Tristan McKee",
       "no_ask": 98,
       "no_bid": 96,
-      "open_interest": 6611,
+      "open_interest": 7080,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-TRMC",
-      "volume": 7031,
+      "volume": 7500,
       "volume_24h": 4940,
       "yes_ask": 4,
       "yes_bid": 2
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-TYAN",
       "volume": 125,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-16T18:59:30.042698+00:00",
+  "scraped_at": "2026-10-16T19:05:53.637047+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "winner"
 }
