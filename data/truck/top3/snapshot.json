@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-BERH",
       "volume": 32,
-      "volume_24h": 2,
+      "volume_24h": 32,
       "yes_ask": 24,
       "yes_bid": 5
     },
@@ -89,21 +89,21 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-CHEC",
       "volume": 448,
-      "volume_24h": 154,
+      "volume_24h": 354,
       "yes_ask": 49,
       "yes_bid": 23
     },
     "KXNASCARTOP3-ZERCB26-CHSM": {
-      "last_price": 44,
+      "last_price": 49,
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 63,
       "no_bid": 51,
-      "open_interest": 574,
+      "open_interest": 580,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-CHSM",
-      "volume": 574,
-      "volume_24h": 573,
+      "volume": 580,
+      "volume_24h": 579,
       "yes_ask": 49,
       "yes_bid": 37
     },
@@ -307,15 +307,15 @@
       "last_price": 58,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 54,
-      "no_bid": 41,
+      "no_ask": 55,
+      "no_bid": 40,
       "open_interest": 1851,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-KAHO",
       "volume": 1851,
       "volume_24h": 1098,
-      "yes_ask": 59,
-      "yes_bid": 46
+      "yes_ask": 60,
+      "yes_bid": 45
     },
     "KXNASCARTOP3-ZERCB26-KRWR": {
       "last_price": 0,
@@ -349,7 +349,7 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 47,
+      "no_ask": 52,
       "no_bid": 45,
       "open_interest": 694,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 694,
       "volume_24h": 21,
       "yes_ask": 55,
-      "yes_bid": 53
+      "yes_bid": 48
     },
     "KXNASCARTOP3-ZERCB26-LEHO": {
       "last_price": 0,
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-TRMC",
       "volume": 40,
-      "volume_24h": 26,
+      "volume_24h": 40,
       "yes_ask": 24,
       "yes_bid": 5
     },
@@ -472,15 +472,15 @@
       "yes_bid": 4
     },
     "KXNASCARTOP3-ZERCB26-TYMA": {
-      "last_price": 27,
+      "last_price": 26,
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 78,
       "no_bid": 67,
-      "open_interest": 239,
+      "open_interest": 439,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-TYMA",
-      "volume": 239,
+      "volume": 439,
       "volume_24h": 169,
       "yes_ask": 33,
       "yes_bid": 22
@@ -500,22 +500,22 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ZERCB26-WISA": {
-      "last_price": 14,
+      "last_price": 39,
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 89,
-      "no_bid": 76,
-      "open_interest": 1,
+      "no_bid": 61,
+      "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-WISA",
-      "volume": 1,
-      "volume_24h": 1,
-      "yes_ask": 24,
+      "volume": 7,
+      "volume_24h": 7,
+      "yes_ask": 39,
       "yes_bid": 11
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-16T19:52:31.187697+00:00",
+  "scraped_at": "2026-10-16T20:05:56.751099+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top3"
 }
