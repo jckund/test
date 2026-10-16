@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-HABU",
       "volume": 250,
-      "volume_24h": 250,
+      "volume_24h": 0,
       "yes_ask": 30,
       "yes_bid": 21
     },
@@ -405,15 +405,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 72,
-      "no_bid": 63,
+      "no_ask": 69,
+      "no_bid": 61,
       "open_interest": 751,
       "status": "active",
       "ticker": "KXNASCARTOP10-TIMP26-PARE",
       "volume": 766,
       "volume_24h": 746,
-      "yes_ask": 37,
-      "yes_bid": 28
+      "yes_ask": 39,
+      "yes_bid": 31
     },
     "KXNASCARTOP10-TIMP26-PAST": {
       "last_price": 6,
@@ -461,7 +461,7 @@
       "last_price": 27,
       "liquidity": null,
       "name": "Ryan Sieg",
-      "no_ask": 70,
+      "no_ask": 72,
       "no_bid": 62,
       "open_interest": 5,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 15,
       "volume_24h": 0,
       "yes_ask": 38,
-      "yes_bid": 30
+      "yes_bid": 28
     },
     "KXNASCARTOP10-TIMP26-SAMA": {
       "last_price": 63,
@@ -545,7 +545,7 @@
       "last_price": 54,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 49,
+      "no_ask": 54,
       "no_bid": 45,
       "open_interest": 748,
       "status": "active",
@@ -553,11 +553,11 @@
       "volume": 760,
       "volume_24h": 36,
       "yes_ask": 55,
-      "yes_bid": 51
+      "yes_bid": 46
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-16T23:26:52.147444+00:00",
+  "scraped_at": "2026-10-16T23:32:27.898542+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-timp26",
   "tier": "top10"
 }
