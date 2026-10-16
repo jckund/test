@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 79,
-      "no_bid": 72,
+      "no_bid": 74,
       "open_interest": 238,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-BRKE",
       "volume": 238,
       "volume_24h": 36,
-      "yes_ask": 28,
+      "yes_ask": 26,
       "yes_bid": 21
     },
     "KXNASCARTOP10-FREI26-BUWA": {
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-COHE",
       "volume": 19,
-      "volume_24h": 18,
+      "volume_24h": 1,
       "yes_ask": 30,
       "yes_bid": 22
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-MIMC",
       "volume": 1606,
-      "volume_24h": 240,
+      "volume_24h": 167,
       "yes_ask": 12,
       "yes_bid": 10
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-SHVA",
       "volume": 428,
-      "volume_24h": 149,
+      "volume_24h": 100,
       "yes_ask": 18,
       "yes_bid": 11
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-16T21:48:20.278169+00:00",
+  "scraped_at": "2026-10-16T21:53:51.271192+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
