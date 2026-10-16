@@ -42,20 +42,20 @@
       "liquidity": null,
       "name": "Ben Rhodes",
       "no_ask": 65,
-      "no_bid": 55,
+      "no_bid": 54,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-BERH",
       "volume": 250,
       "volume_24h": 250,
-      "yes_ask": 45,
+      "yes_ask": 46,
       "yes_bid": 35
     },
     "KXNASCARTOP10-ZERCB26-BRCR": {
       "last_price": 65,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 48,
+      "no_ask": 49,
       "no_bid": 37,
       "open_interest": 203,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 203,
       "volume_24h": 3,
       "yes_ask": 63,
-      "yes_bid": 52
+      "yes_bid": 51
     },
     "KXNASCARTOP10-ZERCB26-BRQU": {
       "last_price": 10,
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-LEHO",
       "volume": 325,
-      "volume_24h": 0,
+      "volume_24h": 125,
       "yes_ask": 20,
       "yes_bid": 16
     },
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Tyler Ankrum",
       "no_ask": 74,
-      "no_bid": 63,
+      "no_bid": 62,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-TYAN",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 37,
+      "yes_ask": 38,
       "yes_bid": 26
     },
     "KXNASCARTOP10-ZERCB26-TYMA": {
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 43,
-      "no_bid": 32,
+      "no_bid": 31,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-TYMA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 68,
+      "yes_ask": 69,
       "yes_bid": 57
     },
     "KXNASCARTOP10-ZERCB26-TYRE": {
@@ -503,19 +503,19 @@
       "last_price": 45,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 66,
-      "no_bid": 55,
+      "no_ask": 68,
+      "no_bid": 54,
       "open_interest": 21,
       "status": "active",
       "ticker": "KXNASCARTOP10-ZERCB26-WISA",
       "volume": 21,
       "volume_24h": 21,
-      "yes_ask": 45,
-      "yes_bid": 34
+      "yes_ask": 46,
+      "yes_bid": 32
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-16T13:50:50.060439+00:00",
+  "scraped_at": "2026-10-16T13:56:32.127469+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top10"
 }
