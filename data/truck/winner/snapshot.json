@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-BERH",
       "volume": 468,
-      "volume_24h": 0,
+      "volume_24h": 468,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -94,16 +94,16 @@
       "yes_bid": 6
     },
     "KXNASCARRACE-ZERCB26-CHSM": {
-      "last_price": 18,
+      "last_price": 16,
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 86,
       "no_bid": 84,
-      "open_interest": 7299,
+      "open_interest": 7314,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-CHSM",
-      "volume": 7567,
-      "volume_24h": 3265,
+      "volume": 7582,
+      "volume_24h": 3280,
       "yes_ask": 16,
       "yes_bid": 14
     },
@@ -309,11 +309,11 @@
       "name": "Kaden Honeycutt",
       "no_ask": 88,
       "no_bid": 85,
-      "open_interest": 3085,
+      "open_interest": 3100,
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-KAHO",
-      "volume": 3118,
-      "volume_24h": 1909,
+      "volume": 3133,
+      "volume_24h": 1924,
       "yes_ask": 15,
       "yes_bid": 12
     },
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-ZERCB26-LARI",
       "volume": 7206,
-      "volume_24h": 3224,
+      "volume_24h": 3238,
       "yes_ask": 27,
       "yes_bid": 25
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-16T12:50:10.440890+00:00",
+  "scraped_at": "2026-10-16T12:56:13.588750+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "winner"
 }
