@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 98,
-      "no_bid": 95,
+      "no_bid": 94,
       "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-ALBO",
       "volume": 2,
       "volume_24h": 0,
-      "yes_ask": 5,
+      "yes_ask": 6,
       "yes_bid": 2
     },
     "KXNASCARTOP3-FREI26-AUCI": {
@@ -127,26 +127,26 @@
       "name": "Christopher Bell",
       "no_ask": 60,
       "no_bid": 59,
-      "open_interest": 712,
+      "open_interest": 728,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBE",
-      "volume": 712,
-      "volume_24h": 119,
+      "volume": 728,
+      "volume_24h": 136,
       "yes_ask": 41,
       "yes_bid": 40
     },
     "KXNASCARTOP3-FREI26-CHBR": {
-      "last_price": 24,
+      "last_price": 23,
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 84,
-      "no_bid": 78,
-      "open_interest": 2,
+      "no_bid": 76,
+      "open_interest": 30,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBR",
-      "volume": 2,
-      "volume_24h": 0,
-      "yes_ask": 22,
+      "volume": 30,
+      "volume_24h": 28,
+      "yes_ask": 24,
       "yes_bid": 16
     },
     "KXNASCARTOP3-FREI26-CHBU": {
@@ -248,16 +248,16 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-FREI26-DEHA": {
-      "last_price": 31,
+      "last_price": 37,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 69,
       "no_bid": 65,
-      "open_interest": 1239,
+      "open_interest": 1257,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-DEHA",
-      "volume": 1239,
-      "volume_24h": 0,
+      "volume": 1257,
+      "volume_24h": 1218,
       "yes_ask": 35,
       "yes_bid": 31
     },
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 92,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 1551,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-JOBE",
       "volume": 1551,
       "volume_24h": 229,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 8
     },
     "KXNASCARTOP3-FREI26-JOLO": {
@@ -321,7 +321,7 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 76,
+      "no_ask": 77,
       "no_bid": 73,
       "open_interest": 24,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 24,
       "volume_24h": 0,
       "yes_ask": 27,
-      "yes_bid": 24
+      "yes_bid": 23
     },
     "KXNASCARTOP3-FREI26-MIMC": {
       "last_price": 0,
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 59,
-      "no_bid": 55,
+      "no_bid": 54,
       "open_interest": 2015,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-RYBL",
       "volume": 2015,
       "volume_24h": 1787,
-      "yes_ask": 45,
+      "yes_ask": 46,
       "yes_bid": 41
     },
     "KXNASCARTOP3-FREI26-RYPR": {
@@ -472,16 +472,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-FREI26-TYGI": {
-      "last_price": 0,
+      "last_price": 16,
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 91,
       "no_bid": 84,
-      "open_interest": 0,
+      "open_interest": 39,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-TYGI",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 39,
+      "volume_24h": 39,
       "yes_ask": 16,
       "yes_bid": 9
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-16T03:36:30.930059+00:00",
+  "scraped_at": "2026-10-16T03:42:36.794463+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
