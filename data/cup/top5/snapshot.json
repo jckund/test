@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 97,
-      "no_bid": 87,
+      "no_bid": 86,
       "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-ALBO",
       "volume": 2,
       "volume_24h": 0,
-      "yes_ask": 13,
+      "yes_ask": 14,
       "yes_bid": 3
     },
     "KXNASCARTOP5-FREI26-AUCI": {
@@ -97,15 +97,15 @@
       "last_price": 21,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 79,
+      "no_ask": 87,
       "no_bid": 74,
-      "open_interest": 4,
+      "open_interest": 12,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-BUWA",
-      "volume": 4,
+      "volume": 12,
       "volume_24h": 2,
       "yes_ask": 26,
-      "yes_bid": 21
+      "yes_bid": 13
     },
     "KXNASCARTOP5-FREI26-CAHO": {
       "last_price": 18,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-CHBR",
       "volume": 727,
-      "volume_24h": 391,
+      "volume_24h": 133,
       "yes_ask": 35,
       "yes_bid": 29
     },
@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Corey Heim",
       "no_ask": 98,
-      "no_bid": 88,
+      "no_bid": 86,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-COHE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 12,
+      "yes_ask": 14,
       "yes_bid": 2
     },
     "KXNASCARTOP5-FREI26-COWA": {
@@ -321,7 +321,7 @@
       "last_price": 49,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 53,
+      "no_ask": 59,
       "no_bid": 52,
       "open_interest": 477,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 477,
       "volume_24h": 17,
       "yes_ask": 48,
-      "yes_bid": 47
+      "yes_bid": 41
     },
     "KXNASCARTOP5-FREI26-MIMC": {
       "last_price": 11,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-16T14:48:22.659550+00:00",
+  "scraped_at": "2026-10-16T15:58:48.456971+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top5"
 }
