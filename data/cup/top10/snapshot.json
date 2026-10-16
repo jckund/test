@@ -10,17 +10,17 @@
   "market_count": 37,
   "markets": {
     "KXNASCARTOP10-FREI26-AJAL": {
-      "last_price": 9,
+      "last_price": 10,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 95,
-      "no_bid": 90,
-      "open_interest": 1068,
+      "no_bid": 88,
+      "open_interest": 1491,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AJAL",
-      "volume": 1068,
+      "volume": 1491,
       "volume_24h": 0,
-      "yes_ask": 10,
+      "yes_ask": 12,
       "yes_bid": 5
     },
     "KXNASCARTOP10-FREI26-ALBO": {
@@ -56,13 +56,13 @@
       "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 95,
-      "no_bid": 91,
-      "open_interest": 73,
+      "no_bid": 89,
+      "open_interest": 387,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AUDI",
-      "volume": 73,
+      "volume": 387,
       "volume_24h": 60,
-      "yes_ask": 9,
+      "yes_ask": 11,
       "yes_bid": 5
     },
     "KXNASCARTOP10-FREI26-AUHI": {
@@ -125,7 +125,7 @@
       "last_price": 72,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 28,
+      "no_ask": 29,
       "no_bid": 27,
       "open_interest": 272,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 272,
       "volume_24h": 90,
       "yes_ask": 73,
-      "yes_bid": 72
+      "yes_bid": 71
     },
     "KXNASCARTOP10-FREI26-CHBR": {
       "last_price": 58,
@@ -449,10 +449,10 @@
       "name": "Todd Gilliland",
       "no_ask": 97,
       "no_bid": 93,
-      "open_interest": 232,
+      "open_interest": 501,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-TOGI",
-      "volume": 232,
+      "volume": 501,
       "volume_24h": 67,
       "yes_ask": 7,
       "yes_bid": 3
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 59,
-      "no_bid": 46,
+      "no_bid": 48,
       "open_interest": 9,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-TYRE",
       "volume": 9,
       "volume_24h": 9,
-      "yes_ask": 54,
+      "yes_ask": 52,
       "yes_bid": 41
     },
     "KXNASCARTOP10-FREI26-WIBY": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-16T18:34:04.400474+00:00",
+  "scraped_at": "2026-10-16T18:39:57.192736+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
