@@ -56,13 +56,13 @@
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 74,
-      "no_bid": 72,
+      "no_bid": 73,
       "open_interest": 611,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-BRCR",
       "volume": 611,
       "volume_24h": 205,
-      "yes_ask": 28,
+      "yes_ask": 27,
       "yes_bid": 26
     },
     "KXNASCARTOP3-ZERCB26-BRQU": {
@@ -80,17 +80,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ZERCB26-CHEC": {
-      "last_price": 27,
+      "last_price": 28,
       "liquidity": null,
       "name": "Christian Eckes",
       "no_ask": 74,
-      "no_bid": 73,
-      "open_interest": 140,
+      "no_bid": 71,
+      "open_interest": 157,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-CHEC",
-      "volume": 140,
+      "volume": 157,
       "volume_24h": 46,
-      "yes_ask": 27,
+      "yes_ask": 29,
       "yes_bid": 26
     },
     "KXNASCARTOP3-ZERCB26-CHSM": {
@@ -251,7 +251,7 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Grant Enfinger",
-      "no_ask": 92,
+      "no_ask": 93,
       "no_bid": 89,
       "open_interest": 10,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 10,
       "volume_24h": 10,
       "yes_ask": 11,
-      "yes_bid": 8
+      "yes_bid": 7
     },
     "KXNASCARTOP3-ZERCB26-JAGA": {
       "last_price": 8,
@@ -309,10 +309,10 @@
       "name": "Kaden Honeycutt",
       "no_ask": 62,
       "no_bid": 61,
-      "open_interest": 1203,
+      "open_interest": 1412,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-KAHO",
-      "volume": 1203,
+      "volume": 1412,
       "volume_24h": 414,
       "yes_ask": 39,
       "yes_bid": 38
@@ -402,15 +402,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-ZERCB26-STFR": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": null,
       "name": "Stewart Friesen",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 38,
       "status": "active",
       "ticker": "KXNASCARTOP3-ZERCB26-STFR",
-      "volume": 0,
+      "volume": 38,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 4
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-16T17:42:49.410794+00:00",
+  "scraped_at": "2026-10-16T17:48:30.604090+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-zercb26",
   "tier": "top3"
 }
