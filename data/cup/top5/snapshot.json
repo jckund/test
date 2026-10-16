@@ -210,13 +210,13 @@
       "liquidity": null,
       "name": "Cody Ware",
       "no_ask": 100,
-      "no_bid": 99,
+      "no_bid": 96,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-COWA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 4,
       "yes_bid": 0
     },
     "KXNASCARTOP5-FREI26-COZI": {
@@ -279,15 +279,15 @@
       "last_price": 18,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 81,
+      "no_ask": 82,
       "no_bid": 72,
       "open_interest": 26,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-JOBE",
       "volume": 26,
-      "volume_24h": 5,
+      "volume_24h": 0,
       "yes_ask": 28,
-      "yes_bid": 19
+      "yes_bid": 18
     },
     "KXNASCARTOP5-FREI26-JOLO": {
       "last_price": 48,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-16T02:37:14.407690+00:00",
+  "scraped_at": "2026-10-16T02:54:29.108750+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top5"
 }
