@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-AUCI",
       "volume": 34,
-      "volume_24h": 0,
+      "volume_24h": 34,
       "yes_ask": 14,
       "yes_bid": 4
     },
@@ -125,15 +125,15 @@
       "last_price": 71,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 65,
+      "no_ask": 63,
       "no_bid": 26,
       "open_interest": 9862,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHBE",
       "volume": 9862,
-      "volume_24h": 8918,
+      "volume_24h": 8925,
       "yes_ask": 74,
-      "yes_bid": 35
+      "yes_bid": 37
     },
     "KXNASCARTOP3-FREI26-CHBR": {
       "last_price": 36,
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CHEL",
       "volume": 215,
-      "volume_24h": 120,
+      "volume_24h": 135,
       "yes_ask": 12,
       "yes_bid": 4
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-KYLA",
       "volume": 1325,
-      "volume_24h": 1175,
+      "volume_24h": 1193,
       "yes_ask": 48,
       "yes_bid": 16
     },
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Michael McDowell",
       "no_ask": 100,
-      "no_bid": 81,
+      "no_bid": 99,
       "open_interest": 240,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-MIMC",
       "volume": 240,
       "volume_24h": 100,
-      "yes_ask": 19,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARTOP3-FREI26-NOGR": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-RYBL",
       "volume": 12911,
-      "volume_24h": 8007,
+      "volume_24h": 8009,
       "yes_ask": 60,
       "yes_bid": 36
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-18T19:30:21.222119+00:00",
+  "scraped_at": "2026-10-18T19:35:19.443971+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
