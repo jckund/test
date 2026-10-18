@@ -108,24 +108,24 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-FREI26-CAHO": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 91,
-      "open_interest": 714,
+      "open_interest": 705,
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-CAHO",
-      "volume": 718,
+      "volume": 740,
       "volume_24h": 658,
       "yes_ask": 9,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-FREI26-CHBE": {
       "last_price": 74,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 76,
+      "no_ask": 74,
       "no_bid": 25,
       "open_interest": 9876,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 9876,
       "volume_24h": 8938,
       "yes_ask": 75,
-      "yes_bid": 24
+      "yes_bid": 26
     },
     "KXNASCARTOP3-FREI26-CHBR": {
       "last_price": 36,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-COHE",
       "volume": 165,
-      "volume_24h": 152,
+      "volume_24h": 165,
       "yes_ask": 19,
       "yes_bid": 1
     },
@@ -293,7 +293,7 @@
       "last_price": 66,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 33,
+      "no_ask": 73,
       "no_bid": 31,
       "open_interest": 1191,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 1191,
       "volume_24h": 1152,
       "yes_ask": 69,
-      "yes_bid": 67
+      "yes_bid": 27
     },
     "KXNASCARTOP3-FREI26-JONE": {
       "last_price": 0,
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-KYLA",
       "volume": 1487,
-      "volume_24h": 1238,
+      "volume_24h": 1355,
       "yes_ask": 46,
       "yes_bid": 0
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-FREI26-TYRE",
       "volume": 224,
-      "volume_24h": 214,
+      "volume_24h": 222,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-18T20:35:18.877436+00:00",
+  "scraped_at": "2026-10-18T20:40:18.876582+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top3"
 }
