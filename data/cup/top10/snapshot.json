@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-AUDI",
       "volume": 414,
-      "volume_24h": 9,
+      "volume_24h": 28,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -80,18 +80,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-FREI26-BRKE": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 98,
+      "no_ask": 100,
       "no_bid": 38,
-      "open_interest": 1486,
+      "open_interest": 1485,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-BRKE",
-      "volume": 1579,
+      "volume": 1586,
       "volume_24h": 1338,
       "yes_ask": 62,
-      "yes_bid": 2
+      "yes_bid": 0
     },
     "KXNASCARTOP10-FREI26-BUWA": {
       "last_price": 75,
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-CAHO",
       "volume": 2244,
-      "volume_24h": 1523,
+      "volume_24h": 1522,
       "yes_ask": 48,
       "yes_bid": 17
     },
@@ -225,10 +225,10 @@
       "name": "Connor Zilisch",
       "no_ask": 82,
       "no_bid": 42,
-      "open_interest": 2075,
+      "open_interest": 2072,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-COZI",
-      "volume": 2093,
+      "volume": 2097,
       "volume_24h": 1257,
       "yes_ask": 58,
       "yes_bid": 18
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-DEHA",
       "volume": 473,
-      "volume_24h": 411,
+      "volume_24h": 410,
       "yes_ask": 88,
       "yes_bid": 38
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOBE",
       "volume": 6743,
-      "volume_24h": 1132,
+      "volume_24h": 902,
       "yes_ask": 98,
       "yes_bid": 43
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-JOLO",
       "volume": 864,
-      "volume_24h": 334,
+      "volume_24h": 336,
       "yes_ask": 95,
       "yes_bid": 53
     },
@@ -318,18 +318,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-FREI26-KYLA": {
-      "last_price": 3,
+      "last_price": 65,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 97,
+      "no_ask": 94,
       "no_bid": 35,
       "open_interest": 2610,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-KYLA",
-      "volume": 2959,
-      "volume_24h": 2887,
+      "volume": 2961,
+      "volume_24h": 2889,
       "yes_ask": 65,
-      "yes_bid": 3
+      "yes_bid": 6
     },
     "KXNASCARTOP10-FREI26-MIMC": {
       "last_price": 1,
@@ -447,15 +447,15 @@
       "last_price": 64,
       "liquidity": null,
       "name": "Todd Gilliland",
-      "no_ask": 84,
+      "no_ask": 59,
       "no_bid": 36,
       "open_interest": 2433,
       "status": "active",
       "ticker": "KXNASCARTOP10-FREI26-TOGI",
       "volume": 2433,
-      "volume_24h": 1146,
+      "volume_24h": 1154,
       "yes_ask": 64,
-      "yes_bid": 16
+      "yes_bid": 41
     },
     "KXNASCARTOP10-FREI26-TYDI": {
       "last_price": 3,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-18T20:40:19.825550+00:00",
+  "scraped_at": "2026-10-18T20:45:17.857007+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top10"
 }
