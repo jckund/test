@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-BUWA",
       "volume": 15,
-      "volume_24h": 1,
+      "volume_24h": 14,
       "yes_ask": 77,
       "yes_bid": 61
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-COCU",
       "volume": 200,
-      "volume_24h": 194,
+      "volume_24h": 200,
       "yes_ask": 16,
       "yes_bid": 5
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-COWA",
       "volume": 4211,
-      "volume_24h": 86,
+      "volume_24h": 104,
       "yes_ask": 5,
       "yes_bid": 2
     },
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-RIHE",
       "volume": 420,
-      "volume_24h": 208,
+      "volume_24h": 213,
       "yes_ask": 54,
       "yes_bid": 38
     },
@@ -504,20 +504,20 @@
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 31,
-      "no_bid": 16,
+      "no_bid": 18,
       "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP20-FREI26-WIBY",
       "volume": 10,
       "volume_24h": 10,
-      "yes_ask": 84,
+      "yes_ask": 82,
       "yes_bid": 69
     },
     "KXNASCARTOP20-FREI26-ZASM": {
       "last_price": 39,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 64,
       "open_interest": 283,
       "status": "active",
@@ -525,11 +525,11 @@
       "volume": 283,
       "volume_24h": 50,
       "yes_ask": 36,
-      "yes_bid": 21
+      "yes_bid": 22
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-18T18:10:18.637815+00:00",
+  "scraped_at": "2026-10-18T18:15:20.824474+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top20"
 }
