@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-BUWA",
       "volume": 1353,
-      "volume_24h": 1089,
+      "volume_24h": 1341,
       "yes_ask": 19,
       "yes_bid": 17
     },
@@ -127,11 +127,11 @@
       "name": "Christopher Bell",
       "no_ask": 53,
       "no_bid": 45,
-      "open_interest": 1195,
+      "open_interest": 1197,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-CHBE",
-      "volume": 1241,
-      "volume_24h": 655,
+      "volume": 1243,
+      "volume_24h": 678,
       "yes_ask": 55,
       "yes_bid": 47
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-CHBR",
       "volume": 1800,
-      "volume_24h": 936,
+      "volume_24h": 1022,
       "yes_ask": 40,
       "yes_bid": 36
     },
@@ -248,24 +248,24 @@
       "yes_bid": 1
     },
     "KXNASCARTOP5-FREI26-DEHA": {
-      "last_price": 50,
+      "last_price": 49,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 57,
+      "no_ask": 55,
       "no_bid": 51,
-      "open_interest": 2931,
+      "open_interest": 2932,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-DEHA",
-      "volume": 2940,
-      "volume_24h": 2136,
+      "volume": 2941,
+      "volume_24h": 2188,
       "yes_ask": 49,
-      "yes_bid": 43
+      "yes_bid": 45
     },
     "KXNASCARTOP5-FREI26-ERJO": {
       "last_price": 0,
       "liquidity": null,
       "name": "Erik Jones",
-      "no_ask": 100,
+      "no_ask": 99,
       "no_bid": 97,
       "open_interest": 0,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 3,
-      "yes_bid": 0
+      "yes_bid": 1
     },
     "KXNASCARTOP5-FREI26-JOBE": {
       "last_price": 33,
@@ -295,11 +295,11 @@
       "name": "Joey Logano",
       "no_ask": 54,
       "no_bid": 50,
-      "open_interest": 1892,
+      "open_interest": 1941,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-JOLO",
-      "volume": 1900,
-      "volume_24h": 1692,
+      "volume": 1949,
+      "volume_24h": 1740,
       "yes_ask": 50,
       "yes_bid": 46
     },
@@ -323,10 +323,10 @@
       "name": "Kyle Larson",
       "no_ask": 75,
       "no_bid": 71,
-      "open_interest": 1604,
+      "open_interest": 1654,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-KYLA",
-      "volume": 1907,
+      "volume": 1957,
       "volume_24h": 1149,
       "yes_ask": 29,
       "yes_bid": 25
@@ -402,15 +402,15 @@
       "yes_bid": 4
     },
     "KXNASCARTOP5-FREI26-RYBL": {
-      "last_price": 63,
+      "last_price": 65,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 37,
       "no_bid": 35,
-      "open_interest": 3331,
+      "open_interest": 3333,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-RYBL",
-      "volume": 3399,
+      "volume": 3401,
       "volume_24h": 907,
       "yes_ask": 65,
       "yes_bid": 63
@@ -475,21 +475,21 @@
       "last_price": 26,
       "liquidity": null,
       "name": "Ty Gibbs",
-      "no_ask": 83,
-      "no_bid": 74,
+      "no_ask": 90,
+      "no_bid": 77,
       "open_interest": 634,
       "status": "active",
       "ticker": "KXNASCARTOP5-FREI26-TYGI",
       "volume": 634,
       "volume_24h": 613,
-      "yes_ask": 26,
-      "yes_bid": 17
+      "yes_ask": 23,
+      "yes_bid": 10
     },
     "KXNASCARTOP5-FREI26-TYRE": {
       "last_price": 29,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 76,
+      "no_ask": 75,
       "no_bid": 72,
       "open_interest": 493,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 493,
       "volume_24h": 476,
       "yes_ask": 28,
-      "yes_bid": 24
+      "yes_bid": 25
     },
     "KXNASCARTOP5-FREI26-WIBY": {
       "last_price": 27,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-18T18:00:25.629330+00:00",
+  "scraped_at": "2026-10-18T18:05:15.791825+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
   "tier": "top5"
 }
