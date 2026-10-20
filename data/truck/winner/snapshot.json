@@ -80,17 +80,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-CHEC": {
-      "last_price": 3,
+      "last_price": 4,
       "liquidity": null,
       "name": "Christian Eckes",
       "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 2,
+      "no_bid": 95,
+      "open_interest": 48,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHEC",
-      "volume": 2,
+      "volume": 48,
       "volume_24h": 2,
-      "yes_ask": 4,
+      "yes_ask": 5,
       "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-CHSM": {
@@ -253,10 +253,10 @@
       "name": "Giovanni Ruggiero",
       "no_ask": 97,
       "no_bid": 93,
-      "open_interest": 186,
+      "open_interest": 222,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-GIRU",
-      "volume": 186,
+      "volume": 222,
       "volume_24h": 186,
       "yes_ask": 7,
       "yes_bid": 3
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Stewart Friesen",
       "no_ask": 98,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 267,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-STFR",
       "volume": 297,
       "volume_24h": 296,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 2
     },
     "KXNASCARRACE-LOVRS26-TAGR": {
@@ -528,22 +528,22 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-LOVRS26-TYMA": {
-      "last_price": 6,
+      "last_price": 5,
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 97,
-      "no_bid": 95,
-      "open_interest": 188,
+      "no_bid": 94,
+      "open_interest": 220,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TYMA",
-      "volume": 188,
+      "volume": 220,
       "volume_24h": 188,
-      "yes_ask": 5,
+      "yes_ask": 6,
       "yes_bid": 3
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T23:33:42.574534+00:00",
+  "scraped_at": "2026-10-20T23:39:44.836174+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
