@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHSM",
       "volume": 113,
-      "volume_24h": 106,
+      "volume_24h": 113,
       "yes_ask": 15,
       "yes_bid": 7
     },
@@ -150,18 +150,18 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-COHE": {
-      "last_price": 15,
+      "last_price": 16,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 94,
+      "no_ask": 91,
       "no_bid": 84,
-      "open_interest": 80,
+      "open_interest": 86,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COHE",
-      "volume": 80,
-      "volume_24h": 80,
+      "volume": 86,
+      "volume_24h": 86,
       "yes_ask": 16,
-      "yes_bid": 6
+      "yes_bid": 9
     },
     "KXNASCARRACE-LOVRS26-COJO": {
       "last_price": 0,
@@ -192,17 +192,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-CORO": {
-      "last_price": 1,
+      "last_price": 11,
       "liquidity": null,
       "name": "Cory Roper",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 100,
+      "no_bid": 88,
+      "open_interest": 1050,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CORO",
-      "volume": 100,
-      "volume_24h": 100,
-      "yes_ask": 1,
+      "volume": 1050,
+      "volume_24h": 1012,
+      "yes_ask": 12,
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-DAHE": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T17:39:38.915572+00:00",
+  "scraped_at": "2026-10-20T17:45:21.482758+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
