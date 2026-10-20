@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-CABA",
       "volume": 1147,
-      "volume_24h": 1147,
+      "volume_24h": 1146,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -458,18 +458,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-THEPG26-RACA": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-RACA",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-THEPG26-RYEL": {
       "last_price": 0,
@@ -500,32 +500,32 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-THEPG26-SAMA": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-SAMA",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-THEPG26-SASM": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 0,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-SASM",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-THEPG26-SHCR": {
       "last_price": 10,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T21:10:08.891224+00:00",
+  "scraped_at": "2026-10-20T21:23:34.979077+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "winner"
 }
