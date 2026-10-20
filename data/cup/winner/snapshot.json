@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 98,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 2316,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-BRKE",
       "volume": 2316,
       "volume_24h": 2316,
-      "yes_ask": 5,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARRACE-YEL26-BUWA": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-CHBE",
       "volume": 2699,
-      "volume_24h": 2699,
+      "volume_24h": 2386,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -434,13 +434,13 @@
       "liquidity": null,
       "name": "Ross Chastain",
       "no_ask": 98,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 9604,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-ROCH",
       "volume": 9604,
-      "volume_24h": 9604,
-      "yes_ask": 4,
+      "volume_24h": 9292,
+      "yes_ask": 3,
       "yes_bid": 2
     },
     "KXNASCARRACE-YEL26-RYBL": {
@@ -547,11 +547,11 @@
       "name": "William Byron",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 1496,
+      "open_interest": 2199,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-WIBY",
-      "volume": 1496,
-      "volume_24h": 1496,
+      "volume": 2199,
+      "volume_24h": 1886,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T21:25:18.173488+00:00",
+  "scraped_at": "2026-10-20T21:44:23.064104+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "winner"
 }
