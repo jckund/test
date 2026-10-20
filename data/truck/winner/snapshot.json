@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-BERH",
       "volume": 213,
-      "volume_24h": 0,
+      "volume_24h": 213,
       "yes_ask": 6,
       "yes_bid": 1
     },
@@ -472,15 +472,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-THAN": {
-      "last_price": 11,
+      "last_price": 2,
       "liquidity": null,
       "name": "Thomas Annunziata",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 1,
+      "open_interest": 235,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-THAN",
-      "volume": 1,
+      "volume": 235,
       "volume_24h": 1,
       "yes_ask": 2,
       "yes_bid": 1
@@ -531,19 +531,19 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 99,
+      "no_ask": 97,
       "no_bid": 93,
       "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TYMA",
       "volume": 188,
-      "volume_24h": 0,
+      "volume_24h": 188,
       "yes_ask": 7,
-      "yes_bid": 1
+      "yes_bid": 3
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T22:36:53.291727+00:00",
+  "scraped_at": "2026-10-20T22:43:10.390808+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
