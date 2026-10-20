@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-BRQU",
       "volume": 310,
-      "volume_24h": 40,
+      "volume_24h": 310,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHEC",
       "volume": 2,
-      "volume_24h": 1,
+      "volume_24h": 2,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COLA",
       "volume": 2,
-      "volume_24h": 1,
+      "volume_24h": 2,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Frankie Muniz",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 1100,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-FRMU",
       "volume": 1100,
       "volume_24h": 1100,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-GIRU": {
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-GIRU",
       "volume": 113,
-      "volume_24h": 2,
+      "volume_24h": 113,
       "yes_ask": 7,
       "yes_bid": 3
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-GREN",
       "volume": 2,
-      "volume_24h": 1,
+      "volume_24h": 2,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Josh Reaume",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 1121,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-JORE",
       "volume": 1121,
       "volume_24h": 1121,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-JUHA": {
@@ -341,23 +341,23 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-KAHO",
       "volume": 37,
-      "volume_24h": 19,
+      "volume_24h": 37,
       "yes_ask": 9,
       "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-KRWR": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Kris Wright",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 1100,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-KRWR",
-      "volume": 0,
+      "volume": 1100,
       "volume_24h": 0,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-LALE": {
       "last_price": 11,
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-LARI",
       "volume": 66,
-      "volume_24h": 48,
+      "volume_24h": 66,
       "yes_ask": 9,
       "yes_bid": 3
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-SPBO",
       "volume": 1101,
-      "volume_24h": 1,
+      "volume_24h": 1101,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Timmy Hill",
       "no_ask": 100,
-      "no_bid": 98,
+      "no_bid": 99,
       "open_interest": 1121,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TIHI",
       "volume": 1121,
       "volume_24h": 1121,
-      "yes_ask": 2,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-TOST": {
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TOST",
       "volume": 1519,
-      "volume_24h": 1022,
+      "volume_24h": 1519,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T21:22:17.261457+00:00",
+  "scraped_at": "2026-10-20T21:28:14.700090+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
