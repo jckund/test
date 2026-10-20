@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHSM",
       "volume": 280,
-      "volume_24h": 172,
+      "volume_24h": 280,
       "yes_ask": 12,
       "yes_bid": 7
     },
@@ -164,16 +164,16 @@
       "yes_bid": 7
     },
     "KXNASCARRACE-LOVRS26-COJO": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Conner Jones",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COJO",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 114,
+      "volume_24h": 114,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -220,16 +220,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-DASU": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Dawson Sutton",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 505,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-DASU",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 505,
+      "volume_24h": 505,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -388,16 +388,16 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-MITY": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Mini Tyrrell",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 632,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-MITY",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 632,
+      "volume_24h": 632,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -472,16 +472,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-THAN": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": null,
       "name": "Thomas Annunziata",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 235,
+      "open_interest": 295,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-THAN",
-      "volume": 235,
-      "volume_24h": 1,
+      "volume": 295,
+      "volume_24h": 295,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T22:49:33.093710+00:00",
+  "scraped_at": "2026-10-20T23:02:15.810611+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
