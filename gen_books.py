@@ -157,6 +157,8 @@ TEAM_CANON = [
     "Legacy Motor Club", "Front Row Motorsports", "Kaulig Racing",
     "Richard Childress Racing", "Hyak Motorsports", "Haas Factory Team",
     "Garage 66", "Rick Ware Racing",
+    # Superspeedway part-timers (Talladega 2026-10).
+    "NY Racing Team", "Live Fast Motorsports", "Beard Motorsports",
 ]
 
 # Variant spellings seen on real boards. Keyed through _key(), so case, periods and
