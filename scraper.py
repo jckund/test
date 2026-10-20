@@ -71,22 +71,23 @@ WINNER_SERIES = "KXNASCARRACE"
 # repointed each kickoff like the others; when it isn't running a race, drop
 # or comment out the entry so a stale matcher can't grab the wrong event.
 SERIES = [
-    # Freeway Insurance 500 weekend (kickoff 2026-10-13).
+    # Talladega weekend (kickoff 2026-10-20).
     #
-    # Cup: Freeway Insurance 500. Match "freeway" only — not the track name,
-    # which the weekend's races share, and not "500", which is generic.
-    {"key": "cup", "label": "NASCAR", "matchers": ["freeway"],
+    # Cup: YellaWood 500. Match "yellawood" only — not the track name, which
+    # the weekend's races share, and not "500", which is generic.
+    {"key": "cup", "label": "NASCAR", "matchers": ["yellawood"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: Zero Carbon Bioethanol 150. Match "bioethanol". Comment out again
-    # once the Truck race has run so a stale matcher can't grab the wrong event.
-    {"key": "truck", "label": "Truck", "matchers": ["bioethanol"],
+    # Truck: Love's RV Stop 225. Match "rv stop" (Kalshi may drop the
+    # apostrophe in "Love's"). Comment out again once the Truck race has run so
+    # a stale matcher can't grab the wrong event.
+    {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity: Timberland Pro 200. Match "timberland". This entry is also the
-    # catch-all (`default`), so any unmatched open race falls here. When
-    # clearing the support race mid-weekend, comment this entry out again (and
-    # RESTORE it at the next kickoff) — see CLAUDE.md "Clearing a support race
-    # mid-weekend".
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["timberland"], "default": True,
+    # Xfinity (O'Reilly): Progress Group 250. Match "progress group". This entry
+    # is also the catch-all (`default`), so any unmatched open race falls here.
+    # When clearing the support race mid-weekend, comment this entry out again
+    # (and RESTORE it at the next kickoff) — see CLAUDE.md "Clearing a support
+    # race mid-weekend".
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["progress group"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
