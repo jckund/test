@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-18T20:47:48.197095+00:00",
+  "updated_at": "2026-10-20T14:59:55.806064+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "Freeway Insurance 500 ('26)",
+      "race_title": "YellaWood 500 ('26)",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-frei26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
       "tiers": [
         "winner",
         "top3",
@@ -14,7 +14,33 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-10-18T20:47:48.196799+00:00"
+      "scraped_at": "2026-10-20T14:57:17.290558+00:00"
+    },
+    {
+      "key": "truck",
+      "label": "Truck",
+      "race_title": "Love's RV Stop 225 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-20T14:58:34.618459+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "The Progress Group 250 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-20T14:59:55.806018+00:00"
     }
   ]
 }
