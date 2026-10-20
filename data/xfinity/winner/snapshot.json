@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-AUHI",
       "volume": 142,
-      "volume_24h": 119,
+      "volume_24h": 142,
       "yes_ask": 22,
       "yes_bid": 13
     },
@@ -80,17 +80,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-THEPG26-BRPO": {
-      "last_price": 0,
+      "last_price": 8,
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 99,
-      "no_bid": 93,
-      "open_interest": 0,
+      "no_bid": 92,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARRACE-THEPG26-BRPO",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 7,
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 8,
       "yes_bid": 1
     },
     "KXNASCARRACE-THEPG26-CABA": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T15:17:18.437923+00:00",
+  "scraped_at": "2026-10-20T15:35:26.081266+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "winner"
 }
