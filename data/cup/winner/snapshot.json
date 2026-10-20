@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 98,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 2949,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-BRKE",
       "volume": 2949,
-      "volume_24h": 2440,
-      "yes_ask": 5,
+      "volume_24h": 2949,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARRACE-YEL26-BUWA": {
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-CAHO",
       "volume": 4322,
-      "volume_24h": 4090,
+      "volume_24h": 4244,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-JOBE",
       "volume": 1008,
-      "volume_24h": 774,
+      "volume_24h": 1008,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-JOLO",
       "volume": 7809,
-      "volume_24h": 7599,
+      "volume_24h": 7808,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -364,13 +364,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 97,
-      "no_bid": 95,
+      "no_bid": 96,
       "open_interest": 5506,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-KYLA",
       "volume": 5506,
-      "volume_24h": 5305,
-      "yes_ask": 5,
+      "volume_24h": 5490,
+      "yes_ask": 4,
       "yes_bid": 3
     },
     "KXNASCARRACE-YEL26-MIMC": {
@@ -416,17 +416,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-YEL26-RIST": {
-      "last_price": 2,
+      "last_price": 3,
       "liquidity": null,
       "name": "Ricky Stenhouse Jr.",
       "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 4909,
+      "no_bid": 97,
+      "open_interest": 5125,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-RIST",
-      "volume": 4909,
-      "volume_24h": 4909,
-      "yes_ask": 2,
+      "volume": 5125,
+      "volume_24h": 5125,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARRACE-YEL26-ROCH": {
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-RYBL",
       "volume": 7899,
-      "volume_24h": 7679,
+      "volume_24h": 7771,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -463,11 +463,11 @@
       "name": "Ryan Preece",
       "no_ask": 99,
       "no_bid": 97,
-      "open_interest": 4338,
+      "open_interest": 5118,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-RYPR",
-      "volume": 4338,
-      "volume_24h": 3994,
+      "volume": 5118,
+      "volume_24h": 4978,
       "yes_ask": 3,
       "yes_bid": 1
     },
@@ -491,11 +491,11 @@
       "name": "Todd Gilliland",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 2801,
+      "open_interest": 3970,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-TOGI",
-      "volume": 2801,
-      "volume_24h": 2801,
+      "volume": 3970,
+      "volume_24h": 3970,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-TYGI",
       "volume": 1030,
-      "volume_24h": 881,
+      "volume_24h": 1029,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -532,13 +532,13 @@
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 96,
-      "no_bid": 94,
+      "no_bid": 95,
       "open_interest": 5001,
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-TYRE",
       "volume": 5001,
       "volume_24h": 5000,
-      "yes_ask": 6,
+      "yes_ask": 5,
       "yes_bid": 4
     },
     "KXNASCARRACE-YEL26-WIBY": {
@@ -551,7 +551,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-YEL26-WIBY",
       "volume": 2785,
-      "volume_24h": 1886,
+      "volume_24h": 2472,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T22:40:03.983100+00:00",
+  "scraped_at": "2026-10-20T22:46:25.846703+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "winner"
 }
