@@ -125,15 +125,15 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Casey Mears",
-      "no_ask": 89,
-      "no_bid": 75,
+      "no_ask": 88,
+      "no_bid": 74,
       "open_interest": 648,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-CAME",
       "volume": 848,
-      "volume_24h": 848,
-      "yes_ask": 25,
-      "yes_bid": 11
+      "volume_24h": 448,
+      "yes_ask": 26,
+      "yes_bid": 12
     },
     "KXNASCARTOP20-YEL26-CHBE": {
       "last_price": 0,
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-GRGA",
       "volume": 1250,
-      "volume_24h": 1250,
+      "volume_24h": 1050,
       "yes_ask": 24,
       "yes_bid": 11
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-JOGA",
       "volume": 600,
-      "volume_24h": 600,
+      "volume_24h": 400,
       "yes_ask": 26,
       "yes_bid": 13
     },
@@ -405,15 +405,15 @@
       "last_price": 57,
       "liquidity": null,
       "name": "Riley Herbst",
-      "no_ask": 60,
-      "no_bid": 41,
+      "no_ask": 58,
+      "no_bid": 43,
       "open_interest": 141,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-RIHE",
       "volume": 141,
       "volume_24h": 141,
-      "yes_ask": 59,
-      "yes_bid": 40
+      "yes_ask": 57,
+      "yes_bid": 42
     },
     "KXNASCARTOP20-YEL26-RIST": {
       "last_price": 0,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-20T23:30:41.992927+00:00",
+  "scraped_at": "2026-10-20T23:42:56.781662+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top20"
 }
