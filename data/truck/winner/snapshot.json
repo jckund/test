@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CLMC",
       "volume": 249,
-      "volume_24h": 185,
+      "volume_24h": 249,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COLA",
       "volume": 59,
-      "volume_24h": 2,
+      "volume_24h": 59,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-DAHE",
       "volume": 47,
-      "volume_24h": 0,
+      "volume_24h": 46,
       "yes_ask": 3,
       "yes_bid": 1
     },
@@ -318,18 +318,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-JUHA": {
-      "last_price": 5,
+      "last_price": 4,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 96,
-      "no_bid": 95,
-      "open_interest": 50,
+      "no_ask": 97,
+      "no_bid": 96,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-JUHA",
-      "volume": 50,
-      "volume_24h": 17,
-      "yes_ask": 5,
-      "yes_bid": 4
+      "volume": 400,
+      "volume_24h": 49,
+      "yes_ask": 4,
+      "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-KAHO": {
       "last_price": 9,
@@ -444,15 +444,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-STFR": {
-      "last_price": 12,
+      "last_price": 3,
       "liquidity": null,
       "name": "Stewart Friesen",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 60,
+      "open_interest": 267,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-STFR",
-      "volume": 90,
+      "volume": 297,
       "volume_24h": 89,
       "yes_ask": 4,
       "yes_bid": 3
@@ -495,37 +495,37 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TIHI",
       "volume": 1169,
-      "volume_24h": 1120,
+      "volume_24h": 1168,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-TOST": {
-      "last_price": 4,
+      "last_price": 3,
       "liquidity": null,
       "name": "Tony Stewart",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 1576,
+      "no_ask": 99,
+      "no_bid": 98,
+      "open_interest": 1596,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TOST",
-      "volume": 1576,
-      "volume_24h": 1518,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "volume": 1596,
+      "volume_24h": 1575,
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-TYAN": {
-      "last_price": 11,
+      "last_price": 3,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 22,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 292,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TYAN",
-      "volume": 22,
+      "volume": 292,
       "volume_24h": 21,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-LOVRS26-TYMA": {
       "last_price": 6,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-20T23:21:21.704022+00:00",
+  "scraped_at": "2026-10-20T23:27:28.320111+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
