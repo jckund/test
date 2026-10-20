@@ -131,23 +131,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-CAWA",
       "volume": 1210,
-      "volume_24h": 1210,
+      "volume_24h": 200,
       "yes_ask": 10,
       "yes_bid": 0
     },
     "KXNASCARTOP10-THEPG26-CODA": {
-      "last_price": 0,
+      "last_price": 49,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 71,
-      "no_bid": 51,
-      "open_interest": 0,
+      "no_ask": 67,
+      "no_bid": 47,
+      "open_interest": 49,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-CODA",
-      "volume": 0,
+      "volume": 49,
       "volume_24h": 0,
-      "yes_ask": 49,
-      "yes_bid": 29
+      "yes_ask": 53,
+      "yes_bid": 33
     },
     "KXNASCARTOP10-THEPG26-COMO": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-20T14:59:07.838831+00:00",
+  "scraped_at": "2026-10-20T23:17:12.871706+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
