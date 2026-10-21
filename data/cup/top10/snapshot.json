@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-AUCI",
       "volume": 20,
-      "volume_24h": 20,
+      "volume_24h": 0,
       "yes_ask": 46,
       "yes_bid": 36
     },
@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 66,
+      "no_ask": 67,
       "no_bid": 57,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 43,
-      "yes_bid": 34
+      "yes_bid": 33
     },
     "KXNASCARTOP10-YEL26-CHBR": {
       "last_price": 45,
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 58,
-      "no_bid": 50,
+      "no_bid": 51,
       "open_interest": 19,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-JOLO",
       "volume": 19,
-      "volume_24h": 19,
-      "yes_ask": 50,
+      "volume_24h": 0,
+      "yes_ask": 49,
       "yes_bid": 42
     },
     "KXNASCARTOP10-YEL26-JONE": {
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 58,
-      "no_bid": 50,
+      "no_bid": 51,
       "open_interest": 108,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-RYBL",
       "volume": 108,
-      "volume_24h": 89,
-      "yes_ask": 50,
+      "volume_24h": 69,
+      "yes_ask": 49,
       "yes_bid": 42
     },
     "KXNASCARTOP10-YEL26-RYPR": {
@@ -560,18 +560,18 @@
       "liquidity": null,
       "name": "Zane Smith",
       "no_ask": 76,
-      "no_bid": 70,
+      "no_bid": 69,
       "open_interest": 111,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-ZASM",
       "volume": 111,
       "volume_24h": 31,
-      "yes_ask": 30,
+      "yes_ask": 31,
       "yes_bid": 24
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-21T16:29:32.534056+00:00",
+  "scraped_at": "2026-10-21T16:35:36.873512+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
