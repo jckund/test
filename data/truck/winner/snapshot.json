@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COHE",
       "volume": 312,
-      "volume_24h": 280,
+      "volume_24h": 312,
       "yes_ask": 14,
       "yes_bid": 10
     },
@@ -262,15 +262,15 @@
       "yes_bid": 5
     },
     "KXNASCARRACE-LOVRS26-GREN": {
-      "last_price": 4,
+      "last_price": 5,
       "liquidity": null,
       "name": "Grant Enfinger",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 48,
+      "open_interest": 113,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-GREN",
-      "volume": 48,
+      "volume": 159,
       "volume_24h": 48,
       "yes_ask": 5,
       "yes_bid": 4
@@ -374,18 +374,18 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-LARI": {
-      "last_price": 6,
+      "last_price": 11,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 92,
+      "no_ask": 91,
       "no_bid": 89,
-      "open_interest": 709,
+      "open_interest": 780,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-LARI",
-      "volume": 713,
-      "volume_24h": 713,
+      "volume": 784,
+      "volume_24h": 784,
       "yes_ask": 11,
-      "yes_bid": 8
+      "yes_bid": 9
     },
     "KXNASCARRACE-LOVRS26-MITY": {
       "last_price": 1,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-21T00:28:44.624228+00:00",
+  "scraped_at": "2026-10-21T00:46:21.693172+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
