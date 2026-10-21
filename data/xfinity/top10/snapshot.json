@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 75,
-      "no_bid": 58,
+      "no_bid": 57,
       "open_interest": 32,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-AUHI",
       "volume": 32,
       "volume_24h": 23,
-      "yes_ask": 42,
+      "yes_ask": 43,
       "yes_bid": 25
     },
     "KXNASCARTOP10-THEPG26-BLPE": {
@@ -80,18 +80,18 @@
       "yes_bid": 24
     },
     "KXNASCARTOP10-THEPG26-BRPO": {
-      "last_price": 0,
+      "last_price": 25,
       "liquidity": null,
       "name": "Brennan Poole",
-      "no_ask": 95,
-      "no_bid": 75,
-      "open_interest": 0,
+      "no_ask": 94,
+      "no_bid": 74,
+      "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-BRPO",
-      "volume": 0,
+      "volume": 8,
       "volume_24h": 0,
-      "yes_ask": 25,
-      "yes_bid": 5
+      "yes_ask": 26,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-THEPG26-CABA": {
       "last_price": 0,
@@ -178,15 +178,15 @@
       "yes_bid": 5
     },
     "KXNASCARTOP10-THEPG26-DETH": {
-      "last_price": 0,
+      "last_price": 26,
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 94,
       "no_bid": 74,
-      "open_interest": 0,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-DETH",
-      "volume": 0,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 6
@@ -206,15 +206,15 @@
       "yes_bid": 3
     },
     "KXNASCARTOP10-THEPG26-HABU": {
-      "last_price": 0,
+      "last_price": 37,
       "liquidity": null,
       "name": "Harrison Burton",
       "no_ask": 83,
       "no_bid": 63,
-      "open_interest": 0,
+      "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-HABU",
-      "volume": 0,
+      "volume": 3,
       "volume_24h": 0,
       "yes_ask": 37,
       "yes_bid": 17
@@ -234,15 +234,15 @@
       "yes_bid": 16
     },
     "KXNASCARTOP10-THEPG26-JEBU": {
-      "last_price": 0,
+      "last_price": 29,
       "liquidity": null,
       "name": "Jeb Burton",
       "no_ask": 91,
       "no_bid": 71,
-      "open_interest": 0,
+      "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-JEBU",
-      "volume": 0,
+      "volume": 3,
       "volume_24h": 0,
       "yes_ask": 29,
       "yes_bid": 9
@@ -402,15 +402,15 @@
       "yes_bid": 18
     },
     "KXNASCARTOP10-THEPG26-NILE": {
-      "last_price": 0,
+      "last_price": 25,
       "liquidity": null,
       "name": "Nick Leitz",
       "no_ask": 95,
       "no_bid": 75,
-      "open_interest": 0,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-NILE",
-      "volume": 0,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 5
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-21T20:02:58.312691+00:00",
+  "scraped_at": "2026-10-21T20:09:05.602237+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
