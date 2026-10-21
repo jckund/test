@@ -112,13 +112,13 @@
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 71,
-      "no_bid": 59,
-      "open_interest": 57,
+      "no_bid": 58,
+      "open_interest": 80,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CAHO",
-      "volume": 57,
+      "volume": 80,
       "volume_24h": 57,
-      "yes_ask": 41,
+      "yes_ask": 42,
       "yes_bid": 29
     },
     "KXNASCARTOP10-YEL26-CAME": {
@@ -262,15 +262,15 @@
       "yes_bid": 20
     },
     "KXNASCARTOP10-YEL26-DEHA": {
-      "last_price": 0,
+      "last_price": 40,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 72,
       "no_bid": 60,
-      "open_interest": 0,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-DEHA",
-      "volume": 0,
+      "volume": 24,
       "volume_24h": 0,
       "yes_ask": 40,
       "yes_bid": 28
@@ -458,15 +458,15 @@
       "yes_bid": 43
     },
     "KXNASCARTOP10-YEL26-RYPR": {
-      "last_price": 32,
+      "last_price": 34,
       "liquidity": null,
       "name": "Ryan Preece",
       "no_ask": 73,
       "no_bid": 67,
-      "open_interest": 100,
+      "open_interest": 128,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-RYPR",
-      "volume": 100,
+      "volume": 128,
       "volume_24h": 100,
       "yes_ask": 33,
       "yes_bid": 27
@@ -533,10 +533,10 @@
       "name": "Tyler Reddick",
       "no_ask": 64,
       "no_bid": 56,
-      "open_interest": 15,
+      "open_interest": 37,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-TYRE",
-      "volume": 15,
+      "volume": 37,
       "volume_24h": 15,
       "yes_ask": 44,
       "yes_bid": 36
@@ -556,22 +556,22 @@
       "yes_bid": 27
     },
     "KXNASCARTOP10-YEL26-ZASM": {
-      "last_price": 30,
+      "last_price": 31,
       "liquidity": null,
       "name": "Zane Smith",
       "no_ask": 76,
       "no_bid": 70,
-      "open_interest": 79,
+      "open_interest": 111,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-ZASM",
-      "volume": 79,
+      "volume": 111,
       "volume_24h": 79,
       "yes_ask": 30,
       "yes_bid": 24
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-21T01:01:43.320238+00:00",
+  "scraped_at": "2026-10-21T01:08:05.835798+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
