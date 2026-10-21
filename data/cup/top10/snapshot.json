@@ -111,15 +111,15 @@
       "last_price": 42,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 67,
-      "no_bid": 58,
+      "no_ask": 66,
+      "no_bid": 59,
       "open_interest": 99,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CAHO",
       "volume": 102,
       "volume_24h": 45,
-      "yes_ask": 42,
-      "yes_bid": 33
+      "yes_ask": 41,
+      "yes_bid": 34
     },
     "KXNASCARTOP10-YEL26-CAME": {
       "last_price": 9,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-COCU",
       "volume": 450,
-      "volume_24h": 450,
+      "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 16
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-RIHE",
       "volume": 248,
-      "volume_24h": 242,
+      "volume_24h": 5,
       "yes_ask": 18,
       "yes_bid": 16
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-21T18:49:11.539851+00:00",
+  "scraped_at": "2026-10-21T18:55:37.876492+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
