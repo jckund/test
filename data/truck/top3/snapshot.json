@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-CLMC",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 8,
       "yes_bid": 0
     },
@@ -251,15 +251,15 @@
       "last_price": 18,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 96,
-      "no_bid": 82,
+      "no_ask": 95,
+      "no_bid": 83,
       "open_interest": 10,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-GIRU",
       "volume": 10,
       "volume_24h": 10,
-      "yes_ask": 18,
-      "yes_bid": 4
+      "yes_ask": 17,
+      "yes_bid": 5
     },
     "KXNASCARTOP3-LOVRS26-GREN": {
       "last_price": 21,
@@ -532,18 +532,18 @@
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 88,
-      "no_bid": 78,
+      "no_bid": 80,
       "open_interest": 18,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-TYMA",
       "volume": 18,
       "volume_24h": 18,
-      "yes_ask": 22,
+      "yes_ask": 20,
       "yes_bid": 12
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-21T23:37:31.053978+00:00",
+  "scraped_at": "2026-10-21T23:43:43.414624+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top3"
 }
