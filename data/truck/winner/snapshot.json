@@ -192,16 +192,16 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-CORO": {
-      "last_price": 11,
+      "last_price": 1,
       "liquidity": null,
       "name": "Cory Roper",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 1050,
+      "open_interest": 2000,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CORO",
-      "volume": 1050,
-      "volume_24h": 950,
+      "volume": 2000,
+      "volume_24h": 1900,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-STFR",
       "volume": 297,
-      "volume_24h": 266,
+      "volume_24h": 232,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TOST",
       "volume": 1642,
-      "volume_24h": 797,
+      "volume_24h": 794,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-21T10:54:02.925755+00:00",
+  "scraped_at": "2026-10-21T12:26:20.850012+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
