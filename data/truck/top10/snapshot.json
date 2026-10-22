@@ -251,7 +251,7 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 77,
+      "no_ask": 76,
       "no_bid": 60,
       "open_interest": 34,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 34,
       "volume_24h": 34,
       "yes_ask": 40,
-      "yes_bid": 23
+      "yes_bid": 24
     },
     "KXNASCARTOP10-LOVRS26-GREN": {
       "last_price": 44,
@@ -321,15 +321,15 @@
       "last_price": 33,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 79,
-      "no_bid": 66,
+      "no_ask": 78,
+      "no_bid": 67,
       "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-JUHA",
       "volume": 100,
-      "volume_24h": 0,
-      "yes_ask": 34,
-      "yes_bid": 21
+      "volume_24h": 100,
+      "yes_ask": 33,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-LOVRS26-KAHO": {
       "last_price": 62,
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-MITY",
       "volume": 150,
-      "volume_24h": 0,
+      "volume_24h": 150,
       "yes_ask": 12,
       "yes_bid": 3
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-22T10:16:28.758305+00:00",
+  "scraped_at": "2026-10-22T10:28:41.467246+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
