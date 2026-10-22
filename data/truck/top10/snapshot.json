@@ -167,7 +167,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Conner Jones",
-      "no_ask": 86,
+      "no_ask": 87,
       "no_bid": 78,
       "open_interest": 0,
       "status": "active",
@@ -175,7 +175,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 22,
-      "yes_bid": 14
+      "yes_bid": 13
     },
     "KXNASCARTOP10-LOVRS26-COLA": {
       "last_price": 32,
@@ -251,15 +251,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 76,
-      "no_bid": 59,
+      "no_ask": 77,
+      "no_bid": 60,
       "open_interest": 34,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-GIRU",
       "volume": 34,
-      "volume_24h": 7,
-      "yes_ask": 41,
-      "yes_bid": 24
+      "volume_24h": 34,
+      "yes_ask": 40,
+      "yes_bid": 23
     },
     "KXNASCARTOP10-LOVRS26-GREN": {
       "last_price": 44,
@@ -293,7 +293,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Jason M White",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 89,
       "open_interest": 0,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP10-LOVRS26-JORE": {
       "last_price": 3,
@@ -318,18 +318,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-LOVRS26-JUHA": {
-      "last_price": 0,
+      "last_price": 33,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 84,
-      "no_bid": 67,
-      "open_interest": 0,
+      "no_ask": 79,
+      "no_bid": 66,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-JUHA",
-      "volume": 0,
+      "volume": 100,
       "volume_24h": 0,
-      "yes_ask": 33,
-      "yes_bid": 16
+      "yes_ask": 34,
+      "yes_bid": 21
     },
     "KXNASCARTOP10-LOVRS26-KAHO": {
       "last_price": 62,
@@ -388,15 +388,15 @@
       "yes_bid": 42
     },
     "KXNASCARTOP10-LOVRS26-MITY": {
-      "last_price": 0,
+      "last_price": 12,
       "liquidity": null,
       "name": "Mini Tyrrell",
       "no_ask": 97,
       "no_bid": 88,
-      "open_interest": 0,
+      "open_interest": 150,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-MITY",
-      "volume": 0,
+      "volume": 150,
       "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 3
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-THAN",
       "volume": 250,
-      "volume_24h": 103,
+      "volume_24h": 250,
       "yes_ask": 18,
       "yes_bid": 13
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-22T10:10:38.046534+00:00",
+  "scraped_at": "2026-10-22T10:16:28.758305+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
