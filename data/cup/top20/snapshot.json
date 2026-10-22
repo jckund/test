@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-AUCI",
       "volume": 23,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 69,
       "yes_bid": 53
     },
@@ -94,15 +94,15 @@
       "yes_bid": 53
     },
     "KXNASCARTOP20-YEL26-BUWA": {
-      "last_price": 0,
+      "last_price": 67,
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 49,
       "no_bid": 33,
-      "open_interest": 0,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-BUWA",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
       "yes_ask": 67,
       "yes_bid": 51
@@ -248,15 +248,15 @@
       "yes_bid": 23
     },
     "KXNASCARTOP20-YEL26-DASU": {
-      "last_price": 0,
+      "last_price": 61,
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 55,
       "no_bid": 39,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-DASU",
-      "volume": 0,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 61,
       "yes_bid": 45
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-NOGR",
       "volume": 7,
-      "volume_24h": 5,
+      "volume_24h": 7,
       "yes_ask": 54,
       "yes_bid": 34
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-22T03:15:39.995720+00:00",
+  "scraped_at": "2026-10-22T03:27:41.650760+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top20"
 }
