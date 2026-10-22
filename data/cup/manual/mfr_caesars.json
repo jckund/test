@@ -1,23 +1,260 @@
 {
-  "captured_at": "2026-10-20T21:03:24Z",
+  "captured_at": "2026-10-22T17:06:30Z",
   "source": "Caesars",
   "race": "YellaWood 500",
-  "winner": {
-    "Chevrolet": {
-      "american": 150,
-      "implied": 0.4,
-      "novig": 0.37264742785445426
-    },
+  "winner": {},
+  "makes": {
     "Ford": {
-      "american": 170,
-      "implied": 0.37037037037037035,
-      "novig": 0.3450439146800502
+      "drivers": [
+        {
+          "name": "Joey Logano",
+          "american": 375,
+          "implied": 0.21052631578947367,
+          "novig": 0.17368268962911093
+        },
+        {
+          "name": "Ryan Blaney",
+          "american": 375,
+          "implied": 0.21052631578947367,
+          "novig": 0.17368268962911093
+        },
+        {
+          "name": "Austin Cindric",
+          "american": 625,
+          "implied": 0.13793103448275862,
+          "novig": 0.11379210699838303
+        },
+        {
+          "name": "Brad Keselowski",
+          "american": 625,
+          "implied": 0.13793103448275862,
+          "novig": 0.11379210699838303
+        },
+        {
+          "name": "Chris Buescher",
+          "american": 675,
+          "implied": 0.12903225806451613,
+          "novig": 0.10645068074042283
+        },
+        {
+          "name": "Ryan Preece",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.07499934324893427
+        },
+        {
+          "name": "Josh Berry",
+          "american": 1000,
+          "implied": 0.09090909090909091,
+          "novig": 0.07499934324893427
+        },
+        {
+          "name": "Todd Gilliland",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.06346098274909823
+        },
+        {
+          "name": "Zane Smith",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.05499951838255179
+        },
+        {
+          "name": "Noah Gragson",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.03928537027325128
+        },
+        {
+          "name": "Gray Gaulding",
+          "american": 7500,
+          "implied": 0.013157894736842105,
+          "novig": 0.010855168101819433
+        }
+      ]
+    },
+    "Chevrolet": {
+      "drivers": [
+        {
+          "name": "William Byron",
+          "american": 625,
+          "implied": 0.13793103448275862,
+          "novig": 0.1055903117249932
+        },
+        {
+          "name": "Chase Elliott",
+          "american": 625,
+          "implied": 0.13793103448275862,
+          "novig": 0.1055903117249932
+        },
+        {
+          "name": "Carson Hocevar",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.0956912200007751
+        },
+        {
+          "name": "Kyle Larson",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.0956912200007751
+        },
+        {
+          "name": "Ross Chastain",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.0805820800006527
+        },
+        {
+          "name": "Daniel Suárez",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.058886904615861595
+        },
+        {
+          "name": "Alex Bowman",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.058886904615861595
+        },
+        {
+          "name": "Ricky Stenhouse",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.058886904615861595
+        },
+        {
+          "name": "Shane Van Gisbergen",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.051035317333746714
+        },
+        {
+          "name": "Michael McDowell",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.04029104000032635
+        },
+        {
+          "name": "Austin Dillon",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.04029104000032635
+        },
+        {
+          "name": "Austin Hill",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.04029104000032635
+        },
+        {
+          "name": "Connor Zilisch",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.03328390260896525
+        },
+        {
+          "name": "AJ Allmendinger",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.03328390260896525
+        },
+        {
+          "name": "Cole Custer",
+          "american": 2800,
+          "implied": 0.034482758620689655,
+          "novig": 0.0263975779312483
+        },
+        {
+          "name": "Ty Dillon",
+          "american": 2800,
+          "implied": 0.034482758620689655,
+          "novig": 0.0263975779312483
+        },
+        {
+          "name": "Casey Mears",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.015010387451101975
+        },
+        {
+          "name": "Cody Ware",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.015010387451101975
+        },
+        {
+          "name": "Daniel Dye",
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.009450984691434577
+        },
+        {
+          "name": "Joey Gase",
+          "american": 8000,
+          "implied": 0.012345679012345678,
+          "novig": 0.009450984691434577
+        }
+      ]
     },
     "Toyota": {
-      "american": 230,
-      "implied": 0.30303030303030304,
-      "novig": 0.2823086574654956
+      "drivers": [
+        {
+          "name": "Christopher Bell",
+          "american": 425,
+          "implied": 0.19047619047619047,
+          "novig": 0.1585877817797
+        },
+        {
+          "name": "Tyler Reddick",
+          "american": 425,
+          "implied": 0.19047619047619047,
+          "novig": 0.1585877817797
+        },
+        {
+          "name": "Chase Briscoe",
+          "american": 475,
+          "implied": 0.17391304347826086,
+          "novig": 0.14479753988581304
+        },
+        {
+          "name": "Denny Hamlin",
+          "american": 475,
+          "implied": 0.17391304347826086,
+          "novig": 0.14479753988581304
+        },
+        {
+          "name": "Bubba Wallace",
+          "american": 475,
+          "implied": 0.17391304347826086,
+          "novig": 0.14479753988581304
+        },
+        {
+          "name": "Ty Gibbs",
+          "american": 725,
+          "implied": 0.12121212121212122,
+          "novig": 0.10091949749617274
+        },
+        {
+          "name": "Erik Jones",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.06404506571872501
+        },
+        {
+          "name": "John H. Nemechek",
+          "american": 1800,
+          "implied": 0.05263157894736842,
+          "novig": 0.04382030812333816
+        },
+        {
+          "name": "Riley Herbst",
+          "american": 2000,
+          "implied": 0.047619047619047616,
+          "novig": 0.039646945444925
+        }
+      ]
     }
-  },
-  "makes": {}
+  }
 }
