@@ -307,7 +307,7 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Josh Reaume",
-      "no_ask": 97,
+      "no_ask": 96,
       "no_bid": 90,
       "open_interest": 209,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 214,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 3
+      "yes_bid": 4
     },
     "KXNASCARTOP10-LOVRS26-JUHA": {
       "last_price": 33,
@@ -472,18 +472,18 @@
       "yes_bid": 12
     },
     "KXNASCARTOP10-LOVRS26-THAN": {
-      "last_price": 33,
+      "last_price": 49,
       "liquidity": null,
       "name": "Thomas Annunziata",
-      "no_ask": 82,
-      "no_bid": 65,
-      "open_interest": 294,
+      "no_ask": 67,
+      "no_bid": 49,
+      "open_interest": 544,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-THAN",
-      "volume": 294,
+      "volume": 544,
       "volume_24h": 44,
-      "yes_ask": 35,
-      "yes_bid": 18
+      "yes_ask": 51,
+      "yes_bid": 33
     },
     "KXNASCARTOP10-LOVRS26-TIHI": {
       "last_price": 8,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T12:13:45.060151+00:00",
+  "scraped_at": "2026-10-23T12:20:51.811233+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
