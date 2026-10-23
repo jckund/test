@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-ALBO",
       "volume": 55,
-      "volume_24h": 20,
+      "volume_24h": 0,
       "yes_ask": 28,
       "yes_bid": 20
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-MIMC",
       "volume": 225,
-      "volume_24h": 108,
+      "volume_24h": 83,
       "yes_ask": 23,
       "yes_bid": 16
     },
@@ -447,15 +447,15 @@
       "last_price": 48,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 63,
-      "no_bid": 53,
+      "no_ask": 62,
+      "no_bid": 52,
       "open_interest": 133,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-RYBL",
       "volume": 133,
       "volume_24h": 17,
-      "yes_ask": 47,
-      "yes_bid": 37
+      "yes_ask": 48,
+      "yes_bid": 38
     },
     "KXNASCARTOP10-YEL26-RYPR": {
       "last_price": 28,
@@ -565,13 +565,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-ZASM",
       "volume": 145,
-      "volume_24h": 25,
+      "volume_24h": 0,
       "yes_ask": 23,
       "yes_bid": 16
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T15:40:22.711225+00:00",
+  "scraped_at": "2026-10-23T15:46:03.729697+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
