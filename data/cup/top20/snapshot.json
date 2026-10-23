@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-AUCI",
       "volume": 23,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 68,
       "yes_bid": 53
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-BUWA",
       "volume": 1,
-      "volume_24h": 1,
+      "volume_24h": 0,
       "yes_ask": 66,
       "yes_bid": 51
     },
@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-DASU",
       "volume": 2,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 61,
       "yes_bid": 46
     },
@@ -388,18 +388,18 @@
       "yes_bid": 54
     },
     "KXNASCARTOP20-YEL26-NOGR": {
-      "last_price": 53,
+      "last_price": 54,
       "liquidity": null,
       "name": "Noah Gragson",
-      "no_ask": 66,
-      "no_bid": 46,
-      "open_interest": 7,
+      "no_ask": 65,
+      "no_bid": 45,
+      "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-NOGR",
-      "volume": 7,
-      "volume_24h": 2,
-      "yes_ask": 54,
-      "yes_bid": 34
+      "volume": 20,
+      "volume_24h": 0,
+      "yes_ask": 55,
+      "yes_bid": 35
     },
     "KXNASCARTOP20-YEL26-RIHE": {
       "last_price": 39,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-23T03:19:13.296763+00:00",
+  "scraped_at": "2026-10-23T03:48:06.296248+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top20"
 }
