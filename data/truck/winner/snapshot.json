@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Austin Green",
       "no_ask": 99,
-      "no_bid": 98,
+      "no_bid": 97,
       "open_interest": 3468,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-AUGR",
       "volume": 3468,
       "volume_24h": 501,
-      "yes_ask": 2,
+      "yes_ask": 3,
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-BERH": {
@@ -80,15 +80,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-CHEC": {
-      "last_price": 8,
+      "last_price": 9,
       "liquidity": null,
       "name": "Christian Eckes",
       "no_ask": 93,
       "no_bid": 91,
-      "open_interest": 5460,
+      "open_interest": 5711,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHEC",
-      "volume": 5461,
+      "volume": 5712,
       "volume_24h": 3693,
       "yes_ask": 9,
       "yes_bid": 7
@@ -97,15 +97,15 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 93,
-      "no_bid": 91,
+      "no_ask": 91,
+      "no_bid": 90,
       "open_interest": 3138,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHSM",
       "volume": 3138,
       "volume_24h": 2699,
-      "yes_ask": 9,
-      "yes_bid": 7
+      "yes_ask": 10,
+      "yes_bid": 9
     },
     "KXNASCARRACE-LOVRS26-CLGR": {
       "last_price": 0,
@@ -150,17 +150,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-LOVRS26-COHE": {
-      "last_price": 15,
+      "last_price": 16,
       "liquidity": null,
       "name": "Corey Heim",
       "no_ask": 86,
-      "no_bid": 85,
-      "open_interest": 5930,
+      "no_bid": 84,
+      "open_interest": 8910,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COHE",
-      "volume": 6242,
+      "volume": 9222,
       "volume_24h": 3717,
-      "yes_ask": 15,
+      "yes_ask": 16,
       "yes_bid": 14
     },
     "KXNASCARRACE-LOVRS26-COJO": {
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Kaden Honeycutt",
       "no_ask": 94,
-      "no_bid": 91,
+      "no_bid": 92,
       "open_interest": 4283,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-KAHO",
       "volume": 4330,
       "volume_24h": 3178,
-      "yes_ask": 9,
+      "yes_ask": 8,
       "yes_bid": 6
     },
     "KXNASCARRACE-LOVRS26-KRWR": {
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 89,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 4602,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-LARI",
       "volume": 4692,
       "volume_24h": 1612,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 11
     },
     "KXNASCARRACE-LOVRS26-MITY": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-23T14:53:51.179178+00:00",
+  "scraped_at": "2026-10-23T15:00:15.150212+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
