@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-CLMC",
       "volume": 348,
-      "volume_24h": 348,
+      "volume_24h": 309,
       "yes_ask": 21,
       "yes_bid": 2
     },
@@ -178,16 +178,16 @@
       "yes_bid": 12
     },
     "KXNASCARTOP10-LOVRS26-COLA": {
-      "last_price": 42,
+      "last_price": 41,
       "liquidity": null,
       "name": "Corey LaJoie",
       "no_ask": 66,
       "no_bid": 59,
-      "open_interest": 341,
+      "open_interest": 388,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-COLA",
-      "volume": 341,
-      "volume_24h": 141,
+      "volume": 388,
+      "volume_24h": 188,
       "yes_ask": 41,
       "yes_bid": 34
     },
@@ -251,7 +251,7 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 54,
+      "no_ask": 53,
       "no_bid": 28,
       "open_interest": 741,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 792,
       "volume_24h": 758,
       "yes_ask": 72,
-      "yes_bid": 46
+      "yes_bid": 47
     },
     "KXNASCARTOP10-LOVRS26-GREN": {
       "last_price": 49,
@@ -505,11 +505,11 @@
       "name": "Tony Stewart",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 712,
+      "open_interest": 764,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-TOST",
-      "volume": 712,
-      "volume_24h": 712,
+      "volume": 764,
+      "volume_24h": 764,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T16:45:35.004456+00:00",
+  "scraped_at": "2026-10-23T16:52:09.827524+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
