@@ -27,15 +27,15 @@
       "last_price": 61,
       "liquidity": null,
       "name": "Austin Hill",
-      "no_ask": 48,
-      "no_bid": 40,
+      "no_ask": 50,
+      "no_bid": 39,
       "open_interest": 325,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-AUHI",
       "volume": 325,
       "volume_24h": 16,
-      "yes_ask": 60,
-      "yes_bid": 52
+      "yes_ask": 61,
+      "yes_bid": 50
     },
     "KXNASCARTOP10-THEPG26-BLPE": {
       "last_price": 0,
@@ -237,15 +237,15 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Jeb Burton",
-      "no_ask": 79,
-      "no_bid": 65,
+      "no_ask": 78,
+      "no_bid": 66,
       "open_interest": 84,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-JEBU",
       "volume": 84,
       "volume_24h": 80,
-      "yes_ask": 35,
-      "yes_bid": 21
+      "yes_ask": 34,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-THEPG26-JECL": {
       "last_price": 27,
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 65,
-      "no_bid": 46,
+      "no_bid": 50,
       "open_interest": 18,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-JELO",
       "volume": 18,
       "volume_24h": 18,
-      "yes_ask": 54,
+      "yes_ask": 50,
       "yes_bid": 35
     },
     "KXNASCARTOP10-THEPG26-JOBI": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-NILE",
       "volume": 239,
-      "volume_24h": 235,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 6
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T17:37:13.999838+00:00",
+  "scraped_at": "2026-10-23T17:43:33.773281+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
