@@ -237,7 +237,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Frankie Muniz",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 89,
       "open_interest": 0,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARTOP10-LOVRS26-GIRU": {
       "last_price": 40,
@@ -500,15 +500,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-LOVRS26-TOST": {
-      "last_price": 33,
+      "last_price": 31,
       "liquidity": null,
       "name": "Tony Stewart",
       "no_ask": 76,
       "no_bid": 70,
-      "open_interest": 220,
+      "open_interest": 528,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-TOST",
-      "volume": 220,
+      "volume": 528,
       "volume_24h": 220,
       "yes_ask": 30,
       "yes_bid": 24
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T03:33:59.045990+00:00",
+  "scraped_at": "2026-10-23T03:39:49.383967+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
