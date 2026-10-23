@@ -41,7 +41,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Blaine Perkins",
-      "no_ask": 90,
+      "no_ask": 92,
       "no_bid": 79,
       "open_interest": 0,
       "status": "active",
@@ -49,18 +49,18 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 21,
-      "yes_bid": 10
+      "yes_bid": 8
     },
     "KXNASCARTOP10-THEPG26-BRCR": {
-      "last_price": 0,
+      "last_price": 45,
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 69,
       "no_bid": 55,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-BRCR",
-      "volume": 0,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 45,
       "yes_bid": 31
@@ -125,7 +125,7 @@
       "last_price": 5,
       "liquidity": null,
       "name": "Carson Ware",
-      "no_ask": 96,
+      "no_ask": 98,
       "no_bid": 92,
       "open_interest": 1210,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 1210,
       "volume_24h": 0,
       "yes_ask": 8,
-      "yes_bid": 4
+      "yes_bid": 2
     },
     "KXNASCARTOP10-THEPG26-CODA": {
       "last_price": 49,
@@ -234,32 +234,32 @@
       "yes_bid": 17
     },
     "KXNASCARTOP10-THEPG26-JEBU": {
-      "last_price": 29,
+      "last_price": 27,
       "liquidity": null,
       "name": "Jeb Burton",
-      "no_ask": 82,
-      "no_bid": 73,
-      "open_interest": 84,
+      "no_ask": 81,
+      "no_bid": 72,
+      "open_interest": 87,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-JEBU",
-      "volume": 84,
+      "volume": 87,
       "volume_24h": 80,
-      "yes_ask": 27,
-      "yes_bid": 18
+      "yes_ask": 28,
+      "yes_bid": 19
     },
     "KXNASCARTOP10-THEPG26-JECL": {
       "last_price": 27,
       "liquidity": null,
       "name": "Jeremy Clements",
-      "no_ask": 81,
+      "no_ask": 83,
       "no_bid": 73,
-      "open_interest": 107,
+      "open_interest": 111,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-JECL",
-      "volume": 107,
+      "volume": 111,
       "volume_24h": 107,
       "yes_ask": 27,
-      "yes_bid": 19
+      "yes_bid": 17
     },
     "KXNASCARTOP10-THEPG26-JELO": {
       "last_price": 53,
@@ -307,7 +307,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Josh Williams",
-      "no_ask": 82,
+      "no_ask": 86,
       "no_bid": 80,
       "open_interest": 0,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 18
+      "yes_bid": 14
     },
     "KXNASCARTOP10-THEPG26-JUAL": {
       "last_price": 57,
@@ -349,7 +349,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Lavar Scott",
-      "no_ask": 95,
+      "no_ask": 96,
       "no_bid": 89,
       "open_interest": 0,
       "status": "active",
@@ -357,7 +357,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 5
+      "yes_bid": 4
     },
     "KXNASCARTOP10-THEPG26-LEHO": {
       "last_price": 0,
@@ -377,7 +377,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Lee Pulliam",
-      "no_ask": 93,
+      "no_ask": 96,
       "no_bid": 76,
       "open_interest": 0,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 24,
-      "yes_bid": 7
+      "yes_bid": 4
     },
     "KXNASCARTOP10-THEPG26-MAMA": {
       "last_price": 14,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T21:51:22.702008+00:00",
+  "scraped_at": "2026-10-23T21:56:14.686670+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
