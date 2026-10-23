@@ -94,17 +94,17 @@
       "yes_bid": 13
     },
     "KXNASCARTOP3-LOVRS26-CHSM": {
-      "last_price": 23,
+      "last_price": 22,
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 86,
-      "no_bid": 78,
-      "open_interest": 17,
+      "no_bid": 77,
+      "open_interest": 55,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-CHSM",
-      "volume": 17,
-      "volume_24h": 17,
-      "yes_ask": 22,
+      "volume": 55,
+      "volume_24h": 55,
+      "yes_ask": 23,
       "yes_bid": 14
     },
     "KXNASCARTOP3-LOVRS26-CLGR": {
@@ -265,7 +265,7 @@
       "last_price": 21,
       "liquidity": null,
       "name": "Grant Enfinger",
-      "no_ask": 92,
+      "no_ask": 90,
       "no_bid": 82,
       "open_interest": 23,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 23,
       "volume_24h": 0,
       "yes_ask": 18,
-      "yes_bid": 8
+      "yes_bid": 10
     },
     "KXNASCARTOP3-LOVRS26-JAGA": {
       "last_price": 0,
@@ -335,7 +335,7 @@
       "last_price": 27,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 80,
+      "no_ask": 81,
       "no_bid": 75,
       "open_interest": 68,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 68,
       "volume_24h": 53,
       "yes_ask": 25,
-      "yes_bid": 20
+      "yes_bid": 19
     },
     "KXNASCARTOP3-LOVRS26-KRWR": {
       "last_price": 0,
@@ -420,13 +420,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 91,
-      "no_bid": 87,
+      "no_bid": 88,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-SASM",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 13,
+      "yes_ask": 12,
       "yes_bid": 9
     },
     "KXNASCARTOP3-LOVRS26-SPBO": {
@@ -528,22 +528,22 @@
       "yes_bid": 10
     },
     "KXNASCARTOP3-LOVRS26-TYMA": {
-      "last_price": 27,
+      "last_price": 21,
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 80,
       "no_bid": 79,
-      "open_interest": 18,
+      "open_interest": 59,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-TYMA",
-      "volume": 18,
-      "volume_24h": 0,
+      "volume": 59,
+      "volume_24h": 41,
       "yes_ask": 21,
       "yes_bid": 20
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-23T14:16:09.342553+00:00",
+  "scraped_at": "2026-10-23T14:22:00.442433+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top3"
 }
