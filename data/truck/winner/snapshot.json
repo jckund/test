@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-COBU",
       "volume": 1170,
-      "volume_24h": 0,
+      "volume_24h": 1170,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -419,7 +419,7 @@
       "last_price": 4,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 99,
+      "no_ask": 98,
       "no_bid": 96,
       "open_interest": 2660,
       "status": "active",
@@ -427,7 +427,7 @@
       "volume": 2707,
       "volume_24h": 921,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 2
     },
     "KXNASCARRACE-LOVRS26-SPBO": {
       "last_price": 1,
@@ -461,15 +461,15 @@
       "last_price": 2,
       "liquidity": null,
       "name": "Tanner Gray",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 3095,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 3215,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TAGR",
-      "volume": 3095,
-      "volume_24h": 1180,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "volume": 3215,
+      "volume_24h": 1300,
+      "yes_ask": 3,
+      "yes_bid": 2
     },
     "KXNASCARRACE-LOVRS26-THAN": {
       "last_price": 2,
@@ -505,10 +505,10 @@
       "name": "Tony Stewart",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 4972,
+      "open_interest": 5036,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-TOST",
-      "volume": 4972,
+      "volume": 5036,
       "volume_24h": 2223,
       "yes_ask": 2,
       "yes_bid": 1
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-23T08:47:51.684524+00:00",
+  "scraped_at": "2026-10-23T08:54:23.758100+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
