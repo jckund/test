@@ -127,11 +127,11 @@
       "name": "Cleetus McFarland",
       "no_ask": 99,
       "no_bid": 88,
-      "open_interest": 61,
+      "open_interest": 175,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-CLMC",
-      "volume": 61,
-      "volume_24h": 61,
+      "volume": 175,
+      "volume_24h": 175,
       "yes_ask": 12,
       "yes_bid": 1
     },
@@ -500,15 +500,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-LOVRS26-TOST": {
-      "last_price": 31,
+      "last_price": 29,
       "liquidity": null,
       "name": "Tony Stewart",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 528,
+      "open_interest": 561,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-TOST",
-      "volume": 528,
+      "volume": 561,
       "volume_24h": 528,
       "yes_ask": 29,
       "yes_bid": 28
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T08:11:12.731599+00:00",
+  "scraped_at": "2026-10-23T08:23:16.986279+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
