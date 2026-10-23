@@ -66,15 +66,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-LOVRS26-BRQU": {
-      "last_price": 0,
+      "last_price": 30,
       "liquidity": null,
       "name": "Brenden Queen",
       "no_ask": 88,
       "no_bid": 70,
-      "open_interest": 0,
+      "open_interest": 22,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-BRQU",
-      "volume": 0,
+      "volume": 22,
       "volume_24h": 0,
       "yes_ask": 30,
       "yes_bid": 12
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-CLMC",
       "volume": 348,
-      "volume_24h": 183,
+      "volume_24h": 348,
       "yes_ask": 21,
       "yes_bid": 1
     },
@@ -251,7 +251,7 @@
       "last_price": 49,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 59,
+      "no_ask": 58,
       "no_bid": 51,
       "open_interest": 613,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 613,
       "volume_24h": 579,
       "yes_ask": 49,
-      "yes_bid": 41
+      "yes_bid": 42
     },
     "KXNASCARTOP10-LOVRS26-GREN": {
       "last_price": 49,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-GREN",
       "volume": 125,
-      "volume_24h": 0,
+      "volume_24h": 103,
       "yes_ask": 49,
       "yes_bid": 31
     },
@@ -377,29 +377,29 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 79,
-      "no_bid": 45,
+      "no_ask": 78,
+      "no_bid": 46,
       "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-LARI",
       "volume": 28,
-      "volume_24h": 19,
-      "yes_ask": 55,
-      "yes_bid": 21
+      "volume_24h": 28,
+      "yes_ask": 54,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-LOVRS26-MITY": {
       "last_price": 11,
       "liquidity": null,
       "name": "Mini Tyrrell",
-      "no_ask": 96,
-      "no_bid": 88,
+      "no_ask": 95,
+      "no_bid": 89,
       "open_interest": 159,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-MITY",
       "volume": 159,
       "volume_24h": 9,
-      "yes_ask": 12,
-      "yes_bid": 4
+      "yes_ask": 11,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-LOVRS26-NOBE": {
       "last_price": 1,
@@ -435,10 +435,10 @@
       "name": "Spencer Boyd",
       "no_ask": 97,
       "no_bid": 89,
-      "open_interest": 361,
+      "open_interest": 421,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-SPBO",
-      "volume": 361,
+      "volume": 421,
       "volume_24h": 135,
       "yes_ask": 11,
       "yes_bid": 3
@@ -475,29 +475,29 @@
       "last_price": 49,
       "liquidity": null,
       "name": "Thomas Annunziata",
-      "no_ask": 67,
-      "no_bid": 38,
+      "no_ask": 65,
+      "no_bid": 39,
       "open_interest": 544,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-THAN",
       "volume": 544,
       "volume_24h": 294,
-      "yes_ask": 62,
-      "yes_bid": 33
+      "yes_ask": 61,
+      "yes_bid": 35
     },
     "KXNASCARTOP10-LOVRS26-TIHI": {
-      "last_price": 15,
+      "last_price": 12,
       "liquidity": null,
       "name": "Timmy Hill",
-      "no_ask": 98,
-      "no_bid": 87,
-      "open_interest": 500,
+      "no_ask": 97,
+      "no_bid": 86,
+      "open_interest": 518,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-TIHI",
-      "volume": 531,
+      "volume": 572,
       "volume_24h": 31,
-      "yes_ask": 13,
-      "yes_bid": 2
+      "yes_ask": 14,
+      "yes_bid": 3
     },
     "KXNASCARTOP10-LOVRS26-TOST": {
       "last_price": 29,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T13:27:47.948846+00:00",
+  "scraped_at": "2026-10-23T13:33:57.313176+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
