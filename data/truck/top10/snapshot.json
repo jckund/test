@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-CLMC",
       "volume": 852,
-      "volume_24h": 393,
+      "volume_24h": 795,
       "yes_ask": 24,
       "yes_bid": 16
     },
@@ -281,10 +281,10 @@
       "name": "Jake Garcia",
       "no_ask": 79,
       "no_bid": 57,
-      "open_interest": 2,
+      "open_interest": 58,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-JAGA",
-      "volume": 2,
+      "volume": 58,
       "volume_24h": 2,
       "yes_ask": 43,
       "yes_bid": 21
@@ -321,15 +321,15 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 67,
+      "no_ask": 68,
       "no_bid": 58,
-      "open_interest": 772,
+      "open_interest": 828,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-JUHA",
-      "volume": 772,
+      "volume": 828,
       "volume_24h": 672,
       "yes_ask": 42,
-      "yes_bid": 33
+      "yes_bid": 32
     },
     "KXNASCARTOP10-LOVRS26-KAHO": {
       "last_price": 60,
@@ -355,7 +355,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-KRWR",
       "volume": 2,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 16,
       "yes_bid": 4
     },
@@ -486,15 +486,15 @@
       "yes_bid": 35
     },
     "KXNASCARTOP10-LOVRS26-TIHI": {
-      "last_price": 17,
+      "last_price": 18,
       "liquidity": null,
       "name": "Timmy Hill",
       "no_ask": 94,
       "no_bid": 82,
-      "open_interest": 518,
+      "open_interest": 649,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-TIHI",
-      "volume": 772,
+      "volume": 903,
       "volume_24h": 272,
       "yes_ask": 18,
       "yes_bid": 6
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T19:00:30.285748+00:00",
+  "scraped_at": "2026-10-23T19:07:38.728388+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
