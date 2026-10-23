@@ -94,18 +94,18 @@
       "yes_bid": 7
     },
     "KXNASCARRACE-LOVRS26-CHSM": {
-      "last_price": 7,
+      "last_price": 10,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 94,
-      "no_bid": 92,
-      "open_interest": 2921,
+      "no_ask": 93,
+      "no_bid": 91,
+      "open_interest": 3138,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CHSM",
-      "volume": 2921,
+      "volume": 3138,
       "volume_24h": 2500,
-      "yes_ask": 8,
-      "yes_bid": 6
+      "yes_ask": 9,
+      "yes_bid": 7
     },
     "KXNASCARRACE-LOVRS26-CLGR": {
       "last_price": 0,
@@ -127,10 +127,10 @@
       "name": "Cleetus McFarland",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 6645,
+      "open_interest": 6738,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-CLMC",
-      "volume": 6678,
+      "volume": 6771,
       "volume_24h": 4497,
       "yes_ask": 2,
       "yes_bid": 1
@@ -416,18 +416,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-LOVRS26-SASM": {
-      "last_price": 3,
+      "last_price": 6,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 2750,
+      "no_ask": 97,
+      "no_bid": 95,
+      "open_interest": 5096,
       "status": "active",
       "ticker": "KXNASCARRACE-LOVRS26-SASM",
-      "volume": 2797,
+      "volume": 5143,
       "volume_24h": 1011,
-      "yes_ask": 3,
-      "yes_bid": 2
+      "yes_ask": 5,
+      "yes_bid": 3
     },
     "KXNASCARRACE-LOVRS26-SPBO": {
       "last_price": 1,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-23T12:51:25.900469+00:00",
+  "scraped_at": "2026-10-23T12:57:30.726256+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "winner"
 }
