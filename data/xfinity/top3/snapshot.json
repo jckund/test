@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_bid": 90,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-BRPO",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 1,
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 10,
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-CABA": {
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_bid": 51,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-COMO",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 49,
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-DADY": {
@@ -182,13 +182,13 @@
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_bid": 87,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-DETH",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 1,
+      "volume": 1,
+      "volume_24h": 1,
+      "yes_ask": 13,
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-GASM": {
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Lee Pulliam",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 0,
+      "no_bid": 51,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-LEPU",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 49,
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-MAMA": {
@@ -546,13 +546,13 @@
       "liquidity": null,
       "name": "Taylor Gray",
       "no_ask": 94,
-      "no_bid": 93,
+      "no_bid": 86,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-TAGR",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 7,
+      "yes_ask": 14,
       "yes_bid": 6
     },
     "KXNASCARTOP3-THEPG26-WIRO": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-23T13:59:20.105754+00:00",
+  "scraped_at": "2026-10-23T14:05:26.843642+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top3"
 }
