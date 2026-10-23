@@ -80,32 +80,32 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-LOVRS26-CHEC": {
-      "last_price": 27,
+      "last_price": 22,
       "liquidity": null,
       "name": "Christian Eckes",
       "no_ask": 92,
       "no_bid": 78,
-      "open_interest": 7,
+      "open_interest": 1300,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-CHEC",
-      "volume": 7,
-      "volume_24h": 0,
+      "volume": 1300,
+      "volume_24h": 1293,
       "yes_ask": 22,
       "yes_bid": 8
     },
     "KXNASCARTOP3-LOVRS26-CHSM": {
-      "last_price": 23,
+      "last_price": 25,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 88,
-      "no_bid": 76,
-      "open_interest": 67,
+      "no_ask": 83,
+      "no_bid": 73,
+      "open_interest": 1218,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-CHSM",
-      "volume": 67,
-      "volume_24h": 67,
-      "yes_ask": 24,
-      "yes_bid": 12
+      "volume": 1218,
+      "volume_24h": 1218,
+      "yes_ask": 27,
+      "yes_bid": 17
     },
     "KXNASCARTOP3-LOVRS26-CLGR": {
       "last_price": 0,
@@ -322,13 +322,13 @@
       "liquidity": null,
       "name": "Justin Haley",
       "no_ask": 95,
-      "no_bid": 85,
+      "no_bid": 83,
       "open_interest": 773,
       "status": "active",
       "ticker": "KXNASCARTOP3-LOVRS26-JUHA",
       "volume": 773,
       "volume_24h": 773,
-      "yes_ask": 15,
+      "yes_ask": 17,
       "yes_bid": 5
     },
     "KXNASCARTOP3-LOVRS26-KAHO": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-23T16:57:58.929421+00:00",
+  "scraped_at": "2026-10-23T17:04:10.782521+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top3"
 }
