@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Cole Custer",
       "no_ask": 88,
-      "no_bid": 81,
+      "no_bid": 79,
       "open_interest": 541,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-COCU",
       "volume": 541,
-      "volume_24h": 0,
-      "yes_ask": 19,
+      "volume_24h": 91,
+      "yes_ask": 21,
       "yes_bid": 12
     },
     "KXNASCARTOP10-YEL26-COWA": {
@@ -225,11 +225,11 @@
       "name": "Connor Zilisch",
       "no_ask": 83,
       "no_bid": 81,
-      "open_interest": 321,
+      "open_interest": 346,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-COZI",
-      "volume": 321,
-      "volume_24h": 0,
+      "volume": 346,
+      "volume_24h": 25,
       "yes_ask": 19,
       "yes_bid": 17
     },
@@ -393,11 +393,11 @@
       "name": "Noah Gragson",
       "no_ask": 77,
       "no_bid": 76,
-      "open_interest": 963,
+      "open_interest": 1042,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-NOGR",
-      "volume": 963,
-      "volume_24h": 20,
+      "volume": 1042,
+      "volume_24h": 99,
       "yes_ask": 24,
       "yes_bid": 23
     },
@@ -559,7 +559,7 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 87,
+      "no_ask": 86,
       "no_bid": 76,
       "open_interest": 145,
       "status": "active",
@@ -567,11 +567,11 @@
       "volume": 145,
       "volume_24h": 25,
       "yes_ask": 24,
-      "yes_bid": 13
+      "yes_bid": 14
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T05:57:40.636240+00:00",
+  "scraped_at": "2026-10-23T06:03:33.230916+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
