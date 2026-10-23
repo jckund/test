@@ -27,7 +27,7 @@
       "last_price": 26,
       "liquidity": null,
       "name": "Austin Green",
-      "no_ask": 89,
+      "no_ask": 88,
       "no_bid": 74,
       "open_interest": 18,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 18,
       "volume_24h": 18,
       "yes_ask": 26,
-      "yes_bid": 11
+      "yes_bid": 12
     },
     "KXNASCARTOP10-LOVRS26-BERH": {
       "last_price": 40,
@@ -94,15 +94,15 @@
       "yes_bid": 40
     },
     "KXNASCARTOP10-LOVRS26-CHSM": {
-      "last_price": 0,
+      "last_price": 49,
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 59,
       "no_bid": 51,
-      "open_interest": 0,
+      "open_interest": 32,
       "status": "active",
       "ticker": "KXNASCARTOP10-LOVRS26-CHSM",
-      "volume": 0,
+      "volume": 32,
       "volume_24h": 0,
       "yes_ask": 49,
       "yes_bid": 41
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T02:28:42.681155+00:00",
+  "scraped_at": "2026-10-23T02:34:48.617542+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-lovrs26",
   "tier": "top10"
 }
