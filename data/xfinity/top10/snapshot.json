@@ -55,7 +55,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 70,
+      "no_ask": 69,
       "no_bid": 55,
       "open_interest": 0,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 45,
-      "yes_bid": 30
+      "yes_bid": 31
     },
     "KXNASCARTOP10-THEPG26-BRJO": {
       "last_price": 0,
@@ -97,15 +97,15 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Caesar Bacarella",
-      "no_ask": 99,
+      "no_ask": 98,
       "no_bid": 90,
       "open_interest": 235,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-CABA",
       "volume": 235,
-      "volume_24h": 0,
+      "volume_24h": 235,
       "yes_ask": 10,
-      "yes_bid": 1
+      "yes_bid": 2
     },
     "KXNASCARTOP10-THEPG26-CAKV": {
       "last_price": 0,
@@ -195,7 +195,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Garrett Smithley",
-      "no_ask": 99,
+      "no_ask": 98,
       "no_bid": 90,
       "open_interest": 0,
       "status": "active",
@@ -203,7 +203,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 1
+      "yes_bid": 2
     },
     "KXNASCARTOP10-THEPG26-HABU": {
       "last_price": 37,
@@ -307,7 +307,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Josh Williams",
-      "no_ask": 90,
+      "no_ask": 88,
       "no_bid": 80,
       "open_interest": 0,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 10
+      "yes_bid": 12
     },
     "KXNASCARTOP10-THEPG26-JUAL": {
       "last_price": 57,
@@ -335,15 +335,15 @@
       "last_price": 15,
       "liquidity": null,
       "name": "Kyle Sieg",
-      "no_ask": 94,
-      "no_bid": 85,
+      "no_ask": 93,
+      "no_bid": 86,
       "open_interest": 157,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-KYSI",
       "volume": 157,
-      "volume_24h": 0,
-      "yes_ask": 15,
-      "yes_bid": 6
+      "volume_24h": 157,
+      "yes_ask": 14,
+      "yes_bid": 7
     },
     "KXNASCARTOP10-THEPG26-LASC": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-23T19:09:02.701347+00:00",
+  "scraped_at": "2026-10-23T19:15:50.043751+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
