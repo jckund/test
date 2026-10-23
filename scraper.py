@@ -77,11 +77,11 @@ SERIES = [
     # the weekend's races share, and not "500", which is generic.
     {"key": "cup", "label": "NASCAR", "matchers": ["yellawood"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: Love's RV Stop 225. Match "rv stop" (Kalshi may drop the
-    # apostrophe in "Love's"). Comment out again once the Truck race has run so
-    # a stale matcher can't grab the wrong event.
-    {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: OFF (commented out 2026-10-23 once the Love's RV Stop 225 went
+    # green). To re-enable for a future Truck race, uncomment and re-point the
+    # matcher at that race's name.
+    # {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     # Xfinity (O'Reilly): Progress Group 250. Match "progress group". This entry
     # is also the catch-all (`default`), so any unmatched open race falls here.
     # When clearing the support race mid-weekend, comment this entry out again
