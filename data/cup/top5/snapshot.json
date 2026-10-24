@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-ALBO",
       "volume": 45,
-      "volume_24h": 0,
+      "volume_24h": 45,
       "yes_ask": 20,
       "yes_bid": 6
     },
@@ -336,13 +336,13 @@
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 82,
-      "no_bid": 66,
+      "no_bid": 65,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-JOLO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 34,
+      "yes_ask": 35,
       "yes_bid": 18
     },
     "KXNASCARTOP5-YEL26-JONE": {
@@ -447,7 +447,7 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 74,
+      "no_ask": 72,
       "no_bid": 61,
       "open_interest": 179,
       "status": "active",
@@ -455,7 +455,7 @@
       "volume": 200,
       "volume_24h": 73,
       "yes_ask": 39,
-      "yes_bid": 26
+      "yes_bid": 28
     },
     "KXNASCARTOP5-YEL26-RYPR": {
       "last_price": 20,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-24T02:10:18.835009+00:00",
+  "scraped_at": "2026-10-24T02:15:18.641686+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top5"
 }
