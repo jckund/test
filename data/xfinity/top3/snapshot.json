@@ -10,17 +10,17 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP3-THEPG26-ANAL": {
-      "last_price": 6,
+      "last_price": 12,
       "liquidity": null,
       "name": "Anthony Alfredo",
       "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 474,
+      "no_bid": 88,
+      "open_interest": 500,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-ANAL",
-      "volume": 474,
+      "volume": 500,
       "volume_24h": 393,
-      "yes_ask": 8,
+      "yes_ask": 12,
       "yes_bid": 7
     },
     "KXNASCARTOP3-THEPG26-AUHI": {
@@ -323,10 +323,10 @@
       "name": "Justin Allgaier",
       "no_ask": 84,
       "no_bid": 76,
-      "open_interest": 129,
+      "open_interest": 149,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-JUAL",
-      "volume": 129,
+      "volume": 149,
       "volume_24h": 77,
       "yes_ask": 24,
       "yes_bid": 16
@@ -430,18 +430,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-PARE": {
-      "last_price": 12,
+      "last_price": 11,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 92,
+      "no_ask": 91,
       "no_bid": 89,
-      "open_interest": 1837,
+      "open_interest": 1879,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-PARE",
-      "volume": 1837,
+      "volume": 1879,
       "volume_24h": 703,
       "yes_ask": 11,
-      "yes_bid": 8
+      "yes_bid": 9
     },
     "KXNASCARTOP3-THEPG26-PAST": {
       "last_price": 1,
@@ -463,10 +463,10 @@
       "name": "Rajah Caruth",
       "no_ask": 87,
       "no_bid": 85,
-      "open_interest": 406,
+      "open_interest": 438,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-RACA",
-      "volume": 406,
+      "volume": 438,
       "volume_24h": 154,
       "yes_ask": 15,
       "yes_bid": 13
@@ -503,15 +503,15 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 96,
-      "no_bid": 80,
+      "no_ask": 94,
+      "no_bid": 81,
       "open_interest": 114,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-SAMA",
       "volume": 114,
       "volume_24h": 93,
-      "yes_ask": 20,
-      "yes_bid": 4
+      "yes_ask": 19,
+      "yes_bid": 6
     },
     "KXNASCARTOP3-THEPG26-SASM": {
       "last_price": 15,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-24T18:13:00.568913+00:00",
+  "scraped_at": "2026-10-24T18:18:25.990333+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top3"
 }
