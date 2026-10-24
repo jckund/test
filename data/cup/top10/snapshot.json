@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CAHO",
       "volume": 333,
-      "volume_24h": 176,
+      "volume_24h": 192,
       "yes_ask": 43,
       "yes_bid": 31
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CHEL",
       "volume": 135,
-      "volume_24h": 29,
+      "volume_24h": 50,
       "yes_ask": 46,
       "yes_bid": 31
     },
@@ -363,29 +363,29 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 70,
+      "no_ask": 74,
       "no_bid": 57,
       "open_interest": 199,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-KYLA",
       "volume": 199,
-      "volume_24h": 41,
+      "volume_24h": 59,
       "yes_ask": 43,
-      "yes_bid": 30
+      "yes_bid": 26
     },
     "KXNASCARTOP10-YEL26-MIMC": {
       "last_price": 24,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 83,
-      "no_bid": 75,
+      "no_ask": 86,
+      "no_bid": 73,
       "open_interest": 229,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-MIMC",
       "volume": 229,
       "volume_24h": 86,
-      "yes_ask": 25,
-      "yes_bid": 17
+      "yes_ask": 27,
+      "yes_bid": 14
     },
     "KXNASCARTOP10-YEL26-NOGR": {
       "last_price": 24,
@@ -447,7 +447,7 @@
       "last_price": 50,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 63,
+      "no_ask": 62,
       "no_bid": 50,
       "open_interest": 187,
       "status": "active",
@@ -455,7 +455,7 @@
       "volume": 187,
       "volume_24h": 70,
       "yes_ask": 50,
-      "yes_bid": 37
+      "yes_bid": 38
     },
     "KXNASCARTOP10-YEL26-RYPR": {
       "last_price": 32,
@@ -537,7 +537,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-TYRE",
       "volume": 86,
-      "volume_24h": 23,
+      "volume_24h": 40,
       "yes_ask": 44,
       "yes_bid": 30
     },
@@ -559,19 +559,19 @@
       "last_price": 26,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 89,
-      "no_bid": 74,
+      "no_ask": 88,
+      "no_bid": 73,
       "open_interest": 240,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-ZASM",
       "volume": 240,
       "volume_24h": 95,
-      "yes_ask": 26,
-      "yes_bid": 11
+      "yes_ask": 27,
+      "yes_bid": 12
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-24T01:30:23.292050+00:00",
+  "scraped_at": "2026-10-24T01:35:18.325372+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
