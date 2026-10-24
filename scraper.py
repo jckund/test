@@ -82,13 +82,13 @@ SERIES = [
     # matcher at that race's name.
     # {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
     #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity (O'Reilly): Progress Group 250. Match "progress group". This entry
-    # is also the catch-all (`default`), so any unmatched open race falls here.
-    # When clearing the support race mid-weekend, comment this entry out again
-    # (and RESTORE it at the next kickoff) — see CLAUDE.md "Clearing a support
-    # race mid-weekend".
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["progress group"], "default": True,
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Xfinity (O'Reilly): OFF (commented out 2026-10-24 once the Progress Group
+    # 250 went green; data/xfinity/ dropped). RESTORE at the next kickoff:
+    # uncomment and re-point the matcher — this entry is also the catch-all
+    # (`default`), and with it commented out an unmatched race isn't tracked at
+    # all. See CLAUDE.md "Clearing a support race mid-weekend".
+    # {"key": "xfinity", "label": "Xfinity", "matchers": ["progress group"], "default": True,
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"

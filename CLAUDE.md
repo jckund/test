@@ -53,7 +53,7 @@ tracked. Nothing else needs touching: `index.html`, `fanduel_scraper.js` and
 series and both scrapers skip the series on their own. **The next kickoff must
 uncomment that entry** or the new support race won't be picked up at all (it will
 no longer fall anywhere) — the scraper carries a RESTORE note saying so.
-*Current state (2026-10-23, Talladega): Cup `yellawood`, Xfinity `progress group` (catch-all); Truck off. Comment the support entries out again once each race has run.*
+*Current state (2026-10-24, Talladega): Cup `yellawood` only; Xfinity and Truck both commented out (no catch-all) — the next kickoff must uncomment and re-point them.*
 
 ## Branches & deploy flow (IMPORTANT)
 
