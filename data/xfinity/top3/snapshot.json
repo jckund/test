@@ -83,15 +83,15 @@
       "last_price": 1,
       "liquidity": null,
       "name": "Brennan Poole",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 96,
-      "open_interest": 2,
+      "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-BRPO",
-      "volume": 2,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-CABA": {
       "last_price": 0,
@@ -150,7 +150,7 @@
       "yes_bid": 12
     },
     "KXNASCARTOP3-THEPG26-COMO": {
-      "last_price": 1,
+      "last_price": 4,
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 96,
@@ -158,7 +158,7 @@
       "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-COMO",
-      "volume": 2,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 4
@@ -178,18 +178,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-DETH": {
-      "last_price": 8,
+      "last_price": 1,
       "liquidity": null,
       "name": "Dean Thompson",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 94,
-      "open_interest": 261,
+      "open_interest": 260,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-DETH",
-      "volume": 261,
+      "volume": 263,
       "volume_24h": 260,
       "yes_ask": 6,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-GASM": {
       "last_price": 0,
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 74,
-      "no_bid": 66,
+      "no_bid": 65,
       "open_interest": 184,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-JELO",
       "volume": 184,
       "volume_24h": 158,
-      "yes_ask": 34,
+      "yes_ask": 35,
       "yes_bid": 26
     },
     "KXNASCARTOP3-THEPG26-JOBI": {
@@ -377,15 +377,15 @@
       "last_price": 1,
       "liquidity": null,
       "name": "Lee Pulliam",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 89,
-      "open_interest": 2,
+      "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-LEPU",
-      "volume": 2,
+      "volume": 4,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-MAMA": {
       "last_price": 0,
@@ -447,15 +447,15 @@
       "last_price": 1,
       "liquidity": null,
       "name": "Patrick Staropoli",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 96,
-      "open_interest": 1,
+      "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-PAST",
-      "volume": 1,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-RACA": {
       "last_price": 15,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-RACA",
       "volume": 468,
-      "volume_24h": 185,
+      "volume_24h": 215,
       "yes_ask": 15,
       "yes_bid": 13
     },
@@ -542,7 +542,7 @@
       "yes_bid": 15
     },
     "KXNASCARTOP3-THEPG26-TAGR": {
-      "last_price": 14,
+      "last_price": 3,
       "liquidity": null,
       "name": "Taylor Gray",
       "no_ask": 97,
@@ -550,7 +550,7 @@
       "open_interest": 9,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-TAGR",
-      "volume": 9,
+      "volume": 10,
       "volume_24h": 8,
       "yes_ask": 14,
       "yes_bid": 3
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-24T18:50:02.526547+00:00",
+  "scraped_at": "2026-10-24T18:54:52.106752+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top3"
 }
