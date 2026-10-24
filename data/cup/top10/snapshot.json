@@ -111,15 +111,15 @@
       "last_price": 42,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 63,
-      "no_bid": 59,
+      "no_ask": 68,
+      "no_bid": 60,
       "open_interest": 370,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CAHO",
       "volume": 384,
       "volume_24h": 231,
-      "yes_ask": 41,
-      "yes_bid": 37
+      "yes_ask": 40,
+      "yes_bid": 32
     },
     "KXNASCARTOP10-YEL26-CAME": {
       "last_price": 15,
@@ -164,15 +164,15 @@
       "yes_bid": 31
     },
     "KXNASCARTOP10-YEL26-CHBU": {
-      "last_price": 0,
+      "last_price": 41,
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 72,
       "no_bid": 59,
-      "open_interest": 0,
+      "open_interest": 15,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-CHBU",
-      "volume": 0,
+      "volume": 15,
       "volume_24h": 0,
       "yes_ask": 41,
       "yes_bid": 28
@@ -210,13 +210,13 @@
       "liquidity": null,
       "name": "Cody Ware",
       "no_ask": 91,
-      "no_bid": 84,
+      "no_bid": 83,
       "open_interest": 367,
       "status": "active",
       "ticker": "KXNASCARTOP10-YEL26-COWA",
       "volume": 367,
       "volume_24h": 59,
-      "yes_ask": 16,
+      "yes_ask": 17,
       "yes_bid": 9
     },
     "KXNASCARTOP10-YEL26-COZI": {
@@ -405,7 +405,7 @@
       "last_price": 27,
       "liquidity": null,
       "name": "Riley Herbst",
-      "no_ask": 83,
+      "no_ask": 81,
       "no_bid": 73,
       "open_interest": 263,
       "status": "active",
@@ -413,7 +413,7 @@
       "volume": 263,
       "volume_24h": 15,
       "yes_ask": 27,
-      "yes_bid": 17
+      "yes_bid": 19
     },
     "KXNASCARTOP10-YEL26-RIST": {
       "last_price": 28,
@@ -447,7 +447,7 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 52,
+      "no_ask": 53,
       "no_bid": 46,
       "open_interest": 282,
       "status": "active",
@@ -455,7 +455,7 @@
       "volume": 282,
       "volume_24h": 149,
       "yes_ask": 54,
-      "yes_bid": 48
+      "yes_bid": 47
     },
     "KXNASCARTOP10-YEL26-RYPR": {
       "last_price": 32,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-24T15:25:15.970403+00:00",
+  "scraped_at": "2026-10-24T15:30:20.174116+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top10"
 }
