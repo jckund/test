@@ -346,18 +346,18 @@
       "yes_bid": 7
     },
     "KXNASCARTOP10-THEPG26-LASC": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Lavar Scott",
-      "no_ask": 97,
-      "no_bid": 82,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 90,
+      "open_interest": 320,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-LASC",
-      "volume": 0,
+      "volume": 320,
       "volume_24h": 0,
-      "yes_ask": 18,
-      "yes_bid": 3
+      "yes_ask": 10,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-THEPG26-LEHO": {
       "last_price": 30,
@@ -531,15 +531,15 @@
       "last_price": 45,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 69,
-      "no_bid": 57,
+      "no_ask": 68,
+      "no_bid": 55,
       "open_interest": 262,
       "status": "active",
       "ticker": "KXNASCARTOP10-THEPG26-SHCR",
       "volume": 264,
       "volume_24h": 64,
-      "yes_ask": 43,
-      "yes_bid": 31
+      "yes_ask": 45,
+      "yes_bid": 32
     },
     "KXNASCARTOP10-THEPG26-TAGR": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-24T16:13:44.466483+00:00",
+  "scraped_at": "2026-10-24T16:18:54.379766+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top10"
 }
