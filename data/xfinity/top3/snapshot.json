@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-AUHI",
       "volume": 461,
-      "volume_24h": 70,
+      "volume_24h": 46,
       "yes_ask": 42,
       "yes_bid": 37
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-CAKV",
       "volume": 152,
-      "volume_24h": 32,
+      "volume_24h": 152,
       "yes_ask": 20,
       "yes_bid": 12
     },
@@ -262,18 +262,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP3-THEPG26-JELO": {
-      "last_price": 33,
+      "last_price": 34,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 73,
-      "no_bid": 66,
-      "open_interest": 147,
+      "no_ask": 75,
+      "no_bid": 67,
+      "open_interest": 161,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-JELO",
-      "volume": 147,
-      "volume_24h": 147,
-      "yes_ask": 34,
-      "yes_bid": 27
+      "volume": 161,
+      "volume_24h": 135,
+      "yes_ask": 33,
+      "yes_bid": 25
     },
     "KXNASCARTOP3-THEPG26-JOBI": {
       "last_price": 0,
@@ -321,15 +321,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 84,
+      "no_ask": 83,
       "no_bid": 76,
-      "open_interest": 110,
+      "open_interest": 129,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-JUAL",
-      "volume": 110,
-      "volume_24h": 62,
+      "volume": 129,
+      "volume_24h": 77,
       "yes_ask": 24,
-      "yes_bid": 16
+      "yes_bid": 17
     },
     "KXNASCARTOP3-THEPG26-KYSI": {
       "last_price": 0,
@@ -430,18 +430,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-THEPG26-PARE": {
-      "last_price": 12,
+      "last_price": 8,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 92,
-      "open_interest": 1195,
+      "open_interest": 1496,
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-PARE",
-      "volume": 1195,
+      "volume": 1496,
       "volume_24h": 61,
       "yes_ask": 8,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARTOP3-THEPG26-PAST": {
       "last_price": 1,
@@ -579,13 +579,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-THEPG26-WISA",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 9,
       "yes_bid": 6
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-24T16:48:10.894331+00:00",
+  "scraped_at": "2026-10-24T16:53:11.155416+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-thepg26",
   "tier": "top3"
 }
