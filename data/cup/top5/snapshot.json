@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 96,
-      "no_bid": 79,
+      "no_bid": 80,
       "open_interest": 45,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-ALBO",
       "volume": 45,
       "volume_24h": 45,
-      "yes_ask": 21,
+      "yes_ask": 20,
       "yes_bid": 4
     },
     "KXNASCARTOP5-YEL26-AUCI": {
@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-AUDI",
       "volume": 14,
-      "volume_24h": 0,
+      "volume_24h": 14,
       "yes_ask": 18,
       "yes_bid": 2
     },
@@ -332,15 +332,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP5-YEL26-JOLO": {
-      "last_price": 0,
+      "last_price": 36,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 82,
       "no_bid": 65,
-      "open_interest": 0,
+      "open_interest": 5,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-JOLO",
-      "volume": 0,
+      "volume": 5,
       "volume_24h": 0,
       "yes_ask": 35,
       "yes_bid": 18
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-24T22:50:19.378625+00:00",
+  "scraped_at": "2026-10-24T22:55:16.155597+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top5"
 }
