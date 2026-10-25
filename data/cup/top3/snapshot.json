@@ -83,7 +83,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 93,
+      "no_ask": 94,
       "no_bid": 89,
       "open_interest": 0,
       "status": "active",
@@ -91,20 +91,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 7
+      "yes_bid": 6
     },
     "KXNASCARTOP3-YEL26-BUWA": {
       "last_price": 14,
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 94,
-      "no_bid": 87,
+      "no_bid": 86,
       "open_interest": 2305,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-BUWA",
       "volume": 2305,
       "volume_24h": 2199,
-      "yes_ask": 13,
+      "yes_ask": 14,
       "yes_bid": 6
     },
     "KXNASCARTOP3-YEL26-CAHO": {
@@ -181,7 +181,7 @@
       "last_price": 13,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 89,
+      "no_ask": 92,
       "no_bid": 86,
       "open_interest": 133,
       "status": "active",
@@ -189,7 +189,7 @@
       "volume": 133,
       "volume_24h": 64,
       "yes_ask": 14,
-      "yes_bid": 11
+      "yes_bid": 8
     },
     "KXNASCARTOP3-YEL26-COCU": {
       "last_price": 0,
@@ -337,10 +337,10 @@
       "name": "Joey Logano",
       "no_ask": 92,
       "no_bid": 78,
-      "open_interest": 376,
+      "open_interest": 408,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-JOLO",
-      "volume": 376,
+      "volume": 408,
       "volume_24h": 238,
       "yes_ask": 22,
       "yes_bid": 8
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-25T18:05:15.876766+00:00",
+  "scraped_at": "2026-10-25T18:10:17.423879+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top3"
 }
