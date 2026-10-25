@@ -1,8 +1,24 @@
 {
-  "captured_at": "2026-10-25T14:02:19Z",
+  "captured_at": "2026-10-25T15:30:04Z",
   "source": "BetOnline",
   "race": "Quaker State 400 Available at Walmart",
-  "winner": {},
+  "winner": {
+    "Chevrolet": {
+      "american": 130,
+      "implied": 0.43478260869565216,
+      "novig": 0.3890139576767222
+    },
+    "Ford": {
+      "american": 170,
+      "implied": 0.37037037037037035,
+      "novig": 0.3313822602431337
+    },
+    "Toyota": {
+      "american": 220,
+      "implied": 0.3125,
+      "novig": 0.2796037820801441
+    }
+  },
   "makes": {
     "Chevrolet": {
       "drivers": [
