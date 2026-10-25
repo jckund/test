@@ -24,15 +24,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-YEL26-ALBO": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 95,
       "no_bid": 93,
-      "open_interest": 0,
+      "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-ALBO",
-      "volume": 0,
+      "volume": 1,
       "volume_24h": 0,
       "yes_ask": 7,
       "yes_bid": 5
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-CAHO",
       "volume": 210,
-      "volume_24h": 141,
+      "volume_24h": 155,
       "yes_ask": 15,
       "yes_bid": 9
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-25T13:15:17.750291+00:00",
+  "scraped_at": "2026-10-25T13:35:16.172044+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top3"
 }
