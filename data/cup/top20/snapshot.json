@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-AUCI",
       "volume": 43,
-      "volume_24h": 0,
+      "volume_24h": 20,
       "yes_ask": 75,
       "yes_bid": 56
     },
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-AUHI",
       "volume": 204,
-      "volume_24h": 186,
+      "volume_24h": 202,
       "yes_ask": 64,
       "yes_bid": 48
     },
@@ -112,13 +112,13 @@
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 45,
-      "no_bid": 34,
+      "no_bid": 30,
       "open_interest": 29,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-CAHO",
       "volume": 30,
       "volume_24h": 29,
-      "yes_ask": 66,
+      "yes_ask": 70,
       "yes_bid": 55
     },
     "KXNASCARTOP20-YEL26-CAME": {
@@ -237,43 +237,43 @@
       "last_price": 8,
       "liquidity": null,
       "name": "Daniel Dye",
-      "no_ask": 81,
-      "no_bid": 66,
+      "no_ask": 85,
+      "no_bid": 65,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-DADY",
       "volume": 400,
       "volume_24h": 400,
-      "yes_ask": 34,
-      "yes_bid": 19
+      "yes_ask": 35,
+      "yes_bid": 15
     },
     "KXNASCARTOP20-YEL26-DASU": {
       "last_price": 63,
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 49,
-      "no_bid": 36,
+      "no_bid": 40,
       "open_interest": 45,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-DASU",
       "volume": 45,
       "volume_24h": 44,
-      "yes_ask": 64,
+      "yes_ask": 60,
       "yes_bid": 51
     },
     "KXNASCARTOP20-YEL26-DEHA": {
       "last_price": 75,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 45,
-      "no_bid": 26,
+      "no_ask": 44,
+      "no_bid": 27,
       "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-DEHA",
       "volume": 3,
       "volume_24h": 3,
-      "yes_ask": 74,
-      "yes_bid": 55
+      "yes_ask": 73,
+      "yes_bid": 56
     },
     "KXNASCARTOP20-YEL26-ERJO": {
       "last_price": 58,
@@ -419,15 +419,15 @@
       "last_price": 64,
       "liquidity": null,
       "name": "Ricky Stenhouse Jr.",
-      "no_ask": 49,
-      "no_bid": 35,
+      "no_ask": 48,
+      "no_bid": 37,
       "open_interest": 90,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-RIST",
       "volume": 90,
       "volume_24h": 90,
-      "yes_ask": 65,
-      "yes_bid": 51
+      "yes_ask": 63,
+      "yes_bid": 52
     },
     "KXNASCARTOP20-YEL26-ROCH": {
       "last_price": 0,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-RYPR",
       "volume": 63,
-      "volume_24h": 4,
+      "volume_24h": 60,
       "yes_ask": 62,
       "yes_bid": 46
     },
@@ -489,7 +489,7 @@
       "last_price": 53,
       "liquidity": null,
       "name": "Todd Gilliland",
-      "no_ask": 45,
+      "no_ask": 44,
       "no_bid": 38,
       "open_interest": 20,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 20,
       "volume_24h": 20,
       "yes_ask": 62,
-      "yes_bid": 55
+      "yes_bid": 56
     },
     "KXNASCARTOP20-YEL26-TYDI": {
       "last_price": 54,
@@ -560,18 +560,18 @@
       "liquidity": null,
       "name": "Zane Smith",
       "no_ask": 50,
-      "no_bid": 37,
+      "no_bid": 36,
       "open_interest": 118,
       "status": "active",
       "ticker": "KXNASCARTOP20-YEL26-ZASM",
       "volume": 118,
       "volume_24h": 84,
-      "yes_ask": 63,
+      "yes_ask": 64,
       "yes_bid": 50
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-25T17:40:18.678155+00:00",
+  "scraped_at": "2026-10-25T17:45:18.128906+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top20"
 }
