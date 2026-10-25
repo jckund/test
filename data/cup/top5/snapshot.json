@@ -66,24 +66,24 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-YEL26-AUHI": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 94,
-      "no_bid": 91,
-      "open_interest": 0,
+      "no_bid": 90,
+      "open_interest": 52,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-AUHI",
-      "volume": 0,
+      "volume": 52,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 6
     },
     "KXNASCARTOP5-YEL26-BRKE": {
       "last_price": 21,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 84,
+      "no_ask": 85,
       "no_bid": 80,
       "open_interest": 77,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 77,
       "volume_24h": 9,
       "yes_ask": 20,
-      "yes_bid": 16
+      "yes_bid": 15
     },
     "KXNASCARTOP5-YEL26-BUWA": {
       "last_price": 22,
@@ -155,11 +155,11 @@
       "name": "Chase Briscoe",
       "no_ask": 79,
       "no_bid": 72,
-      "open_interest": 160,
+      "open_interest": 163,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-CHBR",
-      "volume": 160,
-      "volume_24h": 77,
+      "volume": 163,
+      "volume_24h": 87,
       "yes_ask": 28,
       "yes_bid": 21
     },
@@ -206,15 +206,15 @@
       "yes_bid": 1
     },
     "KXNASCARTOP5-YEL26-COWA": {
-      "last_price": 0,
+      "last_price": 4,
       "liquidity": null,
       "name": "Cody Ware",
       "no_ask": 99,
       "no_bid": 96,
-      "open_interest": 0,
+      "open_interest": 66,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-COWA",
-      "volume": 0,
+      "volume": 66,
       "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 1
@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Connor Zilisch",
       "no_ask": 95,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 31,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-COZI",
       "volume": 31,
       "volume_24h": 28,
-      "yes_ask": 10,
+      "yes_ask": 9,
       "yes_bid": 5
     },
     "KXNASCARTOP5-YEL26-DADY": {
@@ -267,10 +267,10 @@
       "name": "Denny Hamlin",
       "no_ask": 81,
       "no_bid": 78,
-      "open_interest": 108,
+      "open_interest": 113,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-DEHA",
-      "volume": 136,
+      "volume": 141,
       "volume_24h": 74,
       "yes_ask": 22,
       "yes_bid": 19
@@ -449,11 +449,11 @@
       "name": "Ryan Blaney",
       "no_ask": 71,
       "no_bid": 70,
-      "open_interest": 275,
+      "open_interest": 278,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-RYBL",
-      "volume": 296,
-      "volume_24h": 87,
+      "volume": 299,
+      "volume_24h": 96,
       "yes_ask": 30,
       "yes_bid": 29
     },
@@ -472,17 +472,17 @@
       "yes_bid": 5
     },
     "KXNASCARTOP5-YEL26-SHVA": {
-      "last_price": 10,
+      "last_price": 9,
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 95,
-      "no_bid": 91,
-      "open_interest": 119,
+      "no_bid": 90,
+      "open_interest": 137,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-SHVA",
-      "volume": 119,
+      "volume": 137,
       "volume_24h": 119,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 5
     },
     "KXNASCARTOP5-YEL26-TOGI": {
@@ -537,7 +537,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-TYRE",
       "volume": 175,
-      "volume_24h": 56,
+      "volume_24h": 70,
       "yes_ask": 20,
       "yes_bid": 17
     },
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-25T15:20:17.874343+00:00",
+  "scraped_at": "2026-10-25T15:25:20.057455+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top5"
 }
