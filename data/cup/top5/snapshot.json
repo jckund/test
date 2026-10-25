@@ -98,13 +98,13 @@
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 83,
-      "no_bid": 77,
+      "no_bid": 78,
       "open_interest": 26,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-BUWA",
       "volume": 26,
       "volume_24h": 4,
-      "yes_ask": 23,
+      "yes_ask": 22,
       "yes_bid": 17
     },
     "KXNASCARTOP5-YEL26-CAHO": {
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 83,
       "no_bid": 78,
-      "open_interest": 92,
+      "open_interest": 101,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-CAHO",
-      "volume": 92,
+      "volume": 101,
       "volume_24h": 82,
       "yes_ask": 22,
       "yes_bid": 17
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 79,
-      "no_bid": 71,
-      "open_interest": 140,
+      "no_bid": 72,
+      "open_interest": 146,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-CHBR",
-      "volume": 140,
+      "volume": 146,
       "volume_24h": 67,
-      "yes_ask": 29,
+      "yes_ask": 28,
       "yes_bid": 21
     },
     "KXNASCARTOP5-YEL26-CHBU": {
@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Cole Custer",
       "no_ask": 99,
-      "no_bid": 94,
+      "no_bid": 93,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-COCU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 6,
+      "yes_ask": 7,
       "yes_bid": 1
     },
     "KXNASCARTOP5-YEL26-COWA": {
@@ -265,15 +265,15 @@
       "last_price": 23,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 83,
-      "no_bid": 79,
+      "no_ask": 82,
+      "no_bid": 78,
       "open_interest": 108,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-DEHA",
       "volume": 136,
       "volume_24h": 74,
-      "yes_ask": 21,
-      "yes_bid": 17
+      "yes_ask": 22,
+      "yes_bid": 18
     },
     "KXNASCARTOP5-YEL26-ERJO": {
       "last_price": 10,
@@ -304,17 +304,17 @@
       "yes_bid": 1
     },
     "KXNASCARTOP5-YEL26-JOBE": {
-      "last_price": 0,
+      "last_price": 15,
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 92,
-      "no_bid": 88,
-      "open_interest": 0,
+      "no_bid": 85,
+      "open_interest": 303,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-JOBE",
-      "volume": 0,
+      "volume": 303,
       "volume_24h": 0,
-      "yes_ask": 12,
+      "yes_ask": 15,
       "yes_bid": 8
     },
     "KXNASCARTOP5-YEL26-JOGA": {
@@ -444,18 +444,18 @@
       "yes_bid": 10
     },
     "KXNASCARTOP5-YEL26-RYBL": {
-      "last_price": 31,
+      "last_price": 30,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 73,
+      "no_ask": 72,
       "no_bid": 70,
-      "open_interest": 262,
+      "open_interest": 265,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-RYBL",
-      "volume": 283,
+      "volume": 287,
       "volume_24h": 83,
       "yes_ask": 30,
-      "yes_bid": 27
+      "yes_bid": 28
     },
     "KXNASCARTOP5-YEL26-RYPR": {
       "last_price": 15,
@@ -472,17 +472,17 @@
       "yes_bid": 6
     },
     "KXNASCARTOP5-YEL26-SHVA": {
-      "last_price": 0,
+      "last_price": 9,
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 96,
-      "no_bid": 91,
-      "open_interest": 0,
+      "no_bid": 90,
+      "open_interest": 21,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-SHVA",
-      "volume": 0,
+      "volume": 21,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 4
     },
     "KXNASCARTOP5-YEL26-TOGI": {
@@ -533,10 +533,10 @@
       "name": "Tyler Reddick",
       "no_ask": 84,
       "no_bid": 80,
-      "open_interest": 113,
+      "open_interest": 118,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-TYRE",
-      "volume": 113,
+      "volume": 118,
       "volume_24h": 8,
       "yes_ask": 20,
       "yes_bid": 16
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-25T14:15:20.301825+00:00",
+  "scraped_at": "2026-10-25T14:20:23.669058+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top5"
 }
