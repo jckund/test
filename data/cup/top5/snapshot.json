@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-AUCI",
       "volume": 133,
-      "volume_24h": 100,
+      "volume_24h": 133,
       "yes_ask": 20,
       "yes_bid": 16
     },
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-AUHI",
       "volume": 156,
-      "volume_24h": 52,
+      "volume_24h": 156,
       "yes_ask": 9,
       "yes_bid": 6
     },
@@ -139,15 +139,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 82,
-      "no_bid": 77,
-      "open_interest": 54,
+      "no_ask": 81,
+      "no_bid": 76,
+      "open_interest": 254,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-CHBE",
-      "volume": 54,
+      "volume": 254,
       "volume_24h": 51,
-      "yes_ask": 23,
-      "yes_bid": 18
+      "yes_ask": 24,
+      "yes_bid": 19
     },
     "KXNASCARTOP5-YEL26-CHBR": {
       "last_price": 28,
@@ -337,11 +337,11 @@
       "name": "Joey Logano",
       "no_ask": 77,
       "no_bid": 70,
-      "open_interest": 104,
+      "open_interest": 126,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-JOLO",
-      "volume": 104,
-      "volume_24h": 104,
+      "volume": 126,
+      "volume_24h": 126,
       "yes_ask": 30,
       "yes_bid": 23
     },
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Noah Gragson",
       "no_ask": 97,
-      "no_bid": 94,
+      "no_bid": 93,
       "open_interest": 134,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-NOGR",
       "volume": 134,
       "volume_24h": 134,
-      "yes_ask": 6,
+      "yes_ask": 7,
       "yes_bid": 3
     },
     "KXNASCARTOP5-YEL26-RIHE": {
@@ -449,11 +449,11 @@
       "name": "Ryan Blaney",
       "no_ask": 72,
       "no_bid": 70,
-      "open_interest": 284,
+      "open_interest": 307,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-RYBL",
-      "volume": 306,
-      "volume_24h": 106,
+      "volume": 328,
+      "volume_24h": 128,
       "yes_ask": 30,
       "yes_bid": 28
     },
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Ty Dillon",
       "no_ask": 99,
-      "no_bid": 96,
+      "no_bid": 95,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-YEL26-TYDI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 4,
+      "yes_ask": 5,
       "yes_bid": 1
     },
     "KXNASCARTOP5-YEL26-TYGI": {
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-25T15:50:20.388851+00:00",
+  "scraped_at": "2026-10-25T15:55:18.093388+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top5"
 }
