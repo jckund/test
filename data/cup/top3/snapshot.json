@@ -28,25 +28,25 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 95,
-      "no_bid": 93,
+      "no_bid": 94,
       "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-ALBO",
       "volume": 28,
       "volume_24h": 28,
-      "yes_ask": 7,
+      "yes_ask": 6,
       "yes_bid": 5
     },
     "KXNASCARTOP3-YEL26-AUCI": {
-      "last_price": 12,
+      "last_price": 11,
       "liquidity": null,
       "name": "Austin Cindric",
       "no_ask": 92,
       "no_bid": 88,
-      "open_interest": 58,
+      "open_interest": 148,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-AUCI",
-      "volume": 58,
+      "volume": 148,
       "volume_24h": 53,
       "yes_ask": 12,
       "yes_bid": 8
@@ -84,41 +84,41 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 93,
-      "no_bid": 88,
+      "no_bid": 89,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-BRKE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 12,
+      "yes_ask": 11,
       "yes_bid": 7
     },
     "KXNASCARTOP3-YEL26-BUWA": {
       "last_price": 18,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 92,
-      "no_bid": 87,
+      "no_ask": 94,
+      "no_bid": 88,
       "open_interest": 167,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-BUWA",
       "volume": 167,
       "volume_24h": 61,
-      "yes_ask": 13,
-      "yes_bid": 8
+      "yes_ask": 12,
+      "yes_bid": 6
     },
     "KXNASCARTOP3-YEL26-CAHO": {
       "last_price": 14,
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 90,
-      "no_bid": 85,
+      "no_bid": 86,
       "open_interest": 210,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-CAHO",
       "volume": 210,
       "volume_24h": 155,
-      "yes_ask": 15,
+      "yes_ask": 14,
       "yes_bid": 10
     },
     "KXNASCARTOP3-YEL26-CAME": {
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 97,
-      "no_bid": 93,
+      "no_bid": 92,
       "open_interest": 60,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-JOBE",
       "volume": 60,
       "volume_24h": 53,
-      "yes_ask": 7,
+      "yes_ask": 8,
       "yes_bid": 3
     },
     "KXNASCARTOP3-YEL26-JOGA": {
@@ -447,7 +447,7 @@
       "last_price": 22,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 82,
+      "no_ask": 81,
       "no_bid": 78,
       "open_interest": 579,
       "status": "active",
@@ -455,7 +455,7 @@
       "volume": 616,
       "volume_24h": 320,
       "yes_ask": 22,
-      "yes_bid": 18
+      "yes_bid": 19
     },
     "KXNASCARTOP3-YEL26-RYPR": {
       "last_price": 0,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-25T15:00:22.150444+00:00",
+  "scraped_at": "2026-10-25T15:05:16.535698+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top3"
 }
