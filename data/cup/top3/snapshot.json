@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-CHEL",
       "volume": 69,
-      "volume_24h": 69,
+      "volume_24h": 24,
       "yes_ask": 23,
       "yes_bid": 6
     },
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-KYLA",
       "volume": 76,
-      "volume_24h": 76,
+      "volume_24h": 31,
       "yes_ask": 25,
       "yes_bid": 10
     },
@@ -545,15 +545,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 93,
-      "no_bid": 78,
+      "no_ask": 92,
+      "no_bid": 76,
       "open_interest": 59,
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-WIBY",
       "volume": 59,
-      "volume_24h": 59,
-      "yes_ask": 22,
-      "yes_bid": 7
+      "volume_24h": 12,
+      "yes_ask": 24,
+      "yes_bid": 8
     },
     "KXNASCARTOP3-YEL26-ZASM": {
       "last_price": 0,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-25T02:06:44.451857+00:00",
+  "scraped_at": "2026-10-25T02:15:16.021497+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top3"
 }
