@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-YEL26-ALBO",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 7,
       "yes_bid": 5
     },
@@ -97,7 +97,7 @@
       "last_price": 18,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 92,
+      "no_ask": 93,
       "no_bid": 86,
       "open_interest": 167,
       "status": "active",
@@ -105,13 +105,13 @@
       "volume": 167,
       "volume_24h": 61,
       "yes_ask": 14,
-      "yes_bid": 8
+      "yes_bid": 7
     },
     "KXNASCARTOP3-YEL26-CAHO": {
       "last_price": 14,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 91,
+      "no_ask": 90,
       "no_bid": 85,
       "open_interest": 210,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 210,
       "volume_24h": 155,
       "yes_ask": 15,
-      "yes_bid": 9
+      "yes_bid": 10
     },
     "KXNASCARTOP3-YEL26-CAME": {
       "last_price": 0,
@@ -363,7 +363,7 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 91,
+      "no_ask": 89,
       "no_bid": 85,
       "open_interest": 78,
       "status": "active",
@@ -371,7 +371,7 @@
       "volume": 78,
       "volume_24h": 33,
       "yes_ask": 15,
-      "yes_bid": 9
+      "yes_bid": 11
     },
     "KXNASCARTOP3-YEL26-MIMC": {
       "last_price": 0,
@@ -571,7 +571,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-25T13:40:19.658451+00:00",
+  "scraped_at": "2026-10-25T13:45:17.872041+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
   "tier": "top3"
 }
