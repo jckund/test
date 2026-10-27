@@ -55,15 +55,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Austin Dillon",
-      "no_ask": 62,
+      "no_ask": 61,
       "no_bid": 52,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-AUDI",
       "volume": 400,
-      "volume_24h": 200,
+      "volume_24h": 400,
       "yes_ask": 48,
-      "yes_bid": 38
+      "yes_bid": 39
     },
     "KXNASCARTOP20-XFIN26-AUHI": {
       "last_price": 0,
@@ -248,18 +248,18 @@
       "yes_bid": 84
     },
     "KXNASCARTOP20-XFIN26-ERJO": {
-      "last_price": 0,
+      "last_price": 52,
       "liquidity": null,
       "name": "Erik Jones",
-      "no_ask": 67,
-      "no_bid": 59,
-      "open_interest": 0,
+      "no_ask": 62,
+      "no_bid": 52,
+      "open_interest": 227,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-ERJO",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 41,
-      "yes_bid": 33
+      "volume": 227,
+      "volume_24h": 227,
+      "yes_ask": 48,
+      "yes_bid": 38
     },
     "KXNASCARTOP20-XFIN26-JOBE": {
       "last_price": 0,
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 59,
-      "no_bid": 51,
+      "no_bid": 50,
       "open_interest": 419,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-TOGI",
       "volume": 419,
       "volume_24h": 419,
-      "yes_ask": 49,
+      "yes_ask": 50,
       "yes_bid": 41
     },
     "KXNASCARTOP20-XFIN26-TYDI": {
@@ -517,7 +517,7 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 70,
+      "no_ask": 71,
       "no_bid": 63,
       "open_interest": 200,
       "status": "active",
@@ -525,11 +525,11 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 37,
-      "yes_bid": 30
+      "yes_bid": 29
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-27T16:46:35.852323+00:00",
+  "scraped_at": "2026-10-27T16:52:42.119904+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
