@@ -71,24 +71,23 @@ WINNER_SERIES = "KXNASCARRACE"
 # repointed each kickoff like the others; when it isn't running a race, drop
 # or comment out the entry so a stale matcher can't grab the wrong event.
 SERIES = [
-    # Talladega weekend (kickoff 2026-10-20).
+    # Martinsville weekend (kickoff 2026-10-27).
     #
-    # Cup: YellaWood 500. Match "yellawood" only — not the track name, which
-    # the weekend's races share, and not "500", which is generic.
-    {"key": "cup", "label": "NASCAR", "matchers": ["yellawood"],
+    # Cup: Xfinity 500. Match "xfinity 500" — never bare "xfinity", which is the
+    # support series' own name. Cup claims first, so the catch-all below can't
+    # take it.
+    {"key": "cup", "label": "NASCAR", "matchers": ["xfinity 500"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
     # Truck: OFF (commented out 2026-10-23 once the Love's RV Stop 225 went
     # green). To re-enable for a future Truck race, uncomment and re-point the
     # matcher at that race's name.
     # {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
     #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity (O'Reilly): OFF (commented out 2026-10-24 once the Progress Group
-    # 250 went green; data/xfinity/ dropped). RESTORE at the next kickoff:
-    # uncomment and re-point the matcher — this entry is also the catch-all
-    # (`default`), and with it commented out an unmatched race isn't tracked at
-    # all. See CLAUDE.md "Clearing a support race mid-weekend".
-    # {"key": "xfinity", "label": "Xfinity", "matchers": ["progress group"], "default": True,
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Xfinity (O'Reilly): restored 2026-10-27 as the catch-all. Race name not
+    # known yet, so no matcher — it claims whatever non-Cup race is open. Add the
+    # race name here once known so it can't grab a Truck race instead.
+    {"key": "xfinity", "label": "Xfinity", "matchers": [], "default": True,
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
