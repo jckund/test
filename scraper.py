@@ -78,14 +78,15 @@ SERIES = [
     # take it.
     {"key": "cup", "label": "NASCAR", "matchers": ["xfinity 500"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: OFF (commented out 2026-10-23 once the Love's RV Stop 225 went
-    # green). To re-enable for a future Truck race, uncomment and re-point the
-    # matcher at that race's name.
-    # {"key": "truck", "label": "Truck", "matchers": ["rv stop"],
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: Black's Tire 200 (re-enabled 2026-10-27). Apostrophe variants
+    # covered. Comment back out (and drop data/truck/ + its series.json entry)
+    # once it has run.
+    {"key": "truck", "label": "Truck", "matchers": ["black's tire", "black\u2019s tire", "blacks tire"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     # Xfinity (O'Reilly): restored 2026-10-27 as the catch-all. Race name not
     # known yet, so no matcher — it claims whatever non-Cup race is open. Add the
-    # race name here once known so it can't grab a Truck race instead.
+    # race name here once known so it can't grab a
+    # following week's race instead.
     {"key": "xfinity", "label": "Xfinity", "matchers": [], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
