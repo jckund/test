@@ -168,13 +168,13 @@
       "liquidity": null,
       "name": "Gavan Boschele",
       "no_ask": 100,
-      "no_bid": 99,
+      "no_bid": 98,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-GABO",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-GIRU": {
@@ -321,15 +321,15 @@
       "last_price": 16,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 87,
+      "no_ask": 86,
       "no_bid": 84,
       "open_interest": 949,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
       "volume": 949,
-      "volume_24h": 620,
+      "volume_24h": 949,
       "yes_ask": 16,
-      "yes_bid": 13
+      "yes_bid": 14
     },
     "KXNASCARRACE-BLAC26-MITY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-27T16:36:48.156939+00:00",
+  "scraped_at": "2026-10-27T16:43:28.536038+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
