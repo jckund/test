@@ -83,11 +83,9 @@ SERIES = [
     # once it has run.
     {"key": "truck", "label": "Truck", "matchers": ["black's tire", "black\u2019s tire", "blacks tire"],
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity (O'Reilly): restored 2026-10-27 as the catch-all. Race name not
-    # known yet, so no matcher — it claims whatever non-Cup race is open. Add the
-    # race name here once known so it can't grab a
-    # following week's race instead.
-    {"key": "xfinity", "label": "Xfinity", "matchers": [], "default": True,
+    # Xfinity (O'Reilly): National Debt Relief 250 (restored 2026-10-27). Also
+    # the catch-all (`default`) for any leftover race.
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["national debt relief"], "default": True,
      "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
