@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-25T19:08:04.126892+00:00",
+  "updated_at": "2026-10-27T14:36:03.138333+00:00",
   "series": [
     {
       "key": "cup",
       "label": "NASCAR",
-      "race_title": "YellaWood 500 ('26)",
+      "race_title": "Xfinity 500 ('26)",
       "full": true,
-      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-yel26",
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
       "tiers": [
         "winner",
         "top3",
@@ -14,7 +14,20 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-10-25T19:08:04.126583+00:00"
+      "scraped_at": "2026-10-27T14:34:45.934791+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "Black\u2019s Tire 200 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-27T14:36:03.138301+00:00"
     }
   ]
 }
