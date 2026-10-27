@@ -83,15 +83,15 @@
       "last_price": 62,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 41,
-      "no_bid": 32,
+      "no_ask": 40,
+      "no_bid": 33,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-CHSM",
       "volume": 200,
-      "volume_24h": 0,
-      "yes_ask": 68,
-      "yes_bid": 59
+      "volume_24h": 200,
+      "yes_ask": 67,
+      "yes_bid": 60
     },
     "KXNASCARTOP10-BLAC26-COBU": {
       "last_price": 0,
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-GIRU",
       "volume": 262,
-      "volume_24h": 62,
+      "volume_24h": 262,
       "yes_ask": 52,
       "yes_bid": 45
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-LALE",
       "volume": 810,
-      "volume_24h": 610,
+      "volume_24h": 810,
       "yes_ask": 32,
       "yes_bid": 25
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TRMC",
       "volume": 841,
-      "volume_24h": 541,
+      "volume_24h": 841,
       "yes_ask": 43,
       "yes_bid": 37
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T20:51:02.643625+00:00",
+  "scraped_at": "2026-10-27T21:02:46.277321+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
