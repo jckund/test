@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-ALBO",
       "volume": 1267,
-      "volume_24h": 799,
+      "volume_24h": 1267,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -52,15 +52,15 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-XFIN26-AUDI": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUDI",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -122,15 +122,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-XFIN26-CHBE": {
-      "last_price": 7,
+      "last_price": 6,
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 4162,
+      "open_interest": 4193,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBE",
-      "volume": 4162,
+      "volume": 4193,
       "volume_24h": 4162,
       "yes_ask": 6,
       "yes_bid": 5
@@ -225,10 +225,10 @@
       "name": "Daniel Suarez",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 612,
+      "open_interest": 706,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DASU",
-      "volume": 612,
+      "volume": 706,
       "volume_24h": 612,
       "yes_ask": 1,
       "yes_bid": 0
@@ -248,15 +248,15 @@
       "yes_bid": 15
     },
     "KXNASCARRACE-XFIN26-ERJO": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Erik Jones",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-ERJO",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -332,15 +332,15 @@
       "yes_bid": 9
     },
     "KXNASCARRACE-XFIN26-MIMC": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Michael McDowell",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-MIMC",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -491,24 +491,24 @@
       "name": "Tyler Reddick",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 1516,
+      "open_interest": 1578,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYRE",
-      "volume": 1516,
-      "volume_24h": 1204,
+      "volume": 1578,
+      "volume_24h": 1516,
       "yes_ask": 3,
       "yes_bid": 2
     },
     "KXNASCARRACE-XFIN26-WIBY": {
-      "last_price": 7,
+      "last_price": 6,
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 2557,
+      "open_interest": 2589,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-WIBY",
-      "volume": 2557,
+      "volume": 2589,
       "volume_24h": 2557,
       "yes_ask": 6,
       "yes_bid": 5
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-27T16:58:21.885155+00:00",
+  "scraped_at": "2026-10-27T17:11:10.523003+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
