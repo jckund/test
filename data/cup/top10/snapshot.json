@@ -27,7 +27,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 79,
+      "no_ask": 80,
       "no_bid": 75,
       "open_interest": 0,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 25,
-      "yes_bid": 21
+      "yes_bid": 20
     },
     "KXNASCARTOP10-XFIN26-AUCI": {
       "last_price": 42,
@@ -265,29 +265,29 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 67,
-      "no_bid": 62,
+      "no_ask": 65,
+      "no_bid": 61,
       "open_interest": 1119,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOBE",
       "volume": 1131,
       "volume_24h": 1131,
-      "yes_ask": 38,
-      "yes_bid": 33
+      "yes_ask": 39,
+      "yes_bid": 35
     },
     "KXNASCARTOP10-XFIN26-JOBI": {
       "last_price": 2,
       "liquidity": null,
       "name": "Josh Bilicki",
-      "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 41,
+      "no_ask": 99,
+      "no_bid": 95,
+      "open_interest": 1250,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOBI",
-      "volume": 41,
+      "volume": 1250,
       "volume_24h": 41,
-      "yes_ask": 1,
-      "yes_bid": 0
+      "yes_ask": 5,
+      "yes_bid": 1
     },
     "KXNASCARTOP10-XFIN26-JOLO": {
       "last_price": 64,
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 54,
-      "no_bid": 51,
+      "no_bid": 50,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYGI",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 49,
+      "yes_ask": 50,
       "yes_bid": 46
     },
     "KXNASCARTOP10-XFIN26-TYRE": {
@@ -503,7 +503,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 42,
+      "no_ask": 43,
       "no_bid": 40,
       "open_interest": 0,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 60,
-      "yes_bid": 58
+      "yes_bid": 57
     },
     "KXNASCARTOP10-XFIN26-ZASM": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T19:43:05.904302+00:00",
+  "scraped_at": "2026-10-27T19:48:42.174865+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
