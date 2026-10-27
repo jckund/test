@@ -55,15 +55,15 @@
       "last_price": 3,
       "liquidity": null,
       "name": "Baltazar Leguizamon",
-      "no_ask": 97,
-      "no_bid": 90,
-      "open_interest": 400,
+      "no_ask": 100,
+      "no_bid": 95,
+      "open_interest": 604,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BALE",
-      "volume": 400,
-      "volume_24h": 400,
-      "yes_ask": 10,
-      "yes_bid": 3
+      "volume": 604,
+      "volume_24h": 604,
+      "yes_ask": 5,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-BLPE": {
       "last_price": 0,
@@ -83,7 +83,7 @@
       "last_price": 52,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 46,
+      "no_ask": 49,
       "no_bid": 41,
       "open_interest": 475,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 475,
       "volume_24h": 475,
       "yes_ask": 59,
-      "yes_bid": 54
+      "yes_bid": 51
     },
     "KXNASCARTOP10-NATI26-BRJO": {
       "last_price": 52,
@@ -136,18 +136,18 @@
       "yes_bid": 59
     },
     "KXNASCARTOP10-NATI26-CAWA": {
-      "last_price": 5,
+      "last_price": 2,
       "liquidity": null,
       "name": "Carson Ware",
-      "no_ask": 98,
-      "no_bid": 96,
-      "open_interest": 200,
+      "no_ask": 100,
+      "no_bid": 97,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-CAWA",
-      "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 4,
-      "yes_bid": 2
+      "volume": 400,
+      "volume_24h": 400,
+      "yes_ask": 3,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-CODA": {
       "last_price": 0,
@@ -280,13 +280,13 @@
       "liquidity": null,
       "name": "Josh Bilicki",
       "no_ask": 96,
-      "no_bid": 91,
+      "no_bid": 88,
       "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JOBI",
       "volume": 400,
       "volume_24h": 400,
-      "yes_ask": 9,
+      "yes_ask": 12,
       "yes_bid": 4
     },
     "KXNASCARTOP10-NATI26-JOGA": {
@@ -307,15 +307,15 @@
       "last_price": 76,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 31,
-      "no_bid": 26,
+      "no_ask": 34,
+      "no_bid": 27,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JUAL",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 74,
-      "yes_bid": 69
+      "yes_ask": 73,
+      "yes_bid": 66
     },
     "KXNASCARTOP10-NATI26-JUCA": {
       "last_price": 0,
@@ -405,15 +405,15 @@
       "last_price": 29,
       "liquidity": null,
       "name": "Parker Retzlaff",
-      "no_ask": 71,
-      "no_bid": 63,
+      "no_ask": 72,
+      "no_bid": 64,
       "open_interest": 402,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-PARE",
       "volume": 402,
       "volume_24h": 402,
-      "yes_ask": 37,
-      "yes_bid": 29
+      "yes_ask": 36,
+      "yes_bid": 28
     },
     "KXNASCARTOP10-NATI26-PAST": {
       "last_price": 0,
@@ -448,20 +448,20 @@
       "liquidity": null,
       "name": "Ryan Ellis",
       "no_ask": 99,
-      "no_bid": 91,
+      "no_bid": 90,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-RYEL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 10,
       "yes_bid": 1
     },
     "KXNASCARTOP10-NATI26-RYSI": {
       "last_price": 28,
       "liquidity": null,
       "name": "Ryan Sieg",
-      "no_ask": 73,
+      "no_ask": 72,
       "no_bid": 67,
       "open_interest": 400,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 400,
       "volume_24h": 400,
       "yes_ask": 33,
-      "yes_bid": 27
+      "yes_bid": 28
     },
     "KXNASCARTOP10-NATI26-SAMA": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T17:39:29.714074+00:00",
+  "scraped_at": "2026-10-27T17:45:29.229055+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
