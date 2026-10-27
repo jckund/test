@@ -69,7 +69,7 @@
       "last_price": 11,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 91,
+      "no_ask": 90,
       "no_bid": 89,
       "open_interest": 1516,
       "status": "active",
@@ -77,7 +77,7 @@
       "volume": 1516,
       "volume_24h": 1516,
       "yes_ask": 11,
-      "yes_bid": 9
+      "yes_bid": 10
     },
     "KXNASCARRACE-BLAC26-CHSM": {
       "last_price": 9,
@@ -178,17 +178,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-GIRU": {
-      "last_price": 3,
+      "last_price": 2,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
       "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 101,
+      "no_bid": 95,
+      "open_interest": 190,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-GIRU",
-      "volume": 101,
+      "volume": 190,
       "volume_24h": 101,
-      "yes_ask": 2,
+      "yes_ask": 5,
       "yes_bid": 1
     },
     "KXNASCARRACE-BLAC26-GREN": {
@@ -321,15 +321,15 @@
       "last_price": 14,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 87,
-      "no_bid": 84,
+      "no_ask": 86,
+      "no_bid": 83,
       "open_interest": 986,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
       "volume": 986,
       "volume_24h": 986,
-      "yes_ask": 16,
-      "yes_bid": 13
+      "yes_ask": 17,
+      "yes_bid": 14
     },
     "KXNASCARRACE-BLAC26-MITY": {
       "last_price": 0,
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 96,
-      "no_bid": 94,
+      "no_bid": 92,
       "open_interest": 606,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-TYMA",
       "volume": 1242,
       "volume_24h": 1242,
-      "yes_ask": 6,
+      "yes_ask": 8,
       "yes_bid": 4
     },
     "KXNASCARRACE-BLAC26-TYRE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-27T20:38:38.651192+00:00",
+  "scraped_at": "2026-10-27T20:44:41.241119+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
