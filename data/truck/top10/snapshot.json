@@ -234,18 +234,18 @@
       "yes_bid": 1
     },
     "KXNASCARTOP10-BLAC26-JUCA": {
-      "last_price": 4,
+      "last_price": 1,
       "liquidity": null,
       "name": "Justin Carroll",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 95,
-      "open_interest": 200,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-JUCA",
-      "volume": 200,
+      "volume": 400,
       "volume_24h": 200,
       "yes_ask": 5,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-JUHA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T18:07:49.725837+00:00",
+  "scraped_at": "2026-10-27T18:13:38.148529+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
