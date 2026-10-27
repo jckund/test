@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-DETH",
       "volume": 212,
-      "volume_24h": 12,
+      "volume_24h": 212,
       "yes_ask": 31,
       "yes_bid": 23
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JOBI",
       "volume": 604,
-      "volume_24h": 400,
+      "volume_24h": 604,
       "yes_ask": 5,
       "yes_bid": 0
     },
@@ -335,7 +335,7 @@
       "last_price": 8,
       "liquidity": null,
       "name": "Kyle Sieg",
-      "no_ask": 92,
+      "no_ask": 90,
       "no_bid": 85,
       "open_interest": 200,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 15,
-      "yes_bid": 8
+      "yes_bid": 10
     },
     "KXNASCARTOP10-NATI26-LASC": {
       "last_price": 0,
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-PAEM",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 6,
       "yes_bid": 0
     },
@@ -433,15 +433,15 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 71,
+      "no_ask": 70,
       "no_bid": 61,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-RACA",
       "volume": 200,
-      "volume_24h": 0,
+      "volume_24h": 200,
       "yes_ask": 39,
-      "yes_bid": 29
+      "yes_bid": 30
     },
     "KXNASCARTOP10-NATI26-RYEL": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T20:16:58.429627+00:00",
+  "scraped_at": "2026-10-27T20:28:51.153163+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
