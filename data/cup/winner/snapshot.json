@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUCI",
       "volume": 321,
-      "volume_24h": 275,
+      "volume_24h": 321,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -122,16 +122,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-XFIN26-CHBE": {
-      "last_price": 6,
+      "last_price": 7,
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 95,
       "no_bid": 93,
-      "open_interest": 4796,
+      "open_interest": 4797,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBE",
-      "volume": 4796,
-      "volume_24h": 4736,
+      "volume": 4797,
+      "volume_24h": 4737,
       "yes_ask": 7,
       "yes_bid": 5
     },
@@ -169,11 +169,11 @@
       "name": "Chase Elliott",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 5740,
+      "open_interest": 6740,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHEL",
-      "volume": 5740,
-      "volume_24h": 5708,
+      "volume": 6740,
+      "volume_24h": 6708,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -234,17 +234,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-DEHA": {
-      "last_price": 17,
+      "last_price": 16,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 85,
-      "no_bid": 83,
-      "open_interest": 6313,
+      "no_bid": 84,
+      "open_interest": 6314,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
-      "volume": 6371,
-      "volume_24h": 4572,
-      "yes_ask": 17,
+      "volume": 6372,
+      "volume_24h": 4573,
+      "yes_ask": 16,
       "yes_bid": 15
     },
     "KXNASCARRACE-XFIN26-ERJO": {
@@ -262,17 +262,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-JOBE": {
-      "last_price": 4,
+      "last_price": 3,
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 9523,
+      "no_bid": 96,
+      "open_interest": 9557,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-JOBE",
-      "volume": 9523,
-      "volume_24h": 9054,
-      "yes_ask": 3,
+      "volume": 9557,
+      "volume_24h": 9088,
+      "yes_ask": 4,
       "yes_bid": 2
     },
     "KXNASCARRACE-XFIN26-JOBI": {
@@ -421,11 +421,11 @@
       "name": "Ryan Preece",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 62,
+      "open_interest": 108,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYPR",
-      "volume": 62,
-      "volume_24h": 0,
+      "volume": 108,
+      "volume_24h": 46,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-27T23:08:23.045789+00:00",
+  "scraped_at": "2026-10-27T23:13:49.379471+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
