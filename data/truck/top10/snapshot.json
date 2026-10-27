@@ -98,13 +98,13 @@
       "liquidity": null,
       "name": "Cole Butcher",
       "no_ask": 88,
-      "no_bid": 79,
+      "no_bid": 78,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-COBU",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 21,
+      "yes_ask": 22,
       "yes_bid": 12
     },
     "KXNASCARTOP10-BLAC26-COJO": {
@@ -220,18 +220,18 @@
       "yes_bid": 32
     },
     "KXNASCARTOP10-BLAC26-JORE": {
-      "last_price": 4,
+      "last_price": 1,
       "liquidity": null,
       "name": "Josh Reaume",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 95,
-      "open_interest": 200,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-JORE",
-      "volume": 200,
+      "volume": 400,
       "volume_24h": 200,
       "yes_ask": 5,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-JUCA": {
       "last_price": 1,
@@ -251,7 +251,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 73,
+      "no_ask": 74,
       "no_bid": 72,
       "open_interest": 0,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 28,
-      "yes_bid": 27
+      "yes_bid": 26
     },
     "KXNASCARTOP10-BLAC26-KAHO": {
       "last_price": 0,
@@ -461,15 +461,15 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 39,
-      "no_bid": 31,
+      "no_ask": 37,
+      "no_bid": 30,
       "open_interest": 35,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TYMA",
       "volume": 35,
       "volume_24h": 35,
-      "yes_ask": 69,
-      "yes_bid": 61
+      "yes_ask": 70,
+      "yes_bid": 63
     },
     "KXNASCARTOP10-BLAC26-TYRE": {
       "last_price": 15,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-27T18:25:07.846813+00:00",
+  "scraped_at": "2026-10-27T18:31:10.902023+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
