@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T14:40:22.079917+00:00",
+  "updated_at": "2026-10-27T14:46:30.941500+00:00",
   "series": [
     {
       "key": "cup",
@@ -14,11 +14,11 @@
         "top10",
         "top20"
       ],
-      "scraped_at": "2026-10-27T14:39:07.718162+00:00"
+      "scraped_at": "2026-10-27T14:43:44.096609+00:00"
     },
     {
-      "key": "xfinity",
-      "label": "Xfinity",
+      "key": "truck",
+      "label": "Truck",
       "race_title": "Black\u2019s Tire 200 ('26)",
       "full": false,
       "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
@@ -27,7 +27,20 @@
         "top3",
         "top10"
       ],
-      "scraped_at": "2026-10-27T14:40:22.079873+00:00"
+      "scraped_at": "2026-10-27T14:45:06.143820+00:00"
+    },
+    {
+      "key": "xfinity",
+      "label": "Xfinity",
+      "race_title": "National Debt Relief 250 ('26)",
+      "full": false,
+      "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
+      "tiers": [
+        "winner",
+        "top3",
+        "top10"
+      ],
+      "scraped_at": "2026-10-27T14:46:30.941473+00:00"
     }
   ]
 }
