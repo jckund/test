@@ -41,15 +41,15 @@
       "last_price": 22,
       "liquidity": null,
       "name": "Brenden Queen",
-      "no_ask": 92,
+      "no_ask": 91,
       "no_bid": 78,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-BRQU",
       "volume": 200,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 22,
-      "yes_bid": 8
+      "yes_bid": 9
     },
     "KXNASCARTOP10-BLAC26-CAFE": {
       "last_price": 6,
@@ -430,16 +430,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-TRMC": {
-      "last_price": 43,
+      "last_price": 51,
       "liquidity": null,
       "name": "Tristan McKee",
       "no_ask": 68,
       "no_bid": 50,
-      "open_interest": 841,
+      "open_interest": 918,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TRMC",
-      "volume": 841,
-      "volume_24h": 300,
+      "volume": 918,
+      "volume_24h": 377,
       "yes_ask": 50,
       "yes_bid": 32
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T02:11:50.114673+00:00",
+  "scraped_at": "2026-10-28T02:23:42.177423+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }

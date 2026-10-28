@@ -38,15 +38,15 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-BLAC26-BRQU": {
-      "last_price": 2,
+      "last_price": 1,
       "liquidity": null,
       "name": "Brenden Queen",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 50,
+      "open_interest": 399,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-BRQU",
-      "volume": 50,
+      "volume": 399,
       "volume_24h": 49,
       "yes_ask": 2,
       "yes_bid": 1
@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-CHEC",
       "volume": 1726,
-      "volume_24h": 1500,
+      "volume_24h": 1526,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -262,15 +262,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-KAHO": {
-      "last_price": 23,
+      "last_price": 21,
       "liquidity": null,
       "name": "Kaden Honeycutt",
       "no_ask": 81,
       "no_bid": 79,
-      "open_interest": 8524,
+      "open_interest": 8612,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-KAHO",
-      "volume": 8547,
+      "volume": 8635,
       "volume_24h": 8547,
       "yes_ask": 21,
       "yes_bid": 19
@@ -323,10 +323,10 @@
       "name": "Layne Riggs",
       "no_ask": 86,
       "no_bid": 82,
-      "open_interest": 3933,
+      "open_interest": 3983,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
-      "volume": 3933,
+      "volume": 3983,
       "volume_24h": 3933,
       "yes_ask": 18,
       "yes_bid": 14
@@ -360,18 +360,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-SASM": {
-      "last_price": 7,
+      "last_price": 4,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 98,
-      "no_bid": 96,
-      "open_interest": 2627,
+      "no_ask": 96,
+      "no_bid": 94,
+      "open_interest": 2761,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-SASM",
-      "volume": 2627,
-      "volume_24h": 2626,
-      "yes_ask": 4,
-      "yes_bid": 2
+      "volume": 2761,
+      "volume_24h": 2760,
+      "yes_ask": 6,
+      "yes_bid": 4
     },
     "KXNASCARRACE-BLAC26-SPBO": {
       "last_price": 0,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-TYMA",
       "volume": 1298,
-      "volume_24h": 1298,
+      "volume_24h": 1190,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -503,19 +503,19 @@
       "last_price": 2,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 99,
-      "no_bid": 98,
-      "open_interest": 751,
+      "no_ask": 98,
+      "no_bid": 97,
+      "open_interest": 1524,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-WISA",
-      "volume": 751,
-      "volume_24h": 750,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "volume": 1524,
+      "volume_24h": 1523,
+      "yes_ask": 3,
+      "yes_bid": 2
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-28T02:17:22.207417+00:00",
+  "scraped_at": "2026-10-28T02:23:09.328998+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
