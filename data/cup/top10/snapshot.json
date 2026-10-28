@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBU",
       "volume": 22,
-      "volume_24h": 22,
+      "volume_24h": 0,
       "yes_ask": 24,
       "yes_bid": 18
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 1780,
-      "volume_24h": 549,
+      "volume_24h": 518,
       "yes_ask": 35,
       "yes_bid": 31
     },
@@ -444,16 +444,16 @@
       "yes_bid": 18
     },
     "KXNASCARTOP10-XFIN26-TOGI": {
-      "last_price": 11,
+      "last_price": 10,
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 93,
       "no_bid": 90,
-      "open_interest": 1310,
+      "open_interest": 1498,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
-      "volume": 1345,
-      "volume_24h": 1091,
+      "volume": 1533,
+      "volume_24h": 1279,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -475,7 +475,7 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Ty Gibbs",
-      "no_ask": 48,
+      "no_ask": 49,
       "no_bid": 47,
       "open_interest": 562,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 562,
       "volume_24h": 360,
       "yes_ask": 53,
-      "yes_bid": 52
+      "yes_bid": 51
     },
     "KXNASCARTOP10-XFIN26-TYRE": {
       "last_price": 39,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T23:07:01.063514+00:00",
+  "scraped_at": "2026-10-28T23:12:21.782602+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
