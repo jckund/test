@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-BRQU",
       "volume": 399,
-      "volume_24h": 49,
+      "volume_24h": 398,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-CHSM",
       "volume": 1032,
-      "volume_24h": 932,
+      "volume_24h": 1032,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -173,23 +173,23 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-GABO",
       "volume": 1000,
-      "volume_24h": 0,
+      "volume_24h": 1000,
       "yes_ask": 2,
       "yes_bid": 1
     },
     "KXNASCARRACE-BLAC26-GIRU": {
-      "last_price": 2,
+      "last_price": 3,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 99,
-      "no_bid": 97,
-      "open_interest": 224,
+      "no_ask": 97,
+      "no_bid": 96,
+      "open_interest": 324,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-GIRU",
-      "volume": 224,
+      "volume": 324,
       "volume_24h": 223,
-      "yes_ask": 3,
-      "yes_bid": 1
+      "yes_ask": 4,
+      "yes_bid": 3
     },
     "KXNASCARRACE-BLAC26-GREN": {
       "last_price": 3,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-KAHO",
       "volume": 8835,
-      "volume_24h": 8547,
+      "volume_24h": 8835,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -321,15 +321,15 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 85,
+      "no_ask": 84,
       "no_bid": 81,
       "open_interest": 4130,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
       "volume": 4130,
-      "volume_24h": 3933,
+      "volume_24h": 4130,
       "yes_ask": 19,
-      "yes_bid": 15
+      "yes_bid": 16
     },
     "KXNASCARRACE-BLAC26-MITY": {
       "last_price": 0,
@@ -388,18 +388,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-STFR": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Stewart Friesen",
-      "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 0,
+      "no_ask": 99,
+      "no_bid": 98,
+      "open_interest": 49,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-STFR",
-      "volume": 0,
+      "volume": 49,
       "volume_24h": 0,
-      "yes_ask": 3,
-      "yes_bid": 2
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-BLAC26-TAGR": {
       "last_price": 6,
@@ -461,15 +461,15 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 741,
+      "no_ask": 93,
+      "no_bid": 92,
+      "open_interest": 796,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-TYMA",
-      "volume": 1377,
-      "volume_24h": 1190,
-      "yes_ask": 6,
-      "yes_bid": 5
+      "volume": 1432,
+      "volume_24h": 1268,
+      "yes_ask": 8,
+      "yes_bid": 7
     },
     "KXNASCARRACE-BLAC26-TYRE": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-28T02:31:01.809740+00:00",
+  "scraped_at": "2026-10-28T02:38:14.134183+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
