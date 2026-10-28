@@ -363,7 +363,7 @@
       "last_price": 65,
       "liquidity": null,
       "name": "Sammy Smith",
-      "no_ask": 51,
+      "no_ask": 50,
       "no_bid": 42,
       "open_interest": 449,
       "status": "active",
@@ -371,21 +371,21 @@
       "volume": 449,
       "volume_24h": 249,
       "yes_ask": 58,
-      "yes_bid": 49
+      "yes_bid": 50
     },
     "KXNASCARTOP10-BLAC26-SPBO": {
       "last_price": 3,
       "liquidity": null,
       "name": "Spencer Boyd",
-      "no_ask": 97,
-      "no_bid": 90,
-      "open_interest": 603,
+      "no_ask": 100,
+      "no_bid": 95,
+      "open_interest": 803,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-SPBO",
-      "volume": 603,
-      "volume_24h": 403,
-      "yes_ask": 10,
-      "yes_bid": 3
+      "volume": 803,
+      "volume_24h": 603,
+      "yes_ask": 5,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-STFR": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T03:29:42.829840+00:00",
+  "scraped_at": "2026-10-28T03:36:03.017437+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
