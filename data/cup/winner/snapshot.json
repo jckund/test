@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUCI",
       "volume": 465,
-      "volume_24h": 191,
+      "volume_24h": 256,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CAHO",
       "volume": 3587,
-      "volume_24h": 1394,
+      "volume_24h": 1675,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 86,
-      "no_bid": 85,
+      "no_bid": 84,
       "open_interest": 9314,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
       "volume": 9556,
       "volume_24h": 6021,
-      "yes_ask": 15,
+      "yes_ask": 16,
       "yes_bid": 14
     },
     "KXNASCARRACE-XFIN26-ERJO": {
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-JOLO": {
-      "last_price": 9,
+      "last_price": 11,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 91,
-      "no_bid": 90,
-      "open_interest": 41133,
+      "no_ask": 90,
+      "no_bid": 88,
+      "open_interest": 41201,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-JOLO",
-      "volume": 41185,
+      "volume": 41253,
       "volume_24h": 2917,
-      "yes_ask": 10,
-      "yes_bid": 9
+      "yes_ask": 12,
+      "yes_bid": 10
     },
     "KXNASCARRACE-XFIN26-JONE": {
       "last_price": 0,
@@ -323,11 +323,11 @@
       "name": "Kyle Larson",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 6243,
+      "open_interest": 6269,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
-      "volume": 6329,
-      "volume_24h": 3456,
+      "volume": 6355,
+      "volume_24h": 3672,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-28T15:10:38.470326+00:00",
+  "scraped_at": "2026-10-28T15:16:42.066661+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
