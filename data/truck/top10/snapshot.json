@@ -83,15 +83,15 @@
       "last_price": 62,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 43,
-      "no_bid": 38,
-      "open_interest": 200,
+      "no_ask": 38,
+      "no_bid": 32,
+      "open_interest": 400,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-CHSM",
-      "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 62,
-      "yes_bid": 57
+      "volume": 400,
+      "volume_24h": 400,
+      "yes_ask": 68,
+      "yes_bid": 62
     },
     "KXNASCARTOP10-BLAC26-COBU": {
       "last_price": 0,
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-SASM",
       "volume": 449,
-      "volume_24h": 249,
+      "volume_24h": 45,
       "yes_ask": 58,
       "yes_bid": 52
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-SPBO",
       "volume": 803,
-      "volume_24h": 603,
+      "volume_24h": 403,
       "yes_ask": 5,
       "yes_bid": 0
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T03:42:01.978562+00:00",
+  "scraped_at": "2026-10-28T04:04:57.974057+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
