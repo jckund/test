@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUHI",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBE",
       "volume": 4909,
-      "volume_24h": 4755,
+      "volume_24h": 4849,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 85,
-      "no_bid": 83,
+      "no_bid": 84,
       "open_interest": 6349,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
       "volume": 6407,
-      "volume_24h": 4558,
-      "yes_ask": 17,
+      "volume_24h": 4531,
+      "yes_ask": 16,
       "yes_bid": 15
     },
     "KXNASCARRACE-XFIN26-ERJO": {
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Josh Berry",
       "no_ask": 98,
-      "no_bid": 96,
+      "no_bid": 97,
       "open_interest": 9603,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-JOBE",
       "volume": 9603,
       "volume_24h": 9135,
-      "yes_ask": 4,
+      "yes_ask": 3,
       "yes_bid": 2
     },
     "KXNASCARRACE-XFIN26-JOBI": {
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
       "volume": 4749,
-      "volume_24h": 4280,
+      "volume_24h": 4337,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -402,17 +402,17 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-XFIN26-RYBL": {
-      "last_price": 16,
+      "last_price": 17,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 85,
-      "no_bid": 84,
-      "open_interest": 10604,
+      "no_bid": 83,
+      "open_interest": 13533,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYBL",
-      "volume": 10627,
-      "volume_24h": 10228,
-      "yes_ask": 16,
+      "volume": 13556,
+      "volume_24h": 10200,
+      "yes_ask": 17,
       "yes_bid": 15
     },
     "KXNASCARRACE-XFIN26-RYPR": {
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYGI",
       "volume": 2299,
-      "volume_24h": 1753,
+      "volume_24h": 1772,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYRE",
       "volume": 2095,
-      "volume_24h": 1576,
+      "volume_24h": 1607,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-WIBY",
       "volume": 3187,
-      "volume_24h": 3114,
+      "volume_24h": 3177,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-27T23:59:52.548741+00:00",
+  "scraped_at": "2026-10-28T00:05:45.917986+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
