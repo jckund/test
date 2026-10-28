@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-KAHO",
       "volume": 226,
-      "volume_24h": 109,
+      "volume_24h": 0,
       "yes_ask": 40,
       "yes_bid": 34
     },
@@ -321,15 +321,15 @@
       "last_price": 41,
       "liquidity": null,
       "name": "Layne Riggs",
-      "no_ask": 65,
+      "no_ask": 63,
       "no_bid": 60,
       "open_interest": 329,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-LARI",
       "volume": 329,
-      "volume_24h": 258,
+      "volume_24h": 329,
       "yes_ask": 40,
-      "yes_bid": 35
+      "yes_bid": 37
     },
     "KXNASCARTOP3-BLAC26-MITY": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-28T15:07:27.530953+00:00",
+  "scraped_at": "2026-10-28T15:13:27.494711+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top3"
 }
