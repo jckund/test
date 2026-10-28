@@ -57,10 +57,10 @@
       "name": "Austin Dillon",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 108,
+      "open_interest": 575,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUDI",
-      "volume": 108,
+      "volume": 575,
       "volume_24h": 108,
       "yes_ask": 1,
       "yes_bid": 0
@@ -85,10 +85,10 @@
       "name": "Brad Keselowski",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 1805,
+      "open_interest": 2273,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-BRKE",
-      "volume": 1805,
+      "volume": 2273,
       "volume_24h": 1338,
       "yes_ask": 1,
       "yes_bid": 0
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 3587,
+      "open_interest": 3821,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CAHO",
-      "volume": 3587,
+      "volume": 3821,
       "volume_24h": 1675,
       "yes_ask": 2,
       "yes_bid": 1
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBE",
       "volume": 5257,
-      "volume_24h": 1271,
+      "volume_24h": 1230,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -155,10 +155,10 @@
       "name": "Chris Buescher",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 3712,
+      "open_interest": 4180,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBU",
-      "volume": 3712,
+      "volume": 4180,
       "volume_24h": 2431,
       "yes_ask": 1,
       "yes_bid": 0
@@ -234,16 +234,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-DEHA": {
-      "last_price": 15,
+      "last_price": 16,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 9314,
+      "open_interest": 9379,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
-      "volume": 9556,
-      "volume_24h": 5989,
+      "volume": 9621,
+      "volume_24h": 5948,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
       "volume": 6355,
-      "volume_24h": 3611,
+      "volume_24h": 3536,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -402,16 +402,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-XFIN26-RYBL": {
-      "last_price": 16,
+      "last_price": 17,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 85,
       "no_bid": 83,
-      "open_interest": 14577,
+      "open_interest": 14643,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYBL",
-      "volume": 14765,
-      "volume_24h": 9290,
+      "volume": 14832,
+      "volume_24h": 9260,
       "yes_ask": 17,
       "yes_bid": 15
     },
@@ -421,10 +421,10 @@
       "name": "Ryan Preece",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 932,
+      "open_interest": 1192,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYPR",
-      "volume": 932,
+      "volume": 1192,
       "volume_24h": 870,
       "yes_ask": 3,
       "yes_bid": 2
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-SHVA",
       "volume": 937,
-      "volume_24h": 606,
+      "volume_24h": 844,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-28T15:57:30.906930+00:00",
+  "scraped_at": "2026-10-28T16:09:25.007010+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
