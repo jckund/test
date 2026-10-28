@@ -24,15 +24,15 @@
       "yes_bid": 6
     },
     "KXNASCARTOP10-XFIN26-ALBO": {
-      "last_price": 0,
+      "last_price": 25,
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 81,
       "no_bid": 75,
-      "open_interest": 0,
+      "open_interest": 11,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-ALBO",
-      "volume": 0,
+      "volume": 11,
       "volume_24h": 0,
       "yes_ask": 25,
       "yes_bid": 19
@@ -108,18 +108,18 @@
       "yes_bid": 38
     },
     "KXNASCARTOP10-XFIN26-CAHO": {
-      "last_price": 29,
+      "last_price": 21,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 78,
+      "no_ask": 77,
       "no_bid": 72,
-      "open_interest": 64,
+      "open_interest": 264,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CAHO",
-      "volume": 64,
+      "volume": 265,
       "volume_24h": 18,
       "yes_ask": 28,
-      "yes_bid": 22
+      "yes_bid": 23
     },
     "KXNASCARTOP10-XFIN26-CHBE": {
       "last_price": 0,
@@ -234,17 +234,17 @@
       "yes_bid": 11
     },
     "KXNASCARTOP10-XFIN26-DEHA": {
-      "last_price": 0,
+      "last_price": 73,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 31,
-      "no_bid": 27,
-      "open_interest": 0,
+      "no_bid": 26,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
-      "volume": 0,
+      "volume": 200,
       "volume_24h": 0,
-      "yes_ask": 73,
+      "yes_ask": 74,
       "yes_bid": 69
     },
     "KXNASCARTOP10-XFIN26-ERJO": {
@@ -434,27 +434,27 @@
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 80,
-      "no_bid": 77,
-      "open_interest": 1371,
+      "no_bid": 76,
+      "open_interest": 1871,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
-      "volume": 1371,
+      "volume": 1871,
       "volume_24h": 1170,
-      "yes_ask": 23,
+      "yes_ask": 24,
       "yes_bid": 20
     },
     "KXNASCARTOP10-XFIN26-TOGI": {
-      "last_price": 17,
+      "last_price": 16,
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 92,
-      "no_bid": 84,
-      "open_interest": 254,
+      "no_bid": 83,
+      "open_interest": 454,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
-      "volume": 254,
+      "volume": 454,
       "volume_24h": 1,
-      "yes_ask": 16,
+      "yes_ask": 17,
       "yes_bid": 8
     },
     "KXNASCARTOP10-XFIN26-TYDI": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T15:51:58.410679+00:00",
+  "scraped_at": "2026-10-28T15:57:32.158816+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
