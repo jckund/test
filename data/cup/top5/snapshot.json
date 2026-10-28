@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-AUCI",
       "volume": 940,
-      "volume_24h": 10,
+      "volume_24h": 940,
       "yes_ask": 24,
       "yes_bid": 16
     },
@@ -293,15 +293,15 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 61,
+      "no_ask": 60,
       "no_bid": 56,
       "open_interest": 236,
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-JOLO",
       "volume": 236,
-      "volume_24h": 0,
+      "volume_24h": 236,
       "yes_ask": 44,
-      "yes_bid": 39
+      "yes_bid": 40
     },
     "KXNASCARTOP5-XFIN26-JONE": {
       "last_price": 0,
@@ -321,15 +321,15 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 70,
+      "no_ask": 69,
       "no_bid": 62,
       "open_interest": 434,
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-KYLA",
       "volume": 442,
-      "volume_24h": 17,
+      "volume_24h": 425,
       "yes_ask": 38,
-      "yes_bid": 30
+      "yes_bid": 31
     },
     "KXNASCARTOP5-XFIN26-MIMC": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-28T15:57:31.747436+00:00",
+  "scraped_at": "2026-10-28T16:03:14.260432+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top5"
 }
