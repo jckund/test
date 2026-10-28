@@ -83,15 +83,15 @@
       "last_price": 50,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 37,
-      "no_bid": 27,
+      "no_ask": 36,
+      "no_bid": 29,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-BRKE",
       "volume": 600,
       "volume_24h": 600,
-      "yes_ask": 73,
-      "yes_bid": 63
+      "yes_ask": 71,
+      "yes_bid": 64
     },
     "KXNASCARTOP20-XFIN26-BUWA": {
       "last_price": 0,
@@ -307,7 +307,7 @@
       "last_price": 20,
       "liquidity": null,
       "name": "John Hunter Nemechek",
-      "no_ask": 72,
+      "no_ask": 73,
       "no_bid": 63,
       "open_interest": 212,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 212,
       "volume_24h": 212,
       "yes_ask": 37,
-      "yes_bid": 28
+      "yes_bid": 27
     },
     "KXNASCARTOP20-XFIN26-KYLA": {
       "last_price": 0,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-TYDI",
       "volume": 505,
-      "volume_24h": 505,
+      "volume_24h": 410,
       "yes_ask": 28,
       "yes_bid": 24
     },
@@ -517,7 +517,7 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 65,
+      "no_ask": 66,
       "no_bid": 57,
       "open_interest": 400,
       "status": "active",
@@ -525,11 +525,11 @@
       "volume": 400,
       "volume_24h": 200,
       "yes_ask": 43,
-      "yes_bid": 35
+      "yes_bid": 34
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-28T18:30:30.104875+00:00",
+  "scraped_at": "2026-10-28T18:42:09.495510+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
