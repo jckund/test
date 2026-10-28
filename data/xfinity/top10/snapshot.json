@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 78,
-      "no_bid": 69,
+      "no_bid": 70,
       "open_interest": 212,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-DETH",
       "volume": 212,
       "volume_24h": 200,
-      "yes_ask": 31,
+      "yes_ask": 30,
       "yes_bid": 22
     },
     "KXNASCARTOP10-NATI26-GASM": {
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JOGA",
       "volume": 619,
-      "volume_24h": 205,
+      "volume_24h": 200,
       "yes_ask": 5,
       "yes_bid": 0
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-PARE",
       "volume": 402,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 34,
       "yes_bid": 28
     },
@@ -475,15 +475,15 @@
       "last_price": 52,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 51,
-      "no_bid": 41,
+      "no_ask": 50,
+      "no_bid": 42,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SAMA",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 59,
-      "yes_bid": 49
+      "yes_ask": 58,
+      "yes_bid": 50
     },
     "KXNASCARTOP10-NATI26-SASM": {
       "last_price": 0,
@@ -532,18 +532,18 @@
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 54,
-      "no_bid": 45,
+      "no_bid": 46,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-WISA",
       "volume": 200,
       "volume_24h": 200,
-      "yes_ask": 55,
+      "yes_ask": 54,
       "yes_bid": 46
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T16:48:14.129558+00:00",
+  "scraped_at": "2026-10-28T16:53:59.505428+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
