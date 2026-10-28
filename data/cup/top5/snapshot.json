@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-BUWA",
       "volume": 472,
-      "volume_24h": 38,
+      "volume_24h": 35,
       "yes_ask": 18,
       "yes_bid": 15
     },
@@ -402,18 +402,18 @@
       "yes_bid": 9
     },
     "KXNASCARTOP5-XFIN26-RYBL": {
-      "last_price": 50,
+      "last_price": 51,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 54,
-      "no_bid": 49,
-      "open_interest": 479,
+      "no_ask": 49,
+      "no_bid": 46,
+      "open_interest": 679,
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-RYBL",
-      "volume": 479,
+      "volume": 679,
       "volume_24h": 244,
-      "yes_ask": 51,
-      "yes_bid": 46
+      "yes_ask": 54,
+      "yes_bid": 51
     },
     "KXNASCARTOP5-XFIN26-RYPR": {
       "last_price": 12,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-28T12:52:01.283643+00:00",
+  "scraped_at": "2026-10-28T14:47:55.664471+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top5"
 }
