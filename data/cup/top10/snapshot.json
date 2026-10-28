@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AJAL",
       "volume": 250,
-      "volume_24h": 209,
+      "volume_24h": 0,
       "yes_ask": 12,
       "yes_bid": 7
     },
@@ -89,22 +89,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BRKE",
       "volume": 801,
-      "volume_24h": 800,
+      "volume_24h": 801,
       "yes_ask": 23,
       "yes_bid": 20
     },
     "KXNASCARTOP10-XFIN26-BUWA": {
-      "last_price": 38,
+      "last_price": 41,
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 62,
-      "no_bid": 60,
-      "open_interest": 1250,
+      "no_bid": 59,
+      "open_interest": 1305,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BUWA",
-      "volume": 1344,
-      "volume_24h": 1111,
-      "yes_ask": 40,
+      "volume": 1402,
+      "volume_24h": 1009,
+      "yes_ask": 41,
       "yes_bid": 38
     },
     "KXNASCARTOP10-XFIN26-CAHO": {
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 84,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 22,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBU",
       "volume": 22,
       "volume_24h": 22,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 16
     },
     "KXNASCARTOP10-XFIN26-CHEL": {
@@ -181,7 +181,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Cole Custer",
-      "no_ask": 96,
+      "no_ask": 97,
       "no_bid": 92,
       "open_interest": 0,
       "status": "active",
@@ -189,7 +189,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 8,
-      "yes_bid": 4
+      "yes_bid": 3
     },
     "KXNASCARTOP10-XFIN26-COWA": {
       "last_price": 1,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOBE",
       "volume": 1690,
-      "volume_24h": 1490,
+      "volume_24h": 1283,
       "yes_ask": 46,
       "yes_bid": 41
     },
@@ -425,20 +425,20 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 1281,
-      "volume_24h": 1262,
+      "volume_24h": 1281,
       "yes_ask": 29,
       "yes_bid": 26
     },
     "KXNASCARTOP10-XFIN26-SHVA": {
-      "last_price": 19,
+      "last_price": 18,
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 86,
       "no_bid": 82,
-      "open_interest": 447,
+      "open_interest": 500,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
-      "volume": 447,
+      "volume": 500,
       "volume_24h": 447,
       "yes_ask": 18,
       "yes_bid": 14
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-28T01:50:43.790589+00:00",
+  "scraped_at": "2026-10-28T01:56:27.449027+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
