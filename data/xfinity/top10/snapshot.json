@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-ANAL",
       "volume": 244,
-      "volume_24h": 220,
+      "volume_24h": 0,
       "yes_ask": 27,
       "yes_bid": 11
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BRPO",
       "volume": 203,
-      "volume_24h": 203,
+      "volume_24h": 7,
       "yes_ask": 18,
       "yes_bid": 4
     },
@@ -196,13 +196,13 @@
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 88,
-      "no_bid": 77,
+      "no_bid": 78,
       "open_interest": 226,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-DETH",
       "volume": 226,
       "volume_24h": 14,
-      "yes_ask": 23,
+      "yes_ask": 22,
       "yes_bid": 12
     },
     "KXNASCARTOP10-NATI26-GASM": {
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JEBU",
       "volume": 205,
-      "volume_24h": 205,
+      "volume_24h": 6,
       "yes_ask": 24,
       "yes_bid": 8
     },
@@ -307,15 +307,15 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 29,
-      "no_bid": 24,
+      "no_ask": 31,
+      "no_bid": 25,
       "open_interest": 402,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JUAL",
       "volume": 402,
       "volume_24h": 0,
-      "yes_ask": 76,
-      "yes_bid": 71
+      "yes_ask": 75,
+      "yes_bid": 69
     },
     "KXNASCARTOP10-NATI26-JUCA": {
       "last_price": 1,
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 45,
-      "no_bid": 33,
+      "no_bid": 32,
       "open_interest": 500,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SHCR",
       "volume": 500,
       "volume_24h": 500,
-      "yes_ask": 67,
+      "yes_ask": 68,
       "yes_bid": 55
     },
     "KXNASCARTOP10-NATI26-TAGR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-29T18:31:36.126746+00:00",
+  "scraped_at": "2026-10-29T18:37:42.066690+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
