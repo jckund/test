@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BRPO",
       "volume": 203,
-      "volume_24h": 7,
+      "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-DETH",
       "volume": 359,
-      "volume_24h": 147,
+      "volume_24h": 142,
       "yes_ask": 27,
       "yes_bid": 25
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JEBU",
       "volume": 205,
-      "volume_24h": 6,
+      "volume_24h": 0,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -391,15 +391,15 @@
       "last_price": 4,
       "liquidity": null,
       "name": "Patrick Emerling",
-      "no_ask": 92,
-      "no_bid": 87,
+      "no_ask": 95,
+      "no_bid": 86,
       "open_interest": 403,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-PAEM",
       "volume": 403,
       "volume_24h": 203,
-      "yes_ask": 13,
-      "yes_bid": 8
+      "yes_ask": 14,
+      "yes_bid": 5
     },
     "KXNASCARTOP10-NATI26-PARE": {
       "last_price": 29,
@@ -531,7 +531,7 @@
       "last_price": 48,
       "liquidity": null,
       "name": "William Sawalich",
-      "no_ask": 57,
+      "no_ask": 58,
       "no_bid": 54,
       "open_interest": 200,
       "status": "active",
@@ -539,11 +539,11 @@
       "volume": 200,
       "volume_24h": 0,
       "yes_ask": 46,
-      "yes_bid": 43
+      "yes_bid": 42
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-29T23:26:58.295822+00:00",
+  "scraped_at": "2026-10-29T23:32:37.322132+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
