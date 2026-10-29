@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-CODA",
       "volume": 994,
-      "volume_24h": 209,
+      "volume_24h": 250,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -220,29 +220,29 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-HABU": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Harrison Burton",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 187,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-HABU",
-      "volume": 0,
+      "volume": 187,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-JEBU": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Jeb Burton",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 187,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-JEBU",
-      "volume": 0,
+      "volume": 187,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-29T02:57:32.698058+00:00",
+  "scraped_at": "2026-10-29T03:03:27.689915+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "winner"
 }
