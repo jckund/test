@@ -10,15 +10,15 @@
   "market_count": 37,
   "markets": {
     "KXNASCARRACE-XFIN26-AJAL": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AJAL",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHEL",
       "volume": 16685,
-      "volume_24h": 9827,
+      "volume_24h": 9825,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
       "volume": 12000,
-      "volume_24h": 5160,
+      "volume_24h": 5170,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
       "volume": 8341,
-      "volume_24h": 3435,
+      "volume_24h": 3450,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-ROCH",
       "volume": 803,
-      "volume_24h": 405,
+      "volume_24h": 374,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYBL",
       "volume": 16360,
-      "volume_24h": 2658,
+      "volume_24h": 2642,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYRE",
       "volume": 3817,
-      "volume_24h": 1497,
+      "volume_24h": 1482,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-WIBY",
       "volume": 42754,
-      "volume_24h": 39402,
+      "volume_24h": 39340,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-29T02:59:16.821586+00:00",
+  "scraped_at": "2026-10-29T03:05:14.251113+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
