@@ -83,7 +83,7 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 76,
+      "no_ask": 75,
       "no_bid": 72,
       "open_interest": 1201,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 1201,
       "volume_24h": 0,
       "yes_ask": 28,
-      "yes_bid": 24
+      "yes_bid": 25
     },
     "KXNASCARTOP10-XFIN26-BUWA": {
       "last_price": 41,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBE",
       "volume": 21,
-      "volume_24h": 13,
+      "volume_24h": 21,
       "yes_ask": 60,
       "yes_bid": 52
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHEL",
       "volume": 477,
-      "volume_24h": 8,
+      "volume_24h": 16,
       "yes_ask": 60,
       "yes_bid": 56
     },
@@ -391,15 +391,15 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 75,
-      "no_bid": 70,
+      "no_ask": 72,
+      "no_bid": 69,
       "open_interest": 960,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-ROCH",
       "volume": 960,
       "volume_24h": 942,
-      "yes_ask": 30,
-      "yes_bid": 25
+      "yes_ask": 31,
+      "yes_bid": 28
     },
     "KXNASCARTOP10-XFIN26-RYBL": {
       "last_price": 73,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
       "volume": 2770,
-      "volume_24h": 738,
+      "volume_24h": 291,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYRE",
       "volume": 1324,
-      "volume_24h": 206,
+      "volume_24h": 230,
       "yes_ask": 40,
       "yes_bid": 36
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-29T19:27:52.012016+00:00",
+  "scraped_at": "2026-10-29T19:33:27.385132+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
