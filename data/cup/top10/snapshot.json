@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-ALBO",
       "volume": 66,
-      "volume_24h": 66,
+      "volume_24h": 54,
       "yes_ask": 23,
       "yes_bid": 19
     },
@@ -111,15 +111,15 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 79,
-      "no_bid": 76,
+      "no_ask": 81,
+      "no_bid": 74,
       "open_interest": 318,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CAHO",
       "volume": 320,
-      "volume_24h": 255,
-      "yes_ask": 24,
-      "yes_bid": 21
+      "volume_24h": 54,
+      "yes_ask": 26,
+      "yes_bid": 19
     },
     "KXNASCARTOP10-XFIN26-CHBE": {
       "last_price": 59,
@@ -237,15 +237,15 @@
       "last_price": 72,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 31,
-      "no_bid": 28,
+      "no_ask": 32,
+      "no_bid": 27,
       "open_interest": 222,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
       "volume": 222,
-      "volume_24h": 222,
-      "yes_ask": 72,
-      "yes_bid": 69
+      "volume_24h": 22,
+      "yes_ask": 73,
+      "yes_bid": 68
     },
     "KXNASCARTOP10-XFIN26-ERJO": {
       "last_price": 0,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
       "volume": 2770,
-      "volume_24h": 1399,
+      "volume_24h": 899,
       "yes_ask": 20,
       "yes_bid": 18
     },
@@ -448,13 +448,13 @@
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 93,
-      "no_bid": 90,
+      "no_bid": 91,
       "open_interest": 3336,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 3464,
-      "volume_24h": 3210,
-      "yes_ask": 10,
+      "volume_24h": 3010,
+      "yes_ask": 9,
       "yes_bid": 7
     },
     "KXNASCARTOP10-XFIN26-TYDI": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-29T15:59:23.505323+00:00",
+  "scraped_at": "2026-10-29T16:05:19.863287+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
