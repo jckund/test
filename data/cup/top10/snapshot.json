@@ -13,7 +13,7 @@
       "last_price": 6,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 97,
+      "no_ask": 94,
       "no_bid": 90,
       "open_interest": 250,
       "status": "active",
@@ -21,7 +21,7 @@
       "volume": 250,
       "volume_24h": 0,
       "yes_ask": 10,
-      "yes_bid": 3
+      "yes_bid": 6
     },
     "KXNASCARTOP10-XFIN26-ALBO": {
       "last_price": 24,
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBR",
       "volume": 2,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 60,
       "yes_bid": 52
     },
@@ -237,15 +237,15 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 30,
-      "no_bid": 27,
+      "no_ask": 31,
+      "no_bid": 28,
       "open_interest": 219,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
       "volume": 219,
-      "volume_24h": 216,
-      "yes_ask": 73,
-      "yes_bid": 70
+      "volume_24h": 219,
+      "yes_ask": 72,
+      "yes_bid": 69
     },
     "KXNASCARTOP10-XFIN26-ERJO": {
       "last_price": 0,
@@ -391,7 +391,7 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 74,
+      "no_ask": 76,
       "no_bid": 69,
       "open_interest": 363,
       "status": "active",
@@ -399,35 +399,35 @@
       "volume": 363,
       "volume_24h": 345,
       "yes_ask": 31,
-      "yes_bid": 26
+      "yes_bid": 24
     },
     "KXNASCARTOP10-XFIN26-RYBL": {
       "last_price": 73,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 34,
-      "no_bid": 27,
+      "no_ask": 33,
+      "no_bid": 28,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYBL",
       "volume": 1,
-      "volume_24h": 0,
-      "yes_ask": 73,
-      "yes_bid": 66
+      "volume_24h": 1,
+      "yes_ask": 72,
+      "yes_bid": 67
     },
     "KXNASCARTOP10-XFIN26-RYPR": {
       "last_price": 34,
       "liquidity": null,
       "name": "Ryan Preece",
-      "no_ask": 70,
-      "no_bid": 64,
+      "no_ask": 69,
+      "no_bid": 66,
       "open_interest": 2087,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 2130,
       "volume_24h": 430,
-      "yes_ask": 36,
-      "yes_bid": 30
+      "yes_ask": 34,
+      "yes_bid": 31
     },
     "KXNASCARTOP10-XFIN26-SHVA": {
       "last_price": 23,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-29T12:18:14.677968+00:00",
+  "scraped_at": "2026-10-29T12:24:02.366768+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
