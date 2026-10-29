@@ -257,7 +257,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-ERJO",
       "volume": 475,
-      "volume_24h": 227,
+      "volume_24h": 0,
       "yes_ask": 47,
       "yes_bid": 39
     },
@@ -433,15 +433,15 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 52,
+      "no_ask": 53,
       "no_bid": 46,
       "open_interest": 257,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-SHVA",
       "volume": 258,
-      "volume_24h": 0,
+      "volume_24h": 7,
       "yes_ask": 54,
-      "yes_bid": 48
+      "yes_bid": 47
     },
     "KXNASCARTOP20-XFIN26-TOGI": {
       "last_price": 55,
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-TOGI",
       "volume": 1280,
-      "volume_24h": 618,
+      "volume_24h": 420,
       "yes_ask": 55,
       "yes_bid": 49
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-29T22:28:50.260295+00:00",
+  "scraped_at": "2026-10-29T22:34:35.915438+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
