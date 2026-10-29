@@ -125,15 +125,15 @@
       "last_price": 40,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 60,
-      "no_bid": 53,
+      "no_ask": 58,
+      "no_bid": 55,
       "open_interest": 504,
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-CHBE",
       "volume": 507,
       "volume_24h": 248,
-      "yes_ask": 47,
-      "yes_bid": 40
+      "yes_ask": 45,
+      "yes_bid": 42
     },
     "KXNASCARTOP5-XFIN26-CHBR": {
       "last_price": 36,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-JOBI",
       "volume": 22,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-RYBL",
       "volume": 760,
-      "volume_24h": 74,
+      "volume_24h": 28,
       "yes_ask": 48,
       "yes_bid": 47
     },
@@ -430,18 +430,18 @@
       "yes_bid": 13
     },
     "KXNASCARTOP5-XFIN26-SHVA": {
-      "last_price": 9,
+      "last_price": 8,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 92,
+      "no_ask": 99,
       "no_bid": 91,
-      "open_interest": 26,
+      "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP5-XFIN26-SHVA",
-      "volume": 26,
+      "volume": 28,
       "volume_24h": 0,
       "yes_ask": 9,
-      "yes_bid": 8
+      "yes_bid": 1
     },
     "KXNASCARTOP5-XFIN26-TOGI": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-10-29T20:20:20.937864+00:00",
+  "scraped_at": "2026-10-29T21:08:20.018839+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top5"
 }
