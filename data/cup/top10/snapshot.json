@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AJAL",
       "volume": 311,
-      "volume_24h": 2,
+      "volume_24h": 61,
       "yes_ask": 8,
       "yes_bid": 5
     },
@@ -108,17 +108,17 @@
       "yes_bid": 38
     },
     "KXNASCARTOP10-XFIN26-CAHO": {
-      "last_price": 25,
+      "last_price": 27,
       "liquidity": null,
       "name": "Carson Hocevar",
       "no_ask": 78,
-      "no_bid": 73,
-      "open_interest": 409,
+      "no_bid": 74,
+      "open_interest": 426,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CAHO",
-      "volume": 410,
-      "volume_24h": 91,
-      "yes_ask": 27,
+      "volume": 428,
+      "volume_24h": 109,
+      "yes_ask": 26,
       "yes_bid": 22
     },
     "KXNASCARTOP10-XFIN26-CHBE": {
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chris Buescher",
       "no_ask": 82,
-      "no_bid": 78,
+      "no_bid": 79,
       "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBU",
       "volume": 24,
       "volume_24h": 3,
-      "yes_ask": 22,
+      "yes_ask": 21,
       "yes_bid": 18
     },
     "KXNASCARTOP10-XFIN26-CHEL": {
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
       "volume": 233,
-      "volume_24h": 8,
+      "volume_24h": 14,
       "yes_ask": 72,
       "yes_bid": 67
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
       "volume": 3006,
-      "volume_24h": 211,
+      "volume_24h": 236,
       "yes_ask": 19,
       "yes_bid": 17
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T12:26:19.463974+00:00",
+  "scraped_at": "2026-10-30T12:32:05.093750+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
