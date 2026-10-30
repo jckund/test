@@ -94,18 +94,18 @@
       "yes_bid": 7
     },
     "KXNASCARRACE-NATI26-BRJO": {
-      "last_price": 6,
+      "last_price": 7,
       "liquidity": null,
       "name": "Brandon Jones",
-      "no_ask": 95,
-      "no_bid": 94,
-      "open_interest": 1726,
+      "no_ask": 94,
+      "no_bid": 91,
+      "open_interest": 8342,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-BRJO",
-      "volume": 1726,
+      "volume": 8342,
       "volume_24h": 0,
-      "yes_ask": 6,
-      "yes_bid": 5
+      "yes_ask": 9,
+      "yes_bid": 6
     },
     "KXNASCARRACE-NATI26-BRPO": {
       "last_price": 0,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SASM",
       "volume": 8136,
-      "volume_24h": 340,
+      "volume_24h": 374,
       "yes_ask": 10,
       "yes_bid": 8
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-TAGR",
       "volume": 7949,
-      "volume_24h": 530,
+      "volume_24h": 555,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-30T14:07:01.184012+00:00",
+  "scraped_at": "2026-10-30T14:24:42.988135+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "winner"
 }
