@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 95,
-      "no_bid": 92,
+      "no_bid": 90,
       "open_interest": 311,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AJAL",
       "volume": 311,
       "volume_24h": 61,
-      "yes_ask": 8,
+      "yes_ask": 10,
       "yes_bid": 5
     },
     "KXNASCARTOP10-XFIN26-ALBO": {
@@ -111,15 +111,15 @@
       "last_price": 27,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 77,
-      "no_bid": 75,
+      "no_ask": 76,
+      "no_bid": 74,
       "open_interest": 426,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CAHO",
       "volume": 428,
       "volume_24h": 109,
-      "yes_ask": 25,
-      "yes_bid": 23
+      "yes_ask": 26,
+      "yes_bid": 24
     },
     "KXNASCARTOP10-XFIN26-CHBE": {
       "last_price": 60,
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
       "volume": 562,
-      "volume_24h": 14,
+      "volume_24h": 343,
       "yes_ask": 74,
       "yes_bid": 72
     },
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 33,
-      "no_bid": 27,
+      "no_bid": 28,
       "open_interest": 50,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYBL",
       "volume": 50,
       "volume_24h": 49,
-      "yes_ask": 73,
+      "yes_ask": 72,
       "yes_bid": 67
     },
     "KXNASCARTOP10-XFIN26-RYPR": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
       "volume": 3191,
-      "volume_24h": 236,
+      "volume_24h": 421,
       "yes_ask": 21,
       "yes_bid": 18
     },
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 4814,
-      "volume_24h": 1550,
+      "volume_24h": 1350,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T13:37:39.631072+00:00",
+  "scraped_at": "2026-10-30T13:45:40.209444+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
