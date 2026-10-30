@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-BRCR",
       "volume": 9553,
-      "volume_24h": 7297,
+      "volume_24h": 7327,
       "yes_ask": 10,
       "yes_bid": 7
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-BRJO",
       "volume": 1726,
-      "volume_24h": 3,
+      "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 5
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-CAKV",
       "volume": 10129,
-      "volume_24h": 414,
+      "volume_24h": 437,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-CODA",
       "volume": 1464,
-      "volume_24h": 515,
+      "volume_24h": 511,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -304,18 +304,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-JUAL": {
-      "last_price": 19,
+      "last_price": 21,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 82,
-      "no_bid": 81,
-      "open_interest": 10740,
+      "no_ask": 80,
+      "no_bid": 75,
+      "open_interest": 11216,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-JUAL",
-      "volume": 10768,
-      "volume_24h": 969,
-      "yes_ask": 19,
-      "yes_bid": 18
+      "volume": 11244,
+      "volume_24h": 468,
+      "yes_ask": 25,
+      "yes_bid": 20
     },
     "KXNASCARRACE-NATI26-JUCA": {
       "last_price": 0,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SASM",
       "volume": 8003,
-      "volume_24h": 740,
+      "volume_24h": 241,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SHCR",
       "volume": 1880,
-      "volume_24h": 207,
+      "volume_24h": 242,
       "yes_ask": 8,
       "yes_bid": 5
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-TAGR",
       "volume": 7520,
-      "volume_24h": 517,
+      "volume_24h": 126,
       "yes_ask": 10,
       "yes_bid": 8
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-30T00:55:01.075403+00:00",
+  "scraped_at": "2026-10-30T01:34:47.158935+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "winner"
 }

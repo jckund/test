@@ -55,7 +55,7 @@
       "last_price": 9,
       "liquidity": null,
       "name": "Carson Ferguson",
-      "no_ask": 98,
+      "no_ask": 100,
       "no_bid": 96,
       "open_interest": 634,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 634,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 2
+      "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-CHEC": {
       "last_price": 0,
@@ -126,20 +126,20 @@
       "liquidity": null,
       "name": "Corey LaJoie",
       "no_ask": 90,
-      "no_bid": 88,
-      "open_interest": 290,
+      "no_bid": 87,
+      "open_interest": 363,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-COLA",
-      "volume": 290,
-      "volume_24h": 90,
-      "yes_ask": 12,
+      "volume": 363,
+      "volume_24h": 163,
+      "yes_ask": 13,
       "yes_bid": 10
     },
     "KXNASCARTOP10-BLAC26-DAHE": {
       "last_price": 43,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 62,
+      "no_ask": 63,
       "no_bid": 58,
       "open_interest": 159,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 159,
       "volume_24h": 103,
       "yes_ask": 42,
-      "yes_bid": 38
+      "yes_bid": 37
     },
     "KXNASCARTOP10-BLAC26-FRMU": {
       "last_price": 4,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TRMC",
       "volume": 1409,
-      "volume_24h": 19,
+      "volume_24h": 82,
       "yes_ask": 38,
       "yes_bid": 36
     },
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TYAN",
       "volume": 62,
-      "volume_24h": 0,
+      "volume_24h": 59,
       "yes_ask": 41,
       "yes_bid": 35
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T01:28:33.737220+00:00",
+  "scraped_at": "2026-10-30T01:34:04.163864+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
