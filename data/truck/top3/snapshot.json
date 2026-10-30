@@ -24,17 +24,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-BLAC26-BERH": {
-      "last_price": 0,
+      "last_price": 13,
       "liquidity": null,
       "name": "Ben Rhodes",
       "no_ask": 99,
-      "no_bid": 87,
-      "open_interest": 0,
+      "no_bid": 88,
+      "open_interest": 1000,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-BERH",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 13,
+      "volume": 1000,
+      "volume_24h": 1000,
+      "yes_ask": 12,
       "yes_bid": 1
     },
     "KXNASCARTOP3-BLAC26-BRQU": {
@@ -69,26 +69,26 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 82,
+      "no_ask": 78,
       "no_bid": 62,
       "open_interest": 1847,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-CHEC",
       "volume": 1858,
-      "volume_24h": 798,
+      "volume_24h": 812,
       "yes_ask": 38,
-      "yes_bid": 18
+      "yes_bid": 22
     },
     "KXNASCARTOP3-BLAC26-CHSM": {
-      "last_price": 49,
+      "last_price": 40,
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 67,
       "no_bid": 64,
-      "open_interest": 710,
+      "open_interest": 951,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-CHSM",
-      "volume": 713,
+      "volume": 954,
       "volume_24h": 24,
       "yes_ask": 36,
       "yes_bid": 33
@@ -252,20 +252,20 @@
       "liquidity": null,
       "name": "Justin Haley",
       "no_ask": 100,
-      "no_bid": 91,
+      "no_bid": 92,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-BLAC26-JUHA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 9,
+      "yes_ask": 8,
       "yes_bid": 0
     },
     "KXNASCARTOP3-BLAC26-KAHO": {
       "last_price": 46,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 58,
+      "no_ask": 59,
       "no_bid": 52,
       "open_interest": 948,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 948,
       "volume_24h": 412,
       "yes_ask": 48,
-      "yes_bid": 42
+      "yes_bid": 41
     },
     "KXNASCARTOP3-BLAC26-KAKL": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-30T19:48:37.203201+00:00",
+  "scraped_at": "2026-10-30T19:54:07.099314+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top3"
 }
