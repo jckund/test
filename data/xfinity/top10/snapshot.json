@@ -55,7 +55,7 @@
       "last_price": 1,
       "liquidity": null,
       "name": "Baltazar Leguizamon",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 96,
       "open_interest": 804,
       "status": "active",
@@ -63,7 +63,7 @@
       "volume": 804,
       "volume_24h": 200,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-BLPE": {
       "last_price": 0,
@@ -475,7 +475,7 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 49,
+      "no_ask": 50,
       "no_bid": 46,
       "open_interest": 224,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 228,
       "volume_24h": 28,
       "yes_ask": 54,
-      "yes_bid": 51
+      "yes_bid": 50
     },
     "KXNASCARTOP10-NATI26-SASM": {
       "last_price": 0,
@@ -500,17 +500,17 @@
       "yes_bid": 54
     },
     "KXNASCARTOP10-NATI26-SHCR": {
-      "last_price": 62,
+      "last_price": 61,
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 43,
-      "no_bid": 39,
-      "open_interest": 503,
+      "no_bid": 38,
+      "open_interest": 519,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SHCR",
-      "volume": 503,
+      "volume": 519,
       "volume_24h": 3,
-      "yes_ask": 61,
+      "yes_ask": 62,
       "yes_bid": 57
     },
     "KXNASCARTOP10-NATI26-TAGR": {
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T16:58:44.928665+00:00",
+  "scraped_at": "2026-10-30T17:04:17.400364+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
