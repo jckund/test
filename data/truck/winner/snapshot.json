@@ -66,18 +66,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-BLAC26-CHEC": {
-      "last_price": 11,
+      "last_price": 15,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 9516,
+      "no_ask": 89,
+      "no_bid": 85,
+      "open_interest": 12653,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-CHEC",
-      "volume": 9542,
-      "volume_24h": 3491,
-      "yes_ask": 11,
-      "yes_bid": 10
+      "volume": 12679,
+      "volume_24h": 3919,
+      "yes_ask": 15,
+      "yes_bid": 11
     },
     "KXNASCARRACE-BLAC26-CHSM": {
       "last_price": 11,
@@ -85,10 +85,10 @@
       "name": "Chandler Smith",
       "no_ask": 90,
       "no_bid": 89,
-      "open_interest": 2761,
+      "open_interest": 2898,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-CHSM",
-      "volume": 2861,
+      "volume": 2998,
       "volume_24h": 1770,
       "yes_ask": 11,
       "yes_bid": 10
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-KAHO",
       "volume": 11740,
-      "volume_24h": 1822,
+      "volume_24h": 1842,
       "yes_ask": 23,
       "yes_bid": 22
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
       "volume": 7060,
-      "volume_24h": 1815,
+      "volume_24h": 1945,
       "yes_ask": 21,
       "yes_bid": 20
     },
@@ -463,10 +463,10 @@
       "name": "Ty Majeski",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 2990,
+      "open_interest": 7169,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-TYMA",
-      "volume": 3659,
+      "volume": 7837,
       "volume_24h": 760,
       "yes_ask": 9,
       "yes_bid": 8
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-30T15:11:25.694773+00:00",
+  "scraped_at": "2026-10-30T15:17:11.380049+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
