@@ -10,15 +10,15 @@
   "market_count": 37,
   "markets": {
     "KXNASCARTOP10-XFIN26-AJAL": {
-      "last_price": 9,
+      "last_price": 8,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 95,
       "no_bid": 92,
-      "open_interest": 252,
+      "open_interest": 311,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AJAL",
-      "volume": 252,
+      "volume": 311,
       "volume_24h": 2,
       "yes_ask": 8,
       "yes_bid": 5
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBR",
       "volume": 2,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 54,
       "yes_bid": 53
     },
@@ -239,11 +239,11 @@
       "name": "Denny Hamlin",
       "no_ask": 33,
       "no_bid": 28,
-      "open_interest": 227,
+      "open_interest": 233,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
-      "volume": 227,
-      "volume_24h": 10,
+      "volume": 233,
+      "volume_24h": 8,
       "yes_ask": 72,
       "yes_bid": 67
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYBL",
       "volume": 50,
-      "volume_24h": 50,
+      "volume_24h": 49,
       "yes_ask": 72,
       "yes_bid": 68
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 2336,
-      "volume_24h": 212,
+      "volume_24h": 206,
       "yes_ask": 36,
       "yes_bid": 34
     },
@@ -434,13 +434,13 @@
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 83,
-      "no_bid": 82,
-      "open_interest": 2981,
+      "no_bid": 81,
+      "open_interest": 3006,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
-      "volume": 2981,
+      "volume": 3006,
       "volume_24h": 211,
-      "yes_ask": 18,
+      "yes_ask": 19,
       "yes_bid": 17
     },
     "KXNASCARTOP10-XFIN26-TOGI": {
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 4814,
-      "volume_24h": 1673,
+      "volume_24h": 1578,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T12:09:03.295414+00:00",
+  "scraped_at": "2026-10-30T12:26:19.463974+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
