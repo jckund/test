@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 59,
-      "no_bid": 50,
+      "no_bid": 51,
       "open_interest": 85,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-DASU",
       "volume": 85,
       "volume_24h": 77,
-      "yes_ask": 50,
+      "yes_ask": 49,
       "yes_bid": 41
     },
     "KXNASCARTOP20-XFIN26-DEHA": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-SHVA",
       "volume": 693,
-      "volume_24h": 432,
+      "volume_24h": 443,
       "yes_ask": 60,
       "yes_bid": 53
     },
@@ -500,18 +500,18 @@
       "yes_bid": 65
     },
     "KXNASCARTOP20-XFIN26-WIBY": {
-      "last_price": 0,
+      "last_price": 78,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 22,
-      "no_bid": 14,
-      "open_interest": 0,
+      "no_ask": 28,
+      "no_bid": 20,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-WIBY",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 86,
-      "yes_bid": 78
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 80,
+      "yes_bid": 72
     },
     "KXNASCARTOP20-XFIN26-ZASM": {
       "last_price": 40,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-30T16:07:13.252938+00:00",
+  "scraped_at": "2026-10-30T16:13:51.385243+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
