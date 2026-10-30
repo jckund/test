@@ -142,8 +142,12 @@ which is optional — the no-ops are harmless and free on a public repo.)
   namespaced keys.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
-  Runs **hourly on GitHub's own `schedule` cron** (`:17`); scheduled runs obey the
-  same `.github/scrape_active` gate, manual dispatches always scrape. Its data
+  Runs **hourly at `:17` via a third cron-job.org pinger** (added 2026-10-30) hitting
+  its `workflow_dispatch`, with GitHub's own `schedule` cron kept as a backup (it
+  fired only ~1 in 6 hours when tested). Scheduled and dispatched runs (pinger, manual)
+  obey the `.github/scrape_active` gate; only a code push always scrapes.
+  **A pulled FanDuel market is NOT deleted by the scraper** — the last board just
+  sits there; drop it per the stale-data rule when its `scraped_at` lags Cup's. Its data
   reaches the site on the next `track.yml` tick.
 - **`evwatch.py`** — high-EV watch. Runs **two scans per poll**, each the CI twin of a
   dashboard tab, sharing one process / one state file / one Pushover call (so no second

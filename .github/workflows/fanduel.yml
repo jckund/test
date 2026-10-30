@@ -36,13 +36,13 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Scrape gate
-        # Scheduled runs obey the same race-week switch as track.yml
-        # (.github/scrape_active == "true"); off => instant green no-op. Manual
-        # dispatches and code pushes always scrape.
+        # Scheduled runs and dispatches (the hourly cron-job.org pinger) obey the
+        # same race-week switch as track.yml (.github/scrape_active == "true");
+        # off => instant green no-op. Only a code push always scrapes.
         id: gate
         run: |
           active="$(tr -d '[:space:]' < .github/scrape_active 2>/dev/null || echo false)"
-          [ "$active" = "true" ] || [ "${{ github.event_name }}" != "schedule" ] && active=true || active=false
+          [ "$active" = "true" ] || [ "${{ github.event_name }}" = "push" ] && active=true || active=false
           echo "active=$active" >> "$GITHUB_OUTPUT"
           echo "Scrape gate: active=$active (event=${{ github.event_name }})"
 
