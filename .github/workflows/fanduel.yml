@@ -35,20 +35,35 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Scrape gate
+        # Scheduled runs obey the same race-week switch as track.yml
+        # (.github/scrape_active == "true"); off => instant green no-op. Manual
+        # dispatches and code pushes always scrape.
+        id: gate
+        run: |
+          active="$(tr -d '[:space:]' < .github/scrape_active 2>/dev/null || echo false)"
+          [ "$active" = "true" ] || [ "${{ github.event_name }}" != "schedule" ] && active=true || active=false
+          echo "active=$active" >> "$GITHUB_OUTPUT"
+          echo "Scrape gate: active=$active (event=${{ github.event_name }})"
+
       - uses: actions/setup-node@v4
+        if: ${{ steps.gate.outputs.active == 'true' }}
         with:
           node-version: "22"
 
       - name: Install Playwright + Chromium
+        if: ${{ steps.gate.outputs.active == 'true' }}
         run: |
           npm init -y >/dev/null 2>&1 || true
           npm i playwright@1.56.1
           npx playwright install --with-deps chromium
 
       - name: Scrape FanDuel
+        if: ${{ steps.gate.outputs.active == 'true' }}
         run: node fanduel_scraper.js
 
       - name: Commit changes if any
+        if: ${{ steps.gate.outputs.active == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
