@@ -38,16 +38,16 @@
       "yes_bid": 31
     },
     "KXNASCARTOP10-BLAC26-BRQU": {
-      "last_price": 20,
+      "last_price": 15,
       "liquidity": null,
       "name": "Brenden Queen",
       "no_ask": 86,
       "no_bid": 85,
-      "open_interest": 409,
+      "open_interest": 431,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-BRQU",
-      "volume": 414,
-      "volume_24h": 0,
+      "volume": 436,
+      "volume_24h": 16,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -127,11 +127,11 @@
       "name": "Corey LaJoie",
       "no_ask": 90,
       "no_bid": 87,
-      "open_interest": 363,
+      "open_interest": 389,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-COLA",
-      "volume": 363,
-      "volume_24h": 163,
+      "volume": 389,
+      "volume_24h": 182,
       "yes_ask": 13,
       "yes_bid": 10
     },
@@ -279,7 +279,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Kasey Kleyn",
-      "no_ask": 97,
+      "no_ask": 98,
       "no_bid": 94,
       "open_interest": 0,
       "status": "active",
@@ -287,13 +287,13 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 6,
-      "yes_bid": 3
+      "yes_bid": 2
     },
     "KXNASCARTOP10-BLAC26-KRWR": {
       "last_price": 0,
       "liquidity": null,
       "name": "Kris Wright",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 96,
       "open_interest": 0,
       "status": "active",
@@ -301,7 +301,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 1
+      "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-LALE": {
       "last_price": 29,
@@ -439,22 +439,22 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TRMC",
       "volume": 1456,
-      "volume_24h": 120,
+      "volume_24h": 129,
       "yes_ask": 38,
       "yes_bid": 34
     },
     "KXNASCARTOP10-BLAC26-TYAN": {
-      "last_price": 41,
+      "last_price": 40,
       "liquidity": null,
       "name": "Tyler Ankrum",
       "no_ask": 68,
-      "no_bid": 60,
-      "open_interest": 62,
+      "no_bid": 59,
+      "open_interest": 70,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-TYAN",
-      "volume": 62,
-      "volume_24h": 59,
-      "yes_ask": 40,
+      "volume": 70,
+      "volume_24h": 67,
+      "yes_ask": 41,
       "yes_bid": 32
     },
     "KXNASCARTOP10-BLAC26-TYMA": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T04:56:46.294313+00:00",
+  "scraped_at": "2026-10-30T05:02:14.794748+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
