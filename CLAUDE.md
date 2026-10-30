@@ -33,8 +33,8 @@ Canonical kickoff prompt: *"New race week. Cup is `<RACE>`, Xfinity is `<RACE>`.
 Update the SERIES matchers in `scraper.py`, clear all stale lines, grab fresh
 Kalshi + FanDuel, deploy, and confirm."*
 
-**The Truck series is currently OFF** (commented out 2026-10-23 once the Love's
-RV Stop 225 went green; `data/truck/` dropped). To re-enable for a Truck race,
+**The Truck series is currently OFF** (commented out 2026-10-30 once the Black's
+Tire 200 went green; `data/truck/` dropped). To re-enable for a Truck race,
 uncomment its `SERIES` entry in `scraper.py` and re-point the matcher; comment it
 back out (and drop `data/truck/` + its `series.json` entry) once that race has run. Hand Truck boards go to `data/truck/manual/` via
 `CANON_SNAPSHOT`/`MANUAL_DIR`. Caveat while it's off: the `xfinity` catch-all
@@ -53,7 +53,7 @@ tracked. Nothing else needs touching: `index.html`, `fanduel_scraper.js` and
 series and both scrapers skip the series on their own. **The next kickoff must
 uncomment that entry** or the new support race won't be picked up at all (it will
 no longer fall anywhere) — the scraper carries a RESTORE note saying so.
-*Current state (2026-10-24, Talladega): Cup `yellawood` only; Xfinity and Truck both commented out (no catch-all) — the next kickoff must uncomment and re-point them.*
+*Current state (2026-10-30, Martinsville): Cup `xfinity 500`; Xfinity `national debt relief` (catch-all, live); Truck commented out again after the Black's Tire 200 went green.*
 
 ## Branches & deploy flow (IMPORTANT)
 
