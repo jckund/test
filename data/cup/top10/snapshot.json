@@ -41,7 +41,7 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Austin Cindric",
-      "no_ask": 66,
+      "no_ask": 65,
       "no_bid": 63,
       "open_interest": 2697,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 2701,
       "volume_24h": 530,
       "yes_ask": 37,
-      "yes_bid": 34
+      "yes_bid": 35
     },
     "KXNASCARTOP10-XFIN26-AUDI": {
       "last_price": 16,
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 4588,
-      "volume_24h": 2892,
+      "volume_24h": 2657,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -495,23 +495,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYRE",
       "volume": 1326,
-      "volume_24h": 232,
+      "volume_24h": 27,
       "yes_ask": 40,
       "yes_bid": 37
     },
     "KXNASCARTOP10-XFIN26-WIBY": {
-      "last_price": 54,
+      "last_price": 59,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 47,
-      "no_bid": 46,
-      "open_interest": 10,
+      "no_ask": 46,
+      "no_bid": 41,
+      "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-WIBY",
-      "volume": 10,
+      "volume": 56,
       "volume_24h": 1,
-      "yes_ask": 54,
-      "yes_bid": 53
+      "yes_ask": 59,
+      "yes_bid": 54
     },
     "KXNASCARTOP10-XFIN26-ZASM": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T00:20:51.968730+00:00",
+  "scraped_at": "2026-10-30T01:08:01.828753+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
