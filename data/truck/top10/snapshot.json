@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-COLA",
       "volume": 290,
-      "volume_24h": 290,
+      "volume_24h": 90,
       "yes_ask": 12,
       "yes_bid": 10
     },
@@ -181,15 +181,15 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 58,
-      "no_bid": 56,
-      "open_interest": 375,
+      "no_ask": 59,
+      "no_bid": 54,
+      "open_interest": 403,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-GIRU",
-      "volume": 375,
-      "volume_24h": 0,
-      "yes_ask": 44,
-      "yes_bid": 42
+      "volume": 403,
+      "volume_24h": 28,
+      "yes_ask": 46,
+      "yes_bid": 41
     },
     "KXNASCARTOP10-BLAC26-GREN": {
       "last_price": 40,
@@ -265,7 +265,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Kaden Honeycutt",
-      "no_ask": 34,
+      "no_ask": 30,
       "no_bid": 25,
       "open_interest": 0,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 75,
-      "yes_bid": 66
+      "yes_bid": 70
     },
     "KXNASCARTOP10-BLAC26-KAKL": {
       "last_price": 0,
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-MITY",
       "volume": 620,
-      "volume_24h": 212,
+      "volume_24h": 8,
       "yes_ask": 4,
       "yes_bid": 1
     },
@@ -500,22 +500,22 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-BLAC26-WISA": {
-      "last_price": 0,
+      "last_price": 52,
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 55,
-      "no_bid": 49,
-      "open_interest": 0,
+      "no_bid": 48,
+      "open_interest": 19,
       "status": "active",
       "ticker": "KXNASCARTOP10-BLAC26-WISA",
-      "volume": 0,
+      "volume": 19,
       "volume_24h": 0,
-      "yes_ask": 51,
+      "yes_ask": 52,
       "yes_bid": 45
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T00:06:48.299598+00:00",
+  "scraped_at": "2026-10-30T00:24:13.359035+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "top10"
 }
