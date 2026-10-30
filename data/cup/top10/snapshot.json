@@ -27,7 +27,7 @@
       "last_price": 23,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 80,
+      "no_ask": 79,
       "no_bid": 76,
       "open_interest": 68,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 68,
       "volume_24h": 0,
       "yes_ask": 24,
-      "yes_bid": 20
+      "yes_bid": 21
     },
     "KXNASCARTOP10-XFIN26-AUCI": {
       "last_price": 38,
@@ -237,15 +237,15 @@
       "last_price": 72,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 33,
-      "no_bid": 28,
+      "no_ask": 31,
+      "no_bid": 29,
       "open_interest": 575,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
       "volume": 575,
       "volume_24h": 354,
-      "yes_ask": 72,
-      "yes_bid": 67
+      "yes_ask": 71,
+      "yes_bid": 69
     },
     "KXNASCARTOP10-XFIN26-ERJO": {
       "last_price": 0,
@@ -321,7 +321,7 @@
       "last_price": 63,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 44,
+      "no_ask": 42,
       "no_bid": 37,
       "open_interest": 52,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 52,
       "volume_24h": 21,
       "yes_ask": 63,
-      "yes_bid": 56
+      "yes_bid": 58
     },
     "KXNASCARTOP10-XFIN26-MIMC": {
       "last_price": 10,
@@ -379,10 +379,10 @@
       "name": "Ricky Stenhouse Jr.",
       "no_ask": 97,
       "no_bid": 94,
-      "open_interest": 111,
+      "open_interest": 127,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RIST",
-      "volume": 111,
+      "volume": 127,
       "volume_24h": 0,
       "yes_ask": 6,
       "yes_bid": 3
@@ -444,17 +444,17 @@
       "yes_bid": 18
     },
     "KXNASCARTOP10-XFIN26-TOGI": {
-      "last_price": 10,
+      "last_price": 11,
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 91,
-      "no_bid": 90,
-      "open_interest": 4610,
+      "no_bid": 88,
+      "open_interest": 5526,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
-      "volume": 4849,
+      "volume": 5765,
       "volume_24h": 262,
-      "yes_ask": 10,
+      "yes_ask": 12,
       "yes_bid": 9
     },
     "KXNASCARTOP10-XFIN26-TYDI": {
@@ -476,13 +476,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 51,
-      "no_bid": 47,
+      "no_bid": 45,
       "open_interest": 597,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYGI",
       "volume": 597,
       "volume_24h": 35,
-      "yes_ask": 53,
+      "yes_ask": 55,
       "yes_bid": 49
     },
     "KXNASCARTOP10-XFIN26-TYRE": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T20:59:40.398907+00:00",
+  "scraped_at": "2026-10-30T21:10:54.945465+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
