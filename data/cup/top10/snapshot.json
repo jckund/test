@@ -83,15 +83,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Brad Keselowski",
-      "no_ask": 76,
-      "no_bid": 75,
+      "no_ask": 75,
+      "no_bid": 72,
       "open_interest": 1212,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BRKE",
       "volume": 1212,
       "volume_24h": 11,
-      "yes_ask": 25,
-      "yes_bid": 24
+      "yes_ask": 28,
+      "yes_bid": 25
     },
     "KXNASCARTOP10-XFIN26-BUWA": {
       "last_price": 40,
@@ -99,11 +99,11 @@
       "name": "Bubba Wallace",
       "no_ask": 62,
       "no_bid": 60,
-      "open_interest": 1549,
+      "open_interest": 1554,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BUWA",
-      "volume": 1675,
-      "volume_24h": 146,
+      "volume": 1680,
+      "volume_24h": 150,
       "yes_ask": 40,
       "yes_bid": 38
     },
@@ -111,7 +111,7 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Carson Hocevar",
-      "no_ask": 80,
+      "no_ask": 78,
       "no_bid": 74,
       "open_interest": 394,
       "status": "active",
@@ -119,7 +119,7 @@
       "volume": 395,
       "volume_24h": 102,
       "yes_ask": 26,
-      "yes_bid": 20
+      "yes_bid": 22
     },
     "KXNASCARTOP10-XFIN26-CHBE": {
       "last_price": 60,
@@ -388,16 +388,16 @@
       "yes_bid": 3
     },
     "KXNASCARTOP10-XFIN26-ROCH": {
-      "last_price": 28,
+      "last_price": 29,
       "liquidity": null,
       "name": "Ross Chastain",
       "no_ask": 72,
       "no_bid": 71,
-      "open_interest": 990,
+      "open_interest": 996,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-ROCH",
-      "volume": 990,
-      "volume_24h": 657,
+      "volume": 996,
+      "volume_24h": 663,
       "yes_ask": 29,
       "yes_bid": 28
     },
@@ -416,16 +416,16 @@
       "yes_bid": 67
     },
     "KXNASCARTOP10-XFIN26-RYPR": {
-      "last_price": 35,
+      "last_price": 36,
       "liquidity": null,
       "name": "Ryan Preece",
       "no_ask": 66,
       "no_bid": 64,
-      "open_interest": 2288,
+      "open_interest": 2293,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
-      "volume": 2331,
-      "volume_24h": 531,
+      "volume": 2336,
+      "volume_24h": 536,
       "yes_ask": 36,
       "yes_bid": 34
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T00:09:28.364677+00:00",
+  "scraped_at": "2026-10-30T00:15:22.557175+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
