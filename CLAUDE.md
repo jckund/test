@@ -142,6 +142,9 @@ which is optional — the no-ops are harmless and free on a public repo.)
   namespaced keys.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish.
+  Runs **hourly on GitHub's own `schedule` cron** (`:17`); scheduled runs obey the
+  same `.github/scrape_active` gate, manual dispatches always scrape. Its data
+  reaches the site on the next `track.yml` tick.
 - **`evwatch.py`** — high-EV watch. Runs **two scans per poll**, each the CI twin of a
   dashboard tab, sharing one process / one state file / one Pushover call (so no second
   cron-job.org pinger is needed — the existing ~5-min ping at `evalert.yml` drives both):
