@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-RYBL",
       "volume": 474,
-      "volume_24h": 79,
+      "volume_24h": 82,
       "yes_ask": 35,
       "yes_bid": 32
     },
@@ -430,18 +430,18 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-XFIN26-SHVA": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 97,
+      "no_ask": 100,
       "no_bid": 96,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-SHVA",
-      "volume": 0,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 4,
-      "yes_bid": 3
+      "yes_bid": 0
     },
     "KXNASCARTOP3-XFIN26-TOGI": {
       "last_price": 0,
@@ -472,17 +472,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-XFIN26-TYGI": {
-      "last_price": 0,
+      "last_price": 14,
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 87,
-      "no_bid": 86,
-      "open_interest": 0,
+      "no_bid": 82,
+      "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-TYGI",
-      "volume": 0,
+      "volume": 8,
       "volume_24h": 0,
-      "yes_ask": 14,
+      "yes_ask": 18,
       "yes_bid": 13
     },
     "KXNASCARTOP3-XFIN26-TYRE": {
@@ -514,22 +514,22 @@
       "yes_bid": 20
     },
     "KXNASCARTOP3-XFIN26-ZASM": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 99,
+      "no_ask": 100,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-ZASM",
-      "volume": 0,
+      "volume": 2,
       "volume_24h": 0,
       "yes_ask": 2,
-      "yes_bid": 1
+      "yes_bid": 0
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-30T06:48:42.960318+00:00",
+  "scraped_at": "2026-10-30T09:47:07.783877+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
