@@ -78,11 +78,11 @@ SERIES = [
     # take it.
     {"key": "cup", "label": "NASCAR", "matchers": ["xfinity 500"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: Black's Tire 200 (re-enabled 2026-10-27). Apostrophe variants
-    # covered. Comment back out (and drop data/truck/ + its series.json entry)
-    # once it has run.
-    {"key": "truck", "label": "Truck", "matchers": ["black's tire", "black\u2019s tire", "blacks tire"],
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: OFF (commented out 2026-10-30 once the Black's Tire 200 went green;
+    # data/truck/ dropped). To re-enable for a future Truck race, uncomment and
+    # re-point the matcher at that race's name.
+    # {"key": "truck", "label": "Truck", "matchers": ["black's tire", "black\u2019s tire", "blacks tire"],
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     # Xfinity (O'Reilly): National Debt Relief 250 (restored 2026-10-27). Also
     # the catch-all (`default`) for any leftover race.
     {"key": "xfinity", "label": "Xfinity", "matchers": ["national debt relief"], "default": True,
