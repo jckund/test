@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-BRCR",
       "volume": 11005,
-      "volume_24h": 8295,
+      "volume_24h": 1482,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -192,16 +192,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-DETH": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Dean Thompson",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 935,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-DETH",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 935,
+      "volume_24h": 935,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -262,17 +262,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-JELO": {
-      "last_price": 10,
+      "last_price": 9,
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 8458,
+      "no_bid": 91,
+      "open_interest": 8563,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-JELO",
-      "volume": 8458,
-      "volume_24h": 6690,
-      "yes_ask": 8,
+      "volume": 8563,
+      "volume_24h": 6710,
+      "yes_ask": 9,
       "yes_bid": 7
     },
     "KXNASCARRACE-NATI26-JOBI": {
@@ -307,7 +307,7 @@
       "last_price": 27,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 79,
+      "no_ask": 80,
       "no_bid": 75,
       "open_interest": 13216,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 13307,
       "volume_24h": 2605,
       "yes_ask": 25,
-      "yes_bid": 21
+      "yes_bid": 20
     },
     "KXNASCARRACE-NATI26-JUCA": {
       "last_price": 0,
@@ -435,10 +435,10 @@
       "name": "Rajah Caruth",
       "no_ask": 99,
       "no_bid": 97,
-      "open_interest": 3212,
+      "open_interest": 3524,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-RACA",
-      "volume": 3212,
+      "volume": 3524,
       "volume_24h": 3038,
       "yes_ask": 3,
       "yes_bid": 1
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 88,
-      "no_bid": 85,
+      "no_bid": 84,
       "open_interest": 9792,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SASM",
       "volume": 10099,
       "volume_24h": 2105,
-      "yes_ask": 15,
+      "yes_ask": 16,
       "yes_bid": 12
     },
     "KXNASCARRACE-NATI26-SHCR": {
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-TAGR",
       "volume": 8105,
-      "volume_24h": 635,
+      "volume_24h": 601,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-30T20:18:48.834174+00:00",
+  "scraped_at": "2026-10-30T20:27:45.100074+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "winner"
 }
