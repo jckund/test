@@ -203,13 +203,29 @@ function eventForSeries(events, series, claimed) {
       return n.includes("cup series") && n.includes("race") && !n.includes("futures");
     }) || null;
   }
-  return evs.find((e) => {
+  const isSupportRace = (e) => {
     const n = (e.name || "").toLowerCase();
     return n.includes("nascar") && n.includes("race") && !n.includes("futures")
       && !n.includes("outright") && !n.includes("cup series")
       && !claimed.has(e.eventId ?? e.id);
-  }) || null;
+  };
+  // With more than one support race open (Truck + Xfinity on the same weekend),
+  // "first non-Cup event" hands each series an arbitrary board, so prefer the
+  // event whose name carries the series' own word ("NASCAR - Truck Series -
+  // Race", "NASCAR - O'Reilly Auto Parts - Race"). Fall back to the old
+  // first-unclaimed pick only when no event names the series.
+  const words = SERIES_EVENT_WORDS[series.key] || [];
+  return evs.find((e) => isSupportRace(e) && words.some((w) => (e.name || "").toLowerCase().includes(w)))
+    || evs.find((e) => isSupportRace(e)
+      && !Object.values(SERIES_EVENT_WORDS).flat().some((w) => (e.name || "").toLowerCase().includes(w)))
+    || null;
 }
+
+// FanDuel event-name words that identify each support series' per-race event.
+const SERIES_EVENT_WORDS = {
+  truck: ["truck"],
+  xfinity: ["o'reilly", "oreilly", "xfinity"],
+};
 
 // Bare FanDuel market name -> our finish-tier key (race identity comes from the
 // event, so no race name is parsed here).
