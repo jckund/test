@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BUWA",
       "volume": 1788,
-      "volume_24h": 258,
+      "volume_24h": 115,
       "yes_ask": 40,
       "yes_bid": 38
     },
@@ -206,18 +206,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-XFIN26-COZI": {
-      "last_price": 13,
+      "last_price": 12,
       "liquidity": null,
       "name": "Connor Zilisch",
-      "no_ask": 92,
-      "no_bid": 88,
-      "open_interest": 2,
+      "no_ask": 91,
+      "no_bid": 87,
+      "open_interest": 127,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-COZI",
-      "volume": 2,
+      "volume": 127,
       "volume_24h": 2,
-      "yes_ask": 12,
-      "yes_bid": 8
+      "yes_ask": 13,
+      "yes_bid": 9
     },
     "KXNASCARTOP10-XFIN26-DASU": {
       "last_price": 15,
@@ -430,17 +430,17 @@
       "yes_bid": 34
     },
     "KXNASCARTOP10-XFIN26-SHVA": {
-      "last_price": 20,
+      "last_price": 19,
       "liquidity": null,
       "name": "Shane van Gisbergen",
       "no_ask": 82,
-      "no_bid": 81,
-      "open_interest": 3239,
+      "no_bid": 78,
+      "open_interest": 3439,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-SHVA",
-      "volume": 3239,
+      "volume": 3439,
       "volume_24h": 469,
-      "yes_ask": 19,
+      "yes_ask": 22,
       "yes_bid": 18
     },
     "KXNASCARTOP10-XFIN26-TOGI": {
@@ -453,7 +453,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 4814,
-      "volume_24h": 1246,
+      "volume_24h": 1209,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -503,7 +503,7 @@
       "last_price": 59,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 45,
+      "no_ask": 47,
       "no_bid": 41,
       "open_interest": 59,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 59,
       "volume_24h": 50,
       "yes_ask": 59,
-      "yes_bid": 55
+      "yes_bid": 53
     },
     "KXNASCARTOP10-XFIN26-ZASM": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-30T17:57:33.062908+00:00",
+  "scraped_at": "2026-10-30T18:09:06.329030+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
