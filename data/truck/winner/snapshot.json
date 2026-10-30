@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-FRMU",
       "volume": 760,
-      "volume_24h": 94,
+      "volume_24h": 573,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -318,16 +318,16 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-BLAC26-LARI": {
-      "last_price": 21,
+      "last_price": 20,
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 80,
       "no_bid": 79,
-      "open_interest": 5636,
+      "open_interest": 5727,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-LARI",
-      "volume": 5661,
-      "volume_24h": 661,
+      "volume": 5841,
+      "volume_24h": 760,
       "yes_ask": 21,
       "yes_bid": 20
     },
@@ -365,10 +365,10 @@
       "name": "Sammy Smith",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 3318,
+      "open_interest": 5664,
       "status": "active",
       "ticker": "KXNASCARRACE-BLAC26-SASM",
-      "volume": 3452,
+      "volume": 5798,
       "volume_24h": 275,
       "yes_ask": 6,
       "yes_bid": 5
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-30T03:30:41.005026+00:00",
+  "scraped_at": "2026-10-30T03:36:22.757270+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-blac26",
   "tier": "winner"
 }
