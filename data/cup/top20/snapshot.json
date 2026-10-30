@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-DASU",
       "volume": 9,
-      "volume_24h": 4,
+      "volume_24h": 0,
       "yes_ask": 46,
       "yes_bid": 39
     },
@@ -447,15 +447,15 @@
       "last_price": 55,
       "liquidity": null,
       "name": "Todd Gilliland",
-      "no_ask": 51,
+      "no_ask": 52,
       "no_bid": 45,
       "open_interest": 843,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-TOGI",
       "volume": 1284,
-      "volume_24h": 30,
+      "volume_24h": 25,
       "yes_ask": 55,
-      "yes_bid": 49
+      "yes_bid": 48
     },
     "KXNASCARTOP20-XFIN26-TYDI": {
       "last_price": 27,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-30T11:39:39.217913+00:00",
+  "scraped_at": "2026-10-30T12:55:33.630356+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
