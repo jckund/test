@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-HABU",
       "volume": 400,
-      "volume_24h": 0,
+      "volume_24h": 400,
       "yes_ask": 4,
       "yes_bid": 0
     },
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 88,
-      "no_bid": 67,
+      "no_bid": 68,
       "open_interest": 665,
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-JELO",
       "volume": 676,
       "volume_24h": 285,
-      "yes_ask": 33,
+      "yes_ask": 32,
       "yes_bid": 12
     },
     "KXNASCARTOP3-NATI26-JOBI": {
@@ -307,7 +307,7 @@
       "last_price": 44,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 74,
+      "no_ask": 70,
       "no_bid": 52,
       "open_interest": 871,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 930,
       "volume_24h": 645,
       "yes_ask": 48,
-      "yes_bid": 26
+      "yes_bid": 30
     },
     "KXNASCARTOP3-NATI26-JUCA": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-31T08:18:03.613284+00:00",
+  "scraped_at": "2026-10-31T08:23:03.119206+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top3"
 }
