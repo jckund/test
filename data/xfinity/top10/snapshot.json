@@ -27,7 +27,7 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Anthony Alfredo",
-      "no_ask": 72,
+      "no_ask": 71,
       "no_bid": 62,
       "open_interest": 891,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 891,
       "volume_24h": 76,
       "yes_ask": 38,
-      "yes_bid": 28
+      "yes_bid": 29
     },
     "KXNASCARTOP10-NATI26-AUHI": {
       "last_price": 51,
@@ -66,24 +66,24 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-BLPE": {
-      "last_price": 9,
+      "last_price": 22,
       "liquidity": null,
       "name": "Blaine Perkins",
-      "no_ask": 95,
-      "no_bid": 91,
-      "open_interest": 157,
+      "no_ask": 94,
+      "no_bid": 76,
+      "open_interest": 356,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BLPE",
-      "volume": 157,
+      "volume": 356,
       "volume_24h": 157,
-      "yes_ask": 9,
-      "yes_bid": 5
+      "yes_ask": 24,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-NATI26-BRCR": {
       "last_price": 53,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 72,
+      "no_ask": 66,
       "no_bid": 36,
       "open_interest": 942,
       "status": "active",
@@ -91,7 +91,7 @@
       "volume": 952,
       "volume_24h": 256,
       "yes_ask": 64,
-      "yes_bid": 28
+      "yes_bid": 34
     },
     "KXNASCARTOP10-NATI26-BRJO": {
       "last_price": 59,
@@ -108,15 +108,15 @@
       "yes_bid": 29
     },
     "KXNASCARTOP10-NATI26-BRPO": {
-      "last_price": 17,
+      "last_price": 16,
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 88,
       "no_bid": 84,
-      "open_interest": 203,
+      "open_interest": 221,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BRPO",
-      "volume": 203,
+      "volume": 221,
       "volume_24h": 0,
       "yes_ask": 16,
       "yes_bid": 12
@@ -197,10 +197,10 @@
       "name": "Dean Thompson",
       "no_ask": 73,
       "no_bid": 71,
-      "open_interest": 1028,
+      "open_interest": 1037,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-DETH",
-      "volume": 1028,
+      "volume": 1037,
       "volume_24h": 539,
       "yes_ask": 29,
       "yes_bid": 27
@@ -360,18 +360,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-LEPU": {
-      "last_price": 32,
+      "last_price": 31,
       "liquidity": null,
       "name": "Lee Pulliam",
-      "no_ask": 72,
-      "no_bid": 69,
-      "open_interest": 1379,
+      "no_ask": 75,
+      "no_bid": 66,
+      "open_interest": 1388,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-LEPU",
-      "volume": 1495,
+      "volume": 1503,
       "volume_24h": 240,
-      "yes_ask": 31,
-      "yes_bid": 28
+      "yes_ask": 34,
+      "yes_bid": 25
     },
     "KXNASCARTOP10-NATI26-MAMA": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-31T20:03:44.606945+00:00",
+  "scraped_at": "2026-10-31T20:08:42.800997+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
