@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AUCI",
       "volume": 3059,
-      "volume_24h": 275,
+      "volume_24h": 290,
       "yes_ask": 36,
       "yes_bid": 33
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-BUWA",
       "volume": 1827,
-      "volume_24h": 139,
+      "volume_24h": 147,
       "yes_ask": 39,
       "yes_bid": 38
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBE",
       "volume": 186,
-      "volume_24h": 103,
+      "volume_24h": 114,
       "yes_ask": 60,
       "yes_bid": 57
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBR",
       "volume": 81,
-      "volume_24h": 69,
+      "volume_24h": 79,
       "yes_ask": 58,
       "yes_bid": 52
     },
@@ -167,15 +167,15 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 43,
-      "no_bid": 39,
+      "no_ask": 41,
+      "no_bid": 40,
       "open_interest": 654,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHEL",
       "volume": 678,
-      "volume_24h": 175,
-      "yes_ask": 61,
-      "yes_bid": 57
+      "volume_24h": 186,
+      "yes_ask": 60,
+      "yes_bid": 59
     },
     "KXNASCARTOP10-XFIN26-COCU": {
       "last_price": 0,
@@ -234,7 +234,7 @@
       "yes_bid": 11
     },
     "KXNASCARTOP10-XFIN26-DEHA": {
-      "last_price": 66,
+      "last_price": 70,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 34,
@@ -242,7 +242,7 @@
       "open_interest": 655,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-DEHA",
-      "volume": 680,
+      "volume": 785,
       "volume_24h": 454,
       "yes_ask": 70,
       "yes_bid": 66
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOBE",
       "volume": 2334,
-      "volume_24h": 98,
+      "volume_24h": 106,
       "yes_ask": 48,
       "yes_bid": 44
     },
@@ -290,7 +290,7 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-XFIN26-JOLO": {
-      "last_price": 63,
+      "last_price": 64,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 37,
@@ -298,8 +298,8 @@
       "open_interest": 424,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOLO",
-      "volume": 443,
-      "volume_24h": 209,
+      "volume": 469,
+      "volume_24h": 235,
       "yes_ask": 64,
       "yes_bid": 63
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-KYLA",
       "volume": 112,
-      "volume_24h": 65,
+      "volume_24h": 76,
       "yes_ask": 63,
       "yes_bid": 56
     },
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYBL",
       "volume": 93,
-      "volume_24h": 28,
+      "volume_24h": 43,
       "yes_ask": 71,
       "yes_bid": 66
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 2887,
-      "volume_24h": 538,
+      "volume_24h": 551,
       "yes_ask": 36,
       "yes_bid": 33
     },
@@ -475,7 +475,7 @@
       "last_price": 53,
       "liquidity": null,
       "name": "Ty Gibbs",
-      "no_ask": 50,
+      "no_ask": 52,
       "no_bid": 46,
       "open_interest": 599,
       "status": "active",
@@ -483,7 +483,7 @@
       "volume": 634,
       "volume_24h": 56,
       "yes_ask": 54,
-      "yes_bid": 50
+      "yes_bid": 48
     },
     "KXNASCARTOP10-XFIN26-TYRE": {
       "last_price": 40,
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYRE",
       "volume": 1687,
-      "volume_24h": 348,
+      "volume_24h": 356,
       "yes_ask": 40,
       "yes_bid": 37
     },
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-WIBY",
       "volume": 112,
-      "volume_24h": 43,
+      "volume_24h": 53,
       "yes_ask": 59,
       "yes_bid": 53
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-31T12:00:26.264007+00:00",
+  "scraped_at": "2026-10-31T12:05:18.670730+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
