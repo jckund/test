@@ -42,13 +42,13 @@
       "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 100,
-      "no_bid": 76,
+      "no_bid": 99,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-AUHI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 24,
+      "yes_ask": 1,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NATI26-BALE": {
@@ -150,7 +150,7 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NATI26-CODA": {
-      "last_price": 7,
+      "last_price": 44,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 94,
@@ -158,7 +158,7 @@
       "open_interest": 1737,
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-CODA",
-      "volume": 1764,
+      "volume": 1766,
       "volume_24h": 1372,
       "yes_ask": 44,
       "yes_bid": 6
@@ -265,7 +265,7 @@
       "last_price": 28,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 72,
+      "no_ask": 71,
       "no_bid": 51,
       "open_interest": 977,
       "status": "active",
@@ -273,7 +273,7 @@
       "volume": 988,
       "volume_24h": 395,
       "yes_ask": 49,
-      "yes_bid": 28
+      "yes_bid": 29
     },
     "KXNASCARTOP3-NATI26-JOBI": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-31T20:43:17.467828+00:00",
+  "scraped_at": "2026-10-31T20:48:09.859224+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top3"
 }
