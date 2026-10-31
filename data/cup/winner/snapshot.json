@@ -71,10 +71,10 @@
       "name": "Austin Hill",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 168,
+      "open_interest": 448,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-AUHI",
-      "volume": 168,
+      "volume": 448,
       "volume_24h": 73,
       "yes_ask": 1,
       "yes_bid": 0
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CAHO",
       "volume": 43097,
-      "volume_24h": 9437,
+      "volume_24h": 9391,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBR",
       "volume": 16765,
-      "volume_24h": 6931,
+      "volume_24h": 6919,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -167,15 +167,15 @@
       "last_price": 10,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 97,
+      "no_ask": 93,
       "no_bid": 91,
-      "open_interest": 60390,
+      "open_interest": 63175,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHEL",
-      "volume": 60608,
+      "volume": 63393,
       "volume_24h": 5005,
       "yes_ask": 9,
-      "yes_bid": 3
+      "yes_bid": 7
     },
     "KXNASCARRACE-XFIN26-COCU": {
       "last_price": 1,
@@ -238,13 +238,13 @@
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 87,
-      "no_bid": 85,
-      "open_interest": 32453,
+      "no_bid": 84,
+      "open_interest": 45892,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
-      "volume": 32937,
-      "volume_24h": 6547,
-      "yes_ask": 15,
+      "volume": 46376,
+      "volume_24h": 6494,
+      "yes_ask": 16,
       "yes_bid": 13
     },
     "KXNASCARRACE-XFIN26-ERJO": {
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-JOLO": {
-      "last_price": 9,
+      "last_price": 11,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 97,
-      "no_bid": 91,
-      "open_interest": 49276,
+      "no_ask": 95,
+      "no_bid": 89,
+      "open_interest": 49372,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-JOLO",
-      "volume": 50949,
-      "volume_24h": 5562,
-      "yes_ask": 9,
-      "yes_bid": 3
+      "volume": 51046,
+      "volume_24h": 5563,
+      "yes_ask": 11,
+      "yes_bid": 5
     },
     "KXNASCARRACE-XFIN26-JONE": {
       "last_price": 1,
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
       "volume": 31278,
-      "volume_24h": 7548,
+      "volume_24h": 8592,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-ROCH",
       "volume": 9729,
-      "volume_24h": 4515,
+      "volume_24h": 4387,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -421,10 +421,10 @@
       "name": "Ryan Preece",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 2497,
+      "open_interest": 2632,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYPR",
-      "volume": 2497,
+      "volume": 2632,
       "volume_24h": 509,
       "yes_ask": 2,
       "yes_bid": 1
@@ -435,11 +435,11 @@
       "name": "Shane van Gisbergen",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 4552,
+      "open_interest": 4646,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-SHVA",
-      "volume": 4552,
-      "volume_24h": 1685,
+      "volume": 4646,
+      "volume_24h": 1591,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYGI",
       "volume": 47192,
-      "volume_24h": 18449,
+      "volume_24h": 18425,
       "yes_ask": 6,
       "yes_bid": 4
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-TYRE",
       "volume": 15324,
-      "volume_24h": 7337,
+      "volume_24h": 7770,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-31T17:03:07.252843+00:00",
+  "scraped_at": "2026-10-31T17:07:48.027434+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
