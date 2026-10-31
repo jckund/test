@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-DASU",
       "volume": 408,
-      "volume_24h": 399,
+      "volume_24h": 322,
       "yes_ask": 50,
       "yes_bid": 43
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-SHVA",
       "volume": 989,
-      "volume_24h": 318,
+      "volume_24h": 296,
       "yes_ask": 56,
       "yes_bid": 50
     },
@@ -504,32 +504,32 @@
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 23,
-      "no_bid": 15,
+      "no_bid": 14,
       "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-WIBY",
       "volume": 200,
-      "volume_24h": 200,
-      "yes_ask": 85,
+      "volume_24h": 0,
+      "yes_ask": 86,
       "yes_bid": 77
     },
     "KXNASCARTOP20-XFIN26-ZASM": {
       "last_price": 51,
       "liquidity": null,
       "name": "Zane Smith",
-      "no_ask": 57,
-      "no_bid": 52,
+      "no_ask": 58,
+      "no_bid": 50,
       "open_interest": 855,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-ZASM",
       "volume": 865,
-      "volume_24h": 445,
-      "yes_ask": 48,
-      "yes_bid": 43
+      "volume_24h": 355,
+      "yes_ask": 50,
+      "yes_bid": 42
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-10-31T15:48:31.154585+00:00",
+  "scraped_at": "2026-10-31T16:15:50.391711+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
