@@ -97,7 +97,7 @@
       "last_price": 4,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 96,
       "open_interest": 66589,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 66597,
       "volume_24h": 4695,
       "yes_ask": 4,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARRACE-XFIN26-CAHO": {
       "last_price": 3,
@@ -169,10 +169,10 @@
       "name": "Chase Elliott",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 85687,
+      "open_interest": 85937,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHEL",
-      "volume": 86044,
+      "volume": 86294,
       "volume_24h": 29742,
       "yes_ask": 8,
       "yes_bid": 7
@@ -234,15 +234,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-DEHA": {
-      "last_price": 30,
+      "last_price": 32,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 70,
       "no_bid": 68,
-      "open_interest": 62489,
+      "open_interest": 62549,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
-      "volume": 64105,
+      "volume": 64165,
       "volume_24h": 37047,
       "yes_ask": 32,
       "yes_bid": 30
@@ -295,10 +295,10 @@
       "name": "Joey Logano",
       "no_ask": 92,
       "no_bid": 91,
-      "open_interest": 53919,
+      "open_interest": 54128,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-JOLO",
-      "volume": 55605,
+      "volume": 55814,
       "volume_24h": 9883,
       "yes_ask": 9,
       "yes_bid": 8
@@ -323,10 +323,10 @@
       "name": "Kyle Larson",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 40757,
+      "open_interest": 41366,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
-      "volume": 41110,
+      "volume": 41718,
       "volume_24h": 13429,
       "yes_ask": 7,
       "yes_bid": 6
@@ -407,10 +407,10 @@
       "name": "Ryan Blaney",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 57874,
+      "open_interest": 58009,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-RYBL",
-      "volume": 59098,
+      "volume": 59233,
       "volume_24h": 5093,
       "yes_ask": 14,
       "yes_bid": 13
@@ -500,18 +500,18 @@
       "yes_bid": 2
     },
     "KXNASCARRACE-XFIN26-WIBY": {
-      "last_price": 4,
+      "last_price": 6,
       "liquidity": null,
       "name": "William Byron",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 50345,
+      "no_ask": 96,
+      "no_bid": 94,
+      "open_interest": 56966,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-WIBY",
-      "volume": 50393,
+      "volume": 57015,
       "volume_24h": 5095,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "yes_ask": 6,
+      "yes_bid": 4
     },
     "KXNASCARRACE-XFIN26-ZASM": {
       "last_price": 1,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-31T20:35:17.617920+00:00",
+  "scraped_at": "2026-10-31T20:40:26.558540+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }

@@ -27,7 +27,7 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Anthony Alfredo",
-      "no_ask": 69,
+      "no_ask": 68,
       "no_bid": 42,
       "open_interest": 891,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 891,
       "volume_24h": 76,
       "yes_ask": 58,
-      "yes_bid": 31
+      "yes_bid": 32
     },
     "KXNASCARTOP10-NATI26-AUHI": {
       "last_price": 1,
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-AUHI",
       "volume": 731,
-      "volume_24h": 182,
+      "volume_24h": 707,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -80,18 +80,18 @@
       "yes_bid": 4
     },
     "KXNASCARTOP10-NATI26-BRCR": {
-      "last_price": 53,
+      "last_price": 18,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 73,
+      "no_ask": 82,
       "no_bid": 33,
       "open_interest": 942,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-BRCR",
-      "volume": 952,
+      "volume": 956,
       "volume_24h": 256,
       "yes_ask": 67,
-      "yes_bid": 27
+      "yes_bid": 18
     },
     "KXNASCARTOP10-NATI26-BRJO": {
       "last_price": 59,
@@ -150,18 +150,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NATI26-CODA": {
-      "last_price": 58,
+      "last_price": 16,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 65,
+      "no_ask": 84,
       "no_bid": 42,
-      "open_interest": 205,
+      "open_interest": 211,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-CODA",
-      "volume": 205,
-      "volume_24h": 194,
+      "volume": 212,
+      "volume_24h": 195,
       "yes_ask": 58,
-      "yes_bid": 35
+      "yes_bid": 16
     },
     "KXNASCARTOP10-NATI26-DACR": {
       "last_price": 1,
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-JUAL",
       "volume": 1072,
-      "volume_24h": 388,
+      "volume_24h": 390,
       "yes_ask": 85,
       "yes_bid": 71
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-PAST",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 10,
       "yes_bid": 4
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-RACA",
       "volume": 908,
-      "volume_24h": 107,
+      "volume_24h": 144,
       "yes_ask": 79,
       "yes_bid": 26
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SAMA",
       "volume": 251,
-      "volume_24h": 5,
+      "volume_24h": 6,
       "yes_ask": 63,
       "yes_bid": 14
     },
@@ -505,11 +505,11 @@
       "name": "Sheldon Creed",
       "no_ask": 55,
       "no_bid": 42,
-      "open_interest": 891,
+      "open_interest": 892,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SHCR",
-      "volume": 901,
-      "volume_24h": 382,
+      "volume": 902,
+      "volume_24h": 383,
       "yes_ask": 58,
       "yes_bid": 45
     },
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-TAGR",
       "volume": 171,
-      "volume_24h": 152,
+      "volume_24h": 153,
       "yes_ask": 79,
       "yes_bid": 45
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-31T20:38:35.278355+00:00",
+  "scraped_at": "2026-10-31T20:43:50.161971+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
