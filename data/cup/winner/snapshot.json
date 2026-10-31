@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 56099,
+      "no_bid": 98,
+      "open_interest": 57034,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-BRKE",
-      "volume": 56099,
+      "volume": 57034,
       "volume_24h": 47556,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-XFIN26-BUWA": {
@@ -113,10 +113,10 @@
       "name": "Carson Hocevar",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 60407,
+      "open_interest": 60719,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CAHO",
-      "volume": 60412,
+      "volume": 60724,
       "volume_24h": 25795,
       "yes_ask": 3,
       "yes_bid": 2
@@ -127,10 +127,10 @@
       "name": "Christopher Bell",
       "no_ask": 95,
       "no_bid": 94,
-      "open_interest": 31088,
+      "open_interest": 31401,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-CHBE",
-      "volume": 32645,
+      "volume": 32957,
       "volume_24h": 8221,
       "yes_ask": 6,
       "yes_bid": 5
@@ -237,15 +237,15 @@
       "last_price": 30,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 71,
+      "no_ask": 73,
       "no_bid": 70,
-      "open_interest": 63174,
+      "open_interest": 63190,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-DEHA",
-      "volume": 65165,
+      "volume": 65181,
       "volume_24h": 37720,
       "yes_ask": 30,
-      "yes_bid": 29
+      "yes_bid": 27
     },
     "KXNASCARRACE-XFIN26-ERJO": {
       "last_price": 1,
@@ -323,10 +323,10 @@
       "name": "Kyle Larson",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 43284,
+      "open_interest": 43552,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-KYLA",
-      "volume": 43636,
+      "volume": 43905,
       "volume_24h": 17616,
       "yes_ask": 7,
       "yes_bid": 6
@@ -435,10 +435,10 @@
       "name": "Shane van Gisbergen",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 5113,
+      "open_interest": 6048,
       "status": "active",
       "ticker": "KXNASCARRACE-XFIN26-SHVA",
-      "volume": 5113,
+      "volume": 6048,
       "volume_24h": 2105,
       "yes_ask": 1,
       "yes_bid": 0
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-31T22:05:16.815907+00:00",
+  "scraped_at": "2026-10-31T22:10:20.022120+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "winner"
 }
