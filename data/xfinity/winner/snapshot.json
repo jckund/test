@@ -108,16 +108,16 @@
       "yes_bid": 6
     },
     "KXNASCARRACE-NATI26-BRPO": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Brennan Poole",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-BRPO",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 94,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-CAKV",
       "volume": 21912,
-      "volume_24h": 11362,
+      "volume_24h": 11405,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -150,17 +150,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-CODA": {
-      "last_price": 8,
+      "last_price": 9,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 16354,
+      "no_bid": 91,
+      "open_interest": 16552,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-CODA",
-      "volume": 16378,
-      "volume_24h": 13168,
-      "yes_ask": 8,
+      "volume": 16576,
+      "volume_24h": 13308,
+      "yes_ask": 9,
       "yes_bid": 7
     },
     "KXNASCARRACE-NATI26-DACR": {
@@ -267,11 +267,11 @@
       "name": "Jesse Love",
       "no_ask": 92,
       "no_bid": 90,
-      "open_interest": 12275,
+      "open_interest": 12369,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-JELO",
-      "volume": 12294,
-      "volume_24h": 8187,
+      "volume": 12388,
+      "volume_24h": 8196,
       "yes_ask": 10,
       "yes_bid": 8
     },
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Justin Allgaier",
       "no_ask": 79,
-      "no_bid": 75,
-      "open_interest": 20247,
+      "no_bid": 73,
+      "open_interest": 25985,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-JUAL",
-      "volume": 20443,
-      "volume_24h": 8516,
-      "yes_ask": 25,
+      "volume": 26180,
+      "volume_24h": 8553,
+      "yes_ask": 27,
       "yes_bid": 21
     },
     "KXNASCARRACE-NATI26-JUCA": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-RACA",
       "volume": 15291,
-      "volume_24h": 14734,
+      "volume_24h": 15086,
       "yes_ask": 7,
       "yes_bid": 4
     },
@@ -472,17 +472,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NATI26-SAMA": {
-      "last_price": 5,
+      "last_price": 7,
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 97,
-      "no_bid": 95,
-      "open_interest": 14935,
+      "no_bid": 94,
+      "open_interest": 15080,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SAMA",
-      "volume": 14979,
+      "volume": 15124,
       "volume_24h": 14423,
-      "yes_ask": 5,
+      "yes_ask": 6,
       "yes_bid": 3
     },
     "KXNASCARRACE-NATI26-SASM": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SASM",
       "volume": 20634,
-      "volume_24h": 12482,
+      "volume_24h": 12498,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -505,11 +505,11 @@
       "name": "Sheldon Creed",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 7587,
+      "open_interest": 8149,
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-SHCR",
-      "volume": 8106,
-      "volume_24h": 4866,
+      "volume": 8668,
+      "volume_24h": 5337,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NATI26-WISA",
       "volume": 16083,
-      "volume_24h": 15651,
+      "volume_24h": 15801,
       "yes_ask": 7,
       "yes_bid": 4
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-10-31T17:38:06.643158+00:00",
+  "scraped_at": "2026-10-31T17:42:55.445391+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "winner"
 }
