@@ -251,7 +251,7 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Jeremy Clements",
-      "no_ask": 100,
+      "no_ask": 98,
       "no_bid": 75,
       "open_interest": 565,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 565,
       "volume_24h": 12,
       "yes_ask": 25,
-      "yes_bid": 0
+      "yes_bid": 2
     },
     "KXNASCARTOP10-NATI26-JELO": {
       "last_price": 67,
@@ -486,15 +486,15 @@
       "yes_bid": 14
     },
     "KXNASCARTOP10-NATI26-SASM": {
-      "last_price": 67,
+      "last_price": 57,
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 43,
       "no_bid": 33,
-      "open_interest": 40,
+      "open_interest": 44,
       "status": "active",
       "ticker": "KXNASCARTOP10-NATI26-SASM",
-      "volume": 40,
+      "volume": 44,
       "volume_24h": 24,
       "yes_ask": 67,
       "yes_bid": 57
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-10-31T20:13:43.143489+00:00",
+  "scraped_at": "2026-10-31T20:18:36.185193+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top10"
 }
