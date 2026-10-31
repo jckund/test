@@ -83,15 +83,15 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Brent Crews",
-      "no_ask": 81,
-      "no_bid": 80,
+      "no_ask": 80,
+      "no_bid": 76,
       "open_interest": 1200,
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-BRCR",
       "volume": 1200,
       "volume_24h": 541,
-      "yes_ask": 20,
-      "yes_bid": 19
+      "yes_ask": 24,
+      "yes_bid": 20
     },
     "KXNASCARTOP3-NATI26-BRJO": {
       "last_price": 27,
@@ -150,15 +150,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NATI26-CODA": {
-      "last_price": 23,
+      "last_price": 22,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 80,
       "no_bid": 78,
-      "open_interest": 919,
+      "open_interest": 984,
       "status": "active",
       "ticker": "KXNASCARTOP3-NATI26-CODA",
-      "volume": 919,
+      "volume": 984,
       "volume_24h": 546,
       "yes_ask": 22,
       "yes_bid": 20
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-31T18:42:48.451534+00:00",
+  "scraped_at": "2026-10-31T18:48:11.318437+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nati26",
   "tier": "top3"
 }
