@@ -237,15 +237,15 @@
       "last_price": 39,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 69,
-      "no_bid": 62,
+      "no_ask": 68,
+      "no_bid": 63,
       "open_interest": 102,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-DEHA",
       "volume": 102,
-      "volume_24h": 13,
-      "yes_ask": 38,
-      "yes_bid": 31
+      "volume_24h": 0,
+      "yes_ask": 37,
+      "yes_bid": 32
     },
     "KXNASCARTOP3-XFIN26-ERJO": {
       "last_price": 0,
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 68,
-      "no_bid": 64,
+      "no_bid": 65,
       "open_interest": 552,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-RYBL",
       "volume": 556,
-      "volume_24h": 91,
-      "yes_ask": 36,
+      "volume_24h": 82,
+      "yes_ask": 35,
       "yes_bid": 32
     },
     "KXNASCARTOP3-XFIN26-RYPR": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-SHVA",
       "volume": 2,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 0
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-TYGI",
       "volume": 1029,
-      "volume_24h": 1029,
+      "volume_24h": 1021,
       "yes_ask": 18,
       "yes_bid": 14
     },
@@ -523,13 +523,13 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-ZASM",
       "volume": 2,
-      "volume_24h": 2,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-10-31T04:30:21.311214+00:00",
+  "scraped_at": "2026-10-31T13:58:45.225915+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
