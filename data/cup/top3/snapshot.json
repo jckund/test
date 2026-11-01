@@ -167,7 +167,7 @@
       "last_price": 33,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 80,
+      "no_ask": 70,
       "no_bid": 69,
       "open_interest": 1262,
       "status": "active",
@@ -175,7 +175,7 @@
       "volume": 1262,
       "volume_24h": 1225,
       "yes_ask": 31,
-      "yes_bid": 20
+      "yes_bid": 30
     },
     "KXNASCARTOP3-XFIN26-COCU": {
       "last_price": 1,
@@ -322,13 +322,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 77,
-      "no_bid": 72,
+      "no_bid": 74,
       "open_interest": 1293,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-KYLA",
       "volume": 1416,
       "volume_24h": 1212,
-      "yes_ask": 28,
+      "yes_ask": 26,
       "yes_bid": 23
     },
     "KXNASCARTOP3-XFIN26-MIMC": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-01T16:39:31.876292+00:00",
+  "scraped_at": "2026-11-01T16:43:09.698671+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
