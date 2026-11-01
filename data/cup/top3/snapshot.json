@@ -215,7 +215,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-COZI",
       "volume": 96,
-      "volume_24h": 94,
+      "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
     },
@@ -322,13 +322,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 77,
-      "no_bid": 72,
+      "no_bid": 73,
       "open_interest": 1257,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-KYLA",
       "volume": 1380,
       "volume_24h": 1186,
-      "yes_ask": 28,
+      "yes_ask": 27,
       "yes_bid": 23
     },
     "KXNASCARTOP3-XFIN26-MIMC": {
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-01T14:40:19.601416+00:00",
+  "scraped_at": "2026-11-01T14:43:41.410095+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
