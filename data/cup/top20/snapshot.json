@@ -69,15 +69,15 @@
       "last_price": 98,
       "liquidity": null,
       "name": "Austin Hill",
-      "no_ask": 98,
+      "no_ask": 91,
       "no_bid": 2,
       "open_interest": 201,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-AUHI",
       "volume": 201,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 98,
-      "yes_bid": 2
+      "yes_bid": 9
     },
     "KXNASCARTOP20-XFIN26-BRKE": {
       "last_price": 73,
@@ -364,13 +364,13 @@
       "liquidity": null,
       "name": "Riley Herbst",
       "no_ask": 98,
-      "no_bid": 33,
+      "no_bid": 35,
       "open_interest": 423,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-RIHE",
       "volume": 423,
       "volume_24h": 0,
-      "yes_ask": 67,
+      "yes_ask": 65,
       "yes_bid": 2
     },
     "KXNASCARTOP20-XFIN26-RIST": {
@@ -458,18 +458,18 @@
       "yes_bid": 54
     },
     "KXNASCARTOP20-XFIN26-TYDI": {
-      "last_price": 27,
+      "last_price": 51,
       "liquidity": null,
       "name": "Ty Dillon",
-      "no_ask": 48,
+      "no_ask": 99,
       "no_bid": 10,
-      "open_interest": 505,
+      "open_interest": 515,
       "status": "active",
       "ticker": "KXNASCARTOP20-XFIN26-TYDI",
-      "volume": 505,
+      "volume": 525,
       "volume_24h": 0,
       "yes_ask": 90,
-      "yes_bid": 52
+      "yes_bid": 1
     },
     "KXNASCARTOP20-XFIN26-TYGI": {
       "last_price": 0,
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-01T01:20:22.816282+00:00",
+  "scraped_at": "2026-11-01T01:25:17.495901+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top20"
 }
