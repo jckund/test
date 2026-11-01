@@ -75,7 +75,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-AUHI",
       "volume": 96,
-      "volume_24h": 94,
+      "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 0
     },
@@ -168,13 +168,13 @@
       "liquidity": null,
       "name": "Chase Elliott",
       "no_ask": 82,
-      "no_bid": 59,
+      "no_bid": 58,
       "open_interest": 1233,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-CHEL",
       "volume": 1233,
       "volume_24h": 1196,
-      "yes_ask": 41,
+      "yes_ask": 42,
       "yes_bid": 18
     },
     "KXNASCARTOP3-XFIN26-COCU": {
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-DASU",
       "volume": 95,
-      "volume_24h": 93,
+      "volume_24h": 0,
       "yes_ask": 4,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-DEHA",
       "volume": 280,
-      "volume_24h": 178,
+      "volume_24h": 153,
       "yes_ask": 65,
       "yes_bid": 17
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-JOLO",
       "volume": 66,
-      "volume_24h": 23,
+      "volume_24h": 41,
       "yes_ask": 26,
       "yes_bid": 4
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-ROCH",
       "volume": 527,
-      "volume_24h": 527,
+      "volume_24h": 506,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 82,
-      "no_bid": 68,
+      "no_bid": 70,
       "open_interest": 694,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-RYBL",
       "volume": 786,
-      "volume_24h": 215,
-      "yes_ask": 32,
+      "volume_24h": 230,
+      "yes_ask": 30,
       "yes_bid": 18
     },
     "KXNASCARTOP3-XFIN26-RYPR": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-SHVA",
       "volume": 96,
-      "volume_24h": 94,
+      "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 0
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-01T14:50:17.481012+00:00",
+  "scraped_at": "2026-11-01T14:53:10.960922+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
