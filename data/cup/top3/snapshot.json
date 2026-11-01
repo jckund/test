@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 100,
-      "no_bid": 99,
+      "no_bid": 98,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-AJAL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARTOP3-XFIN26-ALBO": {
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-AUCI",
       "volume": 1068,
-      "volume_24h": 702,
+      "volume_24h": 1033,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -127,11 +127,11 @@
       "name": "Christopher Bell",
       "no_ask": 82,
       "no_bid": 81,
-      "open_interest": 833,
+      "open_interest": 857,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-CHBE",
-      "volume": 833,
-      "volume_24h": 459,
+      "volume": 857,
+      "volume_24h": 509,
       "yes_ask": 19,
       "yes_bid": 18
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-CHBR",
       "volume": 213,
-      "volume_24h": 187,
+      "volume_24h": 213,
       "yes_ask": 18,
       "yes_bid": 0
     },
@@ -237,15 +237,15 @@
       "last_price": 58,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 48,
+      "no_ask": 49,
       "no_bid": 42,
-      "open_interest": 526,
+      "open_interest": 528,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-DEHA",
-      "volume": 530,
-      "volume_24h": 242,
+      "volume": 532,
+      "volume_24h": 405,
       "yes_ask": 58,
-      "yes_bid": 52
+      "yes_bid": 51
     },
     "KXNASCARTOP3-XFIN26-ERJO": {
       "last_price": 0,
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-JOLO",
       "volume": 179,
-      "volume_24h": 126,
+      "volume_24h": 155,
       "yes_ask": 26,
       "yes_bid": 5
     },
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-KYLA",
       "volume": 1569,
-      "volume_24h": 1153,
+      "volume_24h": 1252,
       "yes_ask": 24,
       "yes_bid": 23
     },
@@ -392,13 +392,13 @@
       "liquidity": null,
       "name": "Ross Chastain",
       "no_ask": 91,
-      "no_bid": 90,
+      "no_bid": 89,
       "open_interest": 679,
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-ROCH",
       "volume": 679,
       "volume_24h": 658,
-      "yes_ask": 10,
+      "yes_ask": 11,
       "yes_bid": 9
     },
     "KXNASCARTOP3-XFIN26-RYBL": {
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-RYBL",
       "volume": 2390,
-      "volume_24h": 1795,
+      "volume_24h": 1834,
       "yes_ask": 37,
       "yes_bid": 36
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-XFIN26-RYPR",
       "volume": 306,
-      "volume_24h": 109,
+      "volume_24h": 266,
       "yes_ask": 12,
       "yes_bid": 0
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-01T18:30:21.568956+00:00",
+  "scraped_at": "2026-11-01T18:33:38.733310+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top3"
 }
