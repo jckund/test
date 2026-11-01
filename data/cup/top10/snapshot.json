@@ -41,15 +41,15 @@
       "last_price": 50,
       "liquidity": null,
       "name": "Austin Cindric",
-      "no_ask": 53,
+      "no_ask": 57,
       "no_bid": 50,
       "open_interest": 3599,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-AUCI",
       "volume": 3622,
-      "volume_24h": 569,
+      "volume_24h": 564,
       "yes_ask": 50,
-      "yes_bid": 47
+      "yes_bid": 43
     },
     "KXNASCARTOP10-XFIN26-AUDI": {
       "last_price": 22,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBE",
       "volume": 186,
-      "volume_24h": 11,
+      "volume_24h": 0,
       "yes_ask": 63,
       "yes_bid": 0
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHBR",
       "volume": 829,
-      "volume_24h": 758,
+      "volume_24h": 748,
       "yes_ask": 59,
       "yes_bid": 56
     },
@@ -167,15 +167,15 @@
       "last_price": 64,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 68,
+      "no_ask": 66,
       "no_bid": 37,
       "open_interest": 657,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-CHEL",
       "volume": 697,
-      "volume_24h": 30,
+      "volume_24h": 19,
       "yes_ask": 63,
-      "yes_bid": 32
+      "yes_bid": 34
     },
     "KXNASCARTOP10-XFIN26-COCU": {
       "last_price": 0,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-JOBE",
       "volume": 3320,
-      "volume_24h": 995,
+      "volume_24h": 986,
       "yes_ask": 55,
       "yes_bid": 53
     },
@@ -397,7 +397,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-ROCH",
       "volume": 1740,
-      "volume_24h": 297,
+      "volume_24h": 364,
       "yes_ask": 36,
       "yes_bid": 28
     },
@@ -419,15 +419,15 @@
       "last_price": 56,
       "liquidity": null,
       "name": "Ryan Preece",
-      "no_ask": 72,
+      "no_ask": 71,
       "no_bid": 45,
       "open_interest": 2890,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-RYPR",
       "volume": 2958,
-      "volume_24h": 83,
+      "volume_24h": 71,
       "yes_ask": 55,
-      "yes_bid": 28
+      "yes_bid": 29
     },
     "KXNASCARTOP10-XFIN26-SHVA": {
       "last_price": 25,
@@ -447,15 +447,15 @@
       "last_price": 8,
       "liquidity": null,
       "name": "Todd Gilliland",
-      "no_ask": 88,
-      "no_bid": 84,
+      "no_ask": 87,
+      "no_bid": 83,
       "open_interest": 8115,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TOGI",
       "volume": 8410,
       "volume_24h": 1071,
-      "yes_ask": 16,
-      "yes_bid": 12
+      "yes_ask": 17,
+      "yes_bid": 13
     },
     "KXNASCARTOP10-XFIN26-TYDI": {
       "last_price": 5,
@@ -489,15 +489,15 @@
       "last_price": 50,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 61,
-      "no_bid": 52,
+      "no_ask": 78,
+      "no_bid": 51,
       "open_interest": 1791,
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-TYRE",
       "volume": 2008,
-      "volume_24h": 329,
-      "yes_ask": 48,
-      "yes_bid": 39
+      "volume_24h": 321,
+      "yes_ask": 49,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-XFIN26-WIBY": {
       "last_price": 59,
@@ -509,7 +509,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-XFIN26-WIBY",
       "volume": 172,
-      "volume_24h": 70,
+      "volume_24h": 60,
       "yes_ask": 60,
       "yes_bid": 16
     },
@@ -529,7 +529,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-01T12:00:23.988545+00:00",
+  "scraped_at": "2026-11-01T12:05:18.158135+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-xfin26",
   "tier": "top10"
 }
