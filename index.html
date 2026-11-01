@@ -501,7 +501,9 @@
         priced against the <b>consensus of the other sportsbooks</b>, built the same way as the
         <b>Kalshi vs Consensus</b> tab: the average of their <b>raw implied</b> probabilities, vig
         left in, no renormalization — with the book being priced <b>left out</b> so it can't vote for
-        its own number. A line needs at least <b>two other books</b> to count.
+        its own number. A line needs at least <b>two other books</b> to count, and is only listed if
+        it's also <b>at least neutral vs SG and vs Kalshi</b> (worst-case fair, as in Books vs Kalshi);
+        the <b>vs SG / Kalshi</b> column shows both, "—" where that anchor has no line.
         <b>EV = p·payout − (1−p)</b>. Because the consensus carries the books' margin, a line at an
         average price lands near zero, so <b>positive means this book is longer than what the rest
         of the market charges</b> — line shopping, not a fair-value call (use <b>Books vs SG</b> for
@@ -517,7 +519,7 @@
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th id="bsg-fair-h">SG fair</th><th>EV</th><th class="betcell" title="Mark a line as bet"></th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th id="bsg-fair-h">SG fair</th><th>EV</th><th class="bcon-only" title="EV of this line vs SG's model / vs Kalshi's worst-case fair">vs SG / Kalshi</th><th class="betcell" title="Mark a line as bet"></th></tr></thead>
             <tbody id="bsg-rows"></tbody>
           </table>
         </div>
@@ -1451,6 +1453,7 @@ async function collectBookMarkets() {
   const tiers = cmpTiersAvailable();
   for (const t of tiers) {
     const m = market(t.label);
+    m.tierKey = t.key;
     for (const bk of booksForTier(t.key)) {
       for (const d of BOOKDATA[bk.key].tiers[t.key].drivers || []) put(m, bk, d.name, d.american, d.implied, d.novig);
     }
@@ -1524,6 +1527,7 @@ async function loadBooksSG(mode = "sg") {
   $("bsg-fair-h").textContent = con ? "Consensus" : "SG fair";
   $("bsg-note-sg").style.display = con ? "none" : "";
   $("bsg-note-con").style.display = con ? "" : "none";
+  for (const el of document.querySelectorAll("#cmp-bsg-panel .bcon-only")) el.style.display = con ? "" : "none";
   if (!con && !(BOOKDATA.sg && BOOKDATA.sg.tiers)) {
     fresh.textContent = ""; $("bsg-count").textContent = "";
     rows.innerHTML = `<tr><td class="empty" colspan="9">No SG model loaded.</td></tr>`;
@@ -1531,6 +1535,23 @@ async function loadBooksSG(mode = "sg") {
     return;
   }
   const { markets, tierCount } = await collectBookMarkets();
+  // Books vs Consensus only lists lines that are also at least neutral against
+  // SG's model and Kalshi's worst-case fair (the Books vs Kalshi convention), so
+  // a book that's merely longer than its peers on a line both anchors call too
+  // long doesn't show. A missing anchor (no SG line, no Kalshi market — e.g.
+  // the make/team boards) doesn't block a line; its column shows "—".
+  const kalshi = {};   // tierKey -> normName -> worst-case prob
+  if (con) {
+    await Promise.all(markets.filter((m) => m.tierKey).map(async (m) => {
+      let snap; try { snap = await loadJSON(dbase() + m.tierKey + "/snapshot.json"); } catch { return; }
+      const kp = {};
+      for (const km of Object.values(snap.markets || {})) {
+        const p = worstProb(km);
+        if (p != null) kp[normName(km.name)] = p;
+      }
+      kalshi[m.tierKey] = kp;
+    }));
+  }
   if (BSG_MODE !== mode) return;   // the user switched tabs while files loaded
   const books = new Map();   // book key -> label, in first-seen order
   const out = [];
@@ -1542,9 +1563,17 @@ async function loadBooksSG(mode = "sg") {
         if (!f) continue;
         const ev = evPct(f.p, r.american);
         if (ev == null) continue;
+        let sgEv = null, kEv = null;
+        if (con) {
+          const sf = lineFair("sg", m, key, k);
+          sgEv = sf ? evPct(sf.p, r.american) : null;
+          const kp = m.tierKey && kalshi[m.tierKey] && kalshi[m.tierKey][k];
+          kEv = kp != null ? evPct(kp, r.american) : null;
+          if ((sgEv != null && sgEv < 0) || (kEv != null && kEv < 0)) continue;
+        }
         books.set(key, b.bk.label);
         out.push({ book: b.bk.label, bookKey: key, driver: r.name, tier: m.label,
-          american: r.american, implied: r.implied, fair: f.p, nFair: f.n || 0, ev });
+          american: r.american, implied: r.implied, fair: f.p, nFair: f.n || 0, ev, sgEv, kEv });
       }
     }
   }
@@ -1651,11 +1680,14 @@ function renderBooksSG() {
       `<td class="num">${(r.implied * 100).toFixed(1)}%</td>` +
       `<td class="num"${r.nFair ? ` title="Average of ${r.nFair} other books"` : ""}>${(r.fair * 100).toFixed(1)}%</td>` +
       `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td>` +
+      (BSG_MODE === "con"
+        ? `<td class="num bcon-only">${[r.sgEv, r.kEv].map((v) => v == null ? "—" : (v >= 0 ? "+" : "") + v.toFixed(0) + "%").join(" / ")}</td>`
+        : "") +
       `<td class="betcell"><button class="betbtn" data-i="${i}" ` +
         `title="${done ? "Marked bet — click to restore" : "Mark as bet and hide"}" ` +
         `aria-label="${done ? "Restore this line" : "Mark this line as bet"}">${done ? "↺" : "✓"}</button></td>` +
     `</tr>`;
-  }).join("") : `<tr><td class="empty" colspan="9">${
+  }).join("") : `<tr><td class="empty" colspan="${BSG_MODE === "con" ? 10 : 9}">${
     !BSG_ALL.length ? bsgEmptyMsg()
       : !filtered.length ? "No lines for the selected books."
       : "Every line for the selected books is marked bet."
@@ -1667,7 +1699,7 @@ function renderBooksSG() {
 
 function bsgEmptyMsg() {
   return BSG_MODE === "con"
-    ? "No line is priced by at least " + (CONSENSUS_MIN_BOOKS + 1) + " sportsbooks yet."
+    ? "No line beats the consensus while staying at least neutral vs SG and Kalshi."
     : "No overlap between the books and SG.";
 }
 
