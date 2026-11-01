@@ -484,7 +484,7 @@
     </div>
 
     <div id="cmp-bsg-panel" style="display:none">
-      <div class="cmp-note">
+      <div class="cmp-note" id="bsg-note-sg">
         <b>The books vs the SG model</b> — the Kalshi vs SG view with the sportsbooks in Kalshi's
         place. Every book line across every <b>finish tier</b>, plus the <b>which-make</b>,
         <b>top-make driver</b> and <b>winning-team</b> boards (Cup only), priced at the book's posted
@@ -495,16 +495,29 @@
         SG itself is the anchor and isn't listed as a bet.
         <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
       </div>
+      <div class="cmp-note" id="bsg-note-con" style="display:none">
+        <b>Each book vs the rest of the market</b> — every book line across every <b>finish tier</b>,
+        plus the <b>which-make</b>, <b>top-make driver</b> and <b>winning-team</b> boards (Cup only),
+        priced against the <b>consensus of the other sportsbooks</b>, built the same way as the
+        <b>Kalshi vs Consensus</b> tab: the average of their <b>raw implied</b> probabilities, vig
+        left in, no renormalization — with the book being priced <b>left out</b> so it can't vote for
+        its own number. A line needs at least <b>two other books</b> to count.
+        <b>EV = p·payout − (1−p)</b>. Because the consensus carries the books' margin, a line at an
+        average price lands near zero, so <b>positive means this book is longer than what the rest
+        of the market charges</b> — line shopping, not a fair-value call (use <b>Books vs SG</b> for
+        that). SG is a model, not a book, so it's neither priced nor averaged in.
+        <span class="edge pos">Green</span> = +EV, <span class="edge neg">red</span> = negative.
+      </div>
       <div class="bsg-controls" id="bsg-controls"></div>
       <div class="cmp-fresh" id="bsg-fresh"></div>
       <section class="card">
         <div class="card-head">
-          <h2>Books vs SG — EV</h2>
+          <h2 id="bsg-title">Books vs SG — EV</h2>
           <span class="count" id="bsg-count"></span>
         </div>
         <div class="scroll">
           <table>
-            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th>SG fair</th><th>EV</th><th class="betcell" title="Mark a line as bet"></th></tr></thead>
+            <thead><tr><th class="l">#</th><th class="l">Book</th><th class="l">Driver</th><th class="l">Market</th><th>Odds</th><th>Implied</th><th id="bsg-fair-h">SG fair</th><th>EV</th><th class="betcell" title="Mark a line as bet"></th></tr></thead>
             <tbody id="bsg-rows"></tbody>
           </table>
         </div>
@@ -1050,6 +1063,12 @@ function cmpSubItems() {
   if (haveSG && cmpTiersAvailable().some((t) => booksForTier(t.key).some((bk) => !bk.model))) {
     items.push({ key: "bsg", label: "Books vs SG" });
   }
+  // Same view against the other books' average price (leave-one-out), so it
+  // needs a tier with at least one more sportsbook than a consensus requires.
+  if (cmpTiersAvailable().some((t) =>
+    booksForTier(t.key).filter((bk) => !bk.model).length > CONSENSUS_MIN_BOOKS)) {
+    items.push({ key: "bcon", label: "Books vs Consensus" });
+  }
   // Manufacturer/Team are Cup-only (imputed from the Kalshi winner market with
   // Cup rosters; those markets don't exist for the support series).
   if (seriesFull()) {
@@ -1083,7 +1102,7 @@ function showCmpPanel(which) {
   $("cmp-ev-panel").style.display = which === "ev" ? "" : "none";
   $("cmp-ksg-panel").style.display = which === "ksg" ? "" : "none";
   $("cmp-kcon-panel").style.display = which === "kcon" ? "" : "none";
-  $("cmp-bsg-panel").style.display = which === "bsg" ? "" : "none";
+  $("cmp-bsg-panel").style.display = which === "bsg" || which === "bcon" ? "" : "none";
 }
 
 async function renderCmpSub() {
@@ -1093,7 +1112,8 @@ async function renderCmpSub() {
   if (cmpSub === "ev") { showCmpPanel("ev"); return loadBestEV(); }
   if (cmpSub === "ksg") { showCmpPanel("ksg"); return loadKalshiSG(); }
   if (cmpSub === "kcon") { showCmpPanel("kcon"); return loadKalshiConsensus(); }
-  if (cmpSub === "bsg") { showCmpPanel("bsg"); return loadBooksSG(); }
+  if (cmpSub === "bsg") { showCmpPanel("bsg"); return loadBooksSG("sg"); }
+  if (cmpSub === "bcon") { showCmpPanel("bcon"); return loadBooksSG("con"); }
   showCmpPanel("driver");
   compareTier = cmpSub;
   return renderCompare();
@@ -1398,44 +1418,47 @@ async function loadKalshiConsensus() {
 }
 
 // The same view with the sportsbooks in Kalshi's place: every book × driver
-// across every finish tier, priced against SG's model fair. No fee adjustment —
+// across every finish tier, priced against a fair line. No fee adjustment —
 // a book's American odds already are the price you pay (Kalshi's Yes needs the
 // 0.07·p·(1−p) fee added, which is why that view nets it out and this one doesn't).
-async function loadBooksSG() {
-  const rows = $("bsg-rows"), fresh = $("bsg-fresh");
-  rows.innerHTML = ""; fresh.textContent = "Loading…";
-  $("updated").textContent = "Books vs SG";
-  const sg = BOOKDATA.sg;
-  if (!sg || !sg.tiers) {
-    fresh.textContent = ""; $("bsg-count").textContent = "";
-    rows.innerHTML = `<tr><td class="empty" colspan="8">No SG model loaded.</td></tr>`;
-    return;
-  }
+//
+// Two fair lines share this panel:
+//   "sg"  — SG's model probability (Books vs SG).
+//   "con" — the average of the OTHER sportsbooks on that same line (Books vs
+//           Consensus), built the same way as consensusFair(): raw implied with
+//           the vig left in (CONSENSUS_WITH_VIG), no renormalization. Leave-one-
+//           out, so a book can't pull the consensus toward its own number; needs
+//           CONSENSUS_MIN_BOOKS others.
+
+// Every book's lines grouped by market: [{ label, books: Map(bookKey ->
+// { bk, rows: Map(key -> { name, american, implied, novig }) }) }]. SG is kept in
+// (flagged model) so the "sg" mode can read it; neither mode prices it as a bet.
+async function collectBookMarkets() {
+  const markets = [];
+  const market = (label) => { const m = { label, books: new Map() }; markets.push(m); return m; };
+  const put = (m, bk, name, american, implied, novig, key) => {
+    if (typeof american !== "number") return;
+    let b = m.books.get(bk.key);
+    if (!b) { b = { bk, rows: new Map() }; m.books.set(bk.key, b); }
+    const k = key || normName(name);
+    if (!k || b.rows.has(k)) return;
+    b.rows.set(k, {
+      name, american, novig,
+      implied: typeof implied === "number" ? implied
+        : american > 0 ? 100 / (american + 100) : -american / (-american + 100),
+    });
+  };
   const tiers = cmpTiersAvailable();
-  const books = new Map();   // book key -> label, in first-seen order
-  const out = [];
   for (const t of tiers) {
-    const sgT = sg.tiers[t.key]; if (!sgT) continue;
-    const sgMap = {};
-    for (const d of sgT.drivers || []) sgMap[normName(d.name)] = d;
+    const m = market(t.label);
     for (const bk of booksForTier(t.key)) {
-      if (bk.model) continue;             // SG is the anchor here, not a bet
-      for (const d of BOOKDATA[bk.key].tiers[t.key].drivers || []) {
-        const sd = sgMap[normName(d.name)];
-        if (!sd || typeof sd.novig !== "number" || typeof d.american !== "number") continue;
-        const ev = evPct(sd.novig, d.american);
-        if (ev == null) continue;
-        books.set(bk.key, bk.label);
-        const implied = typeof d.implied === "number" ? d.implied
-          : d.american > 0 ? 100 / (d.american + 100) : -d.american / (-d.american + 100);
-        out.push({ book: bk.label, bookKey: bk.key, driver: d.name, tier: t.label, american: d.american, implied, sgFair: sd.novig, ev });
-      }
+      for (const d of BOOKDATA[bk.key].tiers[t.key].drivers || []) put(m, bk, d.name, d.american, d.implied, d.novig);
     }
   }
-  // Manufacturer and team markets, priced the same way. Cup-only: the books
-  // don't post which-make / top-make / winning-team boards for the support
-  // series. These files aren't loaded by this tab's own fetch, so pull any that
-  // the Manufacturer/Team tabs haven't already cached.
+  // Manufacturer and team markets. Cup-only: the books don't post which-make /
+  // top-make / winning-team boards for the support series. These files aren't
+  // loaded by this tab's own fetch, so pull any the Manufacturer/Team tabs
+  // haven't already cached.
   if (seriesFull()) {
     await Promise.all([
       ...MFR_BOOKS.map(async (bk) => {
@@ -1447,48 +1470,81 @@ async function loadBooksSG() {
         try { TEAMDATA[bk.key] = await loadJSON(dbase() + bk.url); } catch { TEAMDATA[bk.key] = null; }
       }),
     ]);
-    const sgm = MFRDATA.sg, sgt = TEAMDATA.sg;
-    const add = (bk, label, name, american, fair, implied) => {
-      if (typeof american !== "number" || typeof fair !== "number") return;
-      const ev = evPct(fair, american);
-      if (ev == null) return;
-      books.set(bk.key, bk.label);
-      out.push({
-        book: bk.label, bookKey: bk.key, driver: name, tier: label, american, sgFair: fair, ev,
-        implied: typeof implied === "number" ? implied
-          : american > 0 ? 100 / (american + 100) : -american / (-american + 100),
-      });
-    };
+    const which = market("Which make"), tops = {};
     for (const bk of MFR_BOOKS) {
-      if (bk.model || !MFRDATA[bk.key]) continue;
       const d = MFRDATA[bk.key];
-      // "Which make wins" — a 3-way, so SG's no-vig share is the fair line.
-      for (const [mk, fm] of Object.entries((sgm && sgm.winner && d.winner) || {})) {
-        const bm = d.winner[mk];
-        if (bm) add(bk, "Which make", mk, bm.american, sgm.winner[mk] && sgm.winner[mk].novig, bm.implied);
-      }
-      // "Top [make] driver" — SG's no-vig chance within that make.
+      if (!d) continue;
+      for (const [mk, fm] of Object.entries(d.winner || {})) put(which, bk, mk, fm.american, fm.implied, fm.novig, mk);
       for (const [mk, obj] of Object.entries(d.makes || {})) {
-        const sgMake = sgm && sgm.makes && sgm.makes[mk];
-        if (!sgMake) continue;
-        const sgMap = {};
-        for (const sd of sgMake.drivers || []) sgMap[normName(sd.name)] = sd;
-        for (const dr of obj.drivers || []) {
-          const sd = sgMap[normName(dr.name)];
-          if (sd) add(bk, "Top " + mk, dr.name, dr.american, sd.novig, dr.implied);
-        }
+        const m = tops[mk] || (tops[mk] = market("Top " + mk));
+        for (const dr of obj.drivers || []) put(m, bk, dr.name, dr.american, dr.implied, dr.novig);
       }
     }
-    // "Winning team" — book team names normalized onto our canonical keys first.
-    const sgTeam = {};
-    for (const [raw, fm] of Object.entries((sgt && sgt.winner) || {})) {
-      if (typeof fm.novig === "number") sgTeam[teamCanon(raw) || raw] = fm.novig;
-    }
+    // Book team names normalized onto our canonical keys first.
+    const team = market("Team");
     for (const bk of TEAM_BOOKS) {
-      if (bk.model || !TEAMDATA[bk.key] || !TEAMDATA[bk.key].winner) continue;
-      for (const [raw, fm] of Object.entries(TEAMDATA[bk.key].winner)) {
-        const team = teamCanon(raw) || raw;
-        add(bk, "Team", team, fm.american, sgTeam[team], fm.implied);
+      const d = TEAMDATA[bk.key];
+      if (!d || !d.winner) continue;
+      for (const [raw, fm] of Object.entries(d.winner)) {
+        const tn = teamCanon(raw) || raw;
+        put(team, bk, tn, fm.american, fm.implied, fm.novig, tn);
+      }
+    }
+  }
+  return { markets, tierCount: tiers.length };
+}
+
+// Fair probability for one book's line: SG's no-vig number, or the mean of the
+// other sportsbooks' numbers for the same line (vigged or not, per
+// CONSENSUS_WITH_VIG — the same switch the Kalshi vs Consensus tab reads).
+function lineFair(mode, m, bookKey, k) {
+  if (mode === "sg") {
+    const b = m.books.get("sg"), r = b && b.rows.get(k);
+    return r && typeof r.novig === "number" ? { p: r.novig } : null;
+  }
+  let sum = 0, n = 0;
+  for (const [key, b] of m.books) {
+    if (b.bk.model || key === bookKey) continue;
+    const r = b.rows.get(k);
+    const v = r && (CONSENSUS_WITH_VIG ? r.implied : r.novig);
+    if (typeof v === "number" && v > 0) { sum += v; n++; }
+  }
+  return n >= CONSENSUS_MIN_BOOKS ? { p: sum / n, n } : null;
+}
+
+let BSG_MODE = "sg";
+
+async function loadBooksSG(mode = "sg") {
+  BSG_MODE = mode;
+  const con = mode === "con";
+  const rows = $("bsg-rows"), fresh = $("bsg-fresh");
+  rows.innerHTML = ""; fresh.textContent = "Loading…";
+  $("updated").textContent = con ? "Books vs Consensus" : "Books vs SG";
+  $("bsg-title").textContent = con ? "Books vs Consensus — EV" : "Books vs SG — EV";
+  $("bsg-fair-h").textContent = con ? "Consensus" : "SG fair";
+  $("bsg-note-sg").style.display = con ? "none" : "";
+  $("bsg-note-con").style.display = con ? "" : "none";
+  if (!con && !(BOOKDATA.sg && BOOKDATA.sg.tiers)) {
+    fresh.textContent = ""; $("bsg-count").textContent = "";
+    rows.innerHTML = `<tr><td class="empty" colspan="9">No SG model loaded.</td></tr>`;
+    BSG_ALL = []; BSG_BOOKS = [];
+    return;
+  }
+  const { markets, tierCount } = await collectBookMarkets();
+  if (BSG_MODE !== mode) return;   // the user switched tabs while files loaded
+  const books = new Map();   // book key -> label, in first-seen order
+  const out = [];
+  for (const m of markets) {
+    for (const [key, b] of m.books) {
+      if (b.bk.model) continue;             // SG is an anchor, not a bet
+      for (const [k, r] of b.rows) {
+        const f = lineFair(mode, m, key, k);
+        if (!f) continue;
+        const ev = evPct(f.p, r.american);
+        if (ev == null) continue;
+        books.set(key, b.bk.label);
+        out.push({ book: b.bk.label, bookKey: key, driver: r.name, tier: m.label,
+          american: r.american, implied: r.implied, fair: f.p, nFair: f.n || 0, ev });
       }
     }
   }
@@ -1501,7 +1557,7 @@ async function loadBooksSG() {
   const sel = bsgLoadSel();
   BSG_SEL = sel ? new Set([...sel].filter((k) => books.has(k))) : null;
   if (BSG_SEL && (!BSG_SEL.size || BSG_SEL.size === BSG_BOOKS.length)) BSG_SEL = null;
-  BSG_TIERINFO = `${tiers.length} finish tier${tiers.length === 1 ? "" : "s"}${seriesFull() ? ", plus which-make, top-make and winning-team" : ""}`;
+  BSG_TIERINFO = `${tierCount} finish tier${tierCount === 1 ? "" : "s"}${seriesFull() ? ", plus which-make, top-make and winning-team" : ""}`;
   bsgWire();
   renderBooksSG();
 }
@@ -1579,10 +1635,10 @@ function renderBooksSG() {
   fresh.innerHTML = BSG_ALL.length
     // .cmp-fresh is a flex row, so keep this one line a single text node — an
     // inline <b> would become its own flex item and pick up the row's gap.
-    ? `<span>Every book line — ${BSG_TIERINFO} — priced against SG's model fair · ` +
+    ? `<span>Every book line — ${BSG_TIERINFO} — priced against ${BSG_MODE === "con" ? "the other books' average price" : "SG's model fair"} · ` +
       `${BSG_SEL ? BSG_SEL.size + " of " + BSG_BOOKS.length : BSG_BOOKS.length} book${(BSG_SEL ? BSG_SEL.size : BSG_BOOKS.length) === 1 ? "" : "s"} · ` +
       `${visible.length} bets${marked && !BSG_SHOWBET ? " · " + marked + " hidden as bet" : ""}</span>`
-    : "No overlap between the books and SG.";
+    : bsgEmptyMsg();
 
   rows.innerHTML = BSG_SHOWN.length ? BSG_SHOWN.map((r, i) => {
     const done = bets.has(betId(r));
@@ -1593,20 +1649,26 @@ function renderBooksSG() {
       `<td class="l"><span class="pill">${escapeHtml(r.tier)}</span></td>` +
       `<td class="num">${usAmerican(r.american)}</td>` +
       `<td class="num">${(r.implied * 100).toFixed(1)}%</td>` +
-      `<td class="num">${(r.sgFair * 100).toFixed(1)}%</td>` +
+      `<td class="num"${r.nFair ? ` title="Average of ${r.nFair} other books"` : ""}>${(r.fair * 100).toFixed(1)}%</td>` +
       `<td class="num"><span class="edge ${r.ev >= 0 ? "pos" : "neg"}">${r.ev >= 0 ? "+" : ""}${r.ev.toFixed(1)}%</span></td>` +
       `<td class="betcell"><button class="betbtn" data-i="${i}" ` +
         `title="${done ? "Marked bet — click to restore" : "Mark as bet and hide"}" ` +
         `aria-label="${done ? "Restore this line" : "Mark this line as bet"}">${done ? "↺" : "✓"}</button></td>` +
     `</tr>`;
   }).join("") : `<tr><td class="empty" colspan="9">${
-    !BSG_ALL.length ? "No overlap between the books and SG."
+    !BSG_ALL.length ? bsgEmptyMsg()
       : !filtered.length ? "No lines for the selected books."
       : "Every line for the selected books is marked bet."
   }</td></tr>`;
 
   $("bsg-count").textContent = visible.length
     ? visible.length + " bets" + (visible.length > BSG_SHOWN.length ? " (top 100 shown)" : "") : "";
+}
+
+function bsgEmptyMsg() {
+  return BSG_MODE === "con"
+    ? "No line is priced by at least " + (CONSENSUS_MIN_BOOKS + 1) + " sportsbooks yet."
+    : "No overlap between the books and SG.";
 }
 
 // Rows are re-rendered on every interaction, so both handlers are delegated
