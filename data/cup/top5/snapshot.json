@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 79,
-      "no_bid": 52,
+      "no_bid": 54,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-CHBE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 48,
+      "yes_ask": 46,
       "yes_bid": 21
     },
     "KXNASCARTOP5-NASC26-CHBR": {
@@ -458,18 +458,18 @@
       "yes_bid": 12
     },
     "KXNASCARTOP5-NASC26-RYBL": {
-      "last_price": 49,
+      "last_price": 47,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 53,
+      "no_ask": 72,
       "no_bid": 52,
-      "open_interest": 2,
+      "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-RYBL",
-      "volume": 2,
-      "volume_24h": 2,
+      "volume": 4,
+      "volume_24h": 4,
       "yes_ask": 48,
-      "yes_bid": 47
+      "yes_bid": 28
     },
     "KXNASCARTOP5-NASC26-RYPR": {
       "last_price": 0,
@@ -486,32 +486,32 @@
       "yes_bid": 3
     },
     "KXNASCARTOP5-NASC26-SHVA": {
-      "last_price": 0,
+      "last_price": 7,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 93,
+      "no_ask": 100,
       "no_bid": 92,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-SHVA",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 2,
+      "volume_24h": 2,
       "yes_ask": 8,
-      "yes_bid": 7
+      "yes_bid": 0
     },
     "KXNASCARTOP5-NASC26-TOGI": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": null,
       "name": "Todd Gilliland",
-      "no_ask": 97,
+      "no_ask": 100,
       "no_bid": 96,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-TOGI",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 2,
+      "volume_24h": 2,
       "yes_ask": 4,
-      "yes_bid": 3
+      "yes_bid": 0
     },
     "KXNASCARTOP5-NASC26-TYDI": {
       "last_price": 1,
@@ -528,18 +528,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP5-NASC26-TYGI": {
-      "last_price": 0,
+      "last_price": 28,
       "liquidity": null,
       "name": "Ty Gibbs",
-      "no_ask": 72,
+      "no_ask": 79,
       "no_bid": 71,
-      "open_interest": 0,
+      "open_interest": 2,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-TYGI",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 2,
+      "volume_24h": 2,
       "yes_ask": 29,
-      "yes_bid": 28
+      "yes_bid": 21
     },
     "KXNASCARTOP5-NASC26-TYRE": {
       "last_price": 52,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-04T21:37:11.981386+00:00",
+  "scraped_at": "2026-11-04T21:43:40.480219+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }
