@@ -70,13 +70,13 @@
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 94,
-      "no_bid": 92,
+      "no_bid": 93,
       "open_interest": 340,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-CHSM",
       "volume": 514,
       "volume_24h": 335,
-      "yes_ask": 8,
+      "yes_ask": 7,
       "yes_bid": 6
     },
     "KXNASCARRACE-NASCA26-CLGR": {
@@ -150,15 +150,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASCA26-COMO": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-COMO",
-      "volume": 0,
+      "volume": 140,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -220,15 +220,15 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-NASCA26-JAGA": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Jake Garcia",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-JAGA",
-      "volume": 0,
+      "volume": 140,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-04T23:24:22.241439+00:00",
+  "scraped_at": "2026-11-04T23:30:35.042465+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "winner"
 }
