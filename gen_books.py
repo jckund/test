@@ -54,7 +54,7 @@ CANON = [
     "Shane Van Gisbergen", "Josh Berry", "Connor Zilisch", "Todd Gilliland", "Riley Herbst",
     "John H. Nemechek", "Noah Gragson", "Ty Dillon", "Cole Custer", "Cody Ware", "BJ McLeod",
     "Chad Finchum", "Corey Heim", "Casey Mears", "Daniel Dye", "Josh Bilicki",
-    "Joey Gase", "Gray Gaulding",
+    "Joey Gase", "Gray Gaulding", "Justin Haley", "JJ Yeley",
 ]
 
 
@@ -94,6 +94,7 @@ _BYKEY = {_key(c): c for c in CANON}
 # one series' spelling and break the other.
 _ALIAS_KEY = {
     "nick sanchez": "nicholas sanchez",   # Caesars; Kalshi's Xfinity field says Nicholas
+    "nicholas sanchez": "nick sanchez",   # and the reverse, when Kalshi posts "Nick" (Phoenix 2026)
     "chase elliot": "chase elliott",      # VIP365 drops a 't'
     "stephan mallozzi": "stephen mallozzi",  # Caesars; Kalshi's Truck field says Stephen
     "gio ruggiero": "giovanni ruggiero",  # BetOnline/BetUS shorten it; Kalshi says Giovanni

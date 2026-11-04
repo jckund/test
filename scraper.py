@@ -71,25 +71,24 @@ WINNER_SERIES = "KXNASCARRACE"
 # repointed each kickoff like the others; when it isn't running a race, drop
 # or comment out the entry so a stale matcher can't grab the wrong event.
 SERIES = [
-    # Martinsville weekend (kickoff 2026-10-27).
+    # Phoenix championship weekend (kickoff 2026-11-04). All three races share
+    # "championship", so each entry also carries `exclude` substrings: a race
+    # matching any of them is skipped by that series.
     #
-    # Cup: Xfinity 500. Match "xfinity 500" — never bare "xfinity", which is the
-    # support series' own name. Cup claims first, so the catch-all below can't
-    # take it.
-    {"key": "cup", "label": "NASCAR", "matchers": ["xfinity 500"],
+    # Cup: NASCAR Championship Race. Excludes the support-series names so the
+    # bare "championship" matcher can't claim the O'Reilly or Truck finale.
+    {"key": "cup", "label": "NASCAR", "matchers": ["championship"],
+     "exclude": ["o'reilly", "o\u2019reilly", "oreilly", "xfinity", "truck", "craftsman"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: OFF (commented out 2026-10-30 once the Black's Tire 200 went green;
-    # data/truck/ dropped). To re-enable for a future Truck race, uncomment and
-    # re-point the matcher at that race's name.
-    # {"key": "truck", "label": "Truck", "matchers": ["black's tire", "black\u2019s tire", "blacks tire"],
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity (O'Reilly): OFF (commented out 2026-10-31 once the National Debt
-    # Relief 250 went green; data/xfinity/ dropped). RESTORE at the next kickoff:
-    # uncomment and re-point the matcher — this entry is also the catch-all
-    # (`default`), and with it commented out an unmatched race isn't tracked at
-    # all. See CLAUDE.md "Clearing a support race mid-weekend".
-    # {"key": "xfinity", "label": "Xfinity", "matchers": ["national debt relief"], "default": True,
-    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: Craftsman Truck Championship Race. Comment back out (and drop
+    # data/truck/ + its series.json entry) once it has run.
+    {"key": "truck", "label": "Truck", "matchers": ["truck", "craftsman"],
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Xfinity (O'Reilly): O'Reilly Championship Race. Also the catch-all
+    # (`default`) — it prefers a race its own matchers name.
+    {"key": "xfinity", "label": "Xfinity", "matchers": ["o'reilly", "o\u2019reilly", "oreilly"],
+     "exclude": ["truck", "craftsman"], "default": True,
+     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
@@ -246,6 +245,13 @@ def discover_races() -> list:
     return races
 
 
+def _series_match(cfg: dict, hay: str) -> bool:
+    """True if `hay` (lowercased race title) hits one of cfg's matchers and none
+    of its optional `exclude` substrings."""
+    return (any(m in hay for m in cfg["matchers"])
+            and not any(x in hay for x in cfg.get("exclude", ())))
+
+
 def resolve_series(races: list) -> list:
     """Map discovered races onto the SERIES config. Returns a list of resolved
     series dicts with a race attached (skipping series whose race isn't open)."""
@@ -266,7 +272,7 @@ def resolve_series(races: list) -> list:
             if r["race_code"] in used:
                 continue
             hay = f"{r['title']} {r['sub_title']}".lower()
-            if any(m in hay for m in cfg["matchers"]):
+            if _series_match(cfg, hay):
                 resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
     # The default series still claims a leftover race, but prefers one its own
     # matchers name. Without this its matchers are decorative (it took whatever
@@ -276,8 +282,7 @@ def resolve_series(races: list) -> list:
     for cfg in [s for s in SERIES if s.get("default")]:
         free = [r for r in races if r["race_code"] not in used]
         named = [r for r in free
-                 if any(m in f"{r['title']} {r['sub_title']}".lower()
-                        for m in cfg["matchers"])]
+                 if _series_match(cfg, f"{r['title']} {r['sub_title']}".lower())]
         for r in named or free:
             resolved.append(attach(cfg, r)); used.add(r["race_code"]); break
     return resolved
@@ -293,7 +298,7 @@ def discover_team_event(race_title: str, race_code: str):
     or race code. Uses single-attempt fetches so a wrong candidate fails fast
     instead of burning the full retry/backoff. Returns (event_ticker,
     series_ticker) or (None, None); logs what matched so the ticker can be pinned."""
-    cup_matchers = next((s["matchers"] for s in SERIES if s.get("key") == "cup"), [])
+    cup_cfg = next((s for s in SERIES if s.get("key") == "cup"), None)
     for cand in TEAM_SERIES_CANDIDATES:
         direct = f"{cand}-{race_code}"
         try:
@@ -313,7 +318,7 @@ def discover_team_event(race_title: str, race_code: str):
         for ev in events:
             et = ev.get("event_ticker") or ""
             hay = f"{ev.get('title', '')} {ev.get('sub_title', '')}".lower()
-            if (cup_matchers and any(m in hay for m in cup_matchers)) or \
+            if (cup_cfg and _series_match(cup_cfg, hay)) or \
                (race_code and race_code.lower() in et.lower()):
                 print(f"  team: matched {et} under series {cand}", file=sys.stderr)
                 return et, cand
