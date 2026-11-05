@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-PARE",
       "volume": 537,
-      "volume_24h": 97,
+      "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -458,7 +458,7 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-OREI26-SAMA": {
-      "last_price": 8,
+      "last_price": 7,
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 93,
@@ -466,7 +466,7 @@
       "open_interest": 7783,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-SAMA",
-      "volume": 16327,
+      "volume": 16328,
       "volume_24h": 1499,
       "yes_ask": 9,
       "yes_bid": 7
@@ -537,13 +537,13 @@
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-WISA",
       "volume": 158,
-      "volume_24h": 158,
+      "volume_24h": 62,
       "yes_ask": 3,
       "yes_bid": 2
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T19:04:50.547736+00:00",
+  "scraped_at": "2026-11-05T19:17:17.184788+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "winner"
 }
