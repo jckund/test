@@ -15,11 +15,11 @@
       "name": "AJ Allmendinger",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 967,
+      "open_interest": 1902,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-AJAL",
-      "volume": 967,
-      "volume_24h": 468,
+      "volume": 1902,
+      "volume_24h": 1403,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-AUCI",
       "volume": 10190,
-      "volume_24h": 9097,
+      "volume_24h": 8472,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBU",
       "volume": 3673,
-      "volume_24h": 896,
+      "volume_24h": 3234,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
       "volume": 20559,
-      "volume_24h": 8553,
+      "volume_24h": 4758,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -377,15 +377,15 @@
       "last_price": 17,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 84,
+      "no_ask": 83,
       "no_bid": 82,
       "open_interest": 68750,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
       "volume": 83708,
-      "volume_24h": 19876,
+      "volume_24h": 20001,
       "yes_ask": 18,
-      "yes_bid": 16
+      "yes_bid": 17
     },
     "KXNASCARRACE-NASC26-MIMC": {
       "last_price": 1,
@@ -542,17 +542,17 @@
       "yes_bid": 4
     },
     "KXNASCARRACE-NASC26-TYRE": {
-      "last_price": 11,
+      "last_price": 12,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 61878,
+      "no_bid": 88,
+      "open_interest": 61949,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYRE",
-      "volume": 61945,
+      "volume": 62015,
       "volume_24h": 10037,
-      "yes_ask": 11,
+      "yes_ask": 12,
       "yes_bid": 10
     },
     "KXNASCARRACE-NASC26-WIBY": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T19:19:05.872075+00:00",
+  "scraped_at": "2026-11-05T19:32:31.477174+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
