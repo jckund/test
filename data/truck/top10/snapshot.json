@@ -27,15 +27,15 @@
       "last_price": 34,
       "liquidity": null,
       "name": "Ben Rhodes",
-      "no_ask": 74,
+      "no_ask": 78,
       "no_bid": 57,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-BERH",
       "volume": 250,
-      "volume_24h": 0,
+      "volume_24h": 250,
       "yes_ask": 43,
-      "yes_bid": 26
+      "yes_bid": 22
     },
     "KXNASCARTOP10-NASCA26-BRQU": {
       "last_price": 0,
@@ -97,15 +97,15 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Cole Butcher",
-      "no_ask": 91,
-      "no_bid": 79,
+      "no_ask": 94,
+      "no_bid": 78,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COBU",
       "volume": 250,
       "volume_24h": 0,
-      "yes_ask": 21,
-      "yes_bid": 9
+      "yes_ask": 22,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-NASCA26-COHA": {
       "last_price": 0,
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COMO",
       "volume": 49,
-      "volume_24h": 45,
+      "volume_24h": 49,
       "yes_ask": 44,
       "yes_bid": 42
     },
@@ -167,7 +167,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 71,
+      "no_ask": 67,
       "no_bid": 47,
       "open_interest": 0,
       "status": "active",
@@ -175,7 +175,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 53,
-      "yes_bid": 29
+      "yes_bid": 33
     },
     "KXNASCARTOP10-NASCA26-FRMU": {
       "last_price": 0,
@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Jake Garcia",
       "no_ask": 80,
-      "no_bid": 63,
+      "no_bid": 64,
       "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-JAGA",
       "volume": 56,
       "volume_24h": 56,
-      "yes_ask": 37,
+      "yes_ask": 36,
       "yes_bid": 20
     },
     "KXNASCARTOP10-NASCA26-JORE": {
@@ -251,7 +251,7 @@
       "last_price": 20,
       "liquidity": null,
       "name": "Justin Haley",
-      "no_ask": 91,
+      "no_ask": 77,
       "no_bid": 72,
       "open_interest": 250,
       "status": "active",
@@ -259,7 +259,7 @@
       "volume": 250,
       "volume_24h": 0,
       "yes_ask": 28,
-      "yes_bid": 9
+      "yes_bid": 23
     },
     "KXNASCARTOP10-NASCA26-KAHO": {
       "last_price": 0,
@@ -461,7 +461,7 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 69,
+      "no_ask": 72,
       "no_bid": 61,
       "open_interest": 93,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 93,
       "volume_24h": 93,
       "yes_ask": 39,
-      "yes_bid": 31
+      "yes_bid": 28
     },
     "KXNASCARTOP10-NASCA26-TYMA": {
       "last_price": 64,
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T21:27:29.460352+00:00",
+  "scraped_at": "2026-11-05T21:33:13.666875+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
