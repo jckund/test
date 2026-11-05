@@ -55,7 +55,7 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 95,
+      "no_ask": 97,
       "no_bid": 94,
       "open_interest": 3107,
       "status": "active",
@@ -63,13 +63,13 @@
       "volume": 3121,
       "volume_24h": 134,
       "yes_ask": 6,
-      "yes_bid": 5
+      "yes_bid": 3
     },
     "KXNASCARRACE-NASCA26-CHSM": {
       "last_price": 5,
       "liquidity": null,
       "name": "Chandler Smith",
-      "no_ask": 95,
+      "no_ask": 96,
       "no_bid": 94,
       "open_interest": 432,
       "status": "active",
@@ -77,7 +77,7 @@
       "volume": 606,
       "volume_24h": 92,
       "yes_ask": 6,
-      "yes_bid": 5
+      "yes_bid": 4
     },
     "KXNASCARRACE-NASCA26-CLGR": {
       "last_price": 0,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-COHE",
       "volume": 7528,
-      "volume_24h": 1498,
+      "volume_24h": 1531,
       "yes_ask": 28,
       "yes_bid": 26
     },
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Timmy Hill",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 98,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-TIHI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-NASCA26-TYAN": {
@@ -489,7 +489,7 @@
       "last_price": 6,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 95,
+      "no_ask": 96,
       "no_bid": 94,
       "open_interest": 401,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 440,
       "volume_24h": 173,
       "yes_ask": 6,
-      "yes_bid": 5
+      "yes_bid": 4
     },
     "KXNASCARRACE-NASCA26-TYRE": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T23:01:29.918665+00:00",
+  "scraped_at": "2026-11-05T23:08:03.978323+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "winner"
 }
