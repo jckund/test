@@ -125,7 +125,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 66,
+      "no_ask": 100,
       "no_bid": 19,
       "open_interest": 0,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 81,
-      "yes_bid": 34
+      "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-COLA": {
       "last_price": 0,
@@ -224,13 +224,13 @@
       "liquidity": null,
       "name": "Jake Garcia",
       "no_ask": 81,
-      "no_bid": 57,
+      "no_bid": 59,
       "open_interest": 56,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-JAGA",
       "volume": 56,
-      "volume_24h": 0,
-      "yes_ask": 43,
+      "volume_24h": 56,
+      "yes_ask": 41,
       "yes_bid": 19
     },
     "KXNASCARTOP10-NASCA26-JORE": {
@@ -434,13 +434,13 @@
       "liquidity": null,
       "name": "Stewart Friesen",
       "no_ask": 80,
-      "no_bid": 61,
+      "no_bid": 62,
       "open_interest": 61,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-STFR",
       "volume": 61,
       "volume_24h": 61,
-      "yes_ask": 39,
+      "yes_ask": 38,
       "yes_bid": 20
     },
     "KXNASCARTOP10-NASCA26-TAGR": {
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Tyler Ankrum",
       "no_ask": 80,
-      "no_bid": 55,
+      "no_bid": 57,
       "open_interest": 53,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYAN",
       "volume": 53,
-      "volume_24h": 0,
-      "yes_ask": 45,
+      "volume_24h": 53,
+      "yes_ask": 43,
       "yes_bid": 20
     },
     "KXNASCARTOP10-NASCA26-TYMA": {
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T00:27:02.224840+00:00",
+  "scraped_at": "2026-11-05T00:33:14.661128+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
