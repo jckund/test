@@ -125,7 +125,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 100,
+      "no_ask": 85,
       "no_bid": 19,
       "open_interest": 0,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 81,
-      "yes_bid": 0
+      "yes_bid": 15
     },
     "KXNASCARTOP10-NASCA26-COLA": {
       "last_price": 0,
@@ -433,7 +433,7 @@
       "last_price": 39,
       "liquidity": null,
       "name": "Stewart Friesen",
-      "no_ask": 77,
+      "no_ask": 69,
       "no_bid": 62,
       "open_interest": 61,
       "status": "active",
@@ -441,7 +441,7 @@
       "volume": 61,
       "volume_24h": 61,
       "yes_ask": 38,
-      "yes_bid": 23
+      "yes_bid": 31
     },
     "KXNASCARTOP10-NASCA26-TAGR": {
       "last_price": 0,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYMA",
       "volume": 250,
-      "volume_24h": 0,
+      "volume_24h": 250,
       "yes_ask": 60,
       "yes_bid": 46
     },
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T02:29:59.376728+00:00",
+  "scraped_at": "2026-11-05T02:36:37.020546+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
