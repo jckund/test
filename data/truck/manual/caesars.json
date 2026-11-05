@@ -1,9 +1,224 @@
 {
-  "captured_at": "2026-11-04T19:32:31Z",
+  "captured_at": "2026-11-05T15:15:52Z",
   "source": "Caesars",
   "race": "NASCAR Truck Series Championship Race",
   "manual": true,
   "tiers": {
+    "top10": {
+      "number_of_winners": 10,
+      "drivers": [
+        {
+          "name": "Corey Heim",
+          "american": -700,
+          "implied": 0.875,
+          "novig": 0.6946169780292426
+        },
+        {
+          "name": "Layne Riggs",
+          "american": -600,
+          "implied": 0.8571428571428571,
+          "novig": 0.6804411213347683
+        },
+        {
+          "name": "Kaden Honeycutt",
+          "american": -500,
+          "implied": 0.8333333333333334,
+          "novig": 0.6615399790754692
+        },
+        {
+          "name": "Chandler Smith",
+          "american": -250,
+          "implied": 0.7142857142857143,
+          "novig": 0.5670342677789736
+        },
+        {
+          "name": "Christian Eckes",
+          "american": -220,
+          "implied": 0.6875,
+          "novig": 0.545770482737262
+        },
+        {
+          "name": "Ty Majeski",
+          "american": -170,
+          "implied": 0.6296296296296297,
+          "novig": 0.49983020641257675
+        },
+        {
+          "name": "Nick Sanchez",
+          "american": -140,
+          "implied": 0.5833333333333334,
+          "novig": 0.46307798535282846
+        },
+        {
+          "name": "Giovanni Ruggiero",
+          "american": -115,
+          "implied": 0.5348837209302325,
+          "novig": 0.4246163586623941
+        },
+        {
+          "name": "Grant Enfinger",
+          "american": -105,
+          "implied": 0.5121951219512195,
+          "novig": 0.4066050603098006
+        },
+        {
+          "name": "Connor Mosack",
+          "american": 110,
+          "implied": 0.47619047619047616,
+          "novig": 0.3780228451859824
+        },
+        {
+          "name": "Daniel Hemric",
+          "american": 120,
+          "implied": 0.45454545454545453,
+          "novig": 0.36083998858661953
+        },
+        {
+          "name": "Ben Rhodes",
+          "american": 120,
+          "implied": 0.45454545454545453,
+          "novig": 0.36083998858661953
+        },
+        {
+          "name": "Tyler Ankrum",
+          "american": 140,
+          "implied": 0.4166666666666667,
+          "novig": 0.3307699895377346
+        },
+        {
+          "name": "Landen Lewis",
+          "american": 150,
+          "implied": 0.4,
+          "novig": 0.3175391899562252
+        },
+        {
+          "name": "Spencer Davis",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.2835171338894868
+        },
+        {
+          "name": "Stewart Friesen",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.2835171338894868
+        },
+        {
+          "name": "Parker Kligerman",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.2835171338894868
+        },
+        {
+          "name": "Jake Garcia",
+          "american": 180,
+          "implied": 0.35714285714285715,
+          "novig": 0.2835171338894868
+        },
+        {
+          "name": "Justin Haley",
+          "american": 200,
+          "implied": 0.3333333333333333,
+          "novig": 0.2646159916301877
+        },
+        {
+          "name": "Tanner Gray",
+          "american": 200,
+          "implied": 0.3333333333333333,
+          "novig": 0.2646159916301877
+        },
+        {
+          "name": "Leland Honeyman Jr",
+          "american": 300,
+          "implied": 0.25,
+          "novig": 0.19846199372264076
+        },
+        {
+          "name": "Matt Crafton",
+          "american": 300,
+          "implied": 0.25,
+          "novig": 0.19846199372264076
+        },
+        {
+          "name": "Tyler Reif",
+          "american": 300,
+          "implied": 0.25,
+          "novig": 0.19846199372264076
+        },
+        {
+          "name": "Cole Butcher",
+          "american": 375,
+          "implied": 0.21052631578947367,
+          "novig": 0.16712588945064483
+        },
+        {
+          "name": "Corey LaJoie",
+          "american": 375,
+          "implied": 0.21052631578947367,
+          "novig": 0.16712588945064483
+        },
+        {
+          "name": "Connor Hall",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.11340685355579472
+        },
+        {
+          "name": "Andres Perez de Lara",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.11340685355579472
+        },
+        {
+          "name": "Brenden Queen",
+          "american": 600,
+          "implied": 0.14285714285714285,
+          "novig": 0.11340685355579472
+        },
+        {
+          "name": "Kris Wright",
+          "american": 1100,
+          "implied": 0.08333333333333333,
+          "novig": 0.06615399790754692
+        },
+        {
+          "name": "Mini Tyrrell",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.06106522883773562
+        },
+        {
+          "name": "Spencer Boyd",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04961549843066019
+        },
+        {
+          "name": "Frankie Muniz",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04961549843066019
+        },
+        {
+          "name": "Josh Reaume",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04961549843066019
+        },
+        {
+          "name": "Clayton Green",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04961549843066019
+        },
+        {
+          "name": "Mason Massey",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04961549843066019
+        }
+      ]
+    },
     "winner": {
       "number_of_winners": 1,
       "drivers": [
@@ -11,181 +226,641 @@
           "name": "Corey Heim",
           "american": 225,
           "implied": 0.3076923076923077,
-          "novig": 0.20823966923793055
+          "novig": 0.21356886876650336
         },
         {
           "name": "Layne Riggs",
-          "american": 250,
-          "implied": 0.2857142857142857,
-          "novig": 0.19336540714950692
+          "american": 275,
+          "implied": 0.26666666666666666,
+          "novig": 0.18509301959763622
         },
         {
           "name": "Kaden Honeycutt",
           "american": 375,
           "implied": 0.21052631578947367,
-          "novig": 0.14247977368911038
+          "novig": 0.146126068103397
         },
         {
           "name": "Chandler Smith",
-          "american": 850,
-          "implied": 0.10526315789473684,
-          "novig": 0.07123988684455519
+          "american": 900,
+          "implied": 0.1,
+          "novig": 0.06940988234911359
         },
         {
           "name": "Ty Majeski",
-          "american": 1000,
-          "implied": 0.09090909090909091,
-          "novig": 0.061525356820297666
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05339221719162584
         },
         {
           "name": "Christian Eckes",
-          "american": 1500,
-          "implied": 0.0625,
-          "novig": 0.042298682813954644
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05339221719162584
         },
         {
           "name": "Nick Sanchez",
           "american": 1800,
           "implied": 0.05263157894736842,
-          "novig": 0.035619943422277596
+          "novig": 0.03653151702584925
         },
         {
           "name": "Giovanni Ruggiero",
-          "american": 2000,
-          "implied": 0.047619047619047616,
-          "novig": 0.032227567858251156
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.030178209717005904
         },
         {
           "name": "Connor Mosack",
-          "american": 2800,
-          "implied": 0.034482758620689655,
-          "novig": 0.02333720431114739
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.022390284628746315
         },
         {
           "name": "Grant Enfinger",
-          "american": 2800,
-          "implied": 0.034482758620689655,
-          "novig": 0.02333720431114739
+          "american": 3000,
+          "implied": 0.03225806451612903,
+          "novig": 0.022390284628746315
         },
         {
           "name": "Ben Rhodes",
           "american": 4000,
           "implied": 0.024390243902439025,
-          "novig": 0.016506803049348154
+          "novig": 0.016929239597344777
         },
         {
           "name": "Tyler Ankrum",
           "american": 4000,
           "implied": 0.024390243902439025,
-          "novig": 0.016506803049348154
+          "novig": 0.016929239597344777
         },
         {
           "name": "Daniel Hemric",
           "american": 5000,
           "implied": 0.0196078431372549,
-          "novig": 0.01327017500045636
+          "novig": 0.013609780852767369
         },
         {
           "name": "Parker Kligerman",
           "american": 5000,
           "implied": 0.0196078431372549,
-          "novig": 0.01327017500045636
+          "novig": 0.013609780852767369
         },
         {
           "name": "Landen Lewis",
           "american": 5000,
           "implied": 0.0196078431372549,
-          "novig": 0.01327017500045636
+          "novig": 0.013609780852767369
         },
         {
           "name": "Stewart Friesen",
           "american": 6000,
           "implied": 0.01639344262295082,
-          "novig": 0.011094736475791383
+          "novig": 0.011378669237559605
         },
         {
           "name": "Tanner Gray",
           "american": 6500,
           "implied": 0.015151515151515152,
-          "novig": 0.010254226136716277
+          "novig": 0.010516648840774785
         },
         {
           "name": "Jake Garcia",
           "american": 6500,
           "implied": 0.015151515151515152,
-          "novig": 0.010254226136716277
+          "novig": 0.010516648840774785
         },
         {
           "name": "Justin Haley",
           "american": 7500,
           "implied": 0.013157894736842105,
-          "novig": 0.008904985855569399
+          "novig": 0.009132879256462313
         },
         {
           "name": "Spencer Davis",
           "american": 7500,
           "implied": 0.013157894736842105,
-          "novig": 0.008904985855569399
+          "novig": 0.009132879256462313
         },
         {
           "name": "Tyler Reif",
           "american": 10000,
           "implied": 0.009900990099009901,
-          "novig": 0.006700781435874003
-        },
-        {
-          "name": "Frankie Muniz",
-          "american": 10000,
-          "implied": 0.009900990099009901,
-          "novig": 0.006700781435874003
+          "novig": 0.006872265579120157
         },
         {
           "name": "Leland Honeyman Jr",
           "american": 10000,
           "implied": 0.009900990099009901,
-          "novig": 0.006700781435874003
+          "novig": 0.006872265579120157
         },
         {
           "name": "Matt Crafton",
           "american": 10000,
           "implied": 0.009900990099009901,
-          "novig": 0.006700781435874003
+          "novig": 0.006872265579120157
         },
         {
           "name": "Cole Butcher",
           "american": 15000,
           "implied": 0.006622516556291391,
-          "novig": 0.004481979635915724
+          "novig": 0.004596680950272423
         },
         {
           "name": "Corey LaJoie",
           "american": 20000,
           "implied": 0.004975124378109453,
-          "novig": 0.0033670593284740014
+          "novig": 0.0034532279775678397
         },
         {
           "name": "Connor Hall",
           "american": 25000,
           "implied": 0.00398406374501992,
-          "novig": 0.002696330378578782
+          "novig": 0.002765333958132015
         },
         {
           "name": "Brenden Queen",
           "american": 25000,
           "implied": 0.00398406374501992,
-          "novig": 0.002696330378578782
+          "novig": 0.002765333958132015
         },
         {
           "name": "Andres Perez de Lara",
           "american": 25000,
           "implied": 0.00398406374501992,
-          "novig": 0.002696330378578782
+          "novig": 0.002765333958132015
         },
         {
           "name": "Kris Wright",
           "american": 50000,
           "implied": 0.001996007984031936,
-          "novig": 0.0013508561377710065
+          "novig": 0.0013854267933954805
+        },
+        {
+          "name": "Spencer Boyd",
+          "american": 75000,
+          "implied": 0.0013315579227696406,
+          "novig": 0.0009242327876047082
+        },
+        {
+          "name": "Mini Tyrrell",
+          "american": 100000,
+          "implied": 0.000999000999000999,
+          "novig": 0.0006934054180730627
+        },
+        {
+          "name": "Mason Massey",
+          "american": 100000,
+          "implied": 0.000999000999000999,
+          "novig": 0.0006934054180730627
+        },
+        {
+          "name": "Clayton Green",
+          "american": 100000,
+          "implied": 0.000999000999000999,
+          "novig": 0.0006934054180730627
+        },
+        {
+          "name": "Josh Reaume",
+          "american": 150000,
+          "implied": 0.0006662225183211193,
+          "novig": 0.00046242426614999057
+        },
+        {
+          "name": "Frankie Muniz",
+          "american": 200000,
+          "implied": 0.0004997501249375312,
+          "novig": 0.00034687597375868855
+        }
+      ]
+    },
+    "top3": {
+      "number_of_winners": 3,
+      "drivers": [
+        {
+          "name": "Corey Heim",
+          "american": -170,
+          "implied": 0.6296296296296297,
+          "novig": 0.47205640874493765
+        },
+        {
+          "name": "Layne Riggs",
+          "american": -160,
+          "implied": 0.6153846153846154,
+          "novig": 0.4613763994973146
+        },
+        {
+          "name": "Kaden Honeycutt",
+          "american": -105,
+          "implied": 0.5121951219512195,
+          "novig": 0.3840114544596551
+        },
+        {
+          "name": "Ty Majeski",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.20826018032864896
+        },
+        {
+          "name": "Chandler Smith",
+          "american": 260,
+          "implied": 0.2777777777777778,
+          "novig": 0.20826018032864896
+        },
+        {
+          "name": "Christian Eckes",
+          "american": 350,
+          "implied": 0.2222222222222222,
+          "novig": 0.16660814426291914
+        },
+        {
+          "name": "Nick Sanchez",
+          "american": 500,
+          "implied": 0.16666666666666666,
+          "novig": 0.12495610819718936
+        },
+        {
+          "name": "Giovanni Ruggiero",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.11534409987432866
+        },
+        {
+          "name": "Grant Enfinger",
+          "american": 750,
+          "implied": 0.11764705882352941,
+          "novig": 0.08820431166860426
+        },
+        {
+          "name": "Connor Mosack",
+          "american": 850,
+          "implied": 0.10526315789473684,
+          "novig": 0.07891964728243539
+        },
+        {
+          "name": "Ben Rhodes",
+          "american": 900,
+          "implied": 0.1,
+          "novig": 0.07497366491831363
+        },
+        {
+          "name": "Daniel Hemric",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05767204993716433
+        },
+        {
+          "name": "Tyler Ankrum",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.05767204993716433
+        },
+        {
+          "name": "Landen Lewis",
+          "american": 1400,
+          "implied": 0.06666666666666667,
+          "novig": 0.04998244327887574
+        },
+        {
+          "name": "Tanner Gray",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Spencer Davis",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Justin Haley",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Jake Garcia",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Parker Kligerman",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Stewart Friesen",
+          "american": 1600,
+          "implied": 0.058823529411764705,
+          "novig": 0.04410215583430213
+        },
+        {
+          "name": "Leland Honeyman Jr",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.028836024968582164
+        },
+        {
+          "name": "Tyler Reif",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.028836024968582164
+        },
+        {
+          "name": "Matt Crafton",
+          "american": 2800,
+          "implied": 0.034482758620689655,
+          "novig": 0.025852987902866765
+        },
+        {
+          "name": "Cole Butcher",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.020826018032864893
+        },
+        {
+          "name": "Corey LaJoie",
+          "american": 3500,
+          "implied": 0.027777777777777776,
+          "novig": 0.020826018032864893
+        },
+        {
+          "name": "Connor Hall",
+          "american": 5000,
+          "implied": 0.0196078431372549,
+          "novig": 0.014700718611434044
+        },
+        {
+          "name": "Andres Perez de Lara",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.012290764740707151
+        },
+        {
+          "name": "Brenden Queen",
+          "american": 6000,
+          "implied": 0.01639344262295082,
+          "novig": 0.012290764740707151
+        },
+        {
+          "name": "Kris Wright",
+          "american": 12500,
+          "implied": 0.007936507936507936,
+          "novig": 0.005950290866532827
+        },
+        {
+          "name": "Spencer Boyd",
+          "american": 20000,
+          "implied": 0.004975124378109453,
+          "novig": 0.0037300330805131155
+        },
+        {
+          "name": "Mini Tyrrell",
+          "american": 25000,
+          "implied": 0.00398406374501992,
+          "novig": 0.002986998602323252
+        },
+        {
+          "name": "Josh Reaume",
+          "american": 30000,
+          "implied": 0.0033222591362126247,
+          "novig": 0.0024908194325021136
+        },
+        {
+          "name": "Frankie Muniz",
+          "american": 30000,
+          "implied": 0.0033222591362126247,
+          "novig": 0.0024908194325021136
+        },
+        {
+          "name": "Mason Massey",
+          "american": 30000,
+          "implied": 0.0033222591362126247,
+          "novig": 0.0024908194325021136
+        },
+        {
+          "name": "Clayton Green",
+          "american": 30000,
+          "implied": 0.0033222591362126247,
+          "novig": 0.0024908194325021136
+        }
+      ]
+    },
+    "top5": {
+      "number_of_winners": 5,
+      "drivers": [
+        {
+          "name": "Corey Heim",
+          "american": -350,
+          "implied": 0.7777777777777778,
+          "novig": 0.6106656810076627
+        },
+        {
+          "name": "Layne Riggs",
+          "american": -300,
+          "implied": 0.75,
+          "novig": 0.5888561924002462
+        },
+        {
+          "name": "Kaden Honeycutt",
+          "american": -225,
+          "implied": 0.6923076923076923,
+          "novig": 0.5435595622156119
+        },
+        {
+          "name": "Chandler Smith",
+          "american": 130,
+          "implied": 0.43478260869565216,
+          "novig": 0.34136590863782384
+        },
+        {
+          "name": "Ty Majeski",
+          "american": 140,
+          "implied": 0.4166666666666667,
+          "novig": 0.3271423291112479
+        },
+        {
+          "name": "Christian Eckes",
+          "american": 160,
+          "implied": 0.38461538461538464,
+          "novig": 0.3019775345642288
+        },
+        {
+          "name": "Nick Sanchez",
+          "american": 250,
+          "implied": 0.2857142857142857,
+          "novig": 0.2243261685334271
+        },
+        {
+          "name": "Giovanni Ruggiero",
+          "american": 275,
+          "implied": 0.26666666666666666,
+          "novig": 0.20937109063119863
+        },
+        {
+          "name": "Grant Enfinger",
+          "american": 325,
+          "implied": 0.23529411764705882,
+          "novig": 0.1847391976157635
+        },
+        {
+          "name": "Connor Mosack",
+          "american": 400,
+          "implied": 0.2,
+          "novig": 0.157028317973399
+        },
+        {
+          "name": "Ben Rhodes",
+          "american": 425,
+          "implied": 0.19047619047619047,
+          "novig": 0.14955077902228472
+        },
+        {
+          "name": "Tyler Ankrum",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.12079101382569153
+        },
+        {
+          "name": "Daniel Hemric",
+          "american": 550,
+          "implied": 0.15384615384615385,
+          "novig": 0.12079101382569153
+        },
+        {
+          "name": "Landen Lewis",
+          "american": 575,
+          "implied": 0.14814814814814814,
+          "novig": 0.11631727257288813
+        },
+        {
+          "name": "Spencer Davis",
+          "american": 675,
+          "implied": 0.12903225806451613,
+          "novig": 0.10130859224090256
+        },
+        {
+          "name": "Parker Kligerman",
+          "american": 675,
+          "implied": 0.12903225806451613,
+          "novig": 0.10130859224090256
+        },
+        {
+          "name": "Tanner Gray",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.09814269873337436
+        },
+        {
+          "name": "Stewart Friesen",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.09814269873337436
+        },
+        {
+          "name": "Jake Garcia",
+          "american": 700,
+          "implied": 0.125,
+          "novig": 0.09814269873337436
+        },
+        {
+          "name": "Justin Haley",
+          "american": 825,
+          "implied": 0.10810810810810811,
+          "novig": 0.08488017187751297
+        },
+        {
+          "name": "Leland Honeyman Jr",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.060395506912845766
+        },
+        {
+          "name": "Matt Crafton",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.060395506912845766
+        },
+        {
+          "name": "Tyler Reif",
+          "american": 1200,
+          "implied": 0.07692307692307693,
+          "novig": 0.060395506912845766
+        },
+        {
+          "name": "Cole Butcher",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04907134936668718
+        },
+        {
+          "name": "Corey LaJoie",
+          "american": 1500,
+          "implied": 0.0625,
+          "novig": 0.04907134936668718
+        },
+        {
+          "name": "Connor Hall",
+          "american": 2200,
+          "implied": 0.043478260869565216,
+          "novig": 0.03413659086378239
+        },
+        {
+          "name": "Brenden Queen",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.030197753456422883
+        },
+        {
+          "name": "Andres Perez de Lara",
+          "american": 2500,
+          "implied": 0.038461538461538464,
+          "novig": 0.030197753456422883
+        },
+        {
+          "name": "Kris Wright",
+          "american": 6500,
+          "implied": 0.015151515151515152,
+          "novig": 0.011896084694954468
+        },
+        {
+          "name": "Spencer Boyd",
+          "american": 10000,
+          "implied": 0.009900990099009901,
+          "novig": 0.007773679107594009
+        },
+        {
+          "name": "Mini Tyrrell",
+          "american": 12500,
+          "implied": 0.007936507936507936,
+          "novig": 0.006231282459261864
+        },
+        {
+          "name": "Josh Reaume",
+          "american": 12500,
+          "implied": 0.007936507936507936,
+          "novig": 0.006231282459261864
+        },
+        {
+          "name": "Mason Massey",
+          "american": 15000,
+          "implied": 0.006622516556291391,
+          "novig": 0.005199613177927119
+        },
+        {
+          "name": "Frankie Muniz",
+          "american": 15000,
+          "implied": 0.006622516556291391,
+          "novig": 0.005199613177927119
+        },
+        {
+          "name": "Clayton Green",
+          "american": 15000,
+          "implied": 0.006622516556291391,
+          "novig": 0.005199613177927119
         }
       ]
     }
