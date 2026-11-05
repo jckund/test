@@ -486,18 +486,18 @@
       "yes_bid": 31
     },
     "KXNASCARTOP10-OREI26-SHCR": {
-      "last_price": 0,
+      "last_price": 60,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 55,
-      "no_bid": 40,
-      "open_interest": 0,
+      "no_ask": 50,
+      "no_bid": 32,
+      "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-SHCR",
-      "volume": 0,
+      "volume": 250,
       "volume_24h": 0,
-      "yes_ask": 60,
-      "yes_bid": 45
+      "yes_ask": 68,
+      "yes_bid": 50
     },
     "KXNASCARTOP10-OREI26-TAGR": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T16:52:31.308410+00:00",
+  "scraped_at": "2026-11-05T19:30:05.232343+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
