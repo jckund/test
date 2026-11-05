@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COMO",
       "volume": 45,
-      "volume_24h": 0,
+      "volume_24h": 45,
       "yes_ask": 45,
       "yes_bid": 31
     },
@@ -461,15 +461,15 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 78,
-      "no_bid": 62,
+      "no_ask": 77,
+      "no_bid": 60,
       "open_interest": 93,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYAN",
       "volume": 93,
-      "volume_24h": 53,
-      "yes_ask": 38,
-      "yes_bid": 22
+      "volume_24h": 93,
+      "yes_ask": 40,
+      "yes_bid": 23
     },
     "KXNASCARTOP10-NASCA26-TYMA": {
       "last_price": 60,
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T17:51:47.256501+00:00",
+  "scraped_at": "2026-11-05T17:58:09.390336+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
