@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 39,
-      "no_bid": 12,
+      "no_bid": 13,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-CHBR",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 88,
+      "yes_ask": 87,
       "yes_bid": 61
     },
     "KXNASCARTOP20-NASC26-CHBU": {
@@ -223,15 +223,15 @@
       "last_price": 76,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 50,
-      "no_bid": 28,
+      "no_ask": 49,
+      "no_bid": 29,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-COHE",
       "volume": 1,
       "volume_24h": 1,
-      "yes_ask": 72,
-      "yes_bid": 50
+      "yes_ask": 71,
+      "yes_bid": 51
     },
     "KXNASCARTOP20-NASC26-COWA": {
       "last_price": 0,
@@ -462,13 +462,13 @@
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 38,
-      "no_bid": 11,
+      "no_bid": 12,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-RYBL",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 89,
+      "yes_ask": 88,
       "yes_bid": 62
     },
     "KXNASCARTOP20-NASC26-RYPR": {
@@ -514,31 +514,31 @@
       "yes_bid": 26
     },
     "KXNASCARTOP20-NASC26-TYDI": {
-      "last_price": 0,
+      "last_price": 14,
       "liquidity": null,
       "name": "Ty Dillon",
-      "no_ask": 86,
-      "no_bid": 63,
-      "open_interest": 0,
+      "no_ask": 100,
+      "no_bid": 62,
+      "open_interest": 200,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-TYDI",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 37,
-      "yes_bid": 14
+      "volume": 200,
+      "volume_24h": 200,
+      "yes_ask": 38,
+      "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-TYGI": {
       "last_price": 0,
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 51,
-      "no_bid": 22,
+      "no_bid": 23,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-TYGI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 78,
+      "yes_ask": 77,
       "yes_bid": 49
     },
     "KXNASCARTOP20-NASC26-TYRE": {
@@ -560,13 +560,13 @@
       "liquidity": null,
       "name": "William Byron",
       "no_ask": 39,
-      "no_bid": 8,
+      "no_bid": 9,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-WIBY",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 92,
+      "yes_ask": 91,
       "yes_bid": 61
     },
     "KXNASCARTOP20-NASC26-ZASM": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-05T21:42:59.635092+00:00",
+  "scraped_at": "2026-11-05T21:56:02.251658+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
