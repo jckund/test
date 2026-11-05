@@ -126,13 +126,13 @@
       "liquidity": null,
       "name": "Corey Heim",
       "no_ask": 76,
-      "no_bid": 73,
+      "no_bid": 74,
       "open_interest": 6296,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-COHE",
       "volume": 6678,
       "volume_24h": 5857,
-      "yes_ask": 27,
+      "yes_ask": 26,
       "yes_bid": 24
     },
     "KXNASCARRACE-NASCA26-COLA": {
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 79,
-      "no_bid": 77,
+      "no_bid": 78,
       "open_interest": 3029,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-LARI",
       "volume": 3150,
       "volume_24h": 1164,
-      "yes_ask": 23,
+      "yes_ask": 22,
       "yes_bid": 21
     },
     "KXNASCARRACE-NASCA26-LEHO": {
@@ -458,18 +458,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASCA26-TYAN": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 0,
+      "no_ask": 99,
+      "no_bid": 98,
+      "open_interest": 31,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-TYAN",
-      "volume": 0,
+      "volume": 31,
       "volume_24h": 0,
-      "yes_ask": 3,
-      "yes_bid": 2
+      "yes_ask": 2,
+      "yes_bid": 1
     },
     "KXNASCARRACE-NASCA26-TYMA": {
       "last_price": 4,
@@ -477,10 +477,10 @@
       "name": "Ty Majeski",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 302,
+      "open_interest": 326,
       "status": "active",
       "ticker": "KXNASCARRACE-NASCA26-TYMA",
-      "volume": 341,
+      "volume": 365,
       "volume_24h": 262,
       "yes_ask": 4,
       "yes_bid": 3
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T15:15:34.562237+00:00",
+  "scraped_at": "2026-11-05T15:27:57.742685+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "winner"
 }
