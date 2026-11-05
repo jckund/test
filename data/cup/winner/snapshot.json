@@ -85,10 +85,10 @@
       "name": "Brad Keselowski",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 94,
+      "open_interest": 144,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BRKE",
-      "volume": 94,
+      "volume": 144,
       "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
@@ -99,10 +99,10 @@
       "name": "Bubba Wallace",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 3958,
+      "open_interest": 3997,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BUWA",
-      "volume": 4169,
+      "volume": 4208,
       "volume_24h": 521,
       "yes_ask": 4,
       "yes_bid": 3
@@ -141,10 +141,10 @@
       "name": "Christopher Bell",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 10578,
+      "open_interest": 10595,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
-      "volume": 11344,
+      "volume": 11361,
       "volume_24h": 5909,
       "yes_ask": 10,
       "yes_bid": 9
@@ -183,10 +183,10 @@
       "name": "Chase Elliott",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 17828,
+      "open_interest": 17847,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHEL",
-      "volume": 17828,
+      "volume": 17847,
       "volume_24h": 3927,
       "yes_ask": 4,
       "yes_bid": 3
@@ -276,16 +276,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-DEHA": {
-      "last_price": 11,
+      "last_price": 10,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 16120,
+      "open_interest": 16146,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 16681,
-      "volume_24h": 8831,
+      "volume": 16707,
+      "volume_24h": 8828,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -374,16 +374,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-KYLA": {
-      "last_price": 17,
+      "last_price": 16,
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 84,
       "no_bid": 83,
-      "open_interest": 63751,
+      "open_interest": 63761,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 77180,
-      "volume_24h": 23288,
+      "volume": 77202,
+      "volume_24h": 23181,
       "yes_ask": 17,
       "yes_bid": 16
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T05:18:26.915656+00:00",
+  "scraped_at": "2026-11-05T05:30:23.877219+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
