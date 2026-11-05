@@ -15,10 +15,10 @@
       "name": "AJ Allmendinger",
       "no_ask": 65,
       "no_bid": 38,
-      "open_interest": 0,
+      "open_interest": 24,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AJAL",
-      "volume": 0,
+      "volume": 24,
       "volume_24h": 0,
       "yes_ask": 62,
       "yes_bid": 35
@@ -52,15 +52,15 @@
       "yes_bid": 44
     },
     "KXNASCARTOP20-NASC26-AUDI": {
-      "last_price": 63,
+      "last_price": 61,
       "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 67,
       "no_bid": 39,
-      "open_interest": 8,
+      "open_interest": 16,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AUDI",
-      "volume": 8,
+      "volume": 16,
       "volume_24h": 0,
       "yes_ask": 61,
       "yes_bid": 33
@@ -406,13 +406,13 @@
       "liquidity": null,
       "name": "Noah Gragson",
       "no_ask": 71,
-      "no_bid": 52,
-      "open_interest": 39,
+      "no_bid": 51,
+      "open_interest": 79,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-NOGR",
-      "volume": 39,
+      "volume": 79,
       "volume_24h": 16,
-      "yes_ask": 48,
+      "yes_ask": 49,
       "yes_bid": 29
     },
     "KXNASCARTOP20-NASC26-RIHE": {
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-SHVA",
       "volume": 247,
-      "volume_24h": 230,
+      "volume_24h": 5,
       "yes_ask": 55,
       "yes_bid": 22
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-05T04:42:05.381077+00:00",
+  "scraped_at": "2026-11-05T06:18:44.137745+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
