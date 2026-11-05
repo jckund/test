@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 83,
-      "no_bid": 59,
+      "no_bid": 54,
       "open_interest": 52,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-CHBE",
       "volume": 52,
       "volume_24h": 52,
-      "yes_ask": 41,
+      "yes_ask": 46,
       "yes_bid": 17
     },
     "KXNASCARTOP5-NASC26-CHBR": {
@@ -332,16 +332,16 @@
       "yes_bid": 2
     },
     "KXNASCARTOP5-NASC26-JOLO": {
-      "last_price": 25,
+      "last_price": 27,
       "liquidity": null,
       "name": "Joey Logano",
       "no_ask": 92,
       "no_bid": 73,
-      "open_interest": 2,
+      "open_interest": 20,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-JOLO",
-      "volume": 2,
-      "volume_24h": 2,
+      "volume": 20,
+      "volume_24h": 20,
       "yes_ask": 27,
       "yes_bid": 8
     },
@@ -458,17 +458,17 @@
       "yes_bid": 12
     },
     "KXNASCARTOP5-NASC26-RYBL": {
-      "last_price": 44,
+      "last_price": 49,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 76,
-      "no_bid": 56,
-      "open_interest": 65,
+      "no_bid": 52,
+      "open_interest": 76,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-RYBL",
-      "volume": 67,
-      "volume_24h": 65,
-      "yes_ask": 44,
+      "volume": 78,
+      "volume_24h": 76,
+      "yes_ask": 48,
       "yes_bid": 24
     },
     "KXNASCARTOP5-NASC26-RYPR": {
@@ -542,17 +542,17 @@
       "yes_bid": 16
     },
     "KXNASCARTOP5-NASC26-TYRE": {
-      "last_price": 52,
+      "last_price": 51,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 57,
-      "no_bid": 56,
-      "open_interest": 103,
+      "no_bid": 50,
+      "open_interest": 113,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-TYRE",
-      "volume": 103,
-      "volume_24h": 0,
-      "yes_ask": 44,
+      "volume": 113,
+      "volume_24h": 10,
+      "yes_ask": 50,
       "yes_bid": 43
     },
     "KXNASCARTOP5-NASC26-WIBY": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-05T16:47:58.835866+00:00",
+  "scraped_at": "2026-11-05T17:22:36.960163+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }
