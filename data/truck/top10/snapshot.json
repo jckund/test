@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP10-NASCA26",
   "label": "Top 10",
-  "market_count": 35,
+  "market_count": 36,
   "markets": {
     "KXNASCARTOP10-NASCA26-ANPE": {
       "last_price": 21,
@@ -457,6 +457,20 @@
       "yes_ask": 32,
       "yes_bid": 24
     },
+    "KXNASCARTOP10-NASCA26-TIHI": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Timmy Hill",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP10-NASCA26-TIHI",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP10-NASCA26-TYAN": {
       "last_price": 37,
       "liquidity": null,
@@ -475,7 +489,7 @@
       "last_price": 64,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 39,
+      "no_ask": 40,
       "no_bid": 34,
       "open_interest": 722,
       "status": "active",
@@ -483,7 +497,7 @@
       "volume": 722,
       "volume_24h": 722,
       "yes_ask": 66,
-      "yes_bid": 61
+      "yes_bid": 60
     },
     "KXNASCARTOP10-NASCA26-TYRE": {
       "last_price": 0,
@@ -501,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T22:56:07.109481+00:00",
+  "scraped_at": "2026-11-05T23:02:02.703878+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }

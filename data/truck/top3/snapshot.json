@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-NASCA26",
   "label": "Top 3",
-  "market_count": 35,
+  "market_count": 36,
   "markets": {
     "KXNASCARTOP3-NASCA26-ANPE": {
       "last_price": 0,
@@ -457,6 +457,20 @@
       "yes_ask": 8,
       "yes_bid": 0
     },
+    "KXNASCARTOP3-NASCA26-TIHI": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "Timmy Hill",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-NASCA26-TIHI",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
+    },
     "KXNASCARTOP3-NASCA26-TYAN": {
       "last_price": 0,
       "liquidity": null,
@@ -501,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-05T22:18:22.541813+00:00",
+  "scraped_at": "2026-11-05T23:01:30.339638+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top3"
 }
