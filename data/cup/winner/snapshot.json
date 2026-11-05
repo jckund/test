@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BUWA",
       "volume": 5145,
-      "volume_24h": 543,
+      "volume_24h": 1376,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -117,7 +117,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CAHO",
       "volume": 6646,
-      "volume_24h": 2338,
+      "volume_24h": 2432,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
       "volume": 17721,
-      "volume_24h": 3303,
+      "volume_24h": 3355,
       "yes_ask": 9,
       "yes_bid": 8
     },
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHEL",
       "volume": 18092,
-      "volume_24h": 270,
+      "volume_24h": 340,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
       "volume": 2754,
-      "volume_24h": 543,
+      "volume_24h": 643,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -281,10 +281,10 @@
       "name": "Denny Hamlin",
       "no_ask": 90,
       "no_bid": 88,
-      "open_interest": 20158,
+      "open_interest": 20162,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 20733,
+      "volume": 20737,
       "volume_24h": 4930,
       "yes_ask": 12,
       "yes_bid": 10
@@ -327,7 +327,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JOBE",
       "volume": 2180,
-      "volume_24h": 1803,
+      "volume_24h": 1897,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 68634,
+      "open_interest": 68644,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 84619,
-      "volume_24h": 16551,
+      "volume": 84629,
+      "volume_24h": 16580,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -425,7 +425,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RIHE",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -463,10 +463,10 @@
       "name": "Ryan Blaney",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 75366,
+      "open_interest": 75370,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RYBL",
-      "volume": 75631,
+      "volume": 75634,
       "volume_24h": 32630,
       "yes_ask": 14,
       "yes_bid": 13
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RYPR",
       "volume": 3850,
-      "volume_24h": 2490,
+      "volume_24h": 2584,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -533,26 +533,26 @@
       "name": "Ty Gibbs",
       "no_ask": 96,
       "no_bid": 95,
-      "open_interest": 19734,
+      "open_interest": 19744,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYGI",
-      "volume": 19961,
-      "volume_24h": 112,
+      "volume": 19971,
+      "volume_24h": 169,
       "yes_ask": 5,
       "yes_bid": 4
     },
     "KXNASCARRACE-NASC26-TYRE": {
-      "last_price": 11,
+      "last_price": 12,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 90,
-      "no_bid": 89,
-      "open_interest": 61982,
+      "no_bid": 88,
+      "open_interest": 61996,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYRE",
-      "volume": 62049,
+      "volume": 62062,
       "volume_24h": 10053,
-      "yes_ask": 11,
+      "yes_ask": 12,
       "yes_bid": 10
     },
     "KXNASCARRACE-NASC26-WIBY": {
@@ -565,7 +565,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-WIBY",
       "volume": 9618,
-      "volume_24h": 4426,
+      "volume_24h": 2986,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-05T20:59:16.411245+00:00",
+  "scraped_at": "2026-11-05T21:05:44.013705+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
