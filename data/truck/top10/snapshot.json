@@ -10,15 +10,15 @@
   "market_count": 35,
   "markets": {
     "KXNASCARTOP10-NASCA26-ANPE": {
-      "last_price": 0,
+      "last_price": 20,
       "liquidity": null,
       "name": "Andres Perez de Lara",
       "no_ask": 96,
       "no_bid": 80,
-      "open_interest": 0,
+      "open_interest": 166,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-ANPE",
-      "volume": 0,
+      "volume": 166,
       "volume_24h": 0,
       "yes_ask": 20,
       "yes_bid": 4
@@ -125,7 +125,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 82,
+      "no_ask": 66,
       "no_bid": 19,
       "open_interest": 0,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 81,
-      "yes_bid": 18
+      "yes_bid": 34
     },
     "KXNASCARTOP10-NASCA26-COLA": {
       "last_price": 0,
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 48,
-      "no_bid": 22,
+      "no_bid": 23,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LARI",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 78,
+      "yes_ask": 77,
       "yes_bid": 52
     },
     "KXNASCARTOP10-NASCA26-LEHO": {
@@ -501,7 +501,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-05T14:52:36.964157+00:00",
+  "scraped_at": "2026-11-05T14:58:32.744052+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
