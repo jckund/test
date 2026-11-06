@@ -97,15 +97,15 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 54,
-      "no_bid": 50,
+      "no_ask": 58,
+      "no_bid": 49,
       "open_interest": 553,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-BUWA",
       "volume": 582,
       "volume_24h": 255,
-      "yes_ask": 50,
-      "yes_bid": 46
+      "yes_ask": 51,
+      "yes_bid": 42
     },
     "KXNASCARTOP10-NASC26-CAHO": {
       "last_price": 1,
@@ -321,7 +321,7 @@
       "last_price": 31,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 82,
+      "no_ask": 78,
       "no_bid": 69,
       "open_interest": 452,
       "status": "active",
@@ -329,21 +329,21 @@
       "volume": 457,
       "volume_24h": 21,
       "yes_ask": 31,
-      "yes_bid": 18
+      "yes_bid": 22
     },
     "KXNASCARTOP10-NASC26-JOLO": {
-      "last_price": 44,
+      "last_price": 45,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 65,
-      "no_bid": 56,
-      "open_interest": 39,
+      "no_ask": 62,
+      "no_bid": 55,
+      "open_interest": 93,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-JOLO",
-      "volume": 40,
+      "volume": 93,
       "volume_24h": 26,
-      "yes_ask": 44,
-      "yes_bid": 35
+      "yes_ask": 45,
+      "yes_bid": 38
     },
     "KXNASCARTOP10-NASC26-JONE": {
       "last_price": 2,
@@ -369,7 +369,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-JUHA",
       "volume": 339,
-      "volume_24h": 339,
+      "volume_24h": 0,
       "yes_ask": 14,
       "yes_bid": 10
     },
@@ -489,7 +489,7 @@
       "last_price": 22,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 93,
+      "no_ask": 95,
       "no_bid": 81,
       "open_interest": 251,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 251,
       "volume_24h": 4,
       "yes_ask": 19,
-      "yes_bid": 7
+      "yes_bid": 5
     },
     "KXNASCARTOP10-NASC26-TOGI": {
       "last_price": 6,
@@ -545,7 +545,7 @@
       "last_price": 58,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 39,
+      "no_ask": 41,
       "no_bid": 32,
       "open_interest": 42,
       "status": "active",
@@ -553,7 +553,7 @@
       "volume": 49,
       "volume_24h": 26,
       "yes_ask": 68,
-      "yes_bid": 61
+      "yes_bid": 59
     },
     "KXNASCARTOP10-NASC26-WIBY": {
       "last_price": 61,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T16:15:22.579694+00:00",
+  "scraped_at": "2026-11-06T16:25:41.966458+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }
