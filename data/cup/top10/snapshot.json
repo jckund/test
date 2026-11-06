@@ -10,15 +10,15 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP10-NASC26-AJAL": {
-      "last_price": 19,
+      "last_price": 20,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 81,
       "no_bid": 80,
-      "open_interest": 1936,
+      "open_interest": 1950,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-AJAL",
-      "volume": 1994,
+      "volume": 2008,
       "volume_24h": 261,
       "yes_ask": 20,
       "yes_bid": 19
@@ -279,7 +279,7 @@
       "last_price": 75,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 37,
+      "no_ask": 36,
       "no_bid": 27,
       "open_interest": 50,
       "status": "active",
@@ -287,7 +287,7 @@
       "volume": 52,
       "volume_24h": 0,
       "yes_ask": 73,
-      "yes_bid": 63
+      "yes_bid": 64
     },
     "KXNASCARTOP10-NASC26-ERJO": {
       "last_price": 17,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T21:15:51.650698+00:00",
+  "scraped_at": "2026-11-06T21:21:55.016089+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }

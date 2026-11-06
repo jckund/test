@@ -10,17 +10,17 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP20-NASC26-AJAL": {
-      "last_price": 58,
+      "last_price": 47,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 62,
-      "no_bid": 54,
-      "open_interest": 33,
+      "no_bid": 53,
+      "open_interest": 74,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AJAL",
-      "volume": 33,
+      "volume": 74,
       "volume_24h": 8,
-      "yes_ask": 46,
+      "yes_ask": 47,
       "yes_bid": 38
     },
     "KXNASCARTOP20-NASC26-ALBO": {
@@ -28,13 +28,13 @@
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 43,
-      "no_bid": 34,
+      "no_bid": 35,
       "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-ALBO",
       "volume": 7,
       "volume_24h": 7,
-      "yes_ask": 66,
+      "yes_ask": 65,
       "yes_bid": 57
     },
     "KXNASCARTOP20-NASC26-AUCI": {
@@ -517,7 +517,7 @@
       "last_price": 18,
       "liquidity": null,
       "name": "Ty Dillon",
-      "no_ask": 83,
+      "no_ask": 82,
       "no_bid": 75,
       "open_interest": 406,
       "status": "active",
@@ -525,7 +525,7 @@
       "volume": 406,
       "volume_24h": 406,
       "yes_ask": 25,
-      "yes_bid": 17
+      "yes_bid": 18
     },
     "KXNASCARTOP20-NASC26-TYGI": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-06T21:15:52.102385+00:00",
+  "scraped_at": "2026-11-06T21:21:55.485364+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }

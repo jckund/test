@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COMO",
       "volume": 143,
-      "volume_24h": 80,
+      "volume_24h": 98,
       "yes_ask": 41,
       "yes_bid": 33
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-MACR",
       "volume": 256,
-      "volume_24h": 224,
+      "volume_24h": 6,
       "yes_ask": 17,
       "yes_bid": 10
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-NISA",
       "volume": 146,
-      "volume_24h": 117,
+      "volume_24h": 146,
       "yes_ask": 67,
       "yes_bid": 63
     },
@@ -402,16 +402,16 @@
       "yes_bid": 13
     },
     "KXNASCARTOP10-NASCA26-SPBO": {
-      "last_price": 0,
+      "last_price": 4,
       "liquidity": null,
       "name": "Spencer Boyd",
       "no_ask": 99,
       "no_bid": 96,
-      "open_interest": 0,
+      "open_interest": 234,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-SPBO",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 234,
+      "volume_24h": 234,
       "yes_ask": 4,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T21:19:24.004532+00:00",
+  "scraped_at": "2026-11-06T21:25:39.144938+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
