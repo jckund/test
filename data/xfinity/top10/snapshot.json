@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 71,
+      "no_ask": 70,
       "no_bid": 1,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 99,
-      "yes_bid": 29
+      "yes_bid": 30
     },
     "KXNASCARTOP10-OREI26-DACR": {
       "last_price": 0,
@@ -290,18 +290,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-JUAL": {
-      "last_price": 83,
+      "last_price": 15,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 86,
-      "no_bid": 1,
+      "no_ask": 88,
+      "no_bid": 8,
       "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-JUAL",
-      "volume": 8,
+      "volume": 17,
       "volume_24h": 8,
-      "yes_ask": 99,
-      "yes_bid": 14
+      "yes_ask": 92,
+      "yes_bid": 12
     },
     "KXNASCARTOP10-OREI26-KYSI": {
       "last_price": 0,
@@ -419,15 +419,15 @@
       "last_price": 46,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 79,
-      "no_bid": 27,
+      "no_ask": 73,
+      "no_bid": 28,
       "open_interest": 108,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-RACA",
       "volume": 108,
       "volume_24h": 108,
-      "yes_ask": 73,
-      "yes_bid": 21
+      "yes_ask": 72,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-OREI26-RYEL": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T22:49:36.279854+00:00",
+  "scraped_at": "2026-11-06T22:55:34.940090+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
