@@ -27,29 +27,29 @@
       "last_price": 44,
       "liquidity": null,
       "name": "Ben Rhodes",
-      "no_ask": 78,
-      "no_bid": 56,
+      "no_ask": 77,
+      "no_bid": 57,
       "open_interest": 415,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-BERH",
       "volume": 415,
       "volume_24h": 415,
-      "yes_ask": 44,
-      "yes_bid": 22
+      "yes_ask": 43,
+      "yes_bid": 23
     },
     "KXNASCARTOP10-NASCA26-BRQU": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": null,
       "name": "Brenden Queen",
-      "no_ask": 96,
-      "no_bid": 90,
-      "open_interest": 0,
+      "no_ask": 93,
+      "no_bid": 86,
+      "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-BRQU",
-      "volume": 0,
-      "volume_24h": 0,
-      "yes_ask": 10,
-      "yes_bid": 4
+      "volume": 250,
+      "volume_24h": 250,
+      "yes_ask": 14,
+      "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-CHEC": {
       "last_price": 0,
@@ -164,18 +164,18 @@
       "yes_bid": 42
     },
     "KXNASCARTOP10-NASCA26-DAHE": {
-      "last_price": 63,
+      "last_price": 53,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 57,
-      "no_bid": 39,
-      "open_interest": 201,
+      "no_ask": 54,
+      "no_bid": 47,
+      "open_interest": 329,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-DAHE",
-      "volume": 201,
+      "volume": 329,
       "volume_24h": 201,
-      "yes_ask": 61,
-      "yes_bid": 43
+      "yes_ask": 53,
+      "yes_bid": 46
     },
     "KXNASCARTOP10-NASCA26-FRMU": {
       "last_price": 5,
@@ -220,18 +220,18 @@
       "yes_bid": 33
     },
     "KXNASCARTOP10-NASCA26-JAGA": {
-      "last_price": 44,
+      "last_price": 54,
       "liquidity": null,
       "name": "Jake Garcia",
-      "no_ask": 67,
-      "no_bid": 56,
-      "open_interest": 267,
+      "no_ask": 69,
+      "no_bid": 47,
+      "open_interest": 409,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-JAGA",
-      "volume": 267,
+      "volume": 409,
       "volume_24h": 211,
-      "yes_ask": 44,
-      "yes_bid": 33
+      "yes_ask": 53,
+      "yes_bid": 31
     },
     "KXNASCARTOP10-NASCA26-JORE": {
       "last_price": 0,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-KAHO",
       "volume": 15,
-      "volume_24h": 4,
+      "volume_24h": 15,
       "yes_ask": 74,
       "yes_bid": 49
     },
@@ -318,17 +318,17 @@
       "yes_bid": 55
     },
     "KXNASCARTOP10-NASCA26-LEHO": {
-      "last_price": 18,
+      "last_price": 17,
       "liquidity": null,
       "name": "Leland Honeyman Jr",
       "no_ask": 93,
-      "no_bid": 83,
-      "open_interest": 14,
+      "no_bid": 84,
+      "open_interest": 153,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LEHO",
-      "volume": 14,
-      "volume_24h": 14,
-      "yes_ask": 17,
+      "volume": 153,
+      "volume_24h": 153,
+      "yes_ask": 16,
       "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-MACR": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T18:01:33.866138+00:00",
+  "scraped_at": "2026-11-06T18:13:56.189722+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
