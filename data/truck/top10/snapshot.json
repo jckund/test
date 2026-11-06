@@ -10,17 +10,17 @@
   "market_count": 36,
   "markets": {
     "KXNASCARTOP10-NASCA26-ANPE": {
-      "last_price": 20,
+      "last_price": 19,
       "liquidity": null,
       "name": "Andres Perez de Lara",
       "no_ask": 84,
-      "no_bid": 82,
-      "open_interest": 659,
+      "no_bid": 79,
+      "open_interest": 784,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-ANPE",
-      "volume": 695,
-      "volume_24h": 91,
-      "yes_ask": 18,
+      "volume": 820,
+      "volume_24h": 216,
+      "yes_ask": 21,
       "yes_bid": 16
     },
     "KXNASCARTOP10-NASCA26-BERH": {
@@ -94,17 +94,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-COBU": {
-      "last_price": 6,
+      "last_price": 16,
       "liquidity": null,
       "name": "Cole Butcher",
       "no_ask": 92,
-      "no_bid": 85,
-      "open_interest": 250,
+      "no_bid": 83,
+      "open_interest": 257,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COBU",
-      "volume": 250,
-      "volume_24h": 0,
-      "yes_ask": 15,
+      "volume": 257,
+      "volume_24h": 7,
+      "yes_ask": 17,
       "yes_bid": 8
     },
     "KXNASCARTOP10-NASCA26-COHA": {
@@ -136,18 +136,18 @@
       "yes_bid": 77
     },
     "KXNASCARTOP10-NASCA26-COLA": {
-      "last_price": 20,
+      "last_price": 14,
       "liquidity": null,
       "name": "Corey LaJoie",
-      "no_ask": 94,
-      "no_bid": 87,
-      "open_interest": 13,
+      "no_ask": 93,
+      "no_bid": 85,
+      "open_interest": 43,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COLA",
-      "volume": 13,
-      "volume_24h": 13,
-      "yes_ask": 13,
-      "yes_bid": 6
+      "volume": 43,
+      "volume_24h": 43,
+      "yes_ask": 15,
+      "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-COMO": {
       "last_price": 41,
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-DAHE",
       "volume": 516,
-      "volume_24h": 420,
+      "volume_24h": 516,
       "yes_ask": 54,
       "yes_bid": 47
     },
@@ -192,18 +192,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-GIRU": {
-      "last_price": 58,
+      "last_price": 43,
       "liquidity": null,
       "name": "Giovanni Ruggiero",
-      "no_ask": 66,
-      "no_bid": 58,
-      "open_interest": 19,
+      "no_ask": 62,
+      "no_bid": 53,
+      "open_interest": 130,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-GIRU",
-      "volume": 19,
-      "volume_24h": 19,
-      "yes_ask": 42,
-      "yes_bid": 34
+      "volume": 130,
+      "volume_24h": 130,
+      "yes_ask": 47,
+      "yes_bid": 38
     },
     "KXNASCARTOP10-NASCA26-GREN": {
       "last_price": 0,
@@ -293,15 +293,15 @@
       "last_price": 32,
       "liquidity": null,
       "name": "Landen Lewis",
-      "no_ask": 72,
-      "no_bid": 61,
+      "no_ask": 69,
+      "no_bid": 62,
       "open_interest": 506,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LALE",
       "volume": 535,
-      "volume_24h": 287,
-      "yes_ask": 39,
-      "yes_bid": 28
+      "volume_24h": 535,
+      "yes_ask": 38,
+      "yes_bid": 31
     },
     "KXNASCARTOP10-NASCA26-LARI": {
       "last_price": 77,
@@ -500,22 +500,22 @@
       "yes_bid": 63
     },
     "KXNASCARTOP10-NASCA26-TYRE": {
-      "last_price": 0,
+      "last_price": 12,
       "liquidity": null,
       "name": "Tyler Reif",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 89,
-      "open_interest": 0,
+      "open_interest": 150,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYRE",
-      "volume": 0,
+      "volume": 150,
       "volume_24h": 0,
       "yes_ask": 11,
-      "yes_bid": 5
+      "yes_bid": 6
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T21:46:36.983591+00:00",
+  "scraped_at": "2026-11-06T21:53:19.624849+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
