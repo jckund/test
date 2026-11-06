@@ -164,18 +164,18 @@
       "yes_bid": 8
     },
     "KXNASCARTOP3-NASCA26-DAHE": {
-      "last_price": 15,
+      "last_price": 16,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 86,
-      "no_bid": 85,
-      "open_interest": 1347,
+      "no_ask": 84,
+      "no_bid": 72,
+      "open_interest": 2277,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-DAHE",
-      "volume": 1347,
-      "volume_24h": 1159,
-      "yes_ask": 15,
-      "yes_bid": 14
+      "volume": 2277,
+      "volume_24h": 2277,
+      "yes_ask": 28,
+      "yes_bid": 16
     },
     "KXNASCARTOP3-NASCA26-FRMU": {
       "last_price": 0,
@@ -206,15 +206,15 @@
       "yes_bid": 6
     },
     "KXNASCARTOP3-NASCA26-GREN": {
-      "last_price": 0,
+      "last_price": 24,
       "liquidity": null,
       "name": "Grant Enfinger",
       "no_ask": 92,
       "no_bid": 76,
-      "open_interest": 0,
+      "open_interest": 37,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-GREN",
-      "volume": 0,
+      "volume": 37,
       "volume_24h": 0,
       "yes_ask": 24,
       "yes_bid": 8
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-JAGA",
       "volume": 377,
-      "volume_24h": 0,
+      "volume_24h": 377,
       "yes_ask": 8,
       "yes_bid": 2
     },
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-KAHO",
       "volume": 387,
-      "volume_24h": 330,
+      "volume_24h": 387,
       "yes_ask": 44,
       "yes_bid": 34
     },
@@ -309,11 +309,11 @@
       "name": "Layne Riggs",
       "no_ask": 58,
       "no_bid": 42,
-      "open_interest": 705,
+      "open_interest": 960,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-LARI",
-      "volume": 705,
-      "volume_24h": 196,
+      "volume": 960,
+      "volume_24h": 705,
       "yes_ask": 58,
       "yes_bid": 42
     },
@@ -472,15 +472,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASCA26-TYAN": {
-      "last_price": 0,
+      "last_price": 7,
       "liquidity": null,
       "name": "Tyler Ankrum",
       "no_ask": 99,
       "no_bid": 93,
-      "open_interest": 0,
+      "open_interest": 100,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-TYAN",
-      "volume": 0,
+      "volume": 100,
       "volume_24h": 0,
       "yes_ask": 7,
       "yes_bid": 1
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-06T18:19:38.280333+00:00",
+  "scraped_at": "2026-11-06T18:25:46.049892+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top3"
 }

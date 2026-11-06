@@ -42,13 +42,13 @@
       "liquidity": null,
       "name": "Brenden Queen",
       "no_ask": 93,
-      "no_bid": 86,
+      "no_bid": 87,
       "open_interest": 250,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-BRQU",
       "volume": 250,
       "volume_24h": 250,
-      "yes_ask": 14,
+      "yes_ask": 13,
       "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-CHEC": {
@@ -173,7 +173,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-DAHE",
       "volume": 329,
-      "volume_24h": 201,
+      "volume_24h": 329,
       "yes_ask": 53,
       "yes_bid": 46
     },
@@ -223,15 +223,15 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Jake Garcia",
-      "no_ask": 71,
-      "no_bid": 47,
+      "no_ask": 72,
+      "no_bid": 48,
       "open_interest": 409,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-JAGA",
       "volume": 409,
-      "volume_24h": 211,
-      "yes_ask": 53,
-      "yes_bid": 29
+      "volume_24h": 353,
+      "yes_ask": 52,
+      "yes_bid": 28
     },
     "KXNASCARTOP10-NASCA26-JORE": {
       "last_price": 0,
@@ -332,18 +332,18 @@
       "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-MACR": {
-      "last_price": 15,
+      "last_price": 34,
       "liquidity": null,
       "name": "Matt Crafton",
-      "no_ask": 100,
-      "no_bid": 75,
-      "open_interest": 250,
+      "no_ask": 94,
+      "no_bid": 66,
+      "open_interest": 256,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-MACR",
-      "volume": 250,
+      "volume": 256,
       "volume_24h": 250,
-      "yes_ask": 25,
-      "yes_bid": 0
+      "yes_ask": 34,
+      "yes_bid": 6
     },
     "KXNASCARTOP10-NASCA26-MAMA": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T18:20:10.915750+00:00",
+  "scraped_at": "2026-11-06T18:26:18.571418+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
