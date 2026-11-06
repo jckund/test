@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-AUCI",
       "volume": 10816,
-      "volume_24h": 1796,
+      "volume_24h": 1703,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
       "volume": 13554,
-      "volume_24h": 2099,
+      "volume_24h": 2885,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -374,17 +374,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-KYLA": {
-      "last_price": 19,
+      "last_price": 18,
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 83,
-      "no_bid": 81,
-      "open_interest": 71112,
+      "no_bid": 82,
+      "open_interest": 71191,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 87221,
-      "volume_24h": 10794,
-      "yes_ask": 19,
+      "volume": 87300,
+      "volume_24h": 10814,
+      "yes_ask": 18,
       "yes_bid": 17
     },
     "KXNASCARRACE-NASC26-MIMC": {
@@ -561,10 +561,10 @@
       "name": "William Byron",
       "no_ask": 94,
       "no_bid": 93,
-      "open_interest": 9431,
+      "open_interest": 9433,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-WIBY",
-      "volume": 9627,
+      "volume": 9629,
       "volume_24h": 719,
       "yes_ask": 7,
       "yes_bid": 6
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-06T01:49:26.318788+00:00",
+  "scraped_at": "2026-11-06T01:56:55.585009+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
