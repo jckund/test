@@ -52,18 +52,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASCA26-CHEC": {
-      "last_price": 28,
+      "last_price": 23,
       "liquidity": null,
       "name": "Christian Eckes",
-      "no_ask": 92,
-      "no_bid": 77,
-      "open_interest": 20,
+      "no_ask": 77,
+      "no_bid": 76,
+      "open_interest": 753,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-CHEC",
-      "volume": 20,
+      "volume": 753,
       "volume_24h": 20,
-      "yes_ask": 23,
-      "yes_bid": 8
+      "yes_ask": 24,
+      "yes_bid": 23
     },
     "KXNASCARTOP3-NASCA26-CHSM": {
       "last_price": 27,
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-KAHO",
       "volume": 1187,
-      "volume_24h": 1166,
+      "volume_24h": 1187,
       "yes_ask": 49,
       "yes_bid": 32
     },
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 62,
-      "no_bid": 36,
+      "no_bid": 35,
       "open_interest": 8812,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-LARI",
       "volume": 8933,
       "volume_24h": 8933,
-      "yes_ask": 64,
+      "yes_ask": 65,
       "yes_bid": 38
     },
     "KXNASCARTOP3-NASCA26-LEHO": {
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Ty Majeski",
       "no_ask": 88,
-      "no_bid": 81,
+      "no_bid": 76,
       "open_interest": 336,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-TYMA",
       "volume": 336,
       "volume_24h": 336,
-      "yes_ask": 19,
+      "yes_ask": 24,
       "yes_bid": 12
     },
     "KXNASCARTOP3-NASCA26-TYRE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-06T23:40:34.609027+00:00",
+  "scraped_at": "2026-11-06T23:53:30.193597+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top3"
 }
