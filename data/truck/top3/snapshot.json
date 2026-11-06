@@ -70,13 +70,13 @@
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 81,
-      "no_bid": 64,
+      "no_bid": 65,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-CHSM",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 36,
+      "yes_ask": 35,
       "yes_bid": 19
     },
     "KXNASCARTOP3-NASCA26-CLGR": {
@@ -167,15 +167,15 @@
       "last_price": 16,
       "liquidity": null,
       "name": "Daniel Hemric",
-      "no_ask": 84,
-      "no_bid": 70,
+      "no_ask": 83,
+      "no_bid": 67,
       "open_interest": 2277,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-DAHE",
       "volume": 2277,
       "volume_24h": 2277,
-      "yes_ask": 30,
-      "yes_bid": 16
+      "yes_ask": 33,
+      "yes_bid": 17
     },
     "KXNASCARTOP3-NASCA26-FRMU": {
       "last_price": 0,
@@ -209,15 +209,15 @@
       "last_price": 24,
       "liquidity": null,
       "name": "Grant Enfinger",
-      "no_ask": 92,
-      "no_bid": 76,
+      "no_ask": 91,
+      "no_bid": 77,
       "open_interest": 37,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-GREN",
       "volume": 37,
-      "volume_24h": 0,
-      "yes_ask": 24,
-      "yes_bid": 8
+      "volume_24h": 37,
+      "yes_ask": 23,
+      "yes_bid": 9
     },
     "KXNASCARTOP3-NASCA26-JAGA": {
       "last_price": 8,
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "Layne Riggs",
       "no_ask": 58,
-      "no_bid": 42,
+      "no_bid": 47,
       "open_interest": 960,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-LARI",
       "volume": 960,
-      "volume_24h": 705,
-      "yes_ask": 58,
+      "volume_24h": 960,
+      "yes_ask": 53,
       "yes_bid": 42
     },
     "KXNASCARTOP3-NASCA26-LEHO": {
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-TYAN",
       "volume": 100,
-      "volume_24h": 0,
+      "volume_24h": 100,
       "yes_ask": 7,
       "yes_bid": 1
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-06T18:31:42.343359+00:00",
+  "scraped_at": "2026-11-06T18:39:59.900631+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top3"
 }
