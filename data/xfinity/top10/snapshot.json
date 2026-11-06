@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 90,
+      "no_ask": 100,
       "no_bid": 1,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 99,
-      "yes_bid": 10
+      "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-DACR": {
       "last_price": 0,
@@ -293,15 +293,15 @@
       "last_price": 15,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 86,
-      "no_bid": 9,
+      "no_ask": 100,
+      "no_bid": 8,
       "open_interest": 8,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-JUAL",
       "volume": 17,
       "volume_24h": 17,
-      "yes_ask": 91,
-      "yes_bid": 14
+      "yes_ask": 92,
+      "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-KYSI": {
       "last_price": 0,
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T23:42:29.865516+00:00",
+  "scraped_at": "2026-11-06T23:48:20.561803+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
