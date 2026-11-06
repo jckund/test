@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COMO",
       "volume": 113,
-      "volume_24h": 111,
+      "volume_24h": 113,
       "yes_ask": 50,
       "yes_bid": 41
     },
@@ -290,17 +290,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-LALE": {
-      "last_price": 0,
+      "last_price": 97,
       "liquidity": null,
       "name": "Landen Lewis",
       "no_ask": 75,
-      "no_bid": 65,
-      "open_interest": 0,
+      "no_bid": 1,
+      "open_interest": 259,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LALE",
-      "volume": 0,
+      "volume": 259,
       "volume_24h": 0,
-      "yes_ask": 35,
+      "yes_ask": 99,
       "yes_bid": 25
     },
     "KXNASCARTOP10-NASCA26-LARI": {
@@ -472,15 +472,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-TYAN": {
-      "last_price": 37,
+      "last_price": 52,
       "liquidity": null,
       "name": "Tyler Ankrum",
       "no_ask": 72,
       "no_bid": 48,
-      "open_interest": 93,
+      "open_interest": 140,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYAN",
-      "volume": 93,
+      "volume": 140,
       "volume_24h": 40,
       "yes_ask": 52,
       "yes_bid": 28
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T11:01:06.758300+00:00",
+  "scraped_at": "2026-11-06T11:31:29.378804+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
