@@ -210,13 +210,13 @@
       "liquidity": null,
       "name": "Grant Enfinger",
       "no_ask": 100,
-      "no_bid": 45,
+      "no_bid": 5,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-GREN",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 55,
+      "yes_ask": 95,
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-JAGA": {
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-STFR",
       "volume": 61,
-      "volume_24h": 61,
+      "volume_24h": 0,
       "yes_ask": 49,
       "yes_bid": 32
     },
@@ -475,21 +475,21 @@
       "last_price": 37,
       "liquidity": null,
       "name": "Tyler Ankrum",
-      "no_ask": 61,
-      "no_bid": 34,
+      "no_ask": 59,
+      "no_bid": 36,
       "open_interest": 93,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYAN",
       "volume": 93,
       "volume_24h": 93,
-      "yes_ask": 66,
-      "yes_bid": 39
+      "yes_ask": 64,
+      "yes_bid": 41
     },
     "KXNASCARTOP10-NASCA26-TYMA": {
       "last_price": 66,
       "liquidity": null,
       "name": "Ty Majeski",
-      "no_ask": 37,
+      "no_ask": 32,
       "no_bid": 26,
       "open_interest": 723,
       "status": "active",
@@ -497,7 +497,7 @@
       "volume": 723,
       "volume_24h": 723,
       "yes_ask": 74,
-      "yes_bid": 63
+      "yes_bid": 68
     },
     "KXNASCARTOP10-NASCA26-TYRE": {
       "last_price": 0,
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T00:19:23.889253+00:00",
+  "scraped_at": "2026-11-06T00:25:12.467180+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
