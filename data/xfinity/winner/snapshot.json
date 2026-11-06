@@ -18,7 +18,7 @@
       "open_interest": 49,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-ANAL",
-      "volume": 49,
+      "volume": 98,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 1
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-CODA",
       "volume": 12182,
-      "volume_24h": 6465,
+      "volume_24h": 5321,
       "yes_ask": 16,
       "yes_bid": 14
     },
@@ -239,11 +239,11 @@
       "name": "Jesse Love",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 5928,
+      "open_interest": 5929,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-JELO",
-      "volume": 6626,
-      "volume_24h": 3434,
+      "volume": 6627,
+      "volume_24h": 3438,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -290,16 +290,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-OREI26-JUAL": {
-      "last_price": 25,
+      "last_price": 24,
       "liquidity": null,
       "name": "Justin Allgaier",
       "no_ask": 79,
       "no_bid": 76,
-      "open_interest": 13783,
+      "open_interest": 13791,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-JUAL",
-      "volume": 15979,
-      "volume_24h": 5772,
+      "volume": 15987,
+      "volume_24h": 5680,
       "yes_ask": 24,
       "yes_bid": 21
     },
@@ -458,18 +458,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-OREI26-SAMA": {
-      "last_price": 11,
+      "last_price": 12,
       "liquidity": null,
       "name": "Sam Mayer",
-      "no_ask": 93,
-      "no_bid": 88,
-      "open_interest": 15276,
+      "no_ask": 91,
+      "no_bid": 85,
+      "open_interest": 15444,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-SAMA",
-      "volume": 24166,
-      "volume_24h": 3486,
-      "yes_ask": 12,
-      "yes_bid": 7
+      "volume": 24334,
+      "volume_24h": 5927,
+      "yes_ask": 15,
+      "yes_bid": 9
     },
     "KXNASCARRACE-OREI26-SASM": {
       "last_price": 2,
@@ -486,18 +486,18 @@
       "yes_bid": 1
     },
     "KXNASCARRACE-OREI26-SHCR": {
-      "last_price": 4,
+      "last_price": 7,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 97,
-      "no_bid": 96,
-      "open_interest": 4297,
+      "no_ask": 96,
+      "no_bid": 92,
+      "open_interest": 6201,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-SHCR",
-      "volume": 4502,
-      "volume_24h": 408,
-      "yes_ask": 4,
-      "yes_bid": 3
+      "volume": 6416,
+      "volume_24h": 2321,
+      "yes_ask": 8,
+      "yes_bid": 4
     },
     "KXNASCARRACE-OREI26-TAGR": {
       "last_price": 2,
@@ -505,11 +505,11 @@
       "name": "Taylor Gray",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 8432,
+      "open_interest": 8620,
       "status": "active",
       "ticker": "KXNASCARRACE-OREI26-TAGR",
-      "volume": 8728,
-      "volume_24h": 3103,
+      "volume": 8916,
+      "volume_24h": 3291,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-06T21:08:04.373466+00:00",
+  "scraped_at": "2026-11-06T21:14:02.842706+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "winner"
 }

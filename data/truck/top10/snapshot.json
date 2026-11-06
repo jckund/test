@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-ANPE",
       "volume": 695,
-      "volume_24h": 488,
+      "volume_24h": 529,
       "yes_ask": 20,
       "yes_bid": 16
     },
@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-BERH",
       "volume": 458,
-      "volume_24h": 415,
+      "volume_24h": 458,
       "yes_ask": 35,
       "yes_bid": 27
     },
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COHE",
       "volume": 69,
-      "volume_24h": 6,
+      "volume_24h": 69,
       "yes_ask": 79,
       "yes_bid": 77
     },
@@ -150,17 +150,17 @@
       "yes_bid": 6
     },
     "KXNASCARTOP10-NASCA26-COMO": {
-      "last_price": 50,
+      "last_price": 41,
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 67,
-      "no_bid": 60,
-      "open_interest": 113,
+      "no_bid": 59,
+      "open_interest": 132,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COMO",
-      "volume": 124,
+      "volume": 143,
       "volume_24h": 80,
-      "yes_ask": 40,
+      "yes_ask": 41,
       "yes_bid": 33
     },
     "KXNASCARTOP10-NASCA26-DAHE": {
@@ -271,7 +271,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-KAHO",
       "volume": 107,
-      "volume_24h": 15,
+      "volume_24h": 107,
       "yes_ask": 81,
       "yes_bid": 74
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LALE",
       "volume": 287,
-      "volume_24h": 259,
+      "volume_24h": 287,
       "yes_ask": 30,
       "yes_bid": 26
     },
@@ -313,7 +313,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LARI",
       "volume": 97,
-      "volume_24h": 13,
+      "volume_24h": 97,
       "yes_ask": 78,
       "yes_bid": 76
     },
@@ -335,7 +335,7 @@
       "last_price": 34,
       "liquidity": null,
       "name": "Matt Crafton",
-      "no_ask": 91,
+      "no_ask": 90,
       "no_bid": 83,
       "open_interest": 256,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 256,
       "volume_24h": 224,
       "yes_ask": 17,
-      "yes_bid": 9
+      "yes_bid": 10
     },
     "KXNASCARTOP10-NASCA26-MAMA": {
       "last_price": 0,
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-STFR",
       "volume": 160,
-      "volume_24h": 0,
+      "volume_24h": 99,
       "yes_ask": 32,
       "yes_bid": 31
     },
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-TYAN",
       "volume": 321,
-      "volume_24h": 222,
+      "volume_24h": 228,
       "yes_ask": 32,
       "yes_bid": 31
     },
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T21:07:19.787616+00:00",
+  "scraped_at": "2026-11-06T21:13:16.298403+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
