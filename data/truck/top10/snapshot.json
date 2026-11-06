@@ -70,13 +70,13 @@
       "liquidity": null,
       "name": "Chandler Smith",
       "no_ask": 93,
-      "no_bid": 33,
+      "no_bid": 31,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-CHSM",
       "volume": 1,
       "volume_24h": 1,
-      "yes_ask": 67,
+      "yes_ask": 69,
       "yes_bid": 7
     },
     "KXNASCARTOP10-NASCA26-CLGR": {
@@ -136,18 +136,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASCA26-COLA": {
-      "last_price": 0,
+      "last_price": 20,
       "liquidity": null,
       "name": "Corey LaJoie",
-      "no_ask": 100,
+      "no_ask": 98,
       "no_bid": 80,
-      "open_interest": 0,
+      "open_interest": 13,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-COLA",
-      "volume": 0,
+      "volume": 13,
       "volume_24h": 0,
       "yes_ask": 20,
-      "yes_bid": 0
+      "yes_bid": 2
     },
     "KXNASCARTOP10-NASCA26-COMO": {
       "last_price": 41,
@@ -178,15 +178,15 @@
       "yes_bid": 40
     },
     "KXNASCARTOP10-NASCA26-FRMU": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": null,
       "name": "Frankie Muniz",
       "no_ask": 100,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-FRMU",
-      "volume": 0,
+      "volume": 28,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 0
@@ -318,15 +318,15 @@
       "yes_bid": 8
     },
     "KXNASCARTOP10-NASCA26-LEHO": {
-      "last_price": 0,
+      "last_price": 18,
       "liquidity": null,
       "name": "Leland Honeyman Jr",
       "no_ask": 100,
       "no_bid": 82,
-      "open_interest": 0,
+      "open_interest": 14,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASCA26-LEHO",
-      "volume": 0,
+      "volume": 14,
       "volume_24h": 0,
       "yes_ask": 18,
       "yes_bid": 0
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-06T12:57:05.626407+00:00",
+  "scraped_at": "2026-11-06T13:20:03.913974+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top10"
 }
