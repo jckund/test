@@ -97,7 +97,7 @@
       "last_price": 4,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 98,
+      "no_ask": 99,
       "no_bid": 97,
       "open_interest": 6222,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 6456,
       "volume_24h": 1312,
       "yes_ask": 3,
-      "yes_bid": 2
+      "yes_bid": 1
     },
     "KXNASCARRACE-NASC26-CAHO": {
       "last_price": 1,
@@ -155,10 +155,10 @@
       "name": "Chase Briscoe",
       "no_ask": 91,
       "no_bid": 89,
-      "open_interest": 35201,
+      "open_interest": 35252,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
-      "volume": 35274,
+      "volume": 35325,
       "volume_24h": 17190,
       "yes_ask": 11,
       "yes_bid": 9
@@ -225,10 +225,10 @@
       "name": "Corey Heim",
       "no_ask": 96,
       "no_bid": 94,
-      "open_interest": 42977,
+      "open_interest": 43102,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
-      "volume": 42989,
+      "volume": 43114,
       "volume_24h": 39960,
       "yes_ask": 6,
       "yes_bid": 4
@@ -374,18 +374,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-KYLA": {
-      "last_price": 15,
+      "last_price": 17,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 86,
-      "no_bid": 85,
-      "open_interest": 82191,
+      "no_ask": 85,
+      "no_bid": 83,
+      "open_interest": 83559,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 101245,
+      "volume": 102613,
       "volume_24h": 15742,
-      "yes_ask": 15,
-      "yes_bid": 14
+      "yes_ask": 17,
+      "yes_bid": 15
     },
     "KXNASCARRACE-NASC26-MIMC": {
       "last_price": 1,
@@ -542,15 +542,15 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-NASC26-TYRE": {
-      "last_price": 17,
+      "last_price": 15,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 88,
       "no_bid": 86,
-      "open_interest": 92886,
+      "open_interest": 92893,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYRE",
-      "volume": 93502,
+      "volume": 93508,
       "volume_24h": 30727,
       "yes_ask": 14,
       "yes_bid": 12
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-06T23:22:36.866377+00:00",
+  "scraped_at": "2026-11-06T23:28:16.419152+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
