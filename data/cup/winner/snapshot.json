@@ -29,10 +29,10 @@
       "name": "Alex Bowman",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 11325,
+      "open_interest": 11792,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ALBO",
-      "volume": 11325,
+      "volume": 11792,
       "volume_24h": 868,
       "yes_ask": 2,
       "yes_bid": 1
@@ -281,10 +281,10 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 52131,
+      "open_interest": 52199,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 53116,
+      "volume": 53184,
       "volume_24h": 32379,
       "yes_ask": 14,
       "yes_bid": 13
@@ -447,15 +447,15 @@
       "last_price": 2,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 99,
-      "no_bid": 98,
+      "no_ask": 100,
+      "no_bid": 99,
       "open_interest": 2188,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ROCH",
       "volume": 2188,
       "volume_24h": 119,
-      "yes_ask": 2,
-      "yes_bid": 1
+      "yes_ask": 1,
+      "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-RYBL": {
       "last_price": 14,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-06T22:14:17.500318+00:00",
+  "scraped_at": "2026-11-06T22:20:31.272641+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
