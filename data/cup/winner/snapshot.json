@@ -29,10 +29,10 @@
       "name": "Alex Bowman",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 10924,
+      "open_interest": 10948,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ALBO",
-      "volume": 10924,
+      "volume": 10948,
       "volume_24h": 1404,
       "yes_ask": 2,
       "yes_bid": 1
@@ -150,16 +150,16 @@
       "yes_bid": 9
     },
     "KXNASCARRACE-NASC26-CHBR": {
-      "last_price": 9,
+      "last_price": 8,
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 93,
       "no_bid": 92,
-      "open_interest": 18056,
+      "open_interest": 18096,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
-      "volume": 18129,
-      "volume_24h": 3366,
+      "volume": 18169,
+      "volume_24h": 3406,
       "yes_ask": 8,
       "yes_bid": 7
     },
@@ -276,16 +276,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-DEHA": {
-      "last_price": 11,
+      "last_price": 12,
       "liquidity": null,
       "name": "Denny Hamlin",
       "no_ask": 89,
       "no_bid": 88,
-      "open_interest": 20304,
+      "open_interest": 20500,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 20965,
-      "volume_24h": 4369,
+      "volume": 21161,
+      "volume_24h": 4284,
       "yes_ask": 12,
       "yes_bid": 11
     },
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 83,
       "no_bid": 82,
-      "open_interest": 72484,
+      "open_interest": 72511,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 88609,
-      "volume_24h": 11452,
+      "volume": 88635,
+      "volume_24h": 11501,
       "yes_ask": 18,
       "yes_bid": 17
     },
@@ -537,7 +537,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYGI",
       "volume": 19971,
-      "volume_24h": 160,
+      "volume_24h": 122,
       "yes_ask": 5,
       "yes_bid": 4
     },
@@ -565,7 +565,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-WIBY",
       "volume": 9763,
-      "volume_24h": 856,
+      "volume_24h": 829,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-06T04:26:55.706963+00:00",
+  "scraped_at": "2026-11-06T04:33:19.241476+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
