@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-CODA",
       "volume": 376,
-      "volume_24h": 338,
+      "volume_24h": 0,
       "yes_ask": 44,
       "yes_bid": 34
     },
@@ -234,15 +234,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-JELO": {
-      "last_price": 0,
+      "last_price": 41,
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 67,
       "no_bid": 59,
-      "open_interest": 0,
+      "open_interest": 23,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JELO",
-      "volume": 0,
+      "volume": 23,
       "volume_24h": 0,
       "yes_ask": 41,
       "yes_bid": 33
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JUAL",
       "volume": 298,
-      "volume_24h": 193,
+      "volume_24h": 0,
       "yes_ask": 48,
       "yes_bid": 31
     },
@@ -543,7 +543,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-06T00:51:17.152684+00:00",
+  "scraped_at": "2026-11-06T06:40:14.456041+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top3"
 }
