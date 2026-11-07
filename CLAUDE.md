@@ -142,8 +142,10 @@ which is optional — the no-ops are harmless and free on a public repo.)
   namespaced keys.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
   **not** deploy — fire `track.yml` afterward to publish. **STANDING USER PREFERENCE:
-  every time you run `fanduel.yml`, fire `track.yml` as soon as the FanDuel data commit
-  lands so it publishes immediately — don't wait for the next pinger tick or ask.**
+  EVERY deploy (any "go"/"deploy" batch) also refreshes FanDuel: fire `fanduel.yml`
+  with the batch, and fire `track.yml` as soon as the FanDuel data commit lands so it
+  publishes immediately — don't wait for the next pinger tick or ask. A deploy that
+  only fires `track.yml` is incomplete.**
   Runs on a pinned `ubuntu-24.04` runner: `ubuntu-latest` moved to 26.04 (Nov 2026),
   where Playwright 1.56.1 can't install Chromium and the job dies in ~12s. Bump
   Playwright before un-pinning.
