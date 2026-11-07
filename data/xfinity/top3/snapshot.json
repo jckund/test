@@ -125,7 +125,7 @@
       "last_price": 40,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 79,
+      "no_ask": 78,
       "no_bid": 63,
       "open_interest": 200,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 37,
-      "yes_bid": 21
+      "yes_bid": 22
     },
     "KXNASCARTOP3-OREI26-CODA": {
       "last_price": 42,
@@ -430,16 +430,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-RACA": {
-      "last_price": 0,
+      "last_price": 15,
       "liquidity": null,
       "name": "Rajah Caruth",
       "no_ask": 100,
       "no_bid": 85,
-      "open_interest": 0,
+      "open_interest": 19,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-RACA",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 19,
+      "volume_24h": 19,
       "yes_ask": 15,
       "yes_bid": 0
     },
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 91,
-      "no_bid": 61,
+      "no_bid": 65,
       "open_interest": 1016,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-SHCR",
       "volume": 1016,
       "volume_24h": 1016,
-      "yes_ask": 39,
+      "yes_ask": 35,
       "yes_bid": 9
     },
     "KXNASCARTOP3-OREI26-TAGR": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-07T20:03:08.900028+00:00",
+  "scraped_at": "2026-11-07T20:13:25.427097+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top3"
 }
