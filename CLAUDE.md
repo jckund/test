@@ -141,7 +141,12 @@ which is optional — the no-ops are harmless and free on a public repo.)
   consensus scan does, is fine and is not that: same process, same state file,
   namespaced keys.)
 - **`fanduel.yml`** — scrapes FanDuel (headless Chromium), commits data only. Does
-  **not** deploy — fire `track.yml` afterward to publish.
+  **not** deploy — fire `track.yml` afterward to publish. **STANDING USER PREFERENCE:
+  every time you run `fanduel.yml`, fire `track.yml` as soon as the FanDuel data commit
+  lands so it publishes immediately — don't wait for the next pinger tick or ask.**
+  Runs on a pinned `ubuntu-24.04` runner: `ubuntu-latest` moved to 26.04 (Nov 2026),
+  where Playwright 1.56.1 can't install Chromium and the job dies in ~12s. Bump
+  Playwright before un-pinning.
 - **`evwatch.py`** — high-EV watch. Runs **two scans per poll**, each the CI twin of a
   dashboard tab, sharing one process / one state file / one Pushover call (so no second
   cron-job.org pinger is needed — the existing ~5-min ping at `evalert.yml` drives both):
