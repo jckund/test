@@ -31,7 +31,7 @@ permissions:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04  # pinned: Playwright 1.56.1 has no Chromium build for ubuntu-latest (26.04)
     steps:
       - uses: actions/checkout@v4
 
