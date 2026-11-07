@@ -141,10 +141,10 @@
       "name": "Christopher Bell",
       "no_ask": 62,
       "no_bid": 54,
-      "open_interest": 75,
+      "open_interest": 180,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-CHBE",
-      "volume": 75,
+      "volume": 180,
       "volume_24h": 23,
       "yes_ask": 46,
       "yes_bid": 38
@@ -461,15 +461,15 @@
       "last_price": 53,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 49,
-      "no_bid": 47,
+      "no_ask": 51,
+      "no_bid": 46,
       "open_interest": 449,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-RYBL",
       "volume": 451,
       "volume_24h": 369,
-      "yes_ask": 53,
-      "yes_bid": 51
+      "yes_ask": 54,
+      "yes_bid": 49
     },
     "KXNASCARTOP5-NASC26-RYPR": {
       "last_price": 12,
@@ -542,15 +542,15 @@
       "yes_bid": 26
     },
     "KXNASCARTOP5-NASC26-TYRE": {
-      "last_price": 46,
+      "last_price": 45,
       "liquidity": null,
       "name": "Tyler Reddick",
       "no_ask": 57,
       "no_bid": 55,
-      "open_interest": 326,
+      "open_interest": 379,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-TYRE",
-      "volume": 326,
+      "volume": 379,
       "volume_24h": 210,
       "yes_ask": 45,
       "yes_bid": 43
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-07T18:17:03.041670+00:00",
+  "scraped_at": "2026-11-07T18:55:41.508812+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }
