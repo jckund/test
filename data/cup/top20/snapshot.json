@@ -41,7 +41,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Austin Cindric",
-      "no_ask": 100,
+      "no_ask": 60,
       "no_bid": 1,
       "open_interest": 0,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 99,
-      "yes_bid": 0
+      "yes_bid": 40
     },
     "KXNASCARTOP20-NASC26-AUDI": {
       "last_price": 59,
@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-CAME",
       "volume": 285,
-      "volume_24h": 285,
+      "volume_24h": 156,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-CHFI",
       "volume": 368,
-      "volume_24h": 368,
+      "volume_24h": 274,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -243,7 +243,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-COWA",
       "volume": 473,
-      "volume_24h": 473,
+      "volume_24h": 343,
       "yes_ask": 3,
       "yes_bid": 0
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-07T21:08:25.984768+00:00",
+  "scraped_at": "2026-11-07T21:17:16.339786+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
