@@ -43,10 +43,10 @@
       "name": "Austin Cindric",
       "no_ask": 83,
       "no_bid": 79,
-      "open_interest": 217,
+      "open_interest": 331,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-AUCI",
-      "volume": 417,
+      "volume": 531,
       "volume_24h": 417,
       "yes_ask": 21,
       "yes_bid": 17
@@ -80,15 +80,15 @@
       "yes_bid": 2
     },
     "KXNASCARTOP5-NASC26-BRKE": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 91,
       "no_bid": 90,
-      "open_interest": 0,
+      "open_interest": 320,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-BRKE",
-      "volume": 0,
+      "volume": 320,
       "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 9
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-07T16:15:20.752778+00:00",
+  "scraped_at": "2026-11-07T16:20:20.727181+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }
