@@ -61,7 +61,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-CHEC",
       "volume": 753,
-      "volume_24h": 20,
+      "volume_24h": 753,
       "yes_ask": 24,
       "yes_bid": 23
     },
@@ -150,17 +150,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASCA26-COMO": {
-      "last_price": 0,
+      "last_price": 11,
       "liquidity": null,
       "name": "Connor Mosack",
       "no_ask": 95,
-      "no_bid": 90,
-      "open_interest": 0,
+      "no_bid": 89,
+      "open_interest": 86,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASCA26-COMO",
-      "volume": 0,
+      "volume": 86,
       "volume_24h": 0,
-      "yes_ask": 10,
+      "yes_ask": 11,
       "yes_bid": 5
     },
     "KXNASCARTOP3-NASCA26-DAHE": {
@@ -515,7 +515,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-06T23:53:30.193597+00:00",
+  "scraped_at": "2026-11-06T23:59:47.352712+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasca26",
   "tier": "top3"
 }
