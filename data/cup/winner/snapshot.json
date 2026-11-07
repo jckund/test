@@ -131,7 +131,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CAME",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
       "volume": 37787,
-      "volume_24h": 22096,
+      "volume_24h": 21861,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 91,
-      "no_bid": 90,
-      "open_interest": 37672,
+      "no_bid": 89,
+      "open_interest": 37717,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
-      "volume": 37745,
+      "volume": 37790,
       "volume_24h": 18990,
-      "yes_ask": 10,
+      "yes_ask": 11,
       "yes_bid": 9
     },
     "KXNASCARRACE-NASC26-CHBU": {
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHFI",
       "volume": 94,
-      "volume_24h": 0,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -220,16 +220,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-COHE": {
-      "last_price": 3,
+      "last_price": 4,
       "liquidity": null,
       "name": "Corey Heim",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 50041,
+      "open_interest": 50111,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
-      "volume": 50053,
-      "volume_24h": 47127,
+      "volume": 50123,
+      "volume_24h": 47197,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -267,11 +267,11 @@
       "name": "Daniel Suarez",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 1879,
+      "open_interest": 2908,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DASU",
-      "volume": 1879,
-      "volume_24h": 1037,
+      "volume": 2908,
+      "volume_24h": 2066,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -281,11 +281,11 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 54057,
+      "open_interest": 54058,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 55136,
-      "volume_24h": 33343,
+      "volume": 55137,
+      "volume_24h": 33350,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -360,16 +360,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-JUHA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Justin Haley",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 1029,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JUHA",
-      "volume": 0,
-      "volume_24h": 0,
+      "volume": 1029,
+      "volume_24h": 1029,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
       "volume": 114027,
-      "volume_24h": 24657,
+      "volume_24h": 24618,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RYBL",
       "volume": 94910,
-      "volume_24h": 18858,
+      "volume_24h": 18869,
       "yes_ask": 20,
       "yes_bid": 19
     },
@@ -565,7 +565,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-WIBY",
       "volume": 12215,
-      "volume_24h": 2452,
+      "volume_24h": 2398,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-07T05:17:29.946950+00:00",
+  "scraped_at": "2026-11-07T05:22:29.441628+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
