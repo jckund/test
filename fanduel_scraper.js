@@ -231,6 +231,10 @@ const SERIES_EVENT_WORDS = {
 // event, so no race name is parsed here).
 function tierKeyOf(name) {
   const n = (name || "").toLowerCase().trim();
+  // FanDuel also posts "Race Winner and Top 3 Finish Combos" (a ~10-row parlay
+  // board). It contains "top 3 finish", and when it came after the real market
+  // it overwrote the full Top 3/Top 5 board with 10 rows. Never a tier.
+  if (n.includes("combo") || n.includes(" and ")) return null;
   if (n === "race winner" || n.includes("outright betting") || n === "winner") return "winner";
   if (n.includes("top 3 finish")) return "top3";
   if (n.includes("top 5 finish")) return "top5";
@@ -265,6 +269,8 @@ function emitSeries(series, ev, evMarkets) {
     const sum = drivers.reduce((a, d) => a + d.implied, 0);
     for (const d of drivers) d.novig = sum > 0 ? (d.implied * target) / sum : null;
     drivers.sort((a, b) => b.implied - a.implied);
+    // If two markets map to one tier, keep the fuller board.
+    if (tiers[tierKey] && tiers[tierKey].drivers.length >= drivers.length) continue;
     tiers[tierKey] = { market_name: m.marketName, number_of_winners: target, drivers };
     console.log(`  ${tierKey}: ${drivers.length} drivers (${m.marketName})`);
   }
