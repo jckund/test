@@ -10,17 +10,17 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP5-NASC26-AJAL": {
-      "last_price": 21,
+      "last_price": 8,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 93,
-      "no_bid": 92,
-      "open_interest": 14,
+      "no_bid": 91,
+      "open_interest": 54,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-AJAL",
-      "volume": 14,
+      "volume": 54,
       "volume_24h": 0,
-      "yes_ask": 8,
+      "yes_ask": 9,
       "yes_bid": 7
     },
     "KXNASCARTOP5-NASC26-ALBO": {
@@ -140,13 +140,13 @@
       "liquidity": null,
       "name": "Christopher Bell",
       "no_ask": 63,
-      "no_bid": 56,
+      "no_bid": 55,
       "open_interest": 52,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-CHBE",
       "volume": 52,
       "volume_24h": 0,
-      "yes_ask": 44,
+      "yes_ask": 45,
       "yes_bid": 37
     },
     "KXNASCARTOP5-NASC26-CHBR": {
@@ -402,17 +402,17 @@
       "yes_bid": 3
     },
     "KXNASCARTOP5-NASC26-NOGR": {
-      "last_price": 0,
+      "last_price": 3,
       "liquidity": null,
       "name": "Noah Gragson",
       "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 0,
+      "no_bid": 94,
+      "open_interest": 34,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-NOGR",
-      "volume": 0,
+      "volume": 34,
       "volume_24h": 0,
-      "yes_ask": 3,
+      "yes_ask": 6,
       "yes_bid": 2
     },
     "KXNASCARTOP5-NASC26-RIHE": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-07T03:51:35.562272+00:00",
+  "scraped_at": "2026-11-07T03:56:23.727038+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }
