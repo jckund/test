@@ -7,7 +7,7 @@
   },
   "event_ticker": "KXNASCARTOP3-OREI26",
   "label": "Top 3",
-  "market_count": 38,
+  "market_count": 39,
   "markets": {
     "KXNASCARTOP3-OREI26-ANAL": {
       "last_price": 0,
@@ -243,9 +243,23 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JELO",
       "volume": 68,
-      "volume_24h": 23,
+      "volume_24h": 68,
       "yes_ask": 71,
       "yes_bid": 40
+    },
+    "KXNASCARTOP3-OREI26-JJYE": {
+      "last_price": 0,
+      "liquidity": null,
+      "name": "J.J. Yeley",
+      "no_ask": 100,
+      "no_bid": 100,
+      "open_interest": 0,
+      "status": "initialized",
+      "ticker": "KXNASCARTOP3-OREI26-JJYE",
+      "volume": 0,
+      "volume_24h": 0,
+      "yes_ask": 0,
+      "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-JOBI": {
       "last_price": 0,
@@ -293,15 +307,15 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 94,
+      "no_ask": 92,
       "no_bid": 26,
       "open_interest": 533,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JUAL",
       "volume": 533,
-      "volume_24h": 203,
+      "volume_24h": 235,
       "yes_ask": 74,
-      "yes_bid": 6
+      "yes_bid": 8
     },
     "KXNASCARTOP3-OREI26-KYSI": {
       "last_price": 0,
@@ -543,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-07T01:58:17.867303+00:00",
+  "scraped_at": "2026-11-07T02:03:24.743279+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top3"
 }
