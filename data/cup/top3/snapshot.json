@@ -377,7 +377,7 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 96,
+      "no_ask": 90,
       "no_bid": 69,
       "open_interest": 143,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 143,
       "volume_24h": 45,
       "yes_ask": 31,
-      "yes_bid": 4
+      "yes_bid": 10
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 0,
@@ -461,15 +461,15 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 72,
-      "no_bid": 48,
+      "no_ask": 66,
+      "no_bid": 49,
       "open_interest": 2202,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-RYBL",
       "volume": 2610,
       "volume_24h": 2549,
-      "yes_ask": 52,
-      "yes_bid": 28
+      "yes_ask": 51,
+      "yes_bid": 34
     },
     "KXNASCARTOP3-NASC26-RYPR": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-07T23:05:16.865578+00:00",
+  "scraped_at": "2026-11-07T23:10:18.005065+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
