@@ -139,7 +139,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 71,
+      "no_ask": 100,
       "no_bid": 23,
       "open_interest": 0,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 77,
-      "yes_bid": 29
+      "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-DACR": {
       "last_price": 0,
@@ -252,13 +252,13 @@
       "liquidity": null,
       "name": "J.J. Yeley",
       "no_ask": 100,
-      "no_bid": 100,
+      "no_bid": 1,
       "open_interest": 0,
-      "status": "initialized",
+      "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-JJYE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 0,
+      "yes_ask": 99,
       "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-JOBI": {
@@ -307,7 +307,7 @@
       "last_price": 15,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 84,
+      "no_ask": 100,
       "no_bid": 17,
       "open_interest": 8,
       "status": "active",
@@ -315,7 +315,7 @@
       "volume": 17,
       "volume_24h": 8,
       "yes_ask": 83,
-      "yes_bid": 16
+      "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-KYSI": {
       "last_price": 0,
@@ -503,7 +503,7 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 38,
+      "no_ask": 39,
       "no_bid": 6,
       "open_interest": 250,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 250,
       "volume_24h": 0,
       "yes_ask": 94,
-      "yes_bid": 62
+      "yes_bid": 61
     },
     "KXNASCARTOP10-OREI26-TAGR": {
       "last_price": 0,
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-07T02:03:57.297849+00:00",
+  "scraped_at": "2026-11-07T02:09:00.872598+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
