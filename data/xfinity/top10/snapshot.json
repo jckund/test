@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-CODA",
       "volume": 6,
-      "volume_24h": 1,
+      "volume_24h": 6,
       "yes_ask": 89,
       "yes_bid": 48
     },
@@ -223,15 +223,15 @@
       "last_price": 25,
       "liquidity": null,
       "name": "Jeremy Clements",
-      "no_ask": 75,
-      "no_bid": 70,
+      "no_ask": 78,
+      "no_bid": 71,
       "open_interest": 167,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-JECL",
       "volume": 167,
       "volume_24h": 167,
-      "yes_ask": 30,
-      "yes_bid": 25
+      "yes_ask": 29,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-OREI26-JELO": {
       "last_price": 73,
@@ -481,7 +481,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-SAMA",
       "volume": 22,
-      "volume_24h": 0,
+      "volume_24h": 22,
       "yes_ask": 95,
       "yes_bid": 26
     },
@@ -490,13 +490,13 @@
       "liquidity": null,
       "name": "Sammy Smith",
       "no_ask": 78,
-      "no_bid": 48,
+      "no_bid": 49,
       "open_interest": 284,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-SASM",
       "volume": 284,
       "volume_24h": 252,
-      "yes_ask": 52,
+      "yes_ask": 51,
       "yes_bid": 22
     },
     "KXNASCARTOP10-OREI26-SHCR": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-07T19:08:33.068192+00:00",
+  "scraped_at": "2026-11-07T19:13:50.485748+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
