@@ -158,22 +158,8 @@ async function main() {
     }
   });
 
-  // The landing page's API key (_ak) and host, captured from its own requests so
-  // the event-page calls below look exactly like the site's.
-  let apiAk = null, apiHost = null;
-  page.on("request", (req) => {
-    const m = req.url().match(/^(https:\/\/sbapi\.[^/]+)\/api\/[^?]*\?.*?_ak=([^&]+)/);
-    if (m && !apiAk) { apiHost = m[1]; apiAk = m[2]; }
-  });
-
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
-
-  // The landing page only carries a PREVIEW of each market (e.g. 10 runners of
-  // a 40-driver Top 3/Top 5 board) and often just the winner for support
-  // races. Pull every NASCAR race event's full event page, tab by tab, and let
-  // those full markets overwrite the previews.
-  await fetchEventPages(page, events, markets, apiHost, apiAk);
 
   await browser.close();
 
@@ -195,48 +181,6 @@ async function main() {
     const evMarkets = Object.values(markets).filter((m) => (m.eventId ?? null) === evId);
     console.log(`[${series.key}] -> FanDuel event "${ev.name}" (${evMarkets.length} markets)`);
     emitSeries(series, ev, evMarkets);
-  }
-}
-
-// Fetch the full event page (every tab) for each NASCAR per-race event and merge
-// its markets over the landing-page previews. Best-effort: any failure leaves
-// the preview data in place.
-async function fetchEventPages(page, events, markets, apiHost, apiAk) {
-  if (!apiHost || !apiAk) { console.log("event-page: no API key captured; using landing-page markets only"); return; }
-  const raceEvents = Object.values(events).filter((e) => {
-    const n = (e.name || "").toLowerCase();
-    return n.includes("nascar") && !n.includes("futures") && !n.includes("outright");
-  });
-  for (const ev of raceEvents) {
-    const evId = ev.eventId ?? ev.id;
-    const base = `${apiHost}/api/event-page?_ak=${apiAk}&eventId=${evId}`;
-    const merge = (j) => {
-      const att = (j && j.attachments) || {};
-      let n = 0;
-      for (const [id, m] of Object.entries(att.markets || {})) {
-        const prev = markets[id];
-        if (!prev || (m.runners || []).length >= (prev.runners || []).length) { markets[id] = m; n++; }
-      }
-      Object.assign(events, att.events || {});
-      return n;
-    };
-    try {
-      const r = await page.request.get(base, { timeout: 30000 });
-      if (!r.ok()) { console.log(`event-page ${ev.name}: HTTP ${r.status()}`); continue; }
-      const j = await r.json();
-      let merged = merge(j);
-      const tabs = ((j.layout && j.layout.tabs) ? Object.values(j.layout.tabs) : [])
-        .map((t) => t.title || t.name || t.id).filter(Boolean);
-      for (const tab of tabs) {
-        try {
-          const rt = await page.request.get(`${base}&tab=${encodeURIComponent(tab)}`, { timeout: 30000 });
-          if (rt.ok()) merged += merge(await rt.json());
-        } catch { /* skip this tab */ }
-      }
-      console.log(`event-page ${ev.name}: tabs=[${tabs.join(", ")}] merged ${merged} markets`);
-    } catch (e) {
-      console.log(`event-page ${ev.name}: failed (${e.message})`);
-    }
   }
 }
 
