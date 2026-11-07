@@ -125,7 +125,7 @@
       "last_price": 40,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 81,
+      "no_ask": 80,
       "no_bid": 63,
       "open_interest": 200,
       "status": "active",
@@ -133,7 +133,7 @@
       "volume": 200,
       "volume_24h": 200,
       "yes_ask": 37,
-      "yes_bid": 19
+      "yes_bid": 20
     },
     "KXNASCARTOP3-OREI26-CODA": {
       "last_price": 42,
@@ -237,7 +237,7 @@
       "last_price": 43,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 69,
+      "no_ask": 73,
       "no_bid": 62,
       "open_interest": 4054,
       "status": "active",
@@ -245,7 +245,7 @@
       "volume": 4054,
       "volume_24h": 4031,
       "yes_ask": 38,
-      "yes_bid": 31
+      "yes_bid": 27
     },
     "KXNASCARTOP3-OREI26-JJYE": {
       "last_price": 0,
@@ -307,15 +307,15 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Justin Allgaier",
-      "no_ask": 53,
-      "no_bid": 51,
+      "no_ask": 52,
+      "no_bid": 50,
       "open_interest": 726,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JUAL",
       "volume": 726,
       "volume_24h": 225,
-      "yes_ask": 49,
-      "yes_bid": 47
+      "yes_ask": 50,
+      "yes_bid": 48
     },
     "KXNASCARTOP3-OREI26-KYSI": {
       "last_price": 0,
@@ -388,15 +388,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-PARE": {
-      "last_price": 0,
+      "last_price": 10,
       "liquidity": null,
       "name": "Parker Retzlaff",
       "no_ask": 100,
       "no_bid": 90,
-      "open_interest": 0,
+      "open_interest": 42,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-PARE",
-      "volume": 0,
+      "volume": 42,
       "volume_24h": 0,
       "yes_ask": 10,
       "yes_bid": 0
@@ -472,17 +472,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-SAMA": {
-      "last_price": 35,
+      "last_price": 39,
       "liquidity": null,
       "name": "Sam Mayer",
       "no_ask": 79,
-      "no_bid": 67,
-      "open_interest": 1848,
+      "no_bid": 61,
+      "open_interest": 1861,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-SAMA",
-      "volume": 1850,
+      "volume": 1862,
       "volume_24h": 1850,
-      "yes_ask": 33,
+      "yes_ask": 39,
       "yes_bid": 21
     },
     "KXNASCARTOP3-OREI26-SASM": {
@@ -504,13 +504,13 @@
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 91,
-      "no_bid": 61,
+      "no_bid": 65,
       "open_interest": 1016,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-SHCR",
       "volume": 1016,
       "volume_24h": 1016,
-      "yes_ask": 39,
+      "yes_ask": 35,
       "yes_bid": 9
     },
     "KXNASCARTOP3-OREI26-TAGR": {
@@ -518,13 +518,13 @@
       "liquidity": null,
       "name": "Taylor Gray",
       "no_ask": 95,
-      "no_bid": 77,
+      "no_bid": 76,
       "open_interest": 3,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-TAGR",
       "volume": 3,
       "volume_24h": 3,
-      "yes_ask": 23,
+      "yes_ask": 24,
       "yes_bid": 5
     },
     "KXNASCARTOP3-OREI26-WIRO": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-07T19:43:21.855167+00:00",
+  "scraped_at": "2026-11-07T19:48:32.053084+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top3"
 }
