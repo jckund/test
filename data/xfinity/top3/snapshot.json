@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-BRJO",
       "volume": 234,
-      "volume_24h": 159,
+      "volume_24h": 234,
       "yes_ask": 17,
       "yes_bid": 4
     },
@@ -125,28 +125,28 @@
       "last_price": 40,
       "liquidity": null,
       "name": "Carson Kvapil",
-      "no_ask": 74,
+      "no_ask": 73,
       "no_bid": 60,
       "open_interest": 224,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-CAKV",
       "volume": 224,
-      "volume_24h": 200,
+      "volume_24h": 224,
       "yes_ask": 40,
-      "yes_bid": 26
+      "yes_bid": 27
     },
     "KXNASCARTOP3-OREI26-CODA": {
       "last_price": 45,
       "liquidity": null,
       "name": "Corey Day",
       "no_ask": 69,
-      "no_bid": 55,
-      "open_interest": 486,
+      "no_bid": 56,
+      "open_interest": 786,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-CODA",
-      "volume": 486,
-      "volume_24h": 89,
-      "yes_ask": 45,
+      "volume": 786,
+      "volume_24h": 410,
+      "yes_ask": 44,
       "yes_bid": 31
     },
     "KXNASCARTOP3-OREI26-DACR": {
@@ -237,15 +237,15 @@
       "last_price": 42,
       "liquidity": null,
       "name": "Jesse Love",
-      "no_ask": 67,
-      "no_bid": 58,
+      "no_ask": 63,
+      "no_bid": 59,
       "open_interest": 4673,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JELO",
       "volume": 4673,
-      "volume_24h": 4263,
-      "yes_ask": 42,
-      "yes_bid": 33
+      "volume_24h": 4649,
+      "yes_ask": 41,
+      "yes_bid": 37
     },
     "KXNASCARTOP3-OREI26-JJYE": {
       "last_price": 0,
@@ -304,17 +304,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-OREI26-JUAL": {
-      "last_price": 47,
+      "last_price": 48,
       "liquidity": null,
       "name": "Justin Allgaier",
       "no_ask": 74,
-      "no_bid": 58,
-      "open_interest": 1034,
+      "no_bid": 57,
+      "open_interest": 1044,
       "status": "active",
       "ticker": "KXNASCARTOP3-OREI26-JUAL",
-      "volume": 1035,
+      "volume": 1045,
       "volume_24h": 534,
-      "yes_ask": 42,
+      "yes_ask": 43,
       "yes_bid": 26
     },
     "KXNASCARTOP3-OREI26-KYSI": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-07T21:11:09.955588+00:00",
+  "scraped_at": "2026-11-07T21:15:36.674618+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top3"
 }
