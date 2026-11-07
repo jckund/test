@@ -28,6 +28,10 @@ const path = require("path");
 const { chromium } = require("playwright");
 
 const MOTORSPORT_URL = "https://nj.sportsbook.fanduel.com/motorsport";
+const NASCAR_URLS = [
+  "https://nj.sportsbook.fanduel.com/navigation/nascar",
+  "https://nj.sportsbook.fanduel.com/motorsport/nascar",
+];
 
 // Canonical manufacturer names we recognize as runners in a "winning
 // manufacturer" market (and as keywords in per-make driver markets).
@@ -161,6 +165,17 @@ async function main() {
 
   await page.goto(MOTORSPORT_URL, { waitUntil: "networkidle", timeout: 90000 }).catch(() => {});
   await page.waitForTimeout(7000);
+
+  // On race weekends FanDuel's motorsport landing page can feature only that
+  // day's events (11/7: just the F1 GP), dropping the NASCAR races entirely.
+  // Also load the NASCAR-specific pages; the response listener merges whatever
+  // events/markets they carry. Misses are harmless.
+  for (const url of NASCAR_URLS) {
+    const before = Object.keys(events).length;
+    await page.goto(url, { waitUntil: "networkidle", timeout: 60000 }).catch(() => {});
+    await page.waitForTimeout(5000);
+    console.log(`  ${url}: +${Object.keys(events).length - before} events`);
+  }
 
   await browser.close();
 
