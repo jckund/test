@@ -27,21 +27,21 @@
       "last_price": 72,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 93,
-      "no_bid": 19,
+      "no_ask": 92,
+      "no_bid": 20,
       "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-ALBO",
       "volume": 7,
       "volume_24h": 7,
-      "yes_ask": 81,
-      "yes_bid": 7
+      "yes_ask": 80,
+      "yes_bid": 8
     },
     "KXNASCARTOP20-NASC26-AUCI": {
       "last_price": 0,
       "liquidity": null,
       "name": "Austin Cindric",
-      "no_ask": 86,
+      "no_ask": 100,
       "no_bid": 8,
       "open_interest": 0,
       "status": "active",
@@ -49,7 +49,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 92,
-      "yes_bid": 14
+      "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-AUDI": {
       "last_price": 59,
@@ -97,7 +97,7 @@
       "last_price": 78,
       "liquidity": null,
       "name": "Bubba Wallace",
-      "no_ask": 73,
+      "no_ask": 100,
       "no_bid": 13,
       "open_interest": 0,
       "status": "active",
@@ -105,7 +105,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 87,
-      "yes_bid": 27
+      "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-CAHO": {
       "last_price": 1,
@@ -181,7 +181,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Chase Elliott",
-      "no_ask": 69,
+      "no_ask": 100,
       "no_bid": 7,
       "open_interest": 0,
       "status": "active",
@@ -189,7 +189,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 93,
-      "yes_bid": 31
+      "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-CHFI": {
       "last_price": 5,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-07T03:38:16.945366+00:00",
+  "scraped_at": "2026-11-07T03:42:54.076443+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
