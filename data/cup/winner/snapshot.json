@@ -99,10 +99,10 @@
       "name": "Bubba Wallace",
       "no_ask": 99,
       "no_bid": 98,
-      "open_interest": 21050,
+      "open_interest": 21283,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BUWA",
-      "volume": 21284,
+      "volume": 21518,
       "volume_24h": 15999,
       "yes_ask": 2,
       "yes_bid": 1
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
       "volume": 39898,
-      "volume_24h": 22901,
+      "volume_24h": 21857,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
       "volume": 38140,
-      "volume_24h": 16662,
+      "volume_24h": 16705,
       "yes_ask": 10,
       "yes_bid": 9
     },
@@ -281,10 +281,10 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 55297,
+      "open_interest": 55432,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 56376,
+      "volume": 56511,
       "volume_24h": 4239,
       "yes_ask": 14,
       "yes_bid": 13
@@ -337,10 +337,10 @@
       "name": "Joey Logano",
       "no_ask": 98,
       "no_bid": 97,
-      "open_interest": 36641,
+      "open_interest": 42572,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JOLO",
-      "volume": 36871,
+      "volume": 42802,
       "volume_24h": 26943,
       "yes_ask": 3,
       "yes_bid": 2
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 85,
       "no_bid": 83,
-      "open_interest": 96433,
+      "open_interest": 96466,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 116780,
-      "volume_24h": 25797,
+      "volume": 116814,
+      "volume_24h": 25778,
       "yes_ask": 17,
       "yes_bid": 15
     },
@@ -500,15 +500,15 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-TOGI": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Todd Gilliland",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 468,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TOGI",
-      "volume": 0,
+      "volume": 468,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -565,7 +565,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-WIBY",
       "volume": 12349,
-      "volume_24h": 2308,
+      "volume_24h": 2442,
       "yes_ask": 7,
       "yes_bid": 6
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-07T15:40:17.591486+00:00",
+  "scraped_at": "2026-11-07T15:45:18.860897+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
