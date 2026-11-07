@@ -80,10 +80,11 @@ SERIES = [
     {"key": "cup", "label": "NASCAR", "matchers": ["championship"],
      "exclude": ["o'reilly", "o\u2019reilly", "oreilly", "xfinity", "truck", "craftsman"],
      "tiers": ["winner", "top3", "top5", "top10", "top20"], "full": True},
-    # Truck: Craftsman Truck Championship Race. Comment back out (and drop
-    # data/truck/ + its series.json entry) once it has run.
-    {"key": "truck", "label": "Truck", "matchers": ["truck", "craftsman"],
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Truck: OFF (commented out 2026-11-07 once the Craftsman Truck Championship
+    # Race went green; data/truck/ dropped). Re-enable and re-point for the next
+    # Truck race.
+    # {"key": "truck", "label": "Truck", "matchers": ["truck", "craftsman"],
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
     # Xfinity (O'Reilly): O'Reilly Championship Race. Also the catch-all
     # (`default`) — it prefers a race its own matchers name.
     {"key": "xfinity", "label": "Xfinity", "matchers": ["o'reilly", "o\u2019reilly", "oreilly"],
