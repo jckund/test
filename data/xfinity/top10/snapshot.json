@@ -19,7 +19,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-ANAL",
       "volume": 230,
-      "volume_24h": 146,
+      "volume_24h": 230,
       "yes_ask": 40,
       "yes_bid": 25
     },
@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-AUHI",
       "volume": 47,
-      "volume_24h": 28,
+      "volume_24h": 47,
       "yes_ask": 95,
       "yes_bid": 50
     },
@@ -139,7 +139,7 @@
       "last_price": 75,
       "liquidity": null,
       "name": "Corey Day",
-      "no_ask": 52,
+      "no_ask": 50,
       "no_bid": 25,
       "open_interest": 18,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 18,
       "volume_24h": 18,
       "yes_ask": 75,
-      "yes_bid": 48
+      "yes_bid": 50
     },
     "KXNASCARTOP10-OREI26-DACR": {
       "last_price": 0,
@@ -201,7 +201,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-HABU",
       "volume": 375,
-      "volume_24h": 3,
+      "volume_24h": 23,
       "yes_ask": 24,
       "yes_bid": 19
     },
@@ -458,16 +458,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-RYSI": {
-      "last_price": 35,
+      "last_price": 33,
       "liquidity": null,
       "name": "Ryan Sieg",
       "no_ask": 84,
       "no_bid": 67,
-      "open_interest": 27,
+      "open_interest": 77,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-RYSI",
-      "volume": 27,
-      "volume_24h": 27,
+      "volume": 77,
+      "volume_24h": 77,
       "yes_ask": 33,
       "yes_bid": 16
     },
@@ -495,7 +495,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-SASM",
       "volume": 293,
-      "volume_24h": 252,
+      "volume_24h": 261,
       "yes_ask": 54,
       "yes_bid": 36
     },
@@ -503,7 +503,7 @@
       "last_price": 74,
       "liquidity": null,
       "name": "Sheldon Creed",
-      "no_ask": 46,
+      "no_ask": 45,
       "no_bid": 26,
       "open_interest": 339,
       "status": "active",
@@ -511,7 +511,7 @@
       "volume": 339,
       "volume_24h": 89,
       "yes_ask": 74,
-      "yes_bid": 54
+      "yes_bid": 55
     },
     "KXNASCARTOP10-OREI26-TAGR": {
       "last_price": 67,
@@ -547,17 +547,17 @@
       "name": "William Sawalich",
       "no_ask": 79,
       "no_bid": 47,
-      "open_interest": 27,
+      "open_interest": 36,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-WISA",
-      "volume": 27,
-      "volume_24h": 27,
+      "volume": 36,
+      "volume_24h": 36,
       "yes_ask": 53,
       "yes_bid": 21
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-07T21:30:09.456766+00:00",
+  "scraped_at": "2026-11-07T21:35:16.570782+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
