@@ -98,13 +98,13 @@
       "liquidity": null,
       "name": "Bubba Wallace",
       "no_ask": 99,
-      "no_bid": 97,
+      "no_bid": 98,
       "open_interest": 11043,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BUWA",
       "volume": 11278,
       "volume_24h": 6039,
-      "yes_ask": 3,
+      "yes_ask": 2,
       "yes_bid": 1
     },
     "KXNASCARRACE-NASC26-CAHO": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
       "volume": 37787,
-      "volume_24h": 23377,
+      "volume_24h": 23336,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -220,18 +220,18 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-COHE": {
-      "last_price": 4,
+      "last_price": 3,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 98,
-      "no_bid": 97,
-      "open_interest": 44865,
+      "no_ask": 97,
+      "no_bid": 96,
+      "open_interest": 50041,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
-      "volume": 44877,
-      "volume_24h": 41864,
-      "yes_ask": 3,
-      "yes_bid": 2
+      "volume": 50053,
+      "volume_24h": 41951,
+      "yes_ask": 4,
+      "yes_bid": 3
     },
     "KXNASCARRACE-NASC26-COWA": {
       "last_price": 1,
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 85,
-      "no_bid": 83,
+      "no_bid": 84,
       "open_interest": 93582,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
       "volume": 113604,
-      "volume_24h": 24753,
-      "yes_ask": 17,
+      "volume_24h": 24953,
+      "yes_ask": 16,
       "yes_bid": 15
     },
     "KXNASCARRACE-NASC26-MIMC": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-07T04:51:18.803800+00:00",
+  "scraped_at": "2026-11-07T04:56:02.730012+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
