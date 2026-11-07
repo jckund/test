@@ -234,15 +234,15 @@
       "yes_bid": 4
     },
     "KXNASCARRACE-NASC26-COWA": {
-      "last_price": 0,
+      "last_price": 1,
       "liquidity": null,
       "name": "Cody Ware",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 0,
+      "open_interest": 78,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COWA",
-      "volume": 0,
+      "volume": 78,
       "volume_24h": 0,
       "yes_ask": 1,
       "yes_bid": 0
@@ -378,13 +378,13 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 86,
-      "no_bid": 82,
+      "no_bid": 84,
       "open_interest": 86995,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
       "volume": 106065,
       "volume_24h": 18749,
-      "yes_ask": 18,
+      "yes_ask": 16,
       "yes_bid": 14
     },
     "KXNASCARRACE-NASC26-MIMC": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-07T01:25:26.578307+00:00",
+  "scraped_at": "2026-11-07T01:30:20.231421+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
