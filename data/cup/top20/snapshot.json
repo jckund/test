@@ -10,15 +10,15 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP20-NASC26-AJAL": {
-      "last_price": 47,
+      "last_price": 50,
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 60,
       "no_bid": 50,
-      "open_interest": 74,
+      "open_interest": 95,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AJAL",
-      "volume": 74,
+      "volume": 95,
       "volume_24h": 50,
       "yes_ask": 50,
       "yes_bid": 40
@@ -402,18 +402,18 @@
       "yes_bid": 33
     },
     "KXNASCARTOP20-NASC26-NOGR": {
-      "last_price": 32,
+      "last_price": 33,
       "liquidity": null,
       "name": "Noah Gragson",
-      "no_ask": 77,
-      "no_bid": 67,
-      "open_interest": 183,
+      "no_ask": 76,
+      "no_bid": 66,
+      "open_interest": 212,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-NOGR",
-      "volume": 183,
+      "volume": 212,
       "volume_24h": 104,
-      "yes_ask": 33,
-      "yes_bid": 23
+      "yes_ask": 34,
+      "yes_bid": 24
     },
     "KXNASCARTOP20-NASC26-RIHE": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-07T04:51:20.735818+00:00",
+  "scraped_at": "2026-11-07T05:41:40.412351+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
