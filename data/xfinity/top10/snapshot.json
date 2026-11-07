@@ -38,17 +38,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-AUHI": {
-      "last_price": 0,
+      "last_price": 95,
       "liquidity": null,
       "name": "Austin Hill",
       "no_ask": 45,
-      "no_bid": 15,
-      "open_interest": 0,
+      "no_bid": 5,
+      "open_interest": 28,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-AUHI",
-      "volume": 0,
+      "volume": 28,
       "volume_24h": 0,
-      "yes_ask": 85,
+      "yes_ask": 95,
       "yes_bid": 55
     },
     "KXNASCARTOP10-OREI26-BLPE": {
@@ -70,25 +70,25 @@
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 74,
-      "no_bid": 30,
+      "no_bid": 32,
       "open_interest": 4,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-BRCR",
       "volume": 4,
       "volume_24h": 4,
-      "yes_ask": 70,
+      "yes_ask": 68,
       "yes_bid": 26
     },
     "KXNASCARTOP10-OREI26-BRJO": {
-      "last_price": 87,
+      "last_price": 67,
       "liquidity": null,
       "name": "Brandon Jones",
       "no_ask": 51,
       "no_bid": 33,
-      "open_interest": 564,
+      "open_interest": 602,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-BRJO",
-      "volume": 564,
+      "volume": 602,
       "volume_24h": 256,
       "yes_ask": 67,
       "yes_bid": 49
@@ -430,18 +430,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP10-OREI26-RACA": {
-      "last_price": 60,
+      "last_price": 51,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 49,
-      "no_bid": 48,
+      "no_ask": 73,
+      "no_bid": 51,
       "open_interest": 124,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-RACA",
-      "volume": 124,
+      "volume": 125,
       "volume_24h": 16,
-      "yes_ask": 52,
-      "yes_bid": 51
+      "yes_ask": 49,
+      "yes_bid": 27
     },
     "KXNASCARTOP10-OREI26-RYEL": {
       "last_price": 0,
@@ -500,17 +500,17 @@
       "yes_bid": 37
     },
     "KXNASCARTOP10-OREI26-SHCR": {
-      "last_price": 70,
+      "last_price": 73,
       "liquidity": null,
       "name": "Sheldon Creed",
       "no_ask": 45,
-      "no_bid": 27,
-      "open_interest": 303,
+      "no_bid": 26,
+      "open_interest": 330,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-SHCR",
-      "volume": 303,
+      "volume": 330,
       "volume_24h": 53,
-      "yes_ask": 73,
+      "yes_ask": 74,
       "yes_bid": 55
     },
     "KXNASCARTOP10-OREI26-TAGR": {
@@ -557,7 +557,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-07T20:44:01.592421+00:00",
+  "scraped_at": "2026-11-07T20:53:48.841514+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
