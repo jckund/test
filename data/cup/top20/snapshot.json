@@ -10,18 +10,18 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP20-NASC26-AJAL": {
-      "last_price": 57,
+      "last_price": 60,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 59,
-      "no_bid": 41,
-      "open_interest": 299,
+      "no_ask": 57,
+      "no_bid": 40,
+      "open_interest": 462,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AJAL",
-      "volume": 299,
+      "volume": 462,
       "volume_24h": 275,
-      "yes_ask": 59,
-      "yes_bid": 41
+      "yes_ask": 60,
+      "yes_bid": 43
     },
     "KXNASCARTOP20-NASC26-ALBO": {
       "last_price": 72,
@@ -517,15 +517,15 @@
       "last_price": 16,
       "liquidity": null,
       "name": "Ty Dillon",
-      "no_ask": 84,
+      "no_ask": 100,
       "no_bid": 65,
-      "open_interest": 606,
+      "open_interest": 806,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-TYDI",
-      "volume": 606,
+      "volume": 806,
       "volume_24h": 406,
       "yes_ask": 35,
-      "yes_bid": 16
+      "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-TYGI": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-07T16:15:21.740422+00:00",
+  "scraped_at": "2026-11-07T16:29:27.436314+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
