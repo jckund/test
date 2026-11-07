@@ -43,7 +43,8 @@ const TEAM_RULES = [
   ["legacy", "Legacy Motor Club"], ["childress", "Richard Childress Racing"], ["kaulig", "Kaulig Racing"],
   ["wood brothers", "Wood Brothers Racing"], ["haas", "Haas Factory Team"], ["hass", "Haas Factory Team"],
   ["rick ware", "Rick Ware Racing"], ["garage 66", "Garage 66"], ["garage66", "Garage 66"],
-  ["live fast", "Live Fast Motorsports"],
+  ["live fast", "Live Fast Motorsports"], ["ny racing", "NY Racing Team"],
+  ["beard", "Beard Motorsports"],
 ];
 function teamCanon(name) {
   const n = (name || "").toLowerCase();
@@ -314,7 +315,9 @@ function scrapeTeams(evMarkets, kalshiRace, outDir) {
   const raceMarkets = evMarkets;
   const teamMkt = raceMarkets.find((m) => {
     const rs = (m.runners || []).map((r) => teamCanon(r.runnerName)).filter(Boolean);
-    return rs.length >= 3 && rs.length >= (m.runners || []).length - 1;
+    // Mostly-known org names (>=75%), so a couple of part-time entrants we
+    // haven't mapped yet can't hide the whole market (NY Racing / Beard did).
+    return rs.length >= 3 && rs.length >= 0.75 * (m.runners || []).length;
   });
 
   if (!teamMkt) {
