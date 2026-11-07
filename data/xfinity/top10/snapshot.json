@@ -70,13 +70,13 @@
       "liquidity": null,
       "name": "Brent Crews",
       "no_ask": 48,
-      "no_bid": 30,
+      "no_bid": 31,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-BRCR",
       "volume": 1,
-      "volume_24h": 0,
-      "yes_ask": 70,
+      "volume_24h": 1,
+      "yes_ask": 69,
       "yes_bid": 52
     },
     "KXNASCARTOP10-OREI26-BRJO": {
@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-CODA",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 76,
       "yes_bid": 54
     },
@@ -209,7 +209,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Jeb Burton",
-      "no_ask": 95,
+      "no_ask": 94,
       "no_bid": 83,
       "open_interest": 0,
       "status": "active",
@@ -217,13 +217,13 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 17,
-      "yes_bid": 5
+      "yes_bid": 6
     },
     "KXNASCARTOP10-OREI26-JECL": {
       "last_price": 0,
       "liquidity": null,
       "name": "Jeremy Clements",
-      "no_ask": 89,
+      "no_ask": 86,
       "no_bid": 68,
       "open_interest": 0,
       "status": "active",
@@ -231,20 +231,20 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 32,
-      "yes_bid": 11
+      "yes_bid": 14
     },
     "KXNASCARTOP10-OREI26-JELO": {
       "last_price": 73,
       "liquidity": null,
       "name": "Jesse Love",
       "no_ask": 43,
-      "no_bid": 27,
+      "no_bid": 28,
       "open_interest": 1,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-JELO",
       "volume": 1,
       "volume_24h": 1,
-      "yes_ask": 73,
+      "yes_ask": 72,
       "yes_bid": 57
     },
     "KXNASCARTOP10-OREI26-JJYE": {
@@ -433,15 +433,15 @@
       "last_price": 60,
       "liquidity": null,
       "name": "Rajah Caruth",
-      "no_ask": 73,
-      "no_bid": 49,
+      "no_ask": 78,
+      "no_bid": 48,
       "open_interest": 124,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-RACA",
       "volume": 124,
       "volume_24h": 124,
-      "yes_ask": 51,
-      "yes_bid": 27
+      "yes_ask": 52,
+      "yes_bid": 22
     },
     "KXNASCARTOP10-OREI26-RYEL": {
       "last_price": 0,
@@ -461,7 +461,7 @@
       "last_price": 35,
       "liquidity": null,
       "name": "Ryan Sieg",
-      "no_ask": 80,
+      "no_ask": 78,
       "no_bid": 62,
       "open_interest": 27,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 27,
       "volume_24h": 27,
       "yes_ask": 38,
-      "yes_bid": 20
+      "yes_bid": 22
     },
     "KXNASCARTOP10-OREI26-SAMA": {
       "last_price": 0,
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-TAGR",
       "volume": 1,
-      "volume_24h": 0,
+      "volume_24h": 1,
       "yes_ask": 67,
       "yes_bid": 42
     },
@@ -546,18 +546,18 @@
       "liquidity": null,
       "name": "William Sawalich",
       "no_ask": 65,
-      "no_bid": 53,
+      "no_bid": 54,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP10-OREI26-WISA",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 47,
+      "yes_ask": 46,
       "yes_bid": 35
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-07T04:18:50.844978+00:00",
+  "scraped_at": "2026-11-07T04:24:02.221882+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-orei26",
   "tier": "top10"
 }
