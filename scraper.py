@@ -85,11 +85,14 @@ SERIES = [
     # Truck race.
     # {"key": "truck", "label": "Truck", "matchers": ["truck", "craftsman"],
     #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
-    # Xfinity (O'Reilly): O'Reilly Championship Race. Also the catch-all
-    # (`default`) — it prefers a race its own matchers name.
-    {"key": "xfinity", "label": "Xfinity", "matchers": ["o'reilly", "o\u2019reilly", "oreilly"],
-     "exclude": ["truck", "craftsman"], "default": True,
-     "tiers": ["winner", "top3", "top5", "top10"], "full": False},
+    # Xfinity (O'Reilly): OFF (commented out 2026-11-07 once the O'Reilly
+    # Championship Race went green; data/xfinity/ dropped). RESTORE at the next
+    # kickoff: uncomment and re-point the matcher — this entry is also the
+    # catch-all (`default`), and with it commented out an unmatched race isn't
+    # tracked at all. See CLAUDE.md "Clearing a support race mid-weekend".
+    # {"key": "xfinity", "label": "Xfinity", "matchers": ["o'reilly", "o\u2019reilly", "oreilly"],
+    #  "exclude": ["truck", "craftsman"], "default": True,
+    #  "tiers": ["winner", "top3", "top5", "top10"], "full": False},
 ]
 
 API_BASE = "https://api.elections.kalshi.com/trade-api/v2"
