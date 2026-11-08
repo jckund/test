@@ -13,7 +13,7 @@
       "last_price": 36,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 70,
+      "no_ask": 78,
       "no_bid": 57,
       "open_interest": 3150,
       "status": "active",
@@ -21,13 +21,13 @@
       "volume": 3222,
       "volume_24h": 578,
       "yes_ask": 43,
-      "yes_bid": 30
+      "yes_bid": 22
     },
     "KXNASCARTOP10-NASC26-ALBO": {
       "last_price": 51,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 78,
+      "no_ask": 92,
       "no_bid": 51,
       "open_interest": 2351,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 2352,
       "volume_24h": 233,
       "yes_ask": 49,
-      "yes_bid": 22
+      "yes_bid": 8
     },
     "KXNASCARTOP10-NASC26-AUCI": {
       "last_price": 53,
@@ -153,15 +153,15 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 49,
-      "no_bid": 34,
+      "no_ask": 59,
+      "no_bid": 33,
       "open_interest": 237,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-CHBR",
       "volume": 264,
       "volume_24h": 233,
-      "yes_ask": 66,
-      "yes_bid": 51
+      "yes_ask": 67,
+      "yes_bid": 41
     },
     "KXNASCARTOP10-NASC26-CHBU": {
       "last_price": 25,
@@ -223,7 +223,7 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 61,
+      "no_ask": 59,
       "no_bid": 32,
       "open_interest": 1484,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 1661,
       "volume_24h": 416,
       "yes_ask": 68,
-      "yes_bid": 39
+      "yes_bid": 41
     },
     "KXNASCARTOP10-NASC26-COWA": {
       "last_price": 2,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-DEHA",
       "volume": 121,
-      "volume_24h": 67,
+      "volume_24h": 65,
       "yes_ask": 93,
       "yes_bid": 40
     },
@@ -321,7 +321,7 @@
       "last_price": 65,
       "liquidity": null,
       "name": "Josh Berry",
-      "no_ask": 74,
+      "no_ask": 93,
       "no_bid": 26,
       "open_interest": 649,
       "status": "active",
@@ -329,7 +329,7 @@
       "volume": 654,
       "volume_24h": 196,
       "yes_ask": 74,
-      "yes_bid": 26
+      "yes_bid": 7
     },
     "KXNASCARTOP10-NASC26-JOLO": {
       "last_price": 60,
@@ -383,7 +383,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-KYLA",
       "volume": 396,
-      "volume_24h": 31,
+      "volume_24h": 24,
       "yes_ask": 83,
       "yes_bid": 60
     },
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-RYBL",
       "volume": 25,
-      "volume_24h": 6,
+      "volume_24h": 5,
       "yes_ask": 84,
       "yes_bid": 35
     },
@@ -551,7 +551,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-TYRE",
       "volume": 68,
-      "volume_24h": 18,
+      "volume_24h": 17,
       "yes_ask": 71,
       "yes_bid": 38
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-08T07:00:24.777380+00:00",
+  "scraped_at": "2026-11-08T07:05:16.882464+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }
