@@ -13,7 +13,7 @@
       "last_price": 41,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 59,
+      "no_ask": 50,
       "no_bid": 12,
       "open_interest": 465,
       "status": "active",
@@ -21,13 +21,13 @@
       "volume": 470,
       "volume_24h": 170,
       "yes_ask": 88,
-      "yes_bid": 41
+      "yes_bid": 50
     },
     "KXNASCARTOP20-NASC26-ALBO": {
       "last_price": 72,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 83,
+      "no_ask": 50,
       "no_bid": 19,
       "open_interest": 7,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 7,
       "volume_24h": 0,
       "yes_ask": 81,
-      "yes_bid": 17
+      "yes_bid": 50
     },
     "KXNASCARTOP20-NASC26-AUCI": {
       "last_price": 0,
@@ -223,7 +223,7 @@
       "last_price": 76,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 84,
+      "no_ask": 50,
       "no_bid": 14,
       "open_interest": 1,
       "status": "active",
@@ -231,7 +231,7 @@
       "volume": 1,
       "volume_24h": 0,
       "yes_ask": 86,
-      "yes_bid": 16
+      "yes_bid": 50
     },
     "KXNASCARTOP20-NASC26-COWA": {
       "last_price": 3,
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 94,
-      "no_bid": 6,
+      "no_bid": 5,
       "open_interest": 195,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-DASU",
       "volume": 195,
       "volume_24h": 22,
-      "yes_ask": 94,
+      "yes_ask": 95,
       "yes_bid": 6
     },
     "KXNASCARTOP20-NASC26-DEHA": {
@@ -489,15 +489,15 @@
       "last_price": 65,
       "liquidity": null,
       "name": "Shane van Gisbergen",
-      "no_ask": 91,
+      "no_ask": 94,
       "no_bid": 35,
       "open_interest": 267,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-SHVA",
       "volume": 267,
-      "volume_24h": 0,
+      "volume_24h": 2,
       "yes_ask": 65,
-      "yes_bid": 9
+      "yes_bid": 6
     },
     "KXNASCARTOP20-NASC26-TOGI": {
       "last_price": 50,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-08T15:30:22.726895+00:00",
+  "scraped_at": "2026-11-08T15:40:18.857394+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
