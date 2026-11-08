@@ -33,7 +33,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ALBO",
       "volume": 23630,
-      "volume_24h": 11837,
+      "volume_24h": 11603,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -89,7 +89,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BRKE",
       "volume": 2898,
-      "volume_24h": 2100,
+      "volume_24h": 1633,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -103,7 +103,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-BUWA",
       "volume": 26928,
-      "volume_24h": 20471,
+      "volume_24h": 20237,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -145,23 +145,23 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
       "volume": 43129,
-      "volume_24h": 6047,
+      "volume_24h": 6088,
       "yes_ask": 11,
       "yes_bid": 10
     },
     "KXNASCARRACE-NASC26-CHBR": {
-      "last_price": 19,
+      "last_price": 17,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 82,
-      "no_bid": 81,
-      "open_interest": 78171,
+      "no_ask": 84,
+      "no_bid": 82,
+      "open_interest": 78167,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
-      "volume": 80193,
-      "volume_24h": 44716,
-      "yes_ask": 19,
-      "yes_bid": 18
+      "volume": 80198,
+      "volume_24h": 44469,
+      "yes_ask": 18,
+      "yes_bid": 16
     },
     "KXNASCARRACE-NASC26-CHBU": {
       "last_price": 1,
@@ -187,7 +187,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHEL",
       "volume": 28997,
-      "volume_24h": 7305,
+      "volume_24h": 8124,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
       "volume": 52409,
-      "volume_24h": 9217,
+      "volume_24h": 9067,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
       "volume": 63332,
-      "volume_24h": 9873,
+      "volume_24h": 9886,
       "yes_ask": 14,
       "yes_bid": 13
     },
@@ -299,7 +299,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ERJO",
       "volume": 421,
-      "volume_24h": 327,
+      "volume_24h": 94,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JOLO",
       "volume": 48858,
-      "volume_24h": 13503,
+      "volume_24h": 13347,
       "yes_ask": 3,
       "yes_bid": 2
     },
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 105704,
+      "open_interest": 105880,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 126872,
-      "volume_24h": 23614,
+      "volume": 127054,
+      "volume_24h": 23396,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -439,7 +439,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RIST",
       "volume": 5326,
-      "volume_24h": 5139,
+      "volume_24h": 5045,
       "yes_ask": 1,
       "yes_bid": 0
     },
@@ -458,16 +458,16 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-RYBL": {
-      "last_price": 16,
+      "last_price": 15,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 85,
       "no_bid": 84,
-      "open_interest": 100628,
+      "open_interest": 100623,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-RYBL",
-      "volume": 102271,
-      "volume_24h": 9136,
+      "volume": 102277,
+      "volume_24h": 8858,
       "yes_ask": 16,
       "yes_bid": 15
     },
@@ -551,7 +551,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYRE",
       "volume": 105455,
-      "volume_24h": 11850,
+      "volume_24h": 11872,
       "yes_ask": 13,
       "yes_bid": 12
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-08T00:00:25.007766+00:00",
+  "scraped_at": "2026-11-08T00:05:15.940842+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
