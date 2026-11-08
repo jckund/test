@@ -14,13 +14,13 @@
       "liquidity": null,
       "name": "AJ Allmendinger",
       "no_ask": 50,
-      "no_bid": 14,
+      "no_bid": 15,
       "open_interest": 465,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-AJAL",
       "volume": 470,
-      "volume_24h": 170,
-      "yes_ask": 86,
+      "volume_24h": 8,
+      "yes_ask": 85,
       "yes_bid": 50
     },
     "KXNASCARTOP20-NASC26-ALBO": {
@@ -266,13 +266,13 @@
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 82,
-      "no_bid": 5,
+      "no_bid": 6,
       "open_interest": 195,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-DASU",
       "volume": 195,
       "volume_24h": 22,
-      "yes_ask": 95,
+      "yes_ask": 94,
       "yes_bid": 18
     },
     "KXNASCARTOP20-NASC26-DEHA": {
@@ -447,15 +447,15 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Ross Chastain",
-      "no_ask": 100,
-      "no_bid": 2,
+      "no_ask": 88,
+      "no_bid": 1,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-ROCH",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 98,
-      "yes_bid": 0
+      "yes_ask": 99,
+      "yes_bid": 12
     },
     "KXNASCARTOP20-NASC26-RYBL": {
       "last_price": 0,
@@ -523,7 +523,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-TYDI",
       "volume": 806,
-      "volume_24h": 200,
+      "volume_24h": 0,
       "yes_ask": 26,
       "yes_bid": 0
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-08T16:30:22.198491+00:00",
+  "scraped_at": "2026-11-08T16:34:01.783382+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
