@@ -13,7 +13,7 @@
       "last_price": 41,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 59,
+      "no_ask": 58,
       "no_bid": 12,
       "open_interest": 465,
       "status": "active",
@@ -21,21 +21,21 @@
       "volume": 470,
       "volume_24h": 170,
       "yes_ask": 88,
-      "yes_bid": 41
+      "yes_bid": 42
     },
     "KXNASCARTOP20-NASC26-ALBO": {
       "last_price": 72,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 89,
-      "no_bid": 19,
+      "no_ask": 78,
+      "no_bid": 18,
       "open_interest": 7,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-ALBO",
       "volume": 7,
       "volume_24h": 0,
-      "yes_ask": 81,
-      "yes_bid": 11
+      "yes_ask": 82,
+      "yes_bid": 22
     },
     "KXNASCARTOP20-NASC26-AUCI": {
       "last_price": 0,
@@ -402,18 +402,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP20-NASC26-NOGR": {
-      "last_price": 34,
+      "last_price": 99,
       "liquidity": null,
       "name": "Noah Gragson",
-      "no_ask": 100,
-      "no_bid": 14,
-      "open_interest": 412,
+      "no_ask": 91,
+      "no_bid": 2,
+      "open_interest": 438,
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-NOGR",
-      "volume": 412,
+      "volume": 438,
       "volume_24h": 0,
-      "yes_ask": 86,
-      "yes_bid": 0
+      "yes_ask": 98,
+      "yes_bid": 9
     },
     "KXNASCARTOP20-NASC26-RIHE": {
       "last_price": 0,
@@ -461,7 +461,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 96,
+      "no_ask": 95,
       "no_bid": 1,
       "open_interest": 0,
       "status": "active",
@@ -469,7 +469,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 99,
-      "yes_bid": 4
+      "yes_bid": 5
     },
     "KXNASCARTOP20-NASC26-RYPR": {
       "last_price": 0,
@@ -545,7 +545,7 @@
       "last_price": 0,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 73,
+      "no_ask": 69,
       "no_bid": 1,
       "open_interest": 0,
       "status": "active",
@@ -553,7 +553,7 @@
       "volume": 0,
       "volume_24h": 0,
       "yes_ask": 99,
-      "yes_bid": 27
+      "yes_bid": 31
     },
     "KXNASCARTOP20-NASC26-WIBY": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-08T08:30:24.172188+00:00",
+  "scraped_at": "2026-11-08T08:35:16.816313+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
