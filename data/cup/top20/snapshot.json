@@ -27,7 +27,7 @@
       "last_price": 72,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 81,
+      "no_ask": 79,
       "no_bid": 19,
       "open_interest": 7,
       "status": "active",
@@ -35,7 +35,7 @@
       "volume": 7,
       "volume_24h": 0,
       "yes_ask": 81,
-      "yes_bid": 19
+      "yes_bid": 21
     },
     "KXNASCARTOP20-NASC26-AUCI": {
       "last_price": 0,
@@ -411,7 +411,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP20-NASC26-NOGR",
       "volume": 438,
-      "volume_24h": 0,
+      "volume_24h": 26,
       "yes_ask": 98,
       "yes_bid": 9
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 20",
-  "scraped_at": "2026-11-08T08:40:20.745148+00:00",
+  "scraped_at": "2026-11-08T08:45:20.578965+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top20"
 }
