@@ -10,18 +10,18 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP10-NASC26-AJAL": {
-      "last_price": 43,
+      "last_price": 20,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 70,
-      "no_bid": 57,
-      "open_interest": 3137,
+      "no_ask": 80,
+      "no_bid": 59,
+      "open_interest": 3141,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-AJAL",
-      "volume": 3196,
+      "volume": 3209,
       "volume_24h": 551,
-      "yes_ask": 43,
-      "yes_bid": 30
+      "yes_ask": 41,
+      "yes_bid": 20
     },
     "KXNASCARTOP10-NASC26-ALBO": {
       "last_price": 5,
@@ -223,15 +223,15 @@
       "last_price": 70,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 68,
-      "no_bid": 29,
+      "no_ask": 62,
+      "no_bid": 30,
       "open_interest": 1438,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-COHE",
       "volume": 1579,
       "volume_24h": 335,
-      "yes_ask": 71,
-      "yes_bid": 32
+      "yes_ask": 70,
+      "yes_bid": 38
     },
     "KXNASCARTOP10-NASC26-COWA": {
       "last_price": 2,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-08T04:05:17.789570+00:00",
+  "scraped_at": "2026-11-08T04:10:18.680370+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }
