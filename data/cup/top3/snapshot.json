@@ -43,10 +43,10 @@
       "name": "Austin Cindric",
       "no_ask": 100,
       "no_bid": 85,
-      "open_interest": 33,
+      "open_interest": 46,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-AUCI",
-      "volume": 33,
+      "volume": 46,
       "volume_24h": 33,
       "yes_ask": 15,
       "yes_bid": 0
@@ -290,15 +290,15 @@
       "yes_bid": 10
     },
     "KXNASCARTOP3-NASC26-ERJO": {
-      "last_price": 0,
+      "last_price": 2,
       "liquidity": null,
       "name": "Erik Jones",
       "no_ask": 100,
       "no_bid": 98,
-      "open_interest": 0,
+      "open_interest": 94,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-ERJO",
-      "volume": 0,
+      "volume": 94,
       "volume_24h": 0,
       "yes_ask": 2,
       "yes_bid": 0
@@ -461,15 +461,15 @@
       "last_price": 45,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 63,
-      "no_bid": 60,
+      "no_ask": 59,
+      "no_bid": 56,
       "open_interest": 2335,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-RYBL",
       "volume": 2796,
       "volume_24h": 1009,
-      "yes_ask": 40,
-      "yes_bid": 37
+      "yes_ask": 44,
+      "yes_bid": 41
     },
     "KXNASCARTOP3-NASC26-RYPR": {
       "last_price": 0,
@@ -545,15 +545,15 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 86,
-      "no_bid": 42,
+      "no_ask": 84,
+      "no_bid": 43,
       "open_interest": 2173,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYRE",
       "volume": 2173,
       "volume_24h": 1392,
-      "yes_ask": 58,
-      "yes_bid": 14
+      "yes_ask": 57,
+      "yes_bid": 16
     },
     "KXNASCARTOP3-NASC26-WIBY": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T15:05:15.666170+00:00",
+  "scraped_at": "2026-11-08T15:10:17.344414+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
