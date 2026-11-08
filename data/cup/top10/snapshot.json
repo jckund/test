@@ -10,18 +10,18 @@
   "market_count": 41,
   "markets": {
     "KXNASCARTOP10-NASC26-AJAL": {
-      "last_price": 44,
+      "last_price": 42,
       "liquidity": null,
       "name": "AJ Allmendinger",
-      "no_ask": 67,
-      "no_bid": 59,
-      "open_interest": 3266,
+      "no_ask": 65,
+      "no_bid": 58,
+      "open_interest": 3301,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-AJAL",
-      "volume": 3338,
+      "volume": 3373,
       "volume_24h": 694,
-      "yes_ask": 41,
-      "yes_bid": 33
+      "yes_ask": 42,
+      "yes_bid": 35
     },
     "KXNASCARTOP10-NASC26-ALBO": {
       "last_price": 48,
@@ -153,15 +153,15 @@
       "last_price": 68,
       "liquidity": null,
       "name": "Chase Briscoe",
-      "no_ask": 48,
-      "no_bid": 38,
+      "no_ask": 50,
+      "no_bid": 32,
       "open_interest": 275,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-CHBR",
       "volume": 302,
       "volume_24h": 249,
-      "yes_ask": 62,
-      "yes_bid": 52
+      "yes_ask": 68,
+      "yes_bid": 50
     },
     "KXNASCARTOP10-NASC26-CHBU": {
       "last_price": 25,
@@ -223,15 +223,15 @@
       "last_price": 69,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 57,
-      "no_bid": 33,
+      "no_ask": 55,
+      "no_bid": 34,
       "open_interest": 1484,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-COHE",
       "volume": 1661,
       "volume_24h": 416,
-      "yes_ask": 67,
-      "yes_bid": 43
+      "yes_ask": 66,
+      "yes_bid": 45
     },
     "KXNASCARTOP10-NASC26-COWA": {
       "last_price": 2,
@@ -335,7 +335,7 @@
       "last_price": 59,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 93,
+      "no_ask": 92,
       "no_bid": 41,
       "open_interest": 228,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 229,
       "volume_24h": 60,
       "yes_ask": 59,
-      "yes_bid": 7
+      "yes_bid": 8
     },
     "KXNASCARTOP10-NASC26-JONE": {
       "last_price": 2,
@@ -378,20 +378,20 @@
       "liquidity": null,
       "name": "Kyle Larson",
       "no_ask": 74,
-      "no_bid": 11,
+      "no_bid": 17,
       "open_interest": 330,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-KYLA",
       "volume": 407,
       "volume_24h": 36,
-      "yes_ask": 89,
+      "yes_ask": 83,
       "yes_bid": 26
     },
     "KXNASCARTOP10-NASC26-MIMC": {
       "last_price": 26,
       "liquidity": null,
       "name": "Michael McDowell",
-      "no_ask": 92,
+      "no_ask": 95,
       "no_bid": 75,
       "open_interest": 147,
       "status": "active",
@@ -399,7 +399,7 @@
       "volume": 147,
       "volume_24h": 147,
       "yes_ask": 25,
-      "yes_bid": 8
+      "yes_bid": 5
     },
     "KXNASCARTOP10-NASC26-NOGR": {
       "last_price": 9,
@@ -434,13 +434,13 @@
       "liquidity": null,
       "name": "Ricky Stenhouse Jr.",
       "no_ask": 100,
-      "no_bid": 85,
+      "no_bid": 90,
       "open_interest": 402,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-RIST",
       "volume": 402,
       "volume_24h": 400,
-      "yes_ask": 15,
+      "yes_ask": 10,
       "yes_bid": 0
     },
     "KXNASCARTOP10-NASC26-ROCH": {
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-08T13:25:17.670327+00:00",
+  "scraped_at": "2026-11-08T13:30:21.250051+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }
