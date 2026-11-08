@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-CHBR",
       "volume": 675,
-      "volume_24h": 666,
+      "volume_24h": 675,
       "yes_ask": 41,
       "yes_bid": 35
     },
@@ -262,17 +262,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-DASU": {
-      "last_price": 4,
+      "last_price": 5,
       "liquidity": null,
       "name": "Daniel Suarez",
       "no_ask": 100,
-      "no_bid": 96,
-      "open_interest": 100,
+      "no_bid": 95,
+      "open_interest": 307,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-DASU",
-      "volume": 100,
-      "volume_24h": 100,
-      "yes_ask": 4,
+      "volume": 307,
+      "volume_24h": 307,
+      "yes_ask": 5,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-DEHA": {
@@ -377,15 +377,15 @@
       "last_price": 36,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 69,
+      "no_ask": 66,
       "no_bid": 62,
       "open_interest": 653,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-KYLA",
       "volume": 653,
-      "volume_24h": 529,
+      "volume_24h": 543,
       "yes_ask": 38,
-      "yes_bid": 31
+      "yes_bid": 34
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 5,
@@ -444,15 +444,15 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-ROCH": {
-      "last_price": 0,
+      "last_price": 5,
       "liquidity": null,
       "name": "Ross Chastain",
       "no_ask": 100,
       "no_bid": 95,
-      "open_interest": 0,
+      "open_interest": 188,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-ROCH",
-      "volume": 0,
+      "volume": 188,
       "volume_24h": 0,
       "yes_ask": 5,
       "yes_bid": 0
@@ -532,13 +532,13 @@
       "liquidity": null,
       "name": "Ty Gibbs",
       "no_ask": 100,
-      "no_bid": 84,
+      "no_bid": 85,
       "open_interest": 59,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYGI",
       "volume": 59,
       "volume_24h": 35,
-      "yes_ask": 16,
+      "yes_ask": 15,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-TYRE": {
@@ -551,7 +551,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYRE",
       "volume": 2339,
-      "volume_24h": 1392,
+      "volume_24h": 1559,
       "yes_ask": 35,
       "yes_bid": 34
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T15:30:21.329102+00:00",
+  "scraped_at": "2026-11-08T15:35:17.144033+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
