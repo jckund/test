@@ -84,13 +84,13 @@
       "liquidity": null,
       "name": "Brad Keselowski",
       "no_ask": 100,
-      "no_bid": 60,
+      "no_bid": 95,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-BRKE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 40,
+      "yes_ask": 5,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-BUWA": {
@@ -126,13 +126,13 @@
       "liquidity": null,
       "name": "Casey Mears",
       "no_ask": 100,
-      "no_bid": 70,
+      "no_bid": 98,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-CAME",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 30,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-CHBE": {
@@ -308,13 +308,13 @@
       "liquidity": null,
       "name": "J.J. Yeley",
       "no_ask": 100,
-      "no_bid": 70,
+      "no_bid": 98,
       "open_interest": 0,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-JJYE",
       "volume": 0,
       "volume_24h": 0,
-      "yes_ask": 30,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-JOBE": {
@@ -374,18 +374,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-KYLA": {
-      "last_price": 36,
+      "last_price": 38,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 75,
-      "no_bid": 65,
-      "open_interest": 438,
+      "no_ask": 79,
+      "no_bid": 64,
+      "open_interest": 489,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-KYLA",
-      "volume": 438,
+      "volume": 489,
       "volume_24h": 328,
-      "yes_ask": 35,
-      "yes_bid": 25
+      "yes_ask": 36,
+      "yes_bid": 21
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T14:25:17.008901+00:00",
+  "scraped_at": "2026-11-08T14:30:21.004969+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
