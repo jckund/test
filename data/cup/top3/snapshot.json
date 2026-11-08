@@ -38,16 +38,16 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-AUCI": {
-      "last_price": 15,
+      "last_price": 14,
       "liquidity": null,
       "name": "Austin Cindric",
       "no_ask": 100,
       "no_bid": 86,
-      "open_interest": 938,
+      "open_interest": 1006,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-AUCI",
-      "volume": 938,
-      "volume_24h": 938,
+      "volume": 1006,
+      "volume_24h": 1006,
       "yes_ask": 14,
       "yes_bid": 0
     },
@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-COHE",
       "volume": 1000,
-      "volume_24h": 400,
+      "volume_24h": 1000,
       "yes_ask": 13,
       "yes_bid": 0
     },
@@ -377,15 +377,15 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 63,
+      "no_ask": 64,
       "no_bid": 62,
-      "open_interest": 670,
+      "open_interest": 761,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-KYLA",
-      "volume": 670,
+      "volume": 897,
       "volume_24h": 541,
       "yes_ask": 38,
-      "yes_bid": 37
+      "yes_bid": 36
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 5,
@@ -467,7 +467,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-RYBL",
       "volume": 2991,
-      "volume_24h": 791,
+      "volume_24h": 463,
       "yes_ask": 39,
       "yes_bid": 31
     },
@@ -547,10 +547,10 @@
       "name": "Tyler Reddick",
       "no_ask": 66,
       "no_bid": 65,
-      "open_interest": 4555,
+      "open_interest": 4596,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYRE",
-      "volume": 4555,
+      "volume": 4596,
       "volume_24h": 3775,
       "yes_ask": 35,
       "yes_bid": 34
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T17:20:18.144258+00:00",
+  "scraped_at": "2026-11-08T17:25:15.214774+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
