@@ -145,7 +145,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-CHBE",
       "volume": 429,
-      "volume_24h": 172,
+      "volume_24h": 185,
       "yes_ask": 31,
       "yes_bid": 30
     },
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-DEHA",
       "volume": 2101,
-      "volume_24h": 1768,
+      "volume_24h": 1779,
       "yes_ask": 34,
       "yes_bid": 33
     },
@@ -374,18 +374,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-KYLA": {
-      "last_price": 39,
+      "last_price": 44,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 61,
-      "no_bid": 60,
-      "open_interest": 6207,
+      "no_ask": 59,
+      "no_bid": 56,
+      "open_interest": 6411,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-KYLA",
-      "volume": 6354,
+      "volume": 6573,
       "volume_24h": 6224,
-      "yes_ask": 40,
-      "yes_bid": 39
+      "yes_ask": 44,
+      "yes_bid": 41
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 5,
@@ -458,17 +458,17 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-RYBL": {
-      "last_price": 39,
+      "last_price": 42,
       "liquidity": null,
       "name": "Ryan Blaney",
       "no_ask": 67,
-      "no_bid": 61,
-      "open_interest": 2530,
+      "no_bid": 58,
+      "open_interest": 2761,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-RYBL",
-      "volume": 2991,
+      "volume": 3222,
       "volume_24h": 391,
-      "yes_ask": 39,
+      "yes_ask": 42,
       "yes_bid": 33
     },
     "KXNASCARTOP3-NASC26-RYPR": {
@@ -551,7 +551,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYRE",
       "volume": 4621,
-      "volume_24h": 3835,
+      "volume_24h": 3841,
       "yes_ask": 35,
       "yes_bid": 34
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T19:10:17.707034+00:00",
+  "scraped_at": "2026-11-08T19:15:17.810384+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
