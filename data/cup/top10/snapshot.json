@@ -27,15 +27,15 @@
       "last_price": 48,
       "liquidity": null,
       "name": "Alex Bowman",
-      "no_ask": 70,
-      "no_bid": 61,
+      "no_ask": 80,
+      "no_bid": 60,
       "open_interest": 2473,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-ALBO",
       "volume": 2474,
       "volume_24h": 340,
-      "yes_ask": 39,
-      "yes_bid": 30
+      "yes_ask": 40,
+      "yes_bid": 20
     },
     "KXNASCARTOP10-NASC26-AUCI": {
       "last_price": 53,
@@ -52,17 +52,17 @@
       "yes_bid": 48
     },
     "KXNASCARTOP10-NASC26-AUDI": {
-      "last_price": 32,
+      "last_price": 18,
       "liquidity": null,
       "name": "Austin Dillon",
       "no_ask": 86,
-      "no_bid": 84,
-      "open_interest": 1212,
+      "no_bid": 82,
+      "open_interest": 1475,
       "status": "active",
       "ticker": "KXNASCARTOP10-NASC26-AUDI",
-      "volume": 1212,
+      "volume": 1475,
       "volume_24h": 192,
-      "yes_ask": 16,
+      "yes_ask": 18,
       "yes_bid": 14
     },
     "KXNASCARTOP10-NASC26-AUHI": {
@@ -335,7 +335,7 @@
       "last_price": 59,
       "liquidity": null,
       "name": "Joey Logano",
-      "no_ask": 89,
+      "no_ask": 88,
       "no_bid": 54,
       "open_interest": 228,
       "status": "active",
@@ -343,7 +343,7 @@
       "volume": 229,
       "volume_24h": 56,
       "yes_ask": 46,
-      "yes_bid": 11
+      "yes_bid": 12
     },
     "KXNASCARTOP10-NASC26-JONE": {
       "last_price": 2,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 10",
-  "scraped_at": "2026-11-08T14:15:22.529852+00:00",
+  "scraped_at": "2026-11-08T14:20:19.231126+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top10"
 }
