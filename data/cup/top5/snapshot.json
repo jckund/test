@@ -139,7 +139,7 @@
       "last_price": 51,
       "liquidity": null,
       "name": "Christopher Bell",
-      "no_ask": 60,
+      "no_ask": 64,
       "no_bid": 50,
       "open_interest": 631,
       "status": "active",
@@ -147,7 +147,7 @@
       "volume": 631,
       "volume_24h": 569,
       "yes_ask": 50,
-      "yes_bid": 40
+      "yes_bid": 36
     },
     "KXNASCARTOP5-NASC26-CHBR": {
       "last_price": 54,
@@ -220,18 +220,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP5-NASC26-COHE": {
-      "last_price": 34,
+      "last_price": 25,
       "liquidity": null,
       "name": "Corey Heim",
-      "no_ask": 96,
-      "no_bid": 76,
-      "open_interest": 227,
+      "no_ask": 95,
+      "no_bid": 75,
+      "open_interest": 246,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-COHE",
-      "volume": 229,
+      "volume": 248,
       "volume_24h": 6,
-      "yes_ask": 24,
-      "yes_bid": 4
+      "yes_ask": 25,
+      "yes_bid": 5
     },
     "KXNASCARTOP5-NASC26-COWA": {
       "last_price": 1,
@@ -285,7 +285,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-DEHA",
       "volume": 269,
-      "volume_24h": 243,
+      "volume_24h": 252,
       "yes_ask": 55,
       "yes_bid": 48
     },
@@ -461,15 +461,15 @@
       "last_price": 57,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 74,
+      "no_ask": 66,
       "no_bid": 43,
-      "open_interest": 795,
+      "open_interest": 812,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-RYBL",
-      "volume": 797,
-      "volume_24h": 552,
+      "volume": 814,
+      "volume_24h": 569,
       "yes_ask": 57,
-      "yes_bid": 26
+      "yes_bid": 34
     },
     "KXNASCARTOP5-NASC26-RYPR": {
       "last_price": 12,
@@ -545,15 +545,15 @@
       "last_price": 54,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 59,
-      "no_bid": 50,
+      "no_ask": 57,
+      "no_bid": 51,
       "open_interest": 468,
       "status": "active",
       "ticker": "KXNASCARTOP5-NASC26-TYRE",
       "volume": 472,
       "volume_24h": 146,
-      "yes_ask": 50,
-      "yes_bid": 41
+      "yes_ask": 49,
+      "yes_bid": 43
     },
     "KXNASCARTOP5-NASC26-WIBY": {
       "last_price": 43,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 5",
-  "scraped_at": "2026-11-08T14:50:37.181849+00:00",
+  "scraped_at": "2026-11-08T14:55:15.464077+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top5"
 }

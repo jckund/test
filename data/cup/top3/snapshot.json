@@ -229,7 +229,7 @@
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-COHE",
       "volume": 400,
-      "volume_24h": 0,
+      "volume_24h": 400,
       "yes_ask": 14,
       "yes_bid": 0
     },
@@ -279,15 +279,15 @@
       "last_price": 44,
       "liquidity": null,
       "name": "Denny Hamlin",
-      "no_ask": 94,
-      "no_bid": 57,
+      "no_ask": 93,
+      "no_bid": 56,
       "open_interest": 524,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-DEHA",
       "volume": 524,
-      "volume_24h": 93,
-      "yes_ask": 43,
-      "yes_bid": 6
+      "volume_24h": 202,
+      "yes_ask": 44,
+      "yes_bid": 7
     },
     "KXNASCARTOP3-NASC26-ERJO": {
       "last_price": 0,
@@ -377,7 +377,7 @@
       "last_price": 38,
       "liquidity": null,
       "name": "Kyle Larson",
-      "no_ask": 72,
+      "no_ask": 73,
       "no_bid": 62,
       "open_interest": 489,
       "status": "active",
@@ -385,7 +385,7 @@
       "volume": 489,
       "volume_24h": 378,
       "yes_ask": 38,
-      "yes_bid": 28
+      "yes_bid": 27
     },
     "KXNASCARTOP3-NASC26-MIMC": {
       "last_price": 0,
@@ -458,18 +458,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-RYBL": {
-      "last_price": 49,
+      "last_price": 45,
       "liquidity": null,
       "name": "Ryan Blaney",
-      "no_ask": 71,
-      "no_bid": 58,
-      "open_interest": 2314,
+      "no_ask": 65,
+      "no_bid": 57,
+      "open_interest": 2335,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-RYBL",
-      "volume": 2775,
+      "volume": 2796,
       "volume_24h": 988,
-      "yes_ask": 42,
-      "yes_bid": 29
+      "yes_ask": 43,
+      "yes_bid": 35
     },
     "KXNASCARTOP3-NASC26-RYPR": {
       "last_price": 0,
@@ -542,18 +542,18 @@
       "yes_bid": 0
     },
     "KXNASCARTOP3-NASC26-TYRE": {
-      "last_price": 75,
+      "last_price": 38,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 88,
-      "no_bid": 64,
-      "open_interest": 889,
+      "no_ask": 86,
+      "no_bid": 42,
+      "open_interest": 2173,
       "status": "active",
       "ticker": "KXNASCARTOP3-NASC26-TYRE",
-      "volume": 889,
+      "volume": 2173,
       "volume_24h": 108,
-      "yes_ask": 36,
-      "yes_bid": 12
+      "yes_ask": 58,
+      "yes_bid": 14
     },
     "KXNASCARTOP3-NASC26-WIBY": {
       "last_price": 0,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Top 3",
-  "scraped_at": "2026-11-08T14:50:36.786431+00:00",
+  "scraped_at": "2026-11-08T14:55:14.934862+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "top3"
 }
