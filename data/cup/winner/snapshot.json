@@ -24,17 +24,17 @@
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-ALBO": {
-      "last_price": 1,
+      "last_price": 2,
       "liquidity": null,
       "name": "Alex Bowman",
       "no_ask": 100,
-      "no_bid": 99,
-      "open_interest": 51109,
+      "no_bid": 98,
+      "open_interest": 51493,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-ALBO",
-      "volume": 51109,
+      "volume": 51493,
       "volume_24h": 39083,
-      "yes_ask": 1,
+      "yes_ask": 2,
       "yes_bid": 0
     },
     "KXNASCARRACE-NASC26-AUCI": {
@@ -159,7 +159,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
       "volume": 83505,
-      "volume_24h": 45665,
+      "volume_24h": 45625,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -323,10 +323,10 @@
       "name": "Josh Berry",
       "no_ask": 100,
       "no_bid": 99,
-      "open_interest": 7917,
+      "open_interest": 8384,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JOBE",
-      "volume": 8063,
+      "volume": 8530,
       "volume_24h": 3918,
       "yes_ask": 1,
       "yes_bid": 0
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 86,
       "no_bid": 85,
-      "open_interest": 124137,
+      "open_interest": 124149,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 148372,
-      "volume_24h": 33335,
+      "volume": 148384,
+      "volume_24h": 33366,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-08T10:35:18.368268+00:00",
+  "scraped_at": "2026-11-08T10:50:16.929715+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
