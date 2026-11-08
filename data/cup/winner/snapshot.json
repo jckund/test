@@ -47,7 +47,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-AUCI",
       "volume": 79358,
-      "volume_24h": 12537,
+      "volume_24h": 12654,
       "yes_ask": 4,
       "yes_bid": 3
     },
@@ -141,11 +141,11 @@
       "name": "Christopher Bell",
       "no_ask": 90,
       "no_bid": 89,
-      "open_interest": 42409,
+      "open_interest": 42597,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBE",
-      "volume": 43690,
-      "volume_24h": 6273,
+      "volume": 43877,
+      "volume_24h": 6281,
       "yes_ask": 11,
       "yes_bid": 10
     },
@@ -154,13 +154,13 @@
       "liquidity": null,
       "name": "Chase Briscoe",
       "no_ask": 85,
-      "no_bid": 83,
-      "open_interest": 78570,
+      "no_bid": 84,
+      "open_interest": 78682,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-CHBR",
-      "volume": 80750,
+      "volume": 80861,
       "volume_24h": 44775,
-      "yes_ask": 17,
+      "yes_ask": 16,
       "yes_bid": 15
     },
     "KXNASCARRACE-NASC26-CHBU": {
@@ -225,10 +225,10 @@
       "name": "Corey Heim",
       "no_ask": 97,
       "no_bid": 96,
-      "open_interest": 54216,
+      "open_interest": 54239,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-COHE",
-      "volume": 54228,
+      "volume": 54251,
       "volume_24h": 9438,
       "yes_ask": 4,
       "yes_bid": 3
@@ -281,10 +281,10 @@
       "name": "Denny Hamlin",
       "no_ask": 87,
       "no_bid": 86,
-      "open_interest": 63311,
+      "open_interest": 63318,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-DEHA",
-      "volume": 64543,
+      "volume": 64550,
       "volume_24h": 10467,
       "yes_ask": 14,
       "yes_bid": 13
@@ -341,7 +341,7 @@
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-JOLO",
       "volume": 52879,
-      "volume_24h": 16483,
+      "volume_24h": 16367,
       "yes_ask": 2,
       "yes_bid": 1
     },
@@ -379,11 +379,11 @@
       "name": "Kyle Larson",
       "no_ask": 86,
       "no_bid": 85,
-      "open_interest": 116271,
+      "open_interest": 116315,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-KYLA",
-      "volume": 140421,
-      "volume_24h": 31511,
+      "volume": 140465,
+      "volume_24h": 32175,
       "yes_ask": 15,
       "yes_bid": 14
     },
@@ -542,18 +542,18 @@
       "yes_bid": 3
     },
     "KXNASCARRACE-NASC26-TYRE": {
-      "last_price": 13,
+      "last_price": 15,
       "liquidity": null,
       "name": "Tyler Reddick",
-      "no_ask": 88,
-      "no_bid": 87,
-      "open_interest": 108891,
+      "no_ask": 86,
+      "no_bid": 84,
+      "open_interest": 108918,
       "status": "active",
       "ticker": "KXNASCARRACE-NASC26-TYRE",
-      "volume": 109700,
-      "volume_24h": 11640,
-      "yes_ask": 13,
-      "yes_bid": 12
+      "volume": 109727,
+      "volume_24h": 15510,
+      "yes_ask": 16,
+      "yes_bid": 14
     },
     "KXNASCARRACE-NASC26-WIBY": {
       "last_price": 4,
@@ -585,7 +585,7 @@
     }
   },
   "odds_label": "Win",
-  "scraped_at": "2026-11-08T02:30:19.983843+00:00",
+  "scraped_at": "2026-11-08T02:35:17.780445+00:00",
   "source_url": "https://kalshi.com/markets/kxnascarrace/nascar-race/kxnascarrace-nasc26",
   "tier": "winner"
 }
